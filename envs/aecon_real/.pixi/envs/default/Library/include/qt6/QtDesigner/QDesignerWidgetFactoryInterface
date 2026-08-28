@@ -1,0 +1,1 @@
+#include <QtDesigner/abstractwidgetfactory.h> // IWYU pragma: export

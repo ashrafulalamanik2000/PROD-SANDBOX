@@ -1,0 +1,5 @@
+#ifndef QT_QTLABSSTYLEKIT_MODULE_H
+#define QT_QTLABSSTYLEKIT_MODULE_H
+#include <QtLabsStyleKit/QtLabsStyleKitDepends>
+#include <QtLabsStyleKit/qtlabsstylekitversion.h>
+#endif

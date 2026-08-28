@@ -1,0 +1,7 @@
+#ifndef QT_QTQUICKTEST_MODULE_H
+#define QT_QTQUICKTEST_MODULE_H
+#include <QtQuickTest/QtQuickTestDepends>
+#include <QtQuickTest/quicktestglobal.h>
+#include <QtQuickTest/qtquicktestversion.h>
+#include <QtQuickTest/quicktest.h>
+#endif

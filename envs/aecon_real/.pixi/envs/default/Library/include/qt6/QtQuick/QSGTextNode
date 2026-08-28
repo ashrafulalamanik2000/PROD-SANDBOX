@@ -1,0 +1,1 @@
+#include <QtQuick/qsgtextnode.h> // IWYU pragma: export

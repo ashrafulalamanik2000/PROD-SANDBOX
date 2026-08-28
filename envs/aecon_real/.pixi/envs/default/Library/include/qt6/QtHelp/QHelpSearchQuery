@@ -1,0 +1,1 @@
+#include <QtHelp/qhelpsearchengine.h> // IWYU pragma: export

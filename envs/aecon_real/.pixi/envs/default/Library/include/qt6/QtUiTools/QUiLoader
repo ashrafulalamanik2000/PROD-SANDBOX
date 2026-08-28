@@ -1,0 +1,1 @@
+#include <QtUiTools/quiloader.h> // IWYU pragma: export

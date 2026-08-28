@@ -1,0 +1,11 @@
+#ifndef QT_QTAXCONTAINER_MODULE_H
+#define QT_QTAXCONTAINER_MODULE_H
+#include <QtAxContainer/QtAxContainerDepends>
+#include <QtAxContainer/qaxbase.h>
+#include <QtAxContainer/qaxobject.h>
+#include <QtAxContainer/qaxobjectinterface.h>
+#include <QtAxContainer/qaxscript.h>
+#include <QtAxContainer/qaxselect.h>
+#include <QtAxContainer/qaxwidget.h>
+#include <QtAxContainer/qtaxcontainerversion.h>
+#endif

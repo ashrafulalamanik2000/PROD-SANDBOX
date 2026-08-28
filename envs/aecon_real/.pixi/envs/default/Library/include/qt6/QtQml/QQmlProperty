@@ -1,0 +1,1 @@
+#include <QtQml/qqmlproperty.h> // IWYU pragma: export

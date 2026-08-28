@@ -1,0 +1,1281 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "RectangularShadow"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "1545"
+                    }
+                ],
+                "className": "QQuickRectangularShadow",
+                "lineNumber": 32,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "lineNumber": 35,
+                        "name": "offset",
+                        "notify": "offsetChanged",
+                        "override": false,
+                        "read": "offset",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QVector2D",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setOffset"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "lineNumber": 36,
+                        "name": "color",
+                        "notify": "colorChanged",
+                        "override": false,
+                        "read": "color",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setColor"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "lineNumber": 37,
+                        "name": "blur",
+                        "notify": "blurChanged",
+                        "override": false,
+                        "read": "blur",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setBlur"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "lineNumber": 38,
+                        "name": "radius",
+                        "notify": "radiusChanged",
+                        "override": false,
+                        "read": "radius",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setRadius"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "lineNumber": 39,
+                        "name": "topLeftRadius",
+                        "notify": "topLeftRadiusChanged",
+                        "override": false,
+                        "read": "topLeftRadius",
+                        "required": false,
+                        "reset": "resetTopLeftRadius",
+                        "revision": 1547,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setTopLeftRadius"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "lineNumber": 40,
+                        "name": "topRightRadius",
+                        "notify": "topRightRadiusChanged",
+                        "override": false,
+                        "read": "topRightRadius",
+                        "required": false,
+                        "reset": "resetTopRightRadius",
+                        "revision": 1547,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setTopRightRadius"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "lineNumber": 41,
+                        "name": "bottomLeftRadius",
+                        "notify": "bottomLeftRadiusChanged",
+                        "override": false,
+                        "read": "bottomLeftRadius",
+                        "required": false,
+                        "reset": "resetBottomLeftRadius",
+                        "revision": 1547,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setBottomLeftRadius"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "lineNumber": 42,
+                        "name": "bottomRightRadius",
+                        "notify": "bottomRightRadiusChanged",
+                        "override": false,
+                        "read": "bottomRightRadius",
+                        "required": false,
+                        "reset": "resetBottomRightRadius",
+                        "revision": 1547,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setBottomRightRadius"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 8,
+                        "lineNumber": 43,
+                        "name": "spread",
+                        "notify": "spreadChanged",
+                        "override": false,
+                        "read": "spread",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setSpread"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 9,
+                        "lineNumber": 44,
+                        "name": "cached",
+                        "notify": "cachedChanged",
+                        "override": false,
+                        "read": "isCached",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setCached"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 10,
+                        "lineNumber": 45,
+                        "name": "material",
+                        "notify": "materialChanged",
+                        "override": false,
+                        "read": "material",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickItem*",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setMaterial"
+                    }
+                ],
+                "qualifiedClassName": "QQuickRectangularShadow",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 80,
+                        "name": "offsetChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "lineNumber": 81,
+                        "name": "colorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "lineNumber": 82,
+                        "name": "blurChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "lineNumber": 83,
+                        "name": "radiusChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "lineNumber": 84,
+                        "name": "spreadChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "lineNumber": 85,
+                        "name": "cachedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "lineNumber": 86,
+                        "name": "materialChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "lineNumber": 87,
+                        "name": "topLeftRadiusChanged",
+                        "returnType": "void",
+                        "revision": 1547
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "lineNumber": 88,
+                        "name": "topRightRadiusChanged",
+                        "returnType": "void",
+                        "revision": 1547
+                    },
+                    {
+                        "access": "public",
+                        "index": 9,
+                        "lineNumber": 89,
+                        "name": "bottomLeftRadiusChanged",
+                        "returnType": "void",
+                        "revision": 1547
+                    },
+                    {
+                        "access": "public",
+                        "index": 10,
+                        "lineNumber": 90,
+                        "name": "bottomRightRadiusChanged",
+                        "returnType": "void",
+                        "revision": 1547
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickrectangularshadow_p.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "QGfxSourceProxyME",
+                "enums": [
+                    {
+                        "isClass": true,
+                        "isFlag": false,
+                        "lineNumber": 37,
+                        "name": "Interpolation",
+                        "values": [
+                            "Any",
+                            "Nearest",
+                            "Linear"
+                        ]
+                    }
+                ],
+                "lineNumber": 27,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "lineNumber": 30,
+                        "name": "input",
+                        "notify": "inputChanged",
+                        "override": false,
+                        "read": "input",
+                        "required": false,
+                        "reset": "resetInput",
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickItem*",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setInput"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "lineNumber": 31,
+                        "name": "output",
+                        "notify": "outputChanged",
+                        "override": false,
+                        "read": "output",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickItem*",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "lineNumber": 32,
+                        "name": "sourceRect",
+                        "notify": "sourceRectChanged",
+                        "override": false,
+                        "read": "sourceRect",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QRectF",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setSourceRect"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "lineNumber": 33,
+                        "name": "active",
+                        "notify": "activeChanged",
+                        "override": false,
+                        "read": "isActive",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 4,
+                        "lineNumber": 34,
+                        "name": "interpolation",
+                        "notify": "interpolationChanged",
+                        "override": false,
+                        "read": "interpolation",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "Interpolation",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setInterpolation"
+                    }
+                ],
+                "qualifiedClassName": "QGfxSourceProxyME",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 65,
+                        "name": "inputChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "lineNumber": 66,
+                        "name": "outputChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "lineNumber": 67,
+                        "name": "sourceRectChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "lineNumber": 68,
+                        "name": "activeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "lineNumber": 69,
+                        "name": "interpolationChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 5,
+                        "lineNumber": 72,
+                        "name": "repolish",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qgfxsourceproxy_p.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "MultiEffect"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "1541"
+                    }
+                ],
+                "className": "QQuickMultiEffect",
+                "lineNumber": 32,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 35,
+                        "name": "source",
+                        "notify": "sourceChanged",
+                        "override": false,
+                        "read": "source",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickItem*",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setSource"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 36,
+                        "name": "autoPaddingEnabled",
+                        "notify": "autoPaddingEnabledChanged",
+                        "override": false,
+                        "read": "autoPaddingEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setAutoPaddingEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "lineNumber": 37,
+                        "name": "paddingRect",
+                        "notify": "paddingRectChanged",
+                        "override": false,
+                        "read": "paddingRect",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QRectF",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setPaddingRect"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "lineNumber": 38,
+                        "name": "brightness",
+                        "notify": "brightnessChanged",
+                        "override": false,
+                        "read": "brightness",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setBrightness"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 4,
+                        "lineNumber": 39,
+                        "name": "contrast",
+                        "notify": "contrastChanged",
+                        "override": false,
+                        "read": "contrast",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setContrast"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 5,
+                        "lineNumber": 40,
+                        "name": "saturation",
+                        "notify": "saturationChanged",
+                        "override": false,
+                        "read": "saturation",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setSaturation"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 6,
+                        "lineNumber": 41,
+                        "name": "colorization",
+                        "notify": "colorizationChanged",
+                        "override": false,
+                        "read": "colorization",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setColorization"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 7,
+                        "lineNumber": 42,
+                        "name": "colorizationColor",
+                        "notify": "colorizationColorChanged",
+                        "override": false,
+                        "read": "colorizationColor",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setColorizationColor"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 8,
+                        "lineNumber": 43,
+                        "name": "blurEnabled",
+                        "notify": "blurEnabledChanged",
+                        "override": false,
+                        "read": "blurEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setBlurEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 9,
+                        "lineNumber": 44,
+                        "name": "blur",
+                        "notify": "blurChanged",
+                        "override": false,
+                        "read": "blur",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setBlur"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 10,
+                        "lineNumber": 45,
+                        "name": "blurMax",
+                        "notify": "blurMaxChanged",
+                        "override": false,
+                        "read": "blurMax",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setBlurMax"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 11,
+                        "lineNumber": 46,
+                        "name": "blurMultiplier",
+                        "notify": "blurMultiplierChanged",
+                        "override": false,
+                        "read": "blurMultiplier",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setBlurMultiplier"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 12,
+                        "lineNumber": 47,
+                        "name": "shadowEnabled",
+                        "notify": "shadowEnabledChanged",
+                        "override": false,
+                        "read": "shadowEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setShadowEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 13,
+                        "lineNumber": 48,
+                        "name": "shadowOpacity",
+                        "notify": "shadowOpacityChanged",
+                        "override": false,
+                        "read": "shadowOpacity",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setShadowOpacity"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 14,
+                        "lineNumber": 49,
+                        "name": "shadowBlur",
+                        "notify": "shadowBlurChanged",
+                        "override": false,
+                        "read": "shadowBlur",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setShadowBlur"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 15,
+                        "lineNumber": 50,
+                        "name": "shadowHorizontalOffset",
+                        "notify": "shadowHorizontalOffsetChanged",
+                        "override": false,
+                        "read": "shadowHorizontalOffset",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setShadowHorizontalOffset"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 16,
+                        "lineNumber": 51,
+                        "name": "shadowVerticalOffset",
+                        "notify": "shadowVerticalOffsetChanged",
+                        "override": false,
+                        "read": "shadowVerticalOffset",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setShadowVerticalOffset"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 17,
+                        "lineNumber": 52,
+                        "name": "shadowColor",
+                        "notify": "shadowColorChanged",
+                        "override": false,
+                        "read": "shadowColor",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setShadowColor"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 18,
+                        "lineNumber": 53,
+                        "name": "shadowScale",
+                        "notify": "shadowScaleChanged",
+                        "override": false,
+                        "read": "shadowScale",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setShadowScale"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 19,
+                        "lineNumber": 54,
+                        "name": "maskEnabled",
+                        "notify": "maskEnabledChanged",
+                        "override": false,
+                        "read": "maskEnabled",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setMaskEnabled"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 20,
+                        "lineNumber": 55,
+                        "name": "maskSource",
+                        "notify": "maskSourceChanged",
+                        "override": false,
+                        "read": "maskSource",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQuickItem*",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setMaskSource"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 21,
+                        "lineNumber": 56,
+                        "name": "maskThresholdMin",
+                        "notify": "maskThresholdMinChanged",
+                        "override": false,
+                        "read": "maskThresholdMin",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setMaskThresholdMin"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 22,
+                        "lineNumber": 57,
+                        "name": "maskSpreadAtMin",
+                        "notify": "maskSpreadAtMinChanged",
+                        "override": false,
+                        "read": "maskSpreadAtMin",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setMaskSpreadAtMin"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 23,
+                        "lineNumber": 58,
+                        "name": "maskThresholdMax",
+                        "notify": "maskThresholdMaxChanged",
+                        "override": false,
+                        "read": "maskThresholdMax",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setMaskThresholdMax"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 24,
+                        "lineNumber": 59,
+                        "name": "maskSpreadAtMax",
+                        "notify": "maskSpreadAtMaxChanged",
+                        "override": false,
+                        "read": "maskSpreadAtMax",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setMaskSpreadAtMax"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 25,
+                        "lineNumber": 60,
+                        "name": "maskInverted",
+                        "notify": "maskInvertedChanged",
+                        "override": false,
+                        "read": "maskInverted",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setMaskInverted"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 26,
+                        "lineNumber": 61,
+                        "name": "itemRect",
+                        "notify": "itemRectChanged",
+                        "override": false,
+                        "read": "itemRect",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QRectF",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 27,
+                        "lineNumber": 62,
+                        "name": "fragmentShader",
+                        "notify": "fragmentShaderChanged",
+                        "override": false,
+                        "read": "fragmentShader",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 28,
+                        "lineNumber": 63,
+                        "name": "vertexShader",
+                        "notify": "vertexShaderChanged",
+                        "override": false,
+                        "read": "vertexShader",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "virtual": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 29,
+                        "lineNumber": 64,
+                        "name": "hasProxySource",
+                        "notify": "hasProxySourceChanged",
+                        "override": false,
+                        "read": "hasProxySource",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "virtual": false
+                    }
+                ],
+                "qualifiedClassName": "QQuickMultiEffect",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 156,
+                        "name": "shaderChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "lineNumber": 157,
+                        "name": "itemSizeChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "lineNumber": 158,
+                        "name": "sourceChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "lineNumber": 159,
+                        "name": "autoPaddingEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 4,
+                        "lineNumber": 160,
+                        "name": "paddingRectChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "lineNumber": 161,
+                        "name": "brightnessChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "lineNumber": 162,
+                        "name": "contrastChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 7,
+                        "lineNumber": 163,
+                        "name": "saturationChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 8,
+                        "lineNumber": 164,
+                        "name": "colorizationChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 9,
+                        "lineNumber": 165,
+                        "name": "colorizationColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 10,
+                        "lineNumber": 166,
+                        "name": "blurEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 11,
+                        "lineNumber": 167,
+                        "name": "blurChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 12,
+                        "lineNumber": 168,
+                        "name": "blurMaxChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 13,
+                        "lineNumber": 169,
+                        "name": "blurMultiplierChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 14,
+                        "lineNumber": 170,
+                        "name": "shadowEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 15,
+                        "lineNumber": 171,
+                        "name": "shadowOpacityChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 16,
+                        "lineNumber": 172,
+                        "name": "shadowBlurChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 17,
+                        "lineNumber": 173,
+                        "name": "shadowHorizontalOffsetChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 18,
+                        "lineNumber": 174,
+                        "name": "shadowVerticalOffsetChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 19,
+                        "lineNumber": 175,
+                        "name": "shadowColorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 20,
+                        "lineNumber": 176,
+                        "name": "shadowScaleChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 21,
+                        "lineNumber": 177,
+                        "name": "maskEnabledChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 22,
+                        "lineNumber": 178,
+                        "name": "maskSourceChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 23,
+                        "lineNumber": 179,
+                        "name": "maskThresholdMinChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 24,
+                        "lineNumber": 180,
+                        "name": "maskSpreadAtMinChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 25,
+                        "lineNumber": 181,
+                        "name": "maskThresholdMaxChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 26,
+                        "lineNumber": 182,
+                        "name": "maskSpreadAtMaxChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 27,
+                        "lineNumber": 183,
+                        "name": "maskInvertedChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 28,
+                        "lineNumber": 184,
+                        "name": "itemRectChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 29,
+                        "lineNumber": 185,
+                        "name": "fragmentShaderChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 30,
+                        "lineNumber": 186,
+                        "name": "vertexShaderChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 31,
+                        "lineNumber": 187,
+                        "name": "hasProxySourceChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickmultieffect_p.h",
+        "outputRevision": 69
+    }
+]

@@ -1,0 +1,175 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "BusyIndicatorImpl"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "512"
+                    }
+                ],
+                "className": "QQuickUniversalBusyIndicator",
+                "lineNumber": 25,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "lineNumber": 28,
+                        "name": "count",
+                        "override": false,
+                        "read": "count",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setCount"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "lineNumber": 29,
+                        "name": "color",
+                        "override": false,
+                        "read": "color",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setColor"
+                    }
+                ],
+                "qualifiedClassName": "QQuickUniversalBusyIndicator",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickuniversalbusyindicator_p.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "FocusRectangle"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "512"
+                    }
+                ],
+                "className": "QQuickUniversalFocusRectangle",
+                "lineNumber": 24,
+                "object": true,
+                "qualifiedClassName": "QQuickUniversalFocusRectangle",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPaintedItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickuniversalfocusrectangle_p.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "ProgressBarImpl"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "512"
+                    }
+                ],
+                "className": "QQuickUniversalProgressBar",
+                "lineNumber": 25,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "lineNumber": 28,
+                        "name": "color",
+                        "override": false,
+                        "read": "color",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QColor",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setColor"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "lineNumber": 29,
+                        "name": "progress",
+                        "override": false,
+                        "read": "progress",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setProgress"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "lineNumber": 30,
+                        "name": "indeterminate",
+                        "override": false,
+                        "read": "isIndeterminate",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "bool",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setIndeterminate"
+                    }
+                ],
+                "qualifiedClassName": "QQuickUniversalProgressBar",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickuniversalprogressbar_p.h",
+        "outputRevision": 69
+    }
+]

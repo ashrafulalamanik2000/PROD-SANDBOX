@@ -1,0 +1,1 @@
+#include <QtQuick/qsgflatcolormaterial.h> // IWYU pragma: export

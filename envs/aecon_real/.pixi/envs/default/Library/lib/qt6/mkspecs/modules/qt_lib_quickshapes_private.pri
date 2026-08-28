@@ -1,0 +1,11 @@
+QT.quickshapes_private.VERSION = 6.11.2
+QT.quickshapes_private.name = QtQuickShapes
+QT.quickshapes_private.module =
+QT.quickshapes_private.libs = $$QT_MODULE_LIB_BASE
+QT.quickshapes_private.includes = $$QT_MODULE_INCLUDE_BASE/QtQuickShapes/6.11.2 $$QT_MODULE_INCLUDE_BASE/QtQuickShapes/6.11.2/QtQuickShapes
+QT.quickshapes_private.frameworks = 
+QT.quickshapes_private.depends = quick_private quickshapes
+QT.quickshapes_private.uses = 
+QT.quickshapes_private.module_config = v2 internal_module
+QT.quickshapes_private.enabled_features = quickshapes-designhelpers
+QT.quickshapes_private.disabled_features = 

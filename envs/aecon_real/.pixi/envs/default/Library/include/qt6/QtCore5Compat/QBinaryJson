@@ -1,0 +1,1 @@
+#include <QtCore5Compat/qbinaryjson.h> // IWYU pragma: export

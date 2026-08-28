@@ -1,0 +1,1 @@
+#include <QtJsonRpc/qtjsonrpcversion.h> // IWYU pragma: export

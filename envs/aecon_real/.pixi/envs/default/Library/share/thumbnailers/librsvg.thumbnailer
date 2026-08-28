@@ -1,0 +1,4 @@
+[Thumbnailer Entry]
+TryExec=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/bin/gdk-pixbuf-thumbnailer
+Exec=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/bin/gdk-pixbuf-thumbnailer -s %s %u %o
+MimeType=image/svg+xml;image/svg+xml-compressed;

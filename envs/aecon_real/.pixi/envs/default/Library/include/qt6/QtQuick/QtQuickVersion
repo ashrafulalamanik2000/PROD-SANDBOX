@@ -1,0 +1,1 @@
+#include <QtQuick/qtquickversion.h> // IWYU pragma: export

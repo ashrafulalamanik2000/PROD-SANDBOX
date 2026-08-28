@@ -1,0 +1,15 @@
+# libvorbis pkg-config source file
+
+prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/bin
+libdir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/include
+
+Name: vorbis
+Description: vorbis is the primary Ogg Vorbis library
+Version: 1.3.7
+Requires.private: ogg
+Conflicts:
+Libs: -L${libdir} -lvorbis 
+Libs.private: 
+Cflags: -I${includedir}

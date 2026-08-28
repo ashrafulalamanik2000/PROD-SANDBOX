@@ -1,0 +1,5 @@
+#ifndef QT_QTQMLTC_MODULE_H
+#define QT_QTQMLTC_MODULE_H
+#include <QtQmltc/QtQmltcDepends>
+#include <QtQmltc/qtqmltcversion.h>
+#endif

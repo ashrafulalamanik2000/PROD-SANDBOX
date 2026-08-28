@@ -1,0 +1,1 @@
+#include <QtQuick/qsgrendererinterface.h> // IWYU pragma: export

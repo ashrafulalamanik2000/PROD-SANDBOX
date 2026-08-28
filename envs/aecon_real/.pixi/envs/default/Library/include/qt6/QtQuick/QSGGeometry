@@ -1,0 +1,1 @@
+#include <QtQuick/qsggeometry.h> // IWYU pragma: export

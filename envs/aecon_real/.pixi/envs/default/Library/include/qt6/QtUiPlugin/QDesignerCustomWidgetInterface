@@ -1,0 +1,1 @@
+#include <QtUiPlugin/customwidget.h> // IWYU pragma: export

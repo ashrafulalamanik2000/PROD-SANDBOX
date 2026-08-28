@@ -1,0 +1,334 @@
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: qtimageformats-6.11.2
+DocumentNamespace: https://qt.io/spdxdocs/qtimageformats-6.11.2-host-windows-amd64-target-windows-msvc-amd64-891efb58-d759-5bc9-8799-6f5d912ba92b
+Creator: Organization: TheQtCompany
+Creator: Tool: Qt Build System
+CreatorComment: <text>This SPDX document was created from CMake 4.4.2, using the qt
+build system from https://code.qt.io/cgit/qt/qtbase.git/tree/cmake/QtPublicSbomHelpers.cmake</text>
+Created: 2026-08-18T10:30:46Z
+ExternalDocumentRef: DocumentRef-qtbase-3e07b5e24bc8 https://qt.io/spdxdocs/qtbase-6.11.2-host-windows-amd64-target-windows-msvc-amd64-ba0c636e-c4a8-5d59-b3b3-8dd7bf6b1314 SHA1: 8f33f715b4fc32690cea3b502c4bc9a49eda9450
+
+PackageName: qtimageformats
+SPDXID: SPDXRef-Package-qtimageformats-75f3c33c881f
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtimageformats:6.11.2:*:*:*:*:*:*:*
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtimageformats@6.11.2
+PackageVersion: 6.11.2
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtimageformats@6.11.2
+PackageSupplier: Organization: TheQtCompany
+PackageDownloadLocation: git://code.qt.io/qt/qtimageformats.git
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: Copyright (C) The Qt Company Ltd. and other contributors.
+PackageHomePage: https://qt.io
+PackageComment: <text>Built by CMake 4.4.2 with Release configuration for Windows (AMD64)</text>
+FilesAnalyzed: false
+BuiltDate: 2026-08-18T10:30:46Z
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-qtimageformats-75f3c33c881f
+Relationship: SPDXRef-Package-qtimageformats-system-build-tool-CMake-75f3c33c881f BUILD_DEPENDENCY_OF SPDXRef-Package-qtimageformats-75f3c33c881f
+RelationshipComment: <text>SPDXRef-Package-qtimageformats-75f3c33c881f is built using CMake version 4.4.2</text>
+Relationship: SPDXRef-Package-qtimageformats-system-build-tool-CMake-generator-Ninja-75f3c33c881f BUILD_DEPENDENCY_OF SPDXRef-Package-qtimageformats-75f3c33c881f
+RelationshipComment: <text>SPDXRef-Package-qtimageformats-75f3c33c881f is built using generator CMAKE_GENERATOR: 'Ninja' and CMAKE_MAKE_PROGRAM: 'ninja.exe' version '1.13.2'</text>
+Relationship: SPDXRef-Package-qtimageformats-system-build-tool-Compiler-MSVC-75f3c33c881f BUILD_DEPENDENCY_OF SPDXRef-Package-qtimageformats-75f3c33c881f
+RelationshipComment: <text>SPDXRef-Package-qtimageformats-75f3c33c881f is built by compiler: 'MSVC' version: '19.44.35228.0' frontend variant: 'MSVC'</text>
+Relationship: SPDXRef-Package-qtimageformats-system-build-tool-Linker-MSVC-75f3c33c881f BUILD_DEPENDENCY_OF SPDXRef-Package-qtimageformats-75f3c33c881f
+RelationshipComment: <text>SPDXRef-Package-qtimageformats-75f3c33c881f is built by linker 'MSVC' version '14.44.35228.0' frontend variant: 'MSVC'</text>
+
+PackageName: QTgaPlugin
+SPDXID: SPDXRef-Package-qtimageformats-qt-plugin-QTgaPlugin-75f3c33c881f
+PackageDownloadLocation: git://code.qt.io/qt/qtimageformats.git
+PackageVersion: 6.11.2
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qtimageformats?library_name=QTgaPlugin#src/plugins/imageformats/tga
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtimageformats-QTgaPlugin?vcs_url=https://code.qt.io/qt/qtimageformats.git&library_name=QTgaPlugin#src/plugins/imageformats/tga
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: QTgaPlugin
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.11.2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtimageformats:6.11.2:*:*:*:*:*:*:*
+PackageVerificationCode: dbf77f87d07263bf175c7cc52e786d66ef24a7f9
+FilesAnalyzed: true
+Relationship: SPDXRef-Package-qtimageformats-75f3c33c881f CONTAINS SPDXRef-Package-qtimageformats-qt-plugin-QTgaPlugin-75f3c33c881f
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QTgaPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-Core-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QTgaPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-Gui-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QTgaPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-PlatformPluginInternal-3e07b5e24bc8
+
+FileName: ./lib/qt6/plugins/imageformats/qtga.dll
+SPDXID: SPDXRef-PackagedFile-qt-plugin-QTgaPlugin-75f3c33c881f
+FileType: BINARY
+FileChecksum: SHA1: a685baf9c0839943c2d53c998ecccf8d82f0c8ee
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QTgaPlugin-75f3c33c881f CONTAINS SPDXRef-PackagedFile-qt-plugin-QTgaPlugin-75f3c33c881f
+Relationship: SPDXRef-PackagedFile-qt-plugin-QTgaPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/tga/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QTgaPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/tga/qtgafile.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QTgaPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/tga/qtgafile.h
+Relationship: SPDXRef-PackagedFile-qt-plugin-QTgaPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/tga/qtgahandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QTgaPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/tga/qtgahandler.h
+
+PackageName: QWbmpPlugin
+SPDXID: SPDXRef-Package-qtimageformats-qt-plugin-QWbmpPlugin-75f3c33c881f
+PackageDownloadLocation: git://code.qt.io/qt/qtimageformats.git
+PackageVersion: 6.11.2
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qtimageformats?library_name=QWbmpPlugin#src/plugins/imageformats/wbmp
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtimageformats-QWbmpPlugin?vcs_url=https://code.qt.io/qt/qtimageformats.git&library_name=QWbmpPlugin#src/plugins/imageformats/wbmp
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: QWbmpPlugin
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.11.2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtimageformats:6.11.2:*:*:*:*:*:*:*
+PackageVerificationCode: b77eaf06198deb68d0f29c4e603d6421d9964766
+FilesAnalyzed: true
+Relationship: SPDXRef-Package-qtimageformats-75f3c33c881f CONTAINS SPDXRef-Package-qtimageformats-qt-plugin-QWbmpPlugin-75f3c33c881f
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QWbmpPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-Core-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QWbmpPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-Gui-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QWbmpPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-PlatformPluginInternal-3e07b5e24bc8
+
+FileName: ./lib/qt6/plugins/imageformats/qwbmp.dll
+SPDXID: SPDXRef-PackagedFile-qt-plugin-QWbmpPlugin-75f3c33c881f
+FileType: BINARY
+FileChecksum: SHA1: bafe4a5ab17e01d0c899f2d39dc01abe6d242ca3
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QWbmpPlugin-75f3c33c881f CONTAINS SPDXRef-PackagedFile-qt-plugin-QWbmpPlugin-75f3c33c881f
+Relationship: SPDXRef-PackagedFile-qt-plugin-QWbmpPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/wbmp/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QWbmpPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/wbmp/qwbmphandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QWbmpPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/wbmp/qwbmphandler_p.h
+
+PackageName: QTiffPlugin
+SPDXID: SPDXRef-Package-qtimageformats-qt-plugin-QTiffPlugin-75f3c33c881f
+PackageDownloadLocation: git://code.qt.io/qt/qtimageformats.git
+PackageVersion: 6.11.2
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qtimageformats?library_name=QTiffPlugin#src/plugins/imageformats/tiff
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtimageformats-QTiffPlugin?vcs_url=https://code.qt.io/qt/qtimageformats.git&library_name=QTiffPlugin#src/plugins/imageformats/tiff
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: QTiffPlugin
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.11.2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtimageformats:6.11.2:*:*:*:*:*:*:*
+PackageVerificationCode: 552082ac66f529d6c5bb065261f8a56c2cd2866b
+FilesAnalyzed: true
+Relationship: SPDXRef-Package-qtimageformats-75f3c33c881f CONTAINS SPDXRef-Package-qtimageformats-qt-plugin-QTiffPlugin-75f3c33c881f
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QTiffPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-Core-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QTiffPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-Gui-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QTiffPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-PlatformPluginInternal-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QTiffPlugin-75f3c33c881f DEPENDS_ON SPDXRef-Package-qtimageformats-system-3rdparty-TIFF-75f3c33c881f
+
+FileName: ./lib/qt6/plugins/imageformats/qtiff.dll
+SPDXID: SPDXRef-PackagedFile-qt-plugin-QTiffPlugin-75f3c33c881f
+FileType: BINARY
+FileChecksum: SHA1: 74561ab8ff50b08569f540ee2164d5cbd21eea03
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QTiffPlugin-75f3c33c881f CONTAINS SPDXRef-PackagedFile-qt-plugin-QTiffPlugin-75f3c33c881f
+Relationship: SPDXRef-PackagedFile-qt-plugin-QTiffPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/tiff/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QTiffPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/tiff/qtiffhandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QTiffPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/tiff/qtiffhandler_p.h
+
+PackageName: QWebpPlugin
+SPDXID: SPDXRef-Package-qtimageformats-qt-plugin-QWebpPlugin-75f3c33c881f
+PackageDownloadLocation: git://code.qt.io/qt/qtimageformats.git
+PackageVersion: 6.11.2
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qtimageformats?library_name=QWebpPlugin#src/plugins/imageformats/webp
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtimageformats-QWebpPlugin?vcs_url=https://code.qt.io/qt/qtimageformats.git&library_name=QWebpPlugin#src/plugins/imageformats/webp
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: QWebpPlugin
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.11.2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtimageformats:6.11.2:*:*:*:*:*:*:*
+PackageVerificationCode: 6b42cfe7d6c81721fa0227cc0dc190aac0974b87
+FilesAnalyzed: true
+Relationship: SPDXRef-Package-qtimageformats-75f3c33c881f CONTAINS SPDXRef-Package-qtimageformats-qt-plugin-QWebpPlugin-75f3c33c881f
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QWebpPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-Core-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QWebpPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-Gui-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QWebpPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-PlatformPluginInternal-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QWebpPlugin-75f3c33c881f DEPENDS_ON SPDXRef-Package-qtimageformats-system-3rdparty-WrapWebP-75f3c33c881f
+
+FileName: ./lib/qt6/plugins/imageformats/qwebp.dll
+SPDXID: SPDXRef-PackagedFile-qt-plugin-QWebpPlugin-75f3c33c881f
+FileType: BINARY
+FileChecksum: SHA1: 59454bf339b7d595c25a281f8ece0498923803fd
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QWebpPlugin-75f3c33c881f CONTAINS SPDXRef-PackagedFile-qt-plugin-QWebpPlugin-75f3c33c881f
+Relationship: SPDXRef-PackagedFile-qt-plugin-QWebpPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/webp/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QWebpPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/webp/qwebphandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QWebpPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/webp/qwebphandler_p.h
+
+PackageName: QICNSPlugin
+SPDXID: SPDXRef-Package-qtimageformats-qt-plugin-QICNSPlugin-75f3c33c881f
+PackageDownloadLocation: git://code.qt.io/qt/qtimageformats.git
+PackageVersion: 6.11.2
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qtimageformats?library_name=QICNSPlugin#src/plugins/imageformats/icns
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtimageformats-QICNSPlugin?vcs_url=https://code.qt.io/qt/qtimageformats.git&library_name=QICNSPlugin#src/plugins/imageformats/icns
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: QICNSPlugin
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.11.2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtimageformats:6.11.2:*:*:*:*:*:*:*
+PackageVerificationCode: 2bea58b6144b86edea7c25460f3732aa14a59ca8
+FilesAnalyzed: true
+Relationship: SPDXRef-Package-qtimageformats-75f3c33c881f CONTAINS SPDXRef-Package-qtimageformats-qt-plugin-QICNSPlugin-75f3c33c881f
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QICNSPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-Core-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QICNSPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-Gui-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QICNSPlugin-75f3c33c881f DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-PlatformPluginInternal-3e07b5e24bc8
+
+FileName: ./lib/qt6/plugins/imageformats/qicns.dll
+SPDXID: SPDXRef-PackagedFile-qt-plugin-QICNSPlugin-75f3c33c881f
+FileType: BINARY
+FileChecksum: SHA1: 4823d2dfda287082f6c4b0ac8ed73161d6d0de54
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtimageformats-qt-plugin-QICNSPlugin-75f3c33c881f CONTAINS SPDXRef-PackagedFile-qt-plugin-QICNSPlugin-75f3c33c881f
+Relationship: SPDXRef-PackagedFile-qt-plugin-QICNSPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/icns/main.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QICNSPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/icns/qicnshandler.cpp
+Relationship: SPDXRef-PackagedFile-qt-plugin-QICNSPlugin-75f3c33c881f GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtimageformats/src/plugins/imageformats/icns/qicnshandler_p.h
+
+PackageName: CMake
+SPDXID: SPDXRef-Package-qtimageformats-system-build-tool-CMake-75f3c33c881f
+PackageDownloadLocation: NOASSERTION
+PackageVersion: 4.4.2
+PackageSupplier: Person: Anonymous
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PrimaryPackagePurpose: OTHER
+PackageComment: <text>
+CMake target name: qtimageformatsSbomBuildToolCMake
+</text>
+FilesAnalyzed: false
+
+
+PackageName: CMake generator Ninja
+SPDXID: SPDXRef-Package-qtimageformats-system-build-tool-CMake-generator-Ninja-75f3c33c881f
+PackageDownloadLocation: NOASSERTION
+PackageVersion: 1.13.2
+PackageSupplier: Person: Anonymous
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PrimaryPackagePurpose: OTHER
+PackageComment: <text>
+CMake target name: qtimageformatsSbomBuildToolCMakeGenerator
+</text>
+FilesAnalyzed: false
+
+
+PackageName: Compiler MSVC
+SPDXID: SPDXRef-Package-qtimageformats-system-build-tool-Compiler-MSVC-75f3c33c881f
+PackageDownloadLocation: NOASSERTION
+PackageVersion: 19.44.35228.0
+PackageSupplier: Person: Anonymous
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageSummary: <text>The compiler as identified by CMake, running on 'Windows' (AMD64)</text>
+PrimaryPackagePurpose: OTHER
+PackageComment: <text>
+CMake target name: qtimageformatsSbomBuildToolCompiler
+</text>
+FilesAnalyzed: false
+
+
+PackageName: Linker MSVC
+SPDXID: SPDXRef-Package-qtimageformats-system-build-tool-Linker-MSVC-75f3c33c881f
+PackageDownloadLocation: NOASSERTION
+PackageVersion: 14.44.35228.0
+PackageSupplier: Person: Anonymous
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PrimaryPackagePurpose: OTHER
+PackageComment: <text>
+CMake target name: qtimageformatsSbomBuildToolLinker
+</text>
+FilesAnalyzed: false
+
+
+PackageName: TIFF
+SPDXID: SPDXRef-Package-qtimageformats-system-3rdparty-TIFF-75f3c33c881f
+PackageDownloadLocation: NOASSERTION
+PackageVersion: 4.7.2
+PackageSupplier: Person: Anonymous
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: TIFF::TIFF
+</text>
+FilesAnalyzed: false
+
+
+PackageName: WrapWebP
+SPDXID: SPDXRef-Package-qtimageformats-system-3rdparty-WrapWebP-75f3c33c881f
+PackageDownloadLocation: NOASSERTION
+PackageVersion: unknown
+PackageSupplier: Person: Anonymous
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: WrapWebP::WrapWebP
+</text>
+FilesAnalyzed: false
+
+
+LicenseID: LicenseRef-Qt-Commercial
+ExtractedText: <text>Licensees holding valid commercial Qt licenses may use this software in
+accordance with the the terms contained in a written agreement between
+you and The Qt Company. Alternatively, the terms and conditions that were
+accepted by the licensee when buying and/or downloading the
+software do apply.
+
+For the latest licensing terms and conditions, see https://www.qt.io/terms-conditions.
+For further information use the contact form at https://www.qt.io/contact-us.
+</text>

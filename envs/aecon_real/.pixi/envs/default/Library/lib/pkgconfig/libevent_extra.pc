@@ -1,0 +1,16 @@
+#libevent pkg-config source file
+
+prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+libdir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/include
+
+Name: libevent_extra
+Description: libevent_extra
+Version: 2.1.12
+Requires:
+Conflicts:
+Libs: -L${libdir} -levent_extra
+Libs.private:  -Lws2_32 -Lshell32 -Ladvapi32
+Cflags: -I${includedir}
+

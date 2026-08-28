@@ -1,0 +1,1 @@
+#include <QtQuick/qquicktextdocument.h> // IWYU pragma: export

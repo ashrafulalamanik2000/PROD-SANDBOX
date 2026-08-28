@@ -1,0 +1,367 @@
+'\" t
+.\" Man page generated from reStructuredText.
+.
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.TH "GDAL-RASTER-ZONAL-STATS" "1" "Apr 24, 2026" "" "GDAL"
+.SH NAME
+gdal-raster-zonal-stats \- Compute raster zonal statistics.
+.sp
+Added in version 3.12.
+
+.SH SYNOPSIS
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.EX
+Usage: gdal raster zonal\-stats [OPTIONS] <INPUT> <OUTPUT>
+
+Calculate raster zonal statistics
+
+Positional arguments:
+  \-i, \-\-input <INPUT>                                  Input raster datasets [required]
+  \-o, \-\-output <OUTPUT>                                Output vector dataset [required]
+
+Common Options:
+  \-h, \-\-help                                           Display help message and exit
+  \-\-json\-usage                                         Display usage as JSON document and exit
+  \-\-config <KEY>=<VALUE>                               Configuration option [may be repeated]
+  \-q, \-\-quiet                                          Quiet mode (no progress bar)
+
+Options:
+  \-f, \-\-of, \-\-format, \-\-output\-format <OUTPUT\-FORMAT>  Output format (\(dqGDALG\(dq allowed)
+  \-\-co, \-\-creation\-option <KEY>=<VALUE>                Creation option [may be repeated]
+  \-\-lco, \-\-layer\-creation\-option <KEY>=<VALUE>         Layer creation option [may be repeated]
+  \-\-overwrite                                          Whether overwriting existing output is allowed
+  \-\-update                                             Whether to open existing dataset in update mode
+  \-\-overwrite\-layer                                    Whether overwriting existing output is allowed
+  \-\-append                                             Whether appending to existing layer is allowed
+                                                       Mutually exclusive with \-\-upsert
+  \-\-output\-layer <OUTPUT\-LAYER>                        Output layer name
+  \-\-skip\-errors                                        Skip errors when writing features
+  \-b, \-\-band <BAND>                                    Input band(s) (1\-based index) [may be repeated]
+  \-\-zones <ZONES>                                      Dataset containing zone definitions [required]
+  \-\-zones\-band <ZONES\-BAND>                            Band from which zones should be read
+                                                       Mutually exclusive with \-\-zones\-layer
+  \-\-zones\-layer <ZONES\-LAYER>                          Layer from which zones should be read
+                                                       Mutually exclusive with \-\-zones\-band
+  \-\-weights <WEIGHTS>                                  Weighting raster dataset
+  \-\-weights\-band <WEIGHTS\-BAND>                        Band from which weights should be read (default: 1)
+  \-\-pixels <PIXELS>                                    Method to determine which pixels are included in stat calculation.. PIXELS=default|fractional|all\-touched
+  \-\-stat <STAT>                                        Statistic(s) to compute for each zone. STAT=center_x|center_y|count|coverage|frac|max|max_center_x|max_center_y|mean|median|min|minority|min_center_x|min_center_y|mode|stdev|sum|unique|values|variance|variety|weighted_mean|weighted_stdev|weighted_sum|weighted_variance|weights [may be repeated] [required]
+  \-\-include\-field <INCLUDE\-FIELD>                      Fields from polygon zones to include in output [may be repeated]
+  \-\-strategy <STRATEGY>                                For polygon zones, whether to iterate over input features or raster chunks. STRATEGY=feature|raster (default: feature)
+  \-\-chunk\-size <CHUNK\-SIZE>                            Maximum size of raster chunks read into memory (default: 5%)
+
+Advanced Options:
+  \-\-if, \-\-input\-format <INPUT\-FORMAT>                  Input formats [may be repeated]
+  \-\-oo, \-\-open\-option <KEY>=<VALUE>                    Open options [may be repeated]
+  \-\-output\-oo, \-\-output\-open\-option <KEY>=<VALUE>      Output open options [may be repeated]
+  \-\-upsert                                             Upsert features (implies \(aqappend\(aq)
+                                                       Mutually exclusive with \-\-append
+.EE
+.UNINDENT
+.UNINDENT
+.SH DESCRIPTION
+.sp
+\fBgdal raster zonal\-stats\fP computes raster zonal statistics \-\- a summary of pixel values within zones specified either polygon features or a categorical raster.
+.INDENT 0.0
+.INDENT 2.5
+[image]
+Mean elevation calculated for each polygon from an elevation raster..UNINDENT
+.UNINDENT
+.sp
+A weighting raster may be provided in addition to the source raster, allowing calculation of statistics such as population\-weighted mean weather conditions.
+.sp
+All inputs should be provided in the same spatial reference system. If input rasters use different resolutions they will be resampled to a consistent resolution using average resampling. However, no reprojection is performed.
+.SS Pixel inclusion and weighting
+.sp
+When zones are defined using polygons, three methods are available for determining which pixels to include in the calculation.
+By default, the geometries are rasterized using default parameters, and pixels included in the rasterization are used in the calculation with equal weighting.
+By using \fB\-\-pixels all\-touched\fP, all pixels touched by the polygon are used in the calculation, again with equal weighting.
+If using \fB\-\-pixels fractional\fP, the fraction of each pixel that is covered by the polygon is computed, and pixels are weighted according to this fraction.
+This option requires GDAL be built against version 3.14 or later of the GEOS library.
+.SS Supported stats
+.TS
+box center;
+l|l.
+T{
+Name
+T}	T{
+Description
+T}
+_
+T{
+center_x
+T}	T{
+Array with cell center x\-coordinate for each cell that intersects the polygon. Each cell center
+may or may not be inside the polygon.
+T}
+_
+T{
+center_y
+T}	T{
+Array with cell center y\-coordinate for each cell that intersects the polygon. Each cell center may or may not be inside the polygon.
+T}
+_
+T{
+count
+T}	T{
+Sum of all cell coverage fractions.
+T}
+_
+T{
+coverage
+T}	T{
+Array with coverage fraction of each cell that intersects the polygon
+T}
+_
+T{
+frac
+T}	T{
+Fraction of covered cells that are occupied by each distinct raster value, as provided by \fBunique\fP\&.
+T}
+_
+T{
+majority
+T}	T{
+The raster value occupying the greatest number of cells, taking into account cell coverage fractions but not weighting raster values.
+T}
+_
+T{
+max
+T}	T{
+Maximum value of cells that intersect the polygon, not taking coverage fractions or weighting raster values into account.
+T}
+_
+T{
+max_center_x
+T}	T{
+Cell center x\-coordinate for the cell containing the maximum value intersected by the polygon. The center of this cell may or may not be inside the polygon.
+T}
+_
+T{
+max_center_y
+T}	T{
+Cell center y\-coordinate for the cell containing the maximum value intersected by the polygon. The center of this cell may or may not be inside the polygon.
+T}
+_
+T{
+mean
+T}	T{
+Mean value of cells that intersect the polygon, weighted by the percent of each cell that is covered.
+T}
+_
+T{
+min
+T}	T{
+Minimum value of cells that intersect the polygon, not taking coverage fractions or weighting raster values into account.
+T}
+_
+T{
+min_center_x
+T}	T{
+Cell center x\-coordinate for the cell containing the minimum value intersected by the polygon. The center of this cell may or may not be inside the polygon.
+T}
+_
+T{
+min_center_y
+T}	T{
+Cell center y\-coordinate for the cell containing the minimum value intersected by the polygon. The center of this cell may or may not be inside the polygon.
+T}
+_
+T{
+minority
+T}	T{
+The raster value occupying the least number of cells, taking into account cell coverage fractions but not weighting raster values.
+T}
+_
+T{
+stdev
+T}	T{
+Population standard deviation of cell values that intersect the polygon, taking into account coverage fraction.
+T}
+_
+T{
+sum
+T}	T{
+Sum of values of raster cells that intersect the polygon, with each raster value weighted by its coverage fraction.
+T}
+_
+T{
+unique
+T}	T{
+Array of unique raster values for cells that intersect the polygon
+T}
+_
+T{
+values
+T}	T{
+Array of raster values for each cell that intersects the polygon
+T}
+_
+T{
+variance
+T}	T{
+Population variance of cell values that intersect the polygon, taking into account coverage fraction.
+T}
+_
+T{
+variety
+T}	T{
+The number of distinct raster values in cells wholly or partially covered by the polygon.
+T}
+_
+T{
+weighted_frac
+T}	T{
+Fraction of covered cells that are occupied by each distinct raster value, weighted by the value of a second weighting raster. Order corresponds to
+values returned by \fBunique\fP\&.
+T}
+_
+T{
+weighted_mean
+T}	T{
+Mean value of cells that intersect the polygon, weighted by the product over the coverage fraction and the weighting raster.
+T}
+_
+T{
+weighted_stdev
+T}	T{
+Weighted version of \fBstdev\fP\&.
+T}
+_
+T{
+weighted_variance
+T}	T{
+Weighted version of \fBvariance\fP
+T}
+_
+T{
+weights
+T}	T{
+Array of weight values for each cell that intersects the polygon
+T}
+.TE
+.sp
+This algorithm can be part of a \fI\%gdal pipeline\fP\&.
+.sp
+The following options are available:
+.INDENT 0.0
+.TP
+.B \-\-stat <STAT>
+Specifies one or more of the \fI\%Supported stats\fP to compute for each zone.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-zones <ZONES>
+The path to a dataset that defines the zones. If the dataset has more than 1 raster band or feature layer, \fI\%\-\-zones\-band\fP or \fI\%\-\-zones\-layer\fP must be specified.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-zones\-band <ZONES\-BAND>
+Specifies the raster band from which zones can be read.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-zones\-layer <ZONES\-LAYER>
+Specifies the feature layer from which zones can be read.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-weights <WEIGHTS>
+Optional path to a dataset to use for weighting.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-weights\-band <WEIGHTS\-BAND>
+Specifies the raster band from which weights can be read.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-pixels <PIXELS>
+Method to determine which pixels should be included in the calculation: \fBdefault\fP, \fBall\-touched\fP, or \fBfractional\fP\&.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-chunk\-size <MEMORY>
+Defines the maximum size of raster chunks to read. May be expressed as either an amount of memory (500 MB, 2 GB, etc.) or as a percentage of
+available RAM (e.g. 10%).
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-strategy <STRATEGY>
+Specifies the the processing strategy (\fBraster\fP or \fBfeature\fP), when vector zones are used.
+In the default strategy (\fB\-\-strategy feature\fP), GDAL will iterate over the features in the zone dataset, read the corresponding pixels from the raster, and write the statistics for that feature. This avoids the need to read the entire feature dataset into memory at once, but may cause the same pixels to be read multiple times if the polygon features are large or not ordered spatially. If \fB\-\-strategy raster\fP is used, GDAL will iterate over chunks of the raster dataset, find corresponding polygon zones, and update the statistics for those features. (The size of the raster chunks can be controlled using :option:\fB\-\-chunk\-size\fP\&.) This ensures that raster pixels are only read once, but may cause the same features to be processed multiple times.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-include\-field <INCLUDE\-FIELD>
+Specifies one or more fields from the zones to be copied to the output. Only
+available when vector zones are used.
+.UNINDENT
+.SH EXAMPLES
+.SS Example 1: Summarize mean elevation within 200m of points of interest
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.EX
+gdal pipeline read dem.tif ! \e
+    zonal\-stats \e
+      \-\-zones [ read points.geojson ! buffer 200 ] \e
+      \-\-stat mean ! \e
+    write \e
+      \-\-output\-format CSV \e
+      \-\-output /vsistdout/
+.EE
+.UNINDENT
+.UNINDENT
+.SS Example 2: Create a layer with the highest points in each watershed
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.EX
+gdal pipeline read dem.tif !
+    zonal\-stats \e
+      \-\-zones watersheds.shp \e
+      \-\-stat max_center_x \e
+      \-\-stat max_center_y !
+    make\-point \e
+      \-\-x max_center_x \e
+      \-\-y max_center_y \e
+      \-\-dst\-crs EPSG:4326 !
+    write out.geojson
+.EE
+.UNINDENT
+.UNINDENT
+.SH AUTHOR
+Dan Baston <dbaston@gmail.com>
+.SH COPYRIGHT
+1998-2026
+.\" Generated by docutils manpage writer.
+.

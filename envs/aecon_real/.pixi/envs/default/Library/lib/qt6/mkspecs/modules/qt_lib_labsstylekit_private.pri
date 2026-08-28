@@ -1,0 +1,11 @@
+QT.labsstylekit_private.VERSION = 6.11.2
+QT.labsstylekit_private.name = QtLabsStyleKit
+QT.labsstylekit_private.module =
+QT.labsstylekit_private.libs = $$QT_MODULE_LIB_BASE
+QT.labsstylekit_private.includes = $$QT_MODULE_INCLUDE_BASE/QtLabsStyleKit/6.11.2 $$QT_MODULE_INCLUDE_BASE/QtLabsStyleKit/6.11.2/QtLabsStyleKit
+QT.labsstylekit_private.frameworks = 
+QT.labsstylekit_private.depends = labsstylekit
+QT.labsstylekit_private.uses = 
+QT.labsstylekit_private.module_config = v2 internal_module
+QT.labsstylekit_private.enabled_features = 
+QT.labsstylekit_private.disabled_features = 

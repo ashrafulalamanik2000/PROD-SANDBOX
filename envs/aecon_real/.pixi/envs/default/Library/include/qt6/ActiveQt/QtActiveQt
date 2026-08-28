@@ -1,0 +1,14 @@
+#ifndef QT_QTACTIVEQT_MODULE_H
+#define QT_QTACTIVEQT_MODULE_H
+#include <QtActiveQt/QtActiveQtDepends>
+#include <QtActiveQt/qaxaggregated.h>
+#include <QtActiveQt/qaxbase.h>
+#include <QtActiveQt/qaxbindable.h>
+#include <QtActiveQt/qaxfactory.h>
+#include <QtActiveQt/qaxobject.h>
+#include <QtActiveQt/qaxobjectinterface.h>
+#include <QtActiveQt/qaxscript.h>
+#include <QtActiveQt/qaxselect.h>
+#include <QtActiveQt/qaxwidget.h>
+#include <QtActiveQt/qtactiveqtversion.h>
+#endif

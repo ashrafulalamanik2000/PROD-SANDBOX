@@ -1,0 +1,1 @@
+#include <QtSvg/qsvggenerator.h> // IWYU pragma: export

@@ -1,0 +1,1 @@
+#include <QtQuick/qquickgraphicsconfiguration.h> // IWYU pragma: export

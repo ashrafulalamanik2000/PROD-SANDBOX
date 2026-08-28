@@ -1,0 +1,1 @@
+#include <QtQml/qqmlerror.h> // IWYU pragma: export

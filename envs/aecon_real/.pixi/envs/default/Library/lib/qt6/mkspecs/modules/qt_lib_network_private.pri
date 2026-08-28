@@ -1,0 +1,13 @@
+QT.network_private.VERSION = 6.11.2
+QT.network_private.name = QtNetwork
+QT.network_private.module =
+QT.network_private.libs = $$QT_MODULE_LIB_BASE
+QT.network_private.includes = $$QT_MODULE_INCLUDE_BASE/QtNetwork/6.11.2 $$QT_MODULE_INCLUDE_BASE/QtNetwork/6.11.2/QtNetwork
+QT.network_private.frameworks = 
+QT.network_private.depends = core_private network
+QT.network_private.uses = 
+QT.network_private.module_config = v2 internal_module
+QT.network_private.enabled_features = system-proxies networklistmanager publicsuffix-qt
+QT.network_private.disabled_features = libresolv libproxy linux-netlink res_setservers publicsuffix-system
+QMAKE_INCDIR_BROTLI = C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/include
+QMAKE_LIBS_BROTLI = -lbrotlidec -lbrotlicommon

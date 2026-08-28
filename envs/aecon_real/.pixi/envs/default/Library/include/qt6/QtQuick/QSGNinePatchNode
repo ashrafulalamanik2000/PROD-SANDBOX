@@ -1,0 +1,1 @@
+#include <QtQuick/qsgninepatchnode.h> // IWYU pragma: export

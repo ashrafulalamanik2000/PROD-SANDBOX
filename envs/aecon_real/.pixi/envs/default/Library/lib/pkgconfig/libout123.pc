@@ -1,0 +1,12 @@
+prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+libdir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/include
+
+Name: libout123
+Description: A streaming audio output API derived from mpg123
+Requires: 
+Version: 1.33.7
+Libs: -L${libdir} -lout123 
+Libs.private:  -lshlwapi 
+Cflags: -I${includedir} 

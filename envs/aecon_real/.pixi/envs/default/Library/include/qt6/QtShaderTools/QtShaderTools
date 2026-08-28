@@ -1,0 +1,6 @@
+#ifndef QT_QTSHADERTOOLS_MODULE_H
+#define QT_QTSHADERTOOLS_MODULE_H
+#include <QtShaderTools/QtShaderToolsDepends>
+#include <QtShaderTools/qtshadertoolsglobal.h>
+#include <QtShaderTools/qtshadertoolsversion.h>
+#endif

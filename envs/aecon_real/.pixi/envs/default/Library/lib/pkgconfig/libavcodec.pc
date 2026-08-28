@@ -1,0 +1,12 @@
+prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+exec_prefix=${prefix}
+libdir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 63.1.101
+Requires: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Cflags: -I${includedir}

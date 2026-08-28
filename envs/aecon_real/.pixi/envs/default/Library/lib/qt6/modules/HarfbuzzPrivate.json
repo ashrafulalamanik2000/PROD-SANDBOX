@@ -1,0 +1,21 @@
+{
+    "schema_version": 3,
+    "name": "HarfbuzzPrivate",
+    "repository": "qtbase",
+    "version": "6.11.2",
+    "internal": true,
+    "platforms": [
+        {
+            "name": "Windows",
+            "version": "10.0.20348",
+            "compiler_id": "MSVC",
+            "compiler_version": "19.44.35228.0",
+            "targets": [
+                {
+                    "architecture": "x86_64",
+                    "abi": "x86_64-little_endian-lp64"
+                }
+            ]
+        }
+    ]
+}

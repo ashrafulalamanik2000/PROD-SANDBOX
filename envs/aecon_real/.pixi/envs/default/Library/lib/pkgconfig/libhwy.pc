@@ -1,0 +1,10 @@
+prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libhwy
+Description: Efficient and performance-portable SIMD wrapper
+Version: 1.4.0
+Libs: -L${libdir} -lhwy
+Cflags: -I${includedir} -DHWY_SHARED_DEFINE

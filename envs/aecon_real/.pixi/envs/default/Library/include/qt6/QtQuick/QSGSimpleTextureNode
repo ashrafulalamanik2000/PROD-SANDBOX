@@ -1,0 +1,1 @@
+#include <QtQuick/qsgsimpletexturenode.h> // IWYU pragma: export

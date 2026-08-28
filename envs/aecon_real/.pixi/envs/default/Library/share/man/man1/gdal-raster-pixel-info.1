@@ -1,0 +1,291 @@
+.\" Man page generated from reStructuredText.
+.
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.TH "GDAL-RASTER-PIXEL-INFO" "1" "Apr 24, 2026" "" "GDAL"
+.SH NAME
+gdal-raster-pixel-info \- Return information on a pixel of a raster dataset
+.sp
+Added in version 3.11.
+
+.SH SYNOPSIS
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.EX
+Usage: gdal raster pixel\-info [OPTIONS] <INPUT> [<column,line> or <X,Y>]
+
+Return information on a pixel of a raster dataset.
+
+Positional arguments:
+  \-i, \-\-dataset, \-\-input <INPUT>                       Input raster dataset [required]
+  \-p, \-\-pos, \-\-position <column,line> or <X,Y>         Pixel position [may be repeated]
+
+Common Options:
+  \-h, \-\-help                                           Display help message and exit
+  \-\-json\-usage                                         Display usage as JSON document and exit
+  \-\-config <KEY>=<VALUE>                               Configuration option [may be repeated]
+
+Options:
+  \-f, \-\-of, \-\-format, \-\-output\-format <OUTPUT\-FORMAT>  Output format. OUTPUT\-FORMAT=geojson|csv (default: geojson)
+  \-b, \-\-band <BAND>                                    Input band(s) (1\-based index) [may be repeated]
+  \-\-overview <OVERVIEW>                                Which overview level of source file must be used
+  \-\-position\-crs <POSITION\-CRS>                        CRS of position (default: pixel)
+  \-r, \-\-resampling <RESAMPLING>                        Resampling algorithm for interpolation. RESAMPLING=nearest|bilinear|cubic|cubicspline (default: nearest)
+
+Advanced Options:
+  \-\-oo, \-\-open\-option <KEY>=<VALUE>                    Open options [may be repeated]
+  \-\-if, \-\-input\-format <INPUT\-FORMAT>                  Input formats [may be repeated]
+.EE
+.UNINDENT
+.UNINDENT
+.SH DESCRIPTION
+.sp
+\fBgdal raster pixel\-info\fP provide a mechanism to query information about
+a pixel given its location in one of a variety of coordinate systems.
+.sp
+It supports outputting either as GeoJSON or CSV.
+.sp
+The following items will be reported (when known):
+.INDENT 0.0
+.IP \(bu 2
+Input coordinates
+.IP \(bu 2
+Input coordinates converted to column, line
+.IP \(bu 2
+Pixel value per selected band(s), with unscaled value
+.IP \(bu 2
+For VRT files, which file(s) contribute to the pixel value.
+.UNINDENT
+.sp
+The following options are available:
+.SS Standard options
+.INDENT 0.0
+.TP
+.B \-f, \-\-of, \-\-format, \-\-output\-format geojson|csv
+Which output format to use. Default is GeoJSON.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-oo, \-\-open\-option <NAME>=<VALUE>
+Dataset open option (format specific).
+.sp
+May be repeated.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-if, \-\-input\-format <format>
+Format/driver name to be attempted to open the input file(s). It is generally
+not necessary to specify it, but it can be used to skip automatic driver
+detection, when it fails to select the appropriate driver.
+This option can be repeated several times to specify several candidate drivers.
+Note that it does not force those drivers to open the dataset. In particular,
+some drivers have requirements on file extensions.
+.sp
+May be repeated.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-b <band>
+Selects a band to query. Multiple bands can be listed. By default all
+bands are queried.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-p, \-\-pos, \-\-position <column,line> or <X,Y>
+Required.
+This can be specified either as an option, a positional value after the
+dataset name, or when called from \fBgdal\fP, as (space separated)
+values provided on the standard input.
+.sp
+By default, when \fI\%\-\-position\-crs\fP is not specified, or set to \fBpixel\fP,
+this is a column, line tuple (possibly with fractional part).
+If \fI\%\-\-position\-crs\fP is set to \fBdataset\fP, this is a georeferenced
+coordinate expressed in the CRS of the dataset.
+If \fI\%\-\-position\-crs\fP is specified to a CRS definition, this is a
+georeferenced coordinate expressed in this CRS.
+.sp
+X means always longitude or easting, Y means always latitude or northing.
+.sp
+Several x,y tuples may be specified.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-position\-crs pixel|dataset|<crs\-def>
+CRS of position, or one of two following special values:
+.INDENT 7.0
+.IP \(bu 2
+\fBpixel\fP means that the position is set as column, line (default)
+.IP \(bu 2
+\fBdataset\fP means that the position is a georeferenced
+coordinate expressed in the CRS of the dataset.
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-r, \-\-resampling nearest|bilinear|cubic|cubicspline
+Select a sampling algorithm. The default is \fBnearest\fP\&.
+.sp
+The available methods are:
+.INDENT 7.0
+.IP \(bu 2
+\fBnearest\fP applies a nearest neighbour.
+.IP \(bu 2
+\fBbilinear\fP applies a bilinear convolution kernel.
+.IP \(bu 2
+\fBcubic\fP applies a cubic convolution kernel.
+.IP \(bu 2
+\fBcubicspline\fP applies a B\-Spline convolution kernel.
+.UNINDENT
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-ovr, \-\-overview <index>
+Query the (overview_level)th overview (overview_level=0 is the 1st overview),
+instead of the base band. Note that the x,y location (if the coordinate system is
+pixel/line) must still be given with respect to the base band.
+.UNINDENT
+.SH EXAMPLES
+.SS Example 1: Reporting on pixel column=5, line=10 on the file \fBbyte.tif\fP
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.EX
+$ gdal raster pixel\-info byte.tif 5 10
+{
+  \(dqtype\(dq:\(dqFeatureCollection\(dq,
+  \(dqcrs\(dq:{
+    \(dqtype\(dq:\(dqname\(dq,
+    \(dqproperties\(dq:{
+      \(dqname\(dq:\(dqurn:ogc:def:crs:EPSG::26711\(dq
+    }
+  },
+  \(dqfeatures\(dq:[
+    {
+      \(dqtype\(dq:\(dqFeature\(dq,
+      \(dqproperties\(dq:{
+        \(dqinput_coordinate\(dq:[
+          5.0,
+          10.0
+        ],
+        \(dqcolumn\(dq:5.0,
+        \(dqline\(dq:10.0,
+        \(dqbands\(dq:[
+          {
+            \(dqband_number\(dq:1,
+            \(dqraw_value\(dq:132,
+            \(dqunscaled_value\(dq:132.0
+          }
+        ]
+      },
+      \(dqgeometry\(dq:{
+        \(dqtype\(dq:\(dqPoint\(dq,
+        \(dqcoordinates\(dq:[
+          441020.0,
+          3750720.0
+        ]
+      }
+    }
+  ]
+}
+.EE
+.UNINDENT
+.UNINDENT
+.SS Example 2: Reporting on point at UTM 11N coordinates easting=441320 and northing=3750720 on the file \fBbyte.tif\fP
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.EX
+$ gdal raster pixel\-info \-\-position\-crs=dataset byte.tif 441320 3750720
+{
+  \(dqtype\(dq:\(dqFeatureCollection\(dq,
+  \(dqcrs\(dq:{
+    \(dqtype\(dq:\(dqname\(dq,
+    \(dqproperties\(dq:{
+      \(dqname\(dq:\(dqurn:ogc:def:crs:EPSG::26711\(dq
+    }
+  },
+  \(dqfeatures\(dq:[
+    {
+      \(dqtype\(dq:\(dqFeature\(dq,
+      \(dqproperties\(dq:{
+        \(dqinput_coordinate\(dq:[
+          441320.0,
+          3750720.0
+        ],
+        \(dqcolumn\(dq:10.0,
+        \(dqline\(dq:10.0,
+        \(dqbands\(dq:[
+          {
+            \(dqband_number\(dq:1,
+            \(dqraw_value\(dq:115,
+            \(dqunscaled_value\(dq:115.0
+          }
+        ]
+      },
+      \(dqgeometry\(dq:{
+        \(dqtype\(dq:\(dqPoint\(dq,
+        \(dqcoordinates\(dq:[
+          441320.0,
+          3750720.0
+        ]
+      }
+    }
+  ]
+}
+.EE
+.UNINDENT
+.UNINDENT
+.SS Example 3: Reporting on point at WGS84 coordinates longitude=\-117.6355 and latitude=33.8970 on the file \fBbyte.tif\fP, with CSV output format
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.EX
+$ gdal raster pixel\-info \-\-of=csv \-\-position\-crs=WGS84 byte.tif \-117.6355 33.8970
+input_x,input_y,extra_input,column,line,band_1_raw_value,band_1_unscaled_value
+\-117.63549999999999,33.896999999999998,\(dq\(dq,10.020546288988044,9.9833047347492538,115,115
+.EE
+.UNINDENT
+.UNINDENT
+.SS Example 4: Reporting on point at WGS84 coordinates provided on the standard input with longitude, latitude order.
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.EX
+$ echo \-117.6355 33.8970 | gdal raster pixel\-info \-\-of=csv \-\-position\-crs=WGS84 byte.tif
+input_x,input_y,extra_input,column,line,band_1_raw_value,band_1_unscaled_value
+\-117.63549999999999,33.896999999999998,\(dq\(dq,10.020546288988044,9.9833047347492538,115,115
+.EE
+.UNINDENT
+.UNINDENT
+.SH AUTHOR
+Even Rouault <even.rouault@spatialys.com>
+.SH COPYRIGHT
+1998-2026
+.\" Generated by docutils manpage writer.
+.

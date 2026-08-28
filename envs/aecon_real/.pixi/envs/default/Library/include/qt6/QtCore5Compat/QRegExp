@@ -1,0 +1,1 @@
+#include <QtCore5Compat/qregexp.h> // IWYU pragma: export

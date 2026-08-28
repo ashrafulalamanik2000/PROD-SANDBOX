@@ -1,0 +1,11 @@
+prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+exec_prefix=
+libdir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/include
+
+Name: Cap'n Proto WebSocket RPC
+Description: WebSocket MessageStream for Cap'n Proto
+Version: 1.5.0
+Libs: -L${libdir} -lcapnp-websocket
+Requires: capnp = 1.5.0 capnp-rpc = 1.5.0 kj = 1.5.0 kj-async = 1.5.0 kj-http = 1.5.0
+Cflags: -I${includedir}

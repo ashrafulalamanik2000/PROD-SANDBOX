@@ -1,0 +1,11 @@
+prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: Pango
+Description: Internationalized text handling
+Version: 1.58.2
+Requires: gobject-2.0 >=  2.88, harfbuzz >=  11.0.0
+Requires.private: glib-2.0 >=  2.88, gio-2.0 >=  2.88, fribidi >=  1.0.6, fontconfig >=  2.17.0, freetype2, cairo >=  1.18.0
+Libs: -L${libdir} -lpango-1.0
+Cflags: -I${includedir}/pango-1.0

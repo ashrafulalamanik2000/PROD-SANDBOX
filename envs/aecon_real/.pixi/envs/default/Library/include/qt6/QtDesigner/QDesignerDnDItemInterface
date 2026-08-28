@@ -1,0 +1,1 @@
+#include <QtDesigner/abstractdnditem.h> // IWYU pragma: export

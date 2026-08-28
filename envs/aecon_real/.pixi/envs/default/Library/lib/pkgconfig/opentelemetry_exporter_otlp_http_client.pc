@@ -1,0 +1,15 @@
+# Copyright The OpenTelemetry Authors
+# SPDX-License-Identifier: Apache-2.0
+
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenTelemetry OTLP - HTTP Client
+Description: HTTP client for OTLP protocol.
+Requires: opentelemetry_api
+Version: 1.27.0
+
+Libs: -L${libdir} -lopentelemetry_exporter_otlp_http_client
+Cflags: -I${includedir} 

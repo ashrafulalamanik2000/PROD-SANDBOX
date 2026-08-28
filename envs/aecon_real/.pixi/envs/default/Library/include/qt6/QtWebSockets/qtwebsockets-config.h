@@ -1,0 +1,7 @@
+#ifndef QT_FEATURES_WebSockets_qtwebsockets_src_websockets_qtwebsockets_config_h_H
+#define QT_FEATURES_WebSockets_qtwebsockets_src_websockets_qtwebsockets_config_h_H
+
+#define QT_FEATURE_websockets_qml 1
+
+
+#endif // QT_FEATURES_WebSockets_qtwebsockets_src_websockets_qtwebsockets_config_h_H

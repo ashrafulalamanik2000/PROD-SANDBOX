@@ -1,0 +1,11 @@
+prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+libdir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/include
+
+Name: Xerces-C++
+Description: Validating XML parser library for C++
+Version: 3.3.0
+Libs: -LC:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib -lxerces-c
+Libs.private: 
+Cflags: -IC:/sdtools/envs/aecon_real/.pixi/envs/default/Library/include

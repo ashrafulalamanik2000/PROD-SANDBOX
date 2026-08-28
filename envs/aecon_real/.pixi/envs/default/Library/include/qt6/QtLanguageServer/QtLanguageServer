@@ -1,0 +1,6 @@
+#ifndef QT_QTLANGUAGESERVER_MODULE_H
+#define QT_QTLANGUAGESERVER_MODULE_H
+#include <QtLanguageServer/QtLanguageServerDepends>
+#include <QtLanguageServer/qtlanguageserverglobal.h>
+#include <QtLanguageServer/qtlanguageserverversion.h>
+#endif

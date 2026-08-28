@@ -1,0 +1,1 @@
+#include <QtQuickWidgets/qquickwidget.h> // IWYU pragma: export

@@ -1,0 +1,12 @@
+prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: harfbuzz-gpu
+Description: HarfBuzz GPU rasterization library
+Version: 14.3.1
+Requires: harfbuzz =  14.3.1
+Requires.private: freetype2 >=  20.0.14, glib-2.0 >=  2.30.0, graphite2 >=  1.2.0
+Libs: -L${libdir} -lharfbuzz-gpu
+Libs.private: -L${libdir} -lharfbuzz -lusp10 -lgdi32 -lrpcrt4 -luser32
+Cflags: -I${includedir}/harfbuzz

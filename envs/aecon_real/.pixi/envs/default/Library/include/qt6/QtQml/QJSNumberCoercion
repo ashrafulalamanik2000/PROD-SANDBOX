@@ -1,0 +1,1 @@
+#include <QtQml/qjsnumbercoercion.h> // IWYU pragma: export

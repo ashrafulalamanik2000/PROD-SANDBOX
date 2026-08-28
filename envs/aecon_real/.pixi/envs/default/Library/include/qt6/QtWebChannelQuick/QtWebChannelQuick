@@ -1,0 +1,7 @@
+#ifndef QT_QTWEBCHANNELQUICK_MODULE_H
+#define QT_QTWEBCHANNELQUICK_MODULE_H
+#include <QtWebChannelQuick/QtWebChannelQuickDepends>
+#include <QtWebChannelQuick/qwebchannelquickglobal.h>
+#include <QtWebChannelQuick/qqmlwebchannel.h>
+#include <QtWebChannelQuick/qtwebchannelquickversion.h>
+#endif

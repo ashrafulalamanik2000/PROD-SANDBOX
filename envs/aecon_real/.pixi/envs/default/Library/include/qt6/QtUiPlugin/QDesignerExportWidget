@@ -1,0 +1,1 @@
+#include <QtUiPlugin/qdesignerexportwidget.h> // IWYU pragma: export

@@ -1,0 +1,318 @@
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: qtwebchannel-6.11.2
+DocumentNamespace: https://qt.io/spdxdocs/qtwebchannel-6.11.2-host-windows-amd64-target-windows-msvc-amd64-891efb58-d759-5bc9-8799-6f5d912ba92b
+Creator: Organization: TheQtCompany
+Creator: Tool: Qt Build System
+CreatorComment: <text>This SPDX document was created from CMake 4.4.2, using the qt
+build system from https://code.qt.io/cgit/qt/qtbase.git/tree/cmake/QtPublicSbomHelpers.cmake</text>
+Created: 2026-08-18T10:30:46Z
+ExternalDocumentRef: DocumentRef-qtbase-3e07b5e24bc8 https://qt.io/spdxdocs/qtbase-6.11.2-host-windows-amd64-target-windows-msvc-amd64-ba0c636e-c4a8-5d59-b3b3-8dd7bf6b1314 SHA1: 8f33f715b4fc32690cea3b502c4bc9a49eda9450
+ExternalDocumentRef: DocumentRef-qtdeclarative-02348e5f319e https://qt.io/spdxdocs/qtdeclarative-6.11.2-host-windows-amd64-target-windows-msvc-amd64-891efb58-d759-5bc9-8799-6f5d912ba92b SHA1: 56f702f25c4a75f4cdabfdbf1f18b9ba44b0559a
+
+PackageName: qtwebchannel
+SPDXID: SPDXRef-Package-qtwebchannel-b001ac2fcf23
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtwebchannel:6.11.2:*:*:*:*:*:*:*
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtwebchannel@6.11.2
+PackageVersion: 6.11.2
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtwebchannel@6.11.2
+PackageSupplier: Organization: TheQtCompany
+PackageDownloadLocation: git://code.qt.io/qt/qtwebchannel.git
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: Copyright (C) The Qt Company Ltd. and other contributors.
+PackageHomePage: https://qt.io
+PackageComment: <text>Built by CMake 4.4.2 with Release configuration for Windows (AMD64)</text>
+FilesAnalyzed: false
+BuiltDate: 2026-08-18T10:30:46Z
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-qtwebchannel-b001ac2fcf23
+Relationship: SPDXRef-Package-qtwebchannel-system-build-tool-CMake-b001ac2fcf23 BUILD_DEPENDENCY_OF SPDXRef-Package-qtwebchannel-b001ac2fcf23
+RelationshipComment: <text>SPDXRef-Package-qtwebchannel-b001ac2fcf23 is built using CMake version 4.4.2</text>
+Relationship: SPDXRef-Package-qtwebchannel-system-build-tool-CMake-generator-Ninja-b001ac2fcf23 BUILD_DEPENDENCY_OF SPDXRef-Package-qtwebchannel-b001ac2fcf23
+RelationshipComment: <text>SPDXRef-Package-qtwebchannel-b001ac2fcf23 is built using generator CMAKE_GENERATOR: 'Ninja' and CMAKE_MAKE_PROGRAM: 'ninja.exe' version '1.13.2'</text>
+Relationship: SPDXRef-Package-qtwebchannel-system-build-tool-Compiler-MSVC-b001ac2fcf23 BUILD_DEPENDENCY_OF SPDXRef-Package-qtwebchannel-b001ac2fcf23
+RelationshipComment: <text>SPDXRef-Package-qtwebchannel-b001ac2fcf23 is built by compiler: 'MSVC' version: '19.44.35228.0' frontend variant: 'MSVC'</text>
+Relationship: SPDXRef-Package-qtwebchannel-system-build-tool-Linker-MSVC-b001ac2fcf23 BUILD_DEPENDENCY_OF SPDXRef-Package-qtwebchannel-b001ac2fcf23
+RelationshipComment: <text>SPDXRef-Package-qtwebchannel-b001ac2fcf23 is built by linker 'MSVC' version '14.44.35228.0' frontend variant: 'MSVC'</text>
+
+PackageName: WebChannel
+SPDXID: SPDXRef-Package-qtwebchannel-qt-module-WebChannel-b001ac2fcf23
+PackageDownloadLocation: git://code.qt.io/qt/qtwebchannel.git
+PackageVersion: 6.11.2
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qtwebchannel?library_name=WebChannel#src/webchannel
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtwebchannel-WebChannel?vcs_url=https://code.qt.io/qt/qtwebchannel.git&library_name=WebChannel#src/webchannel
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: WebChannel
+CMake exported target name: Qt6::WebChannel
+Contained in CMake package: Qt6WebChannel
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.11.2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtwebchannel:6.11.2:*:*:*:*:*:*:*
+PackageVerificationCode: 738e933491f997a1de0db057910f043381e17a08
+FilesAnalyzed: true
+Relationship: SPDXRef-Package-qtwebchannel-b001ac2fcf23 CONTAINS SPDXRef-Package-qtwebchannel-qt-module-WebChannel-b001ac2fcf23
+Relationship: SPDXRef-Package-qtwebchannel-qt-module-WebChannel-b001ac2fcf23 DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-Core-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtwebchannel-qt-module-WebChannel-b001ac2fcf23 DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-PlatformModuleInternal-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtwebchannel-qt-module-WebChannel-b001ac2fcf23 DEPENDS_ON DocumentRef-qtdeclarative-02348e5f319e:SPDXRef-Package-qtdeclarative-qt-module-Qml-02348e5f319e
+
+FileName: ./lib/qt6/bin/Qt6WebChannel.dll
+SPDXID: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23
+FileType: BINARY
+FileChecksum: SHA1: 8026185db9f28706600e41d2b22f872969652e20
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtwebchannel-qt-module-WebChannel-b001ac2fcf23 CONTAINS SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/C:/bld/bld/rattler-build_qt6-main_1787049046/work/build/qtwebchannel/src/webchannel/WebChannel_resource.rc
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: C:/bld/bld/rattler-build_qt6-main_1787049046/work/build/qtbase/include/QtWebChannel/qtwebchannelexports.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qmetaobjectpublisher.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qmetaobjectpublisher_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannel.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannel.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannel_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannelabstracttransport.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannelabstracttransport.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/signalhandler_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannelglobal.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannel.js
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /build_dir/qtwebchannel/src/webchannel/.qt/rcc/qrc_resources.cpp
+
+FileName: ./lib/Qt6WebChannel.lib
+SPDXID: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23
+FileType: BINARY
+FileChecksum: SHA1: 274a7e92be54f1622266eac48db584671931d6a4
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtwebchannel-qt-module-WebChannel-b001ac2fcf23 CONTAINS SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/C:/bld/bld/rattler-build_qt6-main_1787049046/work/build/qtwebchannel/src/webchannel/WebChannel_resource.rc
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: C:/bld/bld/rattler-build_qt6-main_1787049046/work/build/qtbase/include/QtWebChannel/qtwebchannelexports.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qmetaobjectpublisher.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qmetaobjectpublisher_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannel.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannel.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannel_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannelabstracttransport.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannelabstracttransport.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/signalhandler_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannelglobal.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannel/qwebchannel.js
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannel-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /build_dir/qtwebchannel/src/webchannel/.qt/rcc/qrc_resources.cpp
+
+PackageName: WebChannelQuick
+SPDXID: SPDXRef-Package-qtwebchannel-qt-module-WebChannelQuick-b001ac2fcf23
+PackageDownloadLocation: git://code.qt.io/qt/qtwebchannel.git
+PackageVersion: 6.11.2
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qtwebchannel?library_name=WebChannelQuick#src/webchannelquick
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtwebchannel-WebChannelQuick?vcs_url=https://code.qt.io/qt/qtwebchannel.git&library_name=WebChannelQuick#src/webchannelquick
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: WebChannelQuick
+CMake exported target name: Qt6::WebChannelQuick
+Contained in CMake package: Qt6WebChannelQuick
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.11.2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtwebchannel:6.11.2:*:*:*:*:*:*:*
+PackageVerificationCode: 8ffa87f46bb625bec48f2473e6f05aa435af39b1
+FilesAnalyzed: true
+Relationship: SPDXRef-Package-qtwebchannel-b001ac2fcf23 CONTAINS SPDXRef-Package-qtwebchannel-qt-module-WebChannelQuick-b001ac2fcf23
+Relationship: SPDXRef-Package-qtwebchannel-qt-module-WebChannelQuick-b001ac2fcf23 DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-Core-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtwebchannel-qt-module-WebChannelQuick-b001ac2fcf23 DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-PlatformModuleInternal-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtwebchannel-qt-module-WebChannelQuick-b001ac2fcf23 DEPENDS_ON DocumentRef-qtdeclarative-02348e5f319e:SPDXRef-Package-qtdeclarative-qt-module-Qml-02348e5f319e
+Relationship: SPDXRef-Package-qtwebchannel-qt-module-WebChannelQuick-b001ac2fcf23 DEPENDS_ON SPDXRef-Package-qtwebchannel-qt-module-WebChannel-b001ac2fcf23
+
+FileName: ./lib/qt6/bin/Qt6WebChannelQuick.dll
+SPDXID: SPDXRef-PackagedFile-qt-module-WebChannelQuick-b001ac2fcf23
+FileType: BINARY
+FileChecksum: SHA1: 65888569ad58bad29a94493925de4df1ffc5651a
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtwebchannel-qt-module-WebChannelQuick-b001ac2fcf23 CONTAINS SPDXRef-PackagedFile-qt-module-WebChannelQuick-b001ac2fcf23
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannelquick/C:/bld/bld/rattler-build_qt6-main_1787049046/work/build/qtwebchannel/src/webchannelquick/WebChannelQuick_resource.rc
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: C:/bld/bld/rattler-build_qt6-main_1787049046/work/build/qtbase/include/QtWebChannelQuick/qtwebchannelquickexports.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannelquick/qqmlwebchannel.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannelquick/qqmlwebchannel.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannelquick/qqmlwebchannelattached_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannelquick/qqmlwebchannelattached.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannelquick/qwebchannelquickglobal.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /build_dir/qtwebchannel/src/webchannelquick/webchannelquick_qmltyperegistrations.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /build_dir/qtwebchannel/src/webchannelquick/.qt/rcc/qrc_qmake_QtWebChannel.cpp
+
+FileName: ./lib/Qt6WebChannelQuick.lib
+SPDXID: SPDXRef-PackagedFile-qt-module-WebChannelQuick-ImportLibrary-b001ac2fcf23
+FileType: BINARY
+FileChecksum: SHA1: acc216bf1e34ae5cc227063bc00bf519b44e30a6
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtwebchannel-qt-module-WebChannelQuick-b001ac2fcf23 CONTAINS SPDXRef-PackagedFile-qt-module-WebChannelQuick-ImportLibrary-b001ac2fcf23
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannelquick/C:/bld/bld/rattler-build_qt6-main_1787049046/work/build/qtwebchannel/src/webchannelquick/WebChannelQuick_resource.rc
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: C:/bld/bld/rattler-build_qt6-main_1787049046/work/build/qtbase/include/QtWebChannelQuick/qtwebchannelquickexports.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannelquick/qqmlwebchannel.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannelquick/qqmlwebchannel.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannelquick/qqmlwebchannelattached_p.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannelquick/qqmlwebchannelattached.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /src_dir/qtwebchannel/src/webchannelquick/qwebchannelquickglobal.h
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /build_dir/qtwebchannel/src/webchannelquick/webchannelquick_qmltyperegistrations.cpp
+Relationship: SPDXRef-PackagedFile-qt-module-WebChannelQuick-ImportLibrary-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /build_dir/qtwebchannel/src/webchannelquick/.qt/rcc/qrc_qmake_QtWebChannel.cpp
+
+PackageName: WebChannelQuickplugin
+SPDXID: SPDXRef-Package-qtwebchannel-qt-plugin-WebChannelQuickplugin-b001ac2fcf23
+PackageDownloadLocation: git://code.qt.io/qt/qtwebchannel.git
+PackageVersion: 6.11.2
+PackageSupplier: Organization: TheQtCompany
+PackageLicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+PackageLicenseDeclared: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+ExternalRef: PACKAGE-MANAGER purl pkg:github/qt/qtwebchannel?library_name=WebChannelQuickplugin#src/webchannelquick
+ExternalRef: PACKAGE-MANAGER purl pkg:generic/TheQtCompany/qtwebchannel-WebChannelQuickplugin?vcs_url=https://code.qt.io/qt/qtwebchannel.git&library_name=WebChannelQuickplugin#src/webchannelquick
+PackageCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+PrimaryPackagePurpose: LIBRARY
+PackageComment: <text>
+CMake target name: WebChannelQuickplugin
+</text>
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qt:6.11.2:*:*:*:*:*:*:*
+ExternalRef: SECURITY cpe23Type cpe:2.3:a:qt:qtwebchannel:6.11.2:*:*:*:*:*:*:*
+PackageVerificationCode: 679ec450e7c543b51c7a2d24e97721d4f1b7aeef
+FilesAnalyzed: true
+Relationship: SPDXRef-Package-qtwebchannel-b001ac2fcf23 CONTAINS SPDXRef-Package-qtwebchannel-qt-plugin-WebChannelQuickplugin-b001ac2fcf23
+Relationship: SPDXRef-Package-qtwebchannel-qt-plugin-WebChannelQuickplugin-b001ac2fcf23 DEPENDS_ON DocumentRef-qtbase-3e07b5e24bc8:SPDXRef-Package-qtbase-qt-module-PlatformPluginInternal-3e07b5e24bc8
+Relationship: SPDXRef-Package-qtwebchannel-qt-plugin-WebChannelQuickplugin-b001ac2fcf23 DEPENDS_ON DocumentRef-qtdeclarative-02348e5f319e:SPDXRef-Package-qtdeclarative-qt-module-Qml-02348e5f319e
+Relationship: SPDXRef-Package-qtwebchannel-qt-plugin-WebChannelQuickplugin-b001ac2fcf23 DEPENDS_ON SPDXRef-Package-qtwebchannel-qt-module-WebChannelQuick-b001ac2fcf23
+
+FileName: ./lib/qt6/qml/QtWebChannel/webchannelquickplugin.dll
+SPDXID: SPDXRef-PackagedFile-qt-plugin-WebChannelQuickplugin-b001ac2fcf23
+FileType: BINARY
+FileChecksum: SHA1: 5c96ab3826de185da79ad6b1f36db78a8a673a18
+LicenseConcluded: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+FileCopyrightText: <text>Copyright (C) The Qt Company Ltd. and other contributors.</text>
+LicenseInfoInFile: NOASSERTION
+Relationship: SPDXRef-Package-qtwebchannel-qt-plugin-WebChannelQuickplugin-b001ac2fcf23 CONTAINS SPDXRef-PackagedFile-qt-plugin-WebChannelQuickplugin-b001ac2fcf23
+Relationship: SPDXRef-PackagedFile-qt-plugin-WebChannelQuickplugin-b001ac2fcf23 GENERATED_FROM NOASSERTION
+RelationshipComment: /build_dir/qtwebchannel/src/webchannelquick/WebChannelQuickplugin_QtWebChannelPlugin.cpp
+
+PackageName: CMake
+SPDXID: SPDXRef-Package-qtwebchannel-system-build-tool-CMake-b001ac2fcf23
+PackageDownloadLocation: NOASSERTION
+PackageVersion: 4.4.2
+PackageSupplier: Person: Anonymous
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PrimaryPackagePurpose: OTHER
+PackageComment: <text>
+CMake target name: qtwebchannelSbomBuildToolCMake
+</text>
+FilesAnalyzed: false
+
+
+PackageName: CMake generator Ninja
+SPDXID: SPDXRef-Package-qtwebchannel-system-build-tool-CMake-generator-Ninja-b001ac2fcf23
+PackageDownloadLocation: NOASSERTION
+PackageVersion: 1.13.2
+PackageSupplier: Person: Anonymous
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PrimaryPackagePurpose: OTHER
+PackageComment: <text>
+CMake target name: qtwebchannelSbomBuildToolCMakeGenerator
+</text>
+FilesAnalyzed: false
+
+
+PackageName: Compiler MSVC
+SPDXID: SPDXRef-Package-qtwebchannel-system-build-tool-Compiler-MSVC-b001ac2fcf23
+PackageDownloadLocation: NOASSERTION
+PackageVersion: 19.44.35228.0
+PackageSupplier: Person: Anonymous
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageSummary: <text>The compiler as identified by CMake, running on 'Windows' (AMD64)</text>
+PrimaryPackagePurpose: OTHER
+PackageComment: <text>
+CMake target name: qtwebchannelSbomBuildToolCompiler
+</text>
+FilesAnalyzed: false
+
+
+PackageName: Linker MSVC
+SPDXID: SPDXRef-Package-qtwebchannel-system-build-tool-Linker-MSVC-b001ac2fcf23
+PackageDownloadLocation: NOASSERTION
+PackageVersion: 14.44.35228.0
+PackageSupplier: Person: Anonymous
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PrimaryPackagePurpose: OTHER
+PackageComment: <text>
+CMake target name: qtwebchannelSbomBuildToolLinker
+</text>
+FilesAnalyzed: false
+
+
+LicenseID: LicenseRef-Qt-Commercial
+ExtractedText: <text>Licensees holding valid commercial Qt licenses may use this software in
+accordance with the the terms contained in a written agreement between
+you and The Qt Company. Alternatively, the terms and conditions that were
+accepted by the licensee when buying and/or downloading the
+software do apply.
+
+For the latest licensing terms and conditions, see https://www.qt.io/terms-conditions.
+For further information use the contact form at https://www.qt.io/contact-us.
+</text>

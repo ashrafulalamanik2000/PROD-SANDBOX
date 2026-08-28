@@ -1,0 +1,1 @@
+#include <QtQuick/qquickframebufferobject.h> // IWYU pragma: export

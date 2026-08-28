@@ -1,0 +1,12 @@
+prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libbrotlienc
+URL: https://github.com/google/brotli
+Description: Brotli encoder library
+Version: 1.2.0
+Libs: -L${libdir} -lbrotlienc
+Requires.private: libbrotlicommon >= 1.2.0
+Cflags: -I${includedir}

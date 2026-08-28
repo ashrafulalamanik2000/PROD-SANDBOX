@@ -1,0 +1,20 @@
+#ifndef QT_QTHELP_MODULE_H
+#define QT_QTHELP_MODULE_H
+#include <QtHelp/QtHelpDepends>
+#include <QtHelp/qcompressedhelpinfo.h>
+#include <QtHelp/qhelpcontentitem.h>
+#include <QtHelp/qhelpcontentwidget.h>
+#include <QtHelp/qhelpengine.h>
+#include <QtHelp/qhelpenginecore.h>
+#include <QtHelp/qhelpfilterdata.h>
+#include <QtHelp/qhelpfilterengine.h>
+#include <QtHelp/qhelpfiltersettingswidget.h>
+#include <QtHelp/qhelpindexwidget.h>
+#include <QtHelp/qhelplink.h>
+#include <QtHelp/qhelpsearchengine.h>
+#include <QtHelp/qhelpsearchenginecore.h>
+#include <QtHelp/qhelpsearchquerywidget.h>
+#include <QtHelp/qhelpsearchresult.h>
+#include <QtHelp/qhelpsearchresultwidget.h>
+#include <QtHelp/qthelpversion.h>
+#endif

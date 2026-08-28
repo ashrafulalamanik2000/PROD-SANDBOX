@@ -1,0 +1,6 @@
+#ifndef QT_QTQUICKSHAPES_MODULE_H
+#define QT_QTQUICKSHAPES_MODULE_H
+#include <QtQuickShapes/QtQuickShapesDepends>
+#include <QtQuickShapes/qquickshapesglobal.h>
+#include <QtQuickShapes/qtquickshapesversion.h>
+#endif

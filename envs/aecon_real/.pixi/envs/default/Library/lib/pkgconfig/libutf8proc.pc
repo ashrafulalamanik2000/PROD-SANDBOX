@@ -1,0 +1,10 @@
+prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/bin
+libdir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/include
+
+Name: libutf8proc
+Description: UTF8 processing
+Version: 2.11.3
+Libs: -L${libdir} -lutf8proc
+Cflags: -I${includedir} -DUTF8PROC_EXPORTS

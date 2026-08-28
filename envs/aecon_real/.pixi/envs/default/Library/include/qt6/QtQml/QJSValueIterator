@@ -1,0 +1,1 @@
+#include <QtQml/qjsvalueiterator.h> // IWYU pragma: export

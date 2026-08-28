@@ -1,0 +1,280 @@
+[
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "ItemSpy"
+                    }
+                ],
+                "className": "QQuickItemSpy",
+                "lineNumber": 24,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "lineNumber": 29,
+                        "name": "requiredTextureSize",
+                        "notify": "requiredTextureSizeChanged",
+                        "override": false,
+                        "read": "requiredTextureSize",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QSizeF",
+                        "user": false,
+                        "virtual": false
+                    }
+                ],
+                "qualifiedClassName": "QQuickItemSpy",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 40,
+                        "name": "requiredTextureSizeChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickItem"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickitemspy_p.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "PathInterpolated"
+                    },
+                    {
+                        "name": "QML.AddedInVersion",
+                        "value": "1547"
+                    }
+                ],
+                "className": "QQuickPathInterpolated",
+                "lineNumber": 24,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 27,
+                        "name": "factor",
+                        "notify": "factorChanged",
+                        "override": false,
+                        "read": "factor",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setFactor"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 28,
+                        "name": "svgPaths",
+                        "notify": "svgPathsChanged",
+                        "override": false,
+                        "read": "svgPaths",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QStringList",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setSvgPaths"
+                    }
+                ],
+                "qualifiedClassName": "QQuickPathInterpolated",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 42,
+                        "name": "factorChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "lineNumber": 43,
+                        "name": "svgPathsChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickCurve"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickpathinterpolated_p.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "TransformGroup"
+                    },
+                    {
+                        "name": "DefaultProperty",
+                        "value": "transformSequence"
+                    }
+                ],
+                "className": "QQuickTransformGroup",
+                "lineNumber": 26,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QQuickTransform*"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 38,
+                        "name": "activateOverride",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QQuickTransform*"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 39,
+                        "name": "deactivateOverride",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "type": "QQuickTransform*"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 40,
+                        "name": "deactivate",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 31,
+                        "name": "transformSequence",
+                        "override": false,
+                        "read": "transformSequence",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QQmlListProperty<QQuickTransform>",
+                        "user": false,
+                        "virtual": false
+                    }
+                ],
+                "qualifiedClassName": "QQuickTransformGroup",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickTransform"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquicktransformgroup_p.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "classInfos": [
+                    {
+                        "name": "QML.Element",
+                        "value": "ColorOpacityAnimation"
+                    }
+                ],
+                "className": "QQuickColorOpacityAnimation",
+                "lineNumber": 23,
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "lineNumber": 28,
+                        "name": "from",
+                        "override": true,
+                        "read": "from",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setFrom"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "lineNumber": 29,
+                        "name": "to",
+                        "override": true,
+                        "read": "to",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "qreal",
+                        "user": false,
+                        "virtual": false,
+                        "write": "setTo"
+                    }
+                ],
+                "qualifiedClassName": "QQuickColorOpacityAnimation",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QQuickPropertyAnimation"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "qquickcoloropacityanimation_p.h",
+        "outputRevision": 69
+    }
+]
