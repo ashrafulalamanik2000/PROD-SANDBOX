@@ -1,0 +1,15 @@
+# Copyright The OpenTelemetry Authors
+# SPDX-License-Identifier: Apache-2.0
+
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenTelemetry Exporter - OStream Logs
+Description: Exports log records to output stream.
+Requires: opentelemetry_logs
+Version: 1.27.0
+
+Libs: -L${libdir} -lopentelemetry_exporter_ostream_logs
+Cflags: -I${includedir} 

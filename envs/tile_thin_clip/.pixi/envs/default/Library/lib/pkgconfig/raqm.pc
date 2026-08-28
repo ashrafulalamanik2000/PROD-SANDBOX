@@ -1,0 +1,12 @@
+prefix=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: raqm
+Description: A library for complex text layout
+URL: https://github.com/HOST-Oman/libraqm
+Version: 0.11.0
+Requires.private: harfbuzz >=  3.0.0, fribidi >=  1.0.6
+Libs: -L${libdir} -lraqm
+Libs.private: C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/lib/freetype.lib
+Cflags: -I${includedir}

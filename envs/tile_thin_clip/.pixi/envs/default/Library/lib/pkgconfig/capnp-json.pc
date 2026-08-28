@@ -1,0 +1,11 @@
+prefix=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library
+exec_prefix=
+libdir=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/include
+
+Name: Cap'n Proto JSON
+Description: JSON encoder and decoder for Cap'n Proto objects
+Version: 1.5.0
+Libs: -L${libdir} -lcapnp-json
+Requires: capnp = 1.5.0 kj = 1.5.0
+Cflags: -I${includedir}

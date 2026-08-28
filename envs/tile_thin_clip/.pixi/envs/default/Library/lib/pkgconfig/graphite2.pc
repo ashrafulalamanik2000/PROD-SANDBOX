@@ -1,0 +1,11 @@
+prefix=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library
+libdir=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/include
+
+Name: Graphite2
+Description: Font rendering engine for Complex Scripts
+Version: 3.3.1
+Libs: -LC:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/lib -lgraphite2
+Cflags: -IC:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/include
+

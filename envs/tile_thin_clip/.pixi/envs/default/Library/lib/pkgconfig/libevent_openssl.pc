@@ -1,0 +1,16 @@
+#libevent pkg-config source file
+
+prefix=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library
+libdir=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/include
+
+Name: libevent_openssl
+Description: libevent_openssl adds openssl-based TLS support to libevent
+Version: 2.1.12
+Requires: libevent
+Conflicts:
+Libs: -L${libdir} -levent_openssl
+Libs.private:  -Lws2_32 -Lshell32 -Ladvapi32  -Loptimized -LC:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/lib/libssl.lib -Ldebug -LC:/Program Files/OpenSSL/lib/VC/libssl64MDd.lib -Loptimized -LC:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/lib/libcrypto.lib -Ldebug -LC:/Program Files/OpenSSL/lib/VC/libcrypto64MDd.lib
+Cflags: -I${includedir} 
+

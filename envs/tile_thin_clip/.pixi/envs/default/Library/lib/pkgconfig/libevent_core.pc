@@ -1,0 +1,16 @@
+#libevent pkg-config source file
+
+prefix=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library
+libdir=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/include
+
+Name: libevent_core
+Description: libevent_core
+Version: 2.1.12
+Requires:
+Conflicts:
+Libs: -L${libdir} -levent_core
+Libs.private:  -Lws2_32 -Lshell32 -Ladvapi32
+Cflags: -I${includedir}
+

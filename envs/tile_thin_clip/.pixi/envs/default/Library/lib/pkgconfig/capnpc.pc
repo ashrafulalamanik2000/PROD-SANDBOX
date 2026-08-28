@@ -1,0 +1,12 @@
+prefix=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library
+exec_prefix=
+libdir=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/include
+
+Name: Cap'n Proto
+Description: Insanely fast serialization system compiler library
+Version: 1.5.0
+Libs: -L${libdir} -lcapnpc   
+Libs.private: 
+Requires: kj = 1.5.0
+Cflags: -I${includedir}   

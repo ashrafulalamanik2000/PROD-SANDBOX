@@ -1,0 +1,11 @@
+prefix=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library
+exec_prefix=
+libdir=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library/include
+
+Name: KJ Test Framework
+Description: Basic utility library called KJ (test part)
+Version: 1.5.0
+Libs: -L${libdir} -lkj-test   
+Requires: kj = 1.5.0
+Cflags: -I${includedir}   

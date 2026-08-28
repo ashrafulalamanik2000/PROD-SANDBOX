@@ -1,0 +1,15 @@
+# Copyright The OpenTelemetry Authors
+# SPDX-License-Identifier: Apache-2.0
+
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenTelemetry Exporter - In-Memory Metric
+Description: In-memory metric exporter for testing and debugging.
+Requires: opentelemetry_metrics
+Version: 1.27.0
+
+Libs: -L${libdir} -lopentelemetry_exporter_in_memory_metric
+Cflags: -I${includedir} 

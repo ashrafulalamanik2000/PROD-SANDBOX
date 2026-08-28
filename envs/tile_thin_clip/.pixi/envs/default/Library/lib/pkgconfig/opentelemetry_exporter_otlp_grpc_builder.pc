@@ -1,0 +1,15 @@
+# Copyright The OpenTelemetry Authors
+# SPDX-License-Identifier: Apache-2.0
+
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenTelemetry OTLP - gRPC Span Builder
+Description: Builder for OTLP gRPC span exporter.
+Requires: opentelemetry_exporter_otlp_grpc opentelemetry_exporter_otlp_builder_utils
+Version: 1.27.0
+
+Libs: -L${libdir} -lopentelemetry_exporter_otlp_grpc_builder
+Cflags: -I${includedir} 

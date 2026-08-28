@@ -1,0 +1,12 @@
+prefix=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/tile_thin_clip/.pixi/envs/default/Library
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libbrotlidec
+URL: https://github.com/google/brotli
+Description: Brotli decoder library
+Version: 1.2.0
+Libs: -L${libdir} -lbrotlidec
+Requires.private: libbrotlicommon >= 1.2.0
+Cflags: -I${includedir}
