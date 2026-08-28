@@ -1,0 +1,196 @@
+{
+  "arch": "x86_64",
+  "build": "hf9fdf8e_2",
+  "build_number": 2,
+  "depends": [
+    "azure-core-cpp >=1.16.3,<1.16.4.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "d1842ddabf2087c50e5305fc4f613cec",
+  "name": "azure-identity-cpp",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "azure-identity-cpp >=1.13.3,<1.13.4.0a0"
+    ]
+  },
+  "sha256": "a7809dbee931b757c7b4a3c5c9fa9fd6a7e7648e02e98216d97097364eadf1f9",
+  "size": 425897,
+  "subdir": "win-64",
+  "timestamp": 1781268289981,
+  "version": "1.13.3",
+  "fn": "azure-identity-cpp-1.13.3-hf9fdf8e_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/azure-identity-cpp-1.13.3-hf9fdf8e_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\azure-identity-cpp-1.13.3-hf9fdf8e_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/azure-identity.dll",
+    "Library/include/azure/identity/azure_cli_credential.hpp",
+    "Library/include/azure/identity/azure_pipelines_credential.hpp",
+    "Library/include/azure/identity/chained_token_credential.hpp",
+    "Library/include/azure/identity/client_assertion_credential.hpp",
+    "Library/include/azure/identity/client_certificate_credential.hpp",
+    "Library/include/azure/identity/client_secret_credential.hpp",
+    "Library/include/azure/identity/default_azure_credential.hpp",
+    "Library/include/azure/identity/detail/client_credential_core.hpp",
+    "Library/include/azure/identity/detail/token_cache.hpp",
+    "Library/include/azure/identity/dll_import_export.hpp",
+    "Library/include/azure/identity/environment_credential.hpp",
+    "Library/include/azure/identity/managed_identity_credential.hpp",
+    "Library/include/azure/identity/rtti.hpp",
+    "Library/include/azure/identity/workload_identity_credential.hpp",
+    "Library/include/azure/identity.hpp",
+    "Library/lib/azure-identity.lib",
+    "Library/share/azure-identity-cpp/azure-identity-cppConfig.cmake",
+    "Library/share/azure-identity-cpp/azure-identity-cppConfigVersion.cmake",
+    "Library/share/azure-identity-cpp/azure-identity-cppTargets-release.cmake",
+    "Library/share/azure-identity-cpp/azure-identity-cppTargets.cmake",
+    "Library/share/azure-identity-cpp/copyright"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/azure-identity.dll",
+        "path_type": "hardlink",
+        "sha256": "5d96eb0985f07f26f3f8446b01870828c30023839d8895c72732872d674bd5de",
+        "size_in_bytes": 1737728
+      },
+      {
+        "_path": "Library/include/azure/identity/azure_cli_credential.hpp",
+        "path_type": "hardlink",
+        "sha256": "ff6f9b063bcdda868c11672b0cc2fde95a0b28abd78d5ba6c4abbe627fcc3183",
+        "size_in_bytes": 4217
+      },
+      {
+        "_path": "Library/include/azure/identity/azure_pipelines_credential.hpp",
+        "path_type": "hardlink",
+        "sha256": "206d4a5e9315967c38dcceb459e454c2aeed9e0143db9a9428d80e21a8d1bb76",
+        "size_in_bytes": 4016
+      },
+      {
+        "_path": "Library/include/azure/identity/chained_token_credential.hpp",
+        "path_type": "hardlink",
+        "sha256": "0239539c0185975434194df4ebdf8be5e96e30268744dc99eecb74338982677c",
+        "size_in_bytes": 1880
+      },
+      {
+        "_path": "Library/include/azure/identity/client_assertion_credential.hpp",
+        "path_type": "hardlink",
+        "sha256": "feb75f78d0e9f7dc2462917cf91a0eaf49160c4963d159355bb3f4cf3b4e169a",
+        "size_in_bytes": 3570
+      },
+      {
+        "_path": "Library/include/azure/identity/client_certificate_credential.hpp",
+        "path_type": "hardlink",
+        "sha256": "4d9b613cd390591ee621082fb87a71628a37d22d8cb9fa25e3696b3a9c0313ed",
+        "size_in_bytes": 6826
+      },
+      {
+        "_path": "Library/include/azure/identity/client_secret_credential.hpp",
+        "path_type": "hardlink",
+        "sha256": "ffd57baea3cf04508b8fcf47170b7598f2a1a940891a1475ad29bff8e05e95a7",
+        "size_in_bytes": 4063
+      },
+      {
+        "_path": "Library/include/azure/identity/default_azure_credential.hpp",
+        "path_type": "hardlink",
+        "sha256": "d621b90b0ec774e56cbd153c33a001847ab4521319d12daa4e4bfce5970ebd62",
+        "size_in_bytes": 3349
+      },
+      {
+        "_path": "Library/include/azure/identity/detail/client_credential_core.hpp",
+        "path_type": "hardlink",
+        "sha256": "623fa7101caa024602f13d9f5ae2fba75ca7879644b91aecff2a620d9524db2e",
+        "size_in_bytes": 2526
+      },
+      {
+        "_path": "Library/include/azure/identity/detail/token_cache.hpp",
+        "path_type": "hardlink",
+        "sha256": "e276ba220b1eba1352df5d44926030d561c98af241f3481f4a875e20c07daedd",
+        "size_in_bytes": 2998
+      },
+      {
+        "_path": "Library/include/azure/identity/dll_import_export.hpp",
+        "path_type": "hardlink",
+        "sha256": "1891567959e6866481be6d96868117c05038e9a0a6ab370db40030b2880e0a8f",
+        "size_in_bytes": 1218
+      },
+      {
+        "_path": "Library/include/azure/identity/environment_credential.hpp",
+        "path_type": "hardlink",
+        "sha256": "6b6761778656d74ca68ee42c7cb167992dc75d107affc8106eea153d57120a9f",
+        "size_in_bytes": 2730
+      },
+      {
+        "_path": "Library/include/azure/identity/managed_identity_credential.hpp",
+        "path_type": "hardlink",
+        "sha256": "4953df42b36c7f2182eb7e861ab51a610fa1f20465ff5e9374fdf9765abef9ce",
+        "size_in_bytes": 8078
+      },
+      {
+        "_path": "Library/include/azure/identity/rtti.hpp",
+        "path_type": "hardlink",
+        "sha256": "208c44dd21ceb712e877fc0233b345a58caef491b337f64de5a80e689c9ec1de",
+        "size_in_bytes": 1326
+      },
+      {
+        "_path": "Library/include/azure/identity/workload_identity_credential.hpp",
+        "path_type": "hardlink",
+        "sha256": "f2c4dea53346a8d466f367b4e16fd641d2894af39ead66a8e494f8b459102f58",
+        "size_in_bytes": 4150
+      },
+      {
+        "_path": "Library/include/azure/identity.hpp",
+        "path_type": "hardlink",
+        "sha256": "d27be6649ba0763098a2268021b30031a51ac991963575e3659733ccba3d1509",
+        "size_in_bytes": 817
+      },
+      {
+        "_path": "Library/lib/azure-identity.lib",
+        "path_type": "hardlink",
+        "sha256": "732d20350aa5c3e11e938dfc6f493e03f63c809ffdfb54b0bda0aaeb43b03279",
+        "size_in_bytes": 6103844
+      },
+      {
+        "_path": "Library/share/azure-identity-cpp/azure-identity-cppConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "d77474accab3f328dde55081950c000d2f3828d87ef81af6362c156b3af08d46",
+        "size_in_bytes": 1316
+      },
+      {
+        "_path": "Library/share/azure-identity-cpp/azure-identity-cppConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "7f8fa2d55763f37a1004be3ac23c3e804fef849b6e58e6280e872db3031de95a",
+        "size_in_bytes": 2830
+      },
+      {
+        "_path": "Library/share/azure-identity-cpp/azure-identity-cppTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "a2a9d1dbd8ae3dbbd111c317659093928c91c43a498a3643f230dca0fa607297",
+        "size_in_bytes": 973
+      },
+      {
+        "_path": "Library/share/azure-identity-cpp/azure-identity-cppTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "f63479151ad2646e4f9c80c0d3fbf41c0cc5a6f4aa9884923bc2cffcb55dea24",
+        "size_in_bytes": 4333
+      },
+      {
+        "_path": "Library/share/azure-identity-cpp/copyright",
+        "path_type": "hardlink",
+        "sha256": "9906940f61b1f0b533fa7d99baf55178b2808fbe113ea51dfbfad8572ccd5f2b",
+        "size_in_bytes": 1162
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\azure-identity-cpp-1.13.3-hf9fdf8e_2",
+    "type": 1
+  }
+}

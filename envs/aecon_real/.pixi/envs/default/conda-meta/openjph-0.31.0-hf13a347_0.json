@@ -1,0 +1,178 @@
+{
+  "arch": "x86_64",
+  "build": "hf13a347_0",
+  "build_number": 0,
+  "depends": [
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "libtiff >=4.7.2,<4.8.0a0"
+  ],
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "md5": "2f8560599ae249579d698f80d48df455",
+  "name": "openjph",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "openjph >=0.31.0,<0.32.0a0"
+    ]
+  },
+  "sha256": "37a5104c0adb4bbdccc856dd9458c631fc260da4ba1aaced3fb27b4a08a0c341",
+  "size": 227064,
+  "subdir": "win-64",
+  "timestamp": 1785149907905,
+  "version": "0.31.0",
+  "fn": "openjph-0.31.0-hf13a347_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/openjph-0.31.0-hf13a347_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\openjph-0.31.0-hf13a347_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/ojph_compress.exe",
+    "Library/bin/ojph_expand.exe",
+    "Library/bin/openjph.dll",
+    "Library/include/openjph/ojph_arch.h",
+    "Library/include/openjph/ojph_arg.h",
+    "Library/include/openjph/ojph_base.h",
+    "Library/include/openjph/ojph_codestream.h",
+    "Library/include/openjph/ojph_defs.h",
+    "Library/include/openjph/ojph_file.h",
+    "Library/include/openjph/ojph_mem.h",
+    "Library/include/openjph/ojph_message.h",
+    "Library/include/openjph/ojph_params.h",
+    "Library/include/openjph/ojph_version.h",
+    "Library/lib/cmake/openjph/openjph-config-version.cmake",
+    "Library/lib/cmake/openjph/openjph-config.cmake",
+    "Library/lib/cmake/openjph/openjph-targets-release.cmake",
+    "Library/lib/cmake/openjph/openjph-targets.cmake",
+    "Library/lib/openjph.lib",
+    "Library/lib/pkgconfig/openjph.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/ojph_compress.exe",
+        "path_type": "hardlink",
+        "sha256": "522ea3dbfeac1e42b9e8c817f8cee9e82dcce617e4c2b8d7666841bce485fb5a",
+        "size_in_bytes": 74240
+      },
+      {
+        "_path": "Library/bin/ojph_expand.exe",
+        "path_type": "hardlink",
+        "sha256": "3a7d6c1273619fc1953623b527ae96fe5fe860bc0e1d3e1315d3466bb5f54898",
+        "size_in_bytes": 45056
+      },
+      {
+        "_path": "Library/bin/openjph.dll",
+        "path_type": "hardlink",
+        "sha256": "77a805c39a4057939dfa655d77639be9a30465373b9ada4e70d56e98eb95eebf",
+        "size_in_bytes": 356352
+      },
+      {
+        "_path": "Library/include/openjph/ojph_arch.h",
+        "path_type": "hardlink",
+        "sha256": "81952bc98cfcf0b3dbe35466bf34b5ae9cad3509fa65f342228a9fbfbf9b18a9",
+        "size_in_bytes": 16820
+      },
+      {
+        "_path": "Library/include/openjph/ojph_arg.h",
+        "path_type": "hardlink",
+        "sha256": "cdb40fba261b621d3b582c646e020b0d60c26391bf86ba9fa20c30dd1719377d",
+        "size_in_bytes": 8808
+      },
+      {
+        "_path": "Library/include/openjph/ojph_base.h",
+        "path_type": "hardlink",
+        "sha256": "c096ac696e18f11971fc9436363aedce27c23f4a4491753d3f2ce8c7deaceca3",
+        "size_in_bytes": 2891
+      },
+      {
+        "_path": "Library/include/openjph/ojph_codestream.h",
+        "path_type": "hardlink",
+        "sha256": "b4793dc3aa15c45ccc4fc46334aea1057f1c16ccd0ce7fa4d5182c66d6c82682",
+        "size_in_bytes": 15640
+      },
+      {
+        "_path": "Library/include/openjph/ojph_defs.h",
+        "path_type": "hardlink",
+        "sha256": "3c93de27665c314635be569d527d1fd5e9653ad91585e637bdc4409c1d7e3adc",
+        "size_in_bytes": 3256
+      },
+      {
+        "_path": "Library/include/openjph/ojph_file.h",
+        "path_type": "hardlink",
+        "sha256": "6d5bc480982a12093f94643fb93336b149780fa41a1a4a47ff13bd6bfdbda88d",
+        "size_in_bytes": 10908
+      },
+      {
+        "_path": "Library/include/openjph/ojph_mem.h",
+        "path_type": "hardlink",
+        "sha256": "42f4cdba5e6c890700afda9bd7c33427fbf8a2f3e77c2635d29439746fcac4eb",
+        "size_in_bytes": 8798
+      },
+      {
+        "_path": "Library/include/openjph/ojph_message.h",
+        "path_type": "hardlink",
+        "sha256": "ecf8b79547dcf1f5124741c3df57233d39ecf4b0e926c1ddab11795d18f56e33",
+        "size_in_bytes": 11319
+      },
+      {
+        "_path": "Library/include/openjph/ojph_params.h",
+        "path_type": "hardlink",
+        "sha256": "36502fd4f847bbd5ba5d71b8738242ffc683bbd5c16f4f66914c557462bcf048",
+        "size_in_bytes": 14134
+      },
+      {
+        "_path": "Library/include/openjph/ojph_version.h",
+        "path_type": "hardlink",
+        "sha256": "222fc1afe945b74fe11fdad49af47bbb3b95b5b0e72aa76b6f82c58af4a261e8",
+        "size_in_bytes": 1962
+      },
+      {
+        "_path": "Library/lib/cmake/openjph/openjph-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "37bab1b5aebabd3c8d0cbbcdb462e5deba83a3e2a4cb791ec72322e23da1782e",
+        "size_in_bytes": 3763
+      },
+      {
+        "_path": "Library/lib/cmake/openjph/openjph-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "ead801a7ddd3c2c086109751ee8550d53c4d095b63ac92873d0a45c28d8029a2",
+        "size_in_bytes": 1006
+      },
+      {
+        "_path": "Library/lib/cmake/openjph/openjph-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "a5aa347845974ad3307130460a17b4541dd937e441a254f47cb73bb8482dd9d4",
+        "size_in_bytes": 875
+      },
+      {
+        "_path": "Library/lib/cmake/openjph/openjph-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "faf6b22af4a1b6250f7ecd879ce308eeb01e98fb6749e1eb8027680860fb8ec6",
+        "size_in_bytes": 4251
+      },
+      {
+        "_path": "Library/lib/openjph.lib",
+        "path_type": "hardlink",
+        "sha256": "ed4aafe9eea81fb1fee3d4e634bf4b751882a44c07b0889719e95a66c436bdfa",
+        "size_in_bytes": 66748
+      },
+      {
+        "_path": "Library/lib/pkgconfig/openjph.pc",
+        "path_type": "hardlink",
+        "sha256": "cb44015f4e34b8d241b2542d58328324f7052884e547e92de77dbd0ac4bcd7de",
+        "sha256_in_prefix": "b50c314a935a4aded050004327a38c5056dd91dfcd70cba2192cf133f67f5e2a",
+        "size_in_bytes": 285,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_openjph_1785149907/h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\openjph-0.31.0-hf13a347_0",
+    "type": 1
+  }
+}

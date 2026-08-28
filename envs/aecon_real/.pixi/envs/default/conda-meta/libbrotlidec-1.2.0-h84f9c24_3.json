@@ -1,0 +1,66 @@
+{
+  "arch": "x86_64",
+  "build": "h84f9c24_3",
+  "build_number": 3,
+  "depends": [
+    "libbrotlicommon 1.2.0 hf02afa3_3",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "10c479888ee4e960587967b2d0c8143a",
+  "name": "libbrotlidec",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libbrotlidec >=1.2.0,<1.3.0a0"
+    ]
+  },
+  "sha256": "f4bdb7ec97c3122e531fc867efae5ec928b649d047aa70d42893f0d8eb110fd9",
+  "size": 34788,
+  "subdir": "win-64",
+  "timestamp": 1786622843818,
+  "version": "1.2.0",
+  "fn": "libbrotlidec-1.2.0-h84f9c24_3.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libbrotlidec-1.2.0-h84f9c24_3.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libbrotlidec-1.2.0-h84f9c24_3",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/brotlidec.dll",
+    "Library/lib/brotlidec.lib",
+    "Library/lib/pkgconfig/libbrotlidec.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/brotlidec.dll",
+        "path_type": "hardlink",
+        "sha256": "65541058df636d7856ad6741658ceef9001d907cf45ae67eeecf285322100485",
+        "size_in_bytes": 52224
+      },
+      {
+        "_path": "Library/lib/brotlidec.lib",
+        "path_type": "hardlink",
+        "sha256": "5b53111882e9eb05d1b903406717e71d6c9bf907866175eb3082cced131215a3",
+        "size_in_bytes": 5110
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libbrotlidec.pc",
+        "path_type": "hardlink",
+        "sha256": "5c198873ccd221d59d89cde1728e3bf93b3feec960746df54d800ee5a14aa593",
+        "sha256_in_prefix": "ac45a51d3b6843192ac24d975c073176503c369b5c1b1a2bbdef2fcbc9a06212",
+        "size_in_bytes": 395,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/brotli-split_1786622632121/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libbrotlidec-1.2.0-h84f9c24_3",
+    "type": 1
+  }
+}

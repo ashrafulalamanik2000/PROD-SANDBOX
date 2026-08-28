@@ -1,0 +1,69 @@
+{
+  "build": "pyhd8ed1ab_1",
+  "build_number": 1,
+  "depends": [
+    "python >=3.9"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "md5": "37293a85a0f4f77bbd9cf7aaefc62609",
+  "name": "munkres",
+  "noarch": "python",
+  "run_exports": {},
+  "sha256": "d09c47c2cf456de5c09fa66d2c3c5035aa1fa228a1983a433c47b876aa16ce90",
+  "size": 15851,
+  "subdir": "noarch",
+  "timestamp": 1749895533014,
+  "version": "1.1.4",
+  "fn": "munkres-1.1.4-pyhd8ed1ab_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/munkres-1.1.4-pyhd8ed1ab_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\munkres-1.1.4-pyhd8ed1ab_1",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/munkres-1.1.4-py3.9.egg-info/PKG-INFO",
+    "Lib/site-packages/munkres-1.1.4-py3.9.egg-info/SOURCES.txt",
+    "Lib/site-packages/munkres-1.1.4-py3.9.egg-info/dependency_links.txt",
+    "Lib/site-packages/munkres-1.1.4-py3.9.egg-info/top_level.txt",
+    "Lib/site-packages/munkres.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/munkres-1.1.4-py3.9.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "6692ce9bce7f1420a3e5dfb79644d0c98775f25172e483ab759b2d2186194bec",
+        "size_in_bytes": 1173
+      },
+      {
+        "_path": "Lib/site-packages/munkres-1.1.4-py3.9.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "1ba6a775bcb481361521f94dc86d763454c3c4e3c3544b841c14646038cab975",
+        "size_in_bytes": 235
+      },
+      {
+        "_path": "Lib/site-packages/munkres-1.1.4-py3.9.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "Lib/site-packages/munkres-1.1.4-py3.9.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "9c8de01fc32b5e0ba5eab8ebcfb9b1da1b6a92a8edb3e09c2f7710c029bc98de",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "Lib/site-packages/munkres.py",
+        "path_type": "hardlink",
+        "sha256": "5653f10006d833bbe29f298bd673bf5b32a4eef0b179df5ae28f97a2d21ca551",
+        "size_in_bytes": 19406
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\munkres-1.1.4-pyhd8ed1ab_1",
+    "type": 1
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "arch": "x86_64",
+  "build": "h477610d_2",
+  "build_number": 2,
+  "constrains": [
+    "libvulkan-headers 1.4.357.0.*"
+  ],
+  "depends": [
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0"
+  ],
+  "license": "Apache-2.0",
+  "md5": "aaeed7feddbfd7454f8853a5eae8d902",
+  "name": "libvulkan-loader",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libvulkan-loader >=1.4.357.0,<2.0a0"
+    ]
+  },
+  "sha256": "4b094443126c5fc38d200eb0ea335b67e64d966d7aa737bb3141217a787b0c73",
+  "size": 288787,
+  "subdir": "win-64",
+  "timestamp": 1787491929908,
+  "version": "1.4.357.0",
+  "fn": "libvulkan-loader-1.4.357.0-h477610d_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libvulkan-loader-1.4.357.0-h477610d_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libvulkan-loader-1.4.357.0-h477610d_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/vulkan-1.dll",
+    "Library/lib/cmake/VulkanLoader/VulkanLoaderConfig-release.cmake",
+    "Library/lib/cmake/VulkanLoader/VulkanLoaderConfig.cmake",
+    "Library/lib/cmake/VulkanLoader/VulkanLoaderConfigVersion.cmake",
+    "Library/lib/pkgconfig/vulkan.pc",
+    "Library/lib/vulkan-1.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/vulkan-1.dll",
+        "path_type": "hardlink",
+        "sha256": "8878cdc6e7656fd8c81135eaf546ce97a4dab8e75b2023bc28fb97a33c2d96f8",
+        "size_in_bytes": 801792
+      },
+      {
+        "_path": "Library/lib/cmake/VulkanLoader/VulkanLoaderConfig-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "d5a3ec13d713efa34a36e4299ee34f9f0dbe533427799a4ef68943b97c2bfd9d",
+        "size_in_bytes": 914
+      },
+      {
+        "_path": "Library/lib/cmake/VulkanLoader/VulkanLoaderConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "7748421c49d1367ac839ee9d9b481cfb14716d2527bfd16d00f346f630712b37",
+        "size_in_bytes": 4111
+      },
+      {
+        "_path": "Library/lib/cmake/VulkanLoader/VulkanLoaderConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "33e97c8821df9adda5d11d1333ad2c100561369c49185839a11df2e08f234e27",
+        "size_in_bytes": 2833
+      },
+      {
+        "_path": "Library/lib/pkgconfig/vulkan.pc",
+        "path_type": "hardlink",
+        "sha256": "aef002965febb11e03130209d5b31dc3980fdc242ea7c29b16b94ce4087e139b",
+        "sha256_in_prefix": "9bae05afbf801309270c222433b76bd2f0371724e29c3be07d9f9567a8fd02a8",
+        "size_in_bytes": 266,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_libvulkan-loader_1787491929/h_env"
+      },
+      {
+        "_path": "Library/lib/vulkan-1.lib",
+        "path_type": "hardlink",
+        "sha256": "02caa31b8665a79f327cbfe97286fd7d0017c0b1f9b39eb78687b7a509de52b3",
+        "size_in_bytes": 66154
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libvulkan-loader-1.4.357.0-h477610d_2",
+    "type": 1
+  }
+}

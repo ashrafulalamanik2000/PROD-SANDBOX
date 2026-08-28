@@ -1,0 +1,49 @@
+{
+  "arch": "x86_64",
+  "build": "hefb3f21_0",
+  "build_number": 0,
+  "depends": [
+    "libopenvino 2026.3.0 hdd74c21_0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "97e2199f58d4473cfb4fc674797ea2d8",
+  "name": "libopenvino-pytorch-frontend",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libopenvino-pytorch-frontend >=2026.3.0,<2026.3.1.0a0"
+    ]
+  },
+  "sha256": "b0dcd0f489a227f1aa9ee1a9053d1cca0e0660102b7ee2b8e4dba61993d93ac1",
+  "size": 733131,
+  "subdir": "win-64",
+  "timestamp": 1786126966436,
+  "version": "2026.3.0",
+  "fn": "libopenvino-pytorch-frontend-2026.3.0-hefb3f21_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libopenvino-pytorch-frontend-2026.3.0-hefb3f21_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-pytorch-frontend-2026.3.0-hefb3f21_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/openvino_pytorch_frontend.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/openvino_pytorch_frontend.dll",
+        "path_type": "hardlink",
+        "sha256": "d2fabe94776b40e72478c291b6825d1d1cbe9dd0a27ed030b59b89b7c9adb0e5",
+        "size_in_bytes": 2697216
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-pytorch-frontend-2026.3.0-hefb3f21_0",
+    "type": 1
+  }
+}

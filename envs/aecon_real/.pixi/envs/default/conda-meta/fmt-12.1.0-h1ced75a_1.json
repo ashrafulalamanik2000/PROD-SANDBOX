@@ -1,0 +1,191 @@
+{
+  "arch": "x86_64",
+  "build": "h1ced75a_1",
+  "build_number": 1,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "ca8fa0e01ed34bb161f4e8e86dfda22e",
+  "name": "fmt",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "fmt >=12.1.0,<12.2.0a0"
+    ]
+  },
+  "sha256": "1d6d6f1bf284e50cf617ce9a6250e0bf70bd0d30b068568364d6b1852aad9466",
+  "size": 187511,
+  "subdir": "win-64",
+  "timestamp": 1785915492086,
+  "version": "12.1.0",
+  "fn": "fmt-12.1.0-h1ced75a_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/fmt-12.1.0-h1ced75a_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\fmt-12.1.0-h1ced75a_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/fmt.dll",
+    "Library/include/fmt/args.h",
+    "Library/include/fmt/base.h",
+    "Library/include/fmt/chrono.h",
+    "Library/include/fmt/color.h",
+    "Library/include/fmt/compile.h",
+    "Library/include/fmt/core.h",
+    "Library/include/fmt/format-inl.h",
+    "Library/include/fmt/format.h",
+    "Library/include/fmt/os.h",
+    "Library/include/fmt/ostream.h",
+    "Library/include/fmt/printf.h",
+    "Library/include/fmt/ranges.h",
+    "Library/include/fmt/std.h",
+    "Library/include/fmt/xchar.h",
+    "Library/lib/cmake/fmt/fmt-config-version.cmake",
+    "Library/lib/cmake/fmt/fmt-config.cmake",
+    "Library/lib/cmake/fmt/fmt-targets-release.cmake",
+    "Library/lib/cmake/fmt/fmt-targets.cmake",
+    "Library/lib/fmt.lib",
+    "Library/lib/pkgconfig/fmt.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/fmt.dll",
+        "path_type": "hardlink",
+        "sha256": "0d4edfe1411f4a7c5f57758239f0f1e6e1cff7f2d0ae5f9511a1dfacc08b388d",
+        "size_in_bytes": 120832
+      },
+      {
+        "_path": "Library/include/fmt/args.h",
+        "path_type": "hardlink",
+        "sha256": "6e0bf8ffbd904e6ef525cdce8e6e00312ce5d14f616cea5d88132606ca0384c4",
+        "size_in_bytes": 7199
+      },
+      {
+        "_path": "Library/include/fmt/base.h",
+        "path_type": "hardlink",
+        "sha256": "73ba80ca15c02d6826a611d1651ca6f1495ec127815e257a5d6552d6f6ad313e",
+        "size_in_bytes": 105031
+      },
+      {
+        "_path": "Library/include/fmt/chrono.h",
+        "path_type": "hardlink",
+        "sha256": "f8e2a69bd97bc5b90c9af7fb87e010775b695d487a77e8d8cbe624e57bd2f9bf",
+        "size_in_bytes": 77454
+      },
+      {
+        "_path": "Library/include/fmt/color.h",
+        "path_type": "hardlink",
+        "sha256": "f88bf0c4833caed3a7f01b6d633c7b259741a26119e84c651ac1e31cfc980b72",
+        "size_in_bytes": 24145
+      },
+      {
+        "_path": "Library/include/fmt/compile.h",
+        "path_type": "hardlink",
+        "sha256": "636c13842acce0b42b378e65fe67a69e5635e8225c9701975e5b326a97be5cb8",
+        "size_in_bytes": 20493
+      },
+      {
+        "_path": "Library/include/fmt/core.h",
+        "path_type": "hardlink",
+        "sha256": "b2b6692145b11c7c2774db106078c97575a47d18e80c7783c68566475325ebb4",
+        "size_in_bytes": 187
+      },
+      {
+        "_path": "Library/include/fmt/format-inl.h",
+        "path_type": "hardlink",
+        "sha256": "e7baf108b84e89b29915bb35733540f8f4262cd8f4b41c15754eed4d2f185f61",
+        "size_in_bytes": 81008
+      },
+      {
+        "_path": "Library/include/fmt/format.h",
+        "path_type": "hardlink",
+        "sha256": "b4c65350362bf40e76a8e6b450587d912c7081b6eafeafaf3d7bcf53153e17fc",
+        "size_in_bytes": 162666
+      },
+      {
+        "_path": "Library/include/fmt/os.h",
+        "path_type": "hardlink",
+        "sha256": "45d4e84be4e84a128442f04eda06e1305c8e02c61166854a3b8b348194d35da5",
+        "size_in_bytes": 12860
+      },
+      {
+        "_path": "Library/include/fmt/ostream.h",
+        "path_type": "hardlink",
+        "sha256": "742416a6a88286609887fa512c4423820764aafbb723a42a825f3193cb52b4f0",
+        "size_in_bytes": 5027
+      },
+      {
+        "_path": "Library/include/fmt/printf.h",
+        "path_type": "hardlink",
+        "sha256": "afddb422a86125e04a7260bb0f0ae3423ea8d591181ed5d4ef60b7a5d068993a",
+        "size_in_bytes": 19991
+      },
+      {
+        "_path": "Library/include/fmt/ranges.h",
+        "path_type": "hardlink",
+        "sha256": "ccaf61c9b5937e0fa97737fb047121c5fca9db34de516b8edfc1d913583e3c8e",
+        "size_in_bytes": 28126
+      },
+      {
+        "_path": "Library/include/fmt/std.h",
+        "path_type": "hardlink",
+        "sha256": "3f06cdf32774b9e6915e9762411f5f4de8b8ba5660adccbdea514be7f0b23826",
+        "size_in_bytes": 23532
+      },
+      {
+        "_path": "Library/include/fmt/xchar.h",
+        "path_type": "hardlink",
+        "sha256": "f0903d522c64faaee2c374a0b2063ac3e43d0b5006dfd3411f0e5dccd8ff6062",
+        "size_in_bytes": 13098
+      },
+      {
+        "_path": "Library/lib/cmake/fmt/fmt-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "f09ffb320d15a5bceb0123efe523be80c6d7c7868517f6140f7718c992875802",
+        "size_in_bytes": 1905
+      },
+      {
+        "_path": "Library/lib/cmake/fmt/fmt-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "78bda9aad7f504fd2145edecae96fb80c6313e00a1423de50436a56f9dc2e6b3",
+        "size_in_bytes": 1030
+      },
+      {
+        "_path": "Library/lib/cmake/fmt/fmt-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "3ca9c8de395e936802ba7e8f09ea889f324a117781e992d3f958afcb8361ff95",
+        "size_in_bytes": 864
+      },
+      {
+        "_path": "Library/lib/cmake/fmt/fmt-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "c4f697f55f7f657c44f68f3e740ea7c59130df2410f5f7c43a91ab605ca63419",
+        "size_in_bytes": 4825
+      },
+      {
+        "_path": "Library/lib/fmt.lib",
+        "path_type": "hardlink",
+        "sha256": "a6b981513ec256926e18fb0174d345db4f1d545eec86f846fc7ebed9ee053268",
+        "size_in_bytes": 28632
+      },
+      {
+        "_path": "Library/lib/pkgconfig/fmt.pc",
+        "path_type": "hardlink",
+        "sha256": "7351a455532d956e22a4577265c3fea1eeb9e529cb9666fb8bdb2bcee295ca5b",
+        "sha256_in_prefix": "1743d7de3763dc3c8abe6e32ee720aa67f0199a6c0fbbe93c227786e53476aff",
+        "size_in_bytes": 310,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/fmt_1785915369781/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\fmt-12.1.0-h1ced75a_1",
+    "type": 1
+  }
+}

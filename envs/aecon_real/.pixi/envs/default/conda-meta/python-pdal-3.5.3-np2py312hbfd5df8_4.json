@@ -1,0 +1,336 @@
+{
+  "arch": "x86_64",
+  "build": "np2py312hbfd5df8_4",
+  "build_number": 4,
+  "depends": [
+    "python",
+    "numpy",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "python_abi 3.12.* *_cp312",
+    "libpdal-core >=2.10.0,<2.11.0a0",
+    "numpy >=1.23,<3"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "d36067a80739ac3b0b64662a8ec60b0b",
+  "name": "python-pdal",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "9ca3f937f336b8cacd939699e7f38429f8ae105e4074f78b25c33cb3e8dc1781",
+  "size": 458883,
+  "subdir": "win-64",
+  "timestamp": 1772123266573,
+  "version": "3.5.3",
+  "fn": "python-pdal-3.5.3-np2py312hbfd5df8_4.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/python-pdal-3.5.3-np2py312hbfd5df8_4.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\python-pdal-3.5.3-np2py312hbfd5df8_4",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/bin/libpdal_plugin_filter_python.dll",
+    "Lib/site-packages/bin/libpdal_plugin_reader_numpy.dll",
+    "Lib/site-packages/lib/libpdal_plugin_filter_python.lib",
+    "Lib/site-packages/lib/libpdal_plugin_reader_numpy.lib",
+    "Lib/site-packages/pdal/PyArray.cpp",
+    "Lib/site-packages/pdal/PyArray.hpp",
+    "Lib/site-packages/pdal/PyDimension.hpp",
+    "Lib/site-packages/pdal/PyPipeline.cpp",
+    "Lib/site-packages/pdal/PyPipeline.hpp",
+    "Lib/site-packages/pdal/StreamableExecutor.cpp",
+    "Lib/site-packages/pdal/StreamableExecutor.hpp",
+    "Lib/site-packages/pdal/__init__.py",
+    "Lib/site-packages/pdal/__main__.py",
+    "Lib/site-packages/pdal/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/pdal/__pycache__/__main__.cpython-312.pyc",
+    "Lib/site-packages/pdal/__pycache__/drivers.cpython-312.pyc",
+    "Lib/site-packages/pdal/__pycache__/pipeline.cpython-312.pyc",
+    "Lib/site-packages/pdal/drivers.py",
+    "Lib/site-packages/pdal/export.hpp",
+    "Lib/site-packages/pdal/libpdalpython.cp312-win_amd64.pyd",
+    "Lib/site-packages/pdal/libpdalpython.cpp",
+    "Lib/site-packages/pdal/pipeline.py",
+    "Lib/site-packages/pdal-3.5.3.dist-info/INSTALLER",
+    "Lib/site-packages/pdal-3.5.3.dist-info/METADATA",
+    "Lib/site-packages/pdal-3.5.3.dist-info/RECORD",
+    "Lib/site-packages/pdal-3.5.3.dist-info/REQUESTED",
+    "Lib/site-packages/pdal-3.5.3.dist-info/WHEEL",
+    "Lib/site-packages/pdal-3.5.3.dist-info/direct_url.json",
+    "Lib/site-packages/pdal-3.5.3.dist-info/licenses/LICENSE.txt",
+    "Lib/site-packages/pdal_plugins-1.6.6.dist-info/INSTALLER",
+    "Lib/site-packages/pdal_plugins-1.6.6.dist-info/METADATA",
+    "Lib/site-packages/pdal_plugins-1.6.6.dist-info/RECORD",
+    "Lib/site-packages/pdal_plugins-1.6.6.dist-info/REQUESTED",
+    "Lib/site-packages/pdal_plugins-1.6.6.dist-info/WHEEL",
+    "Lib/site-packages/pdal_plugins-1.6.6.dist-info/direct_url.json",
+    "Lib/site-packages/pdal_plugins-1.6.6.dist-info/licenses/LICENSE",
+    "etc/conda/activate.d/pdal-python-activate.bat",
+    "etc/conda/activate.d/pdal-python-activate.ps1",
+    "etc/conda/activate.d/pdal-python-activate.sh",
+    "etc/conda/deactivate.d/pdal-python-deactivate.bat",
+    "etc/conda/deactivate.d/pdal-python-deactivate.ps1",
+    "etc/conda/deactivate.d/pdal-python-deactivate.sh"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/bin/libpdal_plugin_filter_python.dll",
+        "path_type": "hardlink",
+        "sha256": "28266fcac2abcf9485dbe0dac45da47a3413e06786830f583aada2d53e90d3e6",
+        "size_in_bytes": 393728
+      },
+      {
+        "_path": "Lib/site-packages/bin/libpdal_plugin_reader_numpy.dll",
+        "path_type": "hardlink",
+        "sha256": "eb24327a6e1f9cfb6c89b2b90b3724551c45ed2681976bbe261a085bf204fa50",
+        "size_in_bytes": 324096
+      },
+      {
+        "_path": "Lib/site-packages/lib/libpdal_plugin_filter_python.lib",
+        "path_type": "hardlink",
+        "sha256": "dc25c131470f810710e3a468452912ba6686a6cf9f881ac024a0f666414d8d1d",
+        "size_in_bytes": 212952
+      },
+      {
+        "_path": "Lib/site-packages/lib/libpdal_plugin_reader_numpy.lib",
+        "path_type": "hardlink",
+        "sha256": "79e5092a8ef2700dcfb16421d05d9c5421820c28703fd54c56c5ef64c079d999",
+        "size_in_bytes": 218864
+      },
+      {
+        "_path": "Lib/site-packages/pdal/PyArray.cpp",
+        "path_type": "hardlink",
+        "sha256": "ad0ee586f20327dc9c71978e481c5dfc84b9ed6ee04dd42f0a13e52f33dd18f4",
+        "size_in_bytes": 7942
+      },
+      {
+        "_path": "Lib/site-packages/pdal/PyArray.hpp",
+        "path_type": "hardlink",
+        "sha256": "0e02c3288d94f2908b94042410257e494fd87ce98ed09cc69cca9301e26788ab",
+        "size_in_bytes": 3603
+      },
+      {
+        "_path": "Lib/site-packages/pdal/PyDimension.hpp",
+        "path_type": "hardlink",
+        "sha256": "d09b5fc6d2181cbf2adb75216e902031d4c2a06d8400585bd3fee8c6d93e1a8b",
+        "size_in_bytes": 3219
+      },
+      {
+        "_path": "Lib/site-packages/pdal/PyPipeline.cpp",
+        "path_type": "hardlink",
+        "sha256": "0a426b323acca861c9183a3b925ddd5e99550727fbb06cb8fc6e8ce5163c5d10",
+        "size_in_bytes": 12318
+      },
+      {
+        "_path": "Lib/site-packages/pdal/PyPipeline.hpp",
+        "path_type": "hardlink",
+        "sha256": "ef8f150e2af4755821bf06fc4afd431900db1751161cf2bae3c93dcb254ec565",
+        "size_in_bytes": 3569
+      },
+      {
+        "_path": "Lib/site-packages/pdal/StreamableExecutor.cpp",
+        "path_type": "hardlink",
+        "sha256": "9a37cb5e89c3c45f4537443e5890d84d6779f6307b3027d0664a45609d650fb0",
+        "size_in_bytes": 7112
+      },
+      {
+        "_path": "Lib/site-packages/pdal/StreamableExecutor.hpp",
+        "path_type": "hardlink",
+        "sha256": "86780f7df74341707a87951c670b1203d8b7ae1733c0b5dbcc57d881895027e7",
+        "size_in_bytes": 3346
+      },
+      {
+        "_path": "Lib/site-packages/pdal/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a8b78e5a38216829311043246faf7a2c3914e3006688faab7481cd89159614d4",
+        "size_in_bytes": 375
+      },
+      {
+        "_path": "Lib/site-packages/pdal/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "f2203c11cf45fa595f61e184e546f50ad2fb137a091498c93506aff881f86b89",
+        "size_in_bytes": 2296
+      },
+      {
+        "_path": "Lib/site-packages/pdal/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "91b1e3077460c12701b7a85741c7adbb83c92fe9067838a2956018b1b848e2d1",
+        "size_in_bytes": 649
+      },
+      {
+        "_path": "Lib/site-packages/pdal/__pycache__/__main__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "3afe6b77022274db3a8ff0f2276b014ce8645a64a282b758e5085bee9bf826ef",
+        "size_in_bytes": 3974
+      },
+      {
+        "_path": "Lib/site-packages/pdal/__pycache__/drivers.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "a40d5ee87db14874415e840902a4b54ee478083dc59906c07f03ad9f810f11b5",
+        "size_in_bytes": 5209
+      },
+      {
+        "_path": "Lib/site-packages/pdal/__pycache__/pipeline.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "996d38c963f1e31ebeb44d2e57b06fb01216a3c63ec411fc26d02446bd30dbf9",
+        "size_in_bytes": 15819
+      },
+      {
+        "_path": "Lib/site-packages/pdal/drivers.py",
+        "path_type": "hardlink",
+        "sha256": "295c10890fba7c71c4eafc23c735e01df3d5bb6f53c6db5d57d9c6a236b31f44",
+        "size_in_bytes": 2576
+      },
+      {
+        "_path": "Lib/site-packages/pdal/export.hpp",
+        "path_type": "hardlink",
+        "sha256": "5c7fc9cf43399aebbeb867a5795be1109a188a8320bf379b79a87e39b08a53e8",
+        "size_in_bytes": 1916
+      },
+      {
+        "_path": "Lib/site-packages/pdal/libpdalpython.cp312-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "6cbc2607b9b06d1366241dfff6e3413acb27a248aebd2e291acf487c3d55fe2a",
+        "size_in_bytes": 559104
+      },
+      {
+        "_path": "Lib/site-packages/pdal/libpdalpython.cpp",
+        "path_type": "hardlink",
+        "sha256": "1ac3816775257253ed3b2d646730aca0b28e82f42cb6a1a317afed122160b0de",
+        "size_in_bytes": 12626
+      },
+      {
+        "_path": "Lib/site-packages/pdal/pipeline.py",
+        "path_type": "hardlink",
+        "sha256": "e83ceb8469747fa31bd2b9cf35c6b337b129bdb9b4441004a06952ce55c95cd7",
+        "size_in_bytes": 9462
+      },
+      {
+        "_path": "Lib/site-packages/pdal-3.5.3.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "Lib/site-packages/pdal-3.5.3.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "1ea39bf7491eef9c03f115a6f41d2f32ea3d286bee0024fe8cfa10d05a140f27",
+        "size_in_bytes": 19358
+      },
+      {
+        "_path": "Lib/site-packages/pdal-3.5.3.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "e50c5f4cc70c56ea1c77239a0debcd9496d4c98fe70b41247c458be6a178e261",
+        "size_in_bytes": 1839
+      },
+      {
+        "_path": "Lib/site-packages/pdal-3.5.3.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/pdal-3.5.3.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "721a9e2e13c1b4f76b3a8ade477e1831ca1f4a4df258342192bb032769f8f0b5",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "Lib/site-packages/pdal-3.5.3.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "1f4c7a21d29c2210b5af4f578a75bf7cbd5ff8c49a03d0d2824e76eba240c1e4",
+        "size_in_bytes": 87
+      },
+      {
+        "_path": "Lib/site-packages/pdal-3.5.3.dist-info/licenses/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "0e42abeec615088db26c013dc66fe4b3e1a559a44d4314aa551402a924d5914a",
+        "size_in_bytes": 1898
+      },
+      {
+        "_path": "Lib/site-packages/pdal_plugins-1.6.6.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "Lib/site-packages/pdal_plugins-1.6.6.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "d626428cb517e78813df34e1d1faef695ba3bc8b4eac36500040a97c00c82e33",
+        "size_in_bytes": 4200
+      },
+      {
+        "_path": "Lib/site-packages/pdal_plugins-1.6.6.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "e49197c70d19db139882b4822824ee33baf106e746f45c2f73a8a583f7993f86",
+        "size_in_bytes": 997
+      },
+      {
+        "_path": "Lib/site-packages/pdal_plugins-1.6.6.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/pdal_plugins-1.6.6.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "721a9e2e13c1b4f76b3a8ade477e1831ca1f4a4df258342192bb032769f8f0b5",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "Lib/site-packages/pdal_plugins-1.6.6.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "d159415f8430dcccb39a2e29e4ab9e28f249eb33d581e5aa993c4f638f9c4870",
+        "size_in_bytes": 114
+      },
+      {
+        "_path": "Lib/site-packages/pdal_plugins-1.6.6.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "6f6e9d27f9d907b811590bc53669f90ca3d80ce44460d4306b7d876477ea998d",
+        "size_in_bytes": 1512
+      },
+      {
+        "_path": "etc/conda/activate.d/pdal-python-activate.bat",
+        "path_type": "hardlink",
+        "sha256": "71f335a4b2dc375f6589e25183f71f91ac0cf582cdecaa4298beb31ab42a5c75",
+        "size_in_bytes": 441
+      },
+      {
+        "_path": "etc/conda/activate.d/pdal-python-activate.ps1",
+        "path_type": "hardlink",
+        "sha256": "f4c1ec9313eac143ca9b38d18fdbd589a663281c8fa1141bf67f365661ce86a0",
+        "size_in_bytes": 325
+      },
+      {
+        "_path": "etc/conda/activate.d/pdal-python-activate.sh",
+        "path_type": "hardlink",
+        "sha256": "c10f8423b2096923a920d2f83312fa71e7ed7097592d5cf739a18e8a00d9f567",
+        "size_in_bytes": 360
+      },
+      {
+        "_path": "etc/conda/deactivate.d/pdal-python-deactivate.bat",
+        "path_type": "hardlink",
+        "sha256": "7b191bf4e08dec32f453a7cd153d7af67b9393ed3cd4be5b62b2f9fa23536c19",
+        "size_in_bytes": 221
+      },
+      {
+        "_path": "etc/conda/deactivate.d/pdal-python-deactivate.ps1",
+        "path_type": "hardlink",
+        "sha256": "828b387131c51ec0379c54dfcf3e5cb5726594ec6625e16f28297ab3ba0dc93d",
+        "size_in_bytes": 203
+      },
+      {
+        "_path": "etc/conda/deactivate.d/pdal-python-deactivate.sh",
+        "path_type": "hardlink",
+        "sha256": "245f0a9b4281ac411776492964678267335beea57891e8dfd916ba82d4c12d55",
+        "size_in_bytes": 240
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\python-pdal-3.5.3-np2py312hbfd5df8_4",
+    "type": 1
+  }
+}

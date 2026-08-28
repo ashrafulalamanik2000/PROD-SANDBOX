@@ -1,0 +1,111 @@
+{
+  "arch": "x86_64",
+  "build": "h60c7c62_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "liblapack >=3.9.0,<4.0a0",
+    "libcholmod >=5.3.1,<6.0a0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0",
+    "libblas >=3.9.0,<4.0a0"
+  ],
+  "license": "GPL-2.0-or-later",
+  "license_family": "GPL",
+  "md5": "85bd703685e5ff50629fe6c0dfd3157e",
+  "name": "libspqr",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libspqr >=4.3.4,<5.0a0"
+    ]
+  },
+  "sha256": "ff00c2095e932ebc235e7b11094600477937aa6a6ddd27811f8a79797da616ba",
+  "size": 181693,
+  "subdir": "win-64",
+  "timestamp": 1742288893864,
+  "version": "4.3.4",
+  "fn": "libspqr-4.3.4-h60c7c62_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libspqr-4.3.4-h60c7c62_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libspqr-4.3.4-h60c7c62_7100102",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/spqr.dll",
+    "Library/include/suitesparse/SuiteSparseQR.hpp",
+    "Library/include/suitesparse/SuiteSparseQR_C.h",
+    "Library/include/suitesparse/SuiteSparseQR_definitions.h",
+    "Library/lib/cmake/SPQR/SPQRConfig.cmake",
+    "Library/lib/cmake/SPQR/SPQRConfigVersion.cmake",
+    "Library/lib/cmake/SPQR/SPQRTargets-release.cmake",
+    "Library/lib/cmake/SPQR/SPQRTargets.cmake",
+    "Library/lib/spqr.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/spqr.dll",
+        "path_type": "hardlink",
+        "sha256": "72dfd43a111f5810fc16d3812982221e3732ab5e9bd65a724c80ab0454997ed5",
+        "size_in_bytes": 347648
+      },
+      {
+        "_path": "Library/include/suitesparse/SuiteSparseQR.hpp",
+        "path_type": "hardlink",
+        "sha256": "1fc2e77d94d7bbb9d6895c99443d4fe4ab992749335d1c0f894334825d1bb7d5",
+        "size_in_bytes": 28549
+      },
+      {
+        "_path": "Library/include/suitesparse/SuiteSparseQR_C.h",
+        "path_type": "hardlink",
+        "sha256": "d8522a179ef7d0f73ba5ca7b2c893de937ef570f327ffb948f3253013529837b",
+        "size_in_bytes": 11141
+      },
+      {
+        "_path": "Library/include/suitesparse/SuiteSparseQR_definitions.h",
+        "path_type": "hardlink",
+        "sha256": "9290b8f298bdd1b63d931f7f784028a87c715fdba2db261f7bd9ccc178f59c99",
+        "size_in_bytes": 3401
+      },
+      {
+        "_path": "Library/lib/cmake/SPQR/SPQRConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "7a1b2561d7221f6360d31fc71969508cf913731dd02dade06c09a9a8ef1c513a",
+        "size_in_bytes": 8948
+      },
+      {
+        "_path": "Library/lib/cmake/SPQR/SPQRConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "4c08247f4ffa2d4c6bcfd035c467f95f8c14b8e06fc739f23bd157beacaeb75b",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/SPQR/SPQRTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "6368e64472d72d0681d2bd0a98e76e055ae118403dfbee278e6cc5bbab9f9e63",
+        "size_in_bytes": 1012
+      },
+      {
+        "_path": "Library/lib/cmake/SPQR/SPQRTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "9e013eb4e3d25c41690ca76e8f816fcdf108a310e18f868e33ac49473f56a16e",
+        "size_in_bytes": 4302
+      },
+      {
+        "_path": "Library/lib/spqr.lib",
+        "path_type": "hardlink",
+        "sha256": "28f18d99dea5b35e833c2e14785027e00d050d66d1bb1a95cf4706bed2a4bed6",
+        "size_in_bytes": 217684
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libspqr-4.3.4-h60c7c62_7100102",
+    "type": 1
+  }
+}

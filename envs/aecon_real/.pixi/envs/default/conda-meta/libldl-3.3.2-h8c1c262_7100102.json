@@ -1,0 +1,93 @@
+{
+  "arch": "x86_64",
+  "build": "h8c1c262_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "md5": "aa6f0dc574ad1ab6bc1a9b0d0f834b11",
+  "name": "libldl",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libldl >=3.3.2,<4.0a0"
+    ]
+  },
+  "sha256": "1d1ae0045e08333119e884b074a436142e227ac8da0f93b2a5800ac3f5716f75",
+  "size": 25314,
+  "subdir": "win-64",
+  "timestamp": 1742288893862,
+  "version": "3.3.2",
+  "fn": "libldl-3.3.2-h8c1c262_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libldl-3.3.2-h8c1c262_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libldl-3.3.2-h8c1c262_7100102",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/ldl.dll",
+    "Library/include/suitesparse/ldl.h",
+    "Library/lib/cmake/LDL/LDLConfig.cmake",
+    "Library/lib/cmake/LDL/LDLConfigVersion.cmake",
+    "Library/lib/cmake/LDL/LDLTargets-release.cmake",
+    "Library/lib/cmake/LDL/LDLTargets.cmake",
+    "Library/lib/ldl.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/ldl.dll",
+        "path_type": "hardlink",
+        "sha256": "6c5e6ba7419ea306c31f67d8eb039cec561590dfbb2a0a844b9573320198cc02",
+        "size_in_bytes": 17408
+      },
+      {
+        "_path": "Library/include/suitesparse/ldl.h",
+        "path_type": "hardlink",
+        "sha256": "9b884ed7a668fe8f2ff3cf46cf60463089f5691612e5dc9ae0963110ffcd6379",
+        "size_in_bytes": 4558
+      },
+      {
+        "_path": "Library/lib/cmake/LDL/LDLConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "33d3925050802db65a4526d9afe96e2a89cdf555992d8a126cc8aafbc33bcdc7",
+        "size_in_bytes": 6645
+      },
+      {
+        "_path": "Library/lib/cmake/LDL/LDLConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "2a5d29d1d6efe3d56a58a40d1ab869880b3653300f8e6db7c723367ccbe8b485",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/LDL/LDLTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "a4fd6506824a56f128dbd0571dc8d4fab9a02a31c68f4d400a14ed09ce4761f2",
+        "size_in_bytes": 904
+      },
+      {
+        "_path": "Library/lib/cmake/LDL/LDLTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "c46210c1333dfa2a58978afbe4e4b4a41f210c0e9079a48e98aac270e363d5cf",
+        "size_in_bytes": 4377
+      },
+      {
+        "_path": "Library/lib/ldl.lib",
+        "path_type": "hardlink",
+        "sha256": "e0470ea40182548c70bd8e813164d52220062987ef13bcfd5a967eaa2f076349",
+        "size_in_bytes": 4958
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libldl-3.3.2-h8c1c262_7100102",
+    "type": 1
+  }
+}

@@ -1,0 +1,537 @@
+{
+  "arch": "x86_64",
+  "build": "h7051d1f_10_cpu",
+  "build_number": 10,
+  "depends": [
+    "libarrow 24.0.0 h11fefc6_10_cpu",
+    "libthrift >=0.22.0,<0.22.1.0a0",
+    "openssl >=3.5.7,<4.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "8c78954e6e85505203dae39240e07fad",
+  "name": "libparquet",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libparquet >=24.0.0,<24.1.0a0"
+    ]
+  },
+  "sha256": "c7561fc975d9ff72e2cc470ced91090fad332cddf9b74cc523777ef5f83cb049",
+  "size": 966042,
+  "subdir": "win-64",
+  "timestamp": 1783216585416,
+  "version": "24.0.0",
+  "fn": "libparquet-24.0.0-h7051d1f_10_cpu.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libparquet-24.0.0-h7051d1f_10_cpu.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libparquet-24.0.0-h7051d1f_10_cpu",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/parquet.dll",
+    "Library/include/parquet/api/io.h",
+    "Library/include/parquet/api/reader.h",
+    "Library/include/parquet/api/schema.h",
+    "Library/include/parquet/api/writer.h",
+    "Library/include/parquet/arrow/reader.h",
+    "Library/include/parquet/arrow/schema.h",
+    "Library/include/parquet/arrow/test_util.h",
+    "Library/include/parquet/arrow/writer.h",
+    "Library/include/parquet/benchmark_util.h",
+    "Library/include/parquet/bloom_filter.h",
+    "Library/include/parquet/bloom_filter_reader.h",
+    "Library/include/parquet/bloom_filter_writer.h",
+    "Library/include/parquet/column_page.h",
+    "Library/include/parquet/column_reader.h",
+    "Library/include/parquet/column_scanner.h",
+    "Library/include/parquet/column_writer.h",
+    "Library/include/parquet/encoding.h",
+    "Library/include/parquet/encryption/crypto_factory.h",
+    "Library/include/parquet/encryption/encryption.h",
+    "Library/include/parquet/encryption/file_key_material_store.h",
+    "Library/include/parquet/encryption/file_key_unwrapper.h",
+    "Library/include/parquet/encryption/file_key_wrapper.h",
+    "Library/include/parquet/encryption/file_system_key_material_store.h",
+    "Library/include/parquet/encryption/key_encryption_key.h",
+    "Library/include/parquet/encryption/key_material.h",
+    "Library/include/parquet/encryption/key_metadata.h",
+    "Library/include/parquet/encryption/key_toolkit.h",
+    "Library/include/parquet/encryption/kms_client.h",
+    "Library/include/parquet/encryption/kms_client_factory.h",
+    "Library/include/parquet/encryption/local_wrap_kms_client.h",
+    "Library/include/parquet/encryption/test_encryption_util.h",
+    "Library/include/parquet/encryption/test_in_memory_kms.h",
+    "Library/include/parquet/encryption/two_level_cache_with_expiration.h",
+    "Library/include/parquet/encryption/type_fwd.h",
+    "Library/include/parquet/exception.h",
+    "Library/include/parquet/file_reader.h",
+    "Library/include/parquet/file_writer.h",
+    "Library/include/parquet/geospatial/statistics.h",
+    "Library/include/parquet/hasher.h",
+    "Library/include/parquet/index_location.h",
+    "Library/include/parquet/level_comparison.h",
+    "Library/include/parquet/level_comparison_inc.h",
+    "Library/include/parquet/level_conversion.h",
+    "Library/include/parquet/level_conversion_inc.h",
+    "Library/include/parquet/metadata.h",
+    "Library/include/parquet/page_index.h",
+    "Library/include/parquet/parquet_version.h",
+    "Library/include/parquet/platform.h",
+    "Library/include/parquet/printer.h",
+    "Library/include/parquet/properties.h",
+    "Library/include/parquet/schema.h",
+    "Library/include/parquet/size_statistics.h",
+    "Library/include/parquet/statistics.h",
+    "Library/include/parquet/stream_reader.h",
+    "Library/include/parquet/stream_writer.h",
+    "Library/include/parquet/test_util.h",
+    "Library/include/parquet/type_fwd.h",
+    "Library/include/parquet/types.h",
+    "Library/include/parquet/visit_type_inline.h",
+    "Library/include/parquet/windows_compatibility.h",
+    "Library/include/parquet/windows_fixup.h",
+    "Library/include/parquet/xxhasher.h",
+    "Library/lib/cmake/Parquet/FindThriftAlt.cmake",
+    "Library/lib/cmake/Parquet/ParquetConfig.cmake",
+    "Library/lib/cmake/Parquet/ParquetConfigVersion.cmake",
+    "Library/lib/cmake/Parquet/ParquetTargets-release.cmake",
+    "Library/lib/cmake/Parquet/ParquetTargets.cmake",
+    "Library/lib/parquet.lib",
+    "Library/lib/pkgconfig/parquet.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/parquet.dll",
+        "path_type": "hardlink",
+        "sha256": "3a8d4fceeb0c228da22a0f0d1b54809cb3a47d1498027b39adbfbf13062f7524",
+        "size_in_bytes": 2765824
+      },
+      {
+        "_path": "Library/include/parquet/api/io.h",
+        "path_type": "hardlink",
+        "sha256": "46272ad1dd91e105c78866426e3c59ff417f4262aad08adf4e274dbb93685cf2",
+        "size_in_bytes": 847
+      },
+      {
+        "_path": "Library/include/parquet/api/reader.h",
+        "path_type": "hardlink",
+        "sha256": "be73395c33e7d5356c0c993848381bdd95364dae2f76b4730a90d63bdd2b6079",
+        "size_in_bytes": 1204
+      },
+      {
+        "_path": "Library/include/parquet/api/schema.h",
+        "path_type": "hardlink",
+        "sha256": "2ac349e76f69121edb1946b4acb50271f6a723dad6dae4938ab829bcaab485d7",
+        "size_in_bytes": 855
+      },
+      {
+        "_path": "Library/include/parquet/api/writer.h",
+        "path_type": "hardlink",
+        "sha256": "50965b63c40655132d026a33ce3a0cf539c8e20b2caa534550a097070d887ee2",
+        "size_in_bytes": 1007
+      },
+      {
+        "_path": "Library/include/parquet/arrow/reader.h",
+        "path_type": "hardlink",
+        "sha256": "cd584041a6c995acf403276f53a9c766653d98a19254166178e9318866bccb39",
+        "size_in_bytes": 18095
+      },
+      {
+        "_path": "Library/include/parquet/arrow/schema.h",
+        "path_type": "hardlink",
+        "sha256": "322e7aba5ee2b4d4ba3436cca4a3890ae7e31d5a9a498e7fadbb0d44d2c4e7ad",
+        "size_in_bytes": 6204
+      },
+      {
+        "_path": "Library/include/parquet/arrow/test_util.h",
+        "path_type": "hardlink",
+        "sha256": "a825077c2fbb3f60f7da7dbffc0577e4c6f32a82f928480d1c941a884945c7a3",
+        "size_in_bytes": 18849
+      },
+      {
+        "_path": "Library/include/parquet/arrow/writer.h",
+        "path_type": "hardlink",
+        "sha256": "d1e771d1f832cdeeaec538290f269c4a58ca3146b2f3aa51aaf21143b019a579",
+        "size_in_bytes": 7005
+      },
+      {
+        "_path": "Library/include/parquet/benchmark_util.h",
+        "path_type": "hardlink",
+        "sha256": "7a60e96886ed7d43652b4336ccc3fea13cb64b6ada43e2e94142cafc6ef83ad3",
+        "size_in_bytes": 1758
+      },
+      {
+        "_path": "Library/include/parquet/bloom_filter.h",
+        "path_type": "hardlink",
+        "sha256": "0f771f6e5f95a4296d5e4d02656b36e30c469fcf2b49e6f478ad01af7e41c87b",
+        "size_in_bytes": 16569
+      },
+      {
+        "_path": "Library/include/parquet/bloom_filter_reader.h",
+        "path_type": "hardlink",
+        "sha256": "eb79291d82ace533eb6d16a69012d9b0361b0fe23d51e56117e47c77b24778b8",
+        "size_in_bytes": 2892
+      },
+      {
+        "_path": "Library/include/parquet/bloom_filter_writer.h",
+        "path_type": "hardlink",
+        "sha256": "e36023b66d2e39221ca04d7ee587a1e03f0d8f5f32c39aad3ba8be1b0a0cf54a",
+        "size_in_bytes": 4341
+      },
+      {
+        "_path": "Library/include/parquet/column_page.h",
+        "path_type": "hardlink",
+        "sha256": "32ce7bf28c8b639c128329355070f20d92356887b037eb771ac12d3299f0b0cf",
+        "size_in_bytes": 6972
+      },
+      {
+        "_path": "Library/include/parquet/column_reader.h",
+        "path_type": "hardlink",
+        "sha256": "1d03e8fa8c2886d7af8cf22da9a8ef1035a3f0e475bbaa16ea2f71be33fd622c",
+        "size_in_bytes": 19255
+      },
+      {
+        "_path": "Library/include/parquet/column_scanner.h",
+        "path_type": "hardlink",
+        "sha256": "1de701be1fb3d27ff51c9b03f8621d7061d002f0ce1ca94bce9a41f5106c0fdb",
+        "size_in_bytes": 8863
+      },
+      {
+        "_path": "Library/include/parquet/column_writer.h",
+        "path_type": "hardlink",
+        "sha256": "49badba74d455b8510884f52112f56384188ebb1e090b97966be311f40df15cc",
+        "size_in_bytes": 12989
+      },
+      {
+        "_path": "Library/include/parquet/encoding.h",
+        "path_type": "hardlink",
+        "sha256": "7bf045d3a79ab5ca416d8fc10b3551410a03d2d23b6b94f810fa77f46f84f9be",
+        "size_in_bytes": 17711
+      },
+      {
+        "_path": "Library/include/parquet/encryption/crypto_factory.h",
+        "path_type": "hardlink",
+        "sha256": "36eb5bca94f0f7def58eef795245ad5be83c4d89d1f784d66409f1e7e7739cf0",
+        "size_in_bytes": 7064
+      },
+      {
+        "_path": "Library/include/parquet/encryption/encryption.h",
+        "path_type": "hardlink",
+        "sha256": "baf0ac0b19bc850db4860fccf87073b29e68bff4e24fbe711e126b6cd515e75a",
+        "size_in_bytes": 16558
+      },
+      {
+        "_path": "Library/include/parquet/encryption/file_key_material_store.h",
+        "path_type": "hardlink",
+        "sha256": "6330153b73361f9bf9173d9bfd6966077184e7055b3049c54cbdd2f573c7ea4d",
+        "size_in_bytes": 2200
+      },
+      {
+        "_path": "Library/include/parquet/encryption/file_key_unwrapper.h",
+        "path_type": "hardlink",
+        "sha256": "541b81c1878ba981eafd61a78cbdad7f007a987de38c555bf93a4f29aea56f9d",
+        "size_in_bytes": 4717
+      },
+      {
+        "_path": "Library/include/parquet/encryption/file_key_wrapper.h",
+        "path_type": "hardlink",
+        "sha256": "c57952fb2c988545b6d12df5444b128f92716d56e28ffb5dd1694f6e0c4d6988",
+        "size_in_bytes": 3778
+      },
+      {
+        "_path": "Library/include/parquet/encryption/file_system_key_material_store.h",
+        "path_type": "hardlink",
+        "sha256": "c4071ca7eec897652b9c8b712e6384e32c2140a81e6a9cb154dc2c843a5a9f46",
+        "size_in_bytes": 3695
+      },
+      {
+        "_path": "Library/include/parquet/encryption/key_encryption_key.h",
+        "path_type": "hardlink",
+        "sha256": "e9d24d05803fe19fddc8ca61ef5439288d1ac5efb2cdd8d39d1806ff38f6397d",
+        "size_in_bytes": 2318
+      },
+      {
+        "_path": "Library/include/parquet/encryption/key_material.h",
+        "path_type": "hardlink",
+        "sha256": "90f4d222e44560e9c7e0108f201df7cc6f61a790f605afb9919565ab7ac59d12",
+        "size_in_bytes": 6221
+      },
+      {
+        "_path": "Library/include/parquet/encryption/key_metadata.h",
+        "path_type": "hardlink",
+        "sha256": "3dcd2703d2d6dc573d34b30cc73ee8b1bc3cb22da34a23954c44be27ef51d32d",
+        "size_in_bytes": 4003
+      },
+      {
+        "_path": "Library/include/parquet/encryption/key_toolkit.h",
+        "path_type": "hardlink",
+        "sha256": "c4b1c2b132ba6dcad777f310bfb1834eb2e864d784ffe5856f5f762dd629707d",
+        "size_in_bytes": 4645
+      },
+      {
+        "_path": "Library/include/parquet/encryption/kms_client.h",
+        "path_type": "hardlink",
+        "sha256": "30cf3bd2a442ff2738864cf1ef154f68f9b5d84ad1f2ca858034c72d61dc457d",
+        "size_in_bytes": 3222
+      },
+      {
+        "_path": "Library/include/parquet/encryption/kms_client_factory.h",
+        "path_type": "hardlink",
+        "sha256": "559f7b08c803431c79a195851a9ae35ec68cd61674c0db9d3e6154d7f9678807",
+        "size_in_bytes": 1293
+      },
+      {
+        "_path": "Library/include/parquet/encryption/local_wrap_kms_client.h",
+        "path_type": "hardlink",
+        "sha256": "756e457b79541cff1d9ac48f0c631b95d1a5d86967111e08f735a1094ea0ffbf",
+        "size_in_bytes": 4037
+      },
+      {
+        "_path": "Library/include/parquet/encryption/test_encryption_util.h",
+        "path_type": "hardlink",
+        "sha256": "ad87650ead67999bb782c73bbcf7010d53b0771112c957275530c234c3dd9a80",
+        "size_in_bytes": 5349
+      },
+      {
+        "_path": "Library/include/parquet/encryption/test_in_memory_kms.h",
+        "path_type": "hardlink",
+        "sha256": "73a180f9e39b5d0b42b737a160aaf8b863298ed2d1516d02e55210424f04ca73",
+        "size_in_bytes": 3743
+      },
+      {
+        "_path": "Library/include/parquet/encryption/two_level_cache_with_expiration.h",
+        "path_type": "hardlink",
+        "sha256": "da436f8b1577e9b623525509aaeaa769a38ef8d23b7bc3b7566d71fb10cfc830",
+        "size_in_bytes": 4818
+      },
+      {
+        "_path": "Library/include/parquet/encryption/type_fwd.h",
+        "path_type": "hardlink",
+        "sha256": "74bf2c9f2530363853404d854367570148d36e8117847d8939e850a2f1df8b17",
+        "size_in_bytes": 955
+      },
+      {
+        "_path": "Library/include/parquet/exception.h",
+        "path_type": "hardlink",
+        "sha256": "4c96f1e97fe487157a7bad6b51f1d8d0fafae44a31293bb6c69bce01d87d04ca",
+        "size_in_bytes": 6104
+      },
+      {
+        "_path": "Library/include/parquet/file_reader.h",
+        "path_type": "hardlink",
+        "sha256": "67546238fef863db4cbfb919ec5597d39211d39ab381239344aad8ef5a4b3891",
+        "size_in_bytes": 11185
+      },
+      {
+        "_path": "Library/include/parquet/file_writer.h",
+        "path_type": "hardlink",
+        "sha256": "b1a923c95c7304c85a4333b7241b6061d18fecd8284e6892d09c1d69606be496",
+        "size_in_bytes": 9940
+      },
+      {
+        "_path": "Library/include/parquet/geospatial/statistics.h",
+        "path_type": "hardlink",
+        "sha256": "efb89e2b141c638e8507b8e0099864d377dad86fc9d92f4d27c474fc953ea86b",
+        "size_in_bytes": 8892
+      },
+      {
+        "_path": "Library/include/parquet/hasher.h",
+        "path_type": "hardlink",
+        "sha256": "af2e589975fd1148321fcd96f5cfbdb85d5f925bec94ae54dbcbbac156df1ed3",
+        "size_in_bytes": 5428
+      },
+      {
+        "_path": "Library/include/parquet/index_location.h",
+        "path_type": "hardlink",
+        "sha256": "1a0f11e05bfede967f78cad0846040e1d6300379091e8daf5bef89b774887196",
+        "size_in_bytes": 1477
+      },
+      {
+        "_path": "Library/include/parquet/level_comparison.h",
+        "path_type": "hardlink",
+        "sha256": "e73e1f50924f5aaf56eb49760ac008ed3ec4d9ab86603ee6d1fa51e6b7cb9acc",
+        "size_in_bytes": 1306
+      },
+      {
+        "_path": "Library/include/parquet/level_comparison_inc.h",
+        "path_type": "hardlink",
+        "sha256": "af6d3fe91bf92fb52614627af1ff89699e612d76fcef0bd96bcd2164d42817e2",
+        "size_in_bytes": 2494
+      },
+      {
+        "_path": "Library/include/parquet/level_conversion.h",
+        "path_type": "hardlink",
+        "sha256": "3acbaa2b5c6252712738b3cac1f9bd5fea574da5d13250c8923de5c066f68202",
+        "size_in_bytes": 9432
+      },
+      {
+        "_path": "Library/include/parquet/level_conversion_inc.h",
+        "path_type": "hardlink",
+        "sha256": "328354fad6c9dce7dccab90938e61be4d8f10c408c73ee79d896d241f2585021",
+        "size_in_bytes": 14218
+      },
+      {
+        "_path": "Library/include/parquet/metadata.h",
+        "path_type": "hardlink",
+        "sha256": "51cb9297ba1f44d48148f37833bd9640a73bdd1bb891da297534dc5532781d46",
+        "size_in_bytes": 20168
+      },
+      {
+        "_path": "Library/include/parquet/page_index.h",
+        "path_type": "hardlink",
+        "sha256": "deb8fd8340c1cd93a2fbe937f8a284e33f253dda5fd63032e56d7a14a46b04fa",
+        "size_in_bytes": 17381
+      },
+      {
+        "_path": "Library/include/parquet/parquet_version.h",
+        "path_type": "hardlink",
+        "sha256": "1ed983206a07591f11088589248bffd86f2798ba840ec8c32774b70a2b1015cc",
+        "size_in_bytes": 1195
+      },
+      {
+        "_path": "Library/include/parquet/platform.h",
+        "path_type": "hardlink",
+        "sha256": "0d47fabc2300578792f9d399cc70c4ec6fc40062300da43e2775f76e963cae09",
+        "size_in_bytes": 3939
+      },
+      {
+        "_path": "Library/include/parquet/printer.h",
+        "path_type": "hardlink",
+        "sha256": "857ab3c2e8f9a75a0a6366b066454eabba97c7e46ca28e903c7d684c4f780075",
+        "size_in_bytes": 1548
+      },
+      {
+        "_path": "Library/include/parquet/properties.h",
+        "path_type": "hardlink",
+        "sha256": "a9b3c4fdad722e452b365a2690f30b84436e0efbc876a652586158f4db60050b",
+        "size_in_bytes": 61974
+      },
+      {
+        "_path": "Library/include/parquet/schema.h",
+        "path_type": "hardlink",
+        "sha256": "0a3661da2f5637955ea036cbab2eccd4066da29678dff0bd6e5586dce4f621f5",
+        "size_in_bytes": 18222
+      },
+      {
+        "_path": "Library/include/parquet/size_statistics.h",
+        "path_type": "hardlink",
+        "sha256": "ef30ef1d54039f0babbb8ead472ac4b9b401297e7c93bef6b5277d695d00ae91",
+        "size_in_bytes": 4268
+      },
+      {
+        "_path": "Library/include/parquet/statistics.h",
+        "path_type": "hardlink",
+        "sha256": "dcb14bcbf9342ae223b180595852494a1ae41c8126f1993f4110df44a8fff570",
+        "size_in_bytes": 18005
+      },
+      {
+        "_path": "Library/include/parquet/stream_reader.h",
+        "path_type": "hardlink",
+        "sha256": "5a8ca61f56b1ba9ba5537c86f17c8294b98ce649a45723d52840eca6a76e041c",
+        "size_in_bytes": 8856
+      },
+      {
+        "_path": "Library/include/parquet/stream_writer.h",
+        "path_type": "hardlink",
+        "sha256": "37c255def637cbfebb4b81ee88ed813645ba94b8e31bc012789e2a299ed5d77f",
+        "size_in_bytes": 7807
+      },
+      {
+        "_path": "Library/include/parquet/test_util.h",
+        "path_type": "hardlink",
+        "sha256": "54717c72335db885bc3fa2b0dac2d4266bdb2fbb664c6fe458858e682ec6e4e0",
+        "size_in_bytes": 33538
+      },
+      {
+        "_path": "Library/include/parquet/type_fwd.h",
+        "path_type": "hardlink",
+        "sha256": "37f2ed8c4712f49d83578ca50e25f376694a45395cc3563393366ef36322cdfb",
+        "size_in_bytes": 3128
+      },
+      {
+        "_path": "Library/include/parquet/types.h",
+        "path_type": "hardlink",
+        "sha256": "52ddd30f74b134bdd7e8d6d2c551433d01fe69ccd458351f9ea823fa1708a814",
+        "size_in_bytes": 27445
+      },
+      {
+        "_path": "Library/include/parquet/visit_type_inline.h",
+        "path_type": "hardlink",
+        "sha256": "18d804dbfbd8205465b9679d423339e465c9ea1569f2a7580c1634280b6ebe0e",
+        "size_in_bytes": 2321
+      },
+      {
+        "_path": "Library/include/parquet/windows_compatibility.h",
+        "path_type": "hardlink",
+        "sha256": "c481061d6df9e144607483fd038577d374c92fc035224084be9d3c6cc2ac1d35",
+        "size_in_bytes": 897
+      },
+      {
+        "_path": "Library/include/parquet/windows_fixup.h",
+        "path_type": "hardlink",
+        "sha256": "0e9c960b2c31f1822aa2eba7e8125c80cac714c4c2060a3059d2759a7267436b",
+        "size_in_bytes": 1052
+      },
+      {
+        "_path": "Library/include/parquet/xxhasher.h",
+        "path_type": "hardlink",
+        "sha256": "79f7a4ef66718840b3ba95e3e67fac504d463defcd21c7d8e6ab4389ee981d9a",
+        "size_in_bytes": 2130
+      },
+      {
+        "_path": "Library/lib/cmake/Parquet/FindThriftAlt.cmake",
+        "path_type": "hardlink",
+        "sha256": "b1f23078d7ba308077d6dcfcb34cb3b6699d99e0c32e8dc415b5d9393ecd1d7d",
+        "size_in_bytes": 6572
+      },
+      {
+        "_path": "Library/lib/cmake/Parquet/ParquetConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "ab2def02ef40d70235c6a166540fc281bc948c4572cbf267e2b321b4c8ef5256",
+        "size_in_bytes": 2785
+      },
+      {
+        "_path": "Library/lib/cmake/Parquet/ParquetConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "07aed519cb8371ba0e91c99c15b9da42221d122c2deac41463770e6fea05b540",
+        "size_in_bytes": 2830
+      },
+      {
+        "_path": "Library/lib/cmake/Parquet/ParquetTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "958148fd573f68b5d74f01789768461661245a6a6b63a7d93e7bc6d5c7875d32",
+        "size_in_bytes": 1017
+      },
+      {
+        "_path": "Library/lib/cmake/Parquet/ParquetTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "233be65c8f61351856b07cb00376e247f636ab3abc99425b74c470b67d847239",
+        "size_in_bytes": 4312
+      },
+      {
+        "_path": "Library/lib/parquet.lib",
+        "path_type": "hardlink",
+        "sha256": "5c983564a7274f7a507b192b1322b411932ac5f3cdfa06b8e4e5550312c4d1f5",
+        "size_in_bytes": 863334
+      },
+      {
+        "_path": "Library/lib/pkgconfig/parquet.pc",
+        "path_type": "hardlink",
+        "sha256": "cae86500c228bc9400c98797ee9c7ef8a4a859d75207aa33dd6f4cc5478e9b81",
+        "sha256_in_prefix": "9c4802a1b5ce340f06a4970333664dee5aa06f565919f6845bfe5e65d767000d",
+        "size_in_bytes": 1187,
+        "file_mode": "text",
+        "prefix_placeholder": "C:/bld/apache-arrow_1783209749187/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libparquet-24.0.0-h7051d1f_10_cpu",
+    "type": 1
+  }
+}

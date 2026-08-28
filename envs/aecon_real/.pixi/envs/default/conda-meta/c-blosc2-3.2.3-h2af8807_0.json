@@ -1,0 +1,215 @@
+{
+  "arch": "x86_64",
+  "build": "h2af8807_0",
+  "build_number": 0,
+  "depends": [
+    "lz4-c >=1.10.0,<1.11.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "zlib-ng >=2.3.3,<2.4.0a0",
+    "zstd >=1.5.7,<1.6.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "ab04b2b8c8a4c131afc0fedeb1be5a01",
+  "name": "c-blosc2",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "c-blosc2 >=3.2.3,<3.3.0a0"
+    ]
+  },
+  "sha256": "23bdda36d6aa21e6b0ef905bc44968de0a77d7712c60e2df769eb4210b20f22b",
+  "size": 261403,
+  "subdir": "win-64",
+  "timestamp": 1784174369629,
+  "version": "3.2.3",
+  "fn": "c-blosc2-3.2.3-h2af8807_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/c-blosc2-3.2.3-h2af8807_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\c-blosc2-3.2.3-h2af8807_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libblosc2.dll",
+    "Library/cmake/Blosc2Config.cmake",
+    "Library/cmake/Blosc2ConfigVersion.cmake",
+    "Library/cmake/Blosc2Targets-release.cmake",
+    "Library/cmake/Blosc2Targets.cmake",
+    "Library/cmake/Modules/FindLZ4.cmake",
+    "Library/cmake/Modules/FindSIMD.cmake",
+    "Library/cmake/Modules/FindZFP.cmake",
+    "Library/cmake/Modules/FindZLIB_NG.cmake",
+    "Library/cmake/Modules/FindZSTD.cmake",
+    "Library/cmake/Modules/merge_static_libs.cmake",
+    "Library/cmake/Modules/toolchain-aarch64.cmake",
+    "Library/cmake/Modules/toolchain-armhf.cmake",
+    "Library/cmake/Modules/toolchain-armsf.cmake",
+    "Library/include/b2nd.h",
+    "Library/include/blosc2/blosc2-common.h",
+    "Library/include/blosc2/blosc2-export.h",
+    "Library/include/blosc2/blosc2-stdio.h",
+    "Library/include/blosc2/codecs-registry.h",
+    "Library/include/blosc2/filters-registry.h",
+    "Library/include/blosc2/tuners-registry.h",
+    "Library/include/blosc2.h",
+    "Library/lib/blosc2.lib",
+    "Library/lib/pkgconfig/blosc2.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libblosc2.dll",
+        "path_type": "hardlink",
+        "sha256": "24db32f42807832570d2dfaabbbf7743a98278904304edebdd2ec664eaa1c8ed",
+        "size_in_bytes": 541696
+      },
+      {
+        "_path": "Library/cmake/Blosc2Config.cmake",
+        "path_type": "hardlink",
+        "sha256": "3638fcd623dafc71fc3c020c5453c2c0d07d2a3440707422ae12c49f5d8fcab8",
+        "size_in_bytes": 5566
+      },
+      {
+        "_path": "Library/cmake/Blosc2ConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "0689b76f99dedbbd969f9500989b41c5053c608bbf28ee648d814c7ec4067a91",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/cmake/Blosc2Targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "ae369a510dd1441b9764dd7998990b1fa1e94e1e4817b35b247f37c4de1df21b",
+        "size_in_bytes": 1029
+      },
+      {
+        "_path": "Library/cmake/Blosc2Targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "685edaba9cee7f0f052174769c03e7eba62886983244cfacc86338ca383afb31",
+        "size_in_bytes": 4418
+      },
+      {
+        "_path": "Library/cmake/Modules/FindLZ4.cmake",
+        "path_type": "hardlink",
+        "sha256": "b7881e7ccfb25bad0f9b6585cfe65541646ddad82f97bc6475584416b9d9d8b8",
+        "size_in_bytes": 601
+      },
+      {
+        "_path": "Library/cmake/Modules/FindSIMD.cmake",
+        "path_type": "hardlink",
+        "sha256": "0283f823e7fbf3dc0956a66acc98345fda41bfe99cc56b77c98ae56feae5ed81",
+        "size_in_bytes": 2246
+      },
+      {
+        "_path": "Library/cmake/Modules/FindZFP.cmake",
+        "path_type": "hardlink",
+        "sha256": "3ce49b194eefb32816f49d4a65d90368a2cb3c417d85b7096ef56200d12390aa",
+        "size_in_bytes": 874
+      },
+      {
+        "_path": "Library/cmake/Modules/FindZLIB_NG.cmake",
+        "path_type": "hardlink",
+        "sha256": "571a3f0a7b0521e0e0338d02cd4cbde5aac4a5e24b493577dd15266a527a739e",
+        "size_in_bytes": 2051
+      },
+      {
+        "_path": "Library/cmake/Modules/FindZSTD.cmake",
+        "path_type": "hardlink",
+        "sha256": "0beeca694f817ca988bf5e2fd55836bc4e93dde4bbafe276e8e84f8466efacf5",
+        "size_in_bytes": 625
+      },
+      {
+        "_path": "Library/cmake/Modules/merge_static_libs.cmake",
+        "path_type": "hardlink",
+        "sha256": "adebf86a0c9f70f1d7234d8460004d0fd7ab05e301e310deed9867f968339877",
+        "size_in_bytes": 2904
+      },
+      {
+        "_path": "Library/cmake/Modules/toolchain-aarch64.cmake",
+        "path_type": "hardlink",
+        "sha256": "06ccb918a3ebf1e1ea2989d8665efe99890602e6608001fed9323fc526d002bb",
+        "size_in_bytes": 959
+      },
+      {
+        "_path": "Library/cmake/Modules/toolchain-armhf.cmake",
+        "path_type": "hardlink",
+        "sha256": "7260b7c8e6f4875ba40d36466e36fdc516c9c3691a2255803a3a8d51c6864b37",
+        "size_in_bytes": 995
+      },
+      {
+        "_path": "Library/cmake/Modules/toolchain-armsf.cmake",
+        "path_type": "hardlink",
+        "sha256": "cb027a7fa4feda5c0fe55e9b453dfa30a9fc403e176759a29a3e42bb760b271b",
+        "size_in_bytes": 1097
+      },
+      {
+        "_path": "Library/include/b2nd.h",
+        "path_type": "hardlink",
+        "sha256": "a27413981ee5af2d8dc70030b1227d5e7833adb40a066c6314441d58eb828226",
+        "size_in_bytes": 32342
+      },
+      {
+        "_path": "Library/include/blosc2/blosc2-common.h",
+        "path_type": "hardlink",
+        "sha256": "1d6fb2bbcea9591477a66f32218b2c18bcb22198d64b52cd8fb23549cfee200d",
+        "size_in_bytes": 2639
+      },
+      {
+        "_path": "Library/include/blosc2/blosc2-export.h",
+        "path_type": "hardlink",
+        "sha256": "c3f6554a903d5e01bd95e3bb9da3433d3470739319ff7f179c2c83e6bbbaad68",
+        "size_in_bytes": 1807
+      },
+      {
+        "_path": "Library/include/blosc2/blosc2-stdio.h",
+        "path_type": "hardlink",
+        "sha256": "476c6eeada95b7a328c72c8241e7cdb5275c054b0acf2c1f36987cc659309dce",
+        "size_in_bytes": 5650
+      },
+      {
+        "_path": "Library/include/blosc2/codecs-registry.h",
+        "path_type": "hardlink",
+        "sha256": "5c1f81a5b56ec5e942b27684ec6ecb7fe656ef97fd3b3e6d9de5d632cf97b916",
+        "size_in_bytes": 2231
+      },
+      {
+        "_path": "Library/include/blosc2/filters-registry.h",
+        "path_type": "hardlink",
+        "sha256": "d06ec9daff28b76f811213b1bd06ed33bbd9192848acb3a3949cfc4bd713e7e5",
+        "size_in_bytes": 1784
+      },
+      {
+        "_path": "Library/include/blosc2/tuners-registry.h",
+        "path_type": "hardlink",
+        "sha256": "d2b1b539055af029a5bf2a49206026e5807ec0d44f1c56e912ba7130afd0538c",
+        "size_in_bytes": 805
+      },
+      {
+        "_path": "Library/include/blosc2.h",
+        "path_type": "hardlink",
+        "sha256": "eb2b463d9375b204cffc012a197663bbf64dd01bb1329b193a04334bb08e51af",
+        "size_in_bytes": 112976
+      },
+      {
+        "_path": "Library/lib/blosc2.lib",
+        "path_type": "hardlink",
+        "sha256": "ee2cae9cc183311cbd8c21c6231348e738a713d0496d0b8ef92b688f498bd30d",
+        "size_in_bytes": 38764
+      },
+      {
+        "_path": "Library/lib/pkgconfig/blosc2.pc",
+        "path_type": "hardlink",
+        "sha256": "c8520c8e699dffd706a693e3f710db9094b5f29e69271481af2a77e37c238d53",
+        "sha256_in_prefix": "daec406bfefa8d80ab854eec3a11ebc1712bf9ab17bae1dcaa0cd405d48f8a48",
+        "size_in_bytes": 332,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/c-blosc2_1784173963854/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\c-blosc2-3.2.3-h2af8807_0",
+    "type": 1
+  }
+}

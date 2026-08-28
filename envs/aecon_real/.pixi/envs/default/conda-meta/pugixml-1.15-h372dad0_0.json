@@ -1,0 +1,107 @@
+{
+  "arch": "x86_64",
+  "build": "h372dad0_0",
+  "build_number": 0,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "cadea4c6edb512e979edbf793bf979ac",
+  "name": "pugixml",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "pugixml >=1.15,<1.16.0a0"
+    ]
+  },
+  "sha256": "97b34ed73b6f559fcf5e706d4c8435923ba95cfed478d3fd50b475f94f60dc6e",
+  "size": 113967,
+  "subdir": "win-64",
+  "timestamp": 1736601565527,
+  "version": "1.15",
+  "fn": "pugixml-1.15-h372dad0_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/pugixml-1.15-h372dad0_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\pugixml-1.15-h372dad0_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/pugixml.dll",
+    "Library/include/pugiconfig.hpp",
+    "Library/include/pugixml.hpp",
+    "Library/lib/cmake/pugixml/pugixml-config-version.cmake",
+    "Library/lib/cmake/pugixml/pugixml-config.cmake",
+    "Library/lib/cmake/pugixml/pugixml-targets-release.cmake",
+    "Library/lib/cmake/pugixml/pugixml-targets.cmake",
+    "Library/lib/pkgconfig/pugixml.pc",
+    "Library/lib/pugixml.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/pugixml.dll",
+        "path_type": "hardlink",
+        "sha256": "5ff12b4ead8fe9eaf96c530c3ef2ffa3bf3887818389136b7428f6d7da8402e3",
+        "size_in_bytes": 221184
+      },
+      {
+        "_path": "Library/include/pugiconfig.hpp",
+        "path_type": "hardlink",
+        "sha256": "981cd9ad3313878817d7b548c9929cc09d3bc42be2c0c1dcb0d77290fc98b92d",
+        "size_in_bytes": 3053
+      },
+      {
+        "_path": "Library/include/pugixml.hpp",
+        "path_type": "hardlink",
+        "sha256": "2555f950fd080e02ff16f36698ddf8d4a46d3a484b9337b4cbfc6300043be734",
+        "size_in_bytes": 55963
+      },
+      {
+        "_path": "Library/lib/cmake/pugixml/pugixml-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "99bede483b76ef0ec8650afce0b5b7d740b8756fbc191243cd235f783af25f8a",
+        "size_in_bytes": 2824
+      },
+      {
+        "_path": "Library/lib/cmake/pugixml/pugixml-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "a36e92533720194219c7bd3ba2949fa4f26e97317da9d67952177130fa692071",
+        "size_in_bytes": 1002
+      },
+      {
+        "_path": "Library/lib/cmake/pugixml/pugixml-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "e3396324aa9f48576b11983c746618c9262e2ec0e6ccec853c60e28039d33ad3",
+        "size_in_bytes": 915
+      },
+      {
+        "_path": "Library/lib/cmake/pugixml/pugixml-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "050e05c7cfabe7e42263c006094443c27e3074624d29809f0613ccb6e2466662",
+        "size_in_bytes": 4712
+      },
+      {
+        "_path": "Library/lib/pkgconfig/pugixml.pc",
+        "path_type": "hardlink",
+        "sha256": "f0033782824a0b7a9fb5cd951960cc903d71df0dbbf9b3b92fd9371a9739c3d9",
+        "sha256_in_prefix": "71e195ce378fb078db723bb1a758bddaff220dbb714c19efb7f1c24e3ea19a45",
+        "size_in_bytes": 338,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/pugixml_1736601285184/_h_env"
+      },
+      {
+        "_path": "Library/lib/pugixml.lib",
+        "path_type": "hardlink",
+        "sha256": "29735164327bf37a8a6ce9da6970166c319d79a6227a59d43fce273c438284a0",
+        "size_in_bytes": 153812
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\pugixml-1.15-h372dad0_0",
+    "type": 1
+  }
+}

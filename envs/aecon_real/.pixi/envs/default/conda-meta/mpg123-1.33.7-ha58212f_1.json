@@ -1,0 +1,183 @@
+{
+  "arch": "x86_64",
+  "build": "ha58212f_1",
+  "build_number": 1,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "LGPL-2.1-only",
+  "license_family": "LGPL",
+  "md5": "2f3657f970f5f696af4b3d7c3ec147e3",
+  "name": "mpg123",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "mpg123 >=1.33.7,<1.34.0a0"
+    ]
+  },
+  "sha256": "c8a4c4580179383855c826b57720ecd10b4f526f19a7da63645cef50769069ba",
+  "size": 267420,
+  "subdir": "win-64",
+  "timestamp": 1787311552771,
+  "version": "1.33.7",
+  "fn": "mpg123-1.33.7-ha58212f_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/mpg123-1.33.7-ha58212f_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\mpg123-1.33.7-ha58212f_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/mpg123.dll",
+    "Library/bin/out123.dll",
+    "Library/bin/syn123.dll",
+    "Library/include/fmt123.h",
+    "Library/include/mpg123.h",
+    "Library/include/out123.h",
+    "Library/include/syn123.h",
+    "Library/lib/cmake/mpg123/mpg123-config-version.cmake",
+    "Library/lib/cmake/mpg123/mpg123-config.cmake",
+    "Library/lib/cmake/mpg123/targets-release.cmake",
+    "Library/lib/cmake/mpg123/targets.cmake",
+    "Library/lib/mpg123/output_win32.dll",
+    "Library/lib/mpg123/output_win32_wasapi.dll",
+    "Library/lib/mpg123.lib",
+    "Library/lib/out123.lib",
+    "Library/lib/pkgconfig/libmpg123.pc",
+    "Library/lib/pkgconfig/libout123.pc",
+    "Library/lib/pkgconfig/libsyn123.pc",
+    "Library/lib/syn123.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/mpg123.dll",
+        "path_type": "hardlink",
+        "sha256": "ff884231a35bb884372746ff5b72a263378e5eac5155b595d0d685be8ec5d0c0",
+        "size_in_bytes": 307200
+      },
+      {
+        "_path": "Library/bin/out123.dll",
+        "path_type": "hardlink",
+        "sha256": "e6b40dae5d8957f3693a0aa357c102cf4a8f4f45331e021facd5ea72b47a07ff",
+        "size_in_bytes": 44032
+      },
+      {
+        "_path": "Library/bin/syn123.dll",
+        "path_type": "hardlink",
+        "sha256": "08c9a59558e20ca202f69f84643be3cc23e95adfe9a4372d18905cb8ef81f05a",
+        "size_in_bytes": 118784
+      },
+      {
+        "_path": "Library/include/fmt123.h",
+        "path_type": "hardlink",
+        "sha256": "9b7c2567f5aa80eefaeb045ed793fd013ac2d1ea9dbb11ff3434c485517d94a6",
+        "size_in_bytes": 6089
+      },
+      {
+        "_path": "Library/include/mpg123.h",
+        "path_type": "hardlink",
+        "sha256": "d6c7d5094aef2f6587819b4445028c45f06af26b15a5fb643a55c4be09cf7c4a",
+        "size_in_bytes": 106709
+      },
+      {
+        "_path": "Library/include/out123.h",
+        "path_type": "hardlink",
+        "sha256": "7a0f23f4666ab871112886c03829f4a3b4764f4f9758ba3acb3bf380ff1484f1",
+        "size_in_bytes": 30838
+      },
+      {
+        "_path": "Library/include/syn123.h",
+        "path_type": "hardlink",
+        "sha256": "c13a50c857963d066ff9a9f8cef6f402b86fda98b56409df1ff84ef3ab834e9d",
+        "size_in_bytes": 53292
+      },
+      {
+        "_path": "Library/lib/cmake/mpg123/mpg123-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "968df2b0e3af96facef1edde13f17f81895b44fe5178de774e96e3e4107b692f",
+        "size_in_bytes": 1905
+      },
+      {
+        "_path": "Library/lib/cmake/mpg123/mpg123-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "2a48997a4f9fa39c86871424c938d7db55f6c5efa265db73883a1429915cb697",
+        "size_in_bytes": 959
+      },
+      {
+        "_path": "Library/lib/cmake/mpg123/targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "d5eca1e4d20d522627690e0720daf98f8eb41b6b1381ae8b50e954a016d5c3e1",
+        "size_in_bytes": 1989
+      },
+      {
+        "_path": "Library/lib/cmake/mpg123/targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "9ef90f2d1e67e2853e9c7a6627312d97aa5b8580c21ca20afd046c1bca3d003a",
+        "size_in_bytes": 4687
+      },
+      {
+        "_path": "Library/lib/mpg123/output_win32.dll",
+        "path_type": "hardlink",
+        "sha256": "ccb66411461fe903921cff87e17017a74fcebc79cc00e52971eb97d4d73c17ef",
+        "size_in_bytes": 16896
+      },
+      {
+        "_path": "Library/lib/mpg123/output_win32_wasapi.dll",
+        "path_type": "hardlink",
+        "sha256": "370049fe571b1bdb27b98326553414d1539b443fdbfa587a09589bbc372b8f5a",
+        "size_in_bytes": 16384
+      },
+      {
+        "_path": "Library/lib/mpg123.lib",
+        "path_type": "hardlink",
+        "sha256": "e394e5265e6126d64882b808b5c5328690df3a433e16c55bfdfd3c600afdd335",
+        "size_in_bytes": 29236
+      },
+      {
+        "_path": "Library/lib/out123.lib",
+        "path_type": "hardlink",
+        "sha256": "b184c30b1005d1c0f77d2c10b2073768786f8d907279be0afc31e3669fc2cbf6",
+        "size_in_bytes": 8574
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libmpg123.pc",
+        "path_type": "hardlink",
+        "sha256": "c0460e6406f2672393f763b4f61512a4bfdaceab367f3aaafdf6cfed386cd3d4",
+        "sha256_in_prefix": "d8fef8f2b921907b70adfbf1651ba28185fd2d1288971357f6059d25285febc8",
+        "size_in_bytes": 444,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/mpg123_1787311394173/_h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libout123.pc",
+        "path_type": "hardlink",
+        "sha256": "301d1fcd51bb809baf0a0f179c6dc66d83ea63eaa5944526c09346dfe85c8011",
+        "sha256_in_prefix": "25e823c26b06fc82ff47230e86a276da3b0dbcaeb3a67175495bbb6b5815af7f",
+        "size_in_bytes": 462,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/mpg123_1787311394173/_h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libsyn123.pc",
+        "path_type": "hardlink",
+        "sha256": "ee9c8349e684f62817756b44762a350d88a7bf52c0dd87bbf9d9a17535f76081",
+        "sha256_in_prefix": "0cea18a26cd3dac4fb97b52a839066cfa251b0609dc98741cdf3f2a3a6428cc5",
+        "size_in_bytes": 449,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/mpg123_1787311394173/_h_env"
+      },
+      {
+        "_path": "Library/lib/syn123.lib",
+        "path_type": "hardlink",
+        "sha256": "ee70e8d44e0f788b705f811ecc2650419c96e10e7faf5c030ba4236e0f36b6a6",
+        "size_in_bytes": 11330
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\mpg123-1.33.7-ha58212f_1",
+    "type": 1
+  }
+}

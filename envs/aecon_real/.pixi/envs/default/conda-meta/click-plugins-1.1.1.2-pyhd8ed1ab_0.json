@@ -1,0 +1,119 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "click >=4.0",
+    "python >=3.9"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "e9b05deb91c013e5224672a4ba9cf8d1",
+  "name": "click-plugins",
+  "noarch": "python",
+  "run_exports": {},
+  "sha256": "ba1ee6e2b2be3da41d70d0d51d1159010de900aa3f33fceaea8c52e9bd30a26e",
+  "size": 12683,
+  "subdir": "noarch",
+  "timestamp": 1750848314962,
+  "version": "1.1.1.2",
+  "fn": "click-plugins-1.1.1.2-pyhd8ed1ab_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/click-plugins-1.1.1.2-pyhd8ed1ab_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\click-plugins-1.1.1.2-pyhd8ed1ab_0",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/click_plugins/__init__.py",
+    "Lib/site-packages/click_plugins/core.py",
+    "Lib/site-packages/click_plugins-1.1.1.2.dist-info/INSTALLER",
+    "Lib/site-packages/click_plugins-1.1.1.2.dist-info/METADATA",
+    "Lib/site-packages/click_plugins-1.1.1.2.dist-info/RECORD",
+    "Lib/site-packages/click_plugins-1.1.1.2.dist-info/REQUESTED",
+    "Lib/site-packages/click_plugins-1.1.1.2.dist-info/WHEEL",
+    "Lib/site-packages/click_plugins-1.1.1.2.dist-info/direct_url.json",
+    "Lib/site-packages/click_plugins-1.1.1.2.dist-info/licenses/AUTHORS.txt",
+    "Lib/site-packages/click_plugins-1.1.1.2.dist-info/licenses/LICENSE.txt",
+    "Lib/site-packages/click_plugins-1.1.1.2.dist-info/top_level.txt",
+    "Lib/site-packages/click_plugins-1.1.1.2.dist-info/zip-safe"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/click_plugins/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "06f2f4bd8b115f5868ed6e5808599e11e897c2888f6be108701bef59d7b33283",
+        "size_in_bytes": 2249
+      },
+      {
+        "_path": "Lib/site-packages/click_plugins/core.py",
+        "path_type": "hardlink",
+        "sha256": "e21866529162e8c498b2fc68824b0dbb976528458db1c6e213dca7532e5d3dd1",
+        "size_in_bytes": 2475
+      },
+      {
+        "_path": "Lib/site-packages/click_plugins-1.1.1.2.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/click_plugins-1.1.1.2.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "c80a7c96f421277fd4e9db73a74cdf875f35aa7b58b484412ecfbf327e4a3c6c",
+        "size_in_bytes": 6461
+      },
+      {
+        "_path": "Lib/site-packages/click_plugins-1.1.1.2.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "c7182aef922a75b67e0d5ff35ba418295ed4ab84b73fdd6528df6f5b2a695754",
+        "size_in_bytes": 1208
+      },
+      {
+        "_path": "Lib/site-packages/click_plugins-1.1.1.2.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/click_plugins-1.1.1.2.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "24d5a1d459b551dc08415d3be609429f8315b8246cd2ca2d248abe27aadbc425",
+        "size_in_bytes": 109
+      },
+      {
+        "_path": "Lib/site-packages/click_plugins-1.1.1.2.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "b1c506835978113fed068e294924d2c6ac6e03c4f6d488a850d21a61e2bb3b32",
+        "size_in_bytes": 109
+      },
+      {
+        "_path": "Lib/site-packages/click_plugins-1.1.1.2.dist-info/licenses/AUTHORS.txt",
+        "path_type": "hardlink",
+        "sha256": "154843f706715f9fbe77d292ee1501fb09c78324baee97675af00393c96b2de1",
+        "size_in_bytes": 90
+      },
+      {
+        "_path": "Lib/site-packages/click_plugins-1.1.1.2.dist-info/licenses/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "fa1986d06c7d3ba7763524604dbab39faf5b1a89c7812a8d5d932e7dd70036d2",
+        "size_in_bytes": 1517
+      },
+      {
+        "_path": "Lib/site-packages/click_plugins-1.1.1.2.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "a01fc60d970e78e297d5e28a09fa92311e2d7c94ba88bdf326c85a2493d24142",
+        "size_in_bytes": 14
+      },
+      {
+        "_path": "Lib/site-packages/click_plugins-1.1.1.2.dist-info/zip-safe",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\click-plugins-1.1.1.2-pyhd8ed1ab_0",
+    "type": 1
+  }
+}

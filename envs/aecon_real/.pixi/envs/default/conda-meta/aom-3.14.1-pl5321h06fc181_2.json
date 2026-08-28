@@ -1,0 +1,191 @@
+{
+  "arch": "x86_64",
+  "build": "pl5321h06fc181_2",
+  "build_number": 2,
+  "depends": [
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0"
+  ],
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "md5": "7cdc091e676d2d1854b26a751f013c62",
+  "name": "aom",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "aom >=3.14.1,<3.15.0a0"
+    ]
+  },
+  "sha256": "f8c8f820dcac04954bd7d6c116f4278cf96143f291d15417c7b35b015c0c6423",
+  "size": 2214800,
+  "subdir": "win-64",
+  "timestamp": 1787256009307,
+  "version": "3.14.1",
+  "fn": "aom-3.14.1-pl5321h06fc181_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/aom-3.14.1-pl5321h06fc181_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\aom-3.14.1-pl5321h06fc181_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/aom.dll",
+    "Library/bin/aomdec.exe",
+    "Library/bin/aomenc.exe",
+    "Library/include/aom/aom.h",
+    "Library/include/aom/aom_codec.h",
+    "Library/include/aom/aom_decoder.h",
+    "Library/include/aom/aom_encoder.h",
+    "Library/include/aom/aom_ext_ratectrl.h",
+    "Library/include/aom/aom_external_partition.h",
+    "Library/include/aom/aom_frame_buffer.h",
+    "Library/include/aom/aom_image.h",
+    "Library/include/aom/aom_integer.h",
+    "Library/include/aom/aom_tpl.h",
+    "Library/include/aom/aomcx.h",
+    "Library/include/aom/aomdx.h",
+    "Library/lib/aom.lib",
+    "Library/lib/cmake/AOM/AOMConfig.cmake",
+    "Library/lib/cmake/AOM/AOMConfigVersion.cmake",
+    "Library/lib/cmake/AOM/AOMTargets-release.cmake",
+    "Library/lib/cmake/AOM/AOMTargets.cmake",
+    "Library/lib/pkgconfig/aom.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/aom.dll",
+        "path_type": "hardlink",
+        "sha256": "496b30c95b0601e36e081269a1ad517b361b2fcb088d413d61f18e7cc3878b0a",
+        "size_in_bytes": 9950720
+      },
+      {
+        "_path": "Library/bin/aomdec.exe",
+        "path_type": "hardlink",
+        "sha256": "a3072ecae50be11b77b79968199aab3e362e2808d5e2c561e9b4eb766f5098c0",
+        "size_in_bytes": 151552
+      },
+      {
+        "_path": "Library/bin/aomenc.exe",
+        "path_type": "hardlink",
+        "sha256": "6f9e6bb3bceee2032318bb3a65f5c47c66779613f38feb5bfb6ef6d3da969014",
+        "size_in_bytes": 207360
+      },
+      {
+        "_path": "Library/include/aom/aom.h",
+        "path_type": "hardlink",
+        "sha256": "b25cc7277ade68ba9c43903c0139b8aad081a301d085f48390439ce6ebe76982",
+        "size_in_bytes": 3874
+      },
+      {
+        "_path": "Library/include/aom/aom_codec.h",
+        "path_type": "hardlink",
+        "sha256": "2771dcd2e2250a130821b5742cf188109487784b032f1c3500650cf587809f82",
+        "size_in_bytes": 21326
+      },
+      {
+        "_path": "Library/include/aom/aom_decoder.h",
+        "path_type": "hardlink",
+        "sha256": "39aa4e4328bab8aee530e47cf4ef920b8428db7db4b262ed52501c896c4b32b6",
+        "size_in_bytes": 10670
+      },
+      {
+        "_path": "Library/include/aom/aom_encoder.h",
+        "path_type": "hardlink",
+        "sha256": "34a6d979603210ee8bf8294a195dcb88973c6f7a9f35f26ae4ce87432f208101",
+        "size_in_bytes": 42971
+      },
+      {
+        "_path": "Library/include/aom/aom_ext_ratectrl.h",
+        "path_type": "hardlink",
+        "sha256": "09b15d7e82d923395138ab15e9f75ba75f367be4df6450676774ddcca189edda",
+        "size_in_bytes": 21346
+      },
+      {
+        "_path": "Library/include/aom/aom_external_partition.h",
+        "path_type": "hardlink",
+        "sha256": "72ca704022a62957beb25026d919a639cfdf5049fe3fae813980691d529bdc5f",
+        "size_in_bytes": 17889
+      },
+      {
+        "_path": "Library/include/aom/aom_frame_buffer.h",
+        "path_type": "hardlink",
+        "sha256": "33393bcc818b2d0c22526515b875d14a74417d29b4e8580b760469c265007ee2",
+        "size_in_bytes": 3327
+      },
+      {
+        "_path": "Library/include/aom/aom_image.h",
+        "path_type": "hardlink",
+        "sha256": "3780cbb28a68b78d78643ea15b217f86f2c87647d78c644ebeedc105d8c77cf5",
+        "size_in_bytes": 22987
+      },
+      {
+        "_path": "Library/include/aom/aom_integer.h",
+        "path_type": "hardlink",
+        "sha256": "9af5a90e9cfd1290e2b763647efc7abdb1ad3113382986fcfa300f23176bb106",
+        "size_in_bytes": 2166
+      },
+      {
+        "_path": "Library/include/aom/aom_tpl.h",
+        "path_type": "hardlink",
+        "sha256": "d2208af44329448424947d8ebd17f0f7f0a06ecc09560de0d94fb727846bf18c",
+        "size_in_bytes": 3033
+      },
+      {
+        "_path": "Library/include/aom/aomcx.h",
+        "path_type": "hardlink",
+        "sha256": "08c695dbeb795743eeaaf99c5923cc60986e773620cce14c67f2c22677f58dda",
+        "size_in_bytes": 81279
+      },
+      {
+        "_path": "Library/include/aom/aomdx.h",
+        "path_type": "hardlink",
+        "sha256": "2df31f09ec3053873b8ee9bc46eadeb5b1b3d361c3596dfdbef7272a864fe161",
+        "size_in_bytes": 19833
+      },
+      {
+        "_path": "Library/lib/aom.lib",
+        "path_type": "hardlink",
+        "sha256": "c14f12af22c03353add0f57068692ec5e8979ee4f9fcb248a7994e9106a3a6a3",
+        "size_in_bytes": 13924
+      },
+      {
+        "_path": "Library/lib/cmake/AOM/AOMConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "9152f85ea3d66566027d282b1b7605a4655c353b02e8fc7ea8fd5f99e96e1d3c",
+        "size_in_bytes": 1475
+      },
+      {
+        "_path": "Library/lib/cmake/AOM/AOMConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "cc916075ef7280f6ee46a66c99d8ea60d6f470423618908df038b8cdbf137749",
+        "size_in_bytes": 2830
+      },
+      {
+        "_path": "Library/lib/cmake/AOM/AOMTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "e3a1165817fc1a3e50c8436e28d98a4b57bcf62cb43ba975d9e755e9e3132b1c",
+        "size_in_bytes": 1678
+      },
+      {
+        "_path": "Library/lib/cmake/AOM/AOMTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "34e8f52b7af138b2ed1c9ef2acbef7285eb45b2711c54e8e85ed49914e4f5767",
+        "size_in_bytes": 4374
+      },
+      {
+        "_path": "Library/lib/pkgconfig/aom.pc",
+        "path_type": "hardlink",
+        "sha256": "efa3391fcca4e44d774418aab8636ee88fe18f85abc3548623123b23a94277f0",
+        "sha256_in_prefix": "e9981896cd77f22951ced770cbbeaeea440358178035dd509ac68824cf7f3ee6",
+        "size_in_bytes": 347,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_aom_1787256009/h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\aom-3.14.1-pl5321h06fc181_2",
+    "type": 1
+  }
+}

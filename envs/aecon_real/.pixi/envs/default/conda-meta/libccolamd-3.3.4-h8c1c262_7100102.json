@@ -1,0 +1,94 @@
+{
+  "arch": "x86_64",
+  "build": "h8c1c262_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "eab3eb47c02d7415c531e488a23d76a7",
+  "name": "libccolamd",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libccolamd >=3.3.4,<4.0a0"
+    ]
+  },
+  "sha256": "7a75acfdd570c2572a1fa287da6f3f45de788a94e194f23903ec27eb3bfc4333",
+  "size": 42001,
+  "subdir": "win-64",
+  "timestamp": 1742288893863,
+  "version": "3.3.4",
+  "fn": "libccolamd-3.3.4-h8c1c262_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libccolamd-3.3.4-h8c1c262_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libccolamd-3.3.4-h8c1c262_7100102",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/ccolamd.dll",
+    "Library/include/suitesparse/ccolamd.h",
+    "Library/lib/ccolamd.lib",
+    "Library/lib/cmake/CCOLAMD/CCOLAMDConfig.cmake",
+    "Library/lib/cmake/CCOLAMD/CCOLAMDConfigVersion.cmake",
+    "Library/lib/cmake/CCOLAMD/CCOLAMDTargets-release.cmake",
+    "Library/lib/cmake/CCOLAMD/CCOLAMDTargets.cmake"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/ccolamd.dll",
+        "path_type": "hardlink",
+        "sha256": "d863c813a3da3985993997bf6a005bd2db11708353f272cd70fa504c968c252c",
+        "size_in_bytes": 45568
+      },
+      {
+        "_path": "Library/include/suitesparse/ccolamd.h",
+        "path_type": "hardlink",
+        "sha256": "5a83a6994cb5b565a7daa8c3b932aa46156b105a079d35f953ae5632f76d06dd",
+        "size_in_bytes": 10599
+      },
+      {
+        "_path": "Library/lib/ccolamd.lib",
+        "path_type": "hardlink",
+        "sha256": "947bdbb70b738495264e43bb4bb908323cb381155a85943bda6bd622ed7a75e4",
+        "size_in_bytes": 6154
+      },
+      {
+        "_path": "Library/lib/cmake/CCOLAMD/CCOLAMDConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "8917204da57fe4abb1f0afe3d50d94f2f340b7f7a32c7f1126e50ac69a9363db",
+        "size_in_bytes": 6691
+      },
+      {
+        "_path": "Library/lib/cmake/CCOLAMD/CCOLAMDConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "6c425b75bbfde09af451953696657ee2e888e3fa23208314555cada3faad9be7",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/CCOLAMD/CCOLAMDTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "4ac6e5e654e993e9395d53d1725503694310a711afe4da32376ef4e52efa4e11",
+        "size_in_bytes": 1018
+      },
+      {
+        "_path": "Library/lib/cmake/CCOLAMD/CCOLAMDTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "f87bfcf5f15448e160b8108885350023a382fd1686edfd7fcc7189be989e05db",
+        "size_in_bytes": 4401
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libccolamd-3.3.4-h8c1c262_7100102",
+    "type": 1
+  }
+}

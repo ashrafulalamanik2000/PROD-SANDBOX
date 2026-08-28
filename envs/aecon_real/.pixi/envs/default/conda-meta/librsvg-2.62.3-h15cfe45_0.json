@@ -1,0 +1,178 @@
+{
+  "arch": "x86_64",
+  "build": "h15cfe45_0",
+  "build_number": 0,
+  "depends": [
+    "cairo >=1.18.4,<2.0a0",
+    "gdk-pixbuf >=2.44.6,<3.0a0",
+    "harfbuzz >=14.2.0",
+    "libglib >=2.88.1,<3.0a0",
+    "libxml2-16 >=2.14.6",
+    "pango >=1.56.4,<2.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "md5": "3fffc63af7b943cde57aa72f5ffe6048",
+  "name": "librsvg",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "librsvg >=2.62.3,<3.0a0"
+    ]
+  },
+  "sha256": "6f678be6074b79fe754660d16857a6edba73dd197ad92086250dc38c11b179ab",
+  "size": 3361405,
+  "subdir": "win-64",
+  "timestamp": 1780451179155,
+  "version": "2.62.3",
+  "fn": "librsvg-2.62.3-h15cfe45_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/librsvg-2.62.3-h15cfe45_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\librsvg-2.62.3-h15cfe45_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/rsvg-2-2.dll",
+    "Library/bin/rsvg-2.0-vs17.dll",
+    "Library/bin/rsvg-convert.exe",
+    "Library/include/librsvg-2.0/librsvg/rsvg-cairo.h",
+    "Library/include/librsvg-2.0/librsvg/rsvg-features.h",
+    "Library/include/librsvg-2.0/librsvg/rsvg-pixbuf.h",
+    "Library/include/librsvg-2.0/librsvg/rsvg-version.h",
+    "Library/include/librsvg-2.0/librsvg/rsvg.h",
+    "Library/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader_svg.dll",
+    "Library/lib/girepository-1.0/Rsvg-2.0.typelib",
+    "Library/lib/pkgconfig/librsvg-2.0.pc",
+    "Library/lib/rsvg-2.0.lib",
+    "Library/lib/rsvg-2.lib",
+    "Library/share/gir-1.0/Rsvg-2.0.gir",
+    "Library/share/man/man1/rsvg-convert.1",
+    "Library/share/thumbnailers/librsvg.thumbnailer",
+    "Scripts/.librsvg-post-link.bat",
+    "Scripts/.librsvg-pre-unlink.bat"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/rsvg-2-2.dll",
+        "path_type": "hardlink",
+        "sha256": "172a070cd67d621a524d49e582a2b6d85bd0c5fe4e5a82e5cb58b1f84a1bdaa5",
+        "size_in_bytes": 5114368
+      },
+      {
+        "_path": "Library/bin/rsvg-2.0-vs17.dll",
+        "path_type": "hardlink",
+        "sha256": "172a070cd67d621a524d49e582a2b6d85bd0c5fe4e5a82e5cb58b1f84a1bdaa5",
+        "size_in_bytes": 5114368
+      },
+      {
+        "_path": "Library/bin/rsvg-convert.exe",
+        "path_type": "hardlink",
+        "sha256": "67c8e12bc834dd0d751851927ae56e2a3f09198aef20ae075ec3d81dd87d9c75",
+        "size_in_bytes": 5858816
+      },
+      {
+        "_path": "Library/include/librsvg-2.0/librsvg/rsvg-cairo.h",
+        "path_type": "hardlink",
+        "sha256": "55f25d5872497328697a409798869c69fb42befa2061ae6d99348991b6d52a3d",
+        "size_in_bytes": 17851
+      },
+      {
+        "_path": "Library/include/librsvg-2.0/librsvg/rsvg-features.h",
+        "path_type": "hardlink",
+        "sha256": "4aa2986c6a89bd98145289a0b6ab35370adc8cfdd67eb34dabe2dcb60fae3980",
+        "size_in_bytes": 6027
+      },
+      {
+        "_path": "Library/include/librsvg-2.0/librsvg/rsvg-pixbuf.h",
+        "path_type": "hardlink",
+        "sha256": "f7fb578507baaff57ba52b27585bf4edd6c210f54997603ac9ce0ec03b64ba7d",
+        "size_in_bytes": 9678
+      },
+      {
+        "_path": "Library/include/librsvg-2.0/librsvg/rsvg-version.h",
+        "path_type": "hardlink",
+        "sha256": "2b51d8059122b900ded8a6beebb060221ef4c96571358640271d12447ba01ad4",
+        "size_in_bytes": 338
+      },
+      {
+        "_path": "Library/include/librsvg-2.0/librsvg/rsvg.h",
+        "path_type": "hardlink",
+        "sha256": "244fb9d8696e42f4b98b1c094296c5280f8f8382817b68555f2f9aee114e4ca5",
+        "size_in_bytes": 50515
+      },
+      {
+        "_path": "Library/lib/gdk-pixbuf-2.0/2.10.0/loaders/libpixbufloader_svg.dll",
+        "path_type": "hardlink",
+        "sha256": "0d65c5f2cd941dbece69c6c35fd2a569e7a10424988830e03ec921c2ca7dff20",
+        "size_in_bytes": 101376
+      },
+      {
+        "_path": "Library/lib/girepository-1.0/Rsvg-2.0.typelib",
+        "path_type": "hardlink",
+        "sha256": "8bbc52128b9a0198f2afd34eb661135136d2e782dd5aa7634fa778149d2884ec",
+        "size_in_bytes": 8712
+      },
+      {
+        "_path": "Library/lib/pkgconfig/librsvg-2.0.pc",
+        "path_type": "hardlink",
+        "sha256": "0e9d4b6c9b4f32a5121f4c98132d3c07b709497acf74094383ee78c64073f971",
+        "sha256_in_prefix": "d71b6a2e09ff74a2ee768d77350f8e6268a2ba837217f8905ac1b9223094fcc7",
+        "size_in_bytes": 614,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/librsvg_1780450359708/_h_env"
+      },
+      {
+        "_path": "Library/lib/rsvg-2.0.lib",
+        "path_type": "hardlink",
+        "sha256": "5e92ad5785cdeeaabb47f7584eac5e9c7f0bd9dd8d2127e3a9c0888aa846439e",
+        "size_in_bytes": 15288
+      },
+      {
+        "_path": "Library/lib/rsvg-2.lib",
+        "path_type": "hardlink",
+        "sha256": "5e92ad5785cdeeaabb47f7584eac5e9c7f0bd9dd8d2127e3a9c0888aa846439e",
+        "size_in_bytes": 15288
+      },
+      {
+        "_path": "Library/share/gir-1.0/Rsvg-2.0.gir",
+        "path_type": "hardlink",
+        "sha256": "668d501d8f28e722ee3095780926385a761b4fb7c85b31f603bd0565837f293e",
+        "size_in_bytes": 141602
+      },
+      {
+        "_path": "Library/share/man/man1/rsvg-convert.1",
+        "path_type": "hardlink",
+        "sha256": "8751780864fb400ecb77414851c925ac207b36c845e7966150350dae725b61a6",
+        "size_in_bytes": 27486
+      },
+      {
+        "_path": "Library/share/thumbnailers/librsvg.thumbnailer",
+        "path_type": "hardlink",
+        "sha256": "4bad4eb593531ce0c5b1e64ece7f17a5311c6e33f19d385136161ee78a1dcc5b",
+        "sha256_in_prefix": "7ec8daad12b8a1803aa4e27188ae831c21ff2433c06fc85491f116c8f364f825",
+        "size_in_bytes": 256,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/librsvg_1780450359708/_h_env"
+      },
+      {
+        "_path": "Scripts/.librsvg-post-link.bat",
+        "path_type": "hardlink",
+        "sha256": "579cd6f6f05b5f2f2af15685e8409c3d6359c288630087fe579349c9f63f0583",
+        "size_in_bytes": 442
+      },
+      {
+        "_path": "Scripts/.librsvg-pre-unlink.bat",
+        "path_type": "hardlink",
+        "sha256": "d6c9e6a1e396bf30d91cd2e1ed57b49050799f0f22d672f63932b30dfc9f3fdc",
+        "size_in_bytes": 644
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\librsvg-2.62.3-h15cfe45_0",
+    "type": 1
+  }
+}

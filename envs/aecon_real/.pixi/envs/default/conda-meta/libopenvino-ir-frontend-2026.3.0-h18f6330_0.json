@@ -1,0 +1,50 @@
+{
+  "arch": "x86_64",
+  "build": "h18f6330_0",
+  "build_number": 0,
+  "depends": [
+    "libopenvino 2026.3.0 hdd74c21_0",
+    "pugixml >=1.15,<1.16.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "3263948fe5aa5918761e3a46e2b39056",
+  "name": "libopenvino-ir-frontend",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libopenvino-ir-frontend >=2026.3.0,<2026.3.1.0a0"
+    ]
+  },
+  "sha256": "21b725aa488b392055ad089d648c75b2361d441091442189412c766282809e50",
+  "size": 180315,
+  "subdir": "win-64",
+  "timestamp": 1786126933643,
+  "version": "2026.3.0",
+  "fn": "libopenvino-ir-frontend-2026.3.0-h18f6330_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libopenvino-ir-frontend-2026.3.0-h18f6330_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-ir-frontend-2026.3.0-h18f6330_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/openvino_ir_frontend.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/openvino_ir_frontend.dll",
+        "path_type": "hardlink",
+        "sha256": "7e9b7ee9c4074afc10322653b1324f4a8cc8ee6a38ad57ce66c9e9f2556e2f42",
+        "size_in_bytes": 413696
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-ir-frontend-2026.3.0-h18f6330_0",
+    "type": 1
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "arch": "x86_64",
+  "build": "h6326bed_0",
+  "build_number": 0,
+  "depends": [
+    "libabseil * cxx17*",
+    "libabseil >=20260526.0,<20260527.0a0",
+    "libopenvino 2026.3.0 hdd74c21_0",
+    "libprotobuf >=7.35.1,<7.35.2.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "a102e3966eb3d951269ced268877459c",
+  "name": "libopenvino-onnx-frontend",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libopenvino-onnx-frontend >=2026.3.0,<2026.3.1.0a0"
+    ]
+  },
+  "sha256": "af817ff46600049c661e79f6d75ee94700260f835aae6f6f42654a3b5f447c8b",
+  "size": 1323926,
+  "subdir": "win-64",
+  "timestamp": 1786126945066,
+  "version": "2026.3.0",
+  "fn": "libopenvino-onnx-frontend-2026.3.0-h6326bed_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libopenvino-onnx-frontend-2026.3.0-h6326bed_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-onnx-frontend-2026.3.0-h6326bed_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/openvino_onnx_frontend.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/openvino_onnx_frontend.dll",
+        "path_type": "hardlink",
+        "sha256": "3cb33105f9e52f3acb67711bf2018035be4545aa6af7850e59ad66c6e72f0dac",
+        "size_in_bytes": 4805632
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-onnx-frontend-2026.3.0-h6326bed_0",
+    "type": 1
+  }
+}

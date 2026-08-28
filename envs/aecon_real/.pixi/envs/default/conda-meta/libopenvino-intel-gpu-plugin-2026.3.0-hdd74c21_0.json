@@ -1,0 +1,55 @@
+{
+  "arch": "x86_64",
+  "build": "hdd74c21_0",
+  "build_number": 0,
+  "depends": [
+    "khronos-opencl-icd-loader >=2024.10.24",
+    "libopenvino 2026.3.0 hdd74c21_0",
+    "pugixml >=1.15,<1.16.0a0",
+    "tbb >=2023.0.0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "2c4f5e6fa0a06a914ba1636339007cd1",
+  "name": "libopenvino-intel-gpu-plugin",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "8aa7262a2f9939fc7f9bac92611714798cfc501f46c70259d392bb5b774feaba",
+  "size": 8812538,
+  "subdir": "win-64",
+  "timestamp": 1786126905988,
+  "version": "2026.3.0",
+  "fn": "libopenvino-intel-gpu-plugin-2026.3.0-hdd74c21_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libopenvino-intel-gpu-plugin-2026.3.0-hdd74c21_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-intel-gpu-plugin-2026.3.0-hdd74c21_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/openvino-2026.3.0/cache.json",
+    "Library/bin/openvino-2026.3.0/openvino_intel_gpu_plugin.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/openvino-2026.3.0/cache.json",
+        "path_type": "hardlink",
+        "sha256": "0b2ad2a99516a3411ce3fef274e8ae2880b41a6f00c9bac6768cd4a94b87c41c",
+        "size_in_bytes": 8840377
+      },
+      {
+        "_path": "Library/bin/openvino-2026.3.0/openvino_intel_gpu_plugin.dll",
+        "path_type": "hardlink",
+        "sha256": "868f6c36405bb2e24808e5a1a8c6865638f66d4393c8c5ed69a8599c53d5d9ab",
+        "size_in_bytes": 33149952
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-intel-gpu-plugin-2026.3.0-hdd74c21_0",
+    "type": 1
+  }
+}

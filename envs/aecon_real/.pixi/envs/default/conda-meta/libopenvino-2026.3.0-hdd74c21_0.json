@@ -1,0 +1,57 @@
+{
+  "arch": "x86_64",
+  "build": "hdd74c21_0",
+  "build_number": 0,
+  "depends": [
+    "pugixml >=1.15,<1.16.0a0",
+    "tbb >=2023.0.0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "8b7bd25a30e4688938b2c899231b9362",
+  "name": "libopenvino",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libopenvino >=2026.3.0,<2026.3.1.0a0"
+    ]
+  },
+  "sha256": "4a58884b9920dcdb3384dae8773983f2162ad583d19f51b5c0a23c73cf047722",
+  "size": 4006270,
+  "subdir": "win-64",
+  "timestamp": 1786126821931,
+  "version": "2026.3.0",
+  "fn": "libopenvino-2026.3.0-hdd74c21_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libopenvino-2026.3.0-hdd74c21_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-2026.3.0-hdd74c21_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/openvino.dll",
+    "Library/bin/openvino_c.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/openvino.dll",
+        "path_type": "hardlink",
+        "sha256": "214c2f2bee311a291ba30470962ba4e6cc2269e9daf205432f7374fcda0e86aa",
+        "size_in_bytes": 15992320
+      },
+      {
+        "_path": "Library/bin/openvino_c.dll",
+        "path_type": "hardlink",
+        "sha256": "e84de0d1529c83da7e6a08c84ef4ebda3f531df0ae0bfb020ad944ccae8fe84c",
+        "size_in_bytes": 217600
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-2026.3.0-hdd74c21_0",
+    "type": 1
+  }
+}

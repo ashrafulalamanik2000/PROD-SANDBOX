@@ -1,0 +1,46 @@
+{
+  "arch": "x86_64",
+  "build": "hd477307_3",
+  "build_number": 3,
+  "depends": [
+    "libbrotlidec 1.2.0 h84f9c24_3",
+    "libbrotlienc 1.2.0 he2a975b_3",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "dc04f7b3d82c6fb3fdf4d93e45b6ea2a",
+  "name": "brotli-bin",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "5328e0576c729813d28efc15613f4be94d029d77c4fe5afda16cab0b8d0c9d05",
+  "size": 23119,
+  "subdir": "win-64",
+  "timestamp": 1786622866096,
+  "version": "1.2.0",
+  "fn": "brotli-bin-1.2.0-hd477307_3.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/brotli-bin-1.2.0-hd477307_3.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\brotli-bin-1.2.0-hd477307_3",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/brotli.exe"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/brotli.exe",
+        "path_type": "hardlink",
+        "sha256": "413d7bf8e937adca1cddda114944d315348d7db1d2909897f643b3c4d54aea03",
+        "size_in_bytes": 31232
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\brotli-bin-1.2.0-hd477307_3",
+    "type": 1
+  }
+}

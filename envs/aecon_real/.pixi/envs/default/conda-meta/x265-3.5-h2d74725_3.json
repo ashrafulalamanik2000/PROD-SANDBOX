@@ -1,0 +1,92 @@
+{
+  "arch": "x86_64",
+  "build": "h2d74725_3",
+  "build_number": 3,
+  "depends": [
+    "vc >=14.1,<15",
+    "vs2015_runtime >=14.16.27033"
+  ],
+  "license": "GPL-2.0-or-later",
+  "license_family": "GPL",
+  "md5": "ca7129a334198f08347fb19ac98a2de9",
+  "name": "x265",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "x265 >=3.5,<3.6.0a0"
+    ]
+  },
+  "sha256": "02b9874049112f2b7335c9a3e880ac05d99a08d9a98160c5a98898b2b3ac42b2",
+  "size": 5517425,
+  "subdir": "win-64",
+  "timestamp": 1646611941216,
+  "version": "3.5",
+  "fn": "x265-3.5-h2d74725_3.tar.bz2",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/x265-3.5-h2d74725_3.tar.bz2",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\x265-3.5-h2d74725_3",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libx265.dll",
+    "Library/bin/x265.exe",
+    "Library/include/x265.h",
+    "Library/include/x265_config.h",
+    "Library/lib/libx265.lib",
+    "Library/lib/pkgconfig/x265.pc",
+    "Library/lib/x265-static.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libx265.dll",
+        "path_type": "hardlink",
+        "sha256": "4c6f21890da82d90180aaf40f09cf0b8f0abbcab8ef13055c6dcfa79d3b7473d",
+        "size_in_bytes": 16990208
+      },
+      {
+        "_path": "Library/bin/x265.exe",
+        "path_type": "hardlink",
+        "sha256": "e9e7437b2b9997c82c3c4bb90ce74d2490faf340fd1774de1496ffdcc6ad714d",
+        "size_in_bytes": 17115136
+      },
+      {
+        "_path": "Library/include/x265.h",
+        "path_type": "hardlink",
+        "sha256": "d61fbb2d20377d4eda239319a3bef73b68f5dc4b0f7b5e76372fa272cb7e9ad5",
+        "size_in_bytes": 103877
+      },
+      {
+        "_path": "Library/include/x265_config.h",
+        "path_type": "hardlink",
+        "sha256": "66679c005c23ee16653ed92721e044e6f727c54a279dfa53988e420722a11248",
+        "size_in_bytes": 1460
+      },
+      {
+        "_path": "Library/lib/libx265.lib",
+        "path_type": "hardlink",
+        "sha256": "815cb3c6af3d9520d8ac1ac37f3a3a5128504e19af84c1b2dee4b56faf543bd1",
+        "size_in_bytes": 8634
+      },
+      {
+        "_path": "Library/lib/pkgconfig/x265.pc",
+        "path_type": "hardlink",
+        "sha256": "184cdf882d9ddc9417dbd7401c44e44e1fb403bd979849423a7789ef93843425",
+        "sha256_in_prefix": "07046e92c7b5ddcdae41ef78fab359bd830ff8a0d8a4635c712f384fb351c598",
+        "size_in_bytes": 276,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/x265_1646609435880/_h_env"
+      },
+      {
+        "_path": "Library/lib/x265-static.lib",
+        "path_type": "hardlink",
+        "sha256": "fadb340661cf54d0dfbf7df33bcd6624d9c868387a139c0657df546ca0727a18",
+        "size_in_bytes": 8175768
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\x265-3.5-h2d74725_3",
+    "type": 1
+  }
+}

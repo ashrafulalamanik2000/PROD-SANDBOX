@@ -1,0 +1,128 @@
+{
+  "arch": "x86_64",
+  "build": "h6a83c73_1",
+  "build_number": 1,
+  "depends": [
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "4879aae1cb275721f9f9429db296b250",
+  "name": "libopus",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libopus >=1.6.1,<2.0a0"
+    ]
+  },
+  "sha256": "0ca8a5f9c6505344d3c57068b50d2cfffe497e3ce1aa697deb46d8ab502d3cfa",
+  "size": 307647,
+  "subdir": "win-64",
+  "timestamp": 1787247516123,
+  "version": "1.6.1",
+  "fn": "libopus-1.6.1-h6a83c73_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libopus-1.6.1-h6a83c73_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopus-1.6.1-h6a83c73_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/opus.dll",
+    "Library/include/opus/opus.h",
+    "Library/include/opus/opus_defines.h",
+    "Library/include/opus/opus_multistream.h",
+    "Library/include/opus/opus_projection.h",
+    "Library/include/opus/opus_types.h",
+    "Library/lib/cmake/Opus/OpusConfig.cmake",
+    "Library/lib/cmake/Opus/OpusConfigVersion.cmake",
+    "Library/lib/cmake/Opus/OpusTargets-release.cmake",
+    "Library/lib/cmake/Opus/OpusTargets.cmake",
+    "Library/lib/opus.lib",
+    "Library/lib/pkgconfig/opus.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/opus.dll",
+        "path_type": "hardlink",
+        "sha256": "39b603e3d9594748f9d08ebd3f5b5afb2b4976181f9162497487aafa26d54805",
+        "size_in_bytes": 474624
+      },
+      {
+        "_path": "Library/include/opus/opus.h",
+        "path_type": "hardlink",
+        "sha256": "036f6a6e83a20e943505743e113e90d6278cbe8240f7d5bb90b3f86261e783e3",
+        "size_in_bytes": 59505
+      },
+      {
+        "_path": "Library/include/opus/opus_defines.h",
+        "path_type": "hardlink",
+        "sha256": "bbd4d4e3ba99f6982b1c8d8f5541814ad77d8e8babf3cc788cf23d517b2ca9d6",
+        "size_in_bytes": 38558
+      },
+      {
+        "_path": "Library/include/opus/opus_multistream.h",
+        "path_type": "hardlink",
+        "sha256": "fd99c4594b4b57e406e9cab45a777895dd1b4c8de067088aa54ed7ae100b13f0",
+        "size_in_bytes": 38267
+      },
+      {
+        "_path": "Library/include/opus/opus_projection.h",
+        "path_type": "hardlink",
+        "sha256": "11b3427e9ca342308a93adc9a081e2479685e5b7811a3a53540609f1bbc488ad",
+        "size_in_bytes": 32998
+      },
+      {
+        "_path": "Library/include/opus/opus_types.h",
+        "path_type": "hardlink",
+        "sha256": "19cb301ea1eedbcbdbb5049363de061893bf11c20e505a657b69ce6ffa5b11fa",
+        "size_in_bytes": 5157
+      },
+      {
+        "_path": "Library/lib/cmake/Opus/OpusConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "8480e74b526e8c1c15c431e8024451a12dc9e6e3eb004fb3bee278ae1631c837",
+        "size_in_bytes": 1444
+      },
+      {
+        "_path": "Library/lib/cmake/Opus/OpusConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "4e10d17025da93e1a2e34e9a671b94f43f28cf79d13ce4fd1d123270086f9780",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/Opus/OpusTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "536bd36fb9cdb7e5c485b727996117fa74ec2648cac3f098c49de7bd6eb888e0",
+        "size_in_bytes": 878
+      },
+      {
+        "_path": "Library/lib/cmake/Opus/OpusTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "c14d6320e3b950a35d9a5d2e1e51db65303037d87e1e3cc2eb1d35973668b005",
+        "size_in_bytes": 4235
+      },
+      {
+        "_path": "Library/lib/opus.lib",
+        "path_type": "hardlink",
+        "sha256": "aaf8bb06e45773c2e590b771ea8a3f9c92b5cd0da3f0ca0fe4fa49a948ae302b",
+        "size_in_bytes": 22876
+      },
+      {
+        "_path": "Library/lib/pkgconfig/opus.pc",
+        "path_type": "hardlink",
+        "sha256": "343d13c40baca65ef9cefd740262155d7e20e355ab8b1f3f246fe792bf50b95e",
+        "sha256_in_prefix": "5efa5e75070e5bbfa65d91d038b18fbf9385fb3e4e46c223a5e4b820006d5251",
+        "size_in_bytes": 623,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_libopus_1787247516/h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopus-1.6.1-h6a83c73_1",
+    "type": 1
+  }
+}

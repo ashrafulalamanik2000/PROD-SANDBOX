@@ -1,0 +1,79 @@
+{
+  "arch": "x86_64",
+  "build": "h5112557_3",
+  "build_number": 3,
+  "depends": [
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "27c5be39d9e4d25fe85b89a069360d1e",
+  "name": "pixman",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "pixman >=0.46.4,<1.0a0"
+    ]
+  },
+  "sha256": "cad8b94c2b00264a15d469eed6dc53aac1c59c6d46f27ad1d91bfaf227cf136a",
+  "size": 257473,
+  "subdir": "win-64",
+  "timestamp": 1786106677325,
+  "version": "0.46.4",
+  "fn": "pixman-0.46.4-h5112557_3.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/pixman-0.46.4-h5112557_3.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\pixman-0.46.4-h5112557_3",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/pixman-1-0.dll",
+    "Library/include/pixman-1/pixman-version.h",
+    "Library/include/pixman-1/pixman.h",
+    "Library/lib/pixman-1.lib",
+    "Library/lib/pkgconfig/pixman-1.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/pixman-1-0.dll",
+        "path_type": "hardlink",
+        "sha256": "8bd9175343f28fd439bac2fd4fb6859d9b98ac0f1571717aad0fd01b4c125fa3",
+        "size_in_bytes": 600064
+      },
+      {
+        "_path": "Library/include/pixman-1/pixman-version.h",
+        "path_type": "hardlink",
+        "sha256": "eebbff4b66cbcc98b3ffa16c68a919d4a16dfcffb86cd1fb85faea4f07bcd76b",
+        "size_in_bytes": 1786
+      },
+      {
+        "_path": "Library/include/pixman-1/pixman.h",
+        "path_type": "hardlink",
+        "sha256": "af49363cee8b2340a215e1ea477761c2c867905c17abe129e5778bfc65033f53",
+        "size_in_bytes": 55372
+      },
+      {
+        "_path": "Library/lib/pixman-1.lib",
+        "path_type": "hardlink",
+        "sha256": "22ddadf31ec13da0199ad2534a4534538b596b5823015e36b2972cddccd7e996",
+        "size_in_bytes": 51264
+      },
+      {
+        "_path": "Library/lib/pkgconfig/pixman-1.pc",
+        "path_type": "hardlink",
+        "sha256": "af22f6e5b0201eefd69cbce4fc7dd55d3c572e84d4ede9facaf167fd2103ae08",
+        "sha256_in_prefix": "10a21792682e92ae36394c221b3d51c97fe7af0db41e5e2a38b23340b4f44a9c",
+        "size_in_bytes": 256,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_pixman_1786106677/h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\pixman-0.46.4-h5112557_3",
+    "type": 1
+  }
+}

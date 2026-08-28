@@ -1,0 +1,31 @@
+{
+  "arch": "x86_64",
+  "build": "h11686cb_3",
+  "build_number": 3,
+  "depends": [],
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "md5": "3ead269c6af33e75b5bfb8cca7d4e249",
+  "name": "_libavif_api",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "699636321392c880feaa54162b15edd786927bf614396c571eae6d43b3b3415b",
+  "size": 10138,
+  "subdir": "win-64",
+  "timestamp": 1784120074651,
+  "version": "1.4.2",
+  "fn": "_libavif_api-1.4.2-h11686cb_3.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/_libavif_api-1.4.2-h11686cb_3.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\_libavif_api-1.4.2-h11686cb_3",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\_libavif_api-1.4.2-h11686cb_3",
+    "type": 1
+  }
+}

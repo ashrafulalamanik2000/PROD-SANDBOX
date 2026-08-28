@@ -1,0 +1,53 @@
+{
+  "arch": "x86_64",
+  "build": "hdefa946_3",
+  "build_number": 3,
+  "depends": [
+    "_libavif_api >=1.4.2,<1.4.3.0a0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "aom >=3.14.1,<3.15.0a0",
+    "dav1d >=1.2.1,<1.2.2.0a0",
+    "svt-av1 >=4.2.0,<4.2.1.0a0",
+    "rav1e >=0.8.1,<0.9.0a0"
+  ],
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "md5": "90f8f8ee85e98e5867945cf009432714",
+  "name": "libavif16",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libavif16 >=1.4.2,<2.0a0"
+    ]
+  },
+  "sha256": "90ff61d555a4ebbd7ceff56ce02b727186a8f191741a2641814b0c3124a097c3",
+  "size": 124532,
+  "subdir": "win-64",
+  "timestamp": 1784120074651,
+  "version": "1.4.2",
+  "fn": "libavif16-1.4.2-hdefa946_3.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libavif16-1.4.2-hdefa946_3.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libavif16-1.4.2-hdefa946_3",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/avif.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/avif.dll",
+        "path_type": "hardlink",
+        "sha256": "b12e6091cdc4d4637a609ad4788c6f59417edc52e3f99ab22179b87e12d7f0a0",
+        "size_in_bytes": 227328
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libavif16-1.4.2-hdefa946_3",
+    "type": 1
+  }
+}

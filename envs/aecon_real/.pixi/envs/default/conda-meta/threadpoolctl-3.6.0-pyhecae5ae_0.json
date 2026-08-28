@@ -1,0 +1,90 @@
+{
+  "build": "pyhecae5ae_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.9"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "9d64911b31d57ca443e9f1e36b04385f",
+  "name": "threadpoolctl",
+  "noarch": "python",
+  "run_exports": {},
+  "sha256": "6016672e0e72c4cf23c0cf7b1986283bd86a9c17e8d319212d78d8e9ae42fdfd",
+  "size": 23869,
+  "subdir": "noarch",
+  "timestamp": 1741878358548,
+  "version": "3.6.0",
+  "fn": "threadpoolctl-3.6.0-pyhecae5ae_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/threadpoolctl-3.6.0-pyhecae5ae_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\threadpoolctl-3.6.0-pyhecae5ae_0",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/threadpoolctl-3.6.0.dist-info/INSTALLER",
+    "Lib/site-packages/threadpoolctl-3.6.0.dist-info/METADATA",
+    "Lib/site-packages/threadpoolctl-3.6.0.dist-info/RECORD",
+    "Lib/site-packages/threadpoolctl-3.6.0.dist-info/REQUESTED",
+    "Lib/site-packages/threadpoolctl-3.6.0.dist-info/WHEEL",
+    "Lib/site-packages/threadpoolctl-3.6.0.dist-info/direct_url.json",
+    "Lib/site-packages/threadpoolctl-3.6.0.dist-info/licenses/LICENSE",
+    "Lib/site-packages/threadpoolctl.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/threadpoolctl-3.6.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/threadpoolctl-3.6.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "a45df8d07ea1883d772183a501d7d526076aa70dfcfddb276a2cbdc04def5341",
+        "size_in_bytes": 13843
+      },
+      {
+        "_path": "Lib/site-packages/threadpoolctl-3.6.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "f665d95b354cc15bf5814b2534cd03945d35a198346df9e0680791f7e39b3705",
+        "size_in_bytes": 741
+      },
+      {
+        "_path": "Lib/site-packages/threadpoolctl-3.6.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/threadpoolctl-3.6.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "ff6a3334508b59cf776cae1628708ef9e0d410d0e5a3e76073d714deaa2460ee",
+        "size_in_bytes": 82
+      },
+      {
+        "_path": "Lib/site-packages/threadpoolctl-3.6.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "9feca8a2d04b24781e75d1bcb5d31bac6f73b3e20bb78858d7ee047e6b4179b6",
+        "size_in_bytes": 109
+      },
+      {
+        "_path": "Lib/site-packages/threadpoolctl-3.6.0.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "81ac619075248b06e53660b652d10e485f4675f5d0ae0f97ea22370da1f7e23b",
+        "size_in_bytes": 1507
+      },
+      {
+        "_path": "Lib/site-packages/threadpoolctl.py",
+        "path_type": "hardlink",
+        "sha256": "12fb9526b6a74d2e686b7ec148dc165c3587999b14fa86984aa180e10802400b",
+        "size_in_bytes": 50722
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\threadpoolctl-3.6.0-pyhecae5ae_0",
+    "type": 1
+  }
+}

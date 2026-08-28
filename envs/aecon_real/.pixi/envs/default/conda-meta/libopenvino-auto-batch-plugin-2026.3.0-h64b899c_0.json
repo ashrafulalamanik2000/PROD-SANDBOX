@@ -1,0 +1,46 @@
+{
+  "arch": "x86_64",
+  "build": "h64b899c_0",
+  "build_number": 0,
+  "depends": [
+    "libopenvino 2026.3.0 hdd74c21_0",
+    "tbb >=2023.0.0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "f1738e70e61cc586b69bb4a743ce31bd",
+  "name": "libopenvino-auto-batch-plugin",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "f79494adced13e11385c83bee13ecdcb9649d827a1b51681b04d35d5903e750b",
+  "size": 103774,
+  "subdir": "win-64",
+  "timestamp": 1786126840950,
+  "version": "2026.3.0",
+  "fn": "libopenvino-auto-batch-plugin-2026.3.0-h64b899c_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libopenvino-auto-batch-plugin-2026.3.0-h64b899c_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-auto-batch-plugin-2026.3.0-h64b899c_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/openvino-2026.3.0/openvino_auto_batch_plugin.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/openvino-2026.3.0/openvino_auto_batch_plugin.dll",
+        "path_type": "hardlink",
+        "sha256": "9a1af19b7c0a2ecc04a4b0d40a83f55d2e4f94977ed815aa9948d6ddd28d8cf1",
+        "size_in_bytes": 206848
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-auto-batch-plugin-2026.3.0-h64b899c_0",
+    "type": 1
+  }
+}

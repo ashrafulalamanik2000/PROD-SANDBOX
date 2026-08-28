@@ -1,0 +1,999 @@
+{
+  "arch": "x86_64",
+  "build": "np2py312heb2d3c7_1",
+  "build_number": 1,
+  "depends": [
+    "python",
+    "numpy",
+    "lazrs-python",
+    "m2r2",
+    "numpy >=1.23,<3",
+    "python_abi 3.12.* *_cp312"
+  ],
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "md5": "35bd377a5874f068e49149ac5fd88385",
+  "name": "laspy",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "203ed2aa31272ccb8e301bdf493dd475c6ff97497601cbefd1df8ba40f04df8d",
+  "size": 1845112,
+  "subdir": "win-64",
+  "timestamp": 1768597558973,
+  "version": "2.7.0",
+  "fn": "laspy-2.7.0-np2py312heb2d3c7_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/laspy-2.7.0-np2py312heb2d3c7_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\laspy-2.7.0-np2py312heb2d3c7_1",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/laspy/__init__.py",
+    "Lib/site-packages/laspy/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/_pointappender.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/_pointreader.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/_pointwriter.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/compression.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/copc.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/errors.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/extradims.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/file.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/header.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/lasappender.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/lasdata.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/lasmmap.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/lasreader.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/laswriter.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/lib.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/typehints.cpython-312.pyc",
+    "Lib/site-packages/laspy/__pycache__/utils.cpython-312.pyc",
+    "Lib/site-packages/laspy/_compression/__init__.py",
+    "Lib/site-packages/laspy/_compression/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/laspy/_compression/__pycache__/backend.cpython-312.pyc",
+    "Lib/site-packages/laspy/_compression/__pycache__/format.cpython-312.pyc",
+    "Lib/site-packages/laspy/_compression/__pycache__/laszipbackend.cpython-312.pyc",
+    "Lib/site-packages/laspy/_compression/__pycache__/lazbackend.cpython-312.pyc",
+    "Lib/site-packages/laspy/_compression/__pycache__/lazrsbackend.cpython-312.pyc",
+    "Lib/site-packages/laspy/_compression/__pycache__/selection.cpython-312.pyc",
+    "Lib/site-packages/laspy/_compression/backend.py",
+    "Lib/site-packages/laspy/_compression/format.py",
+    "Lib/site-packages/laspy/_compression/laszipbackend.py",
+    "Lib/site-packages/laspy/_compression/lazbackend.py",
+    "Lib/site-packages/laspy/_compression/lazrsbackend.py",
+    "Lib/site-packages/laspy/_compression/selection.py",
+    "Lib/site-packages/laspy/_pointappender.py",
+    "Lib/site-packages/laspy/_pointreader.py",
+    "Lib/site-packages/laspy/_pointwriter.py",
+    "Lib/site-packages/laspy/cli/__init__.py",
+    "Lib/site-packages/laspy/cli/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/laspy/cli/__pycache__/copc.cpython-312.pyc",
+    "Lib/site-packages/laspy/cli/__pycache__/core.cpython-312.pyc",
+    "Lib/site-packages/laspy/cli/__pycache__/main.cpython-312.pyc",
+    "Lib/site-packages/laspy/cli/copc.py",
+    "Lib/site-packages/laspy/cli/core.py",
+    "Lib/site-packages/laspy/cli/main.py",
+    "Lib/site-packages/laspy/compression.py",
+    "Lib/site-packages/laspy/copc.py",
+    "Lib/site-packages/laspy/errors.py",
+    "Lib/site-packages/laspy/extradims.py",
+    "Lib/site-packages/laspy/file.py",
+    "Lib/site-packages/laspy/header.py",
+    "Lib/site-packages/laspy/lasappender.py",
+    "Lib/site-packages/laspy/lasdata.py",
+    "Lib/site-packages/laspy/lasmmap.py",
+    "Lib/site-packages/laspy/lasreader.py",
+    "Lib/site-packages/laspy/laswriter.py",
+    "Lib/site-packages/laspy/lib.py",
+    "Lib/site-packages/laspy/lib.pyi",
+    "Lib/site-packages/laspy/point/__init__.py",
+    "Lib/site-packages/laspy/point/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/laspy/point/__pycache__/dims.cpython-312.pyc",
+    "Lib/site-packages/laspy/point/__pycache__/format.cpython-312.pyc",
+    "Lib/site-packages/laspy/point/__pycache__/packing.cpython-312.pyc",
+    "Lib/site-packages/laspy/point/__pycache__/record.cpython-312.pyc",
+    "Lib/site-packages/laspy/point/dims.py",
+    "Lib/site-packages/laspy/point/format.py",
+    "Lib/site-packages/laspy/point/packing.py",
+    "Lib/site-packages/laspy/point/record.py",
+    "Lib/site-packages/laspy/typehints.py",
+    "Lib/site-packages/laspy/utils.py",
+    "Lib/site-packages/laspy/vlrs/__init__.py",
+    "Lib/site-packages/laspy/vlrs/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/laspy/vlrs/__pycache__/geotiff.cpython-312.pyc",
+    "Lib/site-packages/laspy/vlrs/__pycache__/known.cpython-312.pyc",
+    "Lib/site-packages/laspy/vlrs/__pycache__/vlr.cpython-312.pyc",
+    "Lib/site-packages/laspy/vlrs/__pycache__/vlrlist.cpython-312.pyc",
+    "Lib/site-packages/laspy/vlrs/geotiff.py",
+    "Lib/site-packages/laspy/vlrs/known.py",
+    "Lib/site-packages/laspy/vlrs/vlr.py",
+    "Lib/site-packages/laspy/vlrs/vlrlist.py",
+    "Lib/site-packages/laspy-2.7.0.dist-info/INSTALLER",
+    "Lib/site-packages/laspy-2.7.0.dist-info/METADATA",
+    "Lib/site-packages/laspy-2.7.0.dist-info/RECORD",
+    "Lib/site-packages/laspy-2.7.0.dist-info/REQUESTED",
+    "Lib/site-packages/laspy-2.7.0.dist-info/WHEEL",
+    "Lib/site-packages/laspy-2.7.0.dist-info/direct_url.json",
+    "Lib/site-packages/laspy-2.7.0.dist-info/entry_points.txt",
+    "Lib/site-packages/laspy-2.7.0.dist-info/licenses/LICENSE.txt",
+    "Scripts/laspy.exe",
+    "etc/conda/test-files/laspy/1/tests/__init__.py",
+    "etc/conda/test-files/laspy/1/tests/cli/__init__.py",
+    "etc/conda/test-files/laspy/1/tests/cli/test_compress_decompress.py",
+    "etc/conda/test-files/laspy/1/tests/cli/test_filter.py",
+    "etc/conda/test-files/laspy/1/tests/cli/test_info.py",
+    "etc/conda/test-files/laspy/1/tests/conftest.py",
+    "etc/conda/test-files/laspy/1/tests/data/1_4_w_evlr.las",
+    "etc/conda/test-files/laspy/1/tests/data/1_4_w_evlr.laz",
+    "etc/conda/test-files/laspy/1/tests/data/append-bug-cpy.laz",
+    "etc/conda/test-files/laspy/1/tests/data/append-bug.laz",
+    "etc/conda/test-files/laspy/1/tests/data/autzen.las",
+    "etc/conda/test-files/laspy/1/tests/data/autzen_geo_proj.las",
+    "etc/conda/test-files/laspy/1/tests/data/autzen_trim.laz",
+    "etc/conda/test-files/laspy/1/tests/data/extra.laz",
+    "etc/conda/test-files/laspy/1/tests/data/extrabytes.las",
+    "etc/conda/test-files/laspy/1/tests/data/file_with_both_wkt_and_geotiff_vlrs.las",
+    "etc/conda/test-files/laspy/1/tests/data/plane.laz",
+    "etc/conda/test-files/laspy/1/tests/data/simple.copc.laz",
+    "etc/conda/test-files/laspy/1/tests/data/simple.las",
+    "etc/conda/test-files/laspy/1/tests/data/simple.laz",
+    "etc/conda/test-files/laspy/1/tests/data/simple1_1.las",
+    "etc/conda/test-files/laspy/1/tests/data/simple1_3.las",
+    "etc/conda/test-files/laspy/1/tests/data/simple1_4.las",
+    "etc/conda/test-files/laspy/1/tests/data/simple_with_page.copc.laz",
+    "etc/conda/test-files/laspy/1/tests/data/test1_4.las",
+    "etc/conda/test-files/laspy/1/tests/data/unregistered_extra_bytes.las",
+    "etc/conda/test-files/laspy/1/tests/data/vegetation_1_3.las",
+    "etc/conda/test-files/laspy/1/tests/test_1_5.py",
+    "etc/conda/test-files/laspy/1/tests/test_append_mode.py",
+    "etc/conda/test-files/laspy/1/tests/test_chunk_read_write.py",
+    "etc/conda/test-files/laspy/1/tests/test_common.py",
+    "etc/conda/test-files/laspy/1/tests/test_constants.py",
+    "etc/conda/test-files/laspy/1/tests/test_conversion.py",
+    "etc/conda/test-files/laspy/1/tests/test_copc.py",
+    "etc/conda/test-files/laspy/1/tests/test_creation.py",
+    "etc/conda/test-files/laspy/1/tests/test_crs.py",
+    "etc/conda/test-files/laspy/1/tests/test_extrabytes.py",
+    "etc/conda/test-files/laspy/1/tests/test_field_views.py",
+    "etc/conda/test-files/laspy/1/tests/test_header.py",
+    "etc/conda/test-files/laspy/1/tests/test_las_1_1.py",
+    "etc/conda/test-files/laspy/1/tests/test_laspy.py",
+    "etc/conda/test-files/laspy/1/tests/test_mmap.py",
+    "etc/conda/test-files/laspy/1/tests/test_modif_1_2.py",
+    "etc/conda/test-files/laspy/1/tests/test_modif_1_4.py",
+    "etc/conda/test-files/laspy/1/tests/test_non_seekable.py",
+    "etc/conda/test-files/laspy/1/tests/test_point_format.py",
+    "etc/conda/test-files/laspy/1/tests/test_reading_1_2.py",
+    "etc/conda/test-files/laspy/1/tests/test_reading_1_4.py",
+    "etc/conda/test-files/laspy/1/tests/test_vlrs.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/laspy/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "545f4d692450131ff5fe5db3bffa4e342321862218027efe8d075de63c17fe40",
+        "size_in_bytes": 811
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "1e65e075d6d6d59dab42263d34697b224054fc0582942b85c1896b6fe1f7c8b2",
+        "size_in_bytes": 1370
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/_pointappender.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "14a8e3ab77a84becd032079bd6cb33b52e3da02b75df9208edfbc93c9e57bf5d",
+        "size_in_bytes": 899
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/_pointreader.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "6acf9bdbf383188b9d00ef611c4256ca1cecb85f24919d112ee37f753c136bd4",
+        "size_in_bytes": 1527
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/_pointwriter.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "bc4168406f8a17cafaea9a53ab1346fe03dc998776de5c1ee61fbb3ff9111f8e",
+        "size_in_bytes": 2075
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/compression.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "9e5862558bb5a04547b887480dacc1a3d9b920b578e476119e0c77243bb58619",
+        "size_in_bytes": 485
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/copc.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "e0dcdbd66d193720eddf723589c610cb95fc012c8c0e5260a793d4cff57e2d0f",
+        "size_in_bytes": 39934
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/errors.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "4fa01c50687a514228fc02feee6386925da9f1020fc3515b4633866e2fa99f32",
+        "size_in_bytes": 1165
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/extradims.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "f9233dcf78a15df7f7960c393dcc182f89eeb537fbaffea50a0e2d6c204592f2",
+        "size_in_bytes": 2372
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/file.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "8eeb242988a9d0051e065474e4a3d3c7ab2e7a3f09323e02465dfb2f569574c3",
+        "size_in_bytes": 1180
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/header.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "4012c629517e52f8073f55718de10b582b3e9b1ae7491c5247d94ab6c9f30cd2",
+        "size_in_bytes": 49190
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/lasappender.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "df0eb8d4f73e89b7d132a19b9c9d6d689d544aa04cfb4f6025cd2c9c5a2213a4",
+        "size_in_bytes": 8681
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/lasdata.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "7c40889e122a71dbe2172268e04a7f30edad61a75f997cebad4960c6770360e9",
+        "size_in_bytes": 19997
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/lasmmap.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "7b153bbc472b69e7170fd9d6fbe543ea8e4ac8fa9b46c83ab9157ba8d7328ff7",
+        "size_in_bytes": 2931
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/lasreader.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "f6089542949dc93c25c909e6a19b46e561ab2d5eb607c70728c37f9d7f662982",
+        "size_in_bytes": 17266
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/laswriter.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "7ecf8de8cdf2a2167e12a5b29bff272e6da22457a23292a0adf9030a30a7f998",
+        "size_in_bytes": 11332
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/lib.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "0eb88def21e1635dd2240255eea5f9ffd782e6bd7926d14be1fbe7bf302c699d",
+        "size_in_bytes": 14360
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/typehints.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "40f5a65bc77f06c0e9f99dc97c1b2ae865ee708a648baa8140069b9b23eb5cc4",
+        "size_in_bytes": 314
+      },
+      {
+        "_path": "Lib/site-packages/laspy/__pycache__/utils.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "01f7f1d034887cbb681538255ec809052ca9ff834f0f5e810ee6bb625cc90b9b",
+        "size_in_bytes": 5054
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "883a76532bfbca6615b2e666f77beab61edfa7390470e1816bca746ae1c4c6ee",
+        "size_in_bytes": 193
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/__pycache__/backend.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "415d0966e1fec9ac41f8df90f0b6df566a372595fc1b396f41d16376c06fdf8b",
+        "size_in_bytes": 3968
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/__pycache__/format.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "6a76f7d846c294867726d186843161f9ad7f618e5c2b442ba4c822e8d1710225",
+        "size_in_bytes": 859
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/__pycache__/laszipbackend.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "e5e6d0f5a34d640a39c4440f1d10475a37bf82644496a264f939f4d21f0c67ad",
+        "size_in_bytes": 7891
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/__pycache__/lazbackend.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "3597e684d9c90da574f6674c393398f8c19b2cb97ff85a752f192a3518418417",
+        "size_in_bytes": 1894
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/__pycache__/lazrsbackend.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "7eceb18d6d9e79e7060cb3a42f0e6097368cf71e219dab006a477647db9be6e5",
+        "size_in_bytes": 10804
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/__pycache__/selection.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "e29069a59b480a6119b875869a54263c68347251a4e9d8a807c0f3dcf6809282",
+        "size_in_bytes": 10666
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/backend.py",
+        "path_type": "hardlink",
+        "sha256": "3185a059ce921aff5af462652c82d8b55b2a11359087dcc8ccf260ebc84ec1bc",
+        "size_in_bytes": 2427
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/format.py",
+        "path_type": "hardlink",
+        "sha256": "11fb13df19c259b1f66ac6015b9e5db704cf01006634db26864a63fef78412e7",
+        "size_in_bytes": 461
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/laszipbackend.py",
+        "path_type": "hardlink",
+        "sha256": "03acf78f031f01edf729ab6be92fb6a474d4314ba1ef69d7f2cf5dfb6f1e9b47",
+        "size_in_bytes": 4325
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/lazbackend.py",
+        "path_type": "hardlink",
+        "sha256": "7eb5b9217f194961a2128243dc6512b130cc9049c82ff641153ab9651c5b086a",
+        "size_in_bytes": 892
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/lazrsbackend.py",
+        "path_type": "hardlink",
+        "sha256": "7099533600e16d5c759ad76c49effea27d87eb0f244cbe1797963bb07ca4b211",
+        "size_in_bytes": 6620
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_compression/selection.py",
+        "path_type": "hardlink",
+        "sha256": "1db67b4311e18e5d57b682cb2c1367539c47ffa786040421f21ea19874021652",
+        "size_in_bytes": 8272
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_pointappender.py",
+        "path_type": "hardlink",
+        "sha256": "e40e93ae0db10df96bd193c96d171d2652cf01904474911e959dffb83fbf5bd0",
+        "size_in_bytes": 238
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_pointreader.py",
+        "path_type": "hardlink",
+        "sha256": "556c53078640a06a4c9fbfe2ca5826a3b8e8828c9579676721ded3cf2ac9021c",
+        "size_in_bytes": 581
+      },
+      {
+        "_path": "Lib/site-packages/laspy/_pointwriter.py",
+        "path_type": "hardlink",
+        "sha256": "c25c74fe30d4c2a3bef10d7840b51289152402c7457d0771796ec1688ebe480f",
+        "size_in_bytes": 896
+      },
+      {
+        "_path": "Lib/site-packages/laspy/cli/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/laspy/cli/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "7c94b05755cf5dfb4393afd8c4c9e9b999832debab317b97ae74181d712c0551",
+        "size_in_bytes": 184
+      },
+      {
+        "_path": "Lib/site-packages/laspy/cli/__pycache__/copc.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "5319d5edda4d7dca0bdfd662241395cc6d5e6ab35fb2d2011271c40088f43f57",
+        "size_in_bytes": 7658
+      },
+      {
+        "_path": "Lib/site-packages/laspy/cli/__pycache__/core.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "ad37c44f248351be9fc70b153506e2de7d4ee2bb485d39703df0d510a787bbce",
+        "size_in_bytes": 58033
+      },
+      {
+        "_path": "Lib/site-packages/laspy/cli/__pycache__/main.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "0d4b80ef8a0339d61a6dec54047aef5a85962c2dd8b5bb3d9a011babc68c5834",
+        "size_in_bytes": 728
+      },
+      {
+        "_path": "Lib/site-packages/laspy/cli/copc.py",
+        "path_type": "hardlink",
+        "sha256": "b73ffe2207cc91a9827d4ea8cb7e47271958c9612ae1706a518634ca37416347",
+        "size_in_bytes": 5749
+      },
+      {
+        "_path": "Lib/site-packages/laspy/cli/core.py",
+        "path_type": "hardlink",
+        "sha256": "630df1f8d24f22d304358e60bac734ab6d08f7891c63be3de29fe9e2d43d3da3",
+        "size_in_bytes": 43572
+      },
+      {
+        "_path": "Lib/site-packages/laspy/cli/main.py",
+        "path_type": "hardlink",
+        "sha256": "e5c1fc6ae6e73f9864a7028d9a01e46d60168c8a7bde2614c075feb3c85cb1c3",
+        "size_in_bytes": 410
+      },
+      {
+        "_path": "Lib/site-packages/laspy/compression.py",
+        "path_type": "hardlink",
+        "sha256": "ea688c93f6c9f5aa08e272c2c8924ba035b26e4e921ba753b78d198d4d640448",
+        "size_in_bytes": 306
+      },
+      {
+        "_path": "Lib/site-packages/laspy/copc.py",
+        "path_type": "hardlink",
+        "sha256": "6dcb7c2edea19d4ed8f9994ea253671f608a1c1cab90da148a9dd50f6753765a",
+        "size_in_bytes": 28794
+      },
+      {
+        "_path": "Lib/site-packages/laspy/errors.py",
+        "path_type": "hardlink",
+        "sha256": "30902b720ff71c17fe66331464ba1f262d3059af1d8a2474a9873743680cea76",
+        "size_in_bytes": 349
+      },
+      {
+        "_path": "Lib/site-packages/laspy/extradims.py",
+        "path_type": "hardlink",
+        "sha256": "88041e940d91902213b6963c2d4a9925107a2114742300df3f28c5efe204502c",
+        "size_in_bytes": 1449
+      },
+      {
+        "_path": "Lib/site-packages/laspy/file.py",
+        "path_type": "hardlink",
+        "sha256": "4cda0b6fea2c18951f685a121f159fb68a5d5fc501fe6ac83ec41ea06c8c06dd",
+        "size_in_bytes": 723
+      },
+      {
+        "_path": "Lib/site-packages/laspy/header.py",
+        "path_type": "hardlink",
+        "sha256": "37eb66157dc4ad960b76f951d664aefd18f37e0a6da90e33e651401b5205d513",
+        "size_in_bytes": 35175
+      },
+      {
+        "_path": "Lib/site-packages/laspy/lasappender.py",
+        "path_type": "hardlink",
+        "sha256": "2b6cad69efa32e2d208f803e57b3a86969cb51f197ce535fd6f88de55c7818f9",
+        "size_in_bytes": 5149
+      },
+      {
+        "_path": "Lib/site-packages/laspy/lasdata.py",
+        "path_type": "hardlink",
+        "sha256": "736fb05618a1462b058eebd384b2d44235852177a99ddd9edcdd531db28359ad",
+        "size_in_bytes": 14470
+      },
+      {
+        "_path": "Lib/site-packages/laspy/lasmmap.py",
+        "path_type": "hardlink",
+        "sha256": "2d7c85d007f756453f2c8e2d84582b31a0e77f1bf973f2edc2d8a3cb6e316d2f",
+        "size_in_bytes": 1691
+      },
+      {
+        "_path": "Lib/site-packages/laspy/lasreader.py",
+        "path_type": "hardlink",
+        "sha256": "44e26c9506f66cc55a14f60f221bfc16be396031ea74120805fbb6ebd0a8e763",
+        "size_in_bytes": 13509
+      },
+      {
+        "_path": "Lib/site-packages/laspy/laswriter.py",
+        "path_type": "hardlink",
+        "sha256": "e418b0ba0085631377c0841116e222d65bfceef3dc1e5dc5d755c86778045864",
+        "size_in_bytes": 8162
+      },
+      {
+        "_path": "Lib/site-packages/laspy/lib.py",
+        "path_type": "hardlink",
+        "sha256": "a53ae9daca1df03843102089338f6f5daa76d8312581bd9a6eb66d21264fdbf0",
+        "size_in_bytes": 13405
+      },
+      {
+        "_path": "Lib/site-packages/laspy/lib.pyi",
+        "path_type": "hardlink",
+        "sha256": "dd95e0b204b8eaeaa7b60ef9cba29452bcc067e5f273d55aff80c777f6d371a2",
+        "size_in_bytes": 2421
+      },
+      {
+        "_path": "Lib/site-packages/laspy/point/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6ec073044e36f81d59dad748017c8b8dbe24c4cdd5a16d16cf5f40949ef54e3b",
+        "size_in_bytes": 97
+      },
+      {
+        "_path": "Lib/site-packages/laspy/point/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "0ecea0b22546213fbee5c10b2ac307a2e1f336f2e1f5524a0b5e5180f20ad1e5",
+        "size_in_bytes": 328
+      },
+      {
+        "_path": "Lib/site-packages/laspy/point/__pycache__/dims.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "56750753f0c5a99969944274c2ab582b63659641f4e290fa6289da44660e565f",
+        "size_in_bytes": 37720
+      },
+      {
+        "_path": "Lib/site-packages/laspy/point/__pycache__/format.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "9fa12968b30ade22bf6525af5965ab3d85d9540342ede652cbf9a10f2bdf71c1",
+        "size_in_bytes": 14592
+      },
+      {
+        "_path": "Lib/site-packages/laspy/point/__pycache__/packing.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "a0a0f7e12f8a723188e6431b0f709519de1637036595e46ad71da3494f00dd88",
+        "size_in_bytes": 809
+      },
+      {
+        "_path": "Lib/site-packages/laspy/point/__pycache__/record.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "e406e80690a4a9d8cf94e5678abf5413500226ab525eb240f40d9a920946248b",
+        "size_in_bytes": 19455
+      },
+      {
+        "_path": "Lib/site-packages/laspy/point/dims.py",
+        "path_type": "hardlink",
+        "sha256": "1b853dca6c3899eb5d720706fca1179c81f3eee72de42ba3492dc6ec0d979222",
+        "size_in_bytes": 24834
+      },
+      {
+        "_path": "Lib/site-packages/laspy/point/format.py",
+        "path_type": "hardlink",
+        "sha256": "ab6c8de1922cfccfcebac0637194a6c5daec2b610f86f58b796507aa3d839651",
+        "size_in_bytes": 9200
+      },
+      {
+        "_path": "Lib/site-packages/laspy/point/packing.py",
+        "path_type": "hardlink",
+        "sha256": "fdfa5f17e4181e0b451634eb7ef96eed4cfe08115d047587ad052837d4e17308",
+        "size_in_bytes": 461
+      },
+      {
+        "_path": "Lib/site-packages/laspy/point/record.py",
+        "path_type": "hardlink",
+        "sha256": "11773d193ede2abac36f491af2c3d57523f4ec5ee14fae14f37e8960e054f21a",
+        "size_in_bytes": 13474
+      },
+      {
+        "_path": "Lib/site-packages/laspy/typehints.py",
+        "path_type": "hardlink",
+        "sha256": "d93fede0e602d53cc42c1d54926de9e1160d3bb241d6280588a9482a925090aa",
+        "size_in_bytes": 77
+      },
+      {
+        "_path": "Lib/site-packages/laspy/utils.py",
+        "path_type": "hardlink",
+        "sha256": "5b516ac6fa745dfa7ec777d92be453a68c2009a0ad675bb1354ee415a175a6cb",
+        "size_in_bytes": 4402
+      },
+      {
+        "_path": "Lib/site-packages/laspy/vlrs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "086ac931d2d527c3e29dd9c77fdd6525819e239586627822ba29012a6bbb4b30",
+        "size_in_bytes": 75
+      },
+      {
+        "_path": "Lib/site-packages/laspy/vlrs/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "aff63aff53da6dbac1dd558dc3b1431a1d9d871cceca207a8ee67ab258af58bc",
+        "size_in_bytes": 295
+      },
+      {
+        "_path": "Lib/site-packages/laspy/vlrs/__pycache__/geotiff.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "7b8195efb1fd6b01a4cb4f560ed864e06abf0592566b90096a4df8b57ab0df3f",
+        "size_in_bytes": 7036
+      },
+      {
+        "_path": "Lib/site-packages/laspy/vlrs/__pycache__/known.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "d0f39079f37904c1a9773069590750f3e5cbc818d53574bcda03c0cfd40426cf",
+        "size_in_bytes": 43284
+      },
+      {
+        "_path": "Lib/site-packages/laspy/vlrs/__pycache__/vlr.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "b930e2179d35a91dd1e739c46f8b01dbbada30c991bbed13e474a2fbc10f4a94",
+        "size_in_bytes": 4103
+      },
+      {
+        "_path": "Lib/site-packages/laspy/vlrs/__pycache__/vlrlist.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "5d449482aa3cc42549a4e5b097244c95703fceb30cb20d4340a9e3d5c4c0b796",
+        "size_in_bytes": 9212
+      },
+      {
+        "_path": "Lib/site-packages/laspy/vlrs/geotiff.py",
+        "path_type": "hardlink",
+        "sha256": "db90bd1cd6699d3f06d545cba64474abab9fb3956a8f4e55c57e4ea1665b23a1",
+        "size_in_bytes": 7403
+      },
+      {
+        "_path": "Lib/site-packages/laspy/vlrs/known.py",
+        "path_type": "hardlink",
+        "sha256": "730abf7c0b7aa764ea1088e58184aa8830d0f84c263ec2effa77c41ab50a49b3",
+        "size_in_bytes": 27631
+      },
+      {
+        "_path": "Lib/site-packages/laspy/vlrs/vlr.py",
+        "path_type": "hardlink",
+        "sha256": "243316225abe6cd36fb2d3275ad40ab0290ef6a1bfa5706ad5eebc5fcce88cad",
+        "size_in_bytes": 2152
+      },
+      {
+        "_path": "Lib/site-packages/laspy/vlrs/vlrlist.py",
+        "path_type": "hardlink",
+        "sha256": "2b9c7cc93ebafd79f1801d5af66b9107e0950e745171f9a9d1a09639f9c569e6",
+        "size_in_bytes": 7077
+      },
+      {
+        "_path": "Lib/site-packages/laspy-2.7.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "Lib/site-packages/laspy-2.7.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "10e1d0adcf35a90df6be167d21336440b692a0d3280ab2c2f520c3b3a6f63751",
+        "size_in_bytes": 3427
+      },
+      {
+        "_path": "Lib/site-packages/laspy-2.7.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "d018d65d923422f2336b0a5d1c0c5c92e97ea064e5b3ccd4e9faf1d21ea1fdfc",
+        "size_in_bytes": 5805
+      },
+      {
+        "_path": "Lib/site-packages/laspy-2.7.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/laspy-2.7.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "58b82a17209f9bf2804afe161f2632d0fde933f9bb2792fd936b2474a2e2ac2f",
+        "size_in_bytes": 87
+      },
+      {
+        "_path": "Lib/site-packages/laspy-2.7.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "7c7321f127fa79bd20f329dcf10e593a3d01f27bd02748aaf085809eb5e5d22e",
+        "size_in_bytes": 81
+      },
+      {
+        "_path": "Lib/site-packages/laspy-2.7.0.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "b39e6fed0bba3d18445f99fbdf17f7ed3eb666da279f08a6011f544b967720c0",
+        "size_in_bytes": 46
+      },
+      {
+        "_path": "Lib/site-packages/laspy-2.7.0.dist-info/licenses/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "586e5e4d12f36050240d2702abcd3319593f13841440920244f95f15cb83eb63",
+        "size_in_bytes": 1538
+      },
+      {
+        "_path": "Scripts/laspy.exe",
+        "path_type": "hardlink",
+        "sha256": "8d009995e75f2687e578eba938830b72ef5e7d4af3ed698dd2bbe21c4336e768",
+        "size_in_bytes": 108380
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/cli/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "3a9d59651a5b176b0a75aa0e60d37ea417a8e66d267a33a9cf92bc99e70ecf26",
+        "size_in_bytes": 225
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/cli/test_compress_decompress.py",
+        "path_type": "hardlink",
+        "sha256": "23dd060380414836e68b7a7f246a777a8e41d3e4e387ec2227b2bd4e812de5bb",
+        "size_in_bytes": 3272
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/cli/test_filter.py",
+        "path_type": "hardlink",
+        "sha256": "091af2b38e56fd6ff71cf1f2b3317613cdbcd39e37ae73eb6e8eac95d6fac06a",
+        "size_in_bytes": 13102
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/cli/test_info.py",
+        "path_type": "hardlink",
+        "sha256": "8b4c56cf7f7786de03ad6caebc9fa56a89eb42110045e83ee751ad9d080b82f0",
+        "size_in_bytes": 5405
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/conftest.py",
+        "path_type": "hardlink",
+        "sha256": "333c5cc6aee3233bf96cca3abeb29a09785b4a70715fdec48ba12fd018be0e09",
+        "size_in_bytes": 3806
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/1_4_w_evlr.las",
+        "path_type": "hardlink",
+        "sha256": "7123dad6ee56dfb52220a4b3fe22a0b92e62181557db7fbe915789b8d766139a",
+        "size_in_bytes": 32381
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/1_4_w_evlr.laz",
+        "path_type": "hardlink",
+        "sha256": "c16e65ec5c704f0a60d90b154cf21b1df9e5cd9b40cec58b2488754a0ced1a5b",
+        "size_in_bytes": 8948
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/append-bug-cpy.laz",
+        "path_type": "hardlink",
+        "sha256": "f3bb424795f17d81784395172ab77ead695bff01e0ca824f1aba822c237cad42",
+        "size_in_bytes": 186504
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/append-bug.laz",
+        "path_type": "hardlink",
+        "sha256": "15b8493da724b03f073f7b677981fd14177a00da5ff9751c57c0285d6c0b3f16",
+        "size_in_bytes": 186462
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/autzen.las",
+        "path_type": "hardlink",
+        "sha256": "068a349959a45957184606a0442f8dd69aef24543e11963bc63835301df532f5",
+        "size_in_bytes": 4962
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/autzen_geo_proj.las",
+        "path_type": "hardlink",
+        "sha256": "55c6ed9656c1cfef5b4563822f634302938d72cc00f5bd923458c5a29c856773",
+        "size_in_bytes": 4970
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/autzen_trim.laz",
+        "path_type": "hardlink",
+        "sha256": "75867b3e75cfc3c2e96da9f753c04c9fbaa6a59468dea13e2859f3109b38bd66",
+        "size_in_bytes": 603353
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/extra.laz",
+        "path_type": "hardlink",
+        "sha256": "8aa6c3ff384d4bd7d7d48bfdb6d5973507fa80dd12b1ec698ba606ca4686efed",
+        "size_in_bytes": 29084
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/extrabytes.las",
+        "path_type": "hardlink",
+        "sha256": "b8daf5a96114ac86c42fff13e07abdc736e00e1eb34188506a6895b1126ed75b",
+        "size_in_bytes": 66354
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/file_with_both_wkt_and_geotiff_vlrs.las",
+        "path_type": "hardlink",
+        "sha256": "58bc14d3268eecf5f286d463b2de4d99e1d045bb6e0f626827d9c2f0ee6053c8",
+        "size_in_bytes": 763642
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/plane.laz",
+        "path_type": "hardlink",
+        "sha256": "2251306106cd2aaaf4d67b30a81704b421c7d46de0e49eebcd2d87efc00b5948",
+        "size_in_bytes": 59344
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/simple.copc.laz",
+        "path_type": "hardlink",
+        "sha256": "c94fa8dfe14ce7bff074231ce9e8aa36f7200342a4ff675c2902205f40e72728",
+        "size_in_bytes": 33684
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/simple.las",
+        "path_type": "hardlink",
+        "sha256": "a0570ef57b685b77a6d3e3992cbdfeecdb2c3065d3780bbeaba490818258b734",
+        "size_in_bytes": 36437
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/simple.laz",
+        "path_type": "hardlink",
+        "sha256": "87ac5d2e8edb6cd3c63f1dd1b982d76b1b3c23ca634658ac6c658e1a70e73e71",
+        "size_in_bytes": 18217
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/simple1_1.las",
+        "path_type": "hardlink",
+        "sha256": "63d6a138863a75617161accc0e0b918bdebd6f365c9900573af66724be5b9848",
+        "size_in_bytes": 30047
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/simple1_3.las",
+        "path_type": "hardlink",
+        "sha256": "6753c0da6e89b9e9e1e866946746dadb2b2c31b7eb8fd4602bcaf6a1d1ad2cea",
+        "size_in_bytes": 62888
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/simple1_4.las",
+        "path_type": "hardlink",
+        "sha256": "1162a745e71e9eedddf453062e01c476e791ea09a75190f68f52050dad4a0330",
+        "size_in_bytes": 814388
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/simple_with_page.copc.laz",
+        "path_type": "hardlink",
+        "sha256": "f99e0dc8dd57662eb83b6781cea42c66885433d3bd5dd68769303deb1dda9990",
+        "size_in_bytes": 33716
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/test1_4.las",
+        "path_type": "hardlink",
+        "sha256": "f4e840920885fc175ab90c0a50778165e64e3f9ccb049ea5e360f3e30bb932b1",
+        "size_in_bytes": 32305
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/unregistered_extra_bytes.las",
+        "path_type": "hardlink",
+        "sha256": "1dcac5706538e2171e68c0df91c7c6a4e00a0ca54687875d8454fc02b7d81dcf",
+        "size_in_bytes": 511
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/data/vegetation_1_3.las",
+        "path_type": "hardlink",
+        "sha256": "c3e882a096b12cecd1c7b803ba8e69d7bc1d327bbc1df05c02375654e097dfcb",
+        "size_in_bytes": 299359
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_1_5.py",
+        "path_type": "hardlink",
+        "sha256": "9eea3fb17f6ac522a6e396c2f5031303e57153e867ea87ca8efaf4008dd8a313",
+        "size_in_bytes": 2447
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_append_mode.py",
+        "path_type": "hardlink",
+        "sha256": "19b2c6e4b99f3c29ebb37e6681b6570361f93dea6df415aaf7569d3b77d7c279",
+        "size_in_bytes": 9607
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_chunk_read_write.py",
+        "path_type": "hardlink",
+        "sha256": "314ea3acf259984f898f8415d17fc150c4900976db5b140aba2ed4e15e1c0af2",
+        "size_in_bytes": 3874
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_common.py",
+        "path_type": "hardlink",
+        "sha256": "6b5f4d75bdd33376ed17f6fa5223abff9cbd55a2322e211d6f556fb2de0d6d40",
+        "size_in_bytes": 16071
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_constants.py",
+        "path_type": "hardlink",
+        "sha256": "f91814c5d1222f724b2c428a3455e7494c6b3eb43cc4342e2285df50f1e4a135",
+        "size_in_bytes": 1171
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_conversion.py",
+        "path_type": "hardlink",
+        "sha256": "a9918fc8554662385339de1146664d5efe65805cd9c672dc7fc042d3c5b22e89",
+        "size_in_bytes": 859
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_copc.py",
+        "path_type": "hardlink",
+        "sha256": "469baed2a1844fc37a32ef327fd0a02284ba37660bc1eee49e9c07c5f5a5e41d",
+        "size_in_bytes": 7160
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_creation.py",
+        "path_type": "hardlink",
+        "sha256": "8856a5f1dd917408aa6c0417a81321c399dcd2992ff11a0ae70021691a7c066f",
+        "size_in_bytes": 4684
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_crs.py",
+        "path_type": "hardlink",
+        "sha256": "06666c662b3d7ca08c04cd190f4164b39b671b5f938e44fc9c6f6f1eda7a97f5",
+        "size_in_bytes": 6607
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_extrabytes.py",
+        "path_type": "hardlink",
+        "sha256": "8d444348f7354eec263bbbb92d83855476c7c1d6c243255388a85cd8b22907ed",
+        "size_in_bytes": 14185
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_field_views.py",
+        "path_type": "hardlink",
+        "sha256": "699909bd93b099d195f2be03f867ba94de7e5d359010ba665ce241e12a600b89",
+        "size_in_bytes": 5197
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_header.py",
+        "path_type": "hardlink",
+        "sha256": "d4e3f654f59a9c8d4d980445ef8da681756ddc2d68e1876ca10afd75e7f89e09",
+        "size_in_bytes": 11660
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_las_1_1.py",
+        "path_type": "hardlink",
+        "sha256": "df8816d40bca8aaf374f5369989090a564defe2b9515e59e490754312fa14355",
+        "size_in_bytes": 443
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_laspy.py",
+        "path_type": "hardlink",
+        "sha256": "ce1d65ed03b8157ac8f382fe8147b93e4c36d7f1bcdbe332ab6de5a59438358e",
+        "size_in_bytes": 25461
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_mmap.py",
+        "path_type": "hardlink",
+        "sha256": "bf17afa190525bba8d3fa97288a1c3d06bc70beb58fea18916c60ddd72a504c0",
+        "size_in_bytes": 284
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_modif_1_2.py",
+        "path_type": "hardlink",
+        "sha256": "9066f63c67d5af34f524f5243342d55c7206fad55e9dac38d82ae1ee2c4d5242",
+        "size_in_bytes": 1846
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_modif_1_4.py",
+        "path_type": "hardlink",
+        "sha256": "890ca2863fa420b2fc068c95a1ff442196a56b7787e0527366064abea5260c8e",
+        "size_in_bytes": 1515
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_non_seekable.py",
+        "path_type": "hardlink",
+        "sha256": "a695fd6c5760b74662dff544d9d1db8db0c9edbe61e61af749b11f169b29f1de",
+        "size_in_bytes": 2891
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_point_format.py",
+        "path_type": "hardlink",
+        "sha256": "42bb2e9248ce29e4b1b92c12889f6b8896729c928165f86ab774233b876a8669",
+        "size_in_bytes": 486
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_reading_1_2.py",
+        "path_type": "hardlink",
+        "sha256": "1e4d7cbabbea2a0338f2a89680d19bdc0fa82fd08975b3fc38c8c560eaa23f19",
+        "size_in_bytes": 5630
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_reading_1_4.py",
+        "path_type": "hardlink",
+        "sha256": "e51f5ebabf5925e3af9c6cf5a4b896f587602dbc3a2405d3fa56f15bc7618f5b",
+        "size_in_bytes": 7526
+      },
+      {
+        "_path": "etc/conda/test-files/laspy/1/tests/test_vlrs.py",
+        "path_type": "hardlink",
+        "sha256": "82df9379185aea55efbe87bb9565336b65850c8999af0be4c729a8476f012183",
+        "size_in_bytes": 2344
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\laspy-2.7.0-np2py312heb2d3c7_1",
+    "type": 1
+  }
+}

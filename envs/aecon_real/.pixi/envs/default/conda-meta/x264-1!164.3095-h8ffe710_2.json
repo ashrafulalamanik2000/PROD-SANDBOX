@@ -1,0 +1,85 @@
+{
+  "arch": "x86_64",
+  "build": "h8ffe710_2",
+  "build_number": 2,
+  "depends": [
+    "vc >=14.1,<15",
+    "vs2015_runtime >=14.16.27033"
+  ],
+  "license": "GPL-2.0-or-later",
+  "license_family": "GPL",
+  "md5": "19e39905184459760ccb8cf5c75f148b",
+  "name": "x264",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "x264 >=1!164.3095,<1!165"
+    ]
+  },
+  "sha256": "97166b318f8c68ffe4d50b2f4bd36e415219eeaef233e7d41c54244dc6108249",
+  "size": 1041889,
+  "subdir": "win-64",
+  "timestamp": 1660323726084,
+  "version": "1!164.3095",
+  "fn": "x264-1!164.3095-h8ffe710_2.tar.bz2",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/x264-1!164.3095-h8ffe710_2.tar.bz2",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\x264-1!164.3095-h8ffe710_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libx264-164.dll",
+    "Library/bin/x264.exe",
+    "Library/include/x264.h",
+    "Library/include/x264_config.h",
+    "Library/lib/libx264.lib",
+    "Library/lib/pkgconfig/x264.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libx264-164.dll",
+        "path_type": "hardlink",
+        "sha256": "ccb07d26b510956c612e02bf45e9b58859f237335c918e077887c3a8868f3e33",
+        "size_in_bytes": 2247168
+      },
+      {
+        "_path": "Library/bin/x264.exe",
+        "path_type": "hardlink",
+        "sha256": "8834a25917aa38a795bc8799b616dc3a2f23ba78640a1ce13c3a6bebcfa9f967",
+        "size_in_bytes": 408576
+      },
+      {
+        "_path": "Library/include/x264.h",
+        "path_type": "hardlink",
+        "sha256": "c585f3c245b4d84a6e80bc18e79d928941a0d68851d66ef417ec1656f877dc3f",
+        "size_in_bytes": 48650
+      },
+      {
+        "_path": "Library/include/x264_config.h",
+        "path_type": "hardlink",
+        "sha256": "2ae550d68aef97610a2ced6b88aa398e6c946278eb7902e5c6bde7ffb1c970c3",
+        "size_in_bytes": 243
+      },
+      {
+        "_path": "Library/lib/libx264.lib",
+        "path_type": "hardlink",
+        "sha256": "89f5775a81935bd8601d4edddcde386adf019c49deb60b021f02d8c62a47972e",
+        "size_in_bytes": 13108
+      },
+      {
+        "_path": "Library/lib/pkgconfig/x264.pc",
+        "path_type": "hardlink",
+        "sha256": "d8f2f68f96b7ffac256411ee0c1ec02f0a0f70f9aa62feef3168e63507562d61",
+        "sha256_in_prefix": "46ad4abc30f417ce22580792cf4f00e3d69d3dd55183a7c9eae7afb901fd836a",
+        "size_in_bytes": 314,
+        "file_mode": "text",
+        "prefix_placeholder": "D:\\bld\\x264_1660323045509\\_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\x264-1!164.3095-h8ffe710_2",
+    "type": 1
+  }
+}

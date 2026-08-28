@@ -1,0 +1,122 @@
+{
+  "arch": "x86_64",
+  "build": "h89924da_1",
+  "build_number": 1,
+  "depends": [
+    "python *",
+    "packaging",
+    "libglib ==2.88.3 he810d59_1",
+    "glib-tools ==2.88.3 hf027272_1",
+    "libintl-devel",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "libintl >=0.22.5,<1.0a0"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "md5": "ac5df4663035b908c8bdccfd7fe45e0e",
+  "name": "glib",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libglib >=2.88.3,<3.0a0"
+    ]
+  },
+  "sha256": "4aadcd822cee664e41f413fc73d58ee44e9f9609dfa8bae7fedd01d569b1447c",
+  "size": 76039,
+  "subdir": "win-64",
+  "timestamp": 1786457672418,
+  "version": "2.88.3",
+  "fn": "glib-2.88.3-h89924da_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/glib-2.88.3-h89924da_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\glib-2.88.3-h89924da_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/gdbus-codegen",
+    "Library/bin/glib-compile-resources.exe",
+    "Library/bin/glib-genmarshal",
+    "Library/bin/glib-gettextize",
+    "Library/bin/glib-mkenums",
+    "Library/bin/gobject-query.exe",
+    "Library/bin/gtester-report",
+    "Library/lib/glib-2.0/include/glibconfig.h",
+    "etc/conda/test-files/glib/0/test-win.bat",
+    "etc/conda/test-files/glib/0/test.c"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/gdbus-codegen",
+        "path_type": "hardlink",
+        "sha256": "a5eb94613d33b429f1a43f2d9fcfcd0f9692eee54f0fb748f814d82b9b62cd84",
+        "sha256_in_prefix": "1196e0898f7ebb0494e6d92d07e003c0041fe6ac7ac60ae2f0271476d53fee26",
+        "size_in_bytes": 2138,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_glib-split_1786457672/h_env"
+      },
+      {
+        "_path": "Library/bin/glib-compile-resources.exe",
+        "path_type": "hardlink",
+        "sha256": "d4712e2573c6af748a6bf54b8cf1b51666e557bf93e5e862bf696ec544ce7e16",
+        "size_in_bytes": 41984
+      },
+      {
+        "_path": "Library/bin/glib-genmarshal",
+        "path_type": "hardlink",
+        "sha256": "f16bdc825ccbf11d6db880685a5668888b890c40635c76f85b40d1bf7555a3bc",
+        "size_in_bytes": 41107
+      },
+      {
+        "_path": "Library/bin/glib-gettextize",
+        "path_type": "hardlink",
+        "sha256": "3f1020dfd637fa3e3e0cd1864b3a4d3ded3169e7f920ddcea2b0e6c0065e6dd2",
+        "sha256_in_prefix": "3ee28a7209c8374943eac68779a772ab9802ff7f57e2a1229b579caa3f22623b",
+        "size_in_bytes": 5580,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_glib-split_1786457672/h_env"
+      },
+      {
+        "_path": "Library/bin/glib-mkenums",
+        "path_type": "hardlink",
+        "sha256": "fae0003699f4b543442f3d23bfcf34660f10eb4bd4d7d1c6507917c52b9afb49",
+        "size_in_bytes": 32085
+      },
+      {
+        "_path": "Library/bin/gobject-query.exe",
+        "path_type": "hardlink",
+        "sha256": "d8dacdbddbf58834224b45efdbaac446d47ad94d6d27023efe8b1f46cb2c2992",
+        "size_in_bytes": 14848
+      },
+      {
+        "_path": "Library/bin/gtester-report",
+        "path_type": "hardlink",
+        "sha256": "95acfc202155668601932a0eb745e8a3cf0eed742e17a46c0aef921be43d1db1",
+        "size_in_bytes": 19094
+      },
+      {
+        "_path": "Library/lib/glib-2.0/include/glibconfig.h",
+        "path_type": "hardlink",
+        "sha256": "d46e4b8a071274a7bb575fa49e9a85487e9534539e86808e52f1ca20c23ebeee",
+        "size_in_bytes": 6138
+      },
+      {
+        "_path": "etc/conda/test-files/glib/0/test-win.bat",
+        "path_type": "hardlink",
+        "sha256": "4a1d729f8f605ab2ff7c26813acfeafbefffc462fb93bd4de9d43720ff1df194",
+        "size_in_bytes": 727
+      },
+      {
+        "_path": "etc/conda/test-files/glib/0/test.c",
+        "path_type": "hardlink",
+        "sha256": "0a70e6721a5bd490134537b97c56db1aed8a84e65169987f34b7a289c7751cbd",
+        "size_in_bytes": 216
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\glib-2.88.3-h89924da_1",
+    "type": 1
+  }
+}

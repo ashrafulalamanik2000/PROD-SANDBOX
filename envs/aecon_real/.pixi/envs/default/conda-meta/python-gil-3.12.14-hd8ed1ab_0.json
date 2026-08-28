@@ -1,0 +1,32 @@
+{
+  "build": "hd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "cpython 3.12.14.*",
+    "python_abi * *_cp312"
+  ],
+  "license": "Python-2.0",
+  "md5": "3b084ff55bd64d09178194042f50f6ba",
+  "name": "python-gil",
+  "noarch": "generic",
+  "run_exports": {},
+  "sha256": "d006a720b5ff306e5d58f5ceeeb11ecae6d0b071200fb014ab6e2d2c3be65733",
+  "size": 45973,
+  "subdir": "noarch",
+  "timestamp": 1787351908212,
+  "version": "3.12.14",
+  "fn": "python-gil-3.12.14-hd8ed1ab_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/python-gil-3.12.14-hd8ed1ab_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\python-gil-3.12.14-hd8ed1ab_0",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\python-gil-3.12.14-hd8ed1ab_0",
+    "type": 1
+  }
+}

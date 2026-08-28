@@ -1,0 +1,95 @@
+{
+  "arch": "x86_64",
+  "build": "h7d8d6a5_10_cpu",
+  "build_number": 10,
+  "depends": [
+    "libarrow 24.0.0 h11fefc6_10_cpu",
+    "libarrow-compute 24.0.0 h081cd8e_10_cpu",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "4d6ce9394a9e8734ce9c2db715e2293a",
+  "name": "libarrow-acero",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libarrow-acero >=24.0.0,<24.1.0a0"
+    ]
+  },
+  "sha256": "eaa4a445d7b1ee64e65f9119228a90c8a0c4c22e92274d854df5b929f8b0c68d",
+  "size": 446519,
+  "subdir": "win-64",
+  "timestamp": 1783216621759,
+  "version": "24.0.0",
+  "fn": "libarrow-acero-24.0.0-h7d8d6a5_10_cpu.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libarrow-acero-24.0.0-h7d8d6a5_10_cpu.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libarrow-acero-24.0.0-h7d8d6a5_10_cpu",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/arrow_acero.dll",
+    "Library/lib/arrow_acero.lib",
+    "Library/lib/cmake/ArrowAcero/ArrowAceroConfig.cmake",
+    "Library/lib/cmake/ArrowAcero/ArrowAceroConfigVersion.cmake",
+    "Library/lib/cmake/ArrowAcero/ArrowAceroTargets-release.cmake",
+    "Library/lib/cmake/ArrowAcero/ArrowAceroTargets.cmake",
+    "Library/lib/pkgconfig/arrow-acero.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/arrow_acero.dll",
+        "path_type": "hardlink",
+        "sha256": "566017180d51ccccfbbb8f6c7a160083dde4cd3f13bbeadce0b8d296b49dba5c",
+        "size_in_bytes": 1237504
+      },
+      {
+        "_path": "Library/lib/arrow_acero.lib",
+        "path_type": "hardlink",
+        "sha256": "8d84af4dd0025613e6a9be3612038fb55d6f1eca087b859348c1d56fc0675c83",
+        "size_in_bytes": 287988
+      },
+      {
+        "_path": "Library/lib/cmake/ArrowAcero/ArrowAceroConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "2c7c70480250daeca7c13deb1c6931544b22352f415fde9437d1ae2c9b5ed23a",
+        "size_in_bytes": 2522
+      },
+      {
+        "_path": "Library/lib/cmake/ArrowAcero/ArrowAceroConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "07aed519cb8371ba0e91c99c15b9da42221d122c2deac41463770e6fea05b540",
+        "size_in_bytes": 2830
+      },
+      {
+        "_path": "Library/lib/cmake/ArrowAcero/ArrowAceroTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "bb33a6d1f38031b4e59a356195f7811c1aea6be5147e6c8d50162143d68e41bd",
+        "size_in_bytes": 1006
+      },
+      {
+        "_path": "Library/lib/cmake/ArrowAcero/ArrowAceroTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "f45abe0e95cc69d302e05aae62b46de7ffc1a0bcb630b0754494066316f1217f",
+        "size_in_bytes": 4378
+      },
+      {
+        "_path": "Library/lib/pkgconfig/arrow-acero.pc",
+        "path_type": "hardlink",
+        "sha256": "101c740f536979370a22120cac07ffb7216f9d2f92010d3128df8860f8122a14",
+        "sha256_in_prefix": "77b53f8ca8426e26acc89b6792300b892378f18bf86a5a609af2b8c098fa03f6",
+        "size_in_bytes": 1096,
+        "file_mode": "text",
+        "prefix_placeholder": "C:/bld/apache-arrow_1783209749187/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libarrow-acero-24.0.0-h7d8d6a5_10_cpu",
+    "type": 1
+  }
+}

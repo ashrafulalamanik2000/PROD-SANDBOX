@@ -1,0 +1,117 @@
+{
+  "arch": "x86_64",
+  "build": "h2466b09_1",
+  "build_number": 1,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "b67ed8c9ca072695ff482e50d888a523",
+  "name": "libogg",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libogg >=1.3.5,<1.4.0a0"
+    ]
+  },
+  "sha256": "c63e5fb169dbd192aacdcee6e37235407f106b8ca9c9036942a25e0366cbc73c",
+  "size": 35040,
+  "subdir": "win-64",
+  "timestamp": 1745826086628,
+  "version": "1.3.5",
+  "fn": "libogg-1.3.5-h2466b09_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libogg-1.3.5-h2466b09_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libogg-1.3.5-h2466b09_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/ogg.dll",
+    "Library/include/ogg/config_types.h",
+    "Library/include/ogg/ogg.h",
+    "Library/include/ogg/os_types.h",
+    "Library/lib/cmake/Ogg/OggConfig.cmake",
+    "Library/lib/cmake/Ogg/OggConfigVersion.cmake",
+    "Library/lib/cmake/Ogg/OggTargets-release.cmake",
+    "Library/lib/cmake/Ogg/OggTargets.cmake",
+    "Library/lib/ogg.lib",
+    "Library/lib/pkgconfig/ogg.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/ogg.dll",
+        "path_type": "hardlink",
+        "sha256": "3aca5530e09d7f13886f84e28a5c783fab9ff44a1ce3f05846fb561e67d59e2c",
+        "size_in_bytes": 30720
+      },
+      {
+        "_path": "Library/include/ogg/config_types.h",
+        "path_type": "hardlink",
+        "sha256": "2200f7d8664cdf27cd7d007f22fc70d1168e842f2af4d541b2ddaf7659375e95",
+        "size_in_bytes": 564
+      },
+      {
+        "_path": "Library/include/ogg/ogg.h",
+        "path_type": "hardlink",
+        "sha256": "aad86109c1fdb377738675a63e0b19859e06ada25ae5c59c290ca7263d1dc4ca",
+        "size_in_bytes": 8373
+      },
+      {
+        "_path": "Library/include/ogg/os_types.h",
+        "path_type": "hardlink",
+        "sha256": "3bbab6a5d31e3c25c6080252b042afb87028e3ffff100e3e0285648b250b70f4",
+        "size_in_bytes": 4781
+      },
+      {
+        "_path": "Library/lib/cmake/Ogg/OggConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "239742193eff9debec89f4db6cf62ab2beb6c216cd7976662f3558118bd79ab3",
+        "size_in_bytes": 1342
+      },
+      {
+        "_path": "Library/lib/cmake/Ogg/OggConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "5f4256969e532077e97b57bc284d12507e61f0fefe6f8cd2cab818559afdfae9",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/Ogg/OggTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "ca95a58d9089d2aee769ee817a311f273d92054332deb2a31a9948be9aba84cd",
+        "size_in_bytes": 864
+      },
+      {
+        "_path": "Library/lib/cmake/Ogg/OggTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "cbd08890e134fe066585238562c60b265aa8343f33a48475bbb03dfb1ea6102c",
+        "size_in_bytes": 4195
+      },
+      {
+        "_path": "Library/lib/ogg.lib",
+        "path_type": "hardlink",
+        "sha256": "b7fd63b484cf922b14a1225e6372515b7f717b5e70f4c11fba6e4af2f4e12620",
+        "size_in_bytes": 15580
+      },
+      {
+        "_path": "Library/lib/pkgconfig/ogg.pc",
+        "path_type": "hardlink",
+        "sha256": "bcdf155d0f07166a8b9e71a2e3d473d18f1405c9c1bb1a7a66d1c2b76170490c",
+        "sha256_in_prefix": "82df63d8894ea3551e386e466e4c075f463498a47c9d1f8d07aa7d0cf0a443e0",
+        "size_in_bytes": 463,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_libogg_1745826086/h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libogg-1.3.5-h2466b09_1",
+    "type": 1
+  }
+}

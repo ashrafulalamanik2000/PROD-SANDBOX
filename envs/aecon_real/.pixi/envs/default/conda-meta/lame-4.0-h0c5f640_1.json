@@ -1,0 +1,70 @@
+{
+  "arch": "x86_64",
+  "build": "h0c5f640_1",
+  "build_number": 1,
+  "depends": [
+    "mpg123 >=1.33.7,<1.34.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "LGPL-2.0-only",
+  "license_family": "LGPL",
+  "md5": "f2520f0d4797754e640bc20bbcfdea6d",
+  "name": "lame",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "lame >=4.0,<4.1.0a0"
+    ]
+  },
+  "sha256": "c1df9067381c938f819639a3c1b151a28bd1880c044951b5e14785a89fd91cf5",
+  "size": 360500,
+  "subdir": "win-64",
+  "timestamp": 1786292530281,
+  "version": "4.0",
+  "fn": "lame-4.0-h0c5f640_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/lame-4.0-h0c5f640_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\lame-4.0-h0c5f640_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/lame.exe",
+    "Library/bin/libmp3lame.dll",
+    "Library/include/lame/lame.h",
+    "Library/lib/libmp3lame.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/lame.exe",
+        "path_type": "hardlink",
+        "sha256": "e1082c32a06350de7e527e4d5eb5ac6e79df6688eaeb793f87ecf952bed9cd53",
+        "size_in_bytes": 628224
+      },
+      {
+        "_path": "Library/bin/libmp3lame.dll",
+        "path_type": "hardlink",
+        "sha256": "d40fe15c80165169ae4e7b7ba6af7a88ad4f68ce5da98daadc6c08c950cb62dd",
+        "size_in_bytes": 472064
+      },
+      {
+        "_path": "Library/include/lame/lame.h",
+        "path_type": "hardlink",
+        "sha256": "05034c34279efe22cad40ceca603e493adb42b66fb105d1e146aee834a9547bb",
+        "size_in_bytes": 50859
+      },
+      {
+        "_path": "Library/lib/libmp3lame.lib",
+        "path_type": "hardlink",
+        "sha256": "55746b844dc8cbee63257555d2a24115c87f9c5ce8b0402a07e0be9074cc3eb2",
+        "size_in_bytes": 53476
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\lame-4.0-h0c5f640_1",
+    "type": 1
+  }
+}

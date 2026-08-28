@@ -1,0 +1,194 @@
+{
+  "arch": "x86_64",
+  "build": "h826ebb9_0",
+  "build_number": 0,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "77af5a2fabd1c8c3eb9e0a7b3d5afc22",
+  "name": "opencl-headers",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "3acfdfe4b914a9fd8c950da6c13cfe563896744709eb5c4c7a926919c3e0b630",
+  "size": 56082,
+  "subdir": "win-64",
+  "timestamp": 1773844547434,
+  "version": "2025.06.13",
+  "fn": "opencl-headers-2025.06.13-h826ebb9_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/opencl-headers-2025.06.13-h826ebb9_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\opencl-headers-2025.06.13-h826ebb9_0",
+  "requested_specs": [],
+  "files": [
+    "Library/include/CL/cl.h",
+    "Library/include/CL/cl_d3d10.h",
+    "Library/include/CL/cl_d3d11.h",
+    "Library/include/CL/cl_dx9_media_sharing.h",
+    "Library/include/CL/cl_dx9_media_sharing_intel.h",
+    "Library/include/CL/cl_egl.h",
+    "Library/include/CL/cl_ext.h",
+    "Library/include/CL/cl_ext_intel.h",
+    "Library/include/CL/cl_function_types.h",
+    "Library/include/CL/cl_gl.h",
+    "Library/include/CL/cl_gl_ext.h",
+    "Library/include/CL/cl_half.h",
+    "Library/include/CL/cl_icd.h",
+    "Library/include/CL/cl_layer.h",
+    "Library/include/CL/cl_platform.h",
+    "Library/include/CL/cl_va_api_media_sharing_intel.h",
+    "Library/include/CL/cl_version.h",
+    "Library/include/CL/opencl.h",
+    "Library/lib/pkgconfig/OpenCL-Headers.pc",
+    "Library/share/cmake/OpenCLHeaders/OpenCLHeadersConfig.cmake",
+    "Library/share/cmake/OpenCLHeaders/OpenCLHeadersConfigVersion.cmake",
+    "Library/share/cmake/OpenCLHeaders/OpenCLHeadersTargets.cmake"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/include/CL/cl.h",
+        "path_type": "hardlink",
+        "sha256": "3c51949c38bf9bca6dbe919a1f60727bad1ef4a7a321c6d530f7502ddc1fd706",
+        "size_in_bytes": 81582
+      },
+      {
+        "_path": "Library/include/CL/cl_d3d10.h",
+        "path_type": "hardlink",
+        "sha256": "9dd1c0706da71db79465285d723b43f12eef04680ea02efa529be8b2e38f5dbe",
+        "size_in_bytes": 8220
+      },
+      {
+        "_path": "Library/include/CL/cl_d3d11.h",
+        "path_type": "hardlink",
+        "sha256": "f18e5fed81f0133362f82f67bb5c4d8dd3364df1140343be4d1ec82e60f57a4c",
+        "size_in_bytes": 8258
+      },
+      {
+        "_path": "Library/include/CL/cl_dx9_media_sharing.h",
+        "path_type": "hardlink",
+        "sha256": "b1c2071aabd613738b5b60612413acfec618b14902015f3f55d25da9a2cd3a9e",
+        "size_in_bytes": 12491
+      },
+      {
+        "_path": "Library/include/CL/cl_dx9_media_sharing_intel.h",
+        "path_type": "hardlink",
+        "sha256": "0ce4432973392815885d4b6fe968135682502d702ec3dbde6db78e173adfa8da",
+        "size_in_bytes": 959
+      },
+      {
+        "_path": "Library/include/CL/cl_egl.h",
+        "path_type": "hardlink",
+        "sha256": "a16fcaec96792b6768d82e351c07ebbf7c9e12be415ee735eb2af5ce379cfcb7",
+        "size_in_bytes": 5812
+      },
+      {
+        "_path": "Library/include/CL/cl_ext.h",
+        "path_type": "hardlink",
+        "sha256": "6e0dc74ef76bae23c2e80d5b4b7da8524cb1342880881a1d9e2321b92e5d75af",
+        "size_in_bytes": 153814
+      },
+      {
+        "_path": "Library/include/CL/cl_ext_intel.h",
+        "path_type": "hardlink",
+        "sha256": "20fc359c30ad2339af7c8442da97ebd8e6ea4fb8f57c47b96b0f284d4c281953",
+        "size_in_bytes": 902
+      },
+      {
+        "_path": "Library/include/CL/cl_function_types.h",
+        "path_type": "hardlink",
+        "sha256": "a90d127737e412ef3edb2ffa90f6c237ddb58899b3b14a1ec412ea0eb88c8009",
+        "size_in_bytes": 33387
+      },
+      {
+        "_path": "Library/include/CL/cl_gl.h",
+        "path_type": "hardlink",
+        "sha256": "621a3a1fb33604a9026584fc423110b9ecaa094ac2c8cf3d2c3dfe795debbbff",
+        "size_in_bytes": 12535
+      },
+      {
+        "_path": "Library/include/CL/cl_gl_ext.h",
+        "path_type": "hardlink",
+        "sha256": "7fd0d4ad6072a90b05749fe4d2131b424b71d19ae809ae3d7d4862b0d0aee16a",
+        "size_in_bytes": 905
+      },
+      {
+        "_path": "Library/include/CL/cl_half.h",
+        "path_type": "hardlink",
+        "sha256": "c4d64cb15e710e60058d6072f8fbb1ed988eda60d16f6fc1ddb7df8c9e903109",
+        "size_in_bytes": 10430
+      },
+      {
+        "_path": "Library/include/CL/cl_icd.h",
+        "path_type": "hardlink",
+        "sha256": "a43e3a5c9921a4f9a59001884e75d8b79a0afef50644f80543ec63f0ca71cfce",
+        "size_in_bytes": 11505
+      },
+      {
+        "_path": "Library/include/CL/cl_layer.h",
+        "path_type": "hardlink",
+        "sha256": "2eff3e48b4f478e054d077074c72719d2b3e8006e6b8057a0e55f6078e00555e",
+        "size_in_bytes": 3614
+      },
+      {
+        "_path": "Library/include/CL/cl_platform.h",
+        "path_type": "hardlink",
+        "sha256": "be9647d121bfea20cfac9fe2be2e3ac7851a0dd77a141363dcc72f126a1a358c",
+        "size_in_bytes": 43222
+      },
+      {
+        "_path": "Library/include/CL/cl_va_api_media_sharing_intel.h",
+        "path_type": "hardlink",
+        "sha256": "fe9457119b44cdd0fca90e3b21fd2c8b81de792a81ce19faa17490767fd4ed07",
+        "size_in_bytes": 7263
+      },
+      {
+        "_path": "Library/include/CL/cl_version.h",
+        "path_type": "hardlink",
+        "sha256": "1b161f73c0f0b07121314055f75df6c19d6a93e3a0d24202c6f3e2dd1615b2a2",
+        "size_in_bytes": 3125
+      },
+      {
+        "_path": "Library/include/CL/opencl.h",
+        "path_type": "hardlink",
+        "sha256": "9a76fa63630e8fd5b30b5e6c692dbe7ab22edff708dfe6a06d04a3671a7716e1",
+        "size_in_bytes": 970
+      },
+      {
+        "_path": "Library/lib/pkgconfig/OpenCL-Headers.pc",
+        "path_type": "hardlink",
+        "sha256": "9944a08b646b3539cae04995dc177d8f2c9112584b0c4f62526c39871ec4ec30",
+        "sha256_in_prefix": "4a8ee30549c35287693082692d9c2dd7000923c9df27f8bd1f4fdeedb71a8e64",
+        "size_in_bytes": 192,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/opencl-headers_1773844237439/_h_env"
+      },
+      {
+        "_path": "Library/share/cmake/OpenCLHeaders/OpenCLHeadersConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "d106715ebf2c7512529434a58d83f754495bfcbbdb5d84ad34bab51ace354c3d",
+        "size_in_bytes": 63
+      },
+      {
+        "_path": "Library/share/cmake/OpenCLHeaders/OpenCLHeadersConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "f61e48935ed7c46d8c362655adabc57ecbecc169880c68875d9be9dfa7739d67",
+        "size_in_bytes": 1899
+      },
+      {
+        "_path": "Library/share/cmake/OpenCLHeaders/OpenCLHeadersTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "04d6a19e7913f709f3dcbd83306d68d0793bbcaa6ce051428aa5e77e0ca1ec2c",
+        "size_in_bytes": 4235
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\opencl-headers-2025.06.13-h826ebb9_0",
+    "type": 1
+  }
+}

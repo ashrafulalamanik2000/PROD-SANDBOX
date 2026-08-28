@@ -1,0 +1,37 @@
+{
+  "arch": "x86_64",
+  "build": "h57928b3_0",
+  "build_number": 0,
+  "depends": [
+    "libharfbuzz-devel 14.3.1 h03b5201_0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "699242debb10424f042a52d478418ded",
+  "name": "harfbuzz",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libharfbuzz >=14.3.1"
+    ]
+  },
+  "sha256": "5e410d9a7e589978aa2e11be32715db51ee4f67ac8e8ef2785f7b24172a1221d",
+  "size": 11519,
+  "subdir": "win-64",
+  "timestamp": 1786971106695,
+  "version": "14.3.1",
+  "fn": "harfbuzz-14.3.1-h57928b3_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/harfbuzz-14.3.1-h57928b3_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\harfbuzz-14.3.1-h57928b3_0",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\harfbuzz-14.3.1-h57928b3_0",
+    "type": 1
+  }
+}

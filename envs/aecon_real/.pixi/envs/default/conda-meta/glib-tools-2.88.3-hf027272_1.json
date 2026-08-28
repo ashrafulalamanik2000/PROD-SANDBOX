@@ -1,0 +1,322 @@
+{
+  "arch": "x86_64",
+  "build": "hf027272_1",
+  "build_number": 1,
+  "depends": [
+    "libglib ==2.88.3 he810d59_1",
+    "libffi",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "libintl >=0.22.5,<1.0a0"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "md5": "a22de7dd4d070f48158307df1749c9b1",
+  "name": "glib-tools",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "b4b637f6e3b408e21af8e98d635745146f7434ecf1b7ca73b8e510c1d3544ef1",
+  "size": 251656,
+  "subdir": "win-64",
+  "timestamp": 1786457672418,
+  "version": "2.88.3",
+  "fn": "glib-tools-2.88.3-hf027272_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/glib-tools-2.88.3-hf027272_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\glib-tools-2.88.3-hf027272_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/gdbus.exe",
+    "Library/bin/gi-compile-repository.exe",
+    "Library/bin/gi-decompile-typelib.exe",
+    "Library/bin/gi-inspect-typelib.exe",
+    "Library/bin/gio-querymodules.exe",
+    "Library/bin/gio.exe",
+    "Library/bin/glib-compile-schemas.exe",
+    "Library/bin/gresource.exe",
+    "Library/bin/gsettings.exe",
+    "Library/lib/pkgconfig/gio-2.0.pc",
+    "Library/lib/pkgconfig/gio-windows-2.0.pc",
+    "Library/lib/pkgconfig/glib-2.0.pc",
+    "Library/lib/pkgconfig/gmodule-2.0.pc",
+    "Library/lib/pkgconfig/gmodule-export-2.0.pc",
+    "Library/lib/pkgconfig/gmodule-no-export-2.0.pc",
+    "Library/lib/pkgconfig/gobject-2.0.pc",
+    "Library/lib/pkgconfig/gthread-2.0.pc",
+    "Library/share/aclocal/glib-2.0.m4",
+    "Library/share/aclocal/glib-gettext.m4",
+    "Library/share/aclocal/gsettings.m4",
+    "Library/share/gettext/its/gschema.its",
+    "Library/share/gettext/its/gschema.loc",
+    "Library/share/glib-2.0/codegen/__init__.py",
+    "Library/share/glib-2.0/codegen/codegen.py",
+    "Library/share/glib-2.0/codegen/codegen_docbook.py",
+    "Library/share/glib-2.0/codegen/codegen_main.py",
+    "Library/share/glib-2.0/codegen/codegen_md.py",
+    "Library/share/glib-2.0/codegen/codegen_rst.py",
+    "Library/share/glib-2.0/codegen/config.py",
+    "Library/share/glib-2.0/codegen/dbustypes.py",
+    "Library/share/glib-2.0/codegen/parser.py",
+    "Library/share/glib-2.0/codegen/utils.py",
+    "Library/share/glib-2.0/dtds/gresource.dtd",
+    "Library/share/glib-2.0/gdb/glib_gdb.py",
+    "Library/share/glib-2.0/gdb/gobject_gdb.py",
+    "Library/share/glib-2.0/gettext/po/Makefile.in.in",
+    "Library/share/glib-2.0/schemas/gschema.dtd"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/gdbus.exe",
+        "path_type": "hardlink",
+        "sha256": "5f88d6bf0d5c40eff75cbb9bb22cc23d6f2a1a3fbb4a213ef04794662be27608",
+        "size_in_bytes": 43008
+      },
+      {
+        "_path": "Library/bin/gi-compile-repository.exe",
+        "path_type": "hardlink",
+        "sha256": "4155778e450dfa8fa09663e983aca1dccf8e82f3fb07955ed2e09c619f3b0ce7",
+        "size_in_bytes": 156672
+      },
+      {
+        "_path": "Library/bin/gi-decompile-typelib.exe",
+        "path_type": "hardlink",
+        "sha256": "28d33e4c3977fdc856ca11fad042b9b9ccf7c7ddd970898ef7f06546681bb8b9",
+        "size_in_bytes": 38912
+      },
+      {
+        "_path": "Library/bin/gi-inspect-typelib.exe",
+        "path_type": "hardlink",
+        "sha256": "4e5563cb4db8dbf7d5cae2c3c00242c2a209ea9e231953ff273b97e95054ab51",
+        "size_in_bytes": 15360
+      },
+      {
+        "_path": "Library/bin/gio-querymodules.exe",
+        "path_type": "hardlink",
+        "sha256": "98151f6a9be753435627451372077829f9a25e401b85a910dfd4d37ec1ea4a80",
+        "size_in_bytes": 15360
+      },
+      {
+        "_path": "Library/bin/gio.exe",
+        "path_type": "hardlink",
+        "sha256": "18a1c0aff77960747318d99abb812095b8a362d687d6e715d90c742b5705c006",
+        "size_in_bytes": 74752
+      },
+      {
+        "_path": "Library/bin/glib-compile-schemas.exe",
+        "path_type": "hardlink",
+        "sha256": "8a96007121ed50c95c97e99776880be845c7631afcac183848948e907b4efbf7",
+        "size_in_bytes": 48640
+      },
+      {
+        "_path": "Library/bin/gresource.exe",
+        "path_type": "hardlink",
+        "sha256": "ecc6f9a74e9179b48276a74c580f18f73f334699c6e0fc1c4e3b32bee7dbe9c5",
+        "size_in_bytes": 17920
+      },
+      {
+        "_path": "Library/bin/gsettings.exe",
+        "path_type": "hardlink",
+        "sha256": "0e93713ec6364f2a71beaf736b712496aec2da537c95ca4620c58da507fffd63",
+        "size_in_bytes": 27648
+      },
+      {
+        "_path": "Library/lib/pkgconfig/gio-2.0.pc",
+        "path_type": "hardlink",
+        "sha256": "e62445594fb03b55220b0d3a5d7dc08198f49ba376b33cbcff95f689b3a19520",
+        "sha256_in_prefix": "6b472fcb2caf751f13e58b1429c86086de3634b118d862f091d556f1aa929e79",
+        "size_in_bytes": 835,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_glib-split_1786457672/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/gio-windows-2.0.pc",
+        "path_type": "hardlink",
+        "sha256": "e7c7ca7cff9769e8933b34ab69d0920e94c531be266f8a8c40777b6474f12c50",
+        "sha256_in_prefix": "614d35eeca155583827b954ef32751b16232f3dc8cbb7e74f45be14008272ae8",
+        "size_in_bytes": 298,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_glib-split_1786457672/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/glib-2.0.pc",
+        "path_type": "hardlink",
+        "sha256": "1a6e877ac84568200baccc6fa40f19136deb75e0061efb798fb90d22a7b68936",
+        "sha256_in_prefix": "386285c43be2d730ae5f2d54979f7360a1b01129c0a451949270008d216b832c",
+        "size_in_bytes": 591,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_glib-split_1786457672/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/gmodule-2.0.pc",
+        "path_type": "hardlink",
+        "sha256": "d960cf0d9f99815a7d9dec64cd59fda001e3df195a225c9898574e900a36b12d",
+        "sha256_in_prefix": "44c0e5bb853f23358c16c6d15c44047d8377161fa9ed8688126f044a710b3367",
+        "size_in_bytes": 265,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_glib-split_1786457672/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/gmodule-export-2.0.pc",
+        "path_type": "hardlink",
+        "sha256": "d960cf0d9f99815a7d9dec64cd59fda001e3df195a225c9898574e900a36b12d",
+        "sha256_in_prefix": "44c0e5bb853f23358c16c6d15c44047d8377161fa9ed8688126f044a710b3367",
+        "size_in_bytes": 265,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_glib-split_1786457672/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/gmodule-no-export-2.0.pc",
+        "path_type": "hardlink",
+        "sha256": "2d3e607ab23a09dc849a487e4fb0eda125eb53c381f64c4aa485f9c57e8aac96",
+        "sha256_in_prefix": "087e9dd71cda96e6d5fbce8f643f6e57389cb16918ca028f47ba01a80f33175e",
+        "size_in_bytes": 327,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_glib-split_1786457672/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/gobject-2.0.pc",
+        "path_type": "hardlink",
+        "sha256": "de08b966317ee43bb8a4e303d55be399dda814a1910d7cfada61e4f580fc532e",
+        "sha256_in_prefix": "d28fdb653f927a17d9f225f7aebebe40cb642f69915957aba8314abaae7f7a64",
+        "size_in_bytes": 354,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_glib-split_1786457672/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/gthread-2.0.pc",
+        "path_type": "hardlink",
+        "sha256": "934cab970c6ea7ec2eba28801c46b8e25678efae14e932d70b80fcbb4105609a",
+        "sha256_in_prefix": "0799e56f3baf492e5586802b209cebd6ac59001caa71e5168d3e78e5f128374b",
+        "size_in_bytes": 294,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_glib-split_1786457672/h_env"
+      },
+      {
+        "_path": "Library/share/aclocal/glib-2.0.m4",
+        "path_type": "hardlink",
+        "sha256": "e48c7d7c870e50efc8ecf78f2ee435bcfa6229a97e98c9522f534f3dae64791a",
+        "size_in_bytes": 8371
+      },
+      {
+        "_path": "Library/share/aclocal/glib-gettext.m4",
+        "path_type": "hardlink",
+        "sha256": "417696c70f5f6287a4dbcdac94c306a3dc5d29837a2b933410fccc9d32a00d17",
+        "size_in_bytes": 15744
+      },
+      {
+        "_path": "Library/share/aclocal/gsettings.m4",
+        "path_type": "hardlink",
+        "sha256": "ae86be2f1bef2fdbd0a7e2af2ba5561e0513c1878ddfc7bb4be0e745c3baf16e",
+        "size_in_bytes": 3589
+      },
+      {
+        "_path": "Library/share/gettext/its/gschema.its",
+        "path_type": "hardlink",
+        "sha256": "452c4c861812a7fe6f8c3c2f2991b0e5a82bc8b9b0846ffdba9fabc9fb225324",
+        "size_in_bytes": 1048
+      },
+      {
+        "_path": "Library/share/gettext/its/gschema.loc",
+        "path_type": "hardlink",
+        "sha256": "e829bc3152c1edbca25a11f2af4c722cfb31a41966a3236cff1e5e1a988cdabd",
+        "size_in_bytes": 333
+      },
+      {
+        "_path": "Library/share/glib-2.0/codegen/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ce5847073d50383ca7b126d46a0a4461fd76f5fd3d8b1716d35ed14a3f6f3f31",
+        "size_in_bytes": 1045
+      },
+      {
+        "_path": "Library/share/glib-2.0/codegen/codegen.py",
+        "path_type": "hardlink",
+        "sha256": "7b9e31be7fcc987bc3d5e07865cc30f3b79c57914c20e382c27a722ca42d6f4c",
+        "size_in_bytes": 242412
+      },
+      {
+        "_path": "Library/share/glib-2.0/codegen/codegen_docbook.py",
+        "path_type": "hardlink",
+        "sha256": "90474d4c922d1ad663cd908eaf6787a9cb05f8e70a615fc29583b2b8a93e4ee0",
+        "size_in_bytes": 18862
+      },
+      {
+        "_path": "Library/share/glib-2.0/codegen/codegen_main.py",
+        "path_type": "hardlink",
+        "sha256": "ac2b07f6fde8a6e409cfac4cb005f1fe601ec243332825a3d72b55014f7798ac",
+        "size_in_bytes": 18550
+      },
+      {
+        "_path": "Library/share/glib-2.0/codegen/codegen_md.py",
+        "path_type": "hardlink",
+        "sha256": "e8b5f67868f6422bdfb72ff9fbd3f87fa5fb66bb5c85281fe125ffa6974243a5",
+        "size_in_bytes": 9807
+      },
+      {
+        "_path": "Library/share/glib-2.0/codegen/codegen_rst.py",
+        "path_type": "hardlink",
+        "sha256": "e03785277b5ed0be2b687461151d9d7fc042e45e5ff50cddf5cff6003f15696c",
+        "size_in_bytes": 10905
+      },
+      {
+        "_path": "Library/share/glib-2.0/codegen/config.py",
+        "path_type": "hardlink",
+        "sha256": "3e7cd59517f7379589437ee33858e0a0d713fb95cb733095639f5d6f079adb31",
+        "size_in_bytes": 903
+      },
+      {
+        "_path": "Library/share/glib-2.0/codegen/dbustypes.py",
+        "path_type": "hardlink",
+        "sha256": "7e772c7b5f03ef4d999d41623517110b869c9da0e07b22d204b534ac6008a7d4",
+        "size_in_bytes": 28935
+      },
+      {
+        "_path": "Library/share/glib-2.0/codegen/parser.py",
+        "path_type": "hardlink",
+        "sha256": "7e7d66969012cd9ee8bd861a70a8b4c198c8153d25e2b3dfd6c28b29d04ed937",
+        "size_in_bytes": 12946
+      },
+      {
+        "_path": "Library/share/glib-2.0/codegen/utils.py",
+        "path_type": "hardlink",
+        "sha256": "2289b840d82b18e8dfd9623ceff731f20389af2fb85e5c14514c73596c8ab814",
+        "size_in_bytes": 4915
+      },
+      {
+        "_path": "Library/share/glib-2.0/dtds/gresource.dtd",
+        "path_type": "hardlink",
+        "sha256": "e1af831202208f57db6d4ded1ae65e9fc9586b20675db80969e57fd2a5206d70",
+        "size_in_bytes": 480
+      },
+      {
+        "_path": "Library/share/glib-2.0/gdb/glib_gdb.py",
+        "path_type": "hardlink",
+        "sha256": "9fef0682237f5bfe77d3ecb36e62b6234a29ade54fb05b32b1b069fac1926026",
+        "size_in_bytes": 8657
+      },
+      {
+        "_path": "Library/share/glib-2.0/gdb/gobject_gdb.py",
+        "path_type": "hardlink",
+        "sha256": "86768cf4105108c30d88443de8dfb2249fd9638c0955218a675413f9eb138043",
+        "size_in_bytes": 10292
+      },
+      {
+        "_path": "Library/share/glib-2.0/gettext/po/Makefile.in.in",
+        "path_type": "hardlink",
+        "sha256": "c75706eb9fa20a8c62ecff68bc169e115e992ba33654be582934e14df48a25cc",
+        "size_in_bytes": 7964
+      },
+      {
+        "_path": "Library/share/glib-2.0/schemas/gschema.dtd",
+        "path_type": "hardlink",
+        "sha256": "44a12f339042a3f5568a9cc86bb617fabaf4a25836b8c9510aa9de22431930c6",
+        "size_in_bytes": 2917
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\glib-tools-2.88.3-hf027272_1",
+    "type": 1
+  }
+}

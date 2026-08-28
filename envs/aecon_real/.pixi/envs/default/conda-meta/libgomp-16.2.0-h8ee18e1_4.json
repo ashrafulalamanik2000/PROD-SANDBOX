@@ -1,0 +1,63 @@
+{
+  "arch": "x86_64",
+  "build": "h8ee18e1_4",
+  "build_number": 4,
+  "constrains": [
+    "msys2-conda-epoch <0.0a0"
+  ],
+  "depends": [
+    "libwinpthread >=12.0.0.r4.gg4f2fc60ca"
+  ],
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "md5": "91189f0bc9ff21f385fcda6232346612",
+  "name": "libgomp",
+  "platform": "win",
+  "run_exports": {
+    "strong": [
+      "_openmp_mutex >=4.5",
+      "libgomp >=16.2.0"
+    ]
+  },
+  "sha256": "9ef1a22fb50b31fbf9c01cf709e8f55b60fd3c02401d150be4a55943f9e3832f",
+  "size": 688168,
+  "subdir": "win-64",
+  "timestamp": 1787625720312,
+  "version": "16.2.0",
+  "fn": "libgomp-16.2.0-h8ee18e1_4.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libgomp-16.2.0-h8ee18e1_4.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libgomp-16.2.0-h8ee18e1_4",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libgomp-1.dll",
+    "Library/lib/libgomp.dll.a",
+    "Library/share/licenses/gcc-libs/RUNTIME.LIBRARY.EXCEPTION.gomp_copy"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libgomp-1.dll",
+        "path_type": "hardlink",
+        "sha256": "8da28364ad1cbbb5e5ba458eea4d86258633c99c917edfb6bc895bbf1f7de317",
+        "size_in_bytes": 1921803
+      },
+      {
+        "_path": "Library/lib/libgomp.dll.a",
+        "path_type": "hardlink",
+        "sha256": "c2e31c328343517218e665baa58fc081c73ef261fce8a0a0b8a1597e223671b1",
+        "size_in_bytes": 334888
+      },
+      {
+        "_path": "Library/share/licenses/gcc-libs/RUNTIME.LIBRARY.EXCEPTION.gomp_copy",
+        "path_type": "hardlink",
+        "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+        "size_in_bytes": 3324
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libgomp-16.2.0-h8ee18e1_4",
+    "type": 1
+  }
+}

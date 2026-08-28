@@ -1,0 +1,49 @@
+{
+  "arch": "x86_64",
+  "build": "hefb3f21_0",
+  "build_number": 0,
+  "depends": [
+    "libopenvino 2026.3.0 hdd74c21_0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "44086fcc9470fca52a46c7be21a13432",
+  "name": "libopenvino-tensorflow-lite-frontend",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libopenvino-tensorflow-lite-frontend >=2026.3.0,<2026.3.1.0a0"
+    ]
+  },
+  "sha256": "d9ce2fdb282e0f10ae180ca375a91fb107a17d693b7b88c4580224f9e96233b9",
+  "size": 354234,
+  "subdir": "win-64",
+  "timestamp": 1786126990105,
+  "version": "2026.3.0",
+  "fn": "libopenvino-tensorflow-lite-frontend-2026.3.0-hefb3f21_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libopenvino-tensorflow-lite-frontend-2026.3.0-hefb3f21_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-tensorflow-lite-frontend-2026.3.0-hefb3f21_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/openvino_tensorflow_lite_frontend.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/openvino_tensorflow_lite_frontend.dll",
+        "path_type": "hardlink",
+        "sha256": "5b7f7e31d1949211ec7a2d618e72304f5e5bcbfcef5573603d1b754c94dc9a4d",
+        "size_in_bytes": 1227264
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-tensorflow-lite-frontend-2026.3.0-hefb3f21_0",
+    "type": 1
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "arch": "x86_64",
+  "build": "h6326bed_0",
+  "build_number": 0,
+  "depends": [
+    "libabseil * cxx17*",
+    "libabseil >=20260526.0,<20260527.0a0",
+    "libopenvino 2026.3.0 hdd74c21_0",
+    "libprotobuf >=7.35.1,<7.35.2.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "9ecea3f05966a8dee463b73f29c2ddb7",
+  "name": "libopenvino-paddle-frontend",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libopenvino-paddle-frontend >=2026.3.0,<2026.3.1.0a0"
+    ]
+  },
+  "sha256": "3032741d5b9e5e0e8966505c90303366335fbffaee8c47020ecfef29102e4eec",
+  "size": 426351,
+  "subdir": "win-64",
+  "timestamp": 1786126956988,
+  "version": "2026.3.0",
+  "fn": "libopenvino-paddle-frontend-2026.3.0-h6326bed_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libopenvino-paddle-frontend-2026.3.0-h6326bed_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-paddle-frontend-2026.3.0-h6326bed_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/openvino_paddle_frontend.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/openvino_paddle_frontend.dll",
+        "path_type": "hardlink",
+        "sha256": "827c2d3226fd51f70e762f632dde24066739b2961bdc44b8ccb2b55bf1cba5d8",
+        "size_in_bytes": 1431040
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-paddle-frontend-2026.3.0-h6326bed_0",
+    "type": 1
+  }
+}

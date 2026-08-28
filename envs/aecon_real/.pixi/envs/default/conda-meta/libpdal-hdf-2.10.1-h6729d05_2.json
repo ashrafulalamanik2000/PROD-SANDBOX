@@ -1,0 +1,62 @@
+{
+  "arch": "x86_64",
+  "build": "h6729d05_2",
+  "build_number": 2,
+  "constrains": [
+    "pdal 2.10.1.*"
+  ],
+  "depends": [
+    "hdf5 >=1.14.6,<1.14.7.0a0",
+    "libgdal-hdf5",
+    "libpdal-core 2.10.1 h4e8f44f_2",
+    "libpdal-icebridge 2.10.1 h6729d05_2",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "31b10ccdc617e235098b021c488fdf57",
+  "name": "libpdal-hdf",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpdal-hdf >=2.10.1,<2.11.0a0"
+    ]
+  },
+  "sha256": "785754b194b23eaea4edfda8eede8eb3ee28a42ea7d5f8d971f1770133b43474",
+  "size": 150381,
+  "subdir": "win-64",
+  "timestamp": 1777500970654,
+  "version": "2.10.1",
+  "fn": "libpdal-hdf-2.10.1-h6729d05_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libpdal-hdf-2.10.1-h6729d05_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-hdf-2.10.1-h6729d05_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libpdal_plugin_reader_hdf.dll",
+    "Library/lib/libpdal_plugin_reader_hdf.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libpdal_plugin_reader_hdf.dll",
+        "path_type": "hardlink",
+        "sha256": "d2065d97284b225281087903a950bf4f8a2b9438751bc37f389678f1304f17ef",
+        "size_in_bytes": 362496
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_reader_hdf.lib",
+        "path_type": "hardlink",
+        "sha256": "c7ef2986227caeee5235e17a7e24180e9014dd90b1a070a824a75b925d48fbe3",
+        "size_in_bytes": 201434
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-hdf-2.10.1-h6729d05_2",
+    "type": 1
+  }
+}

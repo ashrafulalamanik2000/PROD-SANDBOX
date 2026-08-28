@@ -1,0 +1,97 @@
+{
+  "arch": "x86_64",
+  "build": "h7d8d6a5_10_cpu",
+  "build_number": 10,
+  "depends": [
+    "libarrow 24.0.0 h11fefc6_10_cpu",
+    "libarrow-acero 24.0.0 h7d8d6a5_10_cpu",
+    "libarrow-compute 24.0.0 h081cd8e_10_cpu",
+    "libparquet 24.0.0 h7051d1f_10_cpu",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "2e6ac2a9c7becfc3250d37fe56b19c72",
+  "name": "libarrow-dataset",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libarrow-dataset >=24.0.0,<24.1.0a0"
+    ]
+  },
+  "sha256": "b0bdd82756e077de19ddafbef64f5ffe4e3f1a1dbda1f797bc3ab2144c8e5ff0",
+  "size": 428135,
+  "subdir": "win-64",
+  "timestamp": 1783216743295,
+  "version": "24.0.0",
+  "fn": "libarrow-dataset-24.0.0-h7d8d6a5_10_cpu.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libarrow-dataset-24.0.0-h7d8d6a5_10_cpu.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libarrow-dataset-24.0.0-h7d8d6a5_10_cpu",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/arrow_dataset.dll",
+    "Library/lib/arrow_dataset.lib",
+    "Library/lib/cmake/ArrowDataset/ArrowDatasetConfig.cmake",
+    "Library/lib/cmake/ArrowDataset/ArrowDatasetConfigVersion.cmake",
+    "Library/lib/cmake/ArrowDataset/ArrowDatasetTargets-release.cmake",
+    "Library/lib/cmake/ArrowDataset/ArrowDatasetTargets.cmake",
+    "Library/lib/pkgconfig/arrow-dataset.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/arrow_dataset.dll",
+        "path_type": "hardlink",
+        "sha256": "8ae44b9923f26633293f0bb8af02f4dcc84b3b3041ecada0c136833afee94424",
+        "size_in_bytes": 1350656
+      },
+      {
+        "_path": "Library/lib/arrow_dataset.lib",
+        "path_type": "hardlink",
+        "sha256": "848290750ec96cd64edd67a62dbf6b80e0c035fbce033ba8768a90955c156afc",
+        "size_in_bytes": 413512
+      },
+      {
+        "_path": "Library/lib/cmake/ArrowDataset/ArrowDatasetConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "8e48a28a1466851ef93501feacac15d200a476896f3177cfbc1e631be2f377c6",
+        "size_in_bytes": 2864
+      },
+      {
+        "_path": "Library/lib/cmake/ArrowDataset/ArrowDatasetConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "07aed519cb8371ba0e91c99c15b9da42221d122c2deac41463770e6fea05b540",
+        "size_in_bytes": 2830
+      },
+      {
+        "_path": "Library/lib/cmake/ArrowDataset/ArrowDatasetTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "931f40725bf9467b81959de1e849ca11d643261d91668ba53749e38df43df90a",
+        "size_in_bytes": 1034
+      },
+      {
+        "_path": "Library/lib/cmake/ArrowDataset/ArrowDatasetTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "840d4e8c45ca55c4e27cfd9c15ca3b44e3a9fe655b6bb5169342d8f204029261",
+        "size_in_bytes": 4396
+      },
+      {
+        "_path": "Library/lib/pkgconfig/arrow-dataset.pc",
+        "path_type": "hardlink",
+        "sha256": "f86b00ac23888e343c7a388362176e55263a91e0301276835f972bbd26b459af",
+        "sha256_in_prefix": "c1564e8ee2f47efebdecd55d7425b88c6ddac3e314060ad9a3fbe02493b6b043",
+        "size_in_bytes": 1200,
+        "file_mode": "text",
+        "prefix_placeholder": "C:/bld/apache-arrow_1783209749187/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libarrow-dataset-24.0.0-h7d8d6a5_10_cpu",
+    "type": 1
+  }
+}

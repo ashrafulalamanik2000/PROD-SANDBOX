@@ -1,0 +1,86 @@
+{
+  "arch": "x86_64",
+  "build": "h007690e_0",
+  "build_number": 0,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "md5": "b0ab2fc43381024f5a694e6f5f54c973",
+  "name": "rav1e",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "rav1e >=0.8.1,<0.9.0a0"
+    ]
+  },
+  "sha256": "4ee3caf1260c946e756f2be4cadf720592391b24fce652a67255e4386880249b",
+  "size": 4386341,
+  "subdir": "win-64",
+  "timestamp": 1772541112444,
+  "version": "0.8.1",
+  "fn": "rav1e-0.8.1-h007690e_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/rav1e-0.8.1-h007690e_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\rav1e-0.8.1-h007690e_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/rav1e.dll",
+    "Library/bin/rav1e.pdb",
+    "Library/include/rav1e/rav1e.h",
+    "Library/lib/pkgconfig/rav1e.pc",
+    "Library/lib/rav1e.def",
+    "Library/lib/rav1e.dll.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/rav1e.dll",
+        "path_type": "hardlink",
+        "sha256": "c49bc3de5a4d43c796903c558484373ad267d62ed5b8fa198f3bcb3b003c6a8b",
+        "size_in_bytes": 3123200
+      },
+      {
+        "_path": "Library/bin/rav1e.pdb",
+        "path_type": "hardlink",
+        "sha256": "75ecfd28c2de5805648c08f869fdbf5c4e66f25e84c4b66fb56c466c07063394",
+        "size_in_bytes": 23670784
+      },
+      {
+        "_path": "Library/include/rav1e/rav1e.h",
+        "path_type": "hardlink",
+        "sha256": "10ca9cf4c492c96969505e3404ec53190b380bcb722df30ebe91935e8da57c6d",
+        "size_in_bytes": 47606
+      },
+      {
+        "_path": "Library/lib/pkgconfig/rav1e.pc",
+        "path_type": "hardlink",
+        "sha256": "f9003c5db206932eb6bec91c3f0050ec158d6ca501d02a85df738728f83ef31f",
+        "sha256_in_prefix": "3660ddabf3439bde062853ee48413b9c334db89b56f3cc00f396d6a037c5ba8c",
+        "size_in_bytes": 280,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/rav1e_1772540407676/_h_env"
+      },
+      {
+        "_path": "Library/lib/rav1e.def",
+        "path_type": "hardlink",
+        "sha256": "a369b7182f185d64271928fff602399e63e08d26310493f9bc0037cf63f57d30",
+        "size_in_bytes": 887
+      },
+      {
+        "_path": "Library/lib/rav1e.dll.lib",
+        "path_type": "hardlink",
+        "sha256": "60c74dc1c7b9ad225d3befab766f996d2f239ec580a8cbaefe3fc4650495cc75",
+        "size_in_bytes": 7500
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\rav1e-0.8.1-h007690e_0",
+    "type": 1
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "arch": "x86_64",
+  "build": "h3ff59bf_0",
+  "build_number": 0,
+  "depends": [
+    "gflags >=2.2.2,<2.3.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "b3d27944de9dc0a044c9f4c2d59e31ef",
+  "name": "glog",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "glog >=0.7.1,<0.8.0a0"
+    ]
+  },
+  "sha256": "4a24b6ebbbc790e02421fe880a743ca5a86bf701c345727c532eff56823d03af",
+  "size": 114171,
+  "subdir": "win-64",
+  "timestamp": 1718284734200,
+  "version": "0.7.1",
+  "fn": "glog-0.7.1-h3ff59bf_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/glog-0.7.1-h3ff59bf_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\glog-0.7.1-h3ff59bf_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/glog.dll",
+    "Library/include/glog/export.h",
+    "Library/include/glog/flags.h",
+    "Library/include/glog/log_severity.h",
+    "Library/include/glog/logging.h",
+    "Library/include/glog/platform.h",
+    "Library/include/glog/raw_logging.h",
+    "Library/include/glog/stl_logging.h",
+    "Library/include/glog/types.h",
+    "Library/include/glog/vlog_is_on.h",
+    "Library/lib/cmake/glog/glog-config-version.cmake",
+    "Library/lib/cmake/glog/glog-config.cmake",
+    "Library/lib/cmake/glog/glog-modules.cmake",
+    "Library/lib/cmake/glog/glog-targets-release.cmake",
+    "Library/lib/cmake/glog/glog-targets.cmake",
+    "Library/lib/glog.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/glog.dll",
+        "path_type": "hardlink",
+        "sha256": "ec552b71c1eb487a70e64360d61d7562738fe76088562c637275a657b6c0c3bf",
+        "size_in_bytes": 207872
+      },
+      {
+        "_path": "Library/include/glog/export.h",
+        "path_type": "hardlink",
+        "sha256": "975d0b8896b5fb2eb3195188a40d37cfd5b4b7c208fe82ea64fa64ad5b8bc9cc",
+        "size_in_bytes": 928
+      },
+      {
+        "_path": "Library/include/glog/flags.h",
+        "path_type": "hardlink",
+        "sha256": "e649cbd1759d9446a53ac643266a2c8ae60c9d005ac2a12a425e50922321fab7",
+        "size_in_bytes": 5990
+      },
+      {
+        "_path": "Library/include/glog/log_severity.h",
+        "path_type": "hardlink",
+        "sha256": "e1a6bc7b146d9bc0c54f3740b424561b421181052bad4b0253fc0de066e364ff",
+        "size_in_bytes": 4206
+      },
+      {
+        "_path": "Library/include/glog/logging.h",
+        "path_type": "hardlink",
+        "sha256": "59882ed5221cec88eb43af93b60461d74abefe1225c321c8eed9a05e9117b032",
+        "size_in_bytes": 73016
+      },
+      {
+        "_path": "Library/include/glog/platform.h",
+        "path_type": "hardlink",
+        "sha256": "941725dc507a8e741adada0af50f721221d96edf0896ce9d822ee0163d0d08e3",
+        "size_in_bytes": 2511
+      },
+      {
+        "_path": "Library/include/glog/raw_logging.h",
+        "path_type": "hardlink",
+        "sha256": "af81c12092579db955c541c87a9b5ce54953e26c84346284f2ac92e7fc596baa",
+        "size_in_bytes": 7013
+      },
+      {
+        "_path": "Library/include/glog/stl_logging.h",
+        "path_type": "hardlink",
+        "sha256": "4ba223f90ceab8ccb603117f920b3d5d2ad909d91236e00ce6aa22698fcf3f58",
+        "size_in_bytes": 6902
+      },
+      {
+        "_path": "Library/include/glog/types.h",
+        "path_type": "hardlink",
+        "sha256": "225bf289f5145549f978a0c87b675d3f0073d1552ac832317d7952f51c3dc114",
+        "size_in_bytes": 2882
+      },
+      {
+        "_path": "Library/include/glog/vlog_is_on.h",
+        "path_type": "hardlink",
+        "sha256": "e09f7cd8d599d6a0875d1e435303961fdac2975b5586b581b81d8ccd1229abd1",
+        "size_in_bytes": 6115
+      },
+      {
+        "_path": "Library/lib/cmake/glog/glog-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "ed6335bbdbf2f1d40136c500699ef4aa0ebb0e2aa2a38ead629a81f0945b5eaa",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/glog/glog-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "6b3ee059e1cb2abcfdbfd5fbb84eb839decc525c84676872d5ddac0f7c05f5e7",
+        "size_in_bytes": 1002
+      },
+      {
+        "_path": "Library/lib/cmake/glog/glog-modules.cmake",
+        "path_type": "hardlink",
+        "sha256": "e39735041887035d5182a21333518d43d9190698137aec8e00139f959897217d",
+        "size_in_bytes": 730
+      },
+      {
+        "_path": "Library/lib/cmake/glog/glog-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "bccb3d9c056262c2a829a8600d62cad648b8f06d595308d60add76129c77ac70",
+        "size_in_bytes": 878
+      },
+      {
+        "_path": "Library/lib/cmake/glog/glog-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "b69a696677909dce43d199c922d8d669f6ef88dadd4c25d9a83cbdff17bf8322",
+        "size_in_bytes": 4391
+      },
+      {
+        "_path": "Library/lib/glog.lib",
+        "path_type": "hardlink",
+        "sha256": "d797f702452692626cbdef7864e1838ca651b890bba0adaa306ddf11e6e3d5e4",
+        "size_in_bytes": 73456
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\glog-0.7.1-h3ff59bf_0",
+    "type": 1
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "arch": "x86_64",
+  "build": "qt6_he7afa43_606",
+  "build_number": 606,
+  "depends": [
+    "libopencv 5.0.0 qt6_h46e5808_606",
+    "py-opencv 5.0.0 qt6_hd26e59d_606"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "md5": "a2fceb1998bf017746d39f16308f0a02",
+  "name": "opencv",
+  "noarch": "python",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "679bf0a278a3f60933e531d6f45f765e763614bf350cb6ed254b197ca0a6127d",
+  "size": 51258,
+  "subdir": "win-64",
+  "timestamp": 1786399005123,
+  "version": "5.0.0",
+  "fn": "opencv-5.0.0-qt6_he7afa43_606.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/opencv-5.0.0-qt6_he7afa43_606.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\opencv-5.0.0-qt6_he7afa43_606",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\opencv-5.0.0-qt6_he7afa43_606",
+    "type": 1
+  }
+}

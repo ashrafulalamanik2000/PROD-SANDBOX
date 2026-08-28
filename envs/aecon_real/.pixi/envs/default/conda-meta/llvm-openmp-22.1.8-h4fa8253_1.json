@@ -1,0 +1,115 @@
+{
+  "arch": "x86_64",
+  "build": "h4fa8253_1",
+  "build_number": 1,
+  "constrains": [
+    "intel-openmp <0.0a0",
+    "openmp 22.1.8|22.1.8.*"
+  ],
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "license_family": "APACHE",
+  "md5": "8135c070cad2ee5bb28ea50c12e81ce9",
+  "name": "llvm-openmp",
+  "platform": "win",
+  "run_exports": {
+    "strong": [
+      "llvm-openmp >=22.1.8"
+    ]
+  },
+  "sha256": "41a804136fdade8cfa9db006f3c41cac1199a387e609c465d779cef271fda85e",
+  "size": 348946,
+  "subdir": "win-64",
+  "timestamp": 1787293654028,
+  "version": "22.1.8",
+  "fn": "llvm-openmp-22.1.8-h4fa8253_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/llvm-openmp-22.1.8-h4fa8253_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\llvm-openmp-22.1.8-h4fa8253_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libiomp5md.dll",
+    "Library/bin/libomp.dll",
+    "Library/include/omp.h",
+    "Library/include/omp_lib.h",
+    "Library/include/ompx.h",
+    "Library/lib/clang/18/include/omp.h",
+    "Library/lib/clang/19/include/omp.h",
+    "Library/lib/clang/20/include/omp.h",
+    "Library/lib/libiomp5md.lib",
+    "Library/lib/libomp.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libiomp5md.dll",
+        "path_type": "hardlink",
+        "sha256": "b6fe92f270ac5f64bcbd5b255fb36d4ffc44257fac2ab5ced6a09997120c869e",
+        "size_in_bytes": 157696
+      },
+      {
+        "_path": "Library/bin/libomp.dll",
+        "path_type": "hardlink",
+        "sha256": "c135c47a3e367169d84780b015d4f9fa1299563396362e7974f8a9b2516da880",
+        "size_in_bytes": 671232
+      },
+      {
+        "_path": "Library/include/omp.h",
+        "path_type": "hardlink",
+        "sha256": "cb9ab6f531f893ed38634f071417459d147607e1cd2adae0e382dff5e98f18fd",
+        "size_in_bytes": 26633
+      },
+      {
+        "_path": "Library/include/omp_lib.h",
+        "path_type": "hardlink",
+        "sha256": "0a49a6a5376a4ecef7b4e6eeaef956f87139c40758ab875baf396402cccf2bcb",
+        "size_in_bytes": 55660
+      },
+      {
+        "_path": "Library/include/ompx.h",
+        "path_type": "hardlink",
+        "sha256": "713e8ca738021ac3ce8b744da2dd4bcc19eb5895dd20a5c1949e1e2dd6760f23",
+        "size_in_bytes": 7960
+      },
+      {
+        "_path": "Library/lib/clang/18/include/omp.h",
+        "path_type": "hardlink",
+        "sha256": "cb9ab6f531f893ed38634f071417459d147607e1cd2adae0e382dff5e98f18fd",
+        "size_in_bytes": 26633
+      },
+      {
+        "_path": "Library/lib/clang/19/include/omp.h",
+        "path_type": "hardlink",
+        "sha256": "cb9ab6f531f893ed38634f071417459d147607e1cd2adae0e382dff5e98f18fd",
+        "size_in_bytes": 26633
+      },
+      {
+        "_path": "Library/lib/clang/20/include/omp.h",
+        "path_type": "hardlink",
+        "sha256": "cb9ab6f531f893ed38634f071417459d147607e1cd2adae0e382dff5e98f18fd",
+        "size_in_bytes": 26633
+      },
+      {
+        "_path": "Library/lib/libiomp5md.lib",
+        "path_type": "hardlink",
+        "sha256": "3f8f26586db975f83db95dac80ef1a264e9c2b65dcb2ddb2d1a9318d2e01940d",
+        "size_in_bytes": 189786
+      },
+      {
+        "_path": "Library/lib/libomp.lib",
+        "path_type": "hardlink",
+        "sha256": "3f8f26586db975f83db95dac80ef1a264e9c2b65dcb2ddb2d1a9318d2e01940d",
+        "size_in_bytes": 189786
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\llvm-openmp-22.1.8-h4fa8253_1",
+    "type": 1
+  }
+}

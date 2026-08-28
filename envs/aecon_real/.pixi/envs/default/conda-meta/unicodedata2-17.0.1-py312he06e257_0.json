@@ -1,0 +1,102 @@
+{
+  "arch": "x86_64",
+  "build": "py312he06e257_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.12,<3.13.0a0",
+    "python_abi 3.12.* *_cp312",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "md5": "9c46f390eb4b5c6e502df20378e442dd",
+  "name": "unicodedata2",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "577fcd97b5b855d341ee511307a0c05f632d184544e31ff9621690770843c995",
+  "size": 405896,
+  "subdir": "win-64",
+  "timestamp": 1770909182518,
+  "version": "17.0.1",
+  "fn": "unicodedata2-17.0.1-py312he06e257_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/unicodedata2-17.0.1-py312he06e257_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\unicodedata2-17.0.1-py312he06e257_0",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/unicodedata2-17.0.1.dist-info/INSTALLER",
+    "Lib/site-packages/unicodedata2-17.0.1.dist-info/METADATA",
+    "Lib/site-packages/unicodedata2-17.0.1.dist-info/RECORD",
+    "Lib/site-packages/unicodedata2-17.0.1.dist-info/REQUESTED",
+    "Lib/site-packages/unicodedata2-17.0.1.dist-info/WHEEL",
+    "Lib/site-packages/unicodedata2-17.0.1.dist-info/direct_url.json",
+    "Lib/site-packages/unicodedata2-17.0.1.dist-info/licenses/LICENSE",
+    "Lib/site-packages/unicodedata2-17.0.1.dist-info/top_level.txt",
+    "Lib/site-packages/unicodedata2.cp312-win_amd64.pyd"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/unicodedata2-17.0.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/unicodedata2-17.0.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "dff413fa24741d5d69918bc6949250e3eb48e7c890555e2178e0376baeff4543",
+        "size_in_bytes": 3493
+      },
+      {
+        "_path": "Lib/site-packages/unicodedata2-17.0.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "f619edfb633e63f7754089be46663a71c77ffc9acce44a4283bcd3a5bf83f107",
+        "size_in_bytes": 814
+      },
+      {
+        "_path": "Lib/site-packages/unicodedata2-17.0.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/unicodedata2-17.0.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "f861e96b233ca3199543a9700593825018a1ca66607461abea9f7c453ef8e38e",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "Lib/site-packages/unicodedata2-17.0.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "3033421b0966c18c38ebb1ad10c2d172ae59e524be8ec665ddea966da50cb740",
+        "size_in_bytes": 73
+      },
+      {
+        "_path": "Lib/site-packages/unicodedata2-17.0.1.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "cb5e8e7e5f4a3988e1063c142c60dc2df75605f4c46515e776e3aca6df976e14",
+        "size_in_bytes": 11325
+      },
+      {
+        "_path": "Lib/site-packages/unicodedata2-17.0.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "2efe3a3c550aa72f5a669a41449f07023f185c6a2da7d9c8bff8b9c93cb523d7",
+        "size_in_bytes": 13
+      },
+      {
+        "_path": "Lib/site-packages/unicodedata2.cp312-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "724c628de8dc96091a305e947194c5ca0cd66252c3ccb70f9e90c8cd6a55983d",
+        "size_in_bytes": 1395712
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\unicodedata2-17.0.1-py312he06e257_0",
+    "type": 1
+  }
+}

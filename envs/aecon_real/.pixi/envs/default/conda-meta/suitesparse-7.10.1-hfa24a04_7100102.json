@@ -1,0 +1,74 @@
+{
+  "arch": "x86_64",
+  "build": "hfa24a04_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "libsuitesparseconfig ==7.10.1 h0795de7_7100102",
+    "libamd ==3.3.3 h60129d2_7100102",
+    "libbtf ==2.3.2 h8c1c262_7100102",
+    "libcamd ==3.3.3 h8c1c262_7100102",
+    "libccolamd ==3.3.4 h8c1c262_7100102",
+    "libcolamd ==3.3.4 h8c1c262_7100102",
+    "libcholmod ==5.3.1 hdf2ebef_7100102",
+    "libcxsparse ==4.4.1 h8c1c262_7100102",
+    "libldl ==3.3.2 h8c1c262_7100102",
+    "libklu ==2.3.5 h77a2eaa_7100102",
+    "libumfpack ==6.3.5 h4ca129d_7100102",
+    "libparu ==1.0.0 hd80212b_7100102",
+    "librbio ==4.3.4 h8c1c262_7100102",
+    "libspex ==3.2.3 h2f847cc_7100102",
+    "libspqr ==4.3.4 h60c7c62_7100102"
+  ],
+  "license": "LGPL-2.1-or-later AND BSD-3-Clause AND GPL-2.0-or-later AND Apache-2.0",
+  "md5": "22f7b99d3a3687d1e24466858098d3ac",
+  "name": "suitesparse",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libsuitesparseconfig >=7.10.1,<8.0a0",
+      "libamd >=3.3.3,<4.0a0",
+      "libbtf >=2.3.2,<3.0a0",
+      "libcamd >=3.3.3,<4.0a0",
+      "libccolamd >=3.3.4,<4.0a0",
+      "libcolamd >=3.3.4,<4.0a0",
+      "libcholmod >=5.3.1,<6.0a0",
+      "libcxsparse >=4.4.1,<5.0a0",
+      "libldl >=3.3.2,<4.0a0",
+      "libklu >=2.3.5,<3.0a0",
+      "libumfpack >=6.3.5,<7.0a0",
+      "libparu >=1.0.0,<2.0a0",
+      "librbio >=4.3.4,<5.0a0",
+      "libspex >=3.2.3,<4.0a0",
+      "libspqr >=4.3.4,<5.0a0",
+      "suitesparse >=7.10.1,<8.0a0"
+    ]
+  },
+  "sha256": "cd222205fd723fb68f7f169478d591f4100f75c3f9c906c4e0baa27595e4829a",
+  "size": 12345,
+  "subdir": "win-64",
+  "timestamp": 1742288893865,
+  "version": "7.10.1",
+  "fn": "suitesparse-7.10.1-hfa24a04_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/suitesparse-7.10.1-hfa24a04_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\suitesparse-7.10.1-hfa24a04_7100102",
+  "requested_specs": [],
+  "files": [
+    "etc/conda/test-files/suitesparse/0/run_test.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "etc/conda/test-files/suitesparse/0/run_test.py",
+        "path_type": "hardlink",
+        "sha256": "d5adb2f8e414a0055eb96a4789cd6a38b99b033923b91fa164b31f4591021bc9",
+        "size_in_bytes": 876
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\suitesparse-7.10.1-hfa24a04_7100102",
+    "type": 1
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "arch": "x86_64",
+  "build": "h5728263_3",
+  "build_number": 3,
+  "depends": [
+    "libiconv >=1.17,<2.0a0",
+    "libintl 0.22.5 h5728263_3"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "md5": "7537784e9e35399234d4007f45cdb744",
+  "name": "libintl-devel",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libintl >=0.22.5,<1.0a0"
+    ]
+  },
+  "sha256": "be1f3c48bc750bca7e68955d57180dfd826d6f9fa7eb32994f6cb61b813f9a6a",
+  "size": 40746,
+  "subdir": "win-64",
+  "timestamp": 1723629745649,
+  "version": "0.22.5",
+  "fn": "libintl-devel-0.22.5-h5728263_3.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libintl-devel-0.22.5-h5728263_3.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libintl-devel-0.22.5-h5728263_3",
+  "requested_specs": [],
+  "files": [
+    "Library/include/libintl.h",
+    "Library/lib/intl.dll.lib",
+    "Library/lib/intl.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/include/libintl.h",
+        "path_type": "hardlink",
+        "sha256": "49456bf1ecad9cd4c8cdde3ec8f8429a4285b430a4b4d6d9c64cbe155ee4187e",
+        "size_in_bytes": 24588
+      },
+      {
+        "_path": "Library/lib/intl.dll.lib",
+        "path_type": "hardlink",
+        "sha256": "d44a6fdd7e72822bbc6264e3127e5becc2ba665fdee314358aa06ad8a0cdc96a",
+        "size_in_bytes": 9444
+      },
+      {
+        "_path": "Library/lib/intl.lib",
+        "path_type": "hardlink",
+        "sha256": "d44a6fdd7e72822bbc6264e3127e5becc2ba665fdee314358aa06ad8a0cdc96a",
+        "size_in_bytes": 9444
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libintl-devel-0.22.5-h5728263_3",
+    "type": 1
+  }
+}

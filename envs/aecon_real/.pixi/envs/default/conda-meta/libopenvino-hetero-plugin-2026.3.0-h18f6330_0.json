@@ -1,0 +1,46 @@
+{
+  "arch": "x86_64",
+  "build": "h18f6330_0",
+  "build_number": 0,
+  "depends": [
+    "libopenvino 2026.3.0 hdd74c21_0",
+    "pugixml >=1.15,<1.16.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "cd01518b508f87e21e52392210292499",
+  "name": "libopenvino-hetero-plugin",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "64bbce4da52983704b89d71dbd1e6dc58aed66a63ad03fc95a920242f18b2d6b",
+  "size": 182603,
+  "subdir": "win-64",
+  "timestamp": 1786126862181,
+  "version": "2026.3.0",
+  "fn": "libopenvino-hetero-plugin-2026.3.0-h18f6330_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libopenvino-hetero-plugin-2026.3.0-h18f6330_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-hetero-plugin-2026.3.0-h18f6330_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/openvino-2026.3.0/openvino_hetero_plugin.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/openvino-2026.3.0/openvino_hetero_plugin.dll",
+        "path_type": "hardlink",
+        "sha256": "a574478c70b5fbde98096926353a6fceafc4e3a4d07ea56cc292ec2920acc7dd",
+        "size_in_bytes": 432128
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libopenvino-hetero-plugin-2026.3.0-h18f6330_0",
+    "type": 1
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "arch": "x86_64",
+  "build": "h6a83c73_3",
+  "build_number": 3,
+  "depends": [
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "433699cba6602098ae8957a323da2664",
+  "name": "yaml",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "yaml >=0.2.5,<0.3.0a0"
+    ]
+  },
+  "sha256": "80ee68c1e7683a35295232ea79bcc87279d31ffeda04a1665efdb43cbd50a309",
+  "size": 63944,
+  "subdir": "win-64",
+  "timestamp": 1753484092156,
+  "version": "0.2.5",
+  "fn": "yaml-0.2.5-h6a83c73_3.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/yaml-0.2.5-h6a83c73_3.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\yaml-0.2.5-h6a83c73_3",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/yaml.dll",
+    "Library/cmake/yamlConfig.cmake",
+    "Library/cmake/yamlConfigVersion.cmake",
+    "Library/cmake/yamlTargets-release.cmake",
+    "Library/cmake/yamlTargets.cmake",
+    "Library/include/yaml.h",
+    "Library/lib/yaml.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/yaml.dll",
+        "path_type": "hardlink",
+        "sha256": "00e611e83b496d10c65934906946ed983515a4a9ba6613f9c9d57c70079d7bde",
+        "size_in_bytes": 107008
+      },
+      {
+        "_path": "Library/cmake/yamlConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "1c33b7ca2f660860dd4193f1af08460affa7ecd307b000bfdfc6f5bbced3d0bc",
+        "size_in_bytes": 983
+      },
+      {
+        "_path": "Library/cmake/yamlConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "02cdb1dd0f23a42a189794a1750dd016fab1c6df5ec59b12310f02af98c6e088",
+        "size_in_bytes": 1904
+      },
+      {
+        "_path": "Library/cmake/yamlTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "8b3e06d3206eb9b65bf7635934bdf6fd83816a4ba59fa318cccd8b44a990934a",
+        "size_in_bytes": 848
+      },
+      {
+        "_path": "Library/cmake/yamlTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "1d74d9217eea74a1e083215131efd55c92f46c11a041e3658c44c962c14e6e1e",
+        "size_in_bytes": 4168
+      },
+      {
+        "_path": "Library/include/yaml.h",
+        "path_type": "hardlink",
+        "sha256": "de39c9fc2b2c8584775e6d0dc0f13c8e778ceba47d419cff9d85465ca35d6954",
+        "size_in_bytes": 54439
+      },
+      {
+        "_path": "Library/lib/yaml.lib",
+        "path_type": "hardlink",
+        "sha256": "ce7863925e16569059fd0ef56b953b367d01a2ecfad9a0de47f3a6d3c3c37b07",
+        "size_in_bytes": 15316
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\yaml-0.2.5-h6a83c73_3",
+    "type": 1
+  }
+}

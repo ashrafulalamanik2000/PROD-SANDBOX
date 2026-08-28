@@ -1,0 +1,99 @@
+{
+  "arch": "x86_64",
+  "build": "hdf2ebef_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "liblapack >=3.9.0,<4.0a0",
+    "libcamd >=3.3.3,<4.0a0",
+    "libamd >=3.3.3,<4.0a0",
+    "libcolamd >=3.3.4,<4.0a0",
+    "libblas >=3.9.0,<4.0a0",
+    "libccolamd >=3.3.4,<4.0a0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0"
+  ],
+  "license": "LGPL-2.1-or-later AND GPL-2.0-or-later AND Apache-2.0",
+  "md5": "5fbe879c0045251c0496a69afb48f6a5",
+  "name": "libcholmod",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libcholmod >=5.3.1,<6.0a0"
+    ]
+  },
+  "sha256": "b34a7f402baf566fed0ffcf437d9f7467770f41a69269e7cd9a27ec88d8eafeb",
+  "size": 916709,
+  "subdir": "win-64",
+  "timestamp": 1742288893864,
+  "version": "5.3.1",
+  "fn": "libcholmod-5.3.1-hdf2ebef_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libcholmod-5.3.1-hdf2ebef_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libcholmod-5.3.1-hdf2ebef_7100102",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/cholmod.dll",
+    "Library/include/suitesparse/cholmod.h",
+    "Library/lib/cholmod.lib",
+    "Library/lib/cmake/CHOLMOD/CHOLMODConfig.cmake",
+    "Library/lib/cmake/CHOLMOD/CHOLMODConfigVersion.cmake",
+    "Library/lib/cmake/CHOLMOD/CHOLMODTargets-release.cmake",
+    "Library/lib/cmake/CHOLMOD/CHOLMODTargets.cmake"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/cholmod.dll",
+        "path_type": "hardlink",
+        "sha256": "ab0962b8ae0ea8bc4ae712dcc256822c483d05155db5da97183f38eded5c55ab",
+        "size_in_bytes": 2483200
+      },
+      {
+        "_path": "Library/include/suitesparse/cholmod.h",
+        "path_type": "hardlink",
+        "sha256": "d1be1b912c8584ada1f9b642b0069155d1c262ae94f6a2e4c6ec01d1ff030f2f",
+        "size_in_bytes": 174582
+      },
+      {
+        "_path": "Library/lib/cholmod.lib",
+        "path_type": "hardlink",
+        "sha256": "a2d340c529ef4e614e69762e3369a95a7e2ed44509ab5972a85c9fc51cdf07eb",
+        "size_in_bytes": 257336
+      },
+      {
+        "_path": "Library/lib/cmake/CHOLMOD/CHOLMODConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "30d53522ff0b69a60968c3256860efe59e8934d04c3646cb262b6e16e0cc26e6",
+        "size_in_bytes": 10860
+      },
+      {
+        "_path": "Library/lib/cmake/CHOLMOD/CHOLMODConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "66ff224577b2ee5907dc486f398da0880121b3c8f77ead0983ab07935b313834",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/CHOLMOD/CHOLMODTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "f71b1cf51ab336dbfde66be8eec63873ce526ed6193bd14e4e7be4469bbf2e84",
+        "size_in_bytes": 1094
+      },
+      {
+        "_path": "Library/lib/cmake/CHOLMOD/CHOLMODTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "e292c317e47802b3105daecf2d69b67247b8c17306980a6bf62489bb2a8c2564",
+        "size_in_bytes": 4401
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libcholmod-5.3.1-hdf2ebef_7100102",
+    "type": 1
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "build": "hd8ed1ab_3",
+  "build_number": 3,
+  "depends": [
+    "cpython",
+    "python-gil"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "3845f3d75991bae0fb90884662f4327c",
+  "name": "_python_abi3_support",
+  "noarch": "generic",
+  "run_exports": {},
+  "sha256": "2a7204314663eeda5dec482a956f0e2eaf289bd5b9953eaaaad0e81aa64638f2",
+  "size": 8144,
+  "subdir": "noarch",
+  "timestamp": 1784221492234,
+  "version": "1.0",
+  "fn": "_python_abi3_support-1.0-hd8ed1ab_3.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/_python_abi3_support-1.0-hd8ed1ab_3.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\_python_abi3_support-1.0-hd8ed1ab_3",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\_python_abi3_support-1.0-hd8ed1ab_3",
+    "type": 1
+  }
+}

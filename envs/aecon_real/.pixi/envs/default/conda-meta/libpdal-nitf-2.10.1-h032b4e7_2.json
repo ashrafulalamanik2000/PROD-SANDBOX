@@ -1,0 +1,74 @@
+{
+  "arch": "x86_64",
+  "build": "h032b4e7_2",
+  "build_number": 2,
+  "constrains": [
+    "pdal 2.10.1.*"
+  ],
+  "depends": [
+    "libpdal-core 2.10.1 h4e8f44f_2",
+    "nitro 2.7.dev8 h1537add_0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "7800f6e0524b178ea2ea59ef3eac3607",
+  "name": "libpdal-nitf",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpdal-nitf >=2.10.1,<2.11.0a0"
+    ]
+  },
+  "sha256": "e22c3e6d28784e181ce9c4dc408b868823d517f389d4aefcc308f00b9b327a9a",
+  "size": 204209,
+  "subdir": "win-64",
+  "timestamp": 1777500716206,
+  "version": "2.10.1",
+  "fn": "libpdal-nitf-2.10.1-h032b4e7_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libpdal-nitf-2.10.1-h032b4e7_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-nitf-2.10.1-h032b4e7_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libpdal_plugin_reader_nitf.dll",
+    "Library/bin/libpdal_plugin_writer_nitf.dll",
+    "Library/lib/libpdal_plugin_reader_nitf.lib",
+    "Library/lib/libpdal_plugin_writer_nitf.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libpdal_plugin_reader_nitf.dll",
+        "path_type": "hardlink",
+        "sha256": "d5b30feb2ffea0a71ebdc742a82c424feace580dfc0f363f8bf51f1859c3af09",
+        "size_in_bytes": 340480
+      },
+      {
+        "_path": "Library/bin/libpdal_plugin_writer_nitf.dll",
+        "path_type": "hardlink",
+        "sha256": "7d3100a88790008e43ab6171a93fa0099664c0075582517f0a9d1b23cb3fcd2b",
+        "size_in_bytes": 382976
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_reader_nitf.lib",
+        "path_type": "hardlink",
+        "sha256": "8a036ab9148dfc3b899b0eb6c51002e4397e5172828a7a10e8407124d2a779bf",
+        "size_in_bytes": 213708
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_writer_nitf.lib",
+        "path_type": "hardlink",
+        "sha256": "54c073b2eb4bf2f501ff8de06991e38cebfbc9d6605fdfe1785b04df31518584",
+        "size_in_bytes": 228048
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-nitf-2.10.1-h032b4e7_2",
+    "type": 1
+  }
+}

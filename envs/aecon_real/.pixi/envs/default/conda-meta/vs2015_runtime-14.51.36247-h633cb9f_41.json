@@ -1,0 +1,33 @@
+{
+  "arch": "x86_64",
+  "build": "h633cb9f_41",
+  "build_number": 41,
+  "depends": [
+    "vc14_runtime >=14.51.36247"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "21504569fa34b5d3a67760219e3ff1cc",
+  "name": "vs2015_runtime",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "ee0ae67c96b80b9fdb50c3f617c6329dbcdf1562d0267604f6c0e24f494431d6",
+  "size": 21386,
+  "subdir": "win-64",
+  "timestamp": 1785359368990,
+  "version": "14.51.36247",
+  "fn": "vs2015_runtime-14.51.36247-h633cb9f_41.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/vs2015_runtime-14.51.36247-h633cb9f_41.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\vs2015_runtime-14.51.36247-h633cb9f_41",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\vs2015_runtime-14.51.36247-h633cb9f_41",
+    "type": 1
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "arch": "x86_64",
+  "build": "hd80212b_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "libblas >=3.9.0,<4.0a0",
+    "libumfpack >=6.3.5,<7.0a0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0"
+  ],
+  "license": "GPL-3.0-or-later",
+  "license_family": "GPL",
+  "md5": "cb99a7bcbd22bbbf3d765702d431beb5",
+  "name": "libparu",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libparu >=1.0.0,<2.0a0"
+    ]
+  },
+  "sha256": "cff5f3656331cdcaa8d8b79801e6f20b741d1169e7c4ad86af21373c6542dcf6",
+  "size": 108991,
+  "subdir": "win-64",
+  "timestamp": 1742288893864,
+  "version": "1.0.0",
+  "fn": "libparu-1.0.0-hd80212b_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libparu-1.0.0-hd80212b_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libparu-1.0.0-hd80212b_7100102",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/paru.dll",
+    "Library/include/suitesparse/ParU.h",
+    "Library/lib/cmake/ParU/ParUConfig.cmake",
+    "Library/lib/cmake/ParU/ParUConfigVersion.cmake",
+    "Library/lib/cmake/ParU/ParUTargets-release.cmake",
+    "Library/lib/cmake/ParU/ParUTargets.cmake",
+    "Library/lib/paru.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/paru.dll",
+        "path_type": "hardlink",
+        "sha256": "68a1c1c43d4807346a01903aea35cf973b3c9219a3cce28074f86044d74567c2",
+        "size_in_bytes": 138752
+      },
+      {
+        "_path": "Library/include/suitesparse/ParU.h",
+        "path_type": "hardlink",
+        "sha256": "cbc9b4bfa9cf678db22a90d164b3de7e2423ead6415b1fcf1e65635edf2faadb",
+        "size_in_bytes": 36374
+      },
+      {
+        "_path": "Library/lib/cmake/ParU/ParUConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "f1788776f0f56574c73d97baf61c5d9292ab9cb86b1672642b196010f04835fa",
+        "size_in_bytes": 9133
+      },
+      {
+        "_path": "Library/lib/cmake/ParU/ParUConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "c2b5afc175285ac1d92e1c6455ae42e9b1fa9f880c7afdf22dc5afedfe63341c",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/ParU/ParUTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "f58f5153e0f3b10972fd037caf3ae519f2fc74f320baa1d2541aea1b184ec08f",
+        "size_in_bytes": 1012
+      },
+      {
+        "_path": "Library/lib/cmake/ParU/ParUTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "285269eaa69346174a5cbe89e1a36bc6d7395e924cf65329a16f309750a13736",
+        "size_in_bytes": 4525
+      },
+      {
+        "_path": "Library/lib/paru.lib",
+        "path_type": "hardlink",
+        "sha256": "ca7e4024cc5f5e1d39478f279cb07d9e2ab7a31b535d3ed6dd1302c8dd681038",
+        "size_in_bytes": 186922
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libparu-1.0.0-hd80212b_7100102",
+    "type": 1
+  }
+}

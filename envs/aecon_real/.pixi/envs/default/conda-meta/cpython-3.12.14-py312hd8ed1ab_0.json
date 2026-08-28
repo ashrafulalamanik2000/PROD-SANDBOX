@@ -1,0 +1,32 @@
+{
+  "build": "py312hd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.12,<3.13.0a0",
+    "python_abi * *_cp312"
+  ],
+  "license": "Python-2.0",
+  "md5": "c602a908e40a3ae4431b162695a8ba8b",
+  "name": "cpython",
+  "noarch": "generic",
+  "run_exports": {},
+  "sha256": "2311eaabe48d48d03c9c4569ba6c789cb190a005805983fae7d16eb0c0c0c60c",
+  "size": 45988,
+  "subdir": "noarch",
+  "timestamp": 1787351886793,
+  "version": "3.12.14",
+  "fn": "cpython-3.12.14-py312hd8ed1ab_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/cpython-3.12.14-py312hd8ed1ab_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\cpython-3.12.14-py312hd8ed1ab_0",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\cpython-3.12.14-py312hd8ed1ab_0",
+    "type": 1
+  }
+}

@@ -1,0 +1,330 @@
+{
+  "arch": "x86_64",
+  "build": "hfea5a2c_0",
+  "build_number": 0,
+  "depends": [
+    "icu >=78.3,<79.0a0",
+    "krb5 >=1.22.2,<1.23.0a0",
+    "libpq 18.6 h6b13b41_0",
+    "libxml2",
+    "libxml2-16 >=2.14.6",
+    "libxslt >=1.1.43,<2.0a0",
+    "libzlib >=1.3.2,<2.0a0",
+    "lz4-c >=1.10.0,<1.11.0a0",
+    "openssl >=3.5.7,<4.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "zstd >=1.5.7,<1.6.0a0"
+  ],
+  "license": "PostgreSQL",
+  "md5": "55efaeb24c0fb539a47a968802bf7193",
+  "name": "postgresql",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpq >=18.6,<19.0a0"
+    ]
+  },
+  "sha256": "9728036c6d9e584612f0b7daf0c0cf151d1356445c3e655826332783a7b3061a",
+  "size": 4476351,
+  "subdir": "win-64",
+  "timestamp": 1786641911279,
+  "version": "18.6",
+  "fn": "postgresql-18.6-hfea5a2c_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/postgresql-18.6-hfea5a2c_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\postgresql-18.6-hfea5a2c_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/clusterdb.exe",
+    "Library/bin/createdb.exe",
+    "Library/bin/createuser.exe",
+    "Library/bin/dropdb.exe",
+    "Library/bin/dropuser.exe",
+    "Library/bin/ecpg.exe",
+    "Library/bin/initdb.exe",
+    "Library/bin/libecpg.dll",
+    "Library/bin/libecpg_compat.dll",
+    "Library/bin/libpgtypes.dll",
+    "Library/bin/oid2name.exe",
+    "Library/bin/pg_amcheck.exe",
+    "Library/bin/pg_archivecleanup.exe",
+    "Library/bin/pg_basebackup.exe",
+    "Library/bin/pg_checksums.exe",
+    "Library/bin/pg_combinebackup.exe",
+    "Library/bin/pg_controldata.exe",
+    "Library/bin/pg_createsubscriber.exe",
+    "Library/bin/pg_ctl.exe",
+    "Library/bin/pg_dump.exe",
+    "Library/bin/pg_dumpall.exe",
+    "Library/bin/pg_isready.exe",
+    "Library/bin/pg_receivewal.exe",
+    "Library/bin/pg_recvlogical.exe",
+    "Library/bin/pg_resetwal.exe",
+    "Library/bin/pg_restore.exe",
+    "Library/bin/pg_rewind.exe",
+    "Library/bin/pg_test_fsync.exe",
+    "Library/bin/pg_test_timing.exe",
+    "Library/bin/pg_upgrade.exe",
+    "Library/bin/pg_verifybackup.exe",
+    "Library/bin/pg_waldump.exe",
+    "Library/bin/pg_walsummary.exe",
+    "Library/bin/pgbench.exe",
+    "Library/bin/postgres.exe",
+    "Library/bin/psql.exe",
+    "Library/bin/reindexdb.exe",
+    "Library/bin/test_cloexec.exe",
+    "Library/bin/vacuumdb.exe",
+    "Library/bin/vacuumlo.exe"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/clusterdb.exe",
+        "path_type": "hardlink",
+        "sha256": "2e448c281de0c2227ce33a8e8c8cb498642978c884d97a6a7da567419c538dd6",
+        "size_in_bytes": 98304
+      },
+      {
+        "_path": "Library/bin/createdb.exe",
+        "path_type": "hardlink",
+        "sha256": "d04190f67bdb99441e010ce9e0f0f8538bbc0831ba0b554a1d2bb76bc3670fd1",
+        "size_in_bytes": 96768
+      },
+      {
+        "_path": "Library/bin/createuser.exe",
+        "path_type": "hardlink",
+        "sha256": "ac949a1560385b74229969ddb18925a8eb13c02dbdf715289f559680bf30b95a",
+        "size_in_bytes": 99840
+      },
+      {
+        "_path": "Library/bin/dropdb.exe",
+        "path_type": "hardlink",
+        "sha256": "1c4d86795cfe23d5b9c2e3f08d7c87d0ec3e2db16cfbedf8b1fd366f330e8093",
+        "size_in_bytes": 92672
+      },
+      {
+        "_path": "Library/bin/dropuser.exe",
+        "path_type": "hardlink",
+        "sha256": "a517aadd308357da8a1444f7038d0eae018d95820e8fbb8221c3a8c9a5d9409d",
+        "size_in_bytes": 92672
+      },
+      {
+        "_path": "Library/bin/ecpg.exe",
+        "path_type": "hardlink",
+        "sha256": "a2e7256fac20cd88865b0ec284535979aab9004bf2e7eb51d4782574f8f832d3",
+        "size_in_bytes": 882176
+      },
+      {
+        "_path": "Library/bin/initdb.exe",
+        "path_type": "hardlink",
+        "sha256": "b5ca86a58f98dec2b12bc0bd90ce220fb8a6ca5b9a49e59f3083d88e570be533",
+        "size_in_bytes": 166400
+      },
+      {
+        "_path": "Library/bin/libecpg.dll",
+        "path_type": "hardlink",
+        "sha256": "ffc4863cd05838232206aa5d272f191f769328da6777b2dbbaebdbd1118cd1ef",
+        "size_in_bytes": 81920
+      },
+      {
+        "_path": "Library/bin/libecpg_compat.dll",
+        "path_type": "hardlink",
+        "sha256": "67edb7ae2c74d0c5302662ff6aa9bbd286d41bb8b676d52fb2e11d8e34df7c9b",
+        "size_in_bytes": 20992
+      },
+      {
+        "_path": "Library/bin/libpgtypes.dll",
+        "path_type": "hardlink",
+        "sha256": "97259cd3da7395c6f98065c8492ee19caa2d050cf9e5f7e02fe615c4d4aaae76",
+        "size_in_bytes": 73728
+      },
+      {
+        "_path": "Library/bin/oid2name.exe",
+        "path_type": "hardlink",
+        "sha256": "d26a769ebb6f8ae01e4ec26e365787997e7b60fa6c8e5eab2f40eb5a67547098",
+        "size_in_bytes": 63488
+      },
+      {
+        "_path": "Library/bin/pg_amcheck.exe",
+        "path_type": "hardlink",
+        "sha256": "4cd662a0a72951573278023b2cac8b960b506a4239eb858079e5d0d001ddc9bb",
+        "size_in_bytes": 118272
+      },
+      {
+        "_path": "Library/bin/pg_archivecleanup.exe",
+        "path_type": "hardlink",
+        "sha256": "9381d5cf24668232f1b2e155b8fdc1f5120c5d7c738676f856100d7122af7444",
+        "size_in_bytes": 68608
+      },
+      {
+        "_path": "Library/bin/pg_basebackup.exe",
+        "path_type": "hardlink",
+        "sha256": "13eb67aebaa9e5b84105ba4a6063e32d2a624525a64886628d8f6b34868f30fa",
+        "size_in_bytes": 162816
+      },
+      {
+        "_path": "Library/bin/pg_checksums.exe",
+        "path_type": "hardlink",
+        "sha256": "9fd49617aae3c618436d71926498b045127f8c1194d8be227cb191ee488541fb",
+        "size_in_bytes": 89088
+      },
+      {
+        "_path": "Library/bin/pg_combinebackup.exe",
+        "path_type": "hardlink",
+        "sha256": "799de7ba241dff31ca04782f4a85c417d0fcad609c84cd8a84ac966902d3ef8b",
+        "size_in_bytes": 151040
+      },
+      {
+        "_path": "Library/bin/pg_controldata.exe",
+        "path_type": "hardlink",
+        "sha256": "337e126a87ecae94a0dffb28a5f5d460dba74bfda20c2b0519f32b62dc055b84",
+        "size_in_bytes": 78848
+      },
+      {
+        "_path": "Library/bin/pg_createsubscriber.exe",
+        "path_type": "hardlink",
+        "sha256": "c6a31c9c97a4abdb2a85ba8e890d81c572187b4875ec793a73b6828fb4c7e2f6",
+        "size_in_bytes": 114688
+      },
+      {
+        "_path": "Library/bin/pg_ctl.exe",
+        "path_type": "hardlink",
+        "sha256": "55973dcb39fd2a0d7a21314ae8df6533238137ea7d1f6856ce37a4d54ef5f097",
+        "size_in_bytes": 107008
+      },
+      {
+        "_path": "Library/bin/pg_dump.exe",
+        "path_type": "hardlink",
+        "sha256": "364602837957bfca7f907b05411c03c4df5e897840201c7fb13344a9c7ff4639",
+        "size_in_bytes": 481280
+      },
+      {
+        "_path": "Library/bin/pg_dumpall.exe",
+        "path_type": "hardlink",
+        "sha256": "9f8484403990ea8c68bd17865f18d357ea7dc5747190e885962aba8cdd4a074a",
+        "size_in_bytes": 145408
+      },
+      {
+        "_path": "Library/bin/pg_isready.exe",
+        "path_type": "hardlink",
+        "sha256": "05046960f8b26245fcdfb557639eac57a8379b5c74946d35ee44cf1a3d6ac492",
+        "size_in_bytes": 64512
+      },
+      {
+        "_path": "Library/bin/pg_receivewal.exe",
+        "path_type": "hardlink",
+        "sha256": "c3363f31c4976b305b74441bad00c5833811644486f7f2da954a77c0d809dca6",
+        "size_in_bytes": 117760
+      },
+      {
+        "_path": "Library/bin/pg_recvlogical.exe",
+        "path_type": "hardlink",
+        "sha256": "fd56ca64b849866e671f1e4594a6d362c1ebeb084b611ec8ad8a22bc726768fe",
+        "size_in_bytes": 83968
+      },
+      {
+        "_path": "Library/bin/pg_resetwal.exe",
+        "path_type": "hardlink",
+        "sha256": "c23406ecb2e4f5e8b32d2b1221884616761996c92c08ef806e0c82e6598409b5",
+        "size_in_bytes": 94720
+      },
+      {
+        "_path": "Library/bin/pg_restore.exe",
+        "path_type": "hardlink",
+        "sha256": "81b5f55aefcf46734220ff14e98fc1ac36d698c28127fad096b29b5aaa348bc4",
+        "size_in_bytes": 223744
+      },
+      {
+        "_path": "Library/bin/pg_rewind.exe",
+        "path_type": "hardlink",
+        "sha256": "fa4aef53fa01a9ecd0f2d894e26b88fce4bd17ddcb7dc5ae83a9139347d70ff9",
+        "size_in_bytes": 146432
+      },
+      {
+        "_path": "Library/bin/pg_test_fsync.exe",
+        "path_type": "hardlink",
+        "sha256": "3d69db31a0e8f0f919ed5659bd71568fb69e9d2481815791744cca9eaec28958",
+        "size_in_bytes": 70144
+      },
+      {
+        "_path": "Library/bin/pg_test_timing.exe",
+        "path_type": "hardlink",
+        "sha256": "1b6f04c7dc312c513725843391499057e95db4c731e3d5cc1d376a62dc7de444",
+        "size_in_bytes": 61440
+      },
+      {
+        "_path": "Library/bin/pg_upgrade.exe",
+        "path_type": "hardlink",
+        "sha256": "77b4451c9f00524341f730c31193bcb667a46f7591902af40a82efe167eba1c5",
+        "size_in_bytes": 211968
+      },
+      {
+        "_path": "Library/bin/pg_verifybackup.exe",
+        "path_type": "hardlink",
+        "sha256": "886fba5b65562ce8453235d607ad4cb1001b7179255a0f4aa2fc7078626d98af",
+        "size_in_bytes": 137216
+      },
+      {
+        "_path": "Library/bin/pg_waldump.exe",
+        "path_type": "hardlink",
+        "sha256": "951b6929d7d6403528baf3ab62a061547bf6315c5bf9a9201314c3b6f8ebbdec",
+        "size_in_bytes": 131072
+      },
+      {
+        "_path": "Library/bin/pg_walsummary.exe",
+        "path_type": "hardlink",
+        "sha256": "c5945c51a3c501a056ee8a21dbb38d40794434167a10bb88c1d3354925cab399",
+        "size_in_bytes": 77312
+      },
+      {
+        "_path": "Library/bin/pgbench.exe",
+        "path_type": "hardlink",
+        "sha256": "1ccc9a3ca8f5dcf6d1cb67f884dee859ae5eaa110722f12e85ccb950660fb487",
+        "size_in_bytes": 183296
+      },
+      {
+        "_path": "Library/bin/postgres.exe",
+        "path_type": "hardlink",
+        "sha256": "03db66bd5097387628802c420a49189df927691459c706bd122de92a3e3987e0",
+        "size_in_bytes": 9080320
+      },
+      {
+        "_path": "Library/bin/psql.exe",
+        "path_type": "hardlink",
+        "sha256": "0b2afaaafb00f2fcc7a92d250af8f5186c303e1e4f49275fd15de7c3cf305d36",
+        "size_in_bytes": 537600
+      },
+      {
+        "_path": "Library/bin/reindexdb.exe",
+        "path_type": "hardlink",
+        "sha256": "2d5203471fb8e037f4104f1c5d0bd5602608d54731413c57a6f025351c0b7202",
+        "size_in_bytes": 109056
+      },
+      {
+        "_path": "Library/bin/test_cloexec.exe",
+        "path_type": "hardlink",
+        "sha256": "b439ef312e22d664d2de570fdcd76e8fd28c56cd70f37a7b10f55a24b15089b1",
+        "size_in_bytes": 29696
+      },
+      {
+        "_path": "Library/bin/vacuumdb.exe",
+        "path_type": "hardlink",
+        "sha256": "d89a6acbff820ea3250adc3716d4c61dcd6081ec2e78d85977a481c7a3716392",
+        "size_in_bytes": 114688
+      },
+      {
+        "_path": "Library/bin/vacuumlo.exe",
+        "path_type": "hardlink",
+        "sha256": "1cdc0fdac87bd68fdaa9c331dc9fa43bbef07b01a865e39982f19719966d7860",
+        "size_in_bytes": 62976
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\postgresql-18.6-hfea5a2c_0",
+    "type": 1
+  }
+}

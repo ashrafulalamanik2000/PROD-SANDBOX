@@ -1,0 +1,111 @@
+{
+  "arch": "x86_64",
+  "build": "haf901d7_0",
+  "build_number": 0,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "BSD-2-Clause",
+  "license_family": "BSD",
+  "md5": "43b6385cfad52a7083f2c41984eb4e91",
+  "name": "libaec",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libaec >=1.1.5,<2.0a0"
+    ]
+  },
+  "sha256": "e54c08964262c73671d9e80e400333e59c617e0b454476ad68933c0c458156c8",
+  "size": 34463,
+  "subdir": "win-64",
+  "timestamp": 1769221960556,
+  "version": "1.1.5",
+  "fn": "libaec-1.1.5-haf901d7_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libaec-1.1.5-haf901d7_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libaec-1.1.5-haf901d7_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/aec.dll",
+    "Library/bin/szip.dll",
+    "Library/include/libaec.h",
+    "Library/include/szlib.h",
+    "Library/lib/aec.lib",
+    "Library/lib/cmake/libaec/libaec-config-version.cmake",
+    "Library/lib/cmake/libaec/libaec-config.cmake",
+    "Library/lib/cmake/libaec/libaec_shared-targets-release.cmake",
+    "Library/lib/cmake/libaec/libaec_shared-targets.cmake",
+    "Library/lib/szip.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/aec.dll",
+        "path_type": "hardlink",
+        "sha256": "f11c97bff23bf0675b368abd43caa26eab5259b553e53901d0d4d056e6a14e87",
+        "size_in_bytes": 31744
+      },
+      {
+        "_path": "Library/bin/szip.dll",
+        "path_type": "hardlink",
+        "sha256": "dce5955eea02e788e2d938e3c81907bc59489254281142523cd8b459e3089f1d",
+        "size_in_bytes": 33792
+      },
+      {
+        "_path": "Library/include/libaec.h",
+        "path_type": "hardlink",
+        "sha256": "74c560f5a732301ac52560bd41075a39336afd2daf8874d77921a2f1fc08847b",
+        "size_in_bytes": 6823
+      },
+      {
+        "_path": "Library/include/szlib.h",
+        "path_type": "hardlink",
+        "sha256": "f602a233368540744ff27e573658fa0d2c18227488518a01911ad3276697cee5",
+        "size_in_bytes": 2670
+      },
+      {
+        "_path": "Library/lib/aec.lib",
+        "path_type": "hardlink",
+        "sha256": "385cdd43eed1f102cb8c93e55e57c6cc06bce442715ac81f761c76833ffdcea5",
+        "size_in_bytes": 4862
+      },
+      {
+        "_path": "Library/lib/cmake/libaec/libaec-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "36b75a0a3079870e53db505ba5a728b67a4bea856d8a5ec50be562701a7069e6",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/libaec/libaec-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "99c209b68d5cde6b06c4eaf1c29885dd8c061eba10ab839f27fbe65a5a968867",
+        "size_in_bytes": 4211
+      },
+      {
+        "_path": "Library/lib/cmake/libaec/libaec_shared-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "a885a922b3eb03fb97af7f3258db8a4b13e9f85712c5c61f7c9e6f1f6bee86bc",
+        "size_in_bytes": 1440
+      },
+      {
+        "_path": "Library/lib/cmake/libaec/libaec_shared-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "0fb15cc11b7858950f71f78bd7cc4d2dd4ae0cbbe447fffb0f35c768e04417e9",
+        "size_in_bytes": 5159
+      },
+      {
+        "_path": "Library/lib/szip.lib",
+        "path_type": "hardlink",
+        "sha256": "fd1c85742b9025fb4505f53399ae2fc2e161ef536861cf7d3bac0af29c5c7cf4",
+        "size_in_bytes": 5566
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libaec-1.1.5-haf901d7_0",
+    "type": 1
+  }
+}
