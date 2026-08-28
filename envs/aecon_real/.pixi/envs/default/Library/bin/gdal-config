@@ -1,0 +1,80 @@
+#!/bin/sh
+CONFIG_LIBS="-LIBPATH:C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib gdal"
+CONFIG_DEP_LIBS="C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/archive.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/iconv.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/charset.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/libssl.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/libcrypto.lib crypt32 C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/lz4.lib wbemuuid C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/lzma.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/muparser.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/deflate.lib ws2_32 C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/Lerc.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/zstd.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/jpeg.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/libpng.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/blosc.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/libwebp.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/jxl.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/jxl_threads.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/kmlbase.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/kmldom.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/kmlengine.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/minizip.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/uriparser.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/pcre2-8.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/spatialite_i.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/sqlite3.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/xerces-c_3.lib "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/um/x64/odbccp32.lib" "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/um/x64/WS2_32.Lib" legacy_stdio_definitions.lib odbccp32.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/libexpat.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/xml2.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/geos_c.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/libcurl.lib psapi C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/proj.lib C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/z.lib"
+CONFIG_PREFIX="C:/sdtools/envs/aecon_real/.pixi/envs/default/Library"
+CONFIG_CFLAGS="-IC:/sdtools/envs/aecon_real/.pixi/envs/default/Library/include"
+CONFIG_DATA="C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/share/gdal"
+CONFIG_VERSION="3.12.4"
+CONFIG_GNM_ENABLED=yes
+CONFIG_FORMATS="JPEG raw GTIFF MEM vrt Derived GTI LIBERTIFF HFA NITF GXF AAIGrid CEOS SAR_CEOS DTED JDEM Envisat L1B RS2 ILWIS RMF Leveller SRTMHGT IDRISI GSG ERS PALSARJaxa DIMAP GFF COSAR PDS ADRG COASP TSX Terragen MSGN TIL northwood SAGA XYZ AVIF HEIF ESRIC HF2 KMLSUPEROVERLAY CTG ZMap NGSGEOID IRIS MAP CALS SAFE SENTINEL2 PRF MRF WMTS GRIB BMP TGA STACTA SNAP_TIFF BSB AIGrid USGSDEM AirSAR PCIDSK SIGDEM RIK STACIT PDF RCM GDALG PNG GIF WCS HTTP netCDF Zarr DAAS EEDA FITS HDF5 PLMOSAIC WMS OGCAPI WEBP HDF4 MBTiles PostGISRaster KEA JP2OpenJPEG TileDB PCRaster JPEGXL MiraMon GeoJSON TAB Shape KML VRT AVC GML CSV DGN GMT S57 GeoRSS DXF PGDump GPSBabel EDIGEO SXF OpenFileGDB WAsP Selafin JML VDV FlatGeobuf MapML ADBC MiraMon AIVector JSONFG GPX GMLAS CSW LIBKML NAS PLSCENES WFS OAPIF NGW Elastic Idrisi PDS SQLite GeoPackage OSM VFK MVT PMTiles AmigoCloud Carto ILI PG MSSQLSpatial ODBC PGeo XLSX XLS CAD Parquet Arrow GTFS ODS LVBAG"
+CONFIG_PLUGINDIR="C:/sdtools/envs/aecon_real/.pixi/envs/default/Library/lib/gdalplugins"
+usage()
+
+{
+	cat <<EOF
+Usage: gdal-config [OPTIONS]
+Options:
+	[--prefix[=DIR]]
+	[--libs]
+	[--dep-libs]
+	[--cflags]
+	[--datadir]
+	[--version]
+	[--ogr-enabled]
+	[--gnm-enabled]
+	[--formats]
+	[--plugindir]
+EOF
+	exit $1
+}
+
+if test $# -eq 0; then
+	usage 1 1>&2
+fi
+
+case $1 in
+  --libs)
+    echo $CONFIG_LIBS
+    ;;
+
+  --dep-libs)
+    echo $CONFIG_DEP_LIBS
+    ;;
+
+  --cflags)
+    echo $CONFIG_CFLAGS
+    ;;
+
+  --datadir)
+    echo $CONFIG_DATA
+    ;;
+
+  --prefix)
+    echo $CONFIG_PREFIX
+    ;;
+
+  --version)
+    echo $CONFIG_VERSION
+    ;;
+
+  --ogr-enabled)
+    echo yes
+    ;;
+
+  --gnm-enabled)
+    echo $CONFIG_GNM_ENABLED
+    ;;
+
+  --formats)
+    echo $CONFIG_FORMATS
+    ;;
+
+  --plugindir)
+    echo $CONFIG_PLUGINDIR
+    ;;
+
+  *)
+    usage 1 1>&2
+    ;;
+
+esac
