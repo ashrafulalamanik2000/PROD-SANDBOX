@@ -1,0 +1,270 @@
+{
+  "arch": "x86_64",
+  "build": "h932607e_2",
+  "build_number": 2,
+  "depends": [
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "libhwy >=1.4.0,<1.5.0a0",
+    "libbrotlienc >=1.2.0,<1.3.0a0",
+    "libbrotlidec >=1.2.0,<1.3.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "cf415a2296a1d862e93559645c91fd30",
+  "name": "libjxl",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libjxl >=0.12.0,<0.13.0a0"
+    ]
+  },
+  "sha256": "c0381a39fd601430ebe7e2686543f5b1685d2374d8bb7be0aabf4d4705327efa",
+  "size": 1199700,
+  "subdir": "win-64",
+  "timestamp": 1786691396735,
+  "version": "0.12.0",
+  "fn": "libjxl-0.12.0-h932607e_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libjxl-0.12.0-h932607e_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libjxl-0.12.0-h932607e_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/jxl.dll",
+    "Library/bin/jxl_cms.dll",
+    "Library/bin/jxl_threads.dll",
+    "Library/include/jxl/cms.h",
+    "Library/include/jxl/cms_interface.h",
+    "Library/include/jxl/codestream_header.h",
+    "Library/include/jxl/color_encoding.h",
+    "Library/include/jxl/compressed_icc.h",
+    "Library/include/jxl/decode.h",
+    "Library/include/jxl/decode_cxx.h",
+    "Library/include/jxl/encode.h",
+    "Library/include/jxl/encode_cxx.h",
+    "Library/include/jxl/gain_map.h",
+    "Library/include/jxl/jxl_cms_export.h",
+    "Library/include/jxl/jxl_export.h",
+    "Library/include/jxl/jxl_threads_export.h",
+    "Library/include/jxl/memory_manager.h",
+    "Library/include/jxl/parallel_runner.h",
+    "Library/include/jxl/resizable_parallel_runner.h",
+    "Library/include/jxl/resizable_parallel_runner_cxx.h",
+    "Library/include/jxl/stats.h",
+    "Library/include/jxl/thread_parallel_runner.h",
+    "Library/include/jxl/thread_parallel_runner_cxx.h",
+    "Library/include/jxl/types.h",
+    "Library/include/jxl/version.h",
+    "Library/lib/jxl.lib",
+    "Library/lib/jxl_cms.lib",
+    "Library/lib/jxl_threads.lib",
+    "Library/lib/pkgconfig/libjxl.pc",
+    "Library/lib/pkgconfig/libjxl_cms.pc",
+    "Library/lib/pkgconfig/libjxl_threads.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/jxl.dll",
+        "path_type": "hardlink",
+        "sha256": "0de76e2d9f7052b151d88d7208702c2badd13a243585b599d1858f5d0548b5be",
+        "size_in_bytes": 3090432
+      },
+      {
+        "_path": "Library/bin/jxl_cms.dll",
+        "path_type": "hardlink",
+        "sha256": "0cc13d1453f1c3ee49e71aa8c0295db3a47c53901a14682533d9705c44002db3",
+        "size_in_bytes": 159232
+      },
+      {
+        "_path": "Library/bin/jxl_threads.dll",
+        "path_type": "hardlink",
+        "sha256": "220918f2357be4b0275b1ba064445c5eb7d69275beb63dad9771e623ffc2825f",
+        "size_in_bytes": 25088
+      },
+      {
+        "_path": "Library/include/jxl/cms.h",
+        "path_type": "hardlink",
+        "sha256": "f9fab00a2ad226eada1eb25e398516dd8a653039e775e764beaf3b0697743f4a",
+        "size_in_bytes": 474
+      },
+      {
+        "_path": "Library/include/jxl/cms_interface.h",
+        "path_type": "hardlink",
+        "sha256": "8babe9fee6a4434f3562490ed4d5cbf8b445431ac640e92e9e55f2ac984850bf",
+        "size_in_bytes": 10202
+      },
+      {
+        "_path": "Library/include/jxl/codestream_header.h",
+        "path_type": "hardlink",
+        "sha256": "a300b9d1880b2de47553ab56e0ace0df203d6bfb12160542e980493d18228c1f",
+        "size_in_bytes": 15154
+      },
+      {
+        "_path": "Library/include/jxl/color_encoding.h",
+        "path_type": "hardlink",
+        "sha256": "c08460784dd671a83e199c434aafddae032c531aa219ad87d1739dc00963d6ea",
+        "size_in_bytes": 5652
+      },
+      {
+        "_path": "Library/include/jxl/compressed_icc.h",
+        "path_type": "hardlink",
+        "sha256": "13202b4f19baa60141d991790e4ccfeb9bfa888e8a3b5bfef5ab328911c34630",
+        "size_in_bytes": 2737
+      },
+      {
+        "_path": "Library/include/jxl/decode.h",
+        "path_type": "hardlink",
+        "sha256": "b589ebfe7366a47e607bd19998ecc4ec6082e164030b116ef88e827c85b35a0f",
+        "size_in_bytes": 70978
+      },
+      {
+        "_path": "Library/include/jxl/decode_cxx.h",
+        "path_type": "hardlink",
+        "sha256": "04176846ccdc45bcf04e1b1fd08280f05910cde46dba14a9b8023adbd5b75b27",
+        "size_in_bytes": 1879
+      },
+      {
+        "_path": "Library/include/jxl/encode.h",
+        "path_type": "hardlink",
+        "sha256": "dcef8b08c430d4c15b10268eb9f6d328a8145ba8ea27435826908622f3cbead5",
+        "size_in_bytes": 71641
+      },
+      {
+        "_path": "Library/include/jxl/encode_cxx.h",
+        "path_type": "hardlink",
+        "sha256": "02973e315fc7127840ed868cdfdcfdbda9d86f4a62fab5f4c314164a1aa67439",
+        "size_in_bytes": 1878
+      },
+      {
+        "_path": "Library/include/jxl/gain_map.h",
+        "path_type": "hardlink",
+        "sha256": "5e6f189b485c635618d3515e1b5c506e356515fbc52e2dfb04e39840e3b5f614",
+        "size_in_bytes": 5260
+      },
+      {
+        "_path": "Library/include/jxl/jxl_cms_export.h",
+        "path_type": "hardlink",
+        "sha256": "4860bf8f8860587766c6f7054caad1b7763e4eb311b40f14fb3e5955781575e1",
+        "size_in_bytes": 1063
+      },
+      {
+        "_path": "Library/include/jxl/jxl_export.h",
+        "path_type": "hardlink",
+        "sha256": "7ef0f36403805b969f18709a704b0f05acfc7e5fda614a97c7dd23ebde80b9fa",
+        "size_in_bytes": 982
+      },
+      {
+        "_path": "Library/include/jxl/jxl_threads_export.h",
+        "path_type": "hardlink",
+        "sha256": "e4210543188a8a1a0f59e74ed15192d3d7e70314c8eab5d2e2aea37cb1fecdb3",
+        "size_in_bytes": 1174
+      },
+      {
+        "_path": "Library/include/jxl/memory_manager.h",
+        "path_type": "hardlink",
+        "sha256": "82967b8fd6b827f3e9be839d648ac6cc29e107a9ac048808e9a472adf64c5302",
+        "size_in_bytes": 2109
+      },
+      {
+        "_path": "Library/include/jxl/parallel_runner.h",
+        "path_type": "hardlink",
+        "sha256": "88cc126a10a72c781f9b731ed3a841560d452405c78b90ce4816b1eab978275b",
+        "size_in_bytes": 6843
+      },
+      {
+        "_path": "Library/include/jxl/resizable_parallel_runner.h",
+        "path_type": "hardlink",
+        "sha256": "af796e774514ec68b2e922ade79983939d5e32fdcb8ab039a8cbbae2c1150f3a",
+        "size_in_bytes": 2731
+      },
+      {
+        "_path": "Library/include/jxl/resizable_parallel_runner_cxx.h",
+        "path_type": "hardlink",
+        "sha256": "5862d795cdde1d5d957cb72a4a561fe03ffd1a34bc8c98ab525bc8ffbf207e10",
+        "size_in_bytes": 2340
+      },
+      {
+        "_path": "Library/include/jxl/stats.h",
+        "path_type": "hardlink",
+        "sha256": "f09c82588c77f5e779c2844e2ea0a9f2cb636f404554cf3e0b888f1674dc280c",
+        "size_in_bytes": 2870
+      },
+      {
+        "_path": "Library/include/jxl/thread_parallel_runner.h",
+        "path_type": "hardlink",
+        "sha256": "593b76d2a061f938d29dddad9ff387769f25fade45a3b4877a855e0ef2add5ae",
+        "size_in_bytes": 2459
+      },
+      {
+        "_path": "Library/include/jxl/thread_parallel_runner_cxx.h",
+        "path_type": "hardlink",
+        "sha256": "5ab85be1e6ba46357eb39998daca2eae58807f8b139e2980369a7760cc82699a",
+        "size_in_bytes": 2373
+      },
+      {
+        "_path": "Library/include/jxl/types.h",
+        "path_type": "hardlink",
+        "sha256": "317bf87d55b133c073b7fa48436c8e2ab3a7c48a2263f26f4eaa407090f93f6d",
+        "size_in_bytes": 5109
+      },
+      {
+        "_path": "Library/include/jxl/version.h",
+        "path_type": "hardlink",
+        "sha256": "bf6f9e9ea642ab2cffbacdb118cd7bd84cec88e7fb1ebebf7c24a2556d953b0f",
+        "size_in_bytes": 1318
+      },
+      {
+        "_path": "Library/lib/jxl.lib",
+        "path_type": "hardlink",
+        "sha256": "76812f327b7489063dbcb4f42b6e0760aaf654c85d59f2f54c2d53f60f7b8320",
+        "size_in_bytes": 27474
+      },
+      {
+        "_path": "Library/lib/jxl_cms.lib",
+        "path_type": "hardlink",
+        "sha256": "be5fe2e8ebeb0f40e86162677440363a0d66cdff9f809807da6d9b8fb0a2c529",
+        "size_in_bytes": 1742
+      },
+      {
+        "_path": "Library/lib/jxl_threads.lib",
+        "path_type": "hardlink",
+        "sha256": "997ea413b53288951e2a40b41a741c59d525eff9dda6ff2d639e448b9202d55f",
+        "size_in_bytes": 4222
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libjxl.pc",
+        "path_type": "hardlink",
+        "sha256": "2e7f753f609e9f2e99f40e91dc0ac4ae6bbe75baf3dfb44778c58e07c9808da5",
+        "sha256_in_prefix": "5bcbddc0eb8a3fbae78205fe9c58e37d7d5f58a9a32d0d744b04e328afa52171",
+        "size_in_bytes": 386,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_libjxl_1786691396/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libjxl_cms.pc",
+        "path_type": "hardlink",
+        "sha256": "f60b602c566af7ffcdfe32535205ef6889336d0bdb0269f91736728a83bdb98a",
+        "sha256_in_prefix": "00f030f367793dcc71c0ed474808a36c3bb80f5775b288b928a45488bf201758",
+        "size_in_bytes": 356,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_libjxl_1786691396/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libjxl_threads.pc",
+        "path_type": "hardlink",
+        "sha256": "ca8d4a50b74ea626e871d49bf28419fa9bf607179ef9e55b6fedf8ddf98128c3",
+        "sha256_in_prefix": "7f3d4ca6b018c580d0539b5ede73f59411808e50e39d7b2d7bd98b410945481c",
+        "size_in_bytes": 384,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_libjxl_1786691396/h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libjxl-0.12.0-h932607e_2",
+    "type": 1
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "arch": "x86_64",
+  "build": "hd936e49_0",
+  "build_number": 0,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "md5": "add59e2b60ac9d4299d17c938185c75a",
+  "name": "lerc",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "lerc >=4.2.0,<5.0a0"
+    ]
+  },
+  "sha256": "93d666f63f284ef77b87b0b1f77b70f7d36d315a132f9afa64bc0012d937ba39",
+  "size": 175297,
+  "subdir": "win-64",
+  "timestamp": 1785036247761,
+  "version": "4.2.0",
+  "fn": "lerc-4.2.0-hd936e49_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/lerc-4.2.0-hd936e49_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\lerc-4.2.0-hd936e49_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/Lerc.dll",
+    "Library/include/Lerc_c_api.h",
+    "Library/include/Lerc_types.h",
+    "Library/lib/Lerc.lib",
+    "Library/lib/pkgconfig/Lerc.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/Lerc.dll",
+        "path_type": "hardlink",
+        "sha256": "451cd3d0eaede32c199886717ec7484b8ca7effda47ee89febea957540058975",
+        "size_in_bytes": 548864
+      },
+      {
+        "_path": "Library/include/Lerc_c_api.h",
+        "path_type": "hardlink",
+        "sha256": "25cd1c260a579b1b71161f3ca1a8555fd59a35f0048261333acf88d2b4f2b158",
+        "size_in_bytes": 23324
+      },
+      {
+        "_path": "Library/include/Lerc_types.h",
+        "path_type": "hardlink",
+        "sha256": "31ae1425571c2f06ce57fb92e6678596c77e8266bc3e96c92fb3e0b98a6c95e6",
+        "size_in_bytes": 1309
+      },
+      {
+        "_path": "Library/lib/Lerc.lib",
+        "path_type": "hardlink",
+        "sha256": "9e5189564a10f6c9d4cf12c56e6fbfa1e87401eda9bb68244188e147480e2b9b",
+        "size_in_bytes": 4158
+      },
+      {
+        "_path": "Library/lib/pkgconfig/Lerc.pc",
+        "path_type": "hardlink",
+        "sha256": "88d134a25b895c20559ec132f09ef1c1c24776cadbb4ea852eade9b66e1713ca",
+        "sha256_in_prefix": "ed3501d437c83332c55022c49abb6080926d7bfb879c5fb6dc1d26add714c79b",
+        "size_in_bytes": 360,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/lerc_1785036116953/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\lerc-4.2.0-hd936e49_0",
+    "type": 1
+  }
+}

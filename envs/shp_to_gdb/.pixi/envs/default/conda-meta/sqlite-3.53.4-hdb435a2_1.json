@@ -1,0 +1,48 @@
+{
+  "arch": "x86_64",
+  "build": "hdb435a2_1",
+  "build_number": 1,
+  "depends": [
+    "libsqlite 3.53.4 hf5d6505_1",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "blessing",
+  "md5": "df9d7c5d34602e0f2655a524d31fce87",
+  "name": "sqlite",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libsqlite >=3.53.4,<4.0a0"
+    ]
+  },
+  "sha256": "7616fec2d6ded67e111a47d4842738d0b3730c0acf3eaebe928cf6d3e15a6822",
+  "size": 426888,
+  "subdir": "win-64",
+  "timestamp": 1787051146089,
+  "version": "3.53.4",
+  "fn": "sqlite-3.53.4-hdb435a2_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/sqlite-3.53.4-hdb435a2_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\sqlite-3.53.4-hdb435a2_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/sqlite3.exe"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/sqlite3.exe",
+        "path_type": "hardlink",
+        "sha256": "fc0336a1dbbcb929cabefa7f4baa7d8b1006061217d6efede51fe8642507bebe",
+        "size_in_bytes": 1370624
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\sqlite-3.53.4-hdb435a2_1",
+    "type": 1
+  }
+}

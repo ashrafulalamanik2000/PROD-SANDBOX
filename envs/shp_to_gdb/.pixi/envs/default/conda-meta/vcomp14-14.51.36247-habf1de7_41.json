@@ -1,0 +1,57 @@
+{
+  "arch": "x86_64",
+  "build": "habf1de7_41",
+  "build_number": 41,
+  "constrains": [
+    "vs2015_runtime 14.51.36247.* *_41"
+  ],
+  "depends": [
+    "ucrt >=10.0.20348.0"
+  ],
+  "license": "LicenseRef-MicrosoftVisualCpp2015-2022Runtime",
+  "license_family": "Proprietary",
+  "md5": "350bb67a5c8e5f1c53347ac544ab6600",
+  "name": "vcomp14",
+  "platform": "win",
+  "run_exports": {
+    "strong": [
+      "vcomp14 >=14.51.36247"
+    ]
+  },
+  "sha256": "731e043390c9457299484d39e427221fc868a9249540a498a5a4f6456c7744d1",
+  "size": 155910,
+  "subdir": "win-64",
+  "timestamp": 1785359349999,
+  "version": "14.51.36247",
+  "fn": "vcomp14-14.51.36247-habf1de7_41.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36247-habf1de7_41.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\vcomp14-14.51.36247-habf1de7_41",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/vcomp140.dll",
+    "vcomp140.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/vcomp140.dll",
+        "path_type": "hardlink",
+        "no_link": true,
+        "sha256": "95d4ce4a6802d1e18b5e0e1722cc30ea72ca7e033f83828f05c0b7b993fe7cbf",
+        "size_in_bytes": 212920
+      },
+      {
+        "_path": "vcomp140.dll",
+        "path_type": "hardlink",
+        "sha256": "95d4ce4a6802d1e18b5e0e1722cc30ea72ca7e033f83828f05c0b7b993fe7cbf",
+        "size_in_bytes": 212920
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\vcomp14-14.51.36247-habf1de7_41",
+    "type": 1
+  }
+}

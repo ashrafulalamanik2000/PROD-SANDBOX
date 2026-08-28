@@ -1,0 +1,47 @@
+{
+  "build": "h4c7d964_0",
+  "build_number": 0,
+  "depends": [
+    "__win"
+  ],
+  "license": "ISC",
+  "md5": "e27d2ac27b096dc51fedfcf775a53f9b",
+  "name": "ca-certificates",
+  "noarch": "generic",
+  "run_exports": {},
+  "sha256": "95e8e74062a5fe5f870ac8c90302b6e89945165fdaed7810606e84ddee6aac12",
+  "size": 132136,
+  "subdir": "noarch",
+  "timestamp": 1784754918886,
+  "version": "2026.7.22",
+  "fn": "ca-certificates-2026.7.22-h4c7d964_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2026.7.22-h4c7d964_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\ca-certificates-2026.7.22-h4c7d964_0",
+  "requested_specs": [],
+  "files": [
+    "Library/ssl/cacert.pem",
+    "Library/ssl/cert.pem"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/ssl/cacert.pem",
+        "path_type": "hardlink",
+        "sha256": "9cc2a774b5198dcff14d9be1e66091f538975d867ce029a96bce15a55dfd730f",
+        "size_in_bytes": 240216
+      },
+      {
+        "_path": "Library/ssl/cert.pem",
+        "path_type": "hardlink",
+        "sha256": "9cc2a774b5198dcff14d9be1e66091f538975d867ce029a96bce15a55dfd730f",
+        "size_in_bytes": 240216
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\ca-certificates-2026.7.22-h4c7d964_0",
+    "type": 1
+  }
+}

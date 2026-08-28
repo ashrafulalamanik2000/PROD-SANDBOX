@@ -1,0 +1,19 @@
+{
+  "manifest_path": "C:\\sdtools\\envs\\shp_to_gdb\\pixi.toml",
+  "environment_name": "default",
+  "pixi_version": "0.77.1",
+  "environment_lock_file_hash": "91036c88ad2e1f7a",
+  "resolved_platform": {
+    "subdir": "win-64",
+    "virtual_packages": [
+      "__win=10.0",
+      "__archspec=0=x86_64"
+    ]
+  },
+  "minimum_supported_platform": {
+    "subdir": "win-64",
+    "requirements": [
+      "__win"
+    ]
+  }
+}

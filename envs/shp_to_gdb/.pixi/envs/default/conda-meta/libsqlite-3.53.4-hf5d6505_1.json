@@ -1,0 +1,75 @@
+{
+  "arch": "x86_64",
+  "build": "hf5d6505_1",
+  "build_number": 1,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "blessing",
+  "md5": "a72d495965b144bb7da033642d389047",
+  "name": "libsqlite",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libsqlite >=3.53.4,<4.0a0"
+    ]
+  },
+  "sha256": "0a45d7c0f20146fff787a106f8fa187872e309c70975ff8f0936e188914c26ad",
+  "size": 1314919,
+  "subdir": "win-64",
+  "timestamp": 1787051140039,
+  "version": "3.53.4",
+  "fn": "libsqlite-3.53.4-hf5d6505_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libsqlite-3.53.4-hf5d6505_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libsqlite-3.53.4-hf5d6505_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/sqlite3.dll",
+    "Library/include/sqlite3.h",
+    "Library/include/sqlite3ext.h",
+    "Library/lib/pkgconfig/sqlite3.pc",
+    "Library/lib/sqlite3.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/sqlite3.dll",
+        "path_type": "hardlink",
+        "sha256": "9519340d2ede13b05cd889605e3a46cc6bde702f266061266e22c18a0951a04e",
+        "size_in_bytes": 3239936
+      },
+      {
+        "_path": "Library/include/sqlite3.h",
+        "path_type": "hardlink",
+        "sha256": "919e7f2e8ed1d8f56ac17b412b8971c76aa5d1a879752cc6058f75e7d5910e1d",
+        "size_in_bytes": 690838
+      },
+      {
+        "_path": "Library/include/sqlite3ext.h",
+        "path_type": "hardlink",
+        "sha256": "ac9645e5c9ff0cf176efdd6e75cb5e98f46295d38e02db5c4d208826a39ab4be",
+        "size_in_bytes": 39175
+      },
+      {
+        "_path": "Library/lib/pkgconfig/sqlite3.pc",
+        "path_type": "hardlink",
+        "sha256": "642bc307f0a3c5f5935932bc0d6631758016e89c6d87c70269b8a5bbe7f53feb",
+        "size_in_bytes": 270
+      },
+      {
+        "_path": "Library/lib/sqlite3.lib",
+        "path_type": "hardlink",
+        "sha256": "72689b48dfed27dd40d506414b73e74ea65534c079fcdf9426ae80042a85db35",
+        "size_in_bytes": 85280
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libsqlite-3.53.4-hf5d6505_1",
+    "type": 1
+  }
+}

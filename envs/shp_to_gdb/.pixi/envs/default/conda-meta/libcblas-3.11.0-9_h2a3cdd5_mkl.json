@@ -1,0 +1,51 @@
+{
+  "arch": "x86_64",
+  "build": "9_h2a3cdd5_mkl",
+  "build_number": 9,
+  "constrains": [
+    "blas 2.309   mkl",
+    "liblapack  3.11.0   9*_mkl",
+    "liblapacke 3.11.0   9*_mkl"
+  ],
+  "depends": [
+    "libblas 3.11.0 9_h8455456_mkl"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "9d1d0c22e9ed8c31ec2efc0d063d6f48",
+  "name": "libcblas",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libcblas >=3.11.0,<4.0a0"
+    ]
+  },
+  "sha256": "8c20714bbb85c8a109e9002e76c32be64a82d9867beb1a35a20c85258cc2b535",
+  "size": 67587,
+  "subdir": "win-64",
+  "timestamp": 1786059232952,
+  "version": "3.11.0",
+  "fn": "libcblas-3.11.0-9_h2a3cdd5_mkl.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libcblas-3.11.0-9_h2a3cdd5_mkl.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libcblas-3.11.0-9_h2a3cdd5_mkl",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libcblas.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libcblas.dll",
+        "path_type": "hardlink",
+        "sha256": "ab3ce3f51bb1a82bee43267870f0bee94c456f185a90e4ea8947bfaabdb1a790",
+        "size_in_bytes": 111104
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libcblas-3.11.0-9_h2a3cdd5_mkl",
+    "type": 1
+  }
+}

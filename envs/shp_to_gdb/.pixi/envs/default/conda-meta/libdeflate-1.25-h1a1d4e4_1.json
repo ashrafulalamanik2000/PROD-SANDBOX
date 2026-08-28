@@ -1,0 +1,114 @@
+{
+  "arch": "x86_64",
+  "build": "h1a1d4e4_1",
+  "build_number": 1,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "e4e122e124676a49eebf241399ad8393",
+  "name": "libdeflate",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libdeflate >=1.25,<1.26.0a0"
+    ]
+  },
+  "sha256": "af1cda21d4653f594fbef20aa4e1ff158a546902b3307ef8af9a9b44b43862d2",
+  "size": 157828,
+  "subdir": "win-64",
+  "timestamp": 1785908793271,
+  "version": "1.25",
+  "fn": "libdeflate-1.25-h1a1d4e4_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libdeflate-1.25-h1a1d4e4_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libdeflate-1.25-h1a1d4e4_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/deflate.dll",
+    "Library/bin/libdeflate-gunzip.exe",
+    "Library/bin/libdeflate-gzip.exe",
+    "Library/include/libdeflate.h",
+    "Library/lib/cmake/libdeflate/libdeflate-config-version.cmake",
+    "Library/lib/cmake/libdeflate/libdeflate-config.cmake",
+    "Library/lib/cmake/libdeflate/libdeflate-targets-release.cmake",
+    "Library/lib/cmake/libdeflate/libdeflate-targets.cmake",
+    "Library/lib/deflate.lib",
+    "Library/lib/pkgconfig/libdeflate.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/deflate.dll",
+        "path_type": "hardlink",
+        "sha256": "6dd36dd208f18c6b44b3a78ae2c9462f28430e39b7e5bdb00faaec22b495021b",
+        "size_in_bytes": 177664
+      },
+      {
+        "_path": "Library/bin/libdeflate-gunzip.exe",
+        "path_type": "hardlink",
+        "sha256": "6877ac4059e46b3218def0e0fa2cec8b146c3212458443829c058f801ccf3a4f",
+        "size_in_bytes": 176640
+      },
+      {
+        "_path": "Library/bin/libdeflate-gzip.exe",
+        "path_type": "hardlink",
+        "sha256": "6877ac4059e46b3218def0e0fa2cec8b146c3212458443829c058f801ccf3a4f",
+        "size_in_bytes": 176640
+      },
+      {
+        "_path": "Library/include/libdeflate.h",
+        "path_type": "hardlink",
+        "sha256": "f263f3c5c86d1a939757a2ca74c521b389ef9aa2860e423eefe0272df169e765",
+        "size_in_bytes": 17098
+      },
+      {
+        "_path": "Library/lib/cmake/libdeflate/libdeflate-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "39e265d29482627ee8f62f8c0faea3776bc068962713b6e39f663e0b524b0992",
+        "size_in_bytes": 1903
+      },
+      {
+        "_path": "Library/lib/cmake/libdeflate/libdeflate-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "38872d2917fdd8b9acc643b06108e99ec4fe603e71055dfa6e84948578f0e5b8",
+        "size_in_bytes": 974
+      },
+      {
+        "_path": "Library/lib/cmake/libdeflate/libdeflate-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "61b947ca209a1405a0a9a36bec4cdd3e96f3f4ecf4f82e925fd12626661dd48a",
+        "size_in_bytes": 985
+      },
+      {
+        "_path": "Library/lib/cmake/libdeflate/libdeflate-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "f54652c0b68b9ecbd9d68b293dc40535e8dcefa84c4252cd562965b3ea4baa76",
+        "size_in_bytes": 4336
+      },
+      {
+        "_path": "Library/lib/deflate.lib",
+        "path_type": "hardlink",
+        "sha256": "bc8466864e3573d5b756a5f1103541af082fe8311ec9d7c9eaaf5213b9de434e",
+        "size_in_bytes": 7054
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libdeflate.pc",
+        "path_type": "hardlink",
+        "sha256": "d822d3ef5c97701b1ea77d8a8317de4e5b63c78a61813d33de9ec7ae045b8504",
+        "sha256_in_prefix": "158caf99d1d464a028c14d0acb8c5120a3f341a71244700c5279ea8c6c73ca69",
+        "size_in_bytes": 827,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/libdeflate_1785908668573/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libdeflate-1.25-h1a1d4e4_1",
+    "type": 1
+  }
+}

@@ -1,0 +1,588 @@
+{
+  "arch": "x86_64",
+  "build": "h2419aca_1",
+  "build_number": 1,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0 OR BSD-3-Clause",
+  "md5": "972a4e44d5a8c3447769414fd3518d5d",
+  "name": "libhwy",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libhwy >=1.4.0,<1.5.0a0"
+    ]
+  },
+  "sha256": "a6dc4360c00eca941d31ad94e8e4a102f38ce9de1668fac83118f1ad457577d2",
+  "size": 563336,
+  "subdir": "win-64",
+  "timestamp": 1787282448113,
+  "version": "1.4.0",
+  "fn": "libhwy-1.4.0-h2419aca_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libhwy-1.4.0-h2419aca_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libhwy-1.4.0-h2419aca_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/hwy.dll",
+    "Library/bin/hwy_contrib.dll",
+    "Library/bin/hwy_test.dll",
+    "Library/include/hwy/abort.h",
+    "Library/include/hwy/aligned_allocator.h",
+    "Library/include/hwy/auto_tune.h",
+    "Library/include/hwy/base.h",
+    "Library/include/hwy/bit_set.h",
+    "Library/include/hwy/cache_control.h",
+    "Library/include/hwy/contrib/algo/copy-inl.h",
+    "Library/include/hwy/contrib/algo/count-inl.h",
+    "Library/include/hwy/contrib/algo/find-inl.h",
+    "Library/include/hwy/contrib/algo/minmax-inl.h",
+    "Library/include/hwy/contrib/algo/transform-inl.h",
+    "Library/include/hwy/contrib/bit_pack/bit_pack-inl.h",
+    "Library/include/hwy/contrib/dot/dot-inl.h",
+    "Library/include/hwy/contrib/image/image.h",
+    "Library/include/hwy/contrib/math/fast_math-inl.h",
+    "Library/include/hwy/contrib/math/math-inl.h",
+    "Library/include/hwy/contrib/matvec/matvec-inl.h",
+    "Library/include/hwy/contrib/random/random-inl.h",
+    "Library/include/hwy/contrib/sort/order.h",
+    "Library/include/hwy/contrib/sort/shared-inl.h",
+    "Library/include/hwy/contrib/sort/sorting_networks-inl.h",
+    "Library/include/hwy/contrib/sort/traits-inl.h",
+    "Library/include/hwy/contrib/sort/traits128-inl.h",
+    "Library/include/hwy/contrib/sort/vqsort-inl.h",
+    "Library/include/hwy/contrib/sort/vqsort.h",
+    "Library/include/hwy/contrib/thread_pool/futex.h",
+    "Library/include/hwy/contrib/thread_pool/spin.h",
+    "Library/include/hwy/contrib/thread_pool/thread_pool.h",
+    "Library/include/hwy/contrib/thread_pool/topology.h",
+    "Library/include/hwy/contrib/unroller/unroller-inl.h",
+    "Library/include/hwy/detect_compiler_arch.h",
+    "Library/include/hwy/detect_targets.h",
+    "Library/include/hwy/foreach_target.h",
+    "Library/include/hwy/highway.h",
+    "Library/include/hwy/highway_export.h",
+    "Library/include/hwy/nanobenchmark.h",
+    "Library/include/hwy/ops/arm_neon-inl.h",
+    "Library/include/hwy/ops/arm_sve-inl.h",
+    "Library/include/hwy/ops/emu128-inl.h",
+    "Library/include/hwy/ops/generic_ops-inl.h",
+    "Library/include/hwy/ops/inside-inl.h",
+    "Library/include/hwy/ops/loongarch_lasx-inl.h",
+    "Library/include/hwy/ops/loongarch_lsx-inl.h",
+    "Library/include/hwy/ops/ppc_vsx-inl.h",
+    "Library/include/hwy/ops/rvv-inl.h",
+    "Library/include/hwy/ops/scalar-inl.h",
+    "Library/include/hwy/ops/set_macros-inl.h",
+    "Library/include/hwy/ops/shared-inl.h",
+    "Library/include/hwy/ops/wasm_128-inl.h",
+    "Library/include/hwy/ops/x86_128-inl.h",
+    "Library/include/hwy/ops/x86_256-inl.h",
+    "Library/include/hwy/ops/x86_512-inl.h",
+    "Library/include/hwy/ops/x86_avx3-inl.h",
+    "Library/include/hwy/per_target.h",
+    "Library/include/hwy/print-inl.h",
+    "Library/include/hwy/print.h",
+    "Library/include/hwy/profiler.h",
+    "Library/include/hwy/robust_statistics.h",
+    "Library/include/hwy/targets.h",
+    "Library/include/hwy/tests/hwy_gtest.h",
+    "Library/include/hwy/tests/test_util-inl.h",
+    "Library/include/hwy/tests/test_util.h",
+    "Library/include/hwy/timer-inl.h",
+    "Library/include/hwy/timer.h",
+    "Library/include/hwy/x86_cpuid.h",
+    "Library/lib/cmake/hwy/hwy-config-release.cmake",
+    "Library/lib/cmake/hwy/hwy-config-version.cmake",
+    "Library/lib/cmake/hwy/hwy-config.cmake",
+    "Library/lib/hwy.lib",
+    "Library/lib/hwy_contrib.lib",
+    "Library/lib/hwy_test.lib",
+    "Library/lib/pkgconfig/libhwy-contrib.pc",
+    "Library/lib/pkgconfig/libhwy-test.pc",
+    "Library/lib/pkgconfig/libhwy.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/hwy.dll",
+        "path_type": "hardlink",
+        "sha256": "087943f3c9b675ae3f422ea69bd370ff1ad6126e981014f9d3ba76413f4ab1a3",
+        "size_in_bytes": 58880
+      },
+      {
+        "_path": "Library/bin/hwy_contrib.dll",
+        "path_type": "hardlink",
+        "sha256": "dc371d998b14fc38f5f67320ab58efe1d746e3674739f263524e7a7aa93b17ec",
+        "size_in_bytes": 142848
+      },
+      {
+        "_path": "Library/bin/hwy_test.dll",
+        "path_type": "hardlink",
+        "sha256": "6179671ccb6be4b6a71ce4e2886e351f5096b9e83d06fb6de282075768e1e0a7",
+        "size_in_bytes": 12288
+      },
+      {
+        "_path": "Library/include/hwy/abort.h",
+        "path_type": "hardlink",
+        "sha256": "2d0f4f0b6e9390324efa4e45258adf3a19308936c15d9a30cd4d2bb46f19062b",
+        "size_in_bytes": 338
+      },
+      {
+        "_path": "Library/include/hwy/aligned_allocator.h",
+        "path_type": "hardlink",
+        "sha256": "26b97fc2900922a7c38173a662dfaca4e4cbf0a0a87b4ef1290bf248ed2a7af2",
+        "size_in_bytes": 17440
+      },
+      {
+        "_path": "Library/include/hwy/auto_tune.h",
+        "path_type": "hardlink",
+        "sha256": "b5474dc4a856fc55ef141bd6730c1c38c654ff4161018c3ba9f745d7483fad61",
+        "size_in_bytes": 19827
+      },
+      {
+        "_path": "Library/include/hwy/base.h",
+        "path_type": "hardlink",
+        "sha256": "e3f6049a91809d443841ffa7ac29b3b0e88827e429b37f54434cb18d3e1edd64",
+        "size_in_bytes": 111800
+      },
+      {
+        "_path": "Library/include/hwy/bit_set.h",
+        "path_type": "hardlink",
+        "sha256": "caa32ab69f075da4f0e9f135b128602123ca724c3d946bcaf508d101ce34f26c",
+        "size_in_bytes": 11984
+      },
+      {
+        "_path": "Library/include/hwy/cache_control.h",
+        "path_type": "hardlink",
+        "sha256": "b95011ff21a4ec8a63f5c34f55df6cb6cd9151715e322f39a5e1c7fe0c528750",
+        "size_in_bytes": 5222
+      },
+      {
+        "_path": "Library/include/hwy/contrib/algo/copy-inl.h",
+        "path_type": "hardlink",
+        "sha256": "076c6feae94d57fb667bbb755fb9efc1ce22fb6f3f9ed89cfc70fd72c1919da2",
+        "size_in_bytes": 5166
+      },
+      {
+        "_path": "Library/include/hwy/contrib/algo/count-inl.h",
+        "path_type": "hardlink",
+        "sha256": "dcebe129fe47450037d4f7896f3646e3954f10fd00a4c309896c389916adaefc",
+        "size_in_bytes": 15555
+      },
+      {
+        "_path": "Library/include/hwy/contrib/algo/find-inl.h",
+        "path_type": "hardlink",
+        "sha256": "c51f6ef0844b43bd5b6c6789d51e486db9130270a1d7eb2fc0e4a0955f9d6235",
+        "size_in_bytes": 3653
+      },
+      {
+        "_path": "Library/include/hwy/contrib/algo/minmax-inl.h",
+        "path_type": "hardlink",
+        "sha256": "4eff4d74c3da9c9c625fd06bcd245c7f31987c88030e25f6d22bf409f7ac58ae",
+        "size_in_bytes": 3174
+      },
+      {
+        "_path": "Library/include/hwy/contrib/algo/transform-inl.h",
+        "path_type": "hardlink",
+        "sha256": "19dde250bc003fd91afc1194f35b1594b54bf018faed8d43b2f5925591c85a54",
+        "size_in_bytes": 8138
+      },
+      {
+        "_path": "Library/include/hwy/contrib/bit_pack/bit_pack-inl.h",
+        "path_type": "hardlink",
+        "sha256": "0d32e525d472085debf1cc8931d1690967e9353c60d875cb63fd3778fcd8be7f",
+        "size_in_bytes": 114980
+      },
+      {
+        "_path": "Library/include/hwy/contrib/dot/dot-inl.h",
+        "path_type": "hardlink",
+        "sha256": "e81d6f561abeddec26b347f1d168b20e971ec404e9d2c2f3df587fed88f4fd11",
+        "size_in_bytes": 17983
+      },
+      {
+        "_path": "Library/include/hwy/contrib/image/image.h",
+        "path_type": "hardlink",
+        "sha256": "067762b8ce1bc072fb5a72599ebdccf93e1992c2fae1be5d87370a219d112dd2",
+        "size_in_bytes": 17282
+      },
+      {
+        "_path": "Library/include/hwy/contrib/math/fast_math-inl.h",
+        "path_type": "hardlink",
+        "sha256": "cc688507fc781f372baee60349fa61ce99831f68e8e882a7b47a3d40a9eda8ea",
+        "size_in_bytes": 66296
+      },
+      {
+        "_path": "Library/include/hwy/contrib/math/math-inl.h",
+        "path_type": "hardlink",
+        "sha256": "494e5128a3af7a6b25be7ebb4bf3a7febea47c97e23b45db2877e6045a153e18",
+        "size_in_bytes": 61208
+      },
+      {
+        "_path": "Library/include/hwy/contrib/matvec/matvec-inl.h",
+        "path_type": "hardlink",
+        "sha256": "d7ace09ae6c88a233c0121adc0753d35f3341c396f3ee2f46d35a5ed79053a4e",
+        "size_in_bytes": 19278
+      },
+      {
+        "_path": "Library/include/hwy/contrib/random/random-inl.h",
+        "path_type": "hardlink",
+        "sha256": "d13167794e40e40e38f300f7f77cef16e4afba6ee01a217b3edc867ce81caa72",
+        "size_in_bytes": 11636
+      },
+      {
+        "_path": "Library/include/hwy/contrib/sort/order.h",
+        "path_type": "hardlink",
+        "sha256": "7cbf6e26f5afc2fc09e731ea2fa2e70bbda10230980fda7da77a10923d271611",
+        "size_in_bytes": 1191
+      },
+      {
+        "_path": "Library/include/hwy/contrib/sort/shared-inl.h",
+        "path_type": "hardlink",
+        "sha256": "981ea901025f18a11d9a6a7ce384be5c3587d7358f744e7dc1f0fb59b5bf36b0",
+        "size_in_bytes": 7142
+      },
+      {
+        "_path": "Library/include/hwy/contrib/sort/sorting_networks-inl.h",
+        "path_type": "hardlink",
+        "sha256": "a19f665d2d458894d412629a6dfd5e42214618167d93e62a114cdd3b9b55635c",
+        "size_in_bytes": 29131
+      },
+      {
+        "_path": "Library/include/hwy/contrib/sort/traits-inl.h",
+        "path_type": "hardlink",
+        "sha256": "1ff31627d815e2f9690ecb1fdfdd53132c7b11858036bc4b645d848e1503cab7",
+        "size_in_bytes": 20512
+      },
+      {
+        "_path": "Library/include/hwy/contrib/sort/traits128-inl.h",
+        "path_type": "hardlink",
+        "sha256": "d3a73079d9d4121f5a5dcd0ddb9d8d8d17e5d50b43a670b7caafcd5951a94697",
+        "size_in_bytes": 18345
+      },
+      {
+        "_path": "Library/include/hwy/contrib/sort/vqsort-inl.h",
+        "path_type": "hardlink",
+        "sha256": "f4e4f3c4a75851f5d4ed4cf448a36fa4950584873f82fd3ab932b31496288058",
+        "size_in_bytes": 86378
+      },
+      {
+        "_path": "Library/include/hwy/contrib/sort/vqsort.h",
+        "path_type": "hardlink",
+        "sha256": "d3d3415805da15addbd5d6a04bfa2d593aedfeca58134633523fef1281fb93dc",
+        "size_in_bytes": 16039
+      },
+      {
+        "_path": "Library/include/hwy/contrib/thread_pool/futex.h",
+        "path_type": "hardlink",
+        "sha256": "10510216d65b28691657501cdab3eec0bb8f7e6f1fe01bcfc3ca2bb6e3e5deba",
+        "size_in_bytes": 9913
+      },
+      {
+        "_path": "Library/include/hwy/contrib/thread_pool/spin.h",
+        "path_type": "hardlink",
+        "sha256": "c1a6fd2d9f169bcb9a80686b1fac228ca47afea423dc8a81053615d4e819cda2",
+        "size_in_bytes": 10902
+      },
+      {
+        "_path": "Library/include/hwy/contrib/thread_pool/thread_pool.h",
+        "path_type": "hardlink",
+        "sha256": "1171646ede1f73ed7d72a0e3202685e32c69d197bdafa2fad93b97f47cf0d73f",
+        "size_in_bytes": 64847
+      },
+      {
+        "_path": "Library/include/hwy/contrib/thread_pool/topology.h",
+        "path_type": "hardlink",
+        "sha256": "725152eaf587d906f921fd2727a3720c6f0996bf8bbd1cab55826de7c36376e5",
+        "size_in_bytes": 5186
+      },
+      {
+        "_path": "Library/include/hwy/contrib/unroller/unroller-inl.h",
+        "path_type": "hardlink",
+        "sha256": "7d32ee2ebe4146501a34390a59128aaed7c79e331a2f840be1cc34fb3f762740",
+        "size_in_bytes": 14545
+      },
+      {
+        "_path": "Library/include/hwy/detect_compiler_arch.h",
+        "path_type": "hardlink",
+        "sha256": "2efa39d49fab0800a0dd5f91821df02a3cd86a008eebd68ac98c5249cd4fa85d",
+        "size_in_bytes": 15982
+      },
+      {
+        "_path": "Library/include/hwy/detect_targets.h",
+        "path_type": "hardlink",
+        "sha256": "b387d11b9f70b65ff9b141ce903ed54595a82ba52f1a83a401a408eaddf8a604",
+        "size_in_bytes": 36818
+      },
+      {
+        "_path": "Library/include/hwy/foreach_target.h",
+        "path_type": "hardlink",
+        "sha256": "880295b229488bba5227d5279504f355f9363330bf1d98ab63baf553deedee03",
+        "size_in_bytes": 10330
+      },
+      {
+        "_path": "Library/include/hwy/highway.h",
+        "path_type": "hardlink",
+        "sha256": "de01622abb3e9e85a07d24897daef408a30f7a1967bb0b01a57c1637d3c87f9d",
+        "size_in_bytes": 28605
+      },
+      {
+        "_path": "Library/include/hwy/highway_export.h",
+        "path_type": "hardlink",
+        "sha256": "8a883413b083c721f879163780630aa3ec741b386b3db6d05ac042292b904d45",
+        "size_in_bytes": 2074
+      },
+      {
+        "_path": "Library/include/hwy/nanobenchmark.h",
+        "path_type": "hardlink",
+        "sha256": "81c65b91f754c36e3792ed0ae9c9f535092d997254a02508bea06a03f7a67f79",
+        "size_in_bytes": 7053
+      },
+      {
+        "_path": "Library/include/hwy/ops/arm_neon-inl.h",
+        "path_type": "hardlink",
+        "sha256": "ace812565b0442a20cf897add7b131c276f2bd4ae215fb8579c6b2ec8b183ceb",
+        "size_in_bytes": 395547
+      },
+      {
+        "_path": "Library/include/hwy/ops/arm_sve-inl.h",
+        "path_type": "hardlink",
+        "sha256": "416b3e484974daac4ec981e701a5719369ce8ef33448468f81b670f425ea2e39",
+        "size_in_bytes": 268428
+      },
+      {
+        "_path": "Library/include/hwy/ops/emu128-inl.h",
+        "path_type": "hardlink",
+        "sha256": "758b3b45ab49ff28d3c8cf36959d48567678b737d0b12209ab564b2e49c0fac4",
+        "size_in_bytes": 90190
+      },
+      {
+        "_path": "Library/include/hwy/ops/generic_ops-inl.h",
+        "path_type": "hardlink",
+        "sha256": "5be36414ba0d291405c237e946444088dc0d35bbf2a12d951c0e63ef7dc44ca9",
+        "size_in_bytes": 313430
+      },
+      {
+        "_path": "Library/include/hwy/ops/inside-inl.h",
+        "path_type": "hardlink",
+        "sha256": "c22abcaafe741459fc5c9456230af24f198e0bd24c3372540cf0248d62dd554e",
+        "size_in_bytes": 23665
+      },
+      {
+        "_path": "Library/include/hwy/ops/loongarch_lasx-inl.h",
+        "path_type": "hardlink",
+        "sha256": "e18e2ef77454f4f3d7f55ab745319b8fffb41d394c95bcebe9c541be66e90828",
+        "size_in_bytes": 179703
+      },
+      {
+        "_path": "Library/include/hwy/ops/loongarch_lsx-inl.h",
+        "path_type": "hardlink",
+        "sha256": "16a56eb48053206773477dc4b598dd3245464665b492d8119f8998883494defd",
+        "size_in_bytes": 220837
+      },
+      {
+        "_path": "Library/include/hwy/ops/ppc_vsx-inl.h",
+        "path_type": "hardlink",
+        "sha256": "84df6dc7b58465f145be20e1e890d4ec9f087dfc5dfe2fcdee9e0093081191da",
+        "size_in_bytes": 278804
+      },
+      {
+        "_path": "Library/include/hwy/ops/rvv-inl.h",
+        "path_type": "hardlink",
+        "sha256": "07affc69a2c4b391f4e07164bc39b50775f55985674798a0e7a80471dba21ca3",
+        "size_in_bytes": 286650
+      },
+      {
+        "_path": "Library/include/hwy/ops/scalar-inl.h",
+        "path_type": "hardlink",
+        "sha256": "a68a871534af3d51a45451a7c6a0c4cadcc3405228bd06cc6bec30afde13072a",
+        "size_in_bytes": 69956
+      },
+      {
+        "_path": "Library/include/hwy/ops/set_macros-inl.h",
+        "path_type": "hardlink",
+        "sha256": "a81df5a112aaff90fc86658f55a9833bb6a3273197debfdbf1880e9266d52cf6",
+        "size_in_bytes": 25845
+      },
+      {
+        "_path": "Library/include/hwy/ops/shared-inl.h",
+        "path_type": "hardlink",
+        "sha256": "c11dc45203d539ccda4037b8f7b3e49f11ff5de0c7a81e0547cceed36927f135",
+        "size_in_bytes": 29433
+      },
+      {
+        "_path": "Library/include/hwy/ops/wasm_128-inl.h",
+        "path_type": "hardlink",
+        "sha256": "a25e9c5831b17a80f00fdfabedbafe6c8ff31e15796f6bf100438e01f655d51d",
+        "size_in_bytes": 233294
+      },
+      {
+        "_path": "Library/include/hwy/ops/x86_128-inl.h",
+        "path_type": "hardlink",
+        "sha256": "517cd7afd98fd1c4bcae8c23f1368f63e21184857a368b115df28857edce186a",
+        "size_in_bytes": 525939
+      },
+      {
+        "_path": "Library/include/hwy/ops/x86_256-inl.h",
+        "path_type": "hardlink",
+        "sha256": "ba5b5b8b0b74fc282c12f72ed7447418ce3fdd3ff16f43146f83d6118209b789",
+        "size_in_bytes": 343182
+      },
+      {
+        "_path": "Library/include/hwy/ops/x86_512-inl.h",
+        "path_type": "hardlink",
+        "sha256": "2fa4331f2a52c8bf73a6e51ffc2b2e6c356af3bfd781ff1ba8c9ef0a65ff1870",
+        "size_in_bytes": 302276
+      },
+      {
+        "_path": "Library/include/hwy/ops/x86_avx3-inl.h",
+        "path_type": "hardlink",
+        "sha256": "3ba1ac7fb9b2eb033d4d7bc9fe3101a875c95d24336095de650ff3d1867652ab",
+        "size_in_bytes": 19232
+      },
+      {
+        "_path": "Library/include/hwy/per_target.h",
+        "path_type": "hardlink",
+        "sha256": "8b44bd7565119df2df3e123a9dbfa82e25166c749979a3fde12e387165e2f0e1",
+        "size_in_bytes": 1811
+      },
+      {
+        "_path": "Library/include/hwy/print-inl.h",
+        "path_type": "hardlink",
+        "sha256": "35ddebacfc9f665df899c8258d1cbafe83c687f71222b4ee475ceba7f948edae",
+        "size_in_bytes": 1936
+      },
+      {
+        "_path": "Library/include/hwy/print.h",
+        "path_type": "hardlink",
+        "sha256": "56b755654ac1e40f6fda306f95811770ac9c4802ef6840019f479ad09a6880b3",
+        "size_in_bytes": 2100
+      },
+      {
+        "_path": "Library/include/hwy/profiler.h",
+        "path_type": "hardlink",
+        "sha256": "178861c9d276cf46dac824b0444f1ce27d6adc0d7264c6d94cadea579d98f1b8",
+        "size_in_bytes": 32609
+      },
+      {
+        "_path": "Library/include/hwy/robust_statistics.h",
+        "path_type": "hardlink",
+        "sha256": "37a749bb6eb061056a0df35ed54dfedfe5163345d4fef954060b9c9798911b40",
+        "size_in_bytes": 4946
+      },
+      {
+        "_path": "Library/include/hwy/targets.h",
+        "path_type": "hardlink",
+        "sha256": "27301595b3bea53b4580382188b7d997a734ec66212cb4752ee8538893bdf25d",
+        "size_in_bytes": 15830
+      },
+      {
+        "_path": "Library/include/hwy/tests/hwy_gtest.h",
+        "path_type": "hardlink",
+        "sha256": "a6eb126aa3e5952e9270683733e090029ddf60ff94b01572b87d542881a60699",
+        "size_in_bytes": 28117
+      },
+      {
+        "_path": "Library/include/hwy/tests/test_util-inl.h",
+        "path_type": "hardlink",
+        "sha256": "7d0981c4a9cac084396738e291b681c6808b6d97907e330b43be5079e72c1995",
+        "size_in_bytes": 27141
+      },
+      {
+        "_path": "Library/include/hwy/tests/test_util.h",
+        "path_type": "hardlink",
+        "sha256": "fc79d6e2e75303f73f967c7c5eecb968ae770f2fa43ed1bdf469c355b2ecf51d",
+        "size_in_bytes": 12965
+      },
+      {
+        "_path": "Library/include/hwy/timer-inl.h",
+        "path_type": "hardlink",
+        "sha256": "1fcbc017922560c04ffb26c2210a8856a2356eb9bca11076dd808b8e32ca87bf",
+        "size_in_bytes": 1450
+      },
+      {
+        "_path": "Library/include/hwy/timer.h",
+        "path_type": "hardlink",
+        "sha256": "20a69178dac619083fbf78be089aa5c7aed1701850c09baa1caf2b501efd1dc3",
+        "size_in_bytes": 9878
+      },
+      {
+        "_path": "Library/include/hwy/x86_cpuid.h",
+        "path_type": "hardlink",
+        "sha256": "238c85bd9d54c01ca52d0c7719efe143b63e124345a88a6dbc9c4cf901c75d19",
+        "size_in_bytes": 2237
+      },
+      {
+        "_path": "Library/lib/cmake/hwy/hwy-config-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "b9dc292c651fbb512b2751b06448cf82244f48457ac2c1cf264ad513361b6e6f",
+        "size_in_bytes": 1935
+      },
+      {
+        "_path": "Library/lib/cmake/hwy/hwy-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "6b64012ae3b59e43df849bbbaefbef9eff797b7e324ae864116d0b7271fe6e1f",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/hwy/hwy-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "c32221fb2bdf8b3ef070ecd0e5c3d09773acb55ae0a6726557ac146a35de4f86",
+        "size_in_bytes": 4951
+      },
+      {
+        "_path": "Library/lib/hwy.lib",
+        "path_type": "hardlink",
+        "sha256": "9bd0776cd9927abf55050355355c931f3fa6ef52a13ebbea18ea626b630eef18",
+        "size_in_bytes": 12298
+      },
+      {
+        "_path": "Library/lib/hwy_contrib.lib",
+        "path_type": "hardlink",
+        "sha256": "793ae02058c8e38aa52682fb1c50593eab471d5eda1f5d1e4e7a675e7359efc5",
+        "size_in_bytes": 47886
+      },
+      {
+        "_path": "Library/lib/hwy_test.lib",
+        "path_type": "hardlink",
+        "sha256": "b085c3b6e0c88f09ba2891799455237243b8d5d4c0e053d0f2691f58dab4f42c",
+        "size_in_bytes": 3138
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libhwy-contrib.pc",
+        "path_type": "hardlink",
+        "sha256": "cb28164bf38b00795a555c23f7ab43ae3767811eabc8642615a154f3278c5b08",
+        "sha256_in_prefix": "2999ea2fbd5a258801b310eefeb84299f67879a965cf252ab7e0a567f266f282",
+        "size_in_bytes": 311,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/libhwy_1787282260872/_h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libhwy-test.pc",
+        "path_type": "hardlink",
+        "sha256": "72f73bd6c7d7ad03acd0de01423385378eed449ff9dfaab4797ca6bf259c1287",
+        "sha256_in_prefix": "bc137a0e100a05faf059cee78bf29b9ad3a9ca27e6735bf4d186123514ac2bb3",
+        "size_in_bytes": 347,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/libhwy_1787282260872/_h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libhwy.pc",
+        "path_type": "hardlink",
+        "sha256": "571772494e3c83a394f53a481e32a3e42ff21590251d2a3c1948e3aa84e66bcd",
+        "sha256_in_prefix": "35db29ace769fa9706e0abfade251acefc7fcde34cc608c261d3d9b11e00bedf",
+        "size_in_bytes": 306,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/libhwy_1787282260872/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libhwy-1.4.0-h2419aca_1",
+    "type": 1
+  }
+}
