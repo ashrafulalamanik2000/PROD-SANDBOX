@@ -1,0 +1,76 @@
+{
+  "arch": "x86_64",
+  "build": "h9b56ecb_4",
+  "build_number": 4,
+  "constrains": [
+    "pdal 2.10.2.*"
+  ],
+  "depends": [
+    "libpdal-core ==2.10.2 hd7c2432_4",
+    "libgdal-tiledb",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "tiledb >=2.30.1,<2.31.0a0",
+    "libpdal-core >=2.10.2,<2.11.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "abdd9fe0a1db9fc3c40d3b807b9c7226",
+  "name": "libpdal-tiledb",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpdal-tiledb >=2.10.2,<2.11.0a0"
+    ]
+  },
+  "sha256": "847d77d1efaa0f9eb5b32dc362679ed70d11d38c760f1c3b71572428af523226",
+  "size": 308117,
+  "subdir": "win-64",
+  "timestamp": 1785772664321,
+  "version": "2.10.2",
+  "fn": "libpdal-tiledb-2.10.2-h9b56ecb_4.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libpdal-tiledb-2.10.2-h9b56ecb_4.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-tiledb-2.10.2-h9b56ecb_4",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libpdal_plugin_reader_tiledb.dll",
+    "Library/bin/libpdal_plugin_writer_tiledb.dll",
+    "Library/lib/libpdal_plugin_reader_tiledb.lib",
+    "Library/lib/libpdal_plugin_writer_tiledb.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libpdal_plugin_reader_tiledb.dll",
+        "path_type": "hardlink",
+        "sha256": "fa797e56d12bd53172d5473aabdb9fa2aa97f2738ab7413ea6c405315469ef1a",
+        "size_in_bytes": 438272
+      },
+      {
+        "_path": "Library/bin/libpdal_plugin_writer_tiledb.dll",
+        "path_type": "hardlink",
+        "sha256": "6ac788374033d50f3034be8766fd550ece59890a09b613c7aa677a1c57313c66",
+        "size_in_bytes": 557056
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_reader_tiledb.lib",
+        "path_type": "hardlink",
+        "sha256": "e18fda161b49b415a26350ef5c73d55fc65824bc186797d5749b864ddc797f36",
+        "size_in_bytes": 208310
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_writer_tiledb.lib",
+        "path_type": "hardlink",
+        "sha256": "82771534989917a295b7142209c1690a70f024b12d101a2593cae75f690f70af",
+        "size_in_bytes": 207830
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-tiledb-2.10.2-h9b56ecb_4",
+    "type": 1
+  }
+}

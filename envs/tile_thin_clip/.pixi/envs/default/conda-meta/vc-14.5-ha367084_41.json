@@ -1,0 +1,34 @@
+{
+  "arch": "x86_64",
+  "build": "ha367084_41",
+  "build_number": 41,
+  "depends": [
+    "vc14_runtime >=14.51.36247"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "aa805b5522c2a98fa286e551a1f48546",
+  "name": "vc",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "35444c55a92e2f7f7ba26bc70f81e56e52344f7d064c0fd4b40a46a58517b79c",
+  "size": 21383,
+  "subdir": "win-64",
+  "timestamp": 1785359368566,
+  "track_features": "vc14",
+  "version": "14.5",
+  "fn": "vc-14.5-ha367084_41.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/vc-14.5-ha367084_41.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\vc-14.5-ha367084_41",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\vc-14.5-ha367084_41",
+    "type": 1
+  }
+}

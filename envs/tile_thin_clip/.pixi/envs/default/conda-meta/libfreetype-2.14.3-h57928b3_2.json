@@ -1,0 +1,32 @@
+{
+  "arch": "x86_64",
+  "build": "h57928b3_2",
+  "build_number": 2,
+  "depends": [
+    "libfreetype6 >=2.14.3"
+  ],
+  "license": "GPL-2.0-only OR FTL",
+  "md5": "740f99c3c91079c03874b809fedace1b",
+  "name": "libfreetype",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "d794d7fddb6eea50e18a62fa27ab3819f40d51bad00b90cf4ca591fb0d4006c2",
+  "size": 8742,
+  "subdir": "win-64",
+  "timestamp": 1786641045882,
+  "version": "2.14.3",
+  "fn": "libfreetype-2.14.3-h57928b3_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libfreetype-2.14.3-h57928b3_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libfreetype-2.14.3-h57928b3_2",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libfreetype-2.14.3-h57928b3_2",
+    "type": 1
+  }
+}

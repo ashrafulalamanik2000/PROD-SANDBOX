@@ -1,0 +1,202 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.10"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "e0ac3accc64e23e40969d660e5f58ac8",
+  "name": "charset-normalizer",
+  "noarch": "python",
+  "run_exports": {},
+  "sha256": "cb60ef3e0631c8bacb4f7057196dee4496091a22baa3bb4b9bccb12c7e1c921b",
+  "size": 64487,
+  "subdir": "noarch",
+  "timestamp": 1786835648298,
+  "version": "3.5.1",
+  "fn": "charset-normalizer-3.5.1-pyhd8ed1ab_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.5.1-pyhd8ed1ab_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\charset-normalizer-3.5.1-pyhd8ed1ab_0",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/charset_normalizer/__init__.py",
+    "Lib/site-packages/charset_normalizer/__main__.py",
+    "Lib/site-packages/charset_normalizer/api.py",
+    "Lib/site-packages/charset_normalizer/cd.py",
+    "Lib/site-packages/charset_normalizer/cli/__init__.py",
+    "Lib/site-packages/charset_normalizer/cli/__main__.py",
+    "Lib/site-packages/charset_normalizer/constant.py",
+    "Lib/site-packages/charset_normalizer/legacy.py",
+    "Lib/site-packages/charset_normalizer/md.py",
+    "Lib/site-packages/charset_normalizer/models.py",
+    "Lib/site-packages/charset_normalizer/py.typed",
+    "Lib/site-packages/charset_normalizer/utils.py",
+    "Lib/site-packages/charset_normalizer/version.py",
+    "Lib/site-packages/charset_normalizer-3.5.1.dist-info/INSTALLER",
+    "Lib/site-packages/charset_normalizer-3.5.1.dist-info/METADATA",
+    "Lib/site-packages/charset_normalizer-3.5.1.dist-info/RECORD",
+    "Lib/site-packages/charset_normalizer-3.5.1.dist-info/REQUESTED",
+    "Lib/site-packages/charset_normalizer-3.5.1.dist-info/WHEEL",
+    "Lib/site-packages/charset_normalizer-3.5.1.dist-info/direct_url.json",
+    "Lib/site-packages/charset_normalizer-3.5.1.dist-info/entry_points.txt",
+    "Lib/site-packages/charset_normalizer-3.5.1.dist-info/licenses/LICENSE",
+    "Lib/site-packages/charset_normalizer-3.5.1.dist-info/top_level.txt",
+    "Scripts/normalizer-script.py",
+    "Scripts/normalizer.exe"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/charset_normalizer/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "997c6fda6b13aee46c685bb1f96e6ee0d37c06702ac4cc38bfb30acce0f1f5b6",
+        "size_in_bytes": 1582
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "cb3631311f8884a44763071295abc4bfca06770c6c47cf66af65f4f6a5c6769b",
+        "size_in_bytes": 109
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer/api.py",
+        "path_type": "hardlink",
+        "sha256": "55455aa5898f169c803379b698a9fdf808d94002312b238968abb870fc427f81",
+        "size_in_bytes": 35774
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer/cd.py",
+        "path_type": "hardlink",
+        "sha256": "e9d24e66f774aeb1045af931e78900132f6a00ffee22e8963008b9c17f0e66c6",
+        "size_in_bytes": 15980
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer/cli/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0fc23cea5164dbea72e3926fab19e24e2ad28ffb05c84eac8da63fd3e1b5b217",
+        "size_in_bytes": 136
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer/cli/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "34f2b7c980245d713b52fb3a22a8a39206734ba1ba7e0b9116e297ce0a5ff147",
+        "size_in_bytes": 11949
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer/constant.py",
+        "path_type": "hardlink",
+        "sha256": "cf145218309b82e5d9936112263dbf8e36f6c082a2a279b4500cf32a5b0e753c",
+        "size_in_bytes": 60749
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer/legacy.py",
+        "path_type": "hardlink",
+        "sha256": "6e091d12fb9b4c238f94c28ecee10d5c73226ab877e956866d1bd64a522bd4a0",
+        "size_in_bytes": 2651
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer/md.py",
+        "path_type": "hardlink",
+        "sha256": "9b468a83ee27584ea59cb1b6e82584137ec413042a8133a5e8c558e81737e38a",
+        "size_in_bytes": 35239
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer/models.py",
+        "path_type": "hardlink",
+        "sha256": "f8350cead0964f25fc4d477ee0355a6005ce07f7311c686b45a4b66bf38e406b",
+        "size_in_bytes": 13530
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer/utils.py",
+        "path_type": "hardlink",
+        "sha256": "119ec0e7fb286ef4c8c58585b1f5ee56c9f6261c31c33addd3cb20105d05ae71",
+        "size_in_bytes": 14122
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer/version.py",
+        "path_type": "hardlink",
+        "sha256": "716889cab865a2b14d4b7ae2bf35f12a770da61a492aba6c7d5c7c42c7aeb869",
+        "size_in_bytes": 115
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer-3.5.1.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer-3.5.1.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "955c93827d59f1280f6d6a76b1e11bfb999cc65a55df83a6f9b28b7bc0e467f6",
+        "size_in_bytes": 45868
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer-3.5.1.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "f570cdc5e86e46bc6fd8e1b8ea0b8a6b73db7942b8afba845f912d00c2b711a4",
+        "size_in_bytes": 2764
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer-3.5.1.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer-3.5.1.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer-3.5.1.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "f344a784ac2872a998bd5765c6f8c23cfe4ddc1fa6651f10734a39c4e0ff922a",
+        "size_in_bytes": 114
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer-3.5.1.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "0034932ab91767786174e5458ba0dc5041d0452d317f10c813fa44cf8c0b2170",
+        "size_in_bytes": 65
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer-3.5.1.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887",
+        "size_in_bytes": 1071
+      },
+      {
+        "_path": "Lib/site-packages/charset_normalizer-3.5.1.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "ec04b2cde3ebf3fc6e65626c9ea263201b7257cbe1128d30042bf530f4518b74",
+        "size_in_bytes": 19
+      },
+      {
+        "_path": "Scripts/normalizer-script.py",
+        "path_type": "windows_python_entry_point_script",
+        "sha256": "549708962745990cd27b08e705010de28a62b965d7efaf56e2f3e587ebe1d43b",
+        "size_in_bytes": 212
+      },
+      {
+        "_path": "Scripts/normalizer.exe",
+        "path_type": "windows_python_entry_point_exe",
+        "sha256": "4d8c479577961d0c6d940966f7987fbb0d6fc98b80edc03b00ee949dd8c1b3e2",
+        "size_in_bytes": 57672
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\charset-normalizer-3.5.1-pyhd8ed1ab_0",
+    "type": 1
+  }
+}

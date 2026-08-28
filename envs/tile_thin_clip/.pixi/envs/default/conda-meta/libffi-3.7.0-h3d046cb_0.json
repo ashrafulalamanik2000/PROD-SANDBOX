@@ -1,0 +1,118 @@
+{
+  "arch": "x86_64",
+  "build": "h3d046cb_0",
+  "build_number": 0,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "92bdfc0e5012660892b0e0eaf3069a5c",
+  "name": "libffi",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libffi >=3.7.0,<3.8.0a0"
+    ]
+  },
+  "sha256": "2ea8d2fe7b84ca37653777e15ac1e7abd35f0c90d3efbe7f6c4de9b489606369",
+  "size": 50247,
+  "subdir": "win-64",
+  "timestamp": 1783521107166,
+  "version": "3.7.0",
+  "fn": "libffi-3.7.0-h3d046cb_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libffi-3.7.0-h3d046cb_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libffi-3.7.0-h3d046cb_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/ffi-8.dll",
+    "Library/include/ffi.h",
+    "Library/include/ffitarget.h",
+    "Library/lib/ffi.lib",
+    "Library/lib/libffi.lib",
+    "Library/lib/pkgconfig/libffi.pc",
+    "Library/share/info/libffi.info",
+    "Library/share/man/man3/ffi.3",
+    "Library/share/man/man3/ffi_call.3",
+    "Library/share/man/man3/ffi_prep_cif.3",
+    "Library/share/man/man3/ffi_prep_cif_var.3"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/ffi-8.dll",
+        "path_type": "hardlink",
+        "sha256": "04c984ac285a64bdfb82c10fae1c6a04e311514aa34aac00a7fb94ec84882924",
+        "size_in_bytes": 31232
+      },
+      {
+        "_path": "Library/include/ffi.h",
+        "path_type": "hardlink",
+        "sha256": "969bf9b823a2ee36ec3bc7d38b2f12ec6059a0117392f5bdf1636ddcf6491ea8",
+        "size_in_bytes": 16103
+      },
+      {
+        "_path": "Library/include/ffitarget.h",
+        "path_type": "hardlink",
+        "sha256": "ffa1ea3b6f179405b3b1170c5b7c6d440c7d23298fb8d549311164ececdcbf97",
+        "size_in_bytes": 4794
+      },
+      {
+        "_path": "Library/lib/ffi.lib",
+        "path_type": "hardlink",
+        "sha256": "9fca4c50d5152ad0b560788bd89977bdab24a783851d332a293a241cb3dc36ee",
+        "size_in_bytes": 12750
+      },
+      {
+        "_path": "Library/lib/libffi.lib",
+        "path_type": "hardlink",
+        "sha256": "9fca4c50d5152ad0b560788bd89977bdab24a783851d332a293a241cb3dc36ee",
+        "size_in_bytes": 12750
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libffi.pc",
+        "path_type": "hardlink",
+        "sha256": "20e927ccf018fdc41ea73c1b6dfdb9c857275f99721741f1f8d869bef0074b07",
+        "size_in_bytes": 330
+      },
+      {
+        "_path": "Library/share/info/libffi.info",
+        "path_type": "hardlink",
+        "sha256": "31aac47d867bfb185527754c94be12a9f9a58a1f348188bbf723a4c34d5a2bdc",
+        "size_in_bytes": 43490
+      },
+      {
+        "_path": "Library/share/man/man3/ffi.3",
+        "path_type": "hardlink",
+        "sha256": "aa4730e114c305943a2226a524ed8447dc6b66a184523999868e5433c2c9de74",
+        "size_in_bytes": 850
+      },
+      {
+        "_path": "Library/share/man/man3/ffi_call.3",
+        "path_type": "hardlink",
+        "sha256": "2817ce7b78cb737d7b85b18b45899470f5f565f990d056d3d8cfabf6d779477f",
+        "size_in_bytes": 2333
+      },
+      {
+        "_path": "Library/share/man/man3/ffi_prep_cif.3",
+        "path_type": "hardlink",
+        "sha256": "f60c5bb9d04b55988da13511a2c3edfa0f39fb6f51abfb8ac24d0b161c4169c0",
+        "size_in_bytes": 1158
+      },
+      {
+        "_path": "Library/share/man/man3/ffi_prep_cif_var.3",
+        "path_type": "hardlink",
+        "sha256": "9365685252f33f13627c9303bc01883b764227132069260c19e94100ff442a51",
+        "size_in_bytes": 1321
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libffi-3.7.0-h3d046cb_0",
+    "type": 1
+  }
+}

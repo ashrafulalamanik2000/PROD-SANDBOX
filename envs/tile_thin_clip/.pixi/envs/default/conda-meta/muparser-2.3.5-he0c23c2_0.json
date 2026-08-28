@@ -1,0 +1,184 @@
+{
+  "arch": "x86_64",
+  "build": "he0c23c2_0",
+  "build_number": 0,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "013aabb169d59009bdf7d70319360e9b",
+  "name": "muparser",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "muparser >=2.3.5,<2.4.0a0"
+    ]
+  },
+  "sha256": "57f78d8cd9a282d03cd7a7ffb1f42d570e1bbfb42d606e99de5c16e089067185",
+  "size": 148557,
+  "subdir": "win-64",
+  "timestamp": 1747117340968,
+  "version": "2.3.5",
+  "fn": "muparser-2.3.5-he0c23c2_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/muparser-2.3.5-he0c23c2_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\muparser-2.3.5-he0c23c2_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/muparser.dll",
+    "Library/include/muParser.h",
+    "Library/include/muParserBase.h",
+    "Library/include/muParserBytecode.h",
+    "Library/include/muParserCallback.h",
+    "Library/include/muParserDLL.h",
+    "Library/include/muParserDef.h",
+    "Library/include/muParserError.h",
+    "Library/include/muParserFixes.h",
+    "Library/include/muParserInt.h",
+    "Library/include/muParserTemplateMagic.h",
+    "Library/include/muParserTest.h",
+    "Library/include/muParserToken.h",
+    "Library/include/muParserTokenReader.h",
+    "Library/lib/cmake/muparser/muparser-targets-release.cmake",
+    "Library/lib/cmake/muparser/muparser-targets.cmake",
+    "Library/lib/cmake/muparser/muparserConfig.cmake",
+    "Library/lib/cmake/muparser/muparserConfigVersion.cmake",
+    "Library/lib/muparser.lib",
+    "Library/lib/pkgconfig/muparser.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/muparser.dll",
+        "path_type": "hardlink",
+        "sha256": "00e8c44b9f5092d4c78c45596cb537a955c69dcfc091a6ecac10a7f5a88601e5",
+        "size_in_bytes": 340480
+      },
+      {
+        "_path": "Library/include/muParser.h",
+        "path_type": "hardlink",
+        "sha256": "1e9e07d62b2c66dad7259f94551763c21d429a1e43ec200a76666a83f58fb64c",
+        "size_in_bytes": 2643
+      },
+      {
+        "_path": "Library/include/muParserBase.h",
+        "path_type": "hardlink",
+        "sha256": "030ef4a5acb4217a235456445704d521ad01e385a9a44e04d6111d9f1b58135a",
+        "size_in_bytes": 11795
+      },
+      {
+        "_path": "Library/include/muParserBytecode.h",
+        "path_type": "hardlink",
+        "sha256": "8fb844d8696a5825c18aaa97681c192a2ba7a8d72be13ea815cc15c7f31a9152",
+        "size_in_bytes": 4901
+      },
+      {
+        "_path": "Library/include/muParserCallback.h",
+        "path_type": "hardlink",
+        "sha256": "75d7a6b8f8edcb290f1d7b7fbaa202da9f7ab45f9841339d0a6645178c923a0c",
+        "size_in_bytes": 7858
+      },
+      {
+        "_path": "Library/include/muParserDLL.h",
+        "path_type": "hardlink",
+        "sha256": "dd1279d1ce58169c3a1338b714c469af7dae2e591851bca793b892cca41d8b5d",
+        "size_in_bytes": 20835
+      },
+      {
+        "_path": "Library/include/muParserDef.h",
+        "path_type": "hardlink",
+        "sha256": "3317458b2fd51ea8282c0b2606edc73fffa39cf45cdce6960cd518f3cc1d031c",
+        "size_in_bytes": 23054
+      },
+      {
+        "_path": "Library/include/muParserError.h",
+        "path_type": "hardlink",
+        "sha256": "8ffa50254bc6657325911ff2d8e28822de13449b8ee15ac2febccf538fdd9a82",
+        "size_in_bytes": 3936
+      },
+      {
+        "_path": "Library/include/muParserFixes.h",
+        "path_type": "hardlink",
+        "sha256": "0b4c8d5f79b499e0f7647682628a0c1def1d95aace9ac77ff4323cc5693e66cb",
+        "size_in_bytes": 3362
+      },
+      {
+        "_path": "Library/include/muParserInt.h",
+        "path_type": "hardlink",
+        "sha256": "e922709f5893c3e6ccfc669b738cae142cbfb32dea696760e7c44682060d4d0a",
+        "size_in_bytes": 5249
+      },
+      {
+        "_path": "Library/include/muParserTemplateMagic.h",
+        "path_type": "hardlink",
+        "sha256": "e81ee727bd8b6c57226efc6b08cf42253edfdbe9706c0d7624d5d168121f2382",
+        "size_in_bytes": 6144
+      },
+      {
+        "_path": "Library/include/muParserTest.h",
+        "path_type": "hardlink",
+        "sha256": "f552512005e3971040dc78d769013397347bbe5a0f7a50e2159eb9bca9c2cca1",
+        "size_in_bytes": 9489
+      },
+      {
+        "_path": "Library/include/muParserToken.h",
+        "path_type": "hardlink",
+        "sha256": "41b0ca33f51692de826204cb64256e7bb751f994090ce7a641224ff2b237eba3",
+        "size_in_bytes": 17505
+      },
+      {
+        "_path": "Library/include/muParserTokenReader.h",
+        "path_type": "hardlink",
+        "sha256": "c4a85cc84d29ad629a7822ed65c985ff3868012a33dd0886749f902de3ea155b",
+        "size_in_bytes": 5873
+      },
+      {
+        "_path": "Library/lib/cmake/muparser/muparser-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "047fe245a95aa798d7f94beb79ccf31503168115af68ca97e88695311fa78095",
+        "size_in_bytes": 934
+      },
+      {
+        "_path": "Library/lib/cmake/muparser/muparser-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "49772024abcd056f924617be05a21f46fa681b53826700f407d53cec8a81f7f5",
+        "size_in_bytes": 4241
+      },
+      {
+        "_path": "Library/lib/cmake/muparser/muparserConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "456b24f08c72471313f72d2abe54c4a93466a6bb17f3f4ffde03afc57f708110",
+        "size_in_bytes": 214
+      },
+      {
+        "_path": "Library/lib/cmake/muparser/muparserConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "7a28319448f8a029829ef1f578bc5d0f6e5015501d62161aca3dfe5068ab7dda",
+        "size_in_bytes": 1904
+      },
+      {
+        "_path": "Library/lib/muparser.lib",
+        "path_type": "hardlink",
+        "sha256": "8e7fafee694ba3df3905a1bfdcecf7bf6790911ecbffbe35363685dbd0f8f45b",
+        "size_in_bytes": 165314
+      },
+      {
+        "_path": "Library/lib/pkgconfig/muparser.pc",
+        "path_type": "hardlink",
+        "sha256": "62540db4a8374d75ee2bf40edda8d9e0e9e06947399bd8074804dde8d6eb0b04",
+        "sha256_in_prefix": "f36c29af209b4bdebf9b4fd7001c9cf7c423b0b1d97a85f446e49f5be25f702a",
+        "size_in_bytes": 296,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/muparser_1747116727225/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\muparser-2.3.5-he0c23c2_0",
+    "type": 1
+  }
+}

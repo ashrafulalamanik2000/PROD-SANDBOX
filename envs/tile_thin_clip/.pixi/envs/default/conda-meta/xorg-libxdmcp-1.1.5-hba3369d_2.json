@@ -1,0 +1,72 @@
+{
+  "arch": "x86_64",
+  "build": "hba3369d_2",
+  "build_number": 2,
+  "depends": [
+    "libgcc >=14",
+    "libwinpthread >=12.0.0.r4.gg4f2fc60ca",
+    "ucrt >=10.0.20348.0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "0e21a45f1bb429b6e35e82631e60554a",
+  "name": "xorg-libxdmcp",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "xorg-libxdmcp >=1.1.5,<2.0a0"
+    ]
+  },
+  "sha256": "21b11bb98c41ece4ce6069d86d826b50b3d73020fb631b97e59a0521dd9d08a1",
+  "size": 71362,
+  "subdir": "win-64",
+  "timestamp": 1786381239727,
+  "version": "1.1.5",
+  "fn": "xorg-libxdmcp-1.1.5-hba3369d_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/xorg-libxdmcp-1.1.5-hba3369d_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\xorg-libxdmcp-1.1.5-hba3369d_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/msys-Xdmcp-6.dll",
+    "Library/include/X11/Xdmcp.h",
+    "Library/lib/libXdmcp.dll.a",
+    "Library/lib/pkgconfig/xdmcp.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/msys-Xdmcp-6.dll",
+        "path_type": "hardlink",
+        "sha256": "1ea3bff8a59418ce4e563ad96da2e6546b4002b1b138cc0ae9712f735292130c",
+        "size_in_bytes": 199439
+      },
+      {
+        "_path": "Library/include/X11/Xdmcp.h",
+        "path_type": "hardlink",
+        "sha256": "7fd3eb99f92b1c566c87cab744ccbb85a4530152eeace73dbb493952a4f40477",
+        "size_in_bytes": 8535
+      },
+      {
+        "_path": "Library/lib/libXdmcp.dll.a",
+        "path_type": "hardlink",
+        "sha256": "e3c1cd5e9a04a16c7e0484239af8f4b77aeeb64cb2e8d7bd6b2edab5b3776aff",
+        "size_in_bytes": 28708
+      },
+      {
+        "_path": "Library/lib/pkgconfig/xdmcp.pc",
+        "path_type": "hardlink",
+        "sha256": "76f7b95e863f5ed6b705f49b02ca896ed633e6c30ed7aae99f50e63d50e6fa2c",
+        "sha256_in_prefix": "21e079590a177349fe5e09329f5df1dc38c6c9b56d9048a12c453b29d2e82fb7",
+        "size_in_bytes": 293,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/xorg-libxdmcp_1786380937626/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\xorg-libxdmcp-1.1.5-hba3369d_2",
+    "type": 1
+  }
+}

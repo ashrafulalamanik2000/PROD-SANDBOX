@@ -1,0 +1,19 @@
+{
+  "manifest_path": "C:\\sdtools\\envs\\tile_thin_clip\\pixi.toml",
+  "environment_name": "default",
+  "pixi_version": "0.77.1",
+  "environment_lock_file_hash": "2e1b1f05b4b5fe42",
+  "resolved_platform": {
+    "subdir": "win-64",
+    "virtual_packages": [
+      "__win=10.0",
+      "__archspec=0=x86_64"
+    ]
+  },
+  "minimum_supported_platform": {
+    "subdir": "win-64",
+    "requirements": [
+      "__win"
+    ]
+  }
+}

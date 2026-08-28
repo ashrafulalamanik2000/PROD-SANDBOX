@@ -1,0 +1,35 @@
+{
+  "build": "hc364b38_1",
+  "build_number": 1,
+  "depends": [
+    "font-ttf-ubuntu",
+    "font-ttf-inconsolata",
+    "font-ttf-dejavu-sans-mono",
+    "font-ttf-source-code-pro"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "a7970cd949a077b7cb9696379d338681",
+  "name": "fonts-conda-forge",
+  "noarch": "generic",
+  "run_exports": {},
+  "sha256": "54eea8469786bc2291cc40bca5f46438d3e062a399e8f53f013b6a9f50e98333",
+  "size": 4059,
+  "subdir": "noarch",
+  "timestamp": 1762351264405,
+  "version": "1",
+  "fn": "fonts-conda-forge-1-hc364b38_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/fonts-conda-forge-1-hc364b38_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\fonts-conda-forge-1-hc364b38_1",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\fonts-conda-forge-1-hc364b38_1",
+    "type": 1
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "arch": "x86_64",
+  "build": "h5112557_0",
+  "build_number": 0,
+  "depends": [
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "95ae2a7707f9bfdcb944a3cec931cfb6",
+  "name": "gflags",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "gflags >=2.3.1,<2.4.0a0"
+    ]
+  },
+  "sha256": "c4ef49c92c28963ceb2b2a6665860cb88eafe28a4608e89a23a756cc8788d6f3",
+  "size": 79689,
+  "subdir": "win-64",
+  "timestamp": 1785044741682,
+  "version": "2.3.1",
+  "fn": "gflags-2.3.1-h5112557_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/gflags-2.3.1-h5112557_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\gflags-2.3.1-h5112557_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/gflags.dll",
+    "Library/include/gflags/gflags.h",
+    "Library/include/gflags/gflags_completions.h",
+    "Library/include/gflags/gflags_declare.h",
+    "Library/include/gflags/gflags_gflags.h",
+    "Library/lib/cmake/gflags/gflags-config-version.cmake",
+    "Library/lib/cmake/gflags/gflags-config.cmake",
+    "Library/lib/cmake/gflags/gflags-nonamespace-targets-release.cmake",
+    "Library/lib/cmake/gflags/gflags-nonamespace-targets.cmake",
+    "Library/lib/cmake/gflags/gflags-targets-release.cmake",
+    "Library/lib/cmake/gflags/gflags-targets.cmake",
+    "Library/lib/gflags.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/gflags.dll",
+        "path_type": "hardlink",
+        "sha256": "9c9a91d114cdeccd41b44689dd9e67a78307f9fb7ffd1a88f07338d101cc0729",
+        "size_in_bytes": 132608
+      },
+      {
+        "_path": "Library/include/gflags/gflags.h",
+        "path_type": "hardlink",
+        "sha256": "9fc4c7cd3010176785d3696269af54ce9720521c133835a4709030a9238ccef7",
+        "size_in_bytes": 31227
+      },
+      {
+        "_path": "Library/include/gflags/gflags_completions.h",
+        "path_type": "hardlink",
+        "sha256": "3e1c52078383a9e246b0a517abd38ffbe2752af87569f27b8dd5b32e8ee94aa5",
+        "size_in_bytes": 5883
+      },
+      {
+        "_path": "Library/include/gflags/gflags_declare.h",
+        "path_type": "hardlink",
+        "sha256": "e9351d245c4a46181eddefffae2760e0fa076f377e835a543a4a7da5b98e5e1c",
+        "size_in_bytes": 5522
+      },
+      {
+        "_path": "Library/include/gflags/gflags_gflags.h",
+        "path_type": "hardlink",
+        "sha256": "23ed96c00516eb8cfe1632e0c59066647ce72cafcb1911d410b9f7c194cd8cdf",
+        "size_in_bytes": 4173
+      },
+      {
+        "_path": "Library/lib/cmake/gflags/gflags-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "1a099f6f184cf8e64c1426542450a11f1f7b84eff94c8136b7a8afb28d6af904",
+        "size_in_bytes": 1275
+      },
+      {
+        "_path": "Library/lib/cmake/gflags/gflags-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "30cfadd4150642c943f821bcacebae4fe683d650ff837edf1c717cba6f13c81f",
+        "size_in_bytes": 6447
+      },
+      {
+        "_path": "Library/lib/cmake/gflags/gflags-nonamespace-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "cb1a10630833dbdd331e618ef1f1c371acbebb4b95f3637c65fabb2a2df4b49d",
+        "size_in_bytes": 901
+      },
+      {
+        "_path": "Library/lib/cmake/gflags/gflags-nonamespace-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "e6f340d64f84a8f19ad155f2e0642faa07a4c3790751e88c6a64c6fb7231d582",
+        "size_in_bytes": 4329
+      },
+      {
+        "_path": "Library/lib/cmake/gflags/gflags-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "2467846488eb5cf462eae2af5e3271ac92d871e05beea19e2463500317ff652b",
+        "size_in_bytes": 941
+      },
+      {
+        "_path": "Library/lib/cmake/gflags/gflags-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "70a192a5570bfd9fa73cf7dbe310cf3da4f2122f5b010a9acd22387c440a5111",
+        "size_in_bytes": 4349
+      },
+      {
+        "_path": "Library/lib/gflags.lib",
+        "path_type": "hardlink",
+        "sha256": "466bce8abb226b1b21dfb731b4a36de99be8d3dd3df17f297ecc76e6d8b8b413",
+        "size_in_bytes": 29946
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\gflags-2.3.1-h5112557_0",
+    "type": 1
+  }
+}

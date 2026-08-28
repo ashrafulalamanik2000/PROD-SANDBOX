@@ -1,0 +1,93 @@
+{
+  "arch": "x86_64",
+  "build": "h8c1c262_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "md5": "354d160465fffe2b9e58eb6b0fdec9b2",
+  "name": "libcxsparse",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libcxsparse >=4.4.1,<5.0a0"
+    ]
+  },
+  "sha256": "83802c87458f06684a3e7c1f8aa861b15d805db9d54aea026788cc3fb2f49c06",
+  "size": 70656,
+  "subdir": "win-64",
+  "timestamp": 1742288893863,
+  "version": "4.4.1",
+  "fn": "libcxsparse-4.4.1-h8c1c262_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libcxsparse-4.4.1-h8c1c262_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libcxsparse-4.4.1-h8c1c262_7100102",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/cxsparse.dll",
+    "Library/include/suitesparse/cs.h",
+    "Library/lib/cmake/CXSparse/CXSparseConfig.cmake",
+    "Library/lib/cmake/CXSparse/CXSparseConfigVersion.cmake",
+    "Library/lib/cmake/CXSparse/CXSparseTargets-release.cmake",
+    "Library/lib/cmake/CXSparse/CXSparseTargets.cmake",
+    "Library/lib/cxsparse.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/cxsparse.dll",
+        "path_type": "hardlink",
+        "sha256": "5640871a93b0e6c99133fc312793a45dd08c6a0f4ee53d5e14ba7e62e1f1344f",
+        "size_in_bytes": 96768
+      },
+      {
+        "_path": "Library/include/suitesparse/cs.h",
+        "path_type": "hardlink",
+        "sha256": "64c64819c66a87e3096df8a21b6ec8e05acb43277e1eb89d66fcc543002dee56",
+        "size_in_bytes": 33759
+      },
+      {
+        "_path": "Library/lib/cmake/CXSparse/CXSparseConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "d83b6db51ecd3639fc2a1584d3e9529531417d31ea3cda2445c9d15b33f2b270",
+        "size_in_bytes": 6727
+      },
+      {
+        "_path": "Library/lib/cmake/CXSparse/CXSparseConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "99062637cb47b74f8c470b2cdc71dc9b17a7d7f59ba4d0645dc14d72e86dca12",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/CXSparse/CXSparseTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "afcf126c5f2215ba712e31b623f32c402d686ce40bcf38e1cc343d087fce1db4",
+        "size_in_bytes": 1027
+      },
+      {
+        "_path": "Library/lib/cmake/CXSparse/CXSparseTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "f6a718d7bf7a6d41343087f082a2c235110fbec26b9707f859d40ef933e54012",
+        "size_in_bytes": 4407
+      },
+      {
+        "_path": "Library/lib/cxsparse.lib",
+        "path_type": "hardlink",
+        "sha256": "e3d75616509a10fff00ed9b0866a07c52a54b8b99925a3247c0dfd7e018d0e44",
+        "size_in_bytes": 26480
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libcxsparse-4.4.1-h8c1c262_7100102",
+    "type": 1
+  }
+}

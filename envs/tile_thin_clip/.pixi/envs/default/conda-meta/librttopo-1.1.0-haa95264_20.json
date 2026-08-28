@@ -1,0 +1,70 @@
+{
+  "arch": "x86_64",
+  "build": "haa95264_20",
+  "build_number": 20,
+  "depends": [
+    "geos >=3.14.1,<3.14.2.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "GPL-2.0-or-later",
+  "license_family": "GPL",
+  "md5": "7eeb5aed49853f8b3e1ca0463ef55a8e",
+  "name": "librttopo",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "librttopo >=1.1.0,<1.2.0a0"
+    ]
+  },
+  "sha256": "d8d091afa0e5009b71e9a931da862a60104b75ca13c3021edf036620eebaf2d0",
+  "size": 403088,
+  "subdir": "win-64",
+  "timestamp": 1761671197546,
+  "version": "1.1.0",
+  "fn": "librttopo-1.1.0-haa95264_20.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/librttopo-1.1.0-haa95264_20.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\librttopo-1.1.0-haa95264_20",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/librttopo.dll",
+    "Library/include/librttopo.h",
+    "Library/include/librttopo_geom.h",
+    "Library/lib/librttopo.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/librttopo.dll",
+        "path_type": "hardlink",
+        "sha256": "9e4b271e5ea9e31183fe3bd7b2d04b86aa0e2b37064b42653db5a1d0c5a250c0",
+        "size_in_bytes": 660480
+      },
+      {
+        "_path": "Library/include/librttopo.h",
+        "path_type": "hardlink",
+        "sha256": "cdf6854ae50dbfe7aff87b77341b1233af8a4587481674180c4546568060505b",
+        "size_in_bytes": 47568
+      },
+      {
+        "_path": "Library/include/librttopo_geom.h",
+        "path_type": "hardlink",
+        "sha256": "5f7796e86fa8b5b7d54d505c15a98c26b01464040c8f411db30eec546b492136",
+        "size_in_bytes": 78448
+      },
+      {
+        "_path": "Library/lib/librttopo.lib",
+        "path_type": "hardlink",
+        "sha256": "dfea4b38ad736c49f27f3292219cca9217fe8e0af72b1df707d8dc5f363d682e",
+        "size_in_bytes": 1170462
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\librttopo-1.1.0-haa95264_20",
+    "type": 1
+  }
+}

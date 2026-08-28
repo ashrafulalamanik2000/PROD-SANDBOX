@@ -1,0 +1,61 @@
+{
+  "arch": "x86_64",
+  "build": "h8ef44ab_1",
+  "build_number": 1,
+  "depends": [
+    "icu >=78.3,<79.0a0",
+    "libiconv >=1.18,<2.0a0",
+    "liblzma >=5.8.3,<6.0a0",
+    "libxml2-16 2.15.3 h3cfd58e_1",
+    "libzlib >=1.3.2,<2.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "45a5a1c709a69f14cf176220788d18a9",
+  "name": "libxml2",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libxml2",
+      "libxml2-16 >=2.15.3"
+    ]
+  },
+  "sha256": "a83e9adcf7c50f20289dc6890707c8e4e84151b4204b0f7344998138807458d1",
+  "size": 43610,
+  "subdir": "win-64",
+  "timestamp": 1787237661577,
+  "version": "2.15.3",
+  "fn": "libxml2-2.15.3-h8ef44ab_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libxml2-2.15.3-h8ef44ab_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libxml2-2.15.3-h8ef44ab_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/xmlcatalog.exe",
+    "Library/bin/xmllint.exe"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/xmlcatalog.exe",
+        "path_type": "hardlink",
+        "sha256": "b1f35b30d2cca86ec9ae6dfbd01d3d8c8227cc96515b534f0872a96cef0b1c75",
+        "size_in_bytes": 20480
+      },
+      {
+        "_path": "Library/bin/xmllint.exe",
+        "path_type": "hardlink",
+        "sha256": "ec51d4c108d00407b4599dd79744f82901ba698f272d69a9ff49e52b000ccc38",
+        "size_in_bytes": 66560
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libxml2-2.15.3-h8ef44ab_1",
+    "type": 1
+  }
+}

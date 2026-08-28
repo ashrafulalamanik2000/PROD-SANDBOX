@@ -1,0 +1,159 @@
+{
+  "arch": "x86_64",
+  "build": "h954c3a4_4",
+  "build_number": 4,
+  "constrains": [
+    "pdal 2.10.2.*"
+  ],
+  "depends": [
+    "libpdal-core ==2.10.2 hd7c2432_4",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "libpdal-core >=2.10.2,<2.11.0a0",
+    "xerces-c >=3.3.0,<3.4.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "bca8007a20118b43ffa832b2e2194317",
+  "name": "libpdal-e57",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpdal-e57 >=2.10.2,<2.11.0a0"
+    ]
+  },
+  "sha256": "3efdd558d7f2344f6e66471ae04baa178083e9ed1aed62eff54fd228aa2af07b",
+  "size": 12179159,
+  "subdir": "win-64",
+  "timestamp": 1785772664321,
+  "version": "2.10.2",
+  "fn": "libpdal-e57-2.10.2-h954c3a4_4.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libpdal-e57-2.10.2-h954c3a4_4.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-e57-2.10.2-h954c3a4_4",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libpdal_plugin_reader_e57.dll",
+    "Library/bin/libpdal_plugin_writer_e57.dll",
+    "Library/include/E57Format/E57Exception.h",
+    "Library/include/E57Format/E57Export.h",
+    "Library/include/E57Format/E57Format.h",
+    "Library/include/E57Format/E57SimpleData.h",
+    "Library/include/E57Format/E57SimpleReader.h",
+    "Library/include/E57Format/E57SimpleWriter.h",
+    "Library/include/E57Format/E57Version.h",
+    "Library/lib/E57Format.lib",
+    "Library/lib/cmake/E57Format/E57Format-export-release.cmake",
+    "Library/lib/cmake/E57Format/E57Format-export.cmake",
+    "Library/lib/cmake/E57Format/e57format-config-version.cmake",
+    "Library/lib/cmake/E57Format/e57format-config.cmake",
+    "Library/lib/libpdal_plugin_reader_e57.lib",
+    "Library/lib/libpdal_plugin_writer_e57.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libpdal_plugin_reader_e57.dll",
+        "path_type": "hardlink",
+        "sha256": "3770dd036a55fc728966e58aa6636cfed2dd731f650a680eacd3ec0123d75414",
+        "size_in_bytes": 547328
+      },
+      {
+        "_path": "Library/bin/libpdal_plugin_writer_e57.dll",
+        "path_type": "hardlink",
+        "sha256": "c2f527d3e92065319cd2fc4afc98d4b8c055171873d29ebbb3054149732c1656",
+        "size_in_bytes": 550400
+      },
+      {
+        "_path": "Library/include/E57Format/E57Exception.h",
+        "path_type": "hardlink",
+        "sha256": "6073d9777c08bf2ed883d80246a8571f43d34811052e40aea8be53f48f097018",
+        "size_in_bytes": 21278
+      },
+      {
+        "_path": "Library/include/E57Format/E57Export.h",
+        "path_type": "hardlink",
+        "sha256": "5232fb5b329fdebffda781f99bb66ef74d20c2d2d1c09eb39d1dc75ff4f523b8",
+        "size_in_bytes": 1067
+      },
+      {
+        "_path": "Library/include/E57Format/E57Format.h",
+        "path_type": "hardlink",
+        "sha256": "586816c4fa0cfbc4d483acc666261cd0acb8a47a13d2ff79983f52a6c3f22761",
+        "size_in_bytes": 30378
+      },
+      {
+        "_path": "Library/include/E57Format/E57SimpleData.h",
+        "path_type": "hardlink",
+        "sha256": "6b2455d3390d747b3b6804f4caf7684acd9ca2d214258b32fba2d8a138d7f6d6",
+        "size_in_bytes": 41176
+      },
+      {
+        "_path": "Library/include/E57Format/E57SimpleReader.h",
+        "path_type": "hardlink",
+        "sha256": "1fda9cbb9bf50931da414b3f58daeb8e1d2e97e8ca0a68351132ec88027bfdac",
+        "size_in_bytes": 9674
+      },
+      {
+        "_path": "Library/include/E57Format/E57SimpleWriter.h",
+        "path_type": "hardlink",
+        "sha256": "80f3a930851905ec4b49ca27e89b51e29d2c165f2241b6d569c8972c8b123ccd",
+        "size_in_bytes": 8506
+      },
+      {
+        "_path": "Library/include/E57Format/E57Version.h",
+        "path_type": "hardlink",
+        "sha256": "3721c4fc7289d7afb1f24d29fb077618630132f55b095d2c9055f3d41e66c077",
+        "size_in_bytes": 2266
+      },
+      {
+        "_path": "Library/lib/E57Format.lib",
+        "path_type": "hardlink",
+        "sha256": "bbbcca115095886c55bd7f12a8bee94b2c10f46d493011e960eaa800d1519b84",
+        "size_in_bytes": 85886588
+      },
+      {
+        "_path": "Library/lib/cmake/E57Format/E57Format-export-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "5c5a6b58ce38b172eec25c242e311ce86283282e9d23d8ebee4487f26a0d7be7",
+        "size_in_bytes": 841
+      },
+      {
+        "_path": "Library/lib/cmake/E57Format/E57Format-export.cmake",
+        "path_type": "hardlink",
+        "sha256": "f47c9cf39a751a6645c1ffc7bb542e043dadc570e546738dd0ca5e07c06b1e80",
+        "size_in_bytes": 4279
+      },
+      {
+        "_path": "Library/lib/cmake/E57Format/e57format-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "e9e96c5c6724707a987d223bb6e8ed7598cb8b766dd763106c608b7a9b678d0d",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/E57Format/e57format-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "c61a1dbcadee2dccf36d361f702575906011be28579ba1ee6790019e4f9632fc",
+        "size_in_bytes": 293
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_reader_e57.lib",
+        "path_type": "hardlink",
+        "sha256": "bd82d5cb55db2f8fb0f397870eea5866d207f03214d68101c64148387fbecc71",
+        "size_in_bytes": 217572
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_writer_e57.lib",
+        "path_type": "hardlink",
+        "sha256": "84078bb177091fe75e7560d8ee5ead3504cb8a289d27a4c2f1c78b645d7e1def",
+        "size_in_bytes": 211702
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-e57-2.10.2-h954c3a4_4",
+    "type": 1
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "arch": "x86_64",
+  "build": "h11686cb_4",
+  "build_number": 4,
+  "constrains": [
+    "pdal 2.10.2.*"
+  ],
+  "depends": [
+    "libpdal-core >=2.10.2,<2.10.3.0a0",
+    "libpdal-trajectory >=2.10.2,<2.10.3.0a0",
+    "libpdal-hdf >=2.10.2,<2.10.3.0a0",
+    "libpdal-tiledb >=2.10.2,<2.10.3.0a0",
+    "libpdal-pgpointcloud >=2.10.2,<2.10.3.0a0",
+    "libpdal-draco >=2.10.2,<2.10.3.0a0",
+    "libpdal-arrow >=2.10.2,<2.10.3.0a0",
+    "libpdal-nitf >=2.10.2,<2.10.3.0a0",
+    "libpdal-e57 >=2.10.2,<2.10.3.0a0",
+    "libpdal-icebridge >=2.10.2,<2.10.3.0a0",
+    "libpdal-pgpointcloud >=2.10.2,<2.11.0a0",
+    "libpdal-nitf >=2.10.2,<2.11.0a0",
+    "libpdal-arrow >=2.10.2,<2.11.0a0",
+    "libpdal-icebridge >=2.10.2,<2.11.0a0",
+    "libpdal-tiledb >=2.10.2,<2.11.0a0",
+    "libpdal-trajectory >=2.10.2,<2.11.0a0",
+    "libpdal-core >=2.10.2,<2.11.0a0",
+    "libpdal-draco >=2.10.2,<2.11.0a0",
+    "libpdal-e57 >=2.10.2,<2.11.0a0",
+    "libpdal-hdf >=2.10.2,<2.11.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "a25b251dfd9dc95a09ea2560dcbfdc3f",
+  "name": "libpdal",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpdal-core >=2.10.2,<2.11.0a0",
+      "libpdal-trajectory >=2.10.2,<2.11.0a0",
+      "libpdal-hdf >=2.10.2,<2.11.0a0",
+      "libpdal-tiledb >=2.10.2,<2.11.0a0",
+      "libpdal-pgpointcloud >=2.10.2,<2.11.0a0",
+      "libpdal-draco >=2.10.2,<2.11.0a0",
+      "libpdal-arrow >=2.10.2,<2.11.0a0",
+      "libpdal-nitf >=2.10.2,<2.11.0a0",
+      "libpdal-e57 >=2.10.2,<2.11.0a0",
+      "libpdal-icebridge >=2.10.2,<2.11.0a0"
+    ]
+  },
+  "sha256": "1504dec2a96b343bd5ac40a3d790741f8611bcd28554e208ffda34b5daad976b",
+  "size": 28999,
+  "subdir": "win-64",
+  "timestamp": 1785772664321,
+  "version": "2.10.2",
+  "fn": "libpdal-2.10.2-h11686cb_4.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libpdal-2.10.2-h11686cb_4.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-2.10.2-h11686cb_4",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-2.10.2-h11686cb_4",
+    "type": 1
+  }
+}

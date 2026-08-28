@@ -1,0 +1,89 @@
+{
+  "arch": "x86_64",
+  "build": "h68a222c_1023",
+  "build_number": 1023,
+  "depends": [
+    "libexpat >=2.7.5,<3.0a0",
+    "libzlib >=1.3.2,<2.0a0",
+    "ucrt >=10.0.20348.0",
+    "uriparser >=0.9.8,<1.0a0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "b44e0d9eb84c6c086d809787aab0a1da",
+  "name": "libkml",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "6b2c6506dc7d7bb3bc4128d575e4ae6c2cf18d3f9828a4be331e0b5e49edf108",
+  "size": 1668156,
+  "subdir": "win-64",
+  "timestamp": 1777026660593,
+  "version": "1.3.0",
+  "fn": "libkml-1.3.0-h68a222c_1023.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libkml-1.3.0-h68a222c_1023.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libkml-1.3.0-h68a222c_1023",
+  "requested_specs": [],
+  "files": [
+    "Library/lib/kmlbase.lib",
+    "Library/lib/kmlconvenience.lib",
+    "Library/lib/kmldom.lib",
+    "Library/lib/kmlengine.lib",
+    "Library/lib/kmlregionator.lib",
+    "Library/lib/kmlxsd.lib",
+    "Library/lib/minizip.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/lib/kmlbase.lib",
+        "path_type": "hardlink",
+        "sha256": "01c247e657cbf8a2dfa6261af625271b8431660c32db7c5a8e9f74b42a4be7f7",
+        "size_in_bytes": 1754462
+      },
+      {
+        "_path": "Library/lib/kmlconvenience.lib",
+        "path_type": "hardlink",
+        "sha256": "9eee16bfd83daf47e8ec0b3262d1cec59c1d6aefe79cf088d18a0a447e71e40e",
+        "size_in_bytes": 2049812
+      },
+      {
+        "_path": "Library/lib/kmldom.lib",
+        "path_type": "hardlink",
+        "sha256": "4bae393b30af8b04c42fb987bd56aba5512ed61246f6ff1877d56d05134db85f",
+        "size_in_bytes": 10827556
+      },
+      {
+        "_path": "Library/lib/kmlengine.lib",
+        "path_type": "hardlink",
+        "sha256": "1db9a907f15090b8c2e99266e271dab175bec68aec25f949473426e049930e2d",
+        "size_in_bytes": 5344608
+      },
+      {
+        "_path": "Library/lib/kmlregionator.lib",
+        "path_type": "hardlink",
+        "sha256": "3995df22add59d42ea7be39048fff3b8b124a94521646dca859d06ac69d1a122",
+        "size_in_bytes": 819740
+      },
+      {
+        "_path": "Library/lib/kmlxsd.lib",
+        "path_type": "hardlink",
+        "sha256": "c0304d44211f4293860c769917920359250a35e7fa540eb15e80a04e3aa6000e",
+        "size_in_bytes": 1706000
+      },
+      {
+        "_path": "Library/lib/minizip.lib",
+        "path_type": "hardlink",
+        "sha256": "0034fc376c487879dff321d07344dd3ccbc6963408540b88521fef30299ce69e",
+        "size_in_bytes": 116408
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libkml-1.3.0-h68a222c_1023",
+    "type": 1
+  }
+}

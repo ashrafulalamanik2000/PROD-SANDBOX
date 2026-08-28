@@ -1,0 +1,89 @@
+{
+  "arch": "x86_64",
+  "build": "h0e60522_0",
+  "build_number": 0,
+  "depends": [
+    "vc >=14.1,<15.0a0",
+    "vs2015_runtime >=14.16.27012"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "cd4cc2d0c610c8cb5419ccc979f2d6ce",
+  "name": "libcrc32c",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libcrc32c >=1.1.2,<1.2.0a0"
+    ]
+  },
+  "sha256": "75e60fbe436ba8a11c170c89af5213e8bec0418f88b7771ab7e3d9710b70c54e",
+  "size": 25694,
+  "subdir": "win-64",
+  "timestamp": 1633684287072,
+  "version": "1.1.2",
+  "fn": "libcrc32c-1.1.2-h0e60522_0.tar.bz2",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libcrc32c-1.1.2-h0e60522_0.tar.bz2",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libcrc32c-1.1.2-h0e60522_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/crc32c.dll",
+    "Library/include/crc32c/crc32c.h",
+    "Library/lib/cmake/Crc32c/Crc32cConfig.cmake",
+    "Library/lib/cmake/Crc32c/Crc32cConfigVersion.cmake",
+    "Library/lib/cmake/Crc32c/Crc32cTargets-release.cmake",
+    "Library/lib/cmake/Crc32c/Crc32cTargets.cmake",
+    "Library/lib/crc32c.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/crc32c.dll",
+        "path_type": "hardlink",
+        "sha256": "1f65d351caccc3a16aad4e1c2efda359b29fd91c37bf53dda5b5b95a6e2e4276",
+        "size_in_bytes": 23552
+      },
+      {
+        "_path": "Library/include/crc32c/crc32c.h",
+        "path_type": "hardlink",
+        "sha256": "2ad42dff3ba9ea9f8059564fa5731111443ba9da52680d04de89611172fb565f",
+        "size_in_bytes": 2285
+      },
+      {
+        "_path": "Library/lib/cmake/Crc32c/Crc32cConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "027e494553f7df62a48e9557575ba846bdacf2e6c2b91cb4a251755e51e3ec14",
+        "size_in_bytes": 1214
+      },
+      {
+        "_path": "Library/lib/cmake/Crc32c/Crc32cConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "f2680c983a6700cff9b06f9fc85c51084e3484878402cd5a905bb72d9e662495",
+        "size_in_bytes": 2948
+      },
+      {
+        "_path": "Library/lib/cmake/Crc32c/Crc32cTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "b900832e85c37e5ad4171749bf2ce514011beb9304b07a57b27b28dbb6ddbb7a",
+        "size_in_bytes": 894
+      },
+      {
+        "_path": "Library/lib/cmake/Crc32c/Crc32cTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "2f8a68bf5248499fa847e756eb42e20530b9a04a665695b1b5d70627c261f78c",
+        "size_in_bytes": 3352
+      },
+      {
+        "_path": "Library/lib/crc32c.lib",
+        "path_type": "hardlink",
+        "sha256": "a97a8562ab1608f2a1bbd7f40e4b9e4fb40d63dfeae8862beff0b250b341fe03",
+        "size_in_bytes": 5296
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libcrc32c-1.1.2-h0e60522_0",
+    "type": 1
+  }
+}

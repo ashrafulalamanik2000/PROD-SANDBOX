@@ -1,0 +1,225 @@
+{
+  "arch": "x86_64",
+  "build": "hfd05255_1",
+  "build_number": 1,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "md5": "66f5ce9d0d618332023619a899ceb26f",
+  "name": "fribidi",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "fribidi >=1.0.16,<2.0a0"
+    ]
+  },
+  "sha256": "274b3e4ae5dff527062039d1dcb5cfdd9f91fa7d8eaf61358c09450b361385de",
+  "size": 65318,
+  "subdir": "win-64",
+  "timestamp": 1785912637725,
+  "version": "1.0.16",
+  "fn": "fribidi-1.0.16-hfd05255_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/fribidi-1.0.16-hfd05255_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\fribidi-1.0.16-hfd05255_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/fribidi-0.dll",
+    "Library/bin/fribidi.exe",
+    "Library/include/fribidi/fribidi-arabic.h",
+    "Library/include/fribidi/fribidi-begindecls.h",
+    "Library/include/fribidi/fribidi-bidi-types-list.h",
+    "Library/include/fribidi/fribidi-bidi-types.h",
+    "Library/include/fribidi/fribidi-bidi.h",
+    "Library/include/fribidi/fribidi-brackets.h",
+    "Library/include/fribidi/fribidi-char-sets-list.h",
+    "Library/include/fribidi/fribidi-char-sets.h",
+    "Library/include/fribidi/fribidi-common.h",
+    "Library/include/fribidi/fribidi-config.h",
+    "Library/include/fribidi/fribidi-deprecated.h",
+    "Library/include/fribidi/fribidi-enddecls.h",
+    "Library/include/fribidi/fribidi-flags.h",
+    "Library/include/fribidi/fribidi-joining-types-list.h",
+    "Library/include/fribidi/fribidi-joining-types.h",
+    "Library/include/fribidi/fribidi-joining.h",
+    "Library/include/fribidi/fribidi-mirroring.h",
+    "Library/include/fribidi/fribidi-shape.h",
+    "Library/include/fribidi/fribidi-types.h",
+    "Library/include/fribidi/fribidi-unicode-version.h",
+    "Library/include/fribidi/fribidi-unicode.h",
+    "Library/include/fribidi/fribidi.h",
+    "Library/lib/fribidi.lib",
+    "Library/lib/pkgconfig/fribidi.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/fribidi-0.dll",
+        "path_type": "hardlink",
+        "sha256": "a19473f330f08d786ea08079a48ce78330fd274979acb38323700343e26f4deb",
+        "size_in_bytes": 120320
+      },
+      {
+        "_path": "Library/bin/fribidi.exe",
+        "path_type": "hardlink",
+        "sha256": "7b0c21b47c1025f61f76cccd833c664c2dc641d5d2c5e20f0e2f794da4735918",
+        "size_in_bytes": 24064
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-arabic.h",
+        "path_type": "hardlink",
+        "sha256": "f4c5231a027536077ff577aa375e95f93ccd3275fd31a1951244ec449d4fd7cb",
+        "size_in_bytes": 2823
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-begindecls.h",
+        "path_type": "hardlink",
+        "sha256": "7a8cd3e05e46dee19f658d67e485fca4acd06b96b4773bbf4607530564f3117f",
+        "size_in_bytes": 80
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-bidi-types-list.h",
+        "path_type": "hardlink",
+        "sha256": "f8bbfd157de60bd62b2f565488c22630dda9315e50af7002856de557c0a1daa3",
+        "size_in_bytes": 3773
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-bidi-types.h",
+        "path_type": "hardlink",
+        "sha256": "693930457d718570f795fb0a02d3aa85188dc702e62f9707dc44a28ab5d2b260",
+        "size_in_bytes": 14990
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-bidi.h",
+        "path_type": "hardlink",
+        "sha256": "819ec96d0a479a8516260b1a3b3993a244214ad6c0586d304249a691e1b5b274",
+        "size_in_bytes": 6253
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-brackets.h",
+        "path_type": "hardlink",
+        "sha256": "f5a32f2ac8c0cdc445f82b9d81f6a5b4ae103ca65e03838eb09453b5185988d1",
+        "size_in_bytes": 3180
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-char-sets-list.h",
+        "path_type": "hardlink",
+        "sha256": "93aec7f29320d82933f5a4f18bf5bed4a4be8bb9a16cc0b7ad6452f4647840ef",
+        "size_in_bytes": 2266
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-char-sets.h",
+        "path_type": "hardlink",
+        "sha256": "bb3b0fea74d9e4d456a1241cc63a557365260180b8382bb622891df3c164647c",
+        "size_in_bytes": 3322
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-common.h",
+        "path_type": "hardlink",
+        "sha256": "7e0f4a124344941c40a3c3244ff30d0e9df8968b6287fc1f3a7a6495c7093e7b",
+        "size_in_bytes": 4788
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-config.h",
+        "path_type": "hardlink",
+        "sha256": "240614eeeea337654460a106656e8b4336c34948f04b4a23f6b2ba345b81105b",
+        "size_in_bytes": 674
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-deprecated.h",
+        "path_type": "hardlink",
+        "sha256": "8839fbc0faaa654dc2f166862962d74ec2c29932373eed1e35809b35eaa352f3",
+        "size_in_bytes": 6049
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-enddecls.h",
+        "path_type": "hardlink",
+        "sha256": "5d140c2e49a3d4d0b5d9519df860e56ebeabbbf991fec37bde9ce7d868d12236",
+        "size_in_bytes": 74
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-flags.h",
+        "path_type": "hardlink",
+        "sha256": "819bf2e462e20a3f79a9f959be173550aa609f12eeecbf62e87109b8034dfb20",
+        "size_in_bytes": 2038
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-joining-types-list.h",
+        "path_type": "hardlink",
+        "sha256": "00b499c280d1331d802c5c778b66d4c2f80fb894c94dbdcb162c05fe8cfe4f8e",
+        "size_in_bytes": 1697
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-joining-types.h",
+        "path_type": "hardlink",
+        "sha256": "f4703cad6845a1e4c11702999716b1667ad6e268ecfa64f91585d739e2ffd913",
+        "size_in_bytes": 8180
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-joining.h",
+        "path_type": "hardlink",
+        "sha256": "c9bbe87f5c5ce2ce99cd8568a0a79fc715c216de9f677973e711a798085099a1",
+        "size_in_bytes": 2868
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-mirroring.h",
+        "path_type": "hardlink",
+        "sha256": "cc531e106e7b42748a997459464c8a08cc38cef4273d41afdbf2aa1bc36393f3",
+        "size_in_bytes": 3028
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-shape.h",
+        "path_type": "hardlink",
+        "sha256": "4c57bf3ed59c8f425990ca5df1a696a98f87075db00e0f1b6c99b8de0c2588d7",
+        "size_in_bytes": 2670
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-types.h",
+        "path_type": "hardlink",
+        "sha256": "c959bf5f15c0fc405205136cc0ed9c03aa63a9fc285696444dc594b0d6f4845f",
+        "size_in_bytes": 2428
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-unicode-version.h",
+        "path_type": "hardlink",
+        "sha256": "9ff353acf84f6ddcfce5d892294833f72e7eddbfadf077d60739d8bddd17bccc",
+        "size_in_bytes": 337
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi-unicode.h",
+        "path_type": "hardlink",
+        "sha256": "21ee4bf3f7a6dd19e5b35566cdf10a2cdf22b52d01aa3fe467d2da8f11cec2fe",
+        "size_in_bytes": 3352
+      },
+      {
+        "_path": "Library/include/fribidi/fribidi.h",
+        "path_type": "hardlink",
+        "sha256": "a3c26eda78b6563361253a094f2a7f5b725ed2bd7c6a8dfaa65883cf174ee18b",
+        "size_in_bytes": 4831
+      },
+      {
+        "_path": "Library/lib/fribidi.lib",
+        "path_type": "hardlink",
+        "sha256": "b0d66d404447c5b832030131b8d3a54525f817a9dda61c2fa55daa8ff95c8288",
+        "size_in_bytes": 10190
+      },
+      {
+        "_path": "Library/lib/pkgconfig/fribidi.pc",
+        "path_type": "hardlink",
+        "sha256": "d2d3cc4508ae5ec6c2661f43dca49146cd4a6cfc7df746785065c34e012f6e40",
+        "sha256_in_prefix": "1315c22951f64784bc73b0b8e5f3eb0d697e23df701dcb2ecf12d1748cd5e1e6",
+        "size_in_bytes": 272,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/fribidi_1785912504461/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\fribidi-1.0.16-hfd05255_1",
+    "type": 1
+  }
+}

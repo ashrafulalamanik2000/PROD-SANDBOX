@@ -1,0 +1,48 @@
+{
+  "arch": "x86_64",
+  "build": "hfe3f7e9_0",
+  "build_number": 0,
+  "constrains": [
+    "libgoogle-cloud 3.7.0 *_0"
+  ],
+  "depends": [
+    "libabseil * cxx17*",
+    "libabseil >=20260526.0,<20260527.0a0",
+    "libcurl >=8.21.0,<9.0a0",
+    "libgrpc >=1.82.1,<1.83.0a0",
+    "libopentelemetry-cpp >=1.27.0,<1.28.0a0",
+    "libprotobuf >=7.35.1,<7.35.2.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "Apache",
+  "md5": "4957e887b8ff6e7c1108e217b879ebc3",
+  "name": "libgoogle-cloud",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libgoogle-cloud >=3.7.0,<3.8.0a0"
+    ]
+  },
+  "sha256": "7caeceff8cc78b6ccdf416c3950ee7c86390be9c43969e6f0df11ffe46db8d32",
+  "size": 17240,
+  "subdir": "win-64",
+  "timestamp": 1784213003080,
+  "version": "3.7.0",
+  "fn": "libgoogle-cloud-3.7.0-hfe3f7e9_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libgoogle-cloud-3.7.0-hfe3f7e9_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libgoogle-cloud-3.7.0-hfe3f7e9_0",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libgoogle-cloud-3.7.0-hfe3f7e9_0",
+    "type": 1
+  }
+}

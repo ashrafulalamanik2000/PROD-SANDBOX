@@ -1,0 +1,72 @@
+{
+  "arch": "x86_64",
+  "build": "hba3369d_2",
+  "build_number": 2,
+  "depends": [
+    "libgcc >=14",
+    "libwinpthread >=12.0.0.r4.gg4f2fc60ca",
+    "ucrt >=10.0.20348.0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "87aee04978ab77bf4c0f42b983c216cc",
+  "name": "xorg-libxau",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "xorg-libxau >=1.0.12,<2.0a0"
+    ]
+  },
+  "sha256": "892ad69b1a9ecc3903ed5a1b18fa097013eaf462eeed3c6ff31bf5c12e71e84b",
+  "size": 110446,
+  "subdir": "win-64",
+  "timestamp": 1786381242485,
+  "version": "1.0.12",
+  "fn": "xorg-libxau-1.0.12-hba3369d_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/xorg-libxau-1.0.12-hba3369d_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\xorg-libxau-1.0.12-hba3369d_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/msys-Xau-6.dll",
+    "Library/include/X11/Xauth.h",
+    "Library/lib/libXau.dll.a",
+    "Library/lib/pkgconfig/xau.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/msys-Xau-6.dll",
+        "path_type": "hardlink",
+        "sha256": "a22aee433059b6e77a97496802e34d533d76fb7083eda04c11ea2dc6d0e92357",
+        "size_in_bytes": 275717
+      },
+      {
+        "_path": "Library/include/X11/Xauth.h",
+        "path_type": "hardlink",
+        "sha256": "d0bc0612c0d2eb38bf7519190ebb60ea0d538c86589a6fbc06e0d761ec22f9c4",
+        "size_in_bytes": 4973
+      },
+      {
+        "_path": "Library/lib/libXau.dll.a",
+        "path_type": "hardlink",
+        "sha256": "186f67d956e51e12239709ef928c42716a591f7610ffeec952651c2fedacec7c",
+        "size_in_bytes": 6070
+      },
+      {
+        "_path": "Library/lib/pkgconfig/xau.pc",
+        "path_type": "hardlink",
+        "sha256": "84d9ec04e6d899efb1789dff4d5b5e338c9b8c9439712e44ef2dbd24344c6693",
+        "sha256_in_prefix": "dd4e64e662013d6c4b55d56529ccf960ceabbbd54ce62ec3794635bfcc1df79e",
+        "size_in_bytes": 287,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/xorg-libxau_1786380942221/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\xorg-libxau-1.0.12-hba3369d_2",
+    "type": 1
+  }
+}

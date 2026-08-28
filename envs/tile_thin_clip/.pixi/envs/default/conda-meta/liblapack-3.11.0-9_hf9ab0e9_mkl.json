@@ -1,0 +1,51 @@
+{
+  "arch": "x86_64",
+  "build": "9_hf9ab0e9_mkl",
+  "build_number": 9,
+  "constrains": [
+    "blas 2.309   mkl",
+    "libcblas   3.11.0   9*_mkl",
+    "liblapacke 3.11.0   9*_mkl"
+  ],
+  "depends": [
+    "libblas 3.11.0 9_h8455456_mkl"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "bee6f13ab945c4034bdd0f722ad14dd5",
+  "name": "liblapack",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "liblapack >=3.11.0,<3.12.0a0"
+    ]
+  },
+  "sha256": "62d0a7a70ee13c554d5d7ff94a2ba758c4111439822dcc81324dd4cfaf576071",
+  "size": 79963,
+  "subdir": "win-64",
+  "timestamp": 1786059243440,
+  "version": "3.11.0",
+  "fn": "liblapack-3.11.0-9_hf9ab0e9_mkl.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/liblapack-3.11.0-9_hf9ab0e9_mkl.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\liblapack-3.11.0-9_hf9ab0e9_mkl",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/liblapack.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/liblapack.dll",
+        "path_type": "hardlink",
+        "sha256": "c29e0577de87fc5ae9bb4e7467400c9c6fef67fb683eaaff74159c717495541b",
+        "size_in_bytes": 181760
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\liblapack-3.11.0-9_hf9ab0e9_mkl",
+    "type": 1
+  }
+}

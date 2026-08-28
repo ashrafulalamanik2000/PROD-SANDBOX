@@ -1,0 +1,375 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "networkx >=3.4",
+    "numpy >=2.0",
+    "pandas >=2.3",
+    "python >=3.12",
+    "scikit-learn >=1.5",
+    "scipy >=1.14"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "0323c95182d828bb1bcf708c4077db3b",
+  "name": "mapclassify",
+  "noarch": "python",
+  "run_exports": {},
+  "sha256": "791137f3e107c73315c74bb0c7be34e5f7c36da1828efbc4584544311121484c",
+  "size": 448635,
+  "subdir": "noarch",
+  "timestamp": 1786480374013,
+  "version": "2.11.0",
+  "fn": "mapclassify-2.11.0-pyhd8ed1ab_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/mapclassify-2.11.0-pyhd8ed1ab_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\mapclassify-2.11.0-pyhd8ed1ab_0",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/mapclassify/__init__.py",
+    "Lib/site-packages/mapclassify/_classify_API.py",
+    "Lib/site-packages/mapclassify/classifiers.py",
+    "Lib/site-packages/mapclassify/datasets/__init__.py",
+    "Lib/site-packages/mapclassify/datasets/calemp/README.md",
+    "Lib/site-packages/mapclassify/datasets/calemp/__init__.py",
+    "Lib/site-packages/mapclassify/datasets/calemp/calempdensity.csv",
+    "Lib/site-packages/mapclassify/datasets/calemp/data.py",
+    "Lib/site-packages/mapclassify/greedy.py",
+    "Lib/site-packages/mapclassify/legendgram.py",
+    "Lib/site-packages/mapclassify/pooling.py",
+    "Lib/site-packages/mapclassify/tests/__init__.py",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_cmap.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_default.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_kwargs.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_map.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_most_recent_cmap.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_position.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_vlines.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_mapclassify/test_histogram_plot.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_mapclassify/test_histogram_plot_despine.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_mapclassify/test_histogram_plot_linewidth.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/classify_xy_redblue.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/divergent_revert_alpha_min_alpha.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/legend.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/legend_kwargs.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/no_classify_default.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/pass_in_ax.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/shifted_colormap.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/truncated_colormap.png",
+    "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/userdefined_colors.png",
+    "Lib/site-packages/mapclassify/tests/conftest.py",
+    "Lib/site-packages/mapclassify/tests/test_classify.py",
+    "Lib/site-packages/mapclassify/tests/test_greedy.py",
+    "Lib/site-packages/mapclassify/tests/test_legendgram.py",
+    "Lib/site-packages/mapclassify/tests/test_mapclassify.py",
+    "Lib/site-packages/mapclassify/tests/test_rgba.py",
+    "Lib/site-packages/mapclassify/tests/test_value_by_alpha.py",
+    "Lib/site-packages/mapclassify/util.py",
+    "Lib/site-packages/mapclassify/value_by_alpha.py",
+    "Lib/site-packages/mapclassify-2.11.0.dist-info/INSTALLER",
+    "Lib/site-packages/mapclassify-2.11.0.dist-info/METADATA",
+    "Lib/site-packages/mapclassify-2.11.0.dist-info/RECORD",
+    "Lib/site-packages/mapclassify-2.11.0.dist-info/REQUESTED",
+    "Lib/site-packages/mapclassify-2.11.0.dist-info/WHEEL",
+    "Lib/site-packages/mapclassify-2.11.0.dist-info/direct_url.json",
+    "Lib/site-packages/mapclassify-2.11.0.dist-info/licenses/LICENSE.txt",
+    "Lib/site-packages/mapclassify-2.11.0.dist-info/top_level.txt"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/mapclassify/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "bd8b29d340842ddd651b8aea562ecadfc2c47ecbfedf9b2fd6bf86129e1f23a3",
+        "size_in_bytes": 750
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/_classify_API.py",
+        "path_type": "hardlink",
+        "sha256": "b4465beeb131d38de09636306aa47bd91ee388d0763507ba60194ebbc30c40e5",
+        "size_in_bytes": 6100
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/classifiers.py",
+        "path_type": "hardlink",
+        "sha256": "6edd36e0aacc05529d4bbe8708efffc9d29a8153c9a8c30d2acae1eb2ebfae27",
+        "size_in_bytes": 88451
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/datasets/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "11de123f42a5cf012aaf7ee8da3acf0dbbc244f6f819e0a421354b72cbab53e7",
+        "size_in_bytes": 46
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/datasets/calemp/README.md",
+        "path_type": "hardlink",
+        "sha256": "e69cea5514bae169c88f401a6bae30a072dbfcedec4dbd8dea2c58a3c3d9765e",
+        "size_in_bytes": 304
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/datasets/calemp/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "cc2c9a894fd1e9607553c456bbbe220194c6d82eaf75f30d1ef449b5466eb4f8",
+        "size_in_bytes": 20
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/datasets/calemp/calempdensity.csv",
+        "path_type": "hardlink",
+        "sha256": "cf55ff42bf8d509432fbd709b131f522ee94100d3b1734df8e8b7bb99855a10c",
+        "size_in_bytes": 7063
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/datasets/calemp/data.py",
+        "path_type": "hardlink",
+        "sha256": "4812dca7444758b6497382ca8a191a4d929e31ec475718d88593ca4cecede6c5",
+        "size_in_bytes": 334
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/greedy.py",
+        "path_type": "hardlink",
+        "sha256": "dee62a7e8a5773cd1cc63132d90a8854435729d956ca3913a731f712237f1710",
+        "size_in_bytes": 11015
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/legendgram.py",
+        "path_type": "hardlink",
+        "sha256": "4b3176922a9a2d842437401286a14e1fc33ae916113df1b7d599d7324f3c5b46",
+        "size_in_bytes": 3259
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/pooling.py",
+        "path_type": "hardlink",
+        "sha256": "87968c904dc1cae4f289f887a1d2c10919fbc9b85e62abfac6192a79af9abd91",
+        "size_in_bytes": 3331
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_cmap.png",
+        "path_type": "hardlink",
+        "sha256": "25a6b4a14ae187d66c21202d8e1228f86513427fe72a90ac6777c74d533393bf",
+        "size_in_bytes": 4215
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_default.png",
+        "path_type": "hardlink",
+        "sha256": "c2c75b67ca8d841d2058cd89f8b1bb385af07306b34affc66efdf35337e63ae8",
+        "size_in_bytes": 4231
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_kwargs.png",
+        "path_type": "hardlink",
+        "sha256": "82ebefd75667479fc6c6291ba5a935a7f501bb74dfe4b15840df9a35ae935412",
+        "size_in_bytes": 4287
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_map.png",
+        "path_type": "hardlink",
+        "sha256": "f11eaf93386ca94948d74b73c7e5c93b760984ec3b2ca6ee3522ffe82477d2eb",
+        "size_in_bytes": 107844
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_most_recent_cmap.png",
+        "path_type": "hardlink",
+        "sha256": "64263a37b7937765f482af10fbd5b91118a9e42b174d49c86f348790bd5d6aee",
+        "size_in_bytes": 100504
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_position.png",
+        "path_type": "hardlink",
+        "sha256": "6811c72bace62edcc116f513d0cf30559f2ce6706f140f8a383900ac3dd85d88",
+        "size_in_bytes": 4257
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_legendgram/legendgram_vlines.png",
+        "path_type": "hardlink",
+        "sha256": "ac35ed8837f0b0b32e2bb75d093d57ffde56f222c5b8915b7b6ad6a1605ca3c1",
+        "size_in_bytes": 4357
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_mapclassify/test_histogram_plot.png",
+        "path_type": "hardlink",
+        "sha256": "058b1c6f72b77a84e5c74b767066350d954963e81780e54fa6759b132f6d7664",
+        "size_in_bytes": 3925
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_mapclassify/test_histogram_plot_despine.png",
+        "path_type": "hardlink",
+        "sha256": "90bf37b611667ecc4637653b15c64b3666ea70ce050d97851887ed4b9c079857",
+        "size_in_bytes": 4025
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_mapclassify/test_histogram_plot_linewidth.png",
+        "path_type": "hardlink",
+        "sha256": "30d9ba54c31a8571b70a2db0685a4042acf34235567563d88d3f53f2dbeddd65",
+        "size_in_bytes": 3893
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/classify_xy_redblue.png",
+        "path_type": "hardlink",
+        "sha256": "5168ef8c9e6d897c69937e441825cd1d76c0d90eed1c6d43de7a3d0bd8d5c4d8",
+        "size_in_bytes": 25724
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/divergent_revert_alpha_min_alpha.png",
+        "path_type": "hardlink",
+        "sha256": "0248d455bce5e0b9448d35b0730811a452ff1a4f880fe4aff5f138823b9502c0",
+        "size_in_bytes": 17280
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/legend.png",
+        "path_type": "hardlink",
+        "sha256": "314586909929f88799cba1f249d016a9ec2748c3ca961d69db53e50d2f205777",
+        "size_in_bytes": 26018
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/legend_kwargs.png",
+        "path_type": "hardlink",
+        "sha256": "9596f816ad1b8b308ca15a70ce029d1211834cb3fd6d79a50b5e8b6dd25f60ec",
+        "size_in_bytes": 25421
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/no_classify_default.png",
+        "path_type": "hardlink",
+        "sha256": "0897a31d737bc89b05a3615e2b13f6dce4126f3fd78a415d258871a2e7e1f2d7",
+        "size_in_bytes": 22384
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/pass_in_ax.png",
+        "path_type": "hardlink",
+        "sha256": "0897a31d737bc89b05a3615e2b13f6dce4126f3fd78a415d258871a2e7e1f2d7",
+        "size_in_bytes": 22384
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/shifted_colormap.png",
+        "path_type": "hardlink",
+        "sha256": "ffd6c45f8a748f58704736e4aa465a1cc0b3c77a1090f52dba45f97873a1c977",
+        "size_in_bytes": 26811
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/truncated_colormap.png",
+        "path_type": "hardlink",
+        "sha256": "4e49506e6f4924dc3d207dec34ead0aab15b3cd7cc83e292919c5e5bb5361187",
+        "size_in_bytes": 24964
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/baseline_images/test_value_by_alpha/userdefined_colors.png",
+        "path_type": "hardlink",
+        "sha256": "746cf2eccd5e52845547f023398e0c82c7c85b9e64e787c4bf3d6f5379f718ca",
+        "size_in_bytes": 24959
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/conftest.py",
+        "path_type": "hardlink",
+        "sha256": "bb39a2694c636db253fda7aba58fabdb0447cd253fd7b1e37089b6db75ca5368",
+        "size_in_bytes": 370
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/test_classify.py",
+        "path_type": "hardlink",
+        "sha256": "2c0a1b7f351f302cf30422c6bf5f18a52d560137f6ae507dbb62d15e8a307414",
+        "size_in_bytes": 3425
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/test_greedy.py",
+        "path_type": "hardlink",
+        "sha256": "05df9790cac3eed6494c7ef278eaacfb8d835464e111d2fd2ed318702d375169",
+        "size_in_bytes": 6436
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/test_legendgram.py",
+        "path_type": "hardlink",
+        "sha256": "5b408125d9394206baa1f042ec045699bcadf671db9b8347ef50703e7aa52c2d",
+        "size_in_bytes": 6676
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/test_mapclassify.py",
+        "path_type": "hardlink",
+        "sha256": "e975d58c80a5980315c704e5a2e6b46a3e5959b07f62ba7fdb9a48f5c00c19f5",
+        "size_in_bytes": 23689
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/test_rgba.py",
+        "path_type": "hardlink",
+        "sha256": "20a5dda9cceeee54acb3795ad347680aa5f4d235fb726c019e11e135f45d4686",
+        "size_in_bytes": 1577
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/tests/test_value_by_alpha.py",
+        "path_type": "hardlink",
+        "sha256": "44075f7d9df818bef75f020e03f8017bc4f1058b1f1ece2ea8d5fa4611756119",
+        "size_in_bytes": 5069
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/util.py",
+        "path_type": "hardlink",
+        "sha256": "91c196792082cfac145813bf63cc50c4e125e1f8c28a6b8e5cad43f9c9bc5d93",
+        "size_in_bytes": 3261
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify/value_by_alpha.py",
+        "path_type": "hardlink",
+        "sha256": "c76d876ceebbe98fc49ec7a31903961e9f182d8ee6a12e14e0b7085e8238ba25",
+        "size_in_bytes": 16279
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify-2.11.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify-2.11.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "02a23f247b9286a14d2ec86ec8df749abd370820409d3d67371f2156ca7b9d65",
+        "size_in_bytes": 3097
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify-2.11.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "96b6a4457ef7e88cad31a5047e78c7764a8ae18dfb57d3ae25ebc1fb82c9eb8d",
+        "size_in_bytes": 6225
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify-2.11.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify-2.11.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify-2.11.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "9d8d82a81878ad26095be4b1ccb0db385780fecfacd654296fb0096114159f7e",
+        "size_in_bytes": 107
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify-2.11.0.dist-info/licenses/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "5c8ea2baa2c9542916502816af63275c60ff8ef19ded72bcbff669298dd47f2c",
+        "size_in_bytes": 1474
+      },
+      {
+        "_path": "Lib/site-packages/mapclassify-2.11.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "09731ae5e32215f8d4fb7d1f13afc5e178820fed8be89fe2ffe593d0e130c17a",
+        "size_in_bytes": 12
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\mapclassify-2.11.0-pyhd8ed1ab_0",
+    "type": 1
+  }
+}

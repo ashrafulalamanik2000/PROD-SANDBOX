@@ -1,0 +1,65 @@
+{
+  "arch": "x86_64",
+  "build": "h895a0b7_4",
+  "build_number": 4,
+  "constrains": [
+    "pdal 2.10.2.*"
+  ],
+  "depends": [
+    "libpdal-core ==2.10.2 hd7c2432_4",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "glog >=0.7.1,<0.8.0a0",
+    "libgdal-core >=3.13.2,<3.14.0a0",
+    "gflags >=2.3.1,<2.4.0a0",
+    "libpdal-core >=2.10.2,<2.11.0a0",
+    "ceres-solver >=2.2.0,<2.3.0a0",
+    "eigen >=5.0.1,<5.0.2.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "484e20a8e6c01cd8bfa74416b086c629",
+  "name": "libpdal-trajectory",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpdal-trajectory >=2.10.2,<2.11.0a0"
+    ]
+  },
+  "sha256": "b70e8aa0d1085551ed3f18dd9fa97d9ed81781c83061aeb0696434de416f3ab2",
+  "size": 200327,
+  "subdir": "win-64",
+  "timestamp": 1785772664321,
+  "version": "2.10.2",
+  "fn": "libpdal-trajectory-2.10.2-h895a0b7_4.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libpdal-trajectory-2.10.2-h895a0b7_4.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-trajectory-2.10.2-h895a0b7_4",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libpdal_plugin_filter_trajectory.dll",
+    "Library/lib/libpdal_plugin_filter_trajectory.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libpdal_plugin_filter_trajectory.dll",
+        "path_type": "hardlink",
+        "sha256": "6ea9867021998a9d3dc7302a729e5d4f2100d814bc87f5d9fc71d1ab600cc2ff",
+        "size_in_bytes": 411136
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_filter_trajectory.lib",
+        "path_type": "hardlink",
+        "sha256": "89bc9f41aed5496783bb12a72a7a7de48ffd4bea3e001bd20ee8f0434661fecf",
+        "size_in_bytes": 200530
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-trajectory-2.10.2-h895a0b7_4",
+    "type": 1
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "build": "pyhcf101f3_0",
+  "build_number": 0,
+  "depends": [
+    "python >=3.10",
+    "python"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "a39ae05027e9b707742e41b30d296b75",
+  "name": "idna",
+  "noarch": "python",
+  "run_exports": {},
+  "sha256": "1c35a59c1545ad0fdaddf1fbde7bcfa6ef41a8d68c3a2b0b4a291be00676163e",
+  "size": 177433,
+  "subdir": "noarch",
+  "timestamp": 1787059857580,
+  "version": "3.19",
+  "fn": "idna-3.19-pyhcf101f3_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/idna-3.19-pyhcf101f3_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\idna-3.19-pyhcf101f3_0",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/idna/__init__.py",
+    "Lib/site-packages/idna/__main__.py",
+    "Lib/site-packages/idna/cli.py",
+    "Lib/site-packages/idna/codec.py",
+    "Lib/site-packages/idna/compat.py",
+    "Lib/site-packages/idna/core.py",
+    "Lib/site-packages/idna/idnadata.py",
+    "Lib/site-packages/idna/intranges.py",
+    "Lib/site-packages/idna/package_data.py",
+    "Lib/site-packages/idna/py.typed",
+    "Lib/site-packages/idna/uts46data.py",
+    "Lib/site-packages/idna-3.19.dist-info/INSTALLER",
+    "Lib/site-packages/idna-3.19.dist-info/METADATA",
+    "Lib/site-packages/idna-3.19.dist-info/RECORD",
+    "Lib/site-packages/idna-3.19.dist-info/REQUESTED",
+    "Lib/site-packages/idna-3.19.dist-info/WHEEL",
+    "Lib/site-packages/idna-3.19.dist-info/direct_url.json",
+    "Lib/site-packages/idna-3.19.dist-info/entry_points.txt",
+    "Lib/site-packages/idna-3.19.dist-info/licenses/LICENSE.md",
+    "Scripts/idna-script.py",
+    "Scripts/idna.exe",
+    "etc/conda/test-files/idna/1/tests/__init__.py",
+    "etc/conda/test-files/idna/1/tests/fuzz_idna_api.py",
+    "etc/conda/test-files/idna/1/tests/fuzz_idna_codec.py",
+    "etc/conda/test-files/idna/1/tests/test_idna.py",
+    "etc/conda/test-files/idna/1/tests/test_idna_cli.py",
+    "etc/conda/test-files/idna/1/tests/test_idna_codec.py",
+    "etc/conda/test-files/idna/1/tests/test_idna_compat.py",
+    "etc/conda/test-files/idna/1/tests/test_idna_concurrency.py",
+    "etc/conda/test-files/idna/1/tests/test_idna_errors.py",
+    "etc/conda/test-files/idna/1/tests/test_idna_fuzz_targets.py",
+    "etc/conda/test-files/idna/1/tests/test_idna_properties.py",
+    "etc/conda/test-files/idna/1/tests/test_idna_uts46.py",
+    "etc/conda/test-files/idna/1/tests/test_intranges.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/idna/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "8514c3ed53136a3596ebdf512fa487bbdd7da5a99adcaed82e0363d2c306d3af",
+        "size_in_bytes": 944
+      },
+      {
+        "_path": "Lib/site-packages/idna/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "e0930aeba5a3e2e2d94ca6c5fac4f72c0c4eb2be9bba283becf98e909091471c",
+        "size_in_bytes": 83
+      },
+      {
+        "_path": "Lib/site-packages/idna/cli.py",
+        "path_type": "hardlink",
+        "sha256": "2e01972a25e67afdfba5d824013c01e808893916539c0db33f72f37c42b8896a",
+        "size_in_bytes": 4245
+      },
+      {
+        "_path": "Lib/site-packages/idna/codec.py",
+        "path_type": "hardlink",
+        "sha256": "71ae48bb9eb70f678b195ea6e297d06f1900378cecc50c2bd1b705a12cf35267",
+        "size_in_bytes": 5302
+      },
+      {
+        "_path": "Lib/site-packages/idna/compat.py",
+        "path_type": "hardlink",
+        "sha256": "4ff7995ce52dd1be5381ae7a70fc9b42ef420982b41532b599d88f6fdea76bc0",
+        "size_in_bytes": 1376
+      },
+      {
+        "_path": "Lib/site-packages/idna/core.py",
+        "path_type": "hardlink",
+        "sha256": "d9f2cb3e2f9da9c494ffb1e27e501441d395cf9c12aa8321c9656fda9bb0da0d",
+        "size_in_bytes": 32505
+      },
+      {
+        "_path": "Lib/site-packages/idna/idnadata.py",
+        "path_type": "hardlink",
+        "sha256": "01ffa6a3c5819a48402ba4f25ca3901fcf0e5f49903432ad74bed45ad429a699",
+        "size_in_bytes": 44862
+      },
+      {
+        "_path": "Lib/site-packages/idna/intranges.py",
+        "path_type": "hardlink",
+        "sha256": "838f6c70b4a4a89b4084b98e3836bb8551eb8928e66fad2d893b04a287097412",
+        "size_in_bytes": 1851
+      },
+      {
+        "_path": "Lib/site-packages/idna/package_data.py",
+        "path_type": "hardlink",
+        "sha256": "335f9830c0f69a399ae75464766817ee8bed94d3e9944b286e2629b13213cd1b",
+        "size_in_bytes": 21
+      },
+      {
+        "_path": "Lib/site-packages/idna/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/idna/uts46data.py",
+        "path_type": "hardlink",
+        "sha256": "a8d8adbfa87a4f72a8a9f9e386d8cc83eefd4c88f8d364c4826eaba258481567",
+        "size_in_bytes": 234034
+      },
+      {
+        "_path": "Lib/site-packages/idna-3.19.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "Lib/site-packages/idna-3.19.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "4d113161aca8582e8d28fddf3ea50f19b607209c2b3e4364379a163454680084",
+        "size_in_bytes": 9160
+      },
+      {
+        "_path": "Lib/site-packages/idna-3.19.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "1b8358bc68c24e3be37d0a47a4cb3a8ffcc8ca3cb08b1ec33eca1befcb74faf0",
+        "size_in_bytes": 1961
+      },
+      {
+        "_path": "Lib/site-packages/idna-3.19.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/idna-3.19.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "ff23073da055face9f40cc14a28f3735275308cddcf315d6157461a9a7cdfbb6",
+        "size_in_bytes": 81
+      },
+      {
+        "_path": "Lib/site-packages/idna-3.19.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "95a8478d38ff154ce3af6fd44e64096898605a507a24d30a154802841db5205d",
+        "size_in_bytes": 115
+      },
+      {
+        "_path": "Lib/site-packages/idna-3.19.dist-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "ec7de718e1daa778e72c4e5eeeaed8c2bf55abc6b107b5888f9f82ff8376be1c",
+        "size_in_bytes": 38
+      },
+      {
+        "_path": "Lib/site-packages/idna-3.19.dist-info/licenses/LICENSE.md",
+        "path_type": "hardlink",
+        "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04",
+        "size_in_bytes": 1541
+      },
+      {
+        "_path": "Scripts/idna-script.py",
+        "path_type": "windows_python_entry_point_script",
+        "sha256": "cd5652bd8202d642a0f2ab42aa73f53147bf35f51e65ba18bd5eaf57238412c6",
+        "size_in_bytes": 186
+      },
+      {
+        "_path": "Scripts/idna.exe",
+        "path_type": "windows_python_entry_point_exe",
+        "sha256": "4d8c479577961d0c6d940966f7987fbb0d6fc98b80edc03b00ee949dd8c1b3e2",
+        "size_in_bytes": 57672
+      },
+      {
+        "_path": "etc/conda/test-files/idna/1/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "etc/conda/test-files/idna/1/tests/fuzz_idna_api.py",
+        "path_type": "hardlink",
+        "sha256": "33c4cf80d1957f9123955a3f14a6a4b97cb46c264f8bf00be5ce08e8a24edb62",
+        "size_in_bytes": 4467
+      },
+      {
+        "_path": "etc/conda/test-files/idna/1/tests/fuzz_idna_codec.py",
+        "path_type": "hardlink",
+        "sha256": "82bd1fdf78b422e6cd592331c2cc4af8e83033a1362ea8f7cbc6e1042f88b5e8",
+        "size_in_bytes": 3574
+      },
+      {
+        "_path": "etc/conda/test-files/idna/1/tests/test_idna.py",
+        "path_type": "hardlink",
+        "sha256": "485a0c0e75da09fecf4bf417ab52a4a26308a35f3fd01f51cdd590de0463204f",
+        "size_in_bytes": 28794
+      },
+      {
+        "_path": "etc/conda/test-files/idna/1/tests/test_idna_cli.py",
+        "path_type": "hardlink",
+        "sha256": "ef01f79aa6df045424b982702216033781e86c5eb1b6ab0f88d8d53a243858de",
+        "size_in_bytes": 12425
+      },
+      {
+        "_path": "etc/conda/test-files/idna/1/tests/test_idna_codec.py",
+        "path_type": "hardlink",
+        "sha256": "5faa3405fd5056028b847d45998b4c768eba0331920e52cf34ba35e391777636",
+        "size_in_bytes": 4016
+      },
+      {
+        "_path": "etc/conda/test-files/idna/1/tests/test_idna_compat.py",
+        "path_type": "hardlink",
+        "sha256": "2d5461490688f49bc57e9d8bc9e1d123b54d4179ed66b90632b8146c76015b05",
+        "size_in_bytes": 580
+      },
+      {
+        "_path": "etc/conda/test-files/idna/1/tests/test_idna_concurrency.py",
+        "path_type": "hardlink",
+        "sha256": "4cbfa1755148464392ef1a1e9a1083ce2c5aa42b780fa25b35a30d418ca48262",
+        "size_in_bytes": 2807
+      },
+      {
+        "_path": "etc/conda/test-files/idna/1/tests/test_idna_errors.py",
+        "path_type": "hardlink",
+        "sha256": "18a7624acf7ef207e04430ba071d1fb8c18036e4bdd522ebd6d065cb047bb7a2",
+        "size_in_bytes": 8710
+      },
+      {
+        "_path": "etc/conda/test-files/idna/1/tests/test_idna_fuzz_targets.py",
+        "path_type": "hardlink",
+        "sha256": "5756c25c99bf386cbc5cf30aa0803f7fdbcc514f9527e9adff4c0dda9e8e339c",
+        "size_in_bytes": 3667
+      },
+      {
+        "_path": "etc/conda/test-files/idna/1/tests/test_idna_properties.py",
+        "path_type": "hardlink",
+        "sha256": "e16fb28cf682e5f91b6c259276277e5751536f0020f5f82d96ff88aeb098f0ca",
+        "size_in_bytes": 12197
+      },
+      {
+        "_path": "etc/conda/test-files/idna/1/tests/test_idna_uts46.py",
+        "path_type": "hardlink",
+        "sha256": "a29de68b27a9629b5e98e55389da2f578bd1c9b87bc70e89379c58cabdcf03ec",
+        "size_in_bytes": 1461946
+      },
+      {
+        "_path": "etc/conda/test-files/idna/1/tests/test_intranges.py",
+        "path_type": "hardlink",
+        "sha256": "726c8a72e8500d6101a4091a9c5d2548064e5bec4734d4839c197118867c7bc6",
+        "size_in_bytes": 2119
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\idna-3.19-pyhcf101f3_0",
+    "type": 1
+  }
+}

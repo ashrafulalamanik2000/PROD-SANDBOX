@@ -1,0 +1,100 @@
+{
+  "arch": "x86_64",
+  "build": "hb980946_0",
+  "build_number": 0,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "5f34fcb6578ea9bdbfd53cc2cfb88200",
+  "name": "libutf8proc",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libutf8proc >=2.11.3,<2.12.0a0"
+    ]
+  },
+  "sha256": "5d82af0779eab283416240da792a0d2fe4f8213c447e9f04aeaab1801468a90c",
+  "size": 89061,
+  "subdir": "win-64",
+  "timestamp": 1768735187639,
+  "version": "2.11.3",
+  "fn": "libutf8proc-2.11.3-hb980946_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libutf8proc-2.11.3-hb980946_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libutf8proc-2.11.3-hb980946_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/utf8proc.dll",
+    "Library/include/utf8proc.h",
+    "Library/lib/cmake/utf8proc/utf8proc-config-version.cmake",
+    "Library/lib/cmake/utf8proc/utf8proc-config.cmake",
+    "Library/lib/cmake/utf8proc/utf8proc-targets-release.cmake",
+    "Library/lib/cmake/utf8proc/utf8proc-targets.cmake",
+    "Library/lib/pkgconfig/libutf8proc.pc",
+    "Library/lib/utf8proc.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/utf8proc.dll",
+        "path_type": "hardlink",
+        "sha256": "ec070b3a2af6e4eb07a7c8718afeb1afe55447e617e29b125d94a638fbab31ef",
+        "size_in_bytes": 355328
+      },
+      {
+        "_path": "Library/include/utf8proc.h",
+        "path_type": "hardlink",
+        "sha256": "a4e498b7392c383cf3b22e662da21e0b48f1264806235d87b5d8bd166232f658",
+        "size_in_bytes": 34049
+      },
+      {
+        "_path": "Library/lib/cmake/utf8proc/utf8proc-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "a5c3b1d2a6bae9f5c9b858360dda37e969d9afddebe0dc0efce71bfa7f6ffe02",
+        "size_in_bytes": 2830
+      },
+      {
+        "_path": "Library/lib/cmake/utf8proc/utf8proc-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "a401945675d546fdb49cce47ee5b2bbc1491b11e56d765470c168ad167f5bcf0",
+        "size_in_bytes": 926
+      },
+      {
+        "_path": "Library/lib/cmake/utf8proc/utf8proc-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "43af0d5ba45975e65ee58b393d851385603631155000728565492179f4a3d162",
+        "size_in_bytes": 934
+      },
+      {
+        "_path": "Library/lib/cmake/utf8proc/utf8proc-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "6cf837940a0f2fde6bf81610a524e10b149842fe406715e8c8b9624cf4bbbb8d",
+        "size_in_bytes": 4240
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libutf8proc.pc",
+        "path_type": "hardlink",
+        "sha256": "ea066c24d3c9b8a204d749993fe752517d26d22796d4452d39371c70dcd1395a",
+        "sha256_in_prefix": "5215bde50836402c52dd871df0872836dbd79f71394545a388efa2d61e4191e2",
+        "size_in_bytes": 431,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/libutf8proc_1768734951652/_h_env"
+      },
+      {
+        "_path": "Library/lib/utf8proc.lib",
+        "path_type": "hardlink",
+        "sha256": "0d028aa1844bb32558c643462fbea8cb3ae1dc1d790991470eb2c191cb203abb",
+        "size_in_bytes": 8352
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libutf8proc-2.11.3-hb980946_0",
+    "type": 1
+  }
+}

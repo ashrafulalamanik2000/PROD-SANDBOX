@@ -1,0 +1,259 @@
+{
+  "arch": "x86_64",
+  "build": "hf7eca67_0",
+  "build_number": 0,
+  "depends": [
+    "tzdata",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "zstd >=1.5.7,<1.6.0a0",
+    "lz4-c >=1.10.0,<1.11.0a0",
+    "libzlib >=1.3.2,<2.0a0",
+    "snappy >=1.2.2,<1.3.0a0",
+    "libprotobuf >=7.35.1,<7.35.2.0a0",
+    "libabseil >=20260526.0,<20260527.0a0",
+    "libabseil * cxx17*"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "d0e00e318dceb35f9a66f52225609ed2",
+  "name": "orc",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "orc >=2.3.1,<2.3.2.0a0"
+    ]
+  },
+  "sha256": "6097e6facda0184c7be60eb0daaf05a03d6d4b9725ea5901553a1d01ba91271c",
+  "size": 1465743,
+  "subdir": "win-64",
+  "timestamp": 1784301260606,
+  "version": "2.3.1",
+  "fn": "orc-2.3.1-hf7eca67_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/orc-2.3.1-hf7eca67_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\orc-2.3.1-hf7eca67_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/orc.dll",
+    "Library/include/orc/BloomFilter.hh",
+    "Library/include/orc/ColumnPrinter.hh",
+    "Library/include/orc/Common.hh",
+    "Library/include/orc/Exceptions.hh",
+    "Library/include/orc/Geospatial.hh",
+    "Library/include/orc/Int128.hh",
+    "Library/include/orc/MemoryPool.hh",
+    "Library/include/orc/OrcFile.hh",
+    "Library/include/orc/Reader.hh",
+    "Library/include/orc/Statistics.hh",
+    "Library/include/orc/Type.hh",
+    "Library/include/orc/Vector.hh",
+    "Library/include/orc/Writer.hh",
+    "Library/include/orc/orc-config.hh",
+    "Library/include/orc/sargs/Literal.hh",
+    "Library/include/orc/sargs/SearchArgument.hh",
+    "Library/include/orc/sargs/TruthValue.hh",
+    "Library/lib/cmake/orc/FindLZ4Alt.cmake",
+    "Library/lib/cmake/orc/FindProtobufAlt.cmake",
+    "Library/lib/cmake/orc/FindSnappyAlt.cmake",
+    "Library/lib/cmake/orc/FindZLIBAlt.cmake",
+    "Library/lib/cmake/orc/FindZSTDAlt.cmake",
+    "Library/lib/cmake/orc/orcConfig.cmake",
+    "Library/lib/cmake/orc/orcConfigVersion.cmake",
+    "Library/lib/cmake/orc/orcTargets-release.cmake",
+    "Library/lib/cmake/orc/orcTargets.cmake",
+    "Library/lib/orc.lib",
+    "Library/share/doc/orc/LICENSE",
+    "Library/share/doc/orc/NOTICE"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/orc.dll",
+        "path_type": "hardlink",
+        "sha256": "3861355305ea816ec96862c9fa41cbbd1ec9fab63b2292c0309847055daf4612",
+        "size_in_bytes": 3813888
+      },
+      {
+        "_path": "Library/include/orc/BloomFilter.hh",
+        "path_type": "hardlink",
+        "sha256": "473c6e6c0ff4e2301fe4a3da129cc00ccc3a268430d6636e333d11f3bed94218",
+        "size_in_bytes": 1379
+      },
+      {
+        "_path": "Library/include/orc/ColumnPrinter.hh",
+        "path_type": "hardlink",
+        "sha256": "3da6063ec9d786f8ef6fcb702c6e1142ae709324a01c5d61c966e83ad7e442f1",
+        "size_in_bytes": 1705
+      },
+      {
+        "_path": "Library/include/orc/Common.hh",
+        "path_type": "hardlink",
+        "sha256": "ef3f688827c3f51398400d44bf8dc5302fcf18e2e7a47206d4959aea32285cec",
+        "size_in_bytes": 8347
+      },
+      {
+        "_path": "Library/include/orc/Exceptions.hh",
+        "path_type": "hardlink",
+        "sha256": "c13ee81ad5c8422def8c549b56ccc7a6c71695ea385e65f322b26dc9e7efb0b3",
+        "size_in_bytes": 2680
+      },
+      {
+        "_path": "Library/include/orc/Geospatial.hh",
+        "path_type": "hardlink",
+        "sha256": "43d1abb3fb7ffa3526e5f4f906a288d65dedde7cae6d16312f4d7b9c95c26421",
+        "size_in_bytes": 6363
+      },
+      {
+        "_path": "Library/include/orc/Int128.hh",
+        "path_type": "hardlink",
+        "sha256": "52a6935901771b7e9cc04b721c040681e4614fc78e4b9470578a1457d3599efe",
+        "size_in_bytes": 10710
+      },
+      {
+        "_path": "Library/include/orc/MemoryPool.hh",
+        "path_type": "hardlink",
+        "sha256": "40ea552a3bb3c720a217f663ccc9dd3d49ddf2f46199697de66ff641c9cc5c08",
+        "size_in_bytes": 4595
+      },
+      {
+        "_path": "Library/include/orc/OrcFile.hh",
+        "path_type": "hardlink",
+        "sha256": "966bb47d2b007915903c9b000ea02f225c5803f2c0fc30d9d79c3d7f820db2f9",
+        "size_in_bytes": 5368
+      },
+      {
+        "_path": "Library/include/orc/Reader.hh",
+        "path_type": "hardlink",
+        "sha256": "d9afa1b9280c1250bf906eafde6fa9077646b35ccaa2259ac4c4812390f0567d",
+        "size_in_bytes": 25098
+      },
+      {
+        "_path": "Library/include/orc/Statistics.hh",
+        "path_type": "hardlink",
+        "sha256": "1725533f86605d2a5b0e9891c9bd86f8c539058450875d3fd60739a86b9c317a",
+        "size_in_bytes": 12830
+      },
+      {
+        "_path": "Library/include/orc/Type.hh",
+        "path_type": "hardlink",
+        "sha256": "7e79f2d23559a0d4e99b1fcb6a05038b1e3e339cebbaa6a7d92ea6a765f933d1",
+        "size_in_bytes": 5148
+      },
+      {
+        "_path": "Library/include/orc/Vector.hh",
+        "path_type": "hardlink",
+        "sha256": "e1106bd01c92c3c4ba62a536c5d09ac8cef7eb9c00276ff6ee4babf499ddb0f5",
+        "size_in_bytes": 13280
+      },
+      {
+        "_path": "Library/include/orc/Writer.hh",
+        "path_type": "hardlink",
+        "sha256": "325049d45c43c98a0ade2f3a648be420d78e1265a09d067ae08b43e336c22a15",
+        "size_in_bytes": 9607
+      },
+      {
+        "_path": "Library/include/orc/orc-config.hh",
+        "path_type": "hardlink",
+        "sha256": "656e983042a90f44372c92d3c4084386f39aa73291d24cb2a1285d95a20bfca8",
+        "size_in_bytes": 1233
+      },
+      {
+        "_path": "Library/include/orc/sargs/Literal.hh",
+        "path_type": "hardlink",
+        "sha256": "ee2d8f9410e0937276d0fd84989a5642c2ca3c073c6d9e158b9f7367e4ce998d",
+        "size_in_bytes": 4735
+      },
+      {
+        "_path": "Library/include/orc/sargs/SearchArgument.hh",
+        "path_type": "hardlink",
+        "sha256": "3f8489fb29e9419e573010ef9ad75e81e6126553c2f3e15b936dc57466a0dd45",
+        "size_in_bytes": 9681
+      },
+      {
+        "_path": "Library/include/orc/sargs/TruthValue.hh",
+        "path_type": "hardlink",
+        "sha256": "ae70c7e00fca662a43fd78b85030a6297a8e8e353928301b5e4881dc6f55ebf9",
+        "size_in_bytes": 1871
+      },
+      {
+        "_path": "Library/lib/cmake/orc/FindLZ4Alt.cmake",
+        "path_type": "hardlink",
+        "sha256": "1a1e0bb0edc4032b6db060fbedccd7503d76d07b72e6112e64f47a0fa37ad0ce",
+        "size_in_bytes": 2847
+      },
+      {
+        "_path": "Library/lib/cmake/orc/FindProtobufAlt.cmake",
+        "path_type": "hardlink",
+        "sha256": "6e96c4f4fffb7aa75643960576cee2be63c0a3ab6e7a4c60f4a67cf4ba58e1a0",
+        "size_in_bytes": 6246
+      },
+      {
+        "_path": "Library/lib/cmake/orc/FindSnappyAlt.cmake",
+        "path_type": "hardlink",
+        "sha256": "01082e57918ae0cc9cabbbfbf9add7cad03f3d071e9343fcb1df233551f7f59e",
+        "size_in_bytes": 3198
+      },
+      {
+        "_path": "Library/lib/cmake/orc/FindZLIBAlt.cmake",
+        "path_type": "hardlink",
+        "sha256": "adb09201c3750af6b142f0f925eb63534d039aaabef4d243dd3e26f1b23c7c78",
+        "size_in_bytes": 3004
+      },
+      {
+        "_path": "Library/lib/cmake/orc/FindZSTDAlt.cmake",
+        "path_type": "hardlink",
+        "sha256": "2d5cf1a894a70000e77b344cc62b263c64513d1bb6da7aa61e8fcd43f05afd27",
+        "size_in_bytes": 3353
+      },
+      {
+        "_path": "Library/lib/cmake/orc/orcConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "6f70df0f438ee9dbc6471bc6f0e2dadf18279a8ecac9f789850cbf956491a6a5",
+        "size_in_bytes": 3467
+      },
+      {
+        "_path": "Library/lib/cmake/orc/orcConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "6d91adce3d016062a4fb636500f5f2f43e6d61c3b8438896c1a6c4240f7ddca0",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/orc/orcTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "420c69253a84ad1da9497a36e7d5e8cc4f42c82a492d0b3fc8601d749beef7dc",
+        "size_in_bytes": 864
+      },
+      {
+        "_path": "Library/lib/cmake/orc/orcTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "3a5aba3b0fcbb8ae9d96cea48faa73038b8ec23b9bc38ec2e6f5a32cb50aa303",
+        "size_in_bytes": 4436
+      },
+      {
+        "_path": "Library/lib/orc.lib",
+        "path_type": "hardlink",
+        "sha256": "1395879337bf06ccb5ca45ff05117ea5ba2a8c64a8e7bcf9a5f28ea742bbd204",
+        "size_in_bytes": 13851246
+      },
+      {
+        "_path": "Library/share/doc/orc/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "7722d6ce394ee750497a810b5e7c4eb52e9390128854d67ac1f5ffe29e5c0067",
+        "size_in_bytes": 19441
+      },
+      {
+        "_path": "Library/share/doc/orc/NOTICE",
+        "path_type": "hardlink",
+        "sha256": "2fbb61b828d64a29b14904edf544e0a33ab710e22bc8bf74923e92c52188d5aa",
+        "size_in_bytes": 302
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\orc-2.3.1-hf7eca67_0",
+    "type": 1
+  }
+}
