@@ -1,0 +1,223 @@
+.\" Man page generated from reStructuredText.
+.
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.TH "GDAL-VECTOR-CLEAN-COVERAGE" "1" "Apr 24, 2026" "" "GDAL"
+.SH NAME
+gdal-vector-clean-coverage \- Remove gaps and overlaps from a polygon dataset
+.sp
+Added in version 3.12.
+
+.SH SYNOPSIS
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.EX
+Usage: gdal vector clean\-coverage [OPTIONS] <INPUT> <OUTPUT>
+
+Alter polygon boundaries to make shared edges identical, removing gaps and overlaps
+
+Positional arguments:
+  \-i, \-\-input <INPUT>                                  Input vector datasets [required]
+  \-o, \-\-output <OUTPUT>                                Output vector dataset [required]
+
+Common Options:
+  \-h, \-\-help                                           Display help message and exit
+  \-\-json\-usage                                         Display usage as JSON document and exit
+  \-\-config <KEY>=<VALUE>                               Configuration option [may be repeated]
+  \-q, \-\-quiet                                          Quiet mode (no progress bar)
+
+Options:
+  \-l, \-\-layer, \-\-input\-layer <INPUT\-LAYER>             Input layer name(s) [may be repeated]
+  \-f, \-\-of, \-\-format, \-\-output\-format <OUTPUT\-FORMAT>  Output format (\(dqGDALG\(dq allowed)
+  \-\-co, \-\-creation\-option <KEY>=<VALUE>                Creation option [may be repeated]
+  \-\-lco, \-\-layer\-creation\-option <KEY>=<VALUE>         Layer creation option [may be repeated]
+  \-\-overwrite                                          Whether overwriting existing output is allowed
+  \-\-update                                             Whether to open existing dataset in update mode
+  \-\-overwrite\-layer                                    Whether overwriting existing output is allowed
+  \-\-append                                             Whether appending to existing layer is allowed
+                                                       Mutually exclusive with \-\-upsert
+  \-\-output\-layer <OUTPUT\-LAYER>                        Output layer name
+  \-\-skip\-errors                                        Skip errors when writing features
+  \-\-active\-layer <ACTIVE\-LAYER>                        Set active layer (if not specified, all)
+  \-\-snapping\-distance <SNAPPING\-DISTANCE>              Distance tolerance for snapping nodes
+  \-\-merge\-strategy <MERGE\-STRATEGY>                    Algorithm to assign overlaps to neighboring polygons. MERGE\-STRATEGY=longest\-border|max\-area|min\-area|min\-index
+  \-\-maximum\-gap\-width <MAXIMUM\-GAP\-WIDTH>              Maximum width of a gap to be closed
+
+Advanced Options:
+  \-\-if, \-\-input\-format <INPUT\-FORMAT>                  Input formats [may be repeated]
+  \-\-oo, \-\-open\-option <KEY>=<VALUE>                    Open options [may be repeated]
+  \-\-output\-oo, \-\-output\-open\-option <KEY>=<VALUE>      Output open options [may be repeated]
+  \-\-upsert                                             Upsert features (implies \(aqappend\(aq)
+                                                       Mutually exclusive with \-\-append
+.EE
+.UNINDENT
+.UNINDENT
+.SH DESCRIPTION
+.sp
+\fBgdal vector clean\-coverage\fP modifies boundaries of a
+polygonal dataset, such that gaps and overlaps between features are removed and
+shared edges are defined using the same vertices. The resulting dataset will
+form a polygonal coverage that can be used with \fI\%gdal vector simplify\-coverage\fP\&.
+.sp
+This command can also be used as a step of \fI\%gdal vector pipeline\fP, although it
+requires loading the entire dataset into memory at once.
+.sp
+\fBNOTE:\fP
+.INDENT 0.0
+.INDENT 3.5
+This command requires a GDAL build against the GEOS library (version 3.14 or greater).
+.UNINDENT
+.UNINDENT
+.SS Standard options
+.INDENT 0.0
+.TP
+.B \-\-maximum\-gap\-width <MAXIMUM\-GAP\-WIDTH>
+Defines the largest area that should be considered a \(dqgap\(dq and merged into
+an adjacent polygon. Gaps will be merged unless a circle with radius larger
+than the specified tolerance can be inscribed within the gap. The default
+maximum gap width is zero, meaning that gaps are not closed.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-merge\-strategy <MERGE\-STRATEGY>
+Method by which overlaps or gaps should be added to adjacent polygons. Options include:
+\- longest\-border (default): add areas to the polygon with which the longest border is shared
+\- max\-area: add areas to the largest adjacent polygon
+\- min\-area: add areas to the smallest adjacent polygon
+\- min\-index: add areas to the adjacent polygon that was read first
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-snapping\-distance <SNAPPING\-DISTANCE>
+Controls the node snapping step, when nearby vertices are snapped together.
+By default, an automatic snapping distance is determined based on an
+analysis of the input. Set to zero to turn off all snapping.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-active\-layer <ACTIVE\-LAYER>
+Set the active layer. When it is specified, only the layer specified by
+its name will be subject to the processing. Other layers will be not
+modified.
+If this option is not specified, all layers will be subject to the
+processing.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-f, \-\-of, \-\-format, \-\-output\-format <OUTPUT\-FORMAT>
+Which output vector format to use. Allowed values may be given by
+\fBgdal \-\-formats | grep vector | grep rw | sort\fP
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-co, \-\-creation\-option <NAME>=<VALUE>
+Many formats have one or more optional dataset creation options that can be
+used to control particulars about the file created. For instance,
+the GeoPackage driver supports creation options to control the version.
+.sp
+May be repeated.
+.sp
+The dataset creation options available vary by format driver, and some
+simple formats have no creation options at all. A list of options
+supported for a format can be listed with the
+\fI\%\-\-formats\fP
+command line option but the documentation for the format is the
+definitive source of information on driver creation options.
+See \fI\%Vector drivers\fP format
+specific documentation for legal creation options for each format.
+.sp
+Note that dataset creation options are different from layer creation options.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-lco <NAME>=<VALUE>
+Layer creation option (format specific)
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-overwrite
+Allow program to overwrite existing target file or dataset.
+Otherwise, by default, \fBgdal\fP errors out if the target file or
+dataset already exists.
+.UNINDENT
+.SS Advanced options
+.INDENT 0.0
+.TP
+.B \-\-oo, \-\-open\-option <NAME>=<VALUE>
+Dataset open option (format specific).
+.sp
+May be repeated.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-if, \-\-input\-format <format>
+Format/driver name to be attempted to open the input file(s). It is generally
+not necessary to specify it, but it can be used to skip automatic driver
+detection, when it fails to select the appropriate driver.
+This option can be repeated several times to specify several candidate drivers.
+Note that it does not force those drivers to open the dataset. In particular,
+some drivers have requirements on file extensions.
+.sp
+May be repeated.
+.UNINDENT
+.SH GDALG OUTPUT (ON-THE-FLY / STREAMED DATASET)
+.sp
+This program supports serializing the command line as a JSON file using the \fBGDALG\fP output format.
+The resulting file can then be opened as a vector dataset using the
+\fI\%GDALG: GDAL Streamed Algorithm\fP driver, and apply the specified pipeline in a on\-the\-fly /
+streamed way.
+.sp
+\fBNOTE:\fP
+.INDENT 0.0
+.INDENT 3.5
+However this algorithm is not natively streaming compatible. Consequently a
+in\-memory temporary dataset will be generated, which may cause significant processing
+time at opening.
+.UNINDENT
+.UNINDENT
+.SH EXAMPLES
+.SS Example 1: Create and then simplify a polygonal coverage
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.EX
+$ gdal vector pipeline read ne_10m_admin_0_countries.shp ! \e
+                       make\-valid ! \e
+                       clean\-coverage ! \e
+                       simplify\-coverage \-\-tolerance 1 ! \e
+                       write countries.shp
+.EE
+.UNINDENT
+.UNINDENT
+.SH AUTHOR
+Dan Baston <dbaston@gmail.com>
+.SH COPYRIGHT
+1998-2026
+.\" Generated by docutils manpage writer.
+.

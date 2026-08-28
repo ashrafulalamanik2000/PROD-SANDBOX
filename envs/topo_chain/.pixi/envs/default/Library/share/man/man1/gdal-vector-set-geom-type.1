@@ -1,0 +1,288 @@
+.\" Man page generated from reStructuredText.
+.
+.
+.nr rst2man-indent-level 0
+.
+.de1 rstReportMargin
+\\$1 \\n[an-margin]
+level \\n[rst2man-indent-level]
+level margin: \\n[rst2man-indent\\n[rst2man-indent-level]]
+-
+\\n[rst2man-indent0]
+\\n[rst2man-indent1]
+\\n[rst2man-indent2]
+..
+.de1 INDENT
+.\" .rstReportMargin pre:
+. RS \\$1
+. nr rst2man-indent\\n[rst2man-indent-level] \\n[an-margin]
+. nr rst2man-indent-level +1
+.\" .rstReportMargin post:
+..
+.de UNINDENT
+. RE
+.\" indent \\n[an-margin]
+.\" old: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.nr rst2man-indent-level -1
+.\" new: \\n[rst2man-indent\\n[rst2man-indent-level]]
+.in \\n[rst2man-indent\\n[rst2man-indent-level]]u
+..
+.TH "GDAL-VECTOR-SET-GEOM-TYPE" "1" "Apr 24, 2026" "" "GDAL"
+.SH NAME
+gdal-vector-set-geom-type \- Modify the geometry type of a vector dataset
+.sp
+Added in version 3.12.
+
+.SH SYNOPSIS
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.EX
+Usage: gdal vector set\-geom\-type [OPTIONS] <INPUT> <OUTPUT>
+
+Modify the geometry type of a vector dataset.
+
+Positional arguments:
+  \-i, \-\-input <INPUT>                                  Input vector datasets [required]
+  \-o, \-\-output <OUTPUT>                                Output vector dataset [required]
+
+Common Options:
+  \-h, \-\-help                                           Display help message and exit
+  \-\-json\-usage                                         Display usage as JSON document and exit
+  \-\-config <KEY>=<VALUE>                               Configuration option [may be repeated]
+  \-q, \-\-quiet                                          Quiet mode (no progress bar)
+
+Options:
+  \-l, \-\-layer, \-\-input\-layer <INPUT\-LAYER>             Input layer name(s) [may be repeated]
+  \-f, \-\-of, \-\-format, \-\-output\-format <OUTPUT\-FORMAT>  Output format (\(dqGDALG\(dq allowed)
+  \-\-co, \-\-creation\-option <KEY>=<VALUE>                Creation option [may be repeated]
+  \-\-lco, \-\-layer\-creation\-option <KEY>=<VALUE>         Layer creation option [may be repeated]
+  \-\-overwrite                                          Whether overwriting existing output is allowed
+  \-\-update                                             Whether to open existing dataset in update mode
+  \-\-overwrite\-layer                                    Whether overwriting existing output is allowed
+  \-\-append                                             Whether appending to existing layer is allowed
+                                                       Mutually exclusive with \-\-upsert
+  \-\-output\-layer <OUTPUT\-LAYER>                        Output layer name
+  \-\-skip\-errors                                        Skip errors when writing features
+  \-\-active\-layer <ACTIVE\-LAYER>                        Set active layer (if not specified, all)
+  \-\-active\-geometry <ACTIVE\-GEOMETRY>                  Geometry field name to which to restrict the processing (if not specified, all)
+  \-\-layer\-only                                         Only modify the layer geometry type
+                                                       Mutually exclusive with \-\-feature\-only
+  \-\-feature\-only                                       Only modify the geometry type of features
+                                                       Mutually exclusive with \-\-layer\-only
+  \-\-geometry\-type <GEOMETRY\-TYPE>                      Geometry type
+  \-\-multi                                              Force geometries to MULTI geometry types
+                                                       Mutually exclusive with \-\-single
+  \-\-single                                             Force geometries to non\-MULTI geometry types
+                                                       Mutually exclusive with \-\-multi
+  \-\-linear                                             Convert curve geometries to linear types
+                                                       Mutually exclusive with \-\-curve
+  \-\-curve                                              Convert linear geometries to curve types
+                                                       Mutually exclusive with \-\-linear
+  \-\-dim <DIM>                                          Force geometries to the specified dimension. DIM=XY|XYZ|XYM|XYZM
+  \-\-skip                                               Skip feature when change of feature geometry type failed
+
+Advanced Options:
+  \-\-if, \-\-input\-format <INPUT\-FORMAT>                  Input formats [may be repeated]
+  \-\-oo, \-\-open\-option <KEY>=<VALUE>                    Open options [may be repeated]
+  \-\-output\-oo, \-\-output\-open\-option <KEY>=<VALUE>      Output open options [may be repeated]
+  \-\-upsert                                             Upsert features (implies \(aqappend\(aq)
+                                                       Mutually exclusive with \-\-append
+.EE
+.UNINDENT
+.UNINDENT
+.SH DESCRIPTION
+.sp
+\fBgdal vector set\-geom\-type\fP can be used to modify the geometry type
+of geometry fields at the layer and/or feature level.
+.sp
+It can also be used as a step of \fI\%gdal vector pipeline\fP\&.
+.sp
+The following groups of options can be combined together:
+\-  \fI\%\-\-multi\fP / \fI\%\-\-single\fP
+\-  \fI\%\-\-linear\fP / \fI\%\-\-curve\fP
+\-  \fI\%\-\-dim\fP
+.SS Standard options
+.INDENT 0.0
+.TP
+.B \-f, \-\-of, \-\-format, \-\-output\-format <OUTPUT\-FORMAT>
+Which output vector format to use. Allowed values may be given by
+\fBgdal \-\-formats | grep vector | grep rw | sort\fP
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-co, \-\-creation\-option <NAME>=<VALUE>
+Many formats have one or more optional dataset creation options that can be
+used to control particulars about the file created. For instance,
+the GeoPackage driver supports creation options to control the version.
+.sp
+May be repeated.
+.sp
+The dataset creation options available vary by format driver, and some
+simple formats have no creation options at all. A list of options
+supported for a format can be listed with the
+\fI\%\-\-formats\fP
+command line option but the documentation for the format is the
+definitive source of information on driver creation options.
+See \fI\%Vector drivers\fP format
+specific documentation for legal creation options for each format.
+.sp
+Note that dataset creation options are different from layer creation options.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-lco <NAME>=<VALUE>
+Layer creation option (format specific)
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-overwrite
+Allow program to overwrite existing target file or dataset.
+Otherwise, by default, \fBgdal\fP errors out if the target file or
+dataset already exists.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-active\-layer <ACTIVE\-LAYER>
+Set the active layer. When it is specified, only the layer specified by
+its name will be subject to the processing. Other layers will be not
+modified.
+If this option is not specified, all layers will be subject to the
+processing.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-active\-geometry <ACTIVE\-GEOMETRY>
+Set the active geometry field from its name. When it is specified, only the
+specified geometry field will be subject to the processing. Other geometry
+fields will be not modified.
+If this option is not specified, all geometry fields will be subject to the
+processing.
+This option can be combined together with \fI\%\-\-active\-layer\fP\&.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-layer\-only
+Only modify the layer geometry type. A typical use case is if the layer
+geometry type is set to unknown and the user knows that the layer only
+contains geometry of a given type.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-feature\-only
+Only modify the geometry type of features.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-geometry\-type <GEOMETRY\-TYPE>
+Change the geometry type to be one of
+\fBGEOMETRY\fP, \fBPOINT\fP, \fBLINESTRING\fP, \fBPOLYGON\fP, \fBMULTIPOINT\fP, \fBMULTILINESTRING\fP,
+\fBMULTIPOLYGON\fP, \fBGEOMETRYCOLLECTION\fP, \fBCURVE\fP, \fBCIRCULARSTRING\fP, \fBCOMPOUNDCURVE\fP,
+\fBSURFACE\fP, \fBCURVEPOLYGON\fP, \fBMULTICURVE\fP, \fBMULTISURFACE\fP, \fBPOLYHEDRALSURFACE\fP or \fBTIN\fP\&.
+\fBZ\fP, \fBM\fP or \fBZM\fP suffixes can be appended to the above values to
+indicate the dimensionality.
+.sp
+This option is mutually exclusive with \fI\%\-\-multi\fP, \fI\%\-\-single\fP,
+\fI\%\-\-linear\fP, \fI\%\-\-curve\fP, and \fI\%\-\-dim\fP\&.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-multi
+Force geometries to MULTI geometry types. e.g. \fBPOINT\fP ==> \fBMULTIPOINT\fP\&.
+This option is mutually exclusive with \fI\%\-\-single\fP\&.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-single
+Force geometries to non\-MULTI geometry types. e.g. \fBMULTIPOINT\fP ==> \fBPOINT\fP\&.
+This option is mutually exclusive with \fI\%\-\-multi\fP\&.
+MultiPoint or MultiLinestring with more than one component will be kept
+unmodified. MultiPolygon with more than one component will be merged into
+a (likely invalid according to OGC Simple Features rule) single polygon,
+merging all their rings.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-linear
+Force geometries to linear/non\-curve geometry types, approximating arcs with
+linear segments. The linear approximation can be controlled with configuration
+options \fI\%OGR_ARC_STEPSIZE\fP and \fI\%OGR_ARC_MAX_GAP\fP
+(specified using \fI\%\-\-config\fP).
+e.g. \fBCOMPOUNDCURVE\fP ==> \fBLINESTRING\fP\&.
+This option is mutually exclusive with \fI\%\-\-curve\fP\&.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-curve
+Force geometries to curve geometry types. e.g. \fBLINESTRING\fP ==> \fBCOMPOUNDCURVE\fP
+or \fBPOLYGON\fP ==> \fBCURVEPOLYGON\fP\&. Points are kept unmodified.
+This option is mutually exclusive with \fI\%\-\-linear\fP\&.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-dim
+Force geometries to the specified dimension (XY, XYZ, XYM, or XYZM). If the input geometry lacks Z or M components, they will be set to 0. This option
+is mutually exclusive with \fI\%\-\-geometry\-type\fP\&.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-skip
+Skip feature when change of feature geometry type failed (e.g. attempting
+to force a Point geometry type for a LineString geometry). Otherwise the
+source geometry will be kept unmodified (which may make it incompatible with
+the output layer if it does not support mix of geometry types).
+This option applies both when the target geometry type is defined with
+\fI\%\-\-geometry\-type\fP, or with any of \fI\%\-\-multi\fP, \fI\%\-\-single\fP,
+\fI\%\-\-linear\fP, and \fI\%\-\-curve\fP\&.
+.UNINDENT
+.SS Advanced options
+.INDENT 0.0
+.TP
+.B \-\-oo, \-\-open\-option <NAME>=<VALUE>
+Dataset open option (format specific).
+.sp
+May be repeated.
+.UNINDENT
+.INDENT 0.0
+.TP
+.B \-\-if, \-\-input\-format <format>
+Format/driver name to be attempted to open the input file(s). It is generally
+not necessary to specify it, but it can be used to skip automatic driver
+detection, when it fails to select the appropriate driver.
+This option can be repeated several times to specify several candidate drivers.
+Note that it does not force those drivers to open the dataset. In particular,
+some drivers have requirements on file extensions.
+.sp
+May be repeated.
+.UNINDENT
+.SH GDALG OUTPUT (ON-THE-FLY / STREAMED DATASET)
+.sp
+This program supports serializing the command line as a JSON file using the \fBGDALG\fP output format.
+The resulting file can then be opened as a vector dataset using the
+\fI\%GDALG: GDAL Streamed Algorithm\fP driver, and apply the specified pipeline in a on\-the\-fly /
+streamed way.
+.SH EXAMPLES
+.SS Example 1: Convert a shapefile mixing polygons and multipolygons to a GeoPackage with multipolygons.
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.EX
+$ gdal vector set\-geom\-type \-\-geometry\-type=MULTIPOLYGON in.shp out.gpkg \-\-overwrite
+.EE
+.UNINDENT
+.UNINDENT
+.SS Example 2: Convert a GeoPackage with curve geometries to a Shapefile (that does not support them).
+.INDENT 0.0
+.INDENT 3.5
+.sp
+.EX
+$ gdal vector set\-geom\-type \-\-linear in.gpkg out.shp \-\-overwrite
+.EE
+.UNINDENT
+.UNINDENT
+.SH AUTHOR
+Even Rouault <even.rouault@spatialys.com>
+.SH COPYRIGHT
+1998-2026
+.\" Generated by docutils manpage writer.
+.

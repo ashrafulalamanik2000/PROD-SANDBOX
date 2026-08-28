@@ -1,0 +1,11 @@
+prefix=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libhwy-test
+Description: Efficient and performance-portable SIMD wrapper, test helpers.
+Requires: 
+Version: 1.4.0
+Libs: -L${libdir} -lhwy_test
+Cflags: -I${includedir} -DHWY_TEST_STANDALONE=1

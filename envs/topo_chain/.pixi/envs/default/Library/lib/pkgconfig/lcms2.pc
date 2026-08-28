@@ -1,0 +1,11 @@
+prefix=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library
+libdir=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/include
+
+Name: lcms2
+Description: LCMS Color Management Library
+Version: 2.19.1
+Libs: -L${libdir} -llcms2 
+Libs.private:  
+Cflags: -I${includedir}

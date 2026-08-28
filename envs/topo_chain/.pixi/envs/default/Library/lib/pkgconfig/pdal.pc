@@ -1,0 +1,12 @@
+prefix=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/bin
+libdir=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/include
+
+Name: PDAL
+Description: Point Data Abstraction Library
+Requires:   gdal libxml-2.0
+Version: 2.10.1
+Libs: -L${libdir} -lpdalcpp
+Cflags: -I${includedir}/pdal  
+

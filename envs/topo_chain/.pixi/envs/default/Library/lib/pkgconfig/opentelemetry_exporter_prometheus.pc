@@ -1,0 +1,15 @@
+# Copyright The OpenTelemetry Authors
+# SPDX-License-Identifier: Apache-2.0
+
+prefix=${pcfiledir}/../..
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenTelemetry Exporter - Prometheus
+Description: Exports metrics in Prometheus format.
+Requires: opentelemetry_metrics
+Version: 1.27.0
+
+Libs: -L${libdir} -lopentelemetry_exporter_prometheus
+Cflags: -I${includedir} 

@@ -1,0 +1,17 @@
+CONFIG_VERSION=3.12.4
+CONFIG_INST_PREFIX=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library
+CONFIG_INST_LIBS=-LIBPATH:C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib gdal
+CONFIG_INST_CFLAGS=-IC:/sdtools/envs/topo_chain/.pixi/envs/default/Library/include
+CONFIG_INST_DATA=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/share/gdal
+prefix=${CONFIG_INST_PREFIX}
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${exec_prefix}/include
+datadir=${CONFIG_INST_DATA}
+
+Name: libgdal
+Description: Geospatial Data Abstraction Library
+Version: ${CONFIG_VERSION}
+Libs: ${CONFIG_INST_LIBS}
+Libs.private: C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/archive.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/iconv.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/charset.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/libssl.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/libcrypto.lib crypt32 C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/lz4.lib wbemuuid C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/lzma.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/muparser.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/deflate.lib ws2_32 C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/Lerc.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/zstd.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/jpeg.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/libpng.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/blosc.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/libwebp.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/jxl.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/jxl_threads.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/kmlbase.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/kmldom.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/kmlengine.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/minizip.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/uriparser.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/pcre2-8.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/spatialite_i.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/sqlite3.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/xerces-c_3.lib "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/um/x64/odbccp32.lib" "C:/Program Files (x86)/Windows Kits/10/Lib/10.0.26100.0/um/x64/WS2_32.Lib" legacy_stdio_definitions.lib odbccp32.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/libexpat.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/xml2.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/geos_c.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/libcurl.lib psapi C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/proj.lib C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib/z.lib
+Cflags: ${CONFIG_INST_CFLAGS}

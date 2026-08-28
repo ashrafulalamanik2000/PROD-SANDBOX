@@ -1,0 +1,11 @@
+libdir=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/include
+
+Name: blosc2
+Description: A blocking, shuffling and lossless compression library
+URL: https://blosc.org/
+Version: 3.2.3
+
+Requires:
+Libs: -L${libdir} -lblosc2
+Cflags: -I${includedir}

@@ -1,0 +1,67 @@
+#!/bin/sh
+prefix=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/bin
+libdir=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib
+
+usage()
+{
+	cat <<EOF
+Usage: pdal-config [OPTIONS]
+Options:
+	[--cflags]
+	[--cxxflags]
+	[--defines]
+	[--includes]
+	[--libs]
+	[--plugin-dir]
+	[--version]
+EOF
+	exit $1
+}
+
+if test $# -eq 0; then
+	usage 1 1>&2
+fi
+
+case $1 in
+  --libs)
+    echo -LC:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib -lpdalcpp
+    ;;
+
+  --plugin-dir)
+    echo bin
+    ;;
+
+  --prefix)
+    echo ${prefix}
+     ;;
+
+  --ldflags)
+    echo -L${libdir}
+    ;;
+
+  --defines)
+    echo 
+    ;;
+
+  --includes)
+    echo -IC:/sdtools/envs/topo_chain/.pixi/envs/default/Library/include -IC:/sdtools/envs/topo_chain/.pixi/envs/default/Library/include/libxml2
+    ;;
+
+  --cflags)
+    echo /DWIN32 /D_WINDOWS /W3
+    ;;
+
+  --cxxflags)
+    echo /DWIN32 /D_WINDOWS /W3 /GR /EHsc
+    ;;
+
+  --version)
+    echo 2.10.1
+    ;;
+
+  *)
+    usage 1 1>&2
+    ;;
+
+esac

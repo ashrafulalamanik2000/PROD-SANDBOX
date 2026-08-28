@@ -1,0 +1,14 @@
+prefix=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library
+exec_prefix=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library
+libdir=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib
+sharedlibdir=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/lib
+includedir=C:/sdtools/envs/topo_chain/.pixi/envs/default/Library/include/minizip
+
+Name: minizip
+Description: Zip manipulation library
+Version: 4.2.2
+
+Requires.private: zlib
+Libs: -L${libdir} -L${sharedlibdir} -lminizip
+Libs.private: -lbz2 -llzma -lzstd
+Cflags: -I${includedir}
