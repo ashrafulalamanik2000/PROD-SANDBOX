@@ -1,0 +1,42 @@
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: sdtools
+      POSTGRES_USER: sdtools
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./api/schema.sql:/docker-entrypoint-initdb.d/10-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sdtools"]
+      interval: 5s
+      retries: 10
+    ports: ["5432:5432"]
+
+  api:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    environment:
+      DATABASE_URL: postgresql+psycopg://sdtools:${POSTGRES_PASSWORD}@db:5432/sdtools
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY}
+      SDTOOLS_SUMMARY_MODEL: ${SDTOOLS_SUMMARY_MODEL:-claude-haiku-4-5}
+      SUMMARIZE_ALL: "0"          # 1 = summarize successes too, not just failures
+      HEARTBEAT_GRACE_S: "120"
+      EVENT_RETENTION_DAYS: "45"
+      LEASE_TTL_S: ${LEASE_TTL_S:-120}
+      SWEEP_INTERVAL_S: ${SWEEP_INTERVAL_S:-30}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports: ["8080:8080"]
+    # Background sweeper/summary loops and first-boot key minting are in-process.
+    # Keep one API worker unless those loops are moved to a separate service.
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8080 --workers 1
+
+volumes:
+  pgdata:

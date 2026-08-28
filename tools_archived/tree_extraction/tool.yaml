@@ -1,0 +1,111 @@
+# reviewed 2026-08-26: params match extract_tree_trunk_canopy.py argparse (the
+# worker is wrapped directly — run_tree_extraction.py only added conda GDAL env
+# vars this env doesn't need). Pure CPU, deterministic. Exit 3 = benign
+# tree-less tile. One run produces BOTH Tree_Stems.shp and Tree_Canopy.shp.
+# source copied from: \\SDAI-FS1\Production\Projects\CLAUDE\SDAI-PROD-AGENT-01\Workflows\Aecon_Project\skills\tree_extraction
+name: tree-extraction
+version: 0.1.0
+summary: 'Classical tree stem + canopy/veg-outline extraction from a classified cloud (class 5 veg + class 2 ground) -> Tree_Stems.shp + Tree_Canopy.shp.'
+runtime: python
+entry: src/scripts/extract_tree_trunk_canopy.py
+environment: tree_extraction
+timeout_s: 3600
+params:
+- name: input
+  type: path
+  required: true
+  help: classified LAS/LAZ file or directory
+- name: pattern
+  type: str
+  default: '*.las'
+  help: glob when --input is a directory
+- name: out_dir
+  type: path
+  required: true
+  help: output dir for Tree_Stems/Tree_Canopy .shp+.gpkg
+- name: epsg
+  type: int
+  help: 'output CRS; default: first input file''s header CRS'
+- name: canopy_class
+  type: int
+  default: 5
+- name: ground_class
+  type: int
+  default: 2
+- name: dem_cell
+  type: float
+  default: 0.5
+- name: chm_cell
+  type: float
+  default: 0.5
+- name: min_canopy_height
+  type: float
+  default: 3.0
+  help: min apex HAG to count as a tree (m)
+- name: min_tree_spacing
+  type: float
+  default: 3.0
+  help: min horizontal spacing between tree apexes (m)
+- name: max_crown_radius
+  type: float
+  default: 8.0
+  help: max canopy-point distance from its apex (m)
+- name: min_crown_pts
+  type: int
+  default: 120
+  help: min canopy points to keep a tree
+- name: measure_height
+  type: float
+  default: 1.0
+  help: height above ground for diameter/radius/circ (m)
+- name: trunk_search_radius
+  type: float
+  default: 0.8
+  help: XY radius around the stem base for stem points (m)
+- name: trunk_zmin
+  type: float
+  default: 0.3
+- name: trunk_zmax
+  type: float
+  default: 4.0
+- name: slice_height
+  type: float
+  default: 0.25
+  help: height-bin thickness for stem slices (m)
+- name: min_slice_pts
+  type: int
+  default: 4
+  help: min core points to fit a stem slice
+- name: max_core_radius
+  type: float
+  default: 0.5
+  help: trim each slice to this XY radius of its centroid (woody-core isolation, excludes
+    low foliage)
+- name: core_spread_max
+  type: float
+  default: 0.06
+  help: max circle-fit RMS for a slice to count as woody (m)
+- name: min_stem_slices
+  type: int
+  default: 3
+  help: min vertically-continuous woody slices for a trunk
+- name: r_min
+  type: float
+  default: 0.03
+  help: min plausible trunk radius (m)
+- name: r_max
+  type: float
+  default: 0.5
+  help: max plausible trunk radius (m)
+- name: hull
+  type: str
+  default: concave
+- name: concave_ratio
+  type: float
+  default: 0.3
+- name: pole_shp
+  type: path
+  help: optional pole point shapefile; drop stems within --pole-radius of a pole
+- name: pole_radius
+  type: float
+  default: 1.5

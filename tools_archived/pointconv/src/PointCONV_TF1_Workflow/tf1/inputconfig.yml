@@ -1,0 +1,93 @@
+
+GPU_INDEX: -1 # set to specific gpu or -1 for the gpu with minimal load
+
+preprocessing:
+  thin_data: # 0.025 # leave blank for no thinning
+
+  voxel_size: 0.1
+
+  num_threads_file_voxelization: 21
+
+  convert_feet_to_meters: false
+
+  OutputLAS_FileFormat: 1.4
+  OutputLAS_PointFormat: 7
+
+  min_num_pts_voxel: 16384
+
+
+PointConv:
+  model_directory: PointCONV_model_6class_v0.0.10
+
+  num_threads_PointCONV_sample: 21
+
+  voxel_size_baseline: 0.1
+
+  map_to_original_points: true
+
+  GPU_INDEX: -1 # set to specific gpu or -1 for the gpu with minimal load
+
+  BATCH_SIZE: 12
+
+  random_seed_sample_points: 42
+  num_classes: 6
+
+  min_points_in_region: 24576
+  max_points_per_region: 311296
+  min_samples_per_point: 1
+  num_candidates: 30
+  noise_labels:
+    - 7
+    - 8
+
+  class_mapping_model:
+    class_label:
+      - 14
+      - 18
+      - 5
+      - 2
+      - 6
+      - 15
+    model_to_class:
+      0: 14
+      1: 18
+      2: 5
+      3: 2
+      4: 6
+      5: 15
+    class_to_model:
+      0: 4
+      1: 4
+      14: 0
+      18: 1
+      5: 2
+      2: 3
+      6: 4
+      15: 5
+      31: 4
+      23: 4
+      3: 2
+      40: 3
+      42: 3
+      4: 2
+      72: 1
+      74: 1
+      10: 4
+      51: 3
+      27: 4
+      92: 4
+      24: 4
+      89: 1
+      64: 4
+      73: 1
+      52: 3
+      26: 4
+
+  learning_data_base_dir:
+
+  training_data_config:
+
+
+
+
+

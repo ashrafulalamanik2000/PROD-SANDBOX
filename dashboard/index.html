@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sdtools — run activity</title>
+<style>
+  .viz-root {
+    color-scheme: light;
+    --surface-0: #f6f5f2;
+    --surface-1: #fcfcfb;
+    --border:    #e2e1dc;
+    --border-strong: #cfcec8;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #7c7b76;
+    --series-1: #2a78d6;
+    --seq-450:  #2a78d6;
+    --seq-150:  #b7d3f6;
+    --good:     #0ca30c;
+    --warning:  #fab219;
+    --serious:  #ec835a;
+    --critical: #d03b3b;
+    --neutral:  #9b9a94;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) .viz-root {
+      color-scheme: dark;
+      --surface-0: #111110;
+      --surface-1: #1a1a19;
+      --border:    #2f2f2c;
+      --border-strong: #454540;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #94938a;
+      --series-1: #3987e5;
+      --seq-450:  #3987e5;
+      --seq-150:  #184f95;
+      --neutral:  #6f6e69;
+    }
+  }
+  :root[data-theme="dark"] .viz-root {
+    color-scheme: dark;
+    --surface-0: #111110;
+    --surface-1: #1a1a19;
+    --border:    #2f2f2c;
+    --border-strong: #454540;
+    --text-primary:   #ffffff;
+    --text-secondary: #c3c2b7;
+    --text-muted:     #94938a;
+    --series-1: #3987e5;
+    --seq-450:  #3987e5;
+    --seq-150:  #184f95;
+    --neutral:  #6f6e69;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    font: 14px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--surface-0);
+    color: var(--text-primary);
+  }
+  .viz-root { min-height: 100%; padding: 24px clamp(16px, 4vw, 48px) 64px; }
+  header { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap;
+           margin-bottom: 20px; }
+  h1 { font-size: 19px; font-weight: 650; margin: 0; letter-spacing: -.01em; }
+  .sub { color: var(--text-muted); font-size: 13px; }
+  .spacer { flex: 1; }
+
+  /* ---- controls: one row above the charts ---- */
+  .controls { display: flex; gap: 8px; flex-wrap: wrap; align-items: center;
+              margin-bottom: 22px; }
+  input, select, button {
+    font: inherit; color: var(--text-primary); background: var(--surface-1);
+    border: 1px solid var(--border-strong); border-radius: 7px;
+    padding: 6px 10px;
+  }
+  input::placeholder { color: var(--text-muted); }
+  button { cursor: pointer; }
+  button:hover { border-color: var(--text-secondary); }
+  button.primary { background: var(--series-1); border-color: var(--series-1);
+                   color: #fff; font-weight: 550; }
+  .grow { flex: 1; min-width: 180px; }
+
+  /* ---- stat tiles: hero numbers, no plot ---- */
+  .tiles { display: grid; gap: 12px; margin-bottom: 20px;
+           grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+  .tile { background: var(--surface-1); border: 1px solid var(--border);
+          border-radius: 12px; padding: 14px 16px; }
+  .tile .label { font-size: 12px; color: var(--text-secondary);
+                 text-transform: uppercase; letter-spacing: .04em; }
+  .tile .value { font-size: 30px; font-weight: 620; letter-spacing: -.02em;
+                 margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .tile .note { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+  .panels { display: grid; gap: 12px; margin-bottom: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+  .panel { background: var(--surface-1); border: 1px solid var(--border);
+           border-radius: 12px; padding: 16px 18px; }
+  .panel h2 { font-size: 13px; font-weight: 600; margin: 0 0 14px;
+              color: var(--text-secondary); text-transform: uppercase;
+              letter-spacing: .05em; }
+
+  /* ---- horizontal bars: magnitude, direct-labeled, thin marks ---- */
+  .bars { display: grid; gap: 9px; }
+  .bar-row { display: grid; grid-template-columns: 108px 1fr 52px;
+             align-items: center; gap: 10px; }
+  .bar-row .name { font-size: 13px; color: var(--text-secondary);
+                   overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .track { display: block; height: 10px; background: var(--surface-0);
+           border: 1px solid var(--border); border-radius: 5px;
+           position: relative; overflow: hidden; }
+  .fill { display: block; height: 100%; border-radius: 0 4px 4px 0; min-width: 3px;
+          transition: width .25s ease; }
+  .bar-row .num { text-align: right; font-variant-numeric: tabular-nums;
+                  font-size: 13px; color: var(--text-primary); }
+
+  /* ---- status chips: icon + label, never colour alone ---- */
+  .chip { display: inline-flex; align-items: center; gap: 5px; font-size: 12px;
+          font-weight: 550; padding: 2px 8px 2px 6px; border-radius: 20px;
+          border: 1px solid var(--border-strong); background: var(--surface-0);
+          color: var(--text-primary); white-space: nowrap; }
+  .dot { width: 8px; height: 8px; border-radius: 50%;
+         box-shadow: 0 0 0 2px var(--surface-0); flex: none; }
+  .glyph { font-size: 11px; line-height: 1; }
+
+  /* ---- runs table ---- */
+  table { width: 100%; border-collapse: collapse; }
+  thead th { text-align: left; font-size: 11px; font-weight: 600;
+             color: var(--text-muted); text-transform: uppercase;
+             letter-spacing: .05em; padding: 0 10px 8px; }
+  tbody tr { border-top: 1px solid var(--border); }
+  tbody tr:hover { background: var(--surface-0); }
+  td { padding: 11px 10px; vertical-align: top; }
+  .mono { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12px;
+          color: var(--text-secondary); }
+  .headline { font-weight: 550; }
+  .why { color: var(--text-secondary); font-size: 13px; margin-top: 3px;
+         max-width: 62ch; }
+  .nums { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+  .num-chip { font-size: 11.5px; padding: 1px 7px; border-radius: 5px;
+              background: var(--surface-0); border: 1px solid var(--border);
+              color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+  .problems { margin: 6px 0 0; padding-left: 16px; color: var(--text-secondary);
+              font-size: 13px; }
+  .pending { color: var(--text-muted); font-style: italic; font-size: 13px; }
+  button.explain { font-size: 12px; padding: 3px 9px; border-radius: 6px;
+                   color: var(--text-secondary); border-color: var(--border); }
+  button.explain:hover { color: var(--text-primary); }
+
+  /* ---- workflow + machine rows ---- */
+  .rows-sm { display: grid; gap: 8px; }
+  .row-sm { display: flex; align-items: center; gap: 10px; font-size: 13px;
+            padding: 7px 10px; border: 1px solid var(--border); border-radius: 9px;
+            background: var(--surface-0); flex-wrap: wrap; }
+  .row-sm .name { font-weight: 550; }
+  .row-sm .meta { color: var(--text-muted); font-size: 12px; }
+  .row-sm .push { margin-left: auto; }
+  .prog { width: 90px; height: 8px; border-radius: 4px; background: var(--surface-1);
+          border: 1px solid var(--border); overflow: hidden; display: inline-block; }
+  .prog > span { display: block; height: 100%; background: var(--seq-450);
+                 border-radius: 0 3px 3px 0; }
+  .right { text-align: right; }
+  .empty { padding: 40px; text-align: center; color: var(--text-muted); }
+  .err { color: var(--critical); font-size: 13px; }
+  details summary { cursor: pointer; color: var(--text-muted); font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="viz-root">
+
+  <header>
+    <h1>sdtools — run activity</h1>
+    <span class="sub" id="stamp"></span>
+    <span class="spacer"></span>
+    <button id="theme">◐ theme</button>
+  </header>
+
+  <div class="controls">
+    <input id="api" class="grow" placeholder="API base URL, e.g. http://localhost:8080">
+    <input id="key" class="grow" type="password" placeholder="read-scope API key (sdt_read_…)">
+    <select id="hours">
+      <option value="24">last 24h</option>
+      <option value="72">last 3 days</option>
+      <option value="168" selected>last 7 days</option>
+      <option value="720">last 30 days</option>
+    </select>
+    <select id="status">
+      <option value="">all statuses</option>
+      <option value="running">running</option>
+      <option value="ok">ok</option>
+      <option value="failed,timeout,lost">problems only</option>
+    </select>
+    <input id="project" placeholder="project filter">
+    <button class="primary" id="load">Load</button>
+    <label class="sub"><input type="checkbox" id="auto"> auto-refresh</label>
+  </div>
+
+  <div id="error" class="err"></div>
+
+  <div class="tiles" id="tiles"></div>
+
+  <div class="panels">
+    <div class="panel">
+      <h2>Outcomes</h2>
+      <div class="bars" id="statusBars"></div>
+    </div>
+    <div class="panel">
+      <h2>Runs by tool</h2>
+      <div class="bars" id="toolBars"></div>
+    </div>
+  </div>
+
+  <div class="panels">
+    <div class="panel">
+      <h2>Workflows</h2>
+      <div id="wfList" class="rows-sm"></div>
+    </div>
+    <div class="panel">
+      <h2>Machines</h2>
+      <div id="agentList" class="rows-sm"></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Recent runs</h2>
+    <table>
+      <thead><tr>
+        <th style="width:120px">Status</th>
+        <th>What happened</th>
+        <th style="width:130px">Who / where</th>
+        <th class="right" style="width:90px">Duration</th>
+        <th class="right" style="width:110px">Started</th>
+      </tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div id="empty" class="empty" hidden>No runs in this window.</div>
+    <details style="margin-top:14px">
+      <summary>Table view (accessible text fallback)</summary>
+      <pre class="mono" id="tsv" style="white-space:pre-wrap"></pre>
+    </details>
+  </div>
+</div>
+
+<script>
+// In-memory only. Nothing is written to browser storage.
+const state = { api: "", key: "", runs: [], stats: null, timer: null };
+
+const STATUS = {
+  ok:        { colour: "var(--good)",     glyph: "✓", label: "ok" },
+  running:   { colour: "var(--series-1)", glyph: "▸", label: "running" },
+  failed:    { colour: "var(--critical)", glyph: "✕", label: "failed" },
+  timeout:   { colour: "var(--serious)",  glyph: "⏱", label: "timeout" },
+  lost:      { colour: "var(--warning)",  glyph: "?", label: "lost" },
+  cancelled: { colour: "var(--neutral)",  glyph: "⊘", label: "cancelled" },
+};
+// Bar order deliberately keeps `timeout` (serious) and `lost` (warning) apart —
+// those two hues sit close, so they never land side by side.
+const BAR_ORDER = ["ok", "running", "timeout", "cancelled", "lost", "failed"];
+
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g,
+  (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function chip(status) {
+  const s = STATUS[status] || { colour: "var(--neutral)", glyph: "•", label: status };
+  return `<span class="chip"><span class="dot" style="background:${s.colour}"></span>
+          <span class="glyph">${s.glyph}</span>${esc(s.label)}</span>`;
+}
+
+function dur(ms) {
+  if (ms == null) return "—";
+  const s = ms / 1000;
+  if (s < 60) return s.toFixed(1) + "s";
+  if (s < 3600) return Math.floor(s / 60) + "m " + Math.round(s % 60) + "s";
+  return (s / 3600).toFixed(1) + "h";
+}
+
+function ago(iso) {
+  const d = (Date.now() - new Date(iso)) / 1000;
+  if (d < 90) return Math.round(d) + "s ago";
+  if (d < 5400) return Math.round(d / 60) + "m ago";
+  if (d < 172800) return Math.round(d / 3600) + "h ago";
+  return Math.round(d / 86400) + "d ago";
+}
+
+async function api(path, params = {}) {
+  const url = new URL(state.api.replace(/\/$/, "") + path);
+  Object.entries(params).forEach(([k, v]) => v && url.searchParams.set(k, v));
+  const r = await fetch(url, { headers: { Authorization: "Bearer " + state.key } });
+  if (!r.ok) throw new Error(`${path} → ${r.status} ${await r.text()}`);
+  return r.json();
+}
+
+function renderTiles(st) {
+  const failRate = (st.failure_rate * 100).toFixed(1);
+  const problems = (st.by_status.failed || 0) + (st.by_status.timeout || 0)
+                 + (st.by_status.lost || 0);
+  $("tiles").innerHTML = [
+    ["Runs", st.total_runs, `in the last ${st.window_hours}h`],
+    ["Running now", st.active_now, st.active_now ? "live" : "idle"],
+    ["Queue depth", st.queue_depth ?? 0, "jobs waiting or blocked"],
+    ["Machines", st.agents_online ?? 0, "agents online"],
+    ["Problem runs", problems, `${failRate}% of all runs`],
+    ["Compute time", st.compute_hours + "h", "summed wall clock"],
+  ].map(([label, value, note]) => `
+    <div class="tile"><div class="label">${label}</div>
+      <div class="value">${esc(value)}</div>
+      <div class="note">${esc(note)}</div></div>`).join("");
+}
+
+function renderBars(el, entries, colourFor) {
+  const max = Math.max(1, ...entries.map(([, v]) => v));
+  el.innerHTML = entries.length ? entries.map(([name, v]) => `
+    <div class="bar-row">
+      <span class="name" title="${esc(name)}">${esc(name)}</span>
+      <span class="track"><span class="fill"
+        style="width:${(v / max * 100).toFixed(1)}%;background:${colourFor(name)}"></span></span>
+      <span class="num">${v}</span>
+    </div>`).join("") : `<div class="pending">nothing yet</div>`;
+}
+
+function renderRows(runs) {
+  $("empty").hidden = runs.length > 0;
+  $("rows").innerHTML = runs.map((r) => {
+    const s = r.summary;
+    const body = s ? `
+        <div class="headline">${esc(s.headline)}</div>
+        <div class="why">${esc(s.what_happened)}</div>
+        ${s.key_numbers?.length ? `<div class="nums">${
+          s.key_numbers.map((n) => `<span class="num-chip">${esc(n)}</span>`).join("")}</div>` : ""}
+        ${s.problems?.length ? `<ul class="problems">${
+          s.problems.map((p) => `<li>${esc(p)}</li>`).join("")}</ul>` : ""}`
+      : r.status === "running"
+        ? `<div class="pending">${esc(r.progress_note || "in progress…")}</div>`
+        // Successful runs are summarised lazily, so the model is only paid for
+        // when a human actually wants the explanation.
+        : `<button class="explain" data-run="${esc(r.run_id)}">Explain this run</button>`;
+    return `<tr>
+      <td>${chip(r.status)}</td>
+      <td>${body}<div class="mono" style="margin-top:6px">${esc(r.cmdline)}</div></td>
+      <td><div>${esc(r.actor_user)}</div>
+          <div class="mono">${esc(r.hostname)}</div>
+          ${r.project ? `<div class="mono">${esc(r.project)}</div>` : ""}</td>
+      <td class="right mono">${dur(r.duration_ms)}</td>
+      <td class="right mono">${ago(r.started_at)}</td>
+    </tr>`;
+  }).join("");
+
+  $("rows").querySelectorAll("button.explain").forEach((btn) => {
+    btn.onclick = async () => {
+      btn.disabled = true;
+      btn.textContent = "asking…";
+      try {
+        const { summary } = await api(`/v1/runs/${btn.dataset.run}/summary`);
+        const run = state.runs.find((x) => x.run_id === btn.dataset.run);
+        run.summary = summary;
+        renderRows(state.runs);
+      } catch (e) {
+        btn.textContent = "failed";
+        $("error").textContent = e.message;
+      }
+    };
+  });
+
+  $("tsv").textContent = ["status\ttool\twho\tduration_s\theadline"]
+    .concat(runs.map((r) => [r.status, r.tool, r.actor_user,
+      ((r.duration_ms || 0) / 1000).toFixed(1),
+      r.summary?.headline || ""].join("\t"))).join("\n");
+}
+
+const WF_CHIP = { ok: "ok", running: "running", failed: "failed",
+                  cancelled: "cancelled" };
+
+function renderWorkflows(wfs) {
+  $("wfList").innerHTML = wfs.length ? wfs.slice(0, 8).map((w) => {
+    const pct = w.total_jobs ? (w.done / w.total_jobs * 100).toFixed(0) : 0;
+    const bad = (w.job_states.failed || 0) + (w.job_states.cancelled || 0);
+    return `<div class="row-sm">
+      ${chip(WF_CHIP[w.status] || w.status)}
+      <span class="name">${esc(w.name)}</span>
+      <span class="meta">${esc(w.project || "")} · by ${esc(w.submitted_by || "?")}</span>
+      <span class="push meta">${w.done}/${w.total_jobs} jobs${bad ? ` · ${bad} bad` : ""}</span>
+      <span class="prog"><span style="width:${pct}%"></span></span>
+    </div>`;
+  }).join("") : `<div class="pending">no workflows submitted yet</div>`;
+}
+
+const AGENT_CHIP = {
+  busy:    { colour: "var(--series-1)", glyph: "▸" },
+  idle:    { colour: "var(--good)",     glyph: "✓" },
+  offline: { colour: "var(--neutral)",  glyph: "?" },
+};
+
+function renderAgents(agents) {
+  $("agentList").innerHTML = agents.length ? agents.slice(0, 10).map((a) => {
+    const s = AGENT_CHIP[a.state] || AGENT_CHIP.offline;
+    return `<div class="row-sm">
+      <span class="chip"><span class="dot" style="background:${s.colour}"></span>
+        <span class="glyph">${s.glyph}</span>${esc(a.state)}</span>
+      <span class="name">${esc(a.hostname)}</span>
+      <span class="meta">${esc(a.agent_id.split(":").pop())} ·
+        q: ${esc(a.queues.join(","))}${a.labels.length ? " · " + esc(a.labels.join(",")) : ""}</span>
+      <span class="push meta">${a.current_job_id
+        ? "job " + esc(a.current_job_id.slice(0, 8)) : ""}</span>
+    </div>`;
+  }).join("") : `<div class="pending">no agents have polled yet</div>`;
+}
+
+async function load() {
+  state.api = $("api").value.trim();
+  state.key = $("key").value.trim();
+  $("error").textContent = "";
+  if (!state.api || !state.key) {
+    $("error").textContent = "Enter the API base URL and a read-scope key.";
+    return;
+  }
+  try {
+    const hours = $("hours").value;
+    const [stats, runs, wfs, agents] = await Promise.all([
+      api("/v1/stats", { hours }),
+      api("/v1/runs", { since_hours: hours, status: $("status").value,
+                        project: $("project").value.trim(), limit: 100 }),
+      api("/v1/workflows", { limit: 8 }),
+      api("/v1/agents"),
+    ]);
+    state.stats = stats;
+    state.runs = runs.runs;
+    renderTiles(stats);
+    renderWorkflows(wfs.workflows);
+    renderAgents(agents.agents);
+    renderBars($("statusBars"),
+      BAR_ORDER.filter((k) => stats.by_status[k]).map((k) => [k, stats.by_status[k]]),
+      (k) => (STATUS[k] || {}).colour || "var(--neutral)");
+    renderBars($("toolBars"), Object.entries(stats.by_tool), () => "var(--seq-450)");
+    renderRows(state.runs);
+    $("stamp").textContent = "updated " + new Date().toLocaleTimeString();
+  } catch (e) {
+    $("error").textContent = e.message;
+  }
+}
+
+$("load").onclick = load;
+["hours", "status"].forEach((id) => $(id).onchange = load);
+$("project").onkeydown = (e) => e.key === "Enter" && load();
+$("theme").onclick = () => {
+  const root = document.documentElement;
+  root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+};
+$("auto").onchange = (e) => {
+  clearInterval(state.timer);
+  if (e.target.checked) state.timer = setInterval(load, 10000);
+};
+
+// Convenience for local dev: ?api=…&key=… prefills and loads.
+const qs = new URLSearchParams(location.search);
+if (qs.get("api")) $("api").value = qs.get("api");
+if (qs.get("key")) { $("key").value = qs.get("key"); load(); }
+</script>
+</body>
+</html>

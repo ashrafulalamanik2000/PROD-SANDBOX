@@ -1,0 +1,13 @@
+laspy>=2.5
+geopandas>=0.14
+shapely>=2.0
+fiona>=1.9
+pyproj>=3.6
+scipy>=1.11
+numpy>=1.24
+pandas>=2.0
+opencv-python-headless>=4.8
+Pillow>=9.0
+PyYAML>=6.0
+tqdm>=4.65
+pdal>=3.4

@@ -1,0 +1,16 @@
+[workspace]
+name = "ml-torch"
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[dependencies]
+python = "3.12.*"
+pytorch = ">=2.4"
+numpy = "*"
+# the geospatial stack that pip struggles with lives happily on conda-forge:
+# pdal = "*"
+# gdal = "*"
+
+[system-requirements]
+# uncomment on CUDA machines:
+# cuda = "12"

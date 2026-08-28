@@ -1,0 +1,3 @@
+# Aecon corridor processing skill
+When the user asks to process Aecon deliverables, run scripts/aecon_process.py ...
+(agent instructions - not code)

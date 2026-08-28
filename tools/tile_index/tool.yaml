@@ -1,0 +1,28 @@
+name: tile-index
+version: 0.3.1
+summary: Build a tile index over a point-cloud directory (demo of progress/metrics/failure).
+group: pointcloud
+runtime: python
+entry: run.py
+timeout_s: 600
+params:
+  - name: input
+    type: path
+    required: true
+    help: Directory of tiles.
+  - name: out
+    type: path
+    required: true
+    help: Output index path (.gpkg or .json).
+  - name: tile_size
+    type: int
+    default: 500
+    help: Tile edge length in CRS units.
+  - name: workers
+    type: int
+    default: 4
+    help: Parallel workers.
+  - name: fail_at
+    type: int
+    default: 0
+    help: Testing hook - fail after N tiles (0 = never).

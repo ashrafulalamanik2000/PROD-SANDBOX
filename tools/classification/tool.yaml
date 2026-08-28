@@ -1,0 +1,76 @@
+# Hand-written 2026-08-26. Wraps the topology-aerial-classification skill
+# (vendored in src/skill/, extracted from chain-full v0.3.48) onto OUR
+# canonical project layout: Lidar\Clipped in -> Lidar\Classified out, all
+# temp under Lidar\Classified\_work (deleted by --stages clean).
+# Stage 1 (PointCONV GPU inference) needs Docker + the classify_las tree +
+# models on a GPU box — NOT this Blackwell laptop (cuDNN corruption). The
+# CPU refine chain (veg 3/4/5 split, noise marking, verify) runs here.
+name: classification
+version: 0.1.0
+summary: 'Topology-Aerial classification on the canonical layout: Lidar/Clipped -> PointCONV 6-class (GPU) -> CPU refine (veg low/med/high split, optional walls/road/noise) -> Lidar/Classified. Temp lives in Lidar/Classified/_work; --stages clean deletes it.'
+runtime: python
+entry: src/classification.py
+environment: topo_chain
+timeout_s: 43200
+params:
+- name: data_root
+  type: path
+  required: true
+  positional: true
+  help: Project root (canonical Lidar\... layout)
+- name: stages
+  type: str
+  default: all
+  help: 'Comma-separated: inspect,stage1,refine,verify,clean or all (= everything except clean; clean deletes Lidar\Classified\_work)'
+- name: epsg
+  type: int
+  required: true
+  help: Working CRS (stage1 drops the CRS from its output, so this is load-bearing)
+- name: input_dir
+  type: str
+  default: ''
+  help: Override input dir (default <root>\Lidar\Clipped)
+- name: out_dir
+  type: str
+  default: ''
+  help: Override output dir (default <root>\Lidar\Classified)
+- name: classify_src
+  type: str
+  default: ''
+  help: classify_las Classification source tree (stage1 GPU; or env SDAI_CLASSIFY_SRC)
+- name: models_dir
+  type: str
+  default: ''
+  help: PointCONV models dir e.g. D:\LL\models (stage1 GPU; or env SDAI_MODELS_DIR)
+- name: max_points
+  type: int
+  default: 40000000
+  help: stage1 auto-tile threshold (the 100M default OOMs on dense data)
+- name: tile_size
+  type: int
+  default: 500
+  help: stage1 tile size (m)
+- name: chain_scripts
+  type: str
+  default: ''
+  help: chain-orchestrator scripts dir for walls/stage6 (or env SDAI_CHAIN_SCRIPTS); empty = skip them, veg split runs straight on stage1 output
+- name: road_surface
+  type: str
+  default: ''
+  help: Optional road polygon shp -> class 40 in stage6
+- name: mark_noise
+  type: bool
+  default: false
+  help: Label statistical outliers class 7 (kept, not removed)
+- name: low_max
+  type: float
+  default: 0.5
+  help: 'Veg: HAG below this (m) -> class 3 (low)'
+- name: med_max
+  type: float
+  default: 2.0
+  help: 'Veg: HAG below this (m) -> class 4 (medium), above -> 5 (high)'
+- name: plan
+  type: bool
+  default: false
+  help: Print every command without running

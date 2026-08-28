@@ -1,0 +1,95 @@
+# Fine-tune configuration for PointCONV_model_6class_v0.0.10 on DTECH Otter Creek data.
+#
+# Resolved paths use forward slashes; the trainer runs inside Docker on Linux but
+# this config is read from the host so we keep the host-style absolute paths in
+# the surrounding shell wrappers. The YAML below stays container-agnostic.
+
+run_name: finetune_20260429_125114
+
+# === Source data ===
+# Two labeled LAS files. The data prep stage thins to 0.1 m, splits each file
+# spatially into train/val/test blocks, and samples 16,384-point regions per block.
+source_las_dir: /data/DTECH_2025/ClassifiedLAS                      # in-container path
+# Use the existing 0.1 m thinned LAS files from the validated inference run.
+# This avoids redoing thinning and keeps the fine-tune data point-aligned with
+# the IoU evaluation baseline.
+source_thinned_dir: /data/DTECH_2025_experiments/tf1_pointconv_0p1m_tiled_20260429_1510/source_thinned
+voxel_size: 0.1                                                     # 0.1 m thinning
+
+# === Mapping ===
+mapping_file: /workspace/finetune/dtech_to_model_mapping.yml
+
+# === Training data layout (output of prepare_finetune_data.py) ===
+data_root: /exp/finetune_20260429_125114/data
+train_subdir: train
+val_subdir: val
+test_subdir: test
+
+# Spatial split: deterministic XY-block assignment.
+spatial_split:
+  block_size_m: 30.0
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  seed: 42
+
+# Region sampling (matches the existing inference sampler).
+sampling:
+  n_points: 16384            # NUM_POINT, must match exp_def.p
+  radius_nn: 10.29           # Radius_NN
+  min_samples_per_point: 1
+  num_candidates: 30
+  max_points_per_region: 311296
+  min_points_in_region: 24576
+  num_threads: 8
+  random_seed: 42
+
+# === Model & training ===
+# Bump the version before each new fine-tune run. The current released model is
+# PointCONV_model_6class_Mobile_v0.0.10 (see models/PointCONV_model_6class_Mobile_v0.0.10/
+# and s3://sdai-model/lidar_ml/PointCONV_model_6class_Mobile_v0.0.10/).
+model_dir_name: PointCONV_model_6class_Mobile_v0.0.11
+warm_start_checkpoint: /workspace/models/PointCONV_model_6class_v0.0.10/Best_Model/model.ckpt
+exp_def_source: /workspace/models/PointCONV_model_6class_v0.0.10/exp_def.p
+
+# Architecture parameters MUST match the warm-start checkpoint.
+# These are pulled from PointCONV_model_6class_v0.0.10/exp_def.p.
+architecture:
+  num_classes: 6
+  bandwidth: 0.5
+  radii: [0.2, 0.4, 0.8, 1.6]
+  dim: 3
+  classes: [wire, pole, veg, ground, man_made, transmission]
+
+# Active classes for loss; transmission (idx 5) is excluded -> frozen.
+active_class_indices: [0, 1, 2, 3, 4]
+
+training:
+  batch_size: 6
+  learning_rate: 0.0001               # 10x smaller than original (1e-3) for fine-tune
+  optimizer: adam
+  momentum: 0.9                       # ignored for adam
+  decay_step: 200000
+  decay_rate: 0.7
+  bn_init_decay: 0.5
+  bn_decay_decay_rate: 0.5
+  bn_decay_clip: 0.99
+  use_random_rotate: false
+  use_random_jitter: false
+  sigma_jitter: 0.1
+  clip_jitter: 0.2
+  number_of_resamples: 1
+  use_class_weight: true              # multiply smpw by per-class inverse-frequency weight
+  class_weight_min: 1.0
+  class_weight_max: 100.0             # cap so wire/pole don't dominate catastrophically
+  weight_decay: null                  # match original training (None -> no L2 reg)
+  smoke_test_epochs: 1                # for quick verification
+  full_training_epochs: 12            # ~13 min/epoch on RTX 4090; warm-started, expect convergence inside 12 epochs
+  early_stop_patience: 4              # epochs of no val improvement
+  random_seed: 42
+  gpu_index: 0
+
+# === Evaluation ===
+eval:
+  test_inference: true                # run inference on test split LAS exports
+  iou_mapping: /workspace/../experiments/iou_eval_20260429_105436/class_mapping.yml

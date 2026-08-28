@@ -1,0 +1,20 @@
+name: las-info
+version: 1.0.0
+summary: Report point counts, CRS, and extents for LAS/LAZ files.
+group: pointcloud
+runtime: python
+entry: run.py
+environment: pointcloud   # resolved (built once, cached) before every run
+timeout_s: 1800
+writes: false
+tags: [read-only]
+params:
+  - name: input
+    type: path
+    required: true
+    multiple: true
+    help: LAS/LAZ file or directory to inspect.
+  - name: recursive
+    type: bool
+    default: false
+    help: Walk directories recursively.

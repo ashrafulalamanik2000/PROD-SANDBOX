@@ -1,0 +1,56 @@
+# reviewed 2026-08-26: params match run_highveg_clusters.py argparse. Pure
+# python (laspy/scipy/shapely/geopandas); children run via sys.executable.
+# In-house alternative to the outsourced tree-cluster feature extraction.
+# source copied from: \\SDAI-FS1\Production\Projects\CLAUDE\SDAI-PROD-AGENT-01\Workflows\DFX_Project\skills\high_veg_clusters
+name: high-veg-clusters
+version: 0.1.0
+summary: 'Classified LAS/LAZ (ground=2, veg=5) -> smooth 3D TREESBUSHESHEDGES outline lines per site (config-driven).'
+runtime: python
+entry: src/scripts/run_highveg_clusters.py
+environment: high_veg_clusters
+timeout_s: 3600
+params:
+- name: sites
+  type: str
+  multiple: true
+  positional: true
+  help: 'site name filter (default: all in config)'
+- name: config
+  type: str
+  required: true
+  help: sites JSON (see sites.example.json)
+- name: workroot
+  type: path
+  default: .
+  help: LOCAL dir for reclass + intermediates
+- name: final
+  type: str
+  help: deliverable dir (default <workroot>/HIGHVEG_FINAL)
+- name: low
+  type: str
+- name: med
+  type: str
+- name: dem_cell
+  type: float
+- name: chm_cell
+  type: float
+- name: cluster_gap
+  type: float
+- name: min_area
+  type: float
+- name: sm_gap
+  type: float
+- name: sm_open
+  type: float
+- name: sm_simp
+  type: float
+- name: sm_qs
+  type: int
+- name: high_class
+  type: int
+- name: ground_class
+  type: int
+- name: keep_2d
+  type: bool
+  default: false
+  help: also copy the 2D lines to --final

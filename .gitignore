@@ -1,0 +1,16 @@
+__pycache__/
+*.egg-info/
+*.db
+.venv/
+node_modules/
+.env
+
+# built pixi env prefixes (rebuilt from the committed lockfiles; gigabytes)
+envs/*/.pixi/
+.pixi/
+# pytest droppings
+.pytest_cache/
+# pip build artifacts
+build/
+# archived pointconv model weights (248 MB — live on D:\LL\models / the NAS)
+tools_archived/pointconv/src/PointCONV_TF1_Workflow/models/

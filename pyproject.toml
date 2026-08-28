@@ -1,0 +1,40 @@
+[project]
+name = "sdtools"
+version = "0.4.0"
+description = "Spatialdata internal processing toolkit with run telemetry"
+requires-python = ">=3.11"
+dependencies = [
+    "typer>=0.12",
+    "pyyaml>=6",
+    "httpx>=0.27",
+    "pydantic>=2.6",
+]
+
+[project.optional-dependencies]
+api = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+    "sqlalchemy>=2.0",
+    "psycopg[binary]>=3.1",
+    "anthropic>=0.40",
+]
+pointcloud = ["laspy[lazrs]>=2.5", "pdal>=3.4"]
+dev = ["pytest>=8", "ruff>=0.4"]
+
+[project.scripts]
+sdtools = "sdtools.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["sdtools*"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E402", "E702", "E501"]
+# wrapped source trees are third-party code, not ours to restyle
+"tools/*/src/**" = ["E401", "E702", "E701"]

@@ -1,0 +1,22 @@
+# reviewed 2026-08-26: params match build_gdb.py argparse. GDAL OpenFileGDB
+# writes the .gdb natively (no ArcGIS/ESRI SDK). SDAI template GDBs are
+# bundled in src/templates/.
+# source copied from: \\SDAI-FS1\Production\Projects\CLAUDE\SDAI-PROD-AGENT-01\Workflows\DFX_Project\skills\shp_to_gdb
+name: shp-to-gdb
+version: 0.1.0
+summary: 'Load PAS/vendor shapefiles into populated SDAI template GDBs (AERIAL + TOPO).'
+runtime: python
+entry: src/scripts/build_gdb.py
+environment: shp_to_gdb
+timeout_s: 3600
+params:
+- name: templates
+  type: str
+  help: 'dir containing the *.gdb templates (default: bundled templates/)'
+- name: shp
+  type: str
+  required: true
+  help: dir containing the PAS shapefiles
+- name: out
+  type: path
+  help: output dir (default = --shp)

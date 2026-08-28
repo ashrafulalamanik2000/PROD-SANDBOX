@@ -1,0 +1,35 @@
+# drafted by `sdtools wrap` from aecon_process.py — REVIEW EVERY PARAM before relying on it
+# source copied from: /tmp/mock-share/Workflows/Aecon_Project/skills/aecon_process
+name: aecon-process
+version: 0.1.0
+summary: Process Aecon corridor deliverable tiles into a QC report (wrapped from the agent skill).
+runtime: python
+entry: src/scripts/aecon_process.py
+environment: aecon_process
+timeout_s: 3600
+params:
+- name: input
+  type: path
+  required: true
+  help: Corridor tile directory
+- name: out
+  type: path
+  required: true
+  help: Output report path
+- name: chainage_step
+  type: float
+  default: 20.0
+  help: Station interval (m)
+- name: crs
+  type: str
+  default: EPSG:2952
+  help: Target CRS
+- name: strict
+  type: bool
+  default: false
+  help: Fail on any tile warning
+- name: tag_arg
+  type: str
+  multiple: true
+  help: Report tags
+  flag: --tag

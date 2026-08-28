@@ -1,0 +1,47 @@
+# reviewed 2026-08-25: params checked against aecon.py argparse; deps taken from
+# src/scripts/requirements.v2.txt (wrap's "no requirements file" note was wrong)
+# source copied from: \\SDAI-FS1\Production\Projects\CLAUDE\SDAI-PROD-AGENT-01\Workflows\Aecon_Project\skills\aecon_process
+name: aecon-real
+version: 0.1.0
+summary: 'AECON mobile-mapping pipeline: .lst -> InputConfig.yml, organize images+LAS, metadata CSVs, Solv3D panoramas, LAS colorize+clip.'
+runtime: python
+entry: src/scripts/aecon.py
+environment: aecon_real
+timeout_s: 3600
+params:
+- name: data_root
+  type: path
+  required: true
+  positional: true
+  help: Folder containing project subfolders
+- name: stages
+  type: str
+  default: yaml,organize,metadata,pano,colorize
+  help: Comma-separated stages to run
+- name: crs
+  type: str
+  default: EPSG:26917
+  help: CRS for colorize stage
+- name: search_radius
+  type: int
+  default: 45
+  help: Colorize search radius (m), must be >= 1
+- name: buffer
+  type: int
+  default: 45
+  help: Clip buffer distance (m), must be >= 1
+- name: project_workers
+  type: int
+  default: 2
+  help: Parallel projects (for yaml/organize/metadata/colorize)
+- name: las_workers
+  type: int
+  default: 2
+  help: Parallel LAS files per project in colorize stage
+- name: threads
+  type: int
+  default: 8
+  help: Threads per LAS file (pano processing)
+- name: engine
+  type: str
+  help: Path to Solv3D engine.exe, or a command string; defaults to AECON_ENGINE env or %LOCALAPPDATA%\Programs\solv3d-engine\...\engine.exe

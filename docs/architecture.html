@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sdtools — architecture</title>
+<style>
+  .viz-root {
+    color-scheme: light;
+    --surface-0: #f6f5f2;
+    --surface-1: #fcfcfb;
+    --surface-2: #eceae5;
+    --border: #dddcd6;
+    --border-strong: #c6c5bf;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted: #83827c;
+    --series-1: #2a78d6;
+    --series-3: #1baf7a;
+    --series-7: #4a3aa7;
+    --good: #0ca30c;
+    --critical: #d03b3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) .viz-root {
+      color-scheme: dark;
+      --surface-0: #111110; --surface-1: #1a1a19; --surface-2: #242422;
+      --border: #32322e; --border-strong: #4b4b45;
+      --text-primary: #ffffff; --text-secondary: #c3c2b7; --text-muted: #908f87;
+      --series-1: #3987e5; --series-3: #199e70; --series-7: #9085e9;
+    }
+  }
+  :root[data-theme="dark"] .viz-root {
+    color-scheme: dark;
+    --surface-0: #111110; --surface-1: #1a1a19; --surface-2: #242422;
+    --border: #32322e; --border-strong: #4b4b45;
+    --text-primary: #ffffff; --text-secondary: #c3c2b7; --text-muted: #908f87;
+    --series-1: #3987e5; --series-3: #199e70; --series-7: #9085e9;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: var(--surface-0); color: var(--text-primary);
+         font: 14px/1.5 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .viz-root { padding: 28px clamp(16px, 3vw, 40px) 56px; }
+  header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 4px; }
+  h1 { font-size: 20px; font-weight: 650; margin: 0; letter-spacing: -.015em; }
+  .sub { color: var(--text-muted); font-size: 13px; }
+  .spacer { flex: 1; }
+  button { font: inherit; cursor: pointer; background: var(--surface-1);
+           color: var(--text-primary); border: 1px solid var(--border-strong);
+           border-radius: 7px; padding: 5px 11px; }
+  p.lede { color: var(--text-secondary); max-width: 78ch; margin: 8px 0 22px; }
+  .frame { background: var(--surface-1); border: 1px solid var(--border);
+           border-radius: 14px; padding: 10px; overflow-x: auto; }
+  svg { display: block; width: 100%; height: auto; min-width: 1000px; }
+  .lane-label { font: 600 11.5px ui-sans-serif, system-ui, sans-serif;
+                letter-spacing: .09em; text-transform: uppercase; }
+  .box-title { font: 600 13.5px ui-sans-serif, system-ui, sans-serif; }
+  .box-body { font: 12px ui-sans-serif, system-ui, sans-serif; }
+  .mono { font: 11.5px ui-monospace, "SF Mono", Menlo, monospace; }
+  .edge-label { font: 11px ui-sans-serif, system-ui, sans-serif; }
+  .note { font: italic 11.5px ui-sans-serif, system-ui, sans-serif; }
+  .notes { display: grid; gap: 10px; margin-top: 22px;
+           grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .card { background: var(--surface-1); border: 1px solid var(--border);
+          border-radius: 11px; padding: 13px 15px; }
+  .card h3 { margin: 0 0 5px; font-size: 12px; letter-spacing: .05em;
+             text-transform: uppercase; color: var(--text-secondary); }
+  .card p { margin: 0; font-size: 13px; color: var(--text-secondary); }
+  .card b { color: var(--text-primary); font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="viz-root">
+  <header>
+    <h1>sdtools — architecture</h1>
+    <span class="sub">console tool → run API + dispatcher → worker fleet → cheap summariser → dashboard / Plane</span>
+    <span class="spacer"></span>
+    <button id="theme">◐ theme</button>
+  </header>
+  <p class="lede">
+    Five loosely coupled components. The seam between the CLI and the API is a
+    versioned wire contract; the seam between the API and your dashboard is REST.
+    Any one component can be replaced without touching the others. The telemetry
+    plane is drawn first; the dispatch plane (submit from one computer, execute
+    on many machines) follows below.
+  </p>
+
+  <div class="frame">
+  <svg viewBox="0 0 1240 786" role="img"
+       aria-label="Architecture diagram: sdtools CLI on an operator machine uploads run telemetry to a FastAPI service backed by Postgres; a Haiku summariser reduces logs into readable status notes; a dashboard reads the API.">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+              markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,1 L9,5 L0,9 z" fill="var(--border-strong)"/>
+      </marker>
+      <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5"
+              markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,1 L9,5 L0,9 z" fill="var(--series-1)"/>
+      </marker>
+      <marker id="arrow-warn" viewBox="0 0 10 10" refX="9" refY="5"
+              markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,1 L9,5 L0,9 z" fill="var(--critical)"/>
+      </marker>
+      <marker id="arrow-aqua" viewBox="0 0 10 10" refX="9" refY="5"
+              markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,1 L9,5 L0,9 z" fill="var(--series-3)"/>
+      </marker>
+    </defs>
+
+    <!-- ============ lane frames ============ -->
+    <g fill="none" stroke="var(--border)" stroke-dasharray="4 4">
+      <rect x="16"  y="34" width="330" height="700" rx="12"/>
+      <rect x="382" y="34" width="336" height="700" rx="12"/>
+      <rect x="754" y="34" width="230" height="540" rx="12"/>
+      <rect x="1020" y="34" width="204" height="572" rx="12"/>
+    </g>
+    <g class="lane-label" fill="var(--text-muted)">
+      <text x="32"   y="26">1 · operator machine</text>
+      <text x="398"  y="26">2 · run api</text>
+      <text x="770"  y="26">3 · postgres</text>
+      <text x="1036" y="26">4 · consumers</text>
+    </g>
+
+    <!-- ============ lane 1: operator machine ============ -->
+    <g>
+      <rect x="34" y="52" width="294" height="76" rx="9"
+            fill="var(--surface-2)" stroke="var(--border-strong)"/>
+      <text class="box-title" x="48" y="76" fill="var(--text-primary)">tools/ — plugin folder</text>
+      <text class="mono" x="48" y="96" fill="var(--text-secondary)">las_info/tool.yaml + run.py</text>
+      <text class="mono" x="48" y="114" fill="var(--text-secondary)">tile_index/tool.yaml + run.py</text>
+
+      <rect x="34" y="152" width="294" height="180" rx="9"
+            fill="var(--surface-1)" stroke="var(--series-1)" stroke-width="1.5"/>
+      <text class="box-title" x="48" y="176" fill="var(--text-primary)">sdtools CLI  (Python + Typer)</text>
+      <text class="box-body" x="48" y="200" fill="var(--text-secondary)">discovery — manifests → subcommands</text>
+      <text class="box-body" x="48" y="221" fill="var(--text-secondary)">runner — spawn, timeout, exit code</text>
+      <text class="box-body" x="48" y="242" fill="var(--text-secondary)">capture — stdout/stderr + seq</text>
+      <text class="box-body" x="48" y="263" fill="var(--text-secondary)">protocol — ::sdtools:: → metrics</text>
+      <text class="box-body" x="48" y="284" fill="var(--text-secondary)">digest — sha256 of normalised log</text>
+      <text class="box-body" x="48" y="305" fill="var(--text-secondary)">heartbeat — every 15s</text>
+      <text class="mono" x="48" y="324" fill="var(--text-muted)">exit code → the shell</text>
+
+      <rect x="34" y="356" width="294" height="56" rx="9"
+            fill="var(--surface-2)" stroke="var(--good)" stroke-width="1.5"/>
+      <text class="box-title" x="48" y="379" fill="var(--text-primary)">local NDJSON — source of truth</text>
+      <text class="mono" x="48" y="399" fill="var(--text-secondary)">~/.sdtools/runs/&lt;run_id&gt;.ndjson</text>
+
+      <rect x="34" y="436" width="294" height="56" rx="9"
+            fill="var(--surface-2)" stroke="var(--critical)" stroke-width="1.5"/>
+      <text class="box-title" x="48" y="459" fill="var(--text-primary)">spool — undelivered payloads</text>
+      <text class="mono" x="48" y="479" fill="var(--text-secondary)">~/.sdtools/spool/*.json.gz</text>
+
+      <rect x="34" y="516" width="294" height="60" rx="9"
+            fill="var(--surface-1)" stroke="var(--border-strong)"/>
+      <text class="box-title" x="48" y="539" fill="var(--text-primary)">Claude terminal / CI</text>
+      <text class="mono" x="48" y="559" fill="var(--text-secondary)">sdtools tile-index … --json</text>
+
+      <text class="note" x="34" y="614" fill="var(--text-muted)">A run never fails because the</text>
+      <text class="note" x="34" y="631" fill="var(--text-muted)">API is down. Local write is</text>
+      <text class="note" x="34" y="648" fill="var(--text-muted)">synchronous; upload is a</text>
+      <text class="note" x="34" y="665" fill="var(--text-muted)">background thread; failures</text>
+      <text class="note" x="34" y="682" fill="var(--text-muted)">spool and replay on the next</text>
+      <text class="note" x="34" y="699" fill="var(--text-muted)">invocation.</text>
+    </g>
+
+    <!-- CLI internal arrows -->
+    <g stroke="var(--border-strong)" stroke-width="1.4" fill="none" marker-end="url(#arrow)">
+      <path d="M181,128 L181,150"/>
+      <path d="M181,332 L181,354"/>
+      <path d="M120,412 L120,434"/>
+      <path d="M181,516 L181,494" marker-end="url(#arrow)"/>
+    </g>
+
+    <!-- ============ lane 2: API ============ -->
+    <g>
+      <rect x="400" y="52" width="300" height="196" rx="9"
+            fill="var(--surface-1)" stroke="var(--series-1)" stroke-width="1.5"/>
+      <text class="box-title" x="414" y="76" fill="var(--text-primary)">ingest  ·  scope=ingest</text>
+      <text class="mono" x="414" y="100" fill="var(--text-secondary)">POST   /v1/runs</text>
+      <text class="mono" x="414" y="121" fill="var(--text-secondary)">POST   /v1/runs/{id}/events</text>
+      <text class="mono" x="414" y="142" fill="var(--text-secondary)">POST   /v1/runs/{id}/heartbeat</text>
+      <text class="mono" x="414" y="163" fill="var(--text-secondary)">POST   /v1/runs/{id}/artifacts</text>
+      <text class="mono" x="414" y="184" fill="var(--text-secondary)">PATCH  /v1/runs/{id}</text>
+      <text class="box-body" x="414" y="212" fill="var(--text-muted)">gzip in · idempotent on (run_id, seq)</text>
+      <text class="box-body" x="414" y="232" fill="var(--text-muted)">202 fast — no work on the hot path</text>
+
+      <rect x="400" y="272" width="300" height="140" rx="9"
+            fill="var(--surface-1)" stroke="var(--series-3)" stroke-width="1.5"/>
+      <text class="box-title" x="414" y="296" fill="var(--text-primary)">query  ·  scope=read</text>
+      <text class="mono" x="414" y="320" fill="var(--text-secondary)">GET  /v1/runs        (summary joined)</text>
+      <text class="mono" x="414" y="341" fill="var(--text-secondary)">GET  /v1/runs/{id}/events</text>
+      <text class="mono" x="414" y="362" fill="var(--text-secondary)">GET  /v1/runs/{id}/summary</text>
+      <text class="mono" x="414" y="383" fill="var(--text-secondary)">GET  /v1/stats</text>
+      <text class="mono" x="414" y="404" fill="var(--text-secondary)">GET  /v1/stream      (SSE)</text>
+
+      <rect x="400" y="436" width="300" height="72" rx="9"
+            fill="var(--surface-2)" stroke="var(--border-strong)"/>
+      <text class="box-title" x="414" y="459" fill="var(--text-primary)">sweeper  (every 30s)</text>
+      <text class="box-body" x="414" y="480" fill="var(--text-secondary)">stale heartbeat → status = lost</text>
+      <text class="box-body" x="414" y="499" fill="var(--text-secondary)">drop events past retention</text>
+
+      <rect x="400" y="532" width="300" height="72" rx="9"
+            fill="var(--surface-2)" stroke="var(--series-7)" stroke-width="1.5"/>
+      <text class="box-title" x="414" y="555" fill="var(--text-primary)">summary worker</text>
+      <text class="box-body" x="414" y="576" fill="var(--text-secondary)">drains summary_jobs, 3 attempts</text>
+      <text class="box-body" x="414" y="595" fill="var(--text-secondary)">eager on failure, lazy on success</text>
+
+      <rect x="400" y="628" width="300" height="88" rx="9"
+            fill="var(--surface-1)" stroke="var(--border-strong)"/>
+      <text class="box-title" x="414" y="651" fill="var(--text-primary)">auth — hashed API keys</text>
+      <text class="box-body" x="414" y="672" fill="var(--text-secondary)">ingest — one per machine, write only</text>
+      <text class="box-body" x="414" y="691" fill="var(--text-secondary)">read — the dashboard</text>
+      <text class="box-body" x="414" y="710" fill="var(--text-secondary)">admin — mints keys</text>
+    </g>
+
+    <!-- CLI -> API -->
+    <path d="M328,190 C352,190 356,140 398,140" fill="none"
+          stroke="var(--series-1)" stroke-width="2" marker-end="url(#arrow-blue)"/>
+    <text class="edge-label" x="330" y="128" fill="var(--series-1)">batched, gzipped</text>
+    <path d="M328,464 C352,464 360,180 398,178" fill="none"
+          stroke="var(--critical)" stroke-width="1.6" stroke-dasharray="5 4"
+          marker-end="url(#arrow-warn)"/>
+    <text class="edge-label" x="332" y="486" fill="var(--critical)">replay</text>
+
+    <!-- ============ lane 3: Postgres ============ -->
+    <g>
+      <rect x="772" y="52" width="194" height="360" rx="9"
+            fill="var(--surface-1)" stroke="var(--border-strong)"/>
+      <text class="box-title" x="786" y="76" fill="var(--text-primary)">tables</text>
+      <text class="mono" x="786" y="102" fill="var(--text-secondary)">runs</text>
+      <text class="box-body" x="786" y="119" fill="var(--text-muted)">wide, denormalised;</text>
+      <text class="box-body" x="786" y="135" fill="var(--text-muted)">one index scan, no joins</text>
+      <text class="mono" x="786" y="163" fill="var(--text-secondary)">run_events</text>
+      <text class="box-body" x="786" y="180" fill="var(--text-muted)">monthly partitions;</text>
+      <text class="box-body" x="786" y="196" fill="var(--text-muted)">retention = DROP</text>
+      <text class="mono" x="786" y="224" fill="var(--text-secondary)">run_artifacts</text>
+      <text class="box-body" x="786" y="241" fill="var(--text-muted)">metadata only — no bytes</text>
+      <text class="mono" x="786" y="269" fill="var(--text-secondary)">run_summaries</text>
+      <text class="box-body" x="786" y="286" fill="var(--text-muted)">UNIQUE(log_digest,</text>
+      <text class="box-body" x="786" y="302" fill="var(--text-muted)">prompt_version)</text>
+      <text class="mono" x="786" y="330" fill="var(--text-secondary)">summary_jobs</text>
+      <text class="box-body" x="786" y="347" fill="var(--text-muted)">the work queue</text>
+      <text class="mono" x="786" y="375" fill="var(--text-secondary)">api_keys</text>
+      <text class="box-body" x="786" y="392" fill="var(--text-muted)">sha256 at rest</text>
+
+      <rect x="772" y="436" width="194" height="88" rx="9"
+            fill="var(--surface-2)" stroke="var(--border-strong)"/>
+      <text class="box-title" x="786" y="459" fill="var(--text-primary)">views</text>
+      <text class="mono" x="786" y="481" fill="var(--text-secondary)">v_recent_runs</text>
+      <text class="mono" x="786" y="502" fill="var(--text-secondary)">v_tool_health</text>
+      <text class="box-body" x="786" y="518" fill="var(--text-muted)">p95, top error kind</text>
+    </g>
+
+    <g stroke="var(--border-strong)" stroke-width="1.6" fill="none">
+      <path d="M700,150 L770,150" marker-end="url(#arrow)"/>
+      <path d="M770,340 L700,340" marker-end="url(#arrow)"/>
+      <path d="M700,470 L736,470"/>
+      <path d="M700,568 L736,568 L736,380 L770,380" marker-end="url(#arrow)"/>
+    </g>
+
+    <!-- ============ lane 4: summariser + dashboard ============ -->
+    <g>
+      <rect x="1036" y="52" width="172" height="300" rx="9"
+            fill="var(--surface-1)" stroke="var(--series-7)" stroke-width="1.5"/>
+      <text class="box-title" x="1050" y="76" fill="var(--text-primary)">summariser</text>
+      <text class="box-body" x="1050" y="100" fill="var(--text-secondary)">1 · reduce log</text>
+      <text class="mono" x="1050" y="118" fill="var(--text-muted)">215,780 → 42 lines</text>
+      <text class="mono" x="1050" y="134" fill="var(--text-muted)">~440 tokens</text>
+      <text class="box-body" x="1050" y="160" fill="var(--text-secondary)">2 · keep all errors</text>
+      <text class="box-body" x="1050" y="179" fill="var(--text-secondary)">   + warnings</text>
+      <text class="box-body" x="1050" y="205" fill="var(--text-secondary)">3 · Haiku call</text>
+      <text class="mono" x="1050" y="223" fill="var(--text-muted)">forced tool call</text>
+      <text class="mono" x="1050" y="239" fill="var(--text-muted)">cached system prompt</text>
+      <text class="mono" x="1050" y="255" fill="var(--text-muted)">max_tokens 700</text>
+      <text class="box-body" x="1050" y="281" fill="var(--text-secondary)">4 · cache by digest</text>
+      <text class="mono" x="1050" y="299" fill="var(--text-muted)">reruns cost nothing</text>
+      <text class="box-body" x="1050" y="325" fill="var(--text-secondary)">5 · fallback template</text>
+      <text class="mono" x="1050" y="343" fill="var(--text-muted)">never an empty cell</text>
+
+      <rect x="1036" y="392" width="172" height="184" rx="9"
+            fill="var(--surface-1)" stroke="var(--series-3)" stroke-width="1.5"/>
+      <text class="box-title" x="1050" y="416" fill="var(--text-primary)">your dashboard</text>
+      <text class="box-body" x="1050" y="440" fill="var(--text-secondary)">stat tiles</text>
+      <text class="box-body" x="1050" y="461" fill="var(--text-secondary)">outcomes by status</text>
+      <text class="box-body" x="1050" y="482" fill="var(--text-secondary)">runs by tool</text>
+      <text class="box-body" x="1050" y="503" fill="var(--text-secondary)">recent runs table</text>
+      <text class="box-body" x="1050" y="524" fill="var(--text-secondary)">live tail (SSE)</text>
+      <text class="mono" x="1050" y="548" fill="var(--text-muted)">3 endpoints, no N+1</text>
+      <text class="mono" x="1050" y="566" fill="var(--text-muted)">read-scope key</text>
+    </g>
+
+    <g fill="none">
+      <path d="M966,232 L1034,232" stroke="var(--series-7)" stroke-width="2"
+            marker-end="url(#arrow)"/>
+      <path d="M1034,268 L966,268" stroke="var(--series-7)" stroke-width="2"
+            marker-end="url(#arrow)"/>
+      <path d="M700,404 L736,404 L736,632 L1122,632 L1122,580"
+            stroke="var(--series-3)" stroke-width="2" marker-end="url(#arrow-aqua)"/>
+    </g>
+    <text class="edge-label" x="1001" y="222" text-anchor="middle"
+          font-size="10" fill="var(--series-7)">reduced log</text>
+    <text class="edge-label" x="1001" y="288" text-anchor="middle"
+          font-size="10" fill="var(--series-7)">summary</text>
+    <text class="edge-label" x="756" y="626" fill="var(--series-3)">GET /v1/runs · /v1/stats · /v1/stream</text>
+
+    <!-- ============ legend ============ -->
+    <g transform="translate(24,752)">
+      <text class="lane-label" x="0" y="0" fill="var(--text-muted)">flow</text>
+      <line x1="60" y1="-4" x2="104" y2="-4" stroke="var(--series-1)" stroke-width="2"/>
+      <text class="edge-label" x="112" y="0" fill="var(--text-secondary)">telemetry upload</text>
+      <line x1="232" y1="-4" x2="276" y2="-4" stroke="var(--critical)"
+            stroke-width="2" stroke-dasharray="5 4"/>
+      <text class="edge-label" x="284" y="0" fill="var(--text-secondary)">spool replay (failure path)</text>
+      <line x1="470" y1="-4" x2="514" y2="-4" stroke="var(--series-7)" stroke-width="2"/>
+      <text class="edge-label" x="522" y="0" fill="var(--text-secondary)">model layer</text>
+      <line x1="620" y1="-4" x2="664" y2="-4" stroke="var(--series-3)" stroke-width="2"/>
+      <text class="edge-label" x="672" y="0" fill="var(--text-secondary)">dashboard reads</text>
+      <line x1="800" y1="-4" x2="844" y2="-4" stroke="var(--border-strong)" stroke-width="2"/>
+      <text class="edge-label" x="852" y="0" fill="var(--text-secondary)">internal</text>
+    </g>
+  </svg>
+  </div>
+
+  <h2 style="font-size:15px;margin:26px 0 8px;">The dispatch plane — one computer submits, many machines execute</h2>
+  <p class="lede" style="margin-top:0">
+    Pull-based: workers poll, so no inbound access to field machines is needed.
+    Claims follow a stated total order — (priority, created_at, job_id) per queue —
+    and every claim is a renewable lease, so a machine that dies loses the lease
+    and the job retries elsewhere.
+  </p>
+  <div class="frame">
+  <svg viewBox="0 0 1240 470" role="img"
+       aria-label="Dispatch diagram: an operator submits jobs and DAG workflows to the API; worker agents on many machines poll, claim under a lease, execute through the normal runner, and report finish; failed leases requeue; workflow outcomes sync to Plane.">
+    <g fill="none" stroke="var(--border)" stroke-dasharray="4 4">
+      <rect x="16"  y="34" width="300" height="396" rx="12"/>
+      <rect x="352" y="34" width="416" height="396" rx="12"/>
+      <rect x="804" y="34" width="272" height="396" rx="12"/>
+      <rect x="1108" y="34" width="116" height="396" rx="12"/>
+    </g>
+    <g class="lane-label" fill="var(--text-muted)">
+      <text x="32"   y="26">operator computer</text>
+      <text x="368"  y="26">run api — dispatcher</text>
+      <text x="820"  y="26">worker machines (n)</text>
+      <text x="1124" y="26">plane</text>
+    </g>
+
+    <!-- operator -->
+    <rect x="34" y="56" width="264" height="106" rx="9"
+          fill="var(--surface-1)" stroke="var(--series-1)" stroke-width="1.5"/>
+    <text class="box-title" x="48" y="80" fill="var(--text-primary)">submit</text>
+    <text class="mono" x="48" y="102" fill="var(--text-secondary)">sdtools workflow nightly.yaml</text>
+    <text class="mono" x="48" y="120" fill="var(--text-secondary)">  --set site=/data/sundre --watch</text>
+    <text class="mono" x="48" y="142" fill="var(--text-secondary)">sdtools submit tile-index -P …</text>
+
+    <rect x="34" y="186" width="264" height="84" rx="9"
+          fill="var(--surface-2)" stroke="var(--border-strong)"/>
+    <text class="box-title" x="48" y="210" fill="var(--text-primary)">watch</text>
+    <text class="mono" x="48" y="232" fill="var(--text-secondary)">sdtools jobs · sdtools agents</text>
+    <text class="mono" x="48" y="252" fill="var(--text-secondary)">GET /v1/workflows/{id}</text>
+
+    <text class="note" x="34" y="306" fill="var(--text-muted)">scope=submit key: can queue</text>
+    <text class="note" x="34" y="323" fill="var(--text-muted)">and read, cannot ingest.</text>
+
+    <!-- api -->
+    <rect x="370" y="56" width="380" height="120" rx="9"
+          fill="var(--surface-1)" stroke="var(--series-1)" stroke-width="1.5"/>
+    <text class="box-title" x="384" y="80" fill="var(--text-primary)">expand + gate</text>
+    <text class="box-body" x="384" y="102" fill="var(--text-secondary)">workflow YAML → jobs; cycles rejected (422)</text>
+    <text class="box-body" x="384" y="122" fill="var(--text-secondary)">steps with `after:` start blocked; promoted to</text>
+    <text class="box-body" x="384" y="142" fill="var(--text-secondary)">queued only when every dependency is ok</text>
+    <text class="mono" x="384" y="164" fill="var(--text-muted)">${params.x} substitution at submit time</text>
+
+    <rect x="370" y="196" width="380" height="104" rx="9"
+          fill="var(--surface-1)" stroke="var(--series-7)" stroke-width="1.5"/>
+    <text class="box-title" x="384" y="220" fill="var(--text-primary)">claim — the deterministic core</text>
+    <text class="mono" x="384" y="242" fill="var(--text-secondary)">ORDER BY priority, created_at, job_id</text>
+    <text class="box-body" x="384" y="262" fill="var(--text-secondary)">filtered by queue + require_labels ⊆ agent labels;</text>
+    <text class="box-body" x="384" y="282" fill="var(--text-secondary)">guarded UPDATE ⇒ exactly one winner; claim = lease</text>
+
+    <rect x="370" y="320" width="380" height="88" rx="9"
+          fill="var(--surface-2)" stroke="var(--critical)" stroke-width="1.5"/>
+    <text class="box-title" x="384" y="344" fill="var(--text-primary)">sweeper — failure is a state, not a surprise</text>
+    <text class="box-body" x="384" y="366" fill="var(--text-secondary)">expired lease → requeue (attempts &lt; max) or fail</text>
+    <text class="box-body" x="384" y="386" fill="var(--text-secondary)">failed step → cancel downstream cone (UpstreamFailed)</text>
+
+    <!-- workers -->
+    <g>
+      <rect x="838" y="70" width="222" height="150" rx="9"
+            fill="var(--surface-0)" stroke="var(--border)"/>
+      <rect x="830" y="62" width="222" height="150" rx="9"
+            fill="var(--surface-0)" stroke="var(--border)"/>
+      <rect x="822" y="54" width="222" height="150" rx="9"
+            fill="var(--surface-1)" stroke="var(--series-3)" stroke-width="1.5"/>
+      <text class="box-title" x="836" y="78" fill="var(--text-primary)">sdtools agent</text>
+      <text class="mono" x="836" y="100" fill="var(--text-secondary)">--queue heavy --labels bigmem</text>
+      <text class="box-body" x="836" y="122" fill="var(--text-secondary)">poll → claim → execute via the</text>
+      <text class="box-body" x="836" y="141" fill="var(--text-secondary)">normal runner (full telemetry:</text>
+      <text class="box-body" x="836" y="160" fill="var(--text-secondary)">NDJSON, spool, heartbeat, digest)</text>
+      <text class="mono" x="836" y="182" fill="var(--text-muted)">lease renewal thread alongside</text>
+    </g>
+    <rect x="822" y="244" width="238" height="66" rx="9"
+          fill="var(--surface-2)" stroke="var(--border-strong)"/>
+    <text class="box-title" x="836" y="268" fill="var(--text-primary)">kill -9 / power loss</text>
+    <text class="box-body" x="836" y="290" fill="var(--text-secondary)">renewal stops → lease expires →</text>
+    <text class="box-body" x="836" y="308" fill="var(--text-secondary)">another machine takes the job</text>
+
+    <text class="note" x="822" y="352" fill="var(--text-muted)">scope=ingest key: telemetry +</text>
+    <text class="note" x="822" y="369" fill="var(--text-muted)">claim, cannot read history.</text>
+    <text class="note" x="822" y="394" fill="var(--text-muted)">Add capacity = start one more agent.</text>
+
+    <!-- plane -->
+    <rect x="1120" y="56" width="92" height="170" rx="9"
+          fill="var(--surface-1)" stroke="var(--border-strong)"/>
+    <text class="box-title" x="1132" y="80" fill="var(--text-primary)">work</text>
+    <text class="box-title" x="1132" y="98" fill="var(--text-primary)">item</text>
+    <text class="box-body" x="1132" y="124" fill="var(--text-secondary)">per</text>
+    <text class="box-body" x="1132" y="142" fill="var(--text-secondary)">workflow</text>
+    <text class="mono" x="1132" y="168" fill="var(--text-muted)">[run ✓ ok]</text>
+    <text class="mono" x="1132" y="186" fill="var(--text-muted)">[run ✕</text>
+    <text class="mono" x="1132" y="202" fill="var(--text-muted)"> failed]</text>
+
+    <!-- edges -->
+    <defs>
+      <marker id="d-arrow" viewBox="0 0 10 10" refX="9" refY="5"
+              markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,1 L9,5 L0,9 z" fill="var(--border-strong)"/>
+      </marker>
+      <marker id="d-blue" viewBox="0 0 10 10" refX="9" refY="5"
+              markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,1 L9,5 L0,9 z" fill="var(--series-1)"/>
+      </marker>
+      <marker id="d-aqua" viewBox="0 0 10 10" refX="9" refY="5"
+              markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,1 L9,5 L0,9 z" fill="var(--series-3)"/>
+      </marker>
+      <marker id="d-warn" viewBox="0 0 10 10" refX="9" refY="5"
+              markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0,1 L9,5 L0,9 z" fill="var(--critical)"/>
+      </marker>
+    </defs>
+    <path d="M298,110 L368,110" stroke="var(--series-1)" stroke-width="2"
+          fill="none" marker-end="url(#d-blue)"/>
+    <text class="edge-label" x="303" y="100" fill="var(--series-1)">POST</text>
+    <path d="M368,228 L298,228" stroke="var(--border-strong)" stroke-width="1.6"
+          fill="none" marker-end="url(#d-arrow)"/>
+    <path d="M820,120 L752,236 " stroke="var(--series-3)" stroke-width="2"
+          fill="none" marker-end="url(#d-aqua)"/>
+    <text class="edge-label" x="762" y="150" fill="var(--series-3)">poll / claim</text>
+    <path d="M752,270 L820,180" stroke="var(--series-3)" stroke-width="2"
+          fill="none" stroke-dasharray="6 4" marker-end="url(#d-aqua)"/>
+    <text class="edge-label" x="726" y="312" fill="var(--series-3)">start · lease · finish</text>
+    <path d="M822,277 L780,318" stroke="var(--critical)" stroke-width="1.6"
+          fill="none" stroke-dasharray="5 4" marker-end="url(#d-warn)"/>
+    <path d="M750,392 L786,392 L786,420 L1148,420 L1148,228" stroke="var(--border-strong)"
+          stroke-width="1.6" fill="none" marker-end="url(#d-arrow)"/>
+    <text class="edge-label" x="850" y="414" fill="var(--text-secondary)">workflow finished → work item + comment</text>
+  </svg>
+  </div>
+
+  <div class="notes">
+    <div class="card"><h3>Why client-generated run ids</h3>
+      <p>A run gets its UUID <b>before</b> it talks to the server, so a job that
+      starts offline keeps one identity when its telemetry arrives later — and
+      replay is idempotent.</p></div>
+    <div class="card"><h3>Why the digest is the cache key</h3>
+      <p>Summaries are keyed on <b>(log_digest, prompt_version)</b>, not run id.
+      An identical rerun costs nothing. It also means the prompt carries <b>no
+      identity</b> — a name in it would leak across shared summaries.</p></div>
+    <div class="card"><h3>Why reduce before the model</h3>
+      <p>95% of a long log is one line with a different number. Collapsing by
+      shape while keeping every error makes the summary both <b>cheaper and
+      better</b> — token count stops depending on job length.</p></div>
+    <div class="card"><h3>Why heartbeats</h3>
+      <p>Without them, "running" and "the laptop closed two hours ago" look
+      identical. The sweeper turns silence into <b>status = lost</b>.</p></div>
+  </div>
+
+<script>
+  document.getElementById("theme").onclick = () => {
+    const r = document.documentElement;
+    r.dataset.theme = r.dataset.theme === "dark" ? "light" : "dark";
+  };
+</script>
+</div>
+</body>
+</html>

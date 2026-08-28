@@ -1,0 +1,7 @@
+project = "fleet-default"
+
+[api]
+url = "http://sdai-aanik.tail46aaf0.ts.net:8080"
+
+[tools]
+dir = "C:/sdtools/tools"

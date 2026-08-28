@@ -1,0 +1,23 @@
+# Two layers, one format:
+#   <toolkit>\config.toml      fleet defaults, shipped in the installer payload
+#                              (api.url, project, telemetry tuning — NO keys)
+#   ~/.sdtools/config.toml     per-machine overrides (api.key lives HERE)
+# Machine file wins over fleet file; every key has an SDTOOLS_* env override
+# that wins over both.
+user    = "anik"
+email   = "aanik@spatialdata.ai"
+project = "sundre-2026"          # default grouping for every run
+
+[api]
+url = "https://runs.internal.spatialdata.ai"
+key = "sdt_inge_…"               # ingest-scope key, one per machine
+
+[tools]
+dir = "/opt/sdtools/tools"
+
+[telemetry]
+upload_timeout_s   = 5.0
+batch_lines        = 256         # raise for very chatty tools
+batch_interval_s   = 2.0
+heartbeat_s        = 15.0
+log_retention_days = 30          # local NDJSON pruning

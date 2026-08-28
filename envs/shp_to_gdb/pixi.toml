@@ -1,0 +1,8 @@
+[workspace]
+name = "shp_to_gdb"
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[dependencies]
+python = "3.12.*"
+gdal = ">=3.6"

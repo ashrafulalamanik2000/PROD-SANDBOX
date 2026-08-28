@@ -1,0 +1,33 @@
+# Split out of tile-thin-clip 2026-08-28 (tools_archived/tile_thin_clip) so
+# each stage runs, composes, and dispatches on its own. Clipping only.
+# 0.2.0: clips to an AOI polygon shapefile AS-IS (no buffering) — buffer
+# line layers into a polygon AOI upstream if needed.
+name: clip
+version: 0.2.0
+summary: 'Clip every LAS/LAZ in a directory to the union of an AOI polygon shapefile and merge into one output cloud. Clipping stage of the former tile-thin-clip.'
+group: pointcloud
+runtime: python
+entry: src/clip.py
+environment: tile_thin_clip
+timeout_s: 3600
+params:
+- name: input_dir
+  type: path
+  required: true
+  help: Directory with LAS/LAZ files to clip (top level only)
+- name: aoi_shp
+  type: path
+  required: true
+  help: AOI polygon shapefile; clouds are clipped to the union of its features (used as-is, no buffering)
+- name: output
+  type: str
+  required: true
+  help: Output clipped+merged cloud path (.las, or .laz to compress)
+- name: batch_size
+  type: int
+  default: 20
+  help: Files per PDAL batch
+- name: workers
+  type: int
+  default: 8
+  help: Parallel worker processes

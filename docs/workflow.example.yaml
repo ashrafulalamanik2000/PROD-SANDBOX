@@ -1,0 +1,41 @@
+# A workflow is a DAG of jobs. Submit with:
+#   sdtools workflow docs/workflow.example.yaml --set site=/data/sundre --watch
+#
+# Determinism guarantees:
+#   * steps become jobs at submission time; `after` gates dispatch — a step
+#     is offered to agents only when every dependency finished ok
+#   * within a queue, ready jobs dispatch in (priority, created_at, job_id)
+#     order — two identical submissions dispatch identically
+#   * a failed step cancels its downstream cone (UpstreamFailed); parallel
+#     branches that don't depend on it keep running
+#   * queue + require_labels route steps to the right machines
+
+name: sundre-nightly
+project: sundre-2026
+params:
+  site: /data/sundre           # referenced below as ${params.site}
+
+steps:
+  - key: inventory
+    tool: las-info
+    params: {input: "${params.site}", recursive: true}
+
+  - key: index
+    tool: tile-index
+    after: [inventory]
+    queue: heavy                # only agents polling --queue heavy take this
+    require_labels: [bigmem]    # ...and only if they advertise the label
+    params:
+      input: "${params.site}"
+      out: "${params.site}/index.json"
+      workers: 8
+
+  - key: qc-north
+    tool: las-info
+    after: [index]
+    params: {input: "${params.site}"}
+
+  - key: qc-south
+    tool: las-info
+    after: [index]
+    params: {input: "${params.site}"}

@@ -1,0 +1,31 @@
+[workspace]
+name = "topo_chain"
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[dependencies]
+python = "3.12.*"
+# LAS/LAZ IO for every vendored script (inspect, stratify, noise, restore_rgb)
+laspy = ">=2.5"
+lazrs-python = "*"
+numpy = ">=1.26"
+scipy = ">=1.11"
+pandas = ">=2.0"
+# vector outputs (pole network nodes/edges, wall/road shapefiles)
+geopandas = ">=0.14"
+shapely = ">=2.0"
+pyproj = ">=3.6"
+fiona = ">=1.9"
+# wall extractor / road-surface rasterization (external chain scripts)
+rasterio = ">=1.3"
+# classify.sh preflight: oversize clouds are tiled with the pdal CLI (it
+# aborts with "Set $PDAL_EXE" otherwise); laszip serves its LAZ handling
+pdal = ">=2.6"
+laszip = "*"
+# pole discovery DBSCAN + pole-network span graph
+scikit-learn = ">=1.3"
+networkx = ">=3.0"
+# presample driver + misc
+pyyaml = ">=6.0"
+tqdm = ">=4.65"
+joblib = ">=1.3"

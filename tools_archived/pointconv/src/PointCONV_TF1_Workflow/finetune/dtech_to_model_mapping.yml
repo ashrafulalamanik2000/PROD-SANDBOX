@@ -1,0 +1,69 @@
+# DTECH source class -> PointCONV 6-class model index mapping for FINE-TUNING.
+#
+# The model layout from PointCONV_model_6class_v0.0.10/exp_def.p is:
+#   0 = wire
+#   1 = pole
+#   2 = veg
+#   3 = ground
+#   4 = man_made (building)
+#   5 = transmission tower    <-- FROZEN: no fine-tune signal will flow through this class.
+#
+# Each entry below maps a DTECH source classification value to a model index.
+# Source classes that are not listed are treated as "ignore" (sample weight = 0).
+#
+# This mapping is the same one used by the IoU evaluator (class_mapping.yml in
+# experiments/iou_eval_*) so training labels and evaluation labels stay aligned.
+
+source_to_model_idx:
+  # wire -> 0
+  14: 0    # Wire - General
+  30: 0    # Wire - Transmission
+  31: 0    # Wire - Guy wire
+
+  # pole -> 1 (utility + street/traffic + pole-mounted attachments)
+  18: 1    # Pole - electrical/utility
+  19: 1    # Pole - street/traffic
+  20: 1    # Pole - other
+  70: 1    # Streetlight arm
+  71: 1    # Streetlight head
+  72: 1    # Electrical pole transformers
+  73: 1    # Electrical pole cross bar (cross arm)
+  74: 1    # Electrical insulators
+  75: 1    # Traffic-light arm
+  76: 1    # Traffic-light
+  77: 1    # LRT pole arm
+  89: 1    # Fuse/switch
+  90: 1    # Cable TV power supply (pole-mounted)
+  91: 1    # Transformer (pole)
+
+  # veg -> 2
+  3: 2     # Low vegetation
+  4: 2     # Medium vegetation
+  5: 2     # High vegetation
+
+  # ground -> 3
+  2: 3     # Ground
+  40: 3    # Road / pavement
+  41: 3    # Rail
+  42: 3    # Road / gravel road edge
+  43: 3    # Railway blast
+  50: 3    # Bridge deck
+  51: 3    # Sidewalk / concrete
+  52: 3    # Street curb
+
+  # man_made -> 4
+  6: 4     # Building
+  10: 4    # Misc (building particulars / piles)
+
+  # transmission tower -> 5  (will be 0 in this dataset; no labels assigned to this index)
+  15: 5    # Pole - Transmission tower
+
+# Sample-weight policy:
+#   - Points whose source class is mapped above:  smpw = 1.0
+#   - Points labeled with class 5 (transmission): smpw = 0.0  (frozen)
+#   - All other points (ignored source classes):  smpw = 0.0
+#
+# At training time the trainer further multiplies smpw by per-class weights
+# computed from the training-split label histogram so rare classes (pole, wire)
+# get more loss attention.
+freeze_model_indices: [5]

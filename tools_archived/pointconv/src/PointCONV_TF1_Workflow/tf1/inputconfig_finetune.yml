@@ -1,0 +1,140 @@
+
+GPU_INDEX: -1 # set to specific gpu or -1 for the gpu with minimal load
+
+preprocessing:
+  thin_data: # 0.025 # leave blank for no thinning
+
+  voxel_size: 0.1
+
+  num_threads_file_voxelization: 21
+
+  convert_feet_to_meters: false
+
+  OutputLAS_FileFormat: 1.4
+  OutputLAS_PointFormat: 7
+
+  min_num_pts_voxel: 16384
+
+
+PointConv:
+  # Mobile-lidar fine-tuned 6-class model. Released 2026-04-30, warm-started
+  # from PointCONV_model_6class_v0.0.10 and fine-tuned on DTECH Otter Creek
+  # 2025 mobile-lidar tiles. Per-class IoU vs warm-start baseline:
+  #   ground +0.07, high-veg +0.12, building +0.17, wire +0.04, pole +0.23
+  #   mean (5 supported classes): 0.743 -> 0.869.
+  # If the model directory is missing locally, the TF1 wrapper at
+  # PointCONV/PointCONV.py downloads it from
+  #   s3://sdai-model/lidar_ml/PointCONV_model_6class_Mobile_v0.0.10
+  # using the AWS credentials mounted at /root/.aws (see
+  # tf1/Docker_Run_Classification_Finetune.bat).
+  # >>> AUTHORITATIVE Stage-1 model selector <<<
+  # The chain preset's `stage1_pointconv.model_name` is INFORMATIONAL ONLY — it
+  # sets the MODEL_NAME echo label in run_tf1_tiled_multi_source.sh but does NOT
+  # pick the model. The whole models/ dir is mounted at /model and
+  # classification.py loads /model/<model_directory>/Best_Model/model.ckpt.
+  # chain_orchestrator.run_stage1_pointconv WARNs if model_name != this value.
+  # 2026-06-01: bumped v0.0.13_al1 -> v0.0.15 (closes #120).
+  # 2026-06-08: bumped v0.0.15 -> v0.0.17_retune_a1x (best dim-3 model).
+  # 2026-06-08: bumped a1x -> v0.0.17_retune_c1 — the program's best model
+  # (Doug-holdout mean 0.6838 vs a1x 0.675; OC 0.8845 vs 0.8825). c1 is a
+  # DIM-6 model (XYZ + hag + linearity + verticality, exp_def['dim']=6); the
+  # dim-6 inference code is now integrated (geometry_features.py + dim-gated
+  # edits to SamplePoints/Dataset/PointCONV_Segment/PointConv_Seg/
+  # process_combined_seg_results). Revert to a1x for a dim-3 fallback.
+  # Keep model_name in the presets in lockstep.
+  model_directory: PointCONV_model_6class_Mobile_v0.0.18_retune_c2
+
+  num_threads_PointCONV_sample: 21
+
+  voxel_size_baseline: 0.1
+
+  map_to_original_points: true
+
+  GPU_INDEX: -1 # set to specific gpu or -1 for the gpu with minimal load
+
+  BATCH_SIZE: 12
+
+  random_seed_sample_points: 42
+  num_classes: 6
+
+  min_points_in_region: 24576
+  max_points_per_region: 311296
+  min_samples_per_point: 1
+  num_candidates: 30
+  noise_labels:
+    - 7
+    - 8
+
+  # The 6-class fine-tuned model has the same output layout as
+  # PointCONV_model_6class_v0.0.10:
+  #   model idx 0 -> LAS 14 (Wire)
+  #   model idx 1 -> LAS 18 (Utility Pole, including the new pole-like fold-ins)
+  #   model idx 2 -> LAS  5 (High Vegetation)
+  #   model idx 3 -> LAS  2 (Ground)
+  #   model idx 4 -> LAS  6 (Building / man-made)
+  #   model idx 5 -> LAS 15 (Transmission Tower; tower head was frozen during fine-tune)
+  #
+  # class_to_model below extends the original mapping with the DTECH source
+  # classes that were folded into pole / wire / ground during fine-tuning,
+  # so that any optional training-data export from this config produces
+  # labels consistent with the fine-tune mapping. Inference itself only
+  # uses model_to_class.
+  class_mapping_model:
+    class_label:
+      - 14
+      - 18
+      - 5
+      - 2
+      - 6
+      - 15
+    model_to_class:
+      0: 14
+      1: 18
+      2: 5
+      3: 2
+      4: 6
+      5: 15
+    class_to_model:
+      0: 4
+      1: 4
+      # wire -> 0
+      14: 0
+      30: 0
+      31: 0
+      # pole -> 1 (utility + street/traffic + pole-mounted attachments)
+      18: 1
+      19: 1
+      20: 1
+      70: 1
+      71: 1
+      72: 1
+      73: 1
+      74: 1
+      75: 1
+      76: 1
+      77: 1
+      89: 1
+      90: 1
+      91: 1
+      # veg -> 2
+      3: 2
+      4: 2
+      5: 2
+      # ground -> 3
+      2: 3
+      40: 3
+      41: 3
+      42: 3
+      43: 3
+      50: 3
+      51: 3
+      52: 3
+      # man_made -> 4
+      6: 4
+      10: 4
+      # transmission tower -> 5
+      15: 5
+
+  learning_data_base_dir:
+
+  training_data_config:

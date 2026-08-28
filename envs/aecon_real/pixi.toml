@@ -1,0 +1,29 @@
+[workspace]
+name = "aecon_real"
+channels = ["conda-forge"]
+# add "linux-64" here if agents on Linux workers will run this tool
+platforms = ["win-64"]
+
+[dependencies]
+python = "3.12.*"
+# pdal pipeline: python-pdal gives `import pdal`, pdal gives pdal.exe
+# (aecon.py prepends the env's Library\bin to PATH to find it)
+pdal = "*"
+python-pdal = ">=3.4"
+geopandas = ">=0.14"
+shapely = ">=2.0"
+fiona = ">=1.9"
+pyproj = ">=3.6"
+laspy = ">=2.5"
+numpy = ">=1.24"
+pandas = ">=2.0"
+scipy = ">=1.11"
+# requirements.v2.txt asks for opencv-python-headless; conda-forge's `opencv`
+# provides the same cv2 module without needing a display
+opencv = ">=4.8"
+pillow = ">=9.0"
+pyyaml = ">=6.0"
+tqdm = ">=4.65"
+# .laz support for laspy — needed since this env also serves mobile-data-preprocessing,
+# whose DFX lasindex stage accepts .laz inputs:
+lazrs-python = "*"

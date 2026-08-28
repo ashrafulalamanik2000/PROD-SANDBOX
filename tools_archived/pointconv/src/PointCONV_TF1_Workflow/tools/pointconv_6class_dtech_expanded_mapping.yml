@@ -1,0 +1,27 @@
+# DTECH / SDAI source LAS classes folded into the current PointCONV 6-class
+# output labels. This is the expanded mapping documented for
+# PointCONV_model_6class_Mobile_v0.0.13_al1.
+
+pointconv_classes:
+  14:
+    name: Wire
+    sources: [14, 30, 31]
+  18:
+    name: Pole
+    sources: [18, 19, 20, 70, 71, 72, 73, 74, 75, 76, 77, 89, 90, 91]
+  5:
+    name: Vegetation
+    sources: [3, 4, 5]
+  2:
+    name: Ground
+    sources: [2, 40, 41, 42, 43, 50, 51, 52]
+  6:
+    name: Manmade / Building
+    sources: [6, 10, 23, 24, 26, 27, 28, 46, 54, 61, 62, 63, 64, 67, 79, 80, 81, 82, 83, 84, 86, 87, 92, 93, 95]
+  15:
+    name: Transmission Tower
+    sources: [15]
+
+ignore_sources: [0, 1, 7, 8, 9]
+unmapped_source_policy: ignore
+ignore_no_prediction: true

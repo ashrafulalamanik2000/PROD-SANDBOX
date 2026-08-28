@@ -1,0 +1,54 @@
+# reviewed 2026-08-26: params match tile_thin_clip.py argparse. Runs NATIVELY
+# in the pixi env (python-pdal from conda-forge) — the mmworkflow Docker image
+# from the skill's SETUP.md is NOT needed.
+# source copied from: \\SDAI-FS1\Production\Projects\CLAUDE\SDAI-PROD-AGENT-01\Workflows\DFX_Project\skills\tile_thin_clip
+name: tile-thin-clip
+version: 0.1.0
+summary: 'Tile large LAS/LAZ, voxel-thin each tile, and clip to a buffered network AOI (DFX clip-aoi step).'
+runtime: python
+entry: src/scripts/tile_thin_clip.py
+environment: tile_thin_clip
+timeout_s: 3600
+params:
+- name: input_dir
+  type: path
+  required: true
+  help: Directory with source LAS/LAZ files
+- name: output_dir
+  type: path
+  required: true
+  help: Pipeline output root directory
+- name: network_shp
+  type: str
+  help: NETWORK_LINES.shp for clip step
+- name: max_points_per_tile
+  type: int
+  default: 13000000
+  help: Max points per tile (~0.5GB at 38 bytes/pt)
+- name: voxel_size
+  type: float
+  default: 0.05
+  help: Voxel size for thinning (map units)
+- name: thin_workers
+  type: int
+  default: 20
+  help: Parallel workers for thinning
+- name: buffer
+  type: float
+  default: 3.0
+  help: Buffer distance in metres around network lines
+- name: batch_size
+  type: int
+  default: 20
+  help: Files per PDAL batch for clipping
+- name: clip_workers
+  type: int
+  default: 8
+  help: Parallel workers for clipping
+- name: clip_output
+  type: str
+  help: 'Output clipped LAS path (default: <output-dir>/clipped.las)'
+- name: steps
+  type: str
+  default: tile,thin,clip
+  help: 'Comma-separated stages to run: tile,thin,clip (default: all)'

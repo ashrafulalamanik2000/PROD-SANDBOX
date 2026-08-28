@@ -1,0 +1,11 @@
+{
+  "src_root": "\\\\SDAI-FS1\\Production\\MediaShuttle\\Internal_Transfer\\<sender>\\<batch>\\All Segmented",
+  "sites": {
+    "GIL_M2":  { "epsg": 26915, "subdirs": ["gil_m2_0523"] },
+    "LSK_M2":  { "epsg": 26914, "subdirs": ["lsk_m2_052r"] },
+    "PNT_M3":  { "epsg": 26914, "subdirs": ["pnt_m3_0522_1to6", "pnt_m3_0522_8to18"] },
+    "SLK_M11": { "epsg": 26914, "subdirs": ["slk_m11_0523"] },
+    "WAB_M2":  { "epsg": 26914, "subdirs": ["wab_m2_0522"] },
+    "_EXAMPLE_EXPLICIT_GLOBS": { "epsg": 26914, "laz": ["D:/some/dir/*.laz", "D:/other/*.laz"] }
+  }
+}

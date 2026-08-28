@@ -1,0 +1,27 @@
+# Split out of tile-thin-clip 2026-08-28 (tools_archived/tile_thin_clip) so
+# each stage runs, composes, and dispatches on its own. Thinning only.
+name: thin
+version: 0.1.0
+summary: 'Voxel-downsample every LAS/LAZ in a directory to compressed LAZ (first point per voxel kept). Thinning stage of the former tile-thin-clip.'
+group: pointcloud
+runtime: python
+entry: src/thin.py
+environment: tile_thin_clip
+timeout_s: 3600
+params:
+- name: input_dir
+  type: path
+  required: true
+  help: Directory with LAS/LAZ files to thin (top level only)
+- name: output_dir
+  type: path
+  required: true
+  help: Directory the thinned .laz files are written into
+- name: voxel_size
+  type: float
+  default: 0.05
+  help: Voxel size for thinning (map units)
+- name: workers
+  type: int
+  default: 20
+  help: Parallel worker processes

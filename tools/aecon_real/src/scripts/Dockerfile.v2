@@ -1,0 +1,28 @@
+# AECON Pipeline — Linux Docker image with FULL pipeline (pano included).
+# Replaces Solv3D engine.exe with the pure-Python pano_generator.py.
+FROM pdal/pdal:latest
+
+ENV DEBIAN_FRONTEND=noninteractive \
+    PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PATH=/opt/conda/bin:$PATH
+
+# System libs needed by opencv-python-headless
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libgl1 \
+    libglib2.0-0 \
+ && rm -rf /var/lib/apt/lists/*
+
+# pdal is already bundled in the base image via conda; install the rest
+# against the conda python to guarantee a single environment.
+COPY requirements.txt /tmp/requirements.txt
+RUN /opt/conda/bin/python3 -m pip install --no-cache-dir -r /tmp/requirements.txt
+
+WORKDIR /app
+COPY aecon.py stages.py colorize.py camera_utils.py rotation_utils.py pano_generator.py /app/
+
+# Use the local pano_generator.py instead of Solv3D engine.exe.
+ENV AECON_ENGINE="python3 /app/pano_generator.py" \
+    AECON_PANO_WORKERS=16
+
+ENTRYPOINT ["/opt/conda/bin/python3", "/app/aecon.py"]

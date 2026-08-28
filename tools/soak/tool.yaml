@@ -1,0 +1,17 @@
+name: soak
+version: 1.0.0
+summary: Burn N seconds with progress (dispatch/lease testing and load drills).
+group: diagnostics
+runtime: python
+entry: run.py
+timeout_s: 3600
+writes: false
+params:
+  - name: seconds
+    type: float
+    default: 10
+    help: How long to run.
+  - name: fail
+    type: bool
+    default: false
+    help: Exit 1 at the end instead of 0.

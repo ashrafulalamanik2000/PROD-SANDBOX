@@ -1,0 +1,67 @@
+# reviewed 2026-08-25: params checked against run_pipeline.py argparse.
+# source copied from: \\SDAI-FS1\Production\Projects\CLAUDE\SDAI-PROD-AGENT-01\Skills\pointconv_classification
+# (staged through a local robocopy — wrapping straight off the share got killed mid-copy)
+# GPU inference runs inside the mmworkflow Docker image (--pull=never, must exist
+# locally; see src/SETUP.md); this env covers only the host presample/preflight side.
+name: pointconv
+version: 0.1.0
+summary: 'PointCONV 6-class LAS/LAZ classification: host presample + preflight, then TF1 inference in the mmworkflow Docker image.'
+runtime: python
+entry: src/scripts/run_pipeline.py
+environment: pointconv
+timeout_s: 3600
+params:
+- name: data_path
+  type: path
+  required: true
+  positional: true
+  help: LAS/LAZ file or directory containing LAS/LAZ files
+- name: run_dir
+  type: path
+  help: Run directory (default derived by the script)
+- name: pcv_dir
+  type: path
+  help: PointCONV_TF1_Workflow dir (default the bundled src/PointCONV_TF1_Workflow)
+- name: model_name
+  type: str
+  help: 'script default: PointCONV_model_6class_Mobile_v0.0.18_retune_c2 (bundled)'
+- name: model_dir
+  type: path
+  help: Override model location (default inside pcv_dir/models)
+- name: inputconfig
+  type: str
+  help: 'script default: tf1/inputconfig_finetune_lowmem.yml — must match between presample and inference'
+- name: image
+  type: str
+  help: 'script default: 750433818015.dkr.ecr.us-west-2.amazonaws.com/mmworkflow:v1.8.0.1 (must exist locally, run with --pull=never)'
+- name: batch_size
+  type: int
+  default: 24
+  help: Inference batch size, must be >= 1
+- name: random_seed
+  type: int
+  default: 42
+- name: workers
+  type: int
+  default: 4
+  help: Presample workers, must be >= 1
+- name: epsg
+  type: int
+  help: Override EPSG when the LAS header lacks a CRS
+- name: preflight_only
+  type: bool
+  default: false
+- name: preflight_json
+  type: bool
+  default: false
+- name: skip_runtime_check
+  type: bool
+  default: false
+- name: rebuild_patches
+  type: bool
+  default: false
+  help: discard patches only when their manifest does not match current inputs
+- name: dry_run_arg
+  type: bool
+  default: false
+  flag: --dry-run

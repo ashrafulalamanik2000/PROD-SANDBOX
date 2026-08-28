@@ -1,0 +1,70 @@
+# Hand-written 2026-08-26. Wraps the pole-network-catenary skill (vendored in
+# src/skill/, extracted from chain-full v0.3.48) onto OUR canonical layout:
+# Lidar\Classified in (classes 14 wire + 18 pole) -> Vectors\Poles out
+# (Network\ nodes/edges, PoleVec\ body lines/wires/catenaries/DXF), all temp
+# incl. the per-pole crops under Vectors\Poles\_work (--stages clean deletes).
+# discover/crop/network are CPU (external scripts via --chain-src); polevec
+# FULL is GPU Docker (sdai_chain_polevec volume) — runs on the GPU box.
+name: pole-vec
+version: 0.1.0
+summary: 'Pole network + catenary vectorization on the canonical layout: Lidar/Classified -> pole discovery -> per-pole crops -> span-graph nodes/edges -> FULL pole-vec (GPU: body lines, parabola wires, catenary spans, DXF) -> Vectors/Poles. Temp in Vectors/Poles/_work; --stages clean deletes it.'
+runtime: python
+entry: src/pole_vec.py
+environment: topo_chain
+timeout_s: 43200
+params:
+- name: data_root
+  type: path
+  required: true
+  positional: true
+  help: Project root (canonical layout)
+- name: stages
+  type: str
+  default: all
+  help: 'Comma-separated: inspect,discover,crop,network,polevec,clean or all (= everything except clean; clean deletes Vectors\Poles\_work incl. crops)'
+- name: epsg
+  type: int
+  required: true
+  help: Metric CRS of the classified cloud (pole-vec thresholds are hard metric)
+- name: input_dir
+  type: str
+  default: ''
+  help: Override input dir (default <root>\Lidar\Classified)
+- name: out_dir
+  type: str
+  default: ''
+  help: Override output dir (default <root>\Vectors\Poles)
+- name: chain_src
+  type: str
+  default: ''
+  help: agentic-workflows checkout root for discovery/crop/network scripts (or env SDAI_CHAIN_SRC)
+- name: las_pattern
+  type: str
+  default: '*.las'
+  help: Input glob for discovery (.laz inputs need an explicit pattern)
+- name: half_size
+  type: int
+  default: 50
+  help: Crop half-size (m) — must reach past mid-span so adjacent crops overlap
+- name: min_pole_height
+  type: int
+  default: 4
+- name: max_pole_height
+  type: int
+  default: 30
+- name: max_workers
+  type: int
+  default: 8
+  help: Crop stage parallelism
+- name: max_span
+  type: int
+  default: 100
+  help: 'Network: max span length (m); raise for transmission corridors'
+- name: las_threads
+  type: int
+  default: 8
+  help: 'polevec: las_files_num_threads in the runtime control (lower to 2 on container OOM/SIGKILL)'
+- name: plan
+  type: bool
+  default: false
+  help: Print every command without running

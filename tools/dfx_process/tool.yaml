@@ -1,0 +1,42 @@
+# reviewed 2026-08-26: params checked against dfx.py argparse. Fully native —
+# the pano stage runs the bundled pano_generator.py with this env's interpreter
+# (no Docker, no Solv3D engine).
+# source copied from: \\SDAI-FS1\Production\Projects\CLAUDE\SDAI-PROD-AGENT-01\Workflows\DFX_Project\skills\dfx_process
+name: dfx-process
+version: 0.1.0
+summary: 'DFX pipeline: .lst -> camera CSVs, camera-point SHPs + LAS extent index, and cubemap -> equirectangular panoramas.'
+runtime: python
+entry: src/scripts/dfx.py
+environment: dfx_process
+timeout_s: 3600
+params:
+- name: maindir
+  type: path
+  required: true
+  positional: true
+  help: Dataset root containing the mission folders
+- name: stages
+  type: str
+  default: all
+  help: 'Comma-separated: csv,shp,lasindex,pano or all'
+- name: epsg
+  type: int
+  default: 26914
+  help: Working CRS (from the work order), must be >= 1
+- name: pn
+  type: str
+  default: ''
+  help: Project number for viewer hyperlinks (needed by the shp stage with --addhp yes)
+- name: platform
+  type: str
+  default: viewer
+  choices: [viewer, cloud]
+- name: addhp
+  type: str
+  default: 'yes'
+  choices: ['yes', 'no']
+  help: Add viewer hyperlinks to camera point shapefiles
+- name: pano_workers
+  type: int
+  default: 16
+  help: Parallel pano workers, must be >= 1

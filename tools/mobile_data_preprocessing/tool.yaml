@@ -1,0 +1,77 @@
+# Master front door for both client pipelines. Hand-written 2026-08-26 (not
+# `sdtools wrap`): src/mobile_data_preprocessing.py dispatches to the sibling
+# tools' sources (tools/aecon_real, tools/dfx_process) with a unified stage
+# vocabulary — organize, csv, shp, pano, colorize. Pano is the SAME
+# pano_generator.py for both clients, run natively (no Docker, no Solv3D);
+# colorize is AECON-only; organize/shp are per-client. Classification is NOT
+# a stage here (GPU Docker — see the pointconv tool).
+# Uses the aecon_real pixi env: the superset (cv2/PIL + geopandas + pdal).
+# Renamed 2026-08-26 from `sdai-process` after the Cambridge_P3_60 validation.
+name: mobile-data-preprocessing
+version: 0.2.0
+summary: 'Unified DFX/AECON mobile-data preprocessing: auto-detects the client, then organize -> metadata -> index -> pano -> colorize with one purpose-named stage vocabulary, all native. LAS stage outputs land in Lidar/Colorized, Lidar/Clipped, Lidar/Classified.'
+runtime: python
+entry: src/mobile_data_preprocessing.py
+environment: aecon_real
+timeout_s: 14400
+params:
+- name: data_root
+  type: path
+  required: true
+  positional: true
+  help: Dataset root (mission/project folders inside)
+- name: client
+  type: str
+  default: auto
+  choices: [auto, aecon, dfx]
+  help: auto-detects by layout (*.iprj = AECON, Raw Project Data/Image Project = DFX)
+- name: stages
+  type: str
+  default: all
+  help: 'Comma-separated unified stages: organize,metadata,index,pano,colorize or all (csv/shp accepted as aliases of metadata/index; non-applicable stages are skipped per client). See docs/WORKFLOW.md for what each stage does and why.'
+- name: epsg
+  type: int
+  required: true
+  help: Working CRS from the work order / dataset memory (never assume)
+- name: pano_workers
+  type: int
+  default: 8
+  help: Pano workers (DFX) / threads per LAS (AECON)
+- name: project_workers
+  type: int
+  default: 2
+  help: 'AECON: parallel projects'
+- name: las_workers
+  type: int
+  default: 2
+  help: 'AECON colorize: parallel LAS files per project'
+- name: search_radius
+  type: int
+  default: 45
+  help: AECON colorize search radius (m)
+- name: buffer
+  type: int
+  default: 45
+  help: AECON colorize clip buffer (m)
+- name: pn
+  type: str
+  default: ''
+  help: 'DFX: project number for viewer hyperlinks'
+- name: platform
+  type: str
+  default: viewer
+  choices: [viewer, cloud]
+  help: 'DFX: hyperlink platform'
+- name: addhp
+  type: str
+  default: 'yes'
+  choices: ['yes', 'no']
+  help: 'DFX: add viewer hyperlinks to camera points'
+- name: keep_colorized
+  type: bool
+  default: false
+  help: 'AECON: keep the full colorized LAS in Lidar/Colorized after clipping (default: delete it to save disk)'
+- name: plan
+  type: bool
+  default: false
+  help: Print the child command(s) without running them

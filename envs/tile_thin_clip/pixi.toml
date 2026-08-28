@@ -1,0 +1,15 @@
+[workspace]
+name = "tile_thin_clip"
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[dependencies]
+python = "3.12.*"
+pdal = "*"
+python-pdal = "*"
+geopandas = "*"
+laspy = "*"
+lazrs-python = "*"
+numpy = "*"
+pyproj = "*"
+shapely = "*"

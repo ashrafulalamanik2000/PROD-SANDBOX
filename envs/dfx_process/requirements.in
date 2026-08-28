@@ -1,0 +1,9 @@
+geopandas
+laspy
+lazrs
+numpy
+pandas
+pyproj
+shapely
+opencv-python-headless
+pillow

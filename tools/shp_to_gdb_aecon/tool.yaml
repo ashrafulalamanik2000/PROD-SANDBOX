@@ -1,0 +1,25 @@
+# reviewed 2026-08-26: params match build_gdb_aecon.py argparse. AECON variant:
+# TREE_BUSH_HEDGE outlines clipped out of BUILDINGS footprints; per-vertex Z by
+# IDW k=3 from TREES ground points. Shares the shp_to_gdb pixi env (GDAL).
+# source copied from: \\SDAI-FS1\Production\Projects\CLAUDE\SDAI-PROD-AGENT-01\Workflows\DFX_Project\skills\shp_to_gdb
+name: shp-to-gdb-aecon
+version: 0.1.0
+summary: 'AECON variant of shp-to-gdb: extracted tree/topo shapefiles -> SDAI template GDBs (ZM, EPSG:26917 default).'
+runtime: python
+entry: src/build_gdb_aecon.py
+environment: shp_to_gdb
+timeout_s: 3600
+params:
+- name: templates
+  type: str
+- name: shp
+  type: str
+  required: true
+  help: tile folder with shapefiles
+- name: out
+  type: path
+  help: output dir (default = --shp)
+- name: epsg
+  type: int
+  default: 26917
+  help: output CRS (default 26917, NAD83 / UTM 17N)

@@ -1,0 +1,24 @@
+# Split out of tile-thin-clip 2026-08-28 (tools_archived/tile_thin_clip) so
+# each stage runs, composes, and dispatches on its own. Tiling only: big
+# LAS/LAZ split by point count, small LAZ decompressed, small LAS copied.
+name: tile
+version: 0.1.0
+summary: 'Split large LAS/LAZ files into tiles by point count (small LAZ decompressed, small LAS copied through). Tiling stage of the former tile-thin-clip.'
+group: pointcloud
+runtime: python
+entry: src/tile.py
+environment: tile_thin_clip
+timeout_s: 3600
+params:
+- name: input_dir
+  type: path
+  required: true
+  help: Directory with source LAS/LAZ files (searched recursively)
+- name: output_dir
+  type: path
+  required: true
+  help: Directory the tiles are written into (flat)
+- name: max_points_per_tile
+  type: int
+  default: 13000000
+  help: Max points per tile (~0.5GB at 38 bytes/pt)
