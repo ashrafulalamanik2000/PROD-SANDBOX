@@ -1,0 +1,94 @@
+{
+  "arch": "x86_64",
+  "build": "h8c1c262_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "d236ed8f95bb2448b4b3ef16aec17ba9",
+  "name": "libcamd",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libcamd >=3.3.3,<4.0a0"
+    ]
+  },
+  "sha256": "9d48de8b56eb5866b4349be0d178bdd319540345e0deeeb6cb952d0d64fcca25",
+  "size": 40061,
+  "subdir": "win-64",
+  "timestamp": 1742288893863,
+  "version": "3.3.3",
+  "fn": "libcamd-3.3.3-h8c1c262_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libcamd-3.3.3-h8c1c262_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libcamd-3.3.3-h8c1c262_7100102",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/camd.dll",
+    "Library/include/suitesparse/camd.h",
+    "Library/lib/camd.lib",
+    "Library/lib/cmake/CAMD/CAMDConfig.cmake",
+    "Library/lib/cmake/CAMD/CAMDConfigVersion.cmake",
+    "Library/lib/cmake/CAMD/CAMDTargets-release.cmake",
+    "Library/lib/cmake/CAMD/CAMDTargets.cmake"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/camd.dll",
+        "path_type": "hardlink",
+        "sha256": "1ffeea7b39ae690fbde3214266aee88c5d91940bf8d75fb2ccf36827a33f7fb6",
+        "size_in_bytes": 37376
+      },
+      {
+        "_path": "Library/include/suitesparse/camd.h",
+        "path_type": "hardlink",
+        "sha256": "d7d80616d80f00e3167e165284e7f97723b3f64288a1c2c31dc93de540d7a287",
+        "size_in_bytes": 17065
+      },
+      {
+        "_path": "Library/lib/camd.lib",
+        "path_type": "hardlink",
+        "sha256": "fd308b17f7f2e17106955a75cd1a04d237472e98a854d67777ef0fdf71f613e8",
+        "size_in_bytes": 5804
+      },
+      {
+        "_path": "Library/lib/cmake/CAMD/CAMDConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "257b4d0b07b92502175432bb08d2d02bffee2d6a5bbe2c7043317277784923bc",
+        "size_in_bytes": 6564
+      },
+      {
+        "_path": "Library/lib/cmake/CAMD/CAMDConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "cb1e4b66ac46e3c70ae985eb031b198de25f904af7b27408f2a1962d728ab01f",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/CAMD/CAMDTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "3a5366ef693bd5a87922f9ff78bae618a5fee8bc3973f702d74f1930968187d8",
+        "size_in_bytes": 991
+      },
+      {
+        "_path": "Library/lib/cmake/CAMD/CAMDTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "ebb9b13a9bc10873b94b13e47a44480947cce4053f8c565d3d616a178d94d091",
+        "size_in_bytes": 4383
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libcamd-3.3.3-h8c1c262_7100102",
+    "type": 1
+  }
+}

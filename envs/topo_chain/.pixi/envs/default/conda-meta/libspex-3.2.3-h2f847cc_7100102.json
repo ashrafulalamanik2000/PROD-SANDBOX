@@ -1,0 +1,136 @@
+{
+  "arch": "x86_64",
+  "build": "h2f847cc_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "libamd >=3.3.3,<4.0a0",
+    "gmp >=6.3.0,<7.0a0",
+    "libcolamd >=3.3.4,<4.0a0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0",
+    "mpfr >=4.2.1,<5.0a0"
+  ],
+  "license": "LGPL-2.0-or-later",
+  "license_family": "LGPL",
+  "md5": "8736b72696e63c678b5207064a9fe6f0",
+  "name": "libspex",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libspex >=3.2.3,<4.0a0"
+    ]
+  },
+  "sha256": "d40ed44b94cdcc027691bf188a6734b45eeb18a9b58734e2e2976b4024422623",
+  "size": 77669,
+  "subdir": "win-64",
+  "timestamp": 1742288893864,
+  "version": "3.2.3",
+  "fn": "libspex-3.2.3-h2f847cc_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libspex-3.2.3-h2f847cc_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libspex-3.2.3-h2f847cc_7100102",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/spex.dll",
+    "Library/bin/spexpython.dll",
+    "Library/include/suitesparse/SPEX.h",
+    "Library/include/suitesparse/spex_python_connect.h",
+    "Library/lib/cmake/SPEX/FindGMP.cmake",
+    "Library/lib/cmake/SPEX/FindMPFR.cmake",
+    "Library/lib/cmake/SPEX/SPEXConfig.cmake",
+    "Library/lib/cmake/SPEX/SPEXConfigVersion.cmake",
+    "Library/lib/cmake/SPEX/SPEXTargets-release.cmake",
+    "Library/lib/cmake/SPEX/SPEXTargets.cmake",
+    "Library/lib/spex.lib",
+    "Library/lib/spexpython.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/spex.dll",
+        "path_type": "hardlink",
+        "sha256": "6857e209f89f40f7f8f61753117bb94e00e138faf8d51a6fc25583f1c4615c15",
+        "size_in_bytes": 92160
+      },
+      {
+        "_path": "Library/bin/spexpython.dll",
+        "path_type": "hardlink",
+        "sha256": "27f8ad4df3ec39638c2b38f22b4f98ad9f43bb3b3ce976e55f888c349077a081",
+        "size_in_bytes": 12288
+      },
+      {
+        "_path": "Library/include/suitesparse/SPEX.h",
+        "path_type": "hardlink",
+        "sha256": "42d0f816004f3cdc1926363c32aa8cac9a25aeb55505b817589ea7d13ab77ab2",
+        "size_in_bytes": 65690
+      },
+      {
+        "_path": "Library/include/suitesparse/spex_python_connect.h",
+        "path_type": "hardlink",
+        "sha256": "f08434bbdef869edf13fc3df283b61dbf60bcec5cb82171e91489f7589f31111",
+        "size_in_bytes": 1159
+      },
+      {
+        "_path": "Library/lib/cmake/SPEX/FindGMP.cmake",
+        "path_type": "hardlink",
+        "sha256": "f84f8288972b3fc3bd2ea6e4e982cb9b9899dcbd6c3da476fb1d007e6a857da2",
+        "size_in_bytes": 6158
+      },
+      {
+        "_path": "Library/lib/cmake/SPEX/FindMPFR.cmake",
+        "path_type": "hardlink",
+        "sha256": "1bec9d3fffcdaa27393eebc78b2aeda52a8524f6469fccf051dd5adcbe32a1f1",
+        "size_in_bytes": 5586
+      },
+      {
+        "_path": "Library/lib/cmake/SPEX/SPEXConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "b219c48a2c6152b513b354d68eaa94161659c21ca9205324a546e0e57937f214",
+        "size_in_bytes": 7861
+      },
+      {
+        "_path": "Library/lib/cmake/SPEX/SPEXConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "0689b76f99dedbbd969f9500989b41c5053c608bbf28ee648d814c7ec4067a91",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/SPEX/SPEXTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "d452e16ac098bd379c1543542b27b2b8dc3245dbe99af8c53766fc1746600f4b",
+        "size_in_bytes": 1028
+      },
+      {
+        "_path": "Library/lib/cmake/SPEX/SPEXTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "ce203ff5769433fcc85a959d315ec05f4e0d6f385c18a718aef3dec0312e5442",
+        "sha256_in_prefix": "08863ca58b98896051787e224c378257c7e9f8e08d43f4f6a3bee0686cb59451",
+        "size_in_bytes": 4673,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_libspex_1742288893/h_env"
+      },
+      {
+        "_path": "Library/lib/spex.lib",
+        "path_type": "hardlink",
+        "sha256": "c4dd55dbfdfd4cf90a7407bba71ff9609e4035e3c36863aef473a89e520db24c",
+        "size_in_bytes": 35862
+      },
+      {
+        "_path": "Library/lib/spexpython.lib",
+        "path_type": "hardlink",
+        "sha256": "0fdfd98148bbfda140472d4a29cb92a03a989521f4b67e37a1d4ee07e397f919",
+        "size_in_bytes": 2554
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libspex-3.2.3-h2f847cc_7100102",
+    "type": 1
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "arch": "x86_64",
+  "build": "h081cd8e_10_cpu",
+  "build_number": 10,
+  "depends": [
+    "libarrow 24.0.0 h11fefc6_10_cpu",
+    "libre2-11 >=2025.11.5",
+    "libutf8proc >=2.11.3,<2.12.0a0",
+    "re2",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "317418985f26a32b29685cd3b6271678",
+  "name": "libarrow-compute",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libarrow-compute >=24.0.0,<24.1.0a0"
+    ]
+  },
+  "sha256": "67a9aee025ecafc38073532a778d79220002688590ea108c59632eed7f33006c",
+  "size": 1752332,
+  "subdir": "win-64",
+  "timestamp": 1783216453139,
+  "version": "24.0.0",
+  "fn": "libarrow-compute-24.0.0-h081cd8e_10_cpu.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libarrow-compute-24.0.0-h081cd8e_10_cpu.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libarrow-compute-24.0.0-h081cd8e_10_cpu",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/arrow_compute.dll",
+    "Library/lib/arrow_compute.lib",
+    "Library/lib/cmake/ArrowCompute/ArrowComputeConfig.cmake",
+    "Library/lib/cmake/ArrowCompute/ArrowComputeConfigVersion.cmake",
+    "Library/lib/cmake/ArrowCompute/ArrowComputeTargets-release.cmake",
+    "Library/lib/cmake/ArrowCompute/ArrowComputeTargets.cmake",
+    "Library/lib/pkgconfig/arrow-compute.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/arrow_compute.dll",
+        "path_type": "hardlink",
+        "sha256": "4f9ffb364efead0a62dcf1b3d6b18c89ea2135e0eaf0cc1689eb5d9e404e2830",
+        "size_in_bytes": 9234944
+      },
+      {
+        "_path": "Library/lib/arrow_compute.lib",
+        "path_type": "hardlink",
+        "sha256": "d48890ac62ebd92403d9464898d090ff2d28f166a7bcf419d3c5ec4f9ae0399d",
+        "size_in_bytes": 173230
+      },
+      {
+        "_path": "Library/lib/cmake/ArrowCompute/ArrowComputeConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "31aba536fc7e1c2c13a6732a8a62d93ee780b3278dc805b15b98a5bac9decab0",
+        "size_in_bytes": 2403
+      },
+      {
+        "_path": "Library/lib/cmake/ArrowCompute/ArrowComputeConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "07aed519cb8371ba0e91c99c15b9da42221d122c2deac41463770e6fea05b540",
+        "size_in_bytes": 2830
+      },
+      {
+        "_path": "Library/lib/cmake/ArrowCompute/ArrowComputeTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "981bcf85d9e7fdd731f3293364595d284f7f2479c8d2008c5ed2c1c790fdf9ca",
+        "size_in_bytes": 1090
+      },
+      {
+        "_path": "Library/lib/cmake/ArrowCompute/ArrowComputeTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "da0e13fc9f4e4972553539a8c7130cdfd94c7bb4e7c6d93ac64e68765f434a82",
+        "size_in_bytes": 4361
+      },
+      {
+        "_path": "Library/lib/pkgconfig/arrow-compute.pc",
+        "path_type": "hardlink",
+        "sha256": "806fe4cb9acead665e4bd6fa2e487c75a361129a49cb3210be9458b47a1af0ea",
+        "sha256_in_prefix": "91e223f3a1695f9416c28e21065776a4687ca1bb728f03de6bdc837b30389fcb",
+        "size_in_bytes": 1096,
+        "file_mode": "text",
+        "prefix_placeholder": "C:/bld/apache-arrow_1783209749187/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libarrow-compute-24.0.0-h081cd8e_10_cpu",
+    "type": 1
+  }
+}

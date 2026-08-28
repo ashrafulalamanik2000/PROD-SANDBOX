@@ -1,0 +1,2519 @@
+{
+  "arch": "x86_64",
+  "build": "h4e8f44f_2",
+  "build_number": 2,
+  "constrains": [
+    "pdal 2.10.1.*"
+  ],
+  "depends": [
+    "geotiff >=1.7.4,<1.8.0a0",
+    "libcurl >=8.20.0,<9.0a0",
+    "libgdal-core >=3.12.4,<3.13.0a0",
+    "libxml2",
+    "libxml2-16 >=2.14.6",
+    "libzlib >=1.3.2,<2.0a0",
+    "openssl >=3.5.6,<4.0a0",
+    "proj >=9.8.1,<9.9.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "zstd >=1.5.7,<1.6.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "9f7dd9acbc4304ff8dc70703e36178dc",
+  "name": "libpdal-core",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpdal-core >=2.10.1,<2.11.0a0"
+    ]
+  },
+  "sha256": "d86f30471b40afea7d9a0ef0154904b927b18e7874596a86f89bff7f5085ac36",
+  "size": 2263060,
+  "subdir": "win-64",
+  "timestamp": 1777500197022,
+  "version": "2.10.1",
+  "fn": "libpdal-core-2.10.1-h4e8f44f_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libpdal-core-2.10.1-h4e8f44f_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-core-2.10.1-h4e8f44f_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libpdal_plugin_kernel_fauxplugin.dll",
+    "Library/bin/pdal-config",
+    "Library/bin/pdal-config.bat",
+    "Library/bin/pdal.exe",
+    "Library/bin/pdalcpp.dll",
+    "Library/include/pdal/Artifact.hpp",
+    "Library/include/pdal/ArtifactManager.hpp",
+    "Library/include/pdal/DbReader.hpp",
+    "Library/include/pdal/DbWriter.hpp",
+    "Library/include/pdal/DimDetail.hpp",
+    "Library/include/pdal/DimType.hpp",
+    "Library/include/pdal/DimUtil.hpp",
+    "Library/include/pdal/Dimension.hpp",
+    "Library/include/pdal/FileSpec.hpp",
+    "Library/include/pdal/Filter.hpp",
+    "Library/include/pdal/FlexWriter.hpp",
+    "Library/include/pdal/Geometry.hpp",
+    "Library/include/pdal/JsonFwd.hpp",
+    "Library/include/pdal/KDIndex.hpp",
+    "Library/include/pdal/Kernel.hpp",
+    "Library/include/pdal/Log.hpp",
+    "Library/include/pdal/Mesh.hpp",
+    "Library/include/pdal/Metadata.hpp",
+    "Library/include/pdal/Options.hpp",
+    "Library/include/pdal/PDALUtils.hpp",
+    "Library/include/pdal/PipelineExecutor.hpp",
+    "Library/include/pdal/PipelineManager.hpp",
+    "Library/include/pdal/PipelineReaderJSON.hpp",
+    "Library/include/pdal/PipelineWriter.hpp",
+    "Library/include/pdal/PluginDirectory.hpp",
+    "Library/include/pdal/PluginHelper.hpp",
+    "Library/include/pdal/PluginInfo.hpp",
+    "Library/include/pdal/PluginManager.hpp",
+    "Library/include/pdal/PointContainer.hpp",
+    "Library/include/pdal/PointLayout.hpp",
+    "Library/include/pdal/PointRef.hpp",
+    "Library/include/pdal/PointTable.hpp",
+    "Library/include/pdal/PointView.hpp",
+    "Library/include/pdal/Polygon.hpp",
+    "Library/include/pdal/QuadIndex.hpp",
+    "Library/include/pdal/QuickInfo.hpp",
+    "Library/include/pdal/Reader.hpp",
+    "Library/include/pdal/Scaling.hpp",
+    "Library/include/pdal/SpatialReference.hpp",
+    "Library/include/pdal/SrsBounds.hpp",
+    "Library/include/pdal/Stage.hpp",
+    "Library/include/pdal/StageExtensions.hpp",
+    "Library/include/pdal/StageFactory.hpp",
+    "Library/include/pdal/StageWrapper.hpp",
+    "Library/include/pdal/Streamable.hpp",
+    "Library/include/pdal/SubcommandKernel.hpp",
+    "Library/include/pdal/Writer.hpp",
+    "Library/include/pdal/XMLSchema.hpp",
+    "Library/include/pdal/compression/Compression.hpp",
+    "Library/include/pdal/compression/DeflateCompression.hpp",
+    "Library/include/pdal/compression/GzipCompression.hpp",
+    "Library/include/pdal/compression/LazPerfVlrCompression.hpp",
+    "Library/include/pdal/compression/LzmaCompression.hpp",
+    "Library/include/pdal/compression/ZstdCompression.hpp",
+    "Library/include/pdal/filters/ApproximateCoplanarFilter.hpp",
+    "Library/include/pdal/filters/AssignFilter.hpp",
+    "Library/include/pdal/filters/CSFilter.hpp",
+    "Library/include/pdal/filters/ChipperFilter.hpp",
+    "Library/include/pdal/filters/ClusterFilter.hpp",
+    "Library/include/pdal/filters/ColorInterpRamps.hpp",
+    "Library/include/pdal/filters/ColorinterpFilter.hpp",
+    "Library/include/pdal/filters/ColorizationFilter.hpp",
+    "Library/include/pdal/filters/CovarianceFeaturesFilter.hpp",
+    "Library/include/pdal/filters/CropFilter.hpp",
+    "Library/include/pdal/filters/DBSCANFilter.hpp",
+    "Library/include/pdal/filters/DEMFilter.hpp",
+    "Library/include/pdal/filters/DecimationFilter.hpp",
+    "Library/include/pdal/filters/DelaunayFilter.hpp",
+    "Library/include/pdal/filters/DividerFilter.hpp",
+    "Library/include/pdal/filters/ELMFilter.hpp",
+    "Library/include/pdal/filters/EigenvaluesFilter.hpp",
+    "Library/include/pdal/filters/EstimateRankFilter.hpp",
+    "Library/include/pdal/filters/ExpressionFilter.hpp",
+    "Library/include/pdal/filters/ExpressionStatsFilter.hpp",
+    "Library/include/pdal/filters/FaceRasterFilter.hpp",
+    "Library/include/pdal/filters/FarthestPointSamplingFilter.hpp",
+    "Library/include/pdal/filters/FerryFilter.hpp",
+    "Library/include/pdal/filters/GeomDistanceFilter.hpp",
+    "Library/include/pdal/filters/GeoreferenceFilter.hpp",
+    "Library/include/pdal/filters/GpsTimeConvert.hpp",
+    "Library/include/pdal/filters/GreedyProjection.hpp",
+    "Library/include/pdal/filters/GridDecimationFilter.hpp",
+    "Library/include/pdal/filters/GroupByFilter.hpp",
+    "Library/include/pdal/filters/H3Filter.hpp",
+    "Library/include/pdal/filters/HagDelaunayFilter.hpp",
+    "Library/include/pdal/filters/HagDemFilter.hpp",
+    "Library/include/pdal/filters/HagNnFilter.hpp",
+    "Library/include/pdal/filters/HeadFilter.hpp",
+    "Library/include/pdal/filters/HexBinFilter.hpp",
+    "Library/include/pdal/filters/IQRFilter.hpp",
+    "Library/include/pdal/filters/InfoFilter.hpp",
+    "Library/include/pdal/filters/IterativeClosestPoint.hpp",
+    "Library/include/pdal/filters/LOFFilter.hpp",
+    "Library/include/pdal/filters/LabelDuplicatesFilter.hpp",
+    "Library/include/pdal/filters/LiTreeFilter.hpp",
+    "Library/include/pdal/filters/LloydKMeansFilter.hpp",
+    "Library/include/pdal/filters/LocateFilter.hpp",
+    "Library/include/pdal/filters/M3C2Filter.hpp",
+    "Library/include/pdal/filters/MADFilter.hpp",
+    "Library/include/pdal/filters/MergeFilter.hpp",
+    "Library/include/pdal/filters/MiniballFilter.hpp",
+    "Library/include/pdal/filters/MongoExpressionFilter.hpp",
+    "Library/include/pdal/filters/MortonOrderFilter.hpp",
+    "Library/include/pdal/filters/NNDistanceFilter.hpp",
+    "Library/include/pdal/filters/NeighborClassifierFilter.hpp",
+    "Library/include/pdal/filters/NormalFilter.hpp",
+    "Library/include/pdal/filters/OptimalNeighborhoodFilter.hpp",
+    "Library/include/pdal/filters/OutlierFilter.hpp",
+    "Library/include/pdal/filters/OverlayFilter.hpp",
+    "Library/include/pdal/filters/PMFFilter.hpp",
+    "Library/include/pdal/filters/PlaneFitFilter.hpp",
+    "Library/include/pdal/filters/PoissonFilter.hpp",
+    "Library/include/pdal/filters/ProjPipelineFilter.hpp",
+    "Library/include/pdal/filters/RadialDensityFilter.hpp",
+    "Library/include/pdal/filters/RadiusAssignFilter.hpp",
+    "Library/include/pdal/filters/RandomizeFilter.hpp",
+    "Library/include/pdal/filters/RangeFilter.hpp",
+    "Library/include/pdal/filters/ReciprocityFilter.hpp",
+    "Library/include/pdal/filters/RelaxationDartThrowing.hpp",
+    "Library/include/pdal/filters/ReprojectionFilter.hpp",
+    "Library/include/pdal/filters/ReturnsFilter.hpp",
+    "Library/include/pdal/filters/SMRFilter.hpp",
+    "Library/include/pdal/filters/SampleFilter.hpp",
+    "Library/include/pdal/filters/SeparateScanLineFilter.hpp",
+    "Library/include/pdal/filters/ShellFilter.hpp",
+    "Library/include/pdal/filters/SkewnessBalancingFilter.hpp",
+    "Library/include/pdal/filters/SortFilter.hpp",
+    "Library/include/pdal/filters/SparseSurfaceFilter.hpp",
+    "Library/include/pdal/filters/SplitterFilter.hpp",
+    "Library/include/pdal/filters/StatsFilter.hpp",
+    "Library/include/pdal/filters/StraightenFilter.hpp",
+    "Library/include/pdal/filters/StreamCallbackFilter.hpp",
+    "Library/include/pdal/filters/SupervoxelFilter.hpp",
+    "Library/include/pdal/filters/TailFilter.hpp",
+    "Library/include/pdal/filters/TransformationFilter.hpp",
+    "Library/include/pdal/filters/VoxelCenterNearestNeighborFilter.hpp",
+    "Library/include/pdal/filters/VoxelCentroidNearestNeighborFilter.hpp",
+    "Library/include/pdal/filters/VoxelDownsizeFilter.hpp",
+    "Library/include/pdal/filters/ZsmoothFilter.hpp",
+    "Library/include/pdal/filters/private/Comparison.hpp",
+    "Library/include/pdal/filters/private/DimRange.hpp",
+    "Library/include/pdal/filters/private/DisjointSet.hpp",
+    "Library/include/pdal/filters/private/Point.hpp",
+    "Library/include/pdal/filters/private/Segmentation.hpp",
+    "Library/include/pdal/filters/private/delaunator.hpp",
+    "Library/include/pdal/filters/private/expr/AssignParser.hpp",
+    "Library/include/pdal/filters/private/expr/AssignStatement.hpp",
+    "Library/include/pdal/filters/private/expr/BaseParser.hpp",
+    "Library/include/pdal/filters/private/expr/ConditionalExpression.hpp",
+    "Library/include/pdal/filters/private/expr/ConditionalParser.hpp",
+    "Library/include/pdal/filters/private/expr/Expression.hpp",
+    "Library/include/pdal/filters/private/expr/IdentExpression.hpp",
+    "Library/include/pdal/filters/private/expr/Lexer.hpp",
+    "Library/include/pdal/filters/private/expr/MathExpression.hpp",
+    "Library/include/pdal/filters/private/expr/MathParser.hpp",
+    "Library/include/pdal/filters/private/expr/Token.hpp",
+    "Library/include/pdal/filters/private/georeference/LocalCartesian.hpp",
+    "Library/include/pdal/filters/private/georeference/Trajectory.hpp",
+    "Library/include/pdal/filters/private/georeference/Utils.hpp",
+    "Library/include/pdal/filters/private/hexer/BaseGrid.hpp",
+    "Library/include/pdal/filters/private/hexer/H3grid.hpp",
+    "Library/include/pdal/filters/private/hexer/HexGrid.hpp",
+    "Library/include/pdal/filters/private/hexer/HexId.hpp",
+    "Library/include/pdal/filters/private/hexer/Path.hpp",
+    "Library/include/pdal/filters/private/hexer/Point.hpp",
+    "Library/include/pdal/filters/private/hexer/Processor.hpp",
+    "Library/include/pdal/filters/private/hexer/Segment.hpp",
+    "Library/include/pdal/filters/private/hexer/exception.hpp",
+    "Library/include/pdal/filters/private/mongoexpression/Comparison.hpp",
+    "Library/include/pdal/filters/private/mongoexpression/Expression.hpp",
+    "Library/include/pdal/filters/private/mongoexpression/LogicGate.hpp",
+    "Library/include/pdal/filters/private/mongoexpression/Support.hpp",
+    "Library/include/pdal/filters/private/pnp/Grid.hpp",
+    "Library/include/pdal/filters/private/pnp/GridPnp.hpp",
+    "Library/include/pdal/filters/private/pnp/VoxelRayTrace.hpp",
+    "Library/include/pdal/filters/private/straighten/Polyline.hpp",
+    "Library/include/pdal/filters/private/straighten/Utils.hpp",
+    "Library/include/pdal/io/BpfCompressor.hpp",
+    "Library/include/pdal/io/BpfHeader.hpp",
+    "Library/include/pdal/io/BpfReader.hpp",
+    "Library/include/pdal/io/BpfWriter.hpp",
+    "Library/include/pdal/io/BufferReader.hpp",
+    "Library/include/pdal/io/CopcReader.hpp",
+    "Library/include/pdal/io/CopcWriter.hpp",
+    "Library/include/pdal/io/EptAddonWriter.hpp",
+    "Library/include/pdal/io/EptReader.hpp",
+    "Library/include/pdal/io/EsriReader.hpp",
+    "Library/include/pdal/io/FauxReader.hpp",
+    "Library/include/pdal/io/FbiHeader.hpp",
+    "Library/include/pdal/io/FbiReader.hpp",
+    "Library/include/pdal/io/FbiWriter.hpp",
+    "Library/include/pdal/io/GDALReader.hpp",
+    "Library/include/pdal/io/GDALWriter.hpp",
+    "Library/include/pdal/io/GltfWriter.hpp",
+    "Library/include/pdal/io/HeaderVal.hpp",
+    "Library/include/pdal/io/I3SReader.hpp",
+    "Library/include/pdal/io/Ilvis2MetadataReader.hpp",
+    "Library/include/pdal/io/Ilvis2Reader.hpp",
+    "Library/include/pdal/io/LasHeader.hpp",
+    "Library/include/pdal/io/LasReader.hpp",
+    "Library/include/pdal/io/LasVLR.hpp",
+    "Library/include/pdal/io/LasWriter.hpp",
+    "Library/include/pdal/io/MemoryViewReader.hpp",
+    "Library/include/pdal/io/NullWriter.hpp",
+    "Library/include/pdal/io/OGRWriter.hpp",
+    "Library/include/pdal/io/ObjReader.hpp",
+    "Library/include/pdal/io/OptechCommon.hpp",
+    "Library/include/pdal/io/OptechReader.hpp",
+    "Library/include/pdal/io/OptechRotationMatrix.hpp",
+    "Library/include/pdal/io/PcdHeader.hpp",
+    "Library/include/pdal/io/PcdReader.hpp",
+    "Library/include/pdal/io/PcdWriter.hpp",
+    "Library/include/pdal/io/PlyReader.hpp",
+    "Library/include/pdal/io/PlyWriter.hpp",
+    "Library/include/pdal/io/PtsReader.hpp",
+    "Library/include/pdal/io/PtxReader.hpp",
+    "Library/include/pdal/io/QfitReader.hpp",
+    "Library/include/pdal/io/RasterWriter.hpp",
+    "Library/include/pdal/io/SbetCommon.hpp",
+    "Library/include/pdal/io/SbetReader.hpp",
+    "Library/include/pdal/io/SbetSmrmsgReader.hpp",
+    "Library/include/pdal/io/SbetWriter.hpp",
+    "Library/include/pdal/io/SlpkReader.hpp",
+    "Library/include/pdal/io/StacReader.hpp",
+    "Library/include/pdal/io/TIndexReader.hpp",
+    "Library/include/pdal/io/TerrasolidReader.hpp",
+    "Library/include/pdal/io/TextReader.hpp",
+    "Library/include/pdal/io/TextWriter.hpp",
+    "Library/include/pdal/io/point_types.hpp",
+    "Library/include/pdal/io/private/GDALGrid.hpp",
+    "Library/include/pdal/io/private/connector/Connector.hpp",
+    "Library/include/pdal/io/private/copc/Entry.hpp",
+    "Library/include/pdal/io/private/copc/Info.hpp",
+    "Library/include/pdal/io/private/copc/Key.hpp",
+    "Library/include/pdal/io/private/copc/Tile.hpp",
+    "Library/include/pdal/io/private/copcwriter/BuPyramid.hpp",
+    "Library/include/pdal/io/private/copcwriter/CellManager.hpp",
+    "Library/include/pdal/io/private/copcwriter/Common.hpp",
+    "Library/include/pdal/io/private/copcwriter/Grid.hpp",
+    "Library/include/pdal/io/private/copcwriter/GridKey.hpp",
+    "Library/include/pdal/io/private/copcwriter/OctantInfo.hpp",
+    "Library/include/pdal/io/private/copcwriter/Output.hpp",
+    "Library/include/pdal/io/private/copcwriter/Processor.hpp",
+    "Library/include/pdal/io/private/copcwriter/PyramidManager.hpp",
+    "Library/include/pdal/io/private/copcwriter/Reprocessor.hpp",
+    "Library/include/pdal/io/private/copcwriter/VoxelInfo.hpp",
+    "Library/include/pdal/io/private/copcwriter/VoxelKey.hpp",
+    "Library/include/pdal/io/private/ept/Addon.hpp",
+    "Library/include/pdal/io/private/ept/Artifact.hpp",
+    "Library/include/pdal/io/private/ept/EptInfo.hpp",
+    "Library/include/pdal/io/private/ept/EptSupport.hpp",
+    "Library/include/pdal/io/private/ept/FixedPointLayout.hpp",
+    "Library/include/pdal/io/private/ept/Key.hpp",
+    "Library/include/pdal/io/private/ept/Overlap.hpp",
+    "Library/include/pdal/io/private/ept/TileContents.hpp",
+    "Library/include/pdal/io/private/ept/VectorPointTable.hpp",
+    "Library/include/pdal/io/private/esri/EsriUtil.hpp",
+    "Library/include/pdal/io/private/esri/Interface.hpp",
+    "Library/include/pdal/io/private/esri/Obb.hpp",
+    "Library/include/pdal/io/private/esri/PageManager.hpp",
+    "Library/include/pdal/io/private/las/ChunkInfo.hpp",
+    "Library/include/pdal/io/private/las/Geotiff.hpp",
+    "Library/include/pdal/io/private/las/Header.hpp",
+    "Library/include/pdal/io/private/las/Srs.hpp",
+    "Library/include/pdal/io/private/las/Summary.hpp",
+    "Library/include/pdal/io/private/las/Tile.hpp",
+    "Library/include/pdal/io/private/las/Utils.hpp",
+    "Library/include/pdal/io/private/las/Vlr.hpp",
+    "Library/include/pdal/io/private/stac/Catalog.hpp",
+    "Library/include/pdal/io/private/stac/Collection.hpp",
+    "Library/include/pdal/io/private/stac/Item.hpp",
+    "Library/include/pdal/io/private/stac/ItemCollection.hpp",
+    "Library/include/pdal/io/private/stac/Utils.hpp",
+    "Library/include/pdal/kernels/ChamferKernel.hpp",
+    "Library/include/pdal/kernels/DeltaKernel.hpp",
+    "Library/include/pdal/kernels/DensityKernel.hpp",
+    "Library/include/pdal/kernels/EvalKernel.hpp",
+    "Library/include/pdal/kernels/GroundKernel.hpp",
+    "Library/include/pdal/kernels/HausdorffKernel.hpp",
+    "Library/include/pdal/kernels/InfoKernel.hpp",
+    "Library/include/pdal/kernels/MergeKernel.hpp",
+    "Library/include/pdal/kernels/PipelineKernel.hpp",
+    "Library/include/pdal/kernels/RandomKernel.hpp",
+    "Library/include/pdal/kernels/SortKernel.hpp",
+    "Library/include/pdal/kernels/SplitKernel.hpp",
+    "Library/include/pdal/kernels/TIndexKernel.hpp",
+    "Library/include/pdal/kernels/TileKernel.hpp",
+    "Library/include/pdal/kernels/TranslateKernel.hpp",
+    "Library/include/pdal/kernels/private/PointlessLas.hpp",
+    "Library/include/pdal/kernels/private/density/OGR.hpp",
+    "Library/include/pdal/kernels/private/stac/StacInfo.hpp",
+    "Library/include/pdal/pdal.hpp",
+    "Library/include/pdal/pdal_config.hpp",
+    "Library/include/pdal/pdal_export.hpp",
+    "Library/include/pdal/pdal_features.hpp",
+    "Library/include/pdal/pdal_internal.hpp",
+    "Library/include/pdal/pdal_test_main.hpp",
+    "Library/include/pdal/pdal_types.hpp",
+    "Library/include/pdal/private/DynamicLibrary.hpp",
+    "Library/include/pdal/private/FileSpecHelper.hpp",
+    "Library/include/pdal/private/KDImpl.hpp",
+    "Library/include/pdal/private/MathUtils.hpp",
+    "Library/include/pdal/private/OGRSpec.hpp",
+    "Library/include/pdal/private/PointGrid.hpp",
+    "Library/include/pdal/private/Raster.hpp",
+    "Library/include/pdal/private/SrsTransform.hpp",
+    "Library/include/pdal/private/StageRunner.hpp",
+    "Library/include/pdal/private/gdal/ErrorHandler.hpp",
+    "Library/include/pdal/private/gdal/GDALError.hpp",
+    "Library/include/pdal/private/gdal/GDALUtils.hpp",
+    "Library/include/pdal/private/gdal/Raster.hpp",
+    "Library/include/pdal/private/gdal/SpatialRef.hpp",
+    "Library/include/pdal/util/Algorithm.hpp",
+    "Library/include/pdal/util/Backtrace.hpp",
+    "Library/include/pdal/util/Bounds.hpp",
+    "Library/include/pdal/util/Charbuf.hpp",
+    "Library/include/pdal/util/Extractor.hpp",
+    "Library/include/pdal/util/FileUtils.hpp",
+    "Library/include/pdal/util/Georeference.hpp",
+    "Library/include/pdal/util/IStream.hpp",
+    "Library/include/pdal/util/Inserter.hpp",
+    "Library/include/pdal/util/NullOStream.hpp",
+    "Library/include/pdal/util/OStream.hpp",
+    "Library/include/pdal/util/ProgramArgs.hpp",
+    "Library/include/pdal/util/Random.hpp",
+    "Library/include/pdal/util/ThreadPool.hpp",
+    "Library/include/pdal/util/Utils.hpp",
+    "Library/include/pdal/util/Uuid.hpp",
+    "Library/include/pdal/util/VSIIO.hpp",
+    "Library/include/pdal/util/pdal_util_export.hpp",
+    "Library/include/pdal/util/pdal_util_internal.hpp",
+    "Library/include/pdal/util/portable_endian.hpp",
+    "Library/include/pdal/util/private/BacktraceImpl.hpp",
+    "Library/include/pdal/util/private/JsonSupport.hpp",
+    "Library/lib/cmake/PDAL/PDALConfig.cmake",
+    "Library/lib/cmake/PDAL/PDALConfigVersion.cmake",
+    "Library/lib/cmake/PDAL/PDALTargets-release.cmake",
+    "Library/lib/cmake/PDAL/PDALTargets.cmake",
+    "Library/lib/cmake/PDAL/pluginmacros.cmake",
+    "Library/lib/libpdal_plugin_kernel_fauxplugin.lib",
+    "Library/lib/pdalcpp.lib",
+    "Library/lib/pkgconfig/pdal.pc",
+    "etc/conda/activate.d/pdal-activate.bat",
+    "etc/conda/activate.d/pdal-activate.sh",
+    "etc/conda/deactivate.d/pdal-deactivate.bat",
+    "etc/conda/deactivate.d/pdal-deactivate.sh"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libpdal_plugin_kernel_fauxplugin.dll",
+        "path_type": "hardlink",
+        "sha256": "f9c56d1a6eebeb26e8aacc0245a09b57a1c65a9fb64a3d429eb42a1861df017d",
+        "size_in_bytes": 248320
+      },
+      {
+        "_path": "Library/bin/pdal-config",
+        "path_type": "hardlink",
+        "sha256": "798e065f43a7c7cada204f9ae5bf25e69a46793de1ddac42ea12f9e948b045c0",
+        "sha256_in_prefix": "eb098e9c617510ce17feb638ba7bf30f55f172c39d39cfb4d2466472a0640fb6",
+        "size_in_bytes": 1028,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/libpdal-core_1777498443945/_h_env"
+      },
+      {
+        "_path": "Library/bin/pdal-config.bat",
+        "path_type": "hardlink",
+        "sha256": "0bc9854cb1ba48a9cee42445f04940ad81ab507d0fce8d502fc37fcc8e26f023",
+        "sha256_in_prefix": "e3b2832866b9729a451bc66c06aa2a993c60389cdc6923b3dc775f232ce1b6e7",
+        "size_in_bytes": 1113,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/libpdal-core_1777498443945/_h_env"
+      },
+      {
+        "_path": "Library/bin/pdal.exe",
+        "path_type": "hardlink",
+        "sha256": "7e462851879fb2fbbb35eecd845a8b886e537666305b3354f1ddeabe0e2ce97d",
+        "size_in_bytes": 406016
+      },
+      {
+        "_path": "Library/bin/pdalcpp.dll",
+        "path_type": "hardlink",
+        "sha256": "a75f990d51b947643a9fa69ad27da8ecd78d56f4a5338fc81263d75d86485e06",
+        "size_in_bytes": 5870080
+      },
+      {
+        "_path": "Library/include/pdal/Artifact.hpp",
+        "path_type": "hardlink",
+        "sha256": "4fd4dc2585f90b4137ed822af6826cb644d9966b435dbfb8b44d5678fa334bed",
+        "size_in_bytes": 1989
+      },
+      {
+        "_path": "Library/include/pdal/ArtifactManager.hpp",
+        "path_type": "hardlink",
+        "sha256": "d2265562cb054b75ca65be1fa758655adcfb19df33dde2b0cfad45e5683c40f8",
+        "size_in_bytes": 3509
+      },
+      {
+        "_path": "Library/include/pdal/DbReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "9c1e3ec112ceeb15431bdff195cdb3b50047c1a69dbec02c17a9192954a02327",
+        "size_in_bytes": 2784
+      },
+      {
+        "_path": "Library/include/pdal/DbWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "a95b33359ffe110072b88f0bf14beb71619a0ddc85a18e656d5ab7c83b07b667",
+        "size_in_bytes": 3353
+      },
+      {
+        "_path": "Library/include/pdal/DimDetail.hpp",
+        "path_type": "hardlink",
+        "sha256": "7f1e0065b439d0908556c70a2427750adb1a85fc684d77a31f2f31b5a39a979b",
+        "size_in_bytes": 3123
+      },
+      {
+        "_path": "Library/include/pdal/DimType.hpp",
+        "path_type": "hardlink",
+        "sha256": "251cf42e5512b1b9c2181375e52e14d7f081a2a2d35daa5bf5e6e22b344bd85e",
+        "size_in_bytes": 2472
+      },
+      {
+        "_path": "Library/include/pdal/DimUtil.hpp",
+        "path_type": "hardlink",
+        "sha256": "6df94a19aea300d82f9517bb49ed36f7ab13d8161f8191ea03ed4a3c1bcbfb35",
+        "size_in_bytes": 8086
+      },
+      {
+        "_path": "Library/include/pdal/Dimension.hpp",
+        "path_type": "hardlink",
+        "sha256": "dc845181198d9719608d8139eb2870987c6092b0104b3bf5bfe21554e53e4c46",
+        "size_in_bytes": 57594
+      },
+      {
+        "_path": "Library/include/pdal/FileSpec.hpp",
+        "path_type": "hardlink",
+        "sha256": "5e82aa49559a765427142cc6bd1138699058cc8afe20f4b2344c70219660ae0e",
+        "size_in_bytes": 2925
+      },
+      {
+        "_path": "Library/include/pdal/Filter.hpp",
+        "path_type": "hardlink",
+        "sha256": "d9e7c31c03328bc81a3b3b159c434c469a9ef5daa826c00aa50003572c4c54d8",
+        "size_in_bytes": 2828
+      },
+      {
+        "_path": "Library/include/pdal/FlexWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "57e121b7d6b46a76f279deeefa7704af047d1680ae797274ed20d60a7bdcd6da",
+        "size_in_bytes": 5630
+      },
+      {
+        "_path": "Library/include/pdal/Geometry.hpp",
+        "path_type": "hardlink",
+        "sha256": "848c0d54cfe9c596aec56747545e41ab1eb7b3175e737a24e781c6bd552e3907",
+        "size_in_bytes": 4192
+      },
+      {
+        "_path": "Library/include/pdal/JsonFwd.hpp",
+        "path_type": "hardlink",
+        "sha256": "f86c6516eebe4ad6b9cfca42c48c9ebe9fc2d00f233b4ff0243c66276f2d28be",
+        "size_in_bytes": 2619
+      },
+      {
+        "_path": "Library/include/pdal/KDIndex.hpp",
+        "path_type": "hardlink",
+        "sha256": "d5deb8d66cdb0519201b8dc64f47e67d1cb20be3b08968feed89f8e8e8f4ada5",
+        "size_in_bytes": 5147
+      },
+      {
+        "_path": "Library/include/pdal/Kernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "bae21128113340f4ee299f7c8d5f7daf64c8bc430fd05c0a884f0808413c184a",
+        "size_in_bytes": 4713
+      },
+      {
+        "_path": "Library/include/pdal/Log.hpp",
+        "path_type": "hardlink",
+        "sha256": "a5bd836eb8357a167a426f7a25bb94111f3d05c82bee9b4ff35653106b038022",
+        "size_in_bytes": 5727
+      },
+      {
+        "_path": "Library/include/pdal/Mesh.hpp",
+        "path_type": "hardlink",
+        "sha256": "e775fd61d896e4766b3ba16faac57c381d0ec918dbc9e1bb2ce433a7bd1e9db8",
+        "size_in_bytes": 3144
+      },
+      {
+        "_path": "Library/include/pdal/Metadata.hpp",
+        "path_type": "hardlink",
+        "sha256": "8134f959648def2d28e03a82eb7ea1b10493f16e77cfcb08e326114f8daebce2",
+        "size_in_bytes": 21249
+      },
+      {
+        "_path": "Library/include/pdal/Options.hpp",
+        "path_type": "hardlink",
+        "sha256": "269ab078e2857c3b1b26a6fc55b7cc8dcaf51b486fe75fe5142ae8f6498ac50f",
+        "size_in_bytes": 6214
+      },
+      {
+        "_path": "Library/include/pdal/PDALUtils.hpp",
+        "path_type": "hardlink",
+        "sha256": "2350ceb07774ccc6181fdafa880e2d487b4558b0b8217fa27245b4b04c696fe9",
+        "size_in_bytes": 7617
+      },
+      {
+        "_path": "Library/include/pdal/PipelineExecutor.hpp",
+        "path_type": "hardlink",
+        "sha256": "a1b2c1452a809446c8f00112681c2cc1d23cf21252dbd0788e3b6cb01b166655",
+        "size_in_bytes": 4139
+      },
+      {
+        "_path": "Library/include/pdal/PipelineManager.hpp",
+        "path_type": "hardlink",
+        "sha256": "2e1cb5549662d4784456e645bcf8fbc0ea4a81f2a795c47959c86cde6a9f52b6",
+        "size_in_bytes": 6408
+      },
+      {
+        "_path": "Library/include/pdal/PipelineReaderJSON.hpp",
+        "path_type": "hardlink",
+        "sha256": "dd8441a1a599772f93517b1ebf187118af37d9fdf14384b27da8abbfa3bfa322",
+        "size_in_bytes": 2470
+      },
+      {
+        "_path": "Library/include/pdal/PipelineWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "9254942b078278fc24f77244afc90a114b2f4271d099a453b0f373e87cb7c6d7",
+        "size_in_bytes": 2151
+      },
+      {
+        "_path": "Library/include/pdal/PluginDirectory.hpp",
+        "path_type": "hardlink",
+        "sha256": "e2ea4ffc8f76bbfd8d67d9d61061c40ed4e01a015ebd31d63c82a8f5748d0012",
+        "size_in_bytes": 2594
+      },
+      {
+        "_path": "Library/include/pdal/PluginHelper.hpp",
+        "path_type": "hardlink",
+        "sha256": "bdbe11837fc8c06527cef6e36577b48f1bb3d2a6a18ef3e1d84ed34ece55648a",
+        "size_in_bytes": 2935
+      },
+      {
+        "_path": "Library/include/pdal/PluginInfo.hpp",
+        "path_type": "hardlink",
+        "sha256": "d893efcff08c396bed2c6f0815f7f33a8616ec2ed795bff48b073c8f0d3332ec",
+        "size_in_bytes": 2622
+      },
+      {
+        "_path": "Library/include/pdal/PluginManager.hpp",
+        "path_type": "hardlink",
+        "sha256": "13f0f93b08a1797b0d54ea2d677b48ce8d18b852343f3b8f1bbd5119e9c447b9",
+        "size_in_bytes": 5143
+      },
+      {
+        "_path": "Library/include/pdal/PointContainer.hpp",
+        "path_type": "hardlink",
+        "sha256": "edd7eefde77cb192a041f338d5aea9d39e1f16d75645666b4730466f97d56555",
+        "size_in_bytes": 1836
+      },
+      {
+        "_path": "Library/include/pdal/PointLayout.hpp",
+        "path_type": "hardlink",
+        "sha256": "b9bf51ed20ae4d1ddfd9ed0f27b70eb557de37cb7f9cbcbd7ff06270552b79ee",
+        "size_in_bytes": 8481
+      },
+      {
+        "_path": "Library/include/pdal/PointRef.hpp",
+        "path_type": "hardlink",
+        "sha256": "37341c7a1d1c12707c31b0a691e888505cc20695f58671345bc2639541e5e332",
+        "size_in_bytes": 14410
+      },
+      {
+        "_path": "Library/include/pdal/PointTable.hpp",
+        "path_type": "hardlink",
+        "sha256": "1120c0d3296bc825c1cb80c92bdbd2b6de11593fc9ef05547e996a3bfd8c9fd8",
+        "size_in_bytes": 9547
+      },
+      {
+        "_path": "Library/include/pdal/PointView.hpp",
+        "path_type": "hardlink",
+        "sha256": "ce27feaf5cdab248e039192f9242a4776518e6db7e5f24ecf5bca2703f6ef11f",
+        "size_in_bytes": 20699
+      },
+      {
+        "_path": "Library/include/pdal/Polygon.hpp",
+        "path_type": "hardlink",
+        "sha256": "045c8600ba0adc6e532ff96feb44d2e743458bd625f8640453dea8c533664b68",
+        "size_in_bytes": 3799
+      },
+      {
+        "_path": "Library/include/pdal/QuadIndex.hpp",
+        "path_type": "hardlink",
+        "sha256": "e3f7ae41085b066b6f83f4d84fe8d335d6faf0ce828d936dbeddba8400f8476e",
+        "size_in_bytes": 5818
+      },
+      {
+        "_path": "Library/include/pdal/QuickInfo.hpp",
+        "path_type": "hardlink",
+        "sha256": "e57c8566ed2fb35e9b836c9d84ac54b392deb9ae8d9f0616eb147252c3cfd1ea",
+        "size_in_bytes": 3179
+      },
+      {
+        "_path": "Library/include/pdal/Reader.hpp",
+        "path_type": "hardlink",
+        "sha256": "da1c8e8a0e2d2b64544ec49d9781be2e94183ecceac3286e08a40fa9bfd2b6b0",
+        "size_in_bytes": 3264
+      },
+      {
+        "_path": "Library/include/pdal/Scaling.hpp",
+        "path_type": "hardlink",
+        "sha256": "f25172ed95728338048adc23bb034c645625eed3834b47c4cf22ac5f60ac4873",
+        "size_in_bytes": 3029
+      },
+      {
+        "_path": "Library/include/pdal/SpatialReference.hpp",
+        "path_type": "hardlink",
+        "sha256": "5b8f39f016e96a2f5b496fdcf7381800dee342666617927b434ed92793452846",
+        "size_in_bytes": 7073
+      },
+      {
+        "_path": "Library/include/pdal/SrsBounds.hpp",
+        "path_type": "hardlink",
+        "sha256": "f5b4719fd370fb280afb08a9633c2be6d08718ce00c0e3198fc2739a7e70b5ba",
+        "size_in_bytes": 2767
+      },
+      {
+        "_path": "Library/include/pdal/Stage.hpp",
+        "path_type": "hardlink",
+        "sha256": "8b6fc1efa2184f477447a16f2576d25b747e8fc8ad1e0a2f9e5b8526a25a7ec1",
+        "size_in_bytes": 15355
+      },
+      {
+        "_path": "Library/include/pdal/StageExtensions.hpp",
+        "path_type": "hardlink",
+        "sha256": "84e373d181c41c5a3ea408fc6e20c877813d24f09a596cc2182ade63d36ed78d",
+        "size_in_bytes": 2397
+      },
+      {
+        "_path": "Library/include/pdal/StageFactory.hpp",
+        "path_type": "hardlink",
+        "sha256": "dce25b1a19c747f0e8c9c6542356727c963878e07811487d3976184babfc6841",
+        "size_in_bytes": 3818
+      },
+      {
+        "_path": "Library/include/pdal/StageWrapper.hpp",
+        "path_type": "hardlink",
+        "sha256": "7c6499cbe3d8e01022effc5b7e5b57ecd44d9835cee998e82eca0d2836496b69",
+        "size_in_bytes": 2012
+      },
+      {
+        "_path": "Library/include/pdal/Streamable.hpp",
+        "path_type": "hardlink",
+        "sha256": "740f9dac0a046d7d2f1b2702c4546e7c4b7e89ef55582c559608c1e0da3a7ea8",
+        "size_in_bytes": 4265
+      },
+      {
+        "_path": "Library/include/pdal/SubcommandKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "20ae7ea589b73cdeb39795862c7787254da7ee9be226de46534379b168589395",
+        "size_in_bytes": 2577
+      },
+      {
+        "_path": "Library/include/pdal/Writer.hpp",
+        "path_type": "hardlink",
+        "sha256": "fa86e59337e2aac53ae3629e100e11dac05742b3a3a96dfffdc1d5dddda622d5",
+        "size_in_bytes": 3895
+      },
+      {
+        "_path": "Library/include/pdal/XMLSchema.hpp",
+        "path_type": "hardlink",
+        "sha256": "83778cc246c35865ddd09012c1a3caa0ce533ac5570a240a3f3e13c5b6d8a01f",
+        "size_in_bytes": 4579
+      },
+      {
+        "_path": "Library/include/pdal/compression/Compression.hpp",
+        "path_type": "hardlink",
+        "sha256": "85ffe28c0ac1328b38af374461906aa08cc6b3de41cc814f251dfa073f89abab",
+        "size_in_bytes": 2738
+      },
+      {
+        "_path": "Library/include/pdal/compression/DeflateCompression.hpp",
+        "path_type": "hardlink",
+        "sha256": "4c64932ddf0e9e40dab12d903ff1a4dee6548220e59cd58b77faeccf40816234",
+        "size_in_bytes": 2532
+      },
+      {
+        "_path": "Library/include/pdal/compression/GzipCompression.hpp",
+        "path_type": "hardlink",
+        "sha256": "0cee0340b2d88dd98adc818c542150b7321cdd3bbd1302634eec784092d118a9",
+        "size_in_bytes": 2314
+      },
+      {
+        "_path": "Library/include/pdal/compression/LazPerfVlrCompression.hpp",
+        "path_type": "hardlink",
+        "sha256": "27b995bd7eafb45a8817135c02f2dc618a25e14acd83507024d88ff6c213948e",
+        "size_in_bytes": 3370
+      },
+      {
+        "_path": "Library/include/pdal/compression/LzmaCompression.hpp",
+        "path_type": "hardlink",
+        "sha256": "db0464d4780ca90435957e1757827aa3a2073403ed16b14a0851784ce80c7959",
+        "size_in_bytes": 2501
+      },
+      {
+        "_path": "Library/include/pdal/compression/ZstdCompression.hpp",
+        "path_type": "hardlink",
+        "sha256": "d46a9eada5e4924c4da7e5f1ebfd789ccf91a426461fdeedc7b68ab50340de79",
+        "size_in_bytes": 2574
+      },
+      {
+        "_path": "Library/include/pdal/filters/ApproximateCoplanarFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "e8e6cdb192c2bc2f31d2f8e0559c362a42ac7a7c77625f0c8dcd600261624fea",
+        "size_in_bytes": 2470
+      },
+      {
+        "_path": "Library/include/pdal/filters/AssignFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "3e8d6fe672bc30c6975fe4fd20c600e98702935feb9a6c139db4f6d1a1624637",
+        "size_in_bytes": 2436
+      },
+      {
+        "_path": "Library/include/pdal/filters/CSFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "c01a72cceda77067bf223b302cfdbb6910f1f1808870a8b15e7c4022cfaf00d8",
+        "size_in_bytes": 2567
+      },
+      {
+        "_path": "Library/include/pdal/filters/ChipperFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "8e64e1e45d5ac83fabecb1ca963fa2a5db600c52fca692d81ba8feb41027872e",
+        "size_in_bytes": 4220
+      },
+      {
+        "_path": "Library/include/pdal/filters/ClusterFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "017f1016f9b85654589cd18fb314c1498dc8238c86b09ebb94365d162f97a434",
+        "size_in_bytes": 2438
+      },
+      {
+        "_path": "Library/include/pdal/filters/ColorInterpRamps.hpp",
+        "path_type": "hardlink",
+        "sha256": "b5146a3c24eb589da451cf8d7510aeb5f40b3fb7c131ff2d50882993bb9943ff",
+        "size_in_bytes": 28116
+      },
+      {
+        "_path": "Library/include/pdal/filters/ColorinterpFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "026f60e48b32ae005bbf90c145bb1abb3922aa91241dd2fd45b5a21bf02a260d",
+        "size_in_bytes": 3533
+      },
+      {
+        "_path": "Library/include/pdal/filters/ColorizationFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "ced9bc36bd604dc9a8332e4d4a65753ec606ce7ceba10f3f38324bac27d7812a",
+        "size_in_bytes": 3311
+      },
+      {
+        "_path": "Library/include/pdal/filters/CovarianceFeaturesFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "c8ea620d5bb7315c95367da455ffdf3618322c10799da97caaaf63724e2801fa",
+        "size_in_bytes": 2944
+      },
+      {
+        "_path": "Library/include/pdal/filters/CropFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "1907d8850f99d77cdb18790e7e8b1618b3b532d27538ff3cf1fcb14b86095eda",
+        "size_in_bytes": 3795
+      },
+      {
+        "_path": "Library/include/pdal/filters/DBSCANFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "5684a1120da8f85535d3b38fea226a968905ea1b96e8fed880c27d11c4db17a5",
+        "size_in_bytes": 2482
+      },
+      {
+        "_path": "Library/include/pdal/filters/DEMFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "86b49168c41fcf66dcec5cf76065a0194c4191e3b28c0de99b3ac825b3435e08",
+        "size_in_bytes": 2692
+      },
+      {
+        "_path": "Library/include/pdal/filters/DecimationFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "6b60fc228cdd0d652f4a677dd979991311edd635c4460cf07ac75f34d5ed8232",
+        "size_in_bytes": 2674
+      },
+      {
+        "_path": "Library/include/pdal/filters/DelaunayFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "057faeadc0a3c30dc9d20ec23d1f1beef2fde22c2277f9ca844bb63de7f3fd60",
+        "size_in_bytes": 2170
+      },
+      {
+        "_path": "Library/include/pdal/filters/DividerFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "6514d4d0b15dac41aa84c5703de2f7ebfc65caea64fa141053dcb01422fb6253",
+        "size_in_bytes": 2757
+      },
+      {
+        "_path": "Library/include/pdal/filters/ELMFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "cfa456699dbd9e1d4b6f2ab8191c15cebdab32191490b94a8e747b44b37b335d",
+        "size_in_bytes": 2458
+      },
+      {
+        "_path": "Library/include/pdal/filters/EigenvaluesFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "e65c78eecb509986070c13a4e4b1b8ce1639da148cc38e2472da5bd5793f4abb",
+        "size_in_bytes": 2452
+      },
+      {
+        "_path": "Library/include/pdal/filters/EstimateRankFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "3ec027ad90d912a034ba64dc63e256a7c5f075450a6765568205ed46d6a1830c",
+        "size_in_bytes": 2396
+      },
+      {
+        "_path": "Library/include/pdal/filters/ExpressionFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "54da6fb90e781cc498acc7542b61740bd8fb45933cea0731823b1c0aac3285b7",
+        "size_in_bytes": 2518
+      },
+      {
+        "_path": "Library/include/pdal/filters/ExpressionStatsFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "2395e36f181b4a8e216367cee35a0fb8b5331e4a9e4d4016ac81dbde3029b941",
+        "size_in_bytes": 2760
+      },
+      {
+        "_path": "Library/include/pdal/filters/FaceRasterFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "195b6b138e54cf10caf289d6deb5ab10a50a4056a043528b1ead749c8452cfff",
+        "size_in_bytes": 2504
+      },
+      {
+        "_path": "Library/include/pdal/filters/FarthestPointSamplingFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "a64806c2f9a096fbe126c6f4d08aa904ba58e9292735597bb1c337011811af03",
+        "size_in_bytes": 2363
+      },
+      {
+        "_path": "Library/include/pdal/filters/FerryFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "acb8e55cef6719e8967e24270dbe33fe5c176aaff28902433893b6f6b892b930",
+        "size_in_bytes": 2887
+      },
+      {
+        "_path": "Library/include/pdal/filters/GeomDistanceFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "548e368e278d8693b2a4c030871fc006022d842e3a0548b988247c5323f95d5e",
+        "size_in_bytes": 2752
+      },
+      {
+        "_path": "Library/include/pdal/filters/GeoreferenceFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "087a833fc2f293e51b2aedfe8e49cc54711a2e65ed217813ea047d6045e930ef",
+        "size_in_bytes": 2824
+      },
+      {
+        "_path": "Library/include/pdal/filters/GpsTimeConvert.hpp",
+        "path_type": "hardlink",
+        "sha256": "896694edbd83308b41f5bb30f87d3f7810c72c08b51257710dc2ac2deab40dfc",
+        "size_in_bytes": 3305
+      },
+      {
+        "_path": "Library/include/pdal/filters/GreedyProjection.hpp",
+        "path_type": "hardlink",
+        "sha256": "bc83dab3c88c356f91a088ade7d49e1170658c753c891d1f159da798fa15aa91",
+        "size_in_bytes": 15465
+      },
+      {
+        "_path": "Library/include/pdal/filters/GridDecimationFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "b6112fd25912f16a05563d2cd4798ca8152cb2f2c1dba96e2acd57edd46ca996",
+        "size_in_bytes": 1497
+      },
+      {
+        "_path": "Library/include/pdal/filters/GroupByFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "51eaabd26b17e38de05903079af88464f83a65669bc22e3c2ca3504e8f9753cd",
+        "size_in_bytes": 2483
+      },
+      {
+        "_path": "Library/include/pdal/filters/H3Filter.hpp",
+        "path_type": "hardlink",
+        "sha256": "9403916ee377b907695b28295b56f1614a53d20aa0c4c64e8d68e75d73b9f1bd",
+        "size_in_bytes": 2660
+      },
+      {
+        "_path": "Library/include/pdal/filters/HagDelaunayFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "99705478da022758778bba0efe49a074701208d1fdf3a0e27a9db8c0e0ac87a1",
+        "size_in_bytes": 2516
+      },
+      {
+        "_path": "Library/include/pdal/filters/HagDemFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "51aee5adbf3e14061d34986eca8cb34d7e5a39da6cd91ed0297343e7243b707c",
+        "size_in_bytes": 2800
+      },
+      {
+        "_path": "Library/include/pdal/filters/HagNnFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "30414cda07a7ad2883589e7d640d0adba8e5415baed11670b0c3372b32162a4b",
+        "size_in_bytes": 2506
+      },
+      {
+        "_path": "Library/include/pdal/filters/HeadFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "5647b6d5be95ec451e018907581f8f4c39d823b1d07d8648348e1eea18192b7e",
+        "size_in_bytes": 2444
+      },
+      {
+        "_path": "Library/include/pdal/filters/HexBinFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "9969f2801c1a0d2f5cbce7468369666042087a7196fd6ecaa416683806d99bb7",
+        "size_in_bytes": 3046
+      },
+      {
+        "_path": "Library/include/pdal/filters/IQRFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "41971fdbcd6650f689f14b3dea0241d395d84a20452c8c4a28be98aaed9f50be",
+        "size_in_bytes": 2406
+      },
+      {
+        "_path": "Library/include/pdal/filters/InfoFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "ec17504e7e1368033b7dac35fffa3daac5aa53f08c0e658409d55c5cdeaa1d75",
+        "size_in_bytes": 3380
+      },
+      {
+        "_path": "Library/include/pdal/filters/IterativeClosestPoint.hpp",
+        "path_type": "hardlink",
+        "sha256": "823c84e377dc8b2e8021e868468f88c0c23a33463f9c496bff259651d3a66d3d",
+        "size_in_bytes": 2847
+      },
+      {
+        "_path": "Library/include/pdal/filters/LOFFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "4a0bf194f3d34fe80b74305509b5f7e5c1731c997c54cace2179f2163cf38a6f",
+        "size_in_bytes": 2327
+      },
+      {
+        "_path": "Library/include/pdal/filters/LabelDuplicatesFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "0ad7c8bb636f1c008f6553438ca7894413de4ea07da3be1c07d8f25850a8f858",
+        "size_in_bytes": 2455
+      },
+      {
+        "_path": "Library/include/pdal/filters/LiTreeFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "b96a83c77bf83a8e8f9d6e0ce1db41bbf4816402f06a8cfd5243cc7af02f669b",
+        "size_in_bytes": 2897
+      },
+      {
+        "_path": "Library/include/pdal/filters/LloydKMeansFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "2aa4908ac417262db6b1cbb2c1756af6214dbb5bd69e9fd606dd0bca552f18b7",
+        "size_in_bytes": 2511
+      },
+      {
+        "_path": "Library/include/pdal/filters/LocateFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "4146e763d84e1cd6a376ae7280c5c8e2d1d879c851698d29dc4fea02cf0cfa6f",
+        "size_in_bytes": 2472
+      },
+      {
+        "_path": "Library/include/pdal/filters/M3C2Filter.hpp",
+        "path_type": "hardlink",
+        "sha256": "dd816d1cc31b6f48a8b262d4a7f73140d8ffcc49564970476f7ea4a1323d5655",
+        "size_in_bytes": 3444
+      },
+      {
+        "_path": "Library/include/pdal/filters/MADFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "4580231f3b6662cead781db0c81c95ebf1d28033374196bcba3c3944e3a6d35a",
+        "size_in_bytes": 2434
+      },
+      {
+        "_path": "Library/include/pdal/filters/MergeFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "a03a87b92f0e4e31a24a549b77b86ed6da154dd38215a7879a85ec05783b25c8",
+        "size_in_bytes": 2354
+      },
+      {
+        "_path": "Library/include/pdal/filters/MiniballFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "3a1839490ccb34b6d1eada5c170d8b01dcc3e64885c659eba88671f8532beb0f",
+        "size_in_bytes": 2412
+      },
+      {
+        "_path": "Library/include/pdal/filters/MongoExpressionFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "53527ef93ba96ebddb2dcb11012c32ae14edd93bc8a5c070e9978823c246842c",
+        "size_in_bytes": 2478
+      },
+      {
+        "_path": "Library/include/pdal/filters/MortonOrderFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "3cf29bcfe14b548467ebe7a93d4544b12a3179e78a3d009b70a224958ba923e0",
+        "size_in_bytes": 2401
+      },
+      {
+        "_path": "Library/include/pdal/filters/NNDistanceFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "de30d0e16c652864624cac635cba64f0c87299572de33faa1a1c38386c47001a",
+        "size_in_bytes": 2625
+      },
+      {
+        "_path": "Library/include/pdal/filters/NeighborClassifierFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "518d9809b3410279c121cabed952816d8ce509b8085c8734491f3962ec691fec",
+        "size_in_bytes": 2870
+      },
+      {
+        "_path": "Library/include/pdal/filters/NormalFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "35b009c07a114e37ee704acf5d8aecbf7d6d710d5e40fabc52b9e3654117e7ea",
+        "size_in_bytes": 3335
+      },
+      {
+        "_path": "Library/include/pdal/filters/OptimalNeighborhoodFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "b2a133689ffbdeb48fbb13e1c0bc2eed45776be48ea4ba738f155dacb112e8f2",
+        "size_in_bytes": 2360
+      },
+      {
+        "_path": "Library/include/pdal/filters/OutlierFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "98a2d7cbcc256704b9d25c8b4c83b452bc997f2f402bd09edfb386ad030128ed",
+        "size_in_bytes": 2728
+      },
+      {
+        "_path": "Library/include/pdal/filters/OverlayFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "4fe619a92b409d326835f0ccd83e883f09a4bce05b23671b97a844b2e7e1f920",
+        "size_in_bytes": 3493
+      },
+      {
+        "_path": "Library/include/pdal/filters/PMFFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "18e8685bda4feb81227e7564f6419056b825214c95e4a3d48ada7ee8936faafd",
+        "size_in_bytes": 2568
+      },
+      {
+        "_path": "Library/include/pdal/filters/PlaneFitFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "a5ae4a5c8dbd13fa0b1c2d6f5d1cca6ea968c7f24637e2a83e8c67c72adcb57e",
+        "size_in_bytes": 2591
+      },
+      {
+        "_path": "Library/include/pdal/filters/PoissonFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "edcb7c3b88157ae668b1b631db0433f239ddb62a51cfc2ea575c58dc13e75c35",
+        "size_in_bytes": 2372
+      },
+      {
+        "_path": "Library/include/pdal/filters/ProjPipelineFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "af5d4eee84ba35c79e6dc60d593a58a8a438a594b8e72287353776a7c24c622a",
+        "size_in_bytes": 2982
+      },
+      {
+        "_path": "Library/include/pdal/filters/RadialDensityFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "d9ab81568a4c8acb8985ccc6f3660e7bae1ddeac36a4f92fd4e5827e342f23df",
+        "size_in_bytes": 2384
+      },
+      {
+        "_path": "Library/include/pdal/filters/RadiusAssignFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "735e6cd47eed554592878e64ca4129ddfac6941823a8ed361fca75d6ec261ae2",
+        "size_in_bytes": 1517
+      },
+      {
+        "_path": "Library/include/pdal/filters/RandomizeFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "44fad75a09bc5af67ce1360b1884965d3ee1980d83ff4f572a5cbdaedb2aeda8",
+        "size_in_bytes": 2608
+      },
+      {
+        "_path": "Library/include/pdal/filters/RangeFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "0e578b471aacc6e8be125340476bd7970b5113d5e970108f5035320120e0125b",
+        "size_in_bytes": 2501
+      },
+      {
+        "_path": "Library/include/pdal/filters/ReciprocityFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "0ccd5019af2aab74d993f8e624c852c117ff2e857d80bf7c460c1928fa6c6388",
+        "size_in_bytes": 2481
+      },
+      {
+        "_path": "Library/include/pdal/filters/RelaxationDartThrowing.hpp",
+        "path_type": "hardlink",
+        "sha256": "a6aa4281f44c91df35e368d6541df528b752fb2ba91798ba4aa04cc86032aef8",
+        "size_in_bytes": 2514
+      },
+      {
+        "_path": "Library/include/pdal/filters/ReprojectionFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "583a5f05c13d5d84d5ab9bfb926a6dca43678308f9a4e0300770b911db8b3fa1",
+        "size_in_bytes": 3002
+      },
+      {
+        "_path": "Library/include/pdal/filters/ReturnsFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "d115366cb093ec85a9a0cfc74ffa9bf3868d5316d5feae9106e60236de080351",
+        "size_in_bytes": 2610
+      },
+      {
+        "_path": "Library/include/pdal/filters/SMRFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "3c82b8759c562f386a88e14830209272486b594b2550682c3d9b6e152ea5eace",
+        "size_in_bytes": 3484
+      },
+      {
+        "_path": "Library/include/pdal/filters/SampleFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "4fc0390754e9524e5b39b8e1e58eaa7f78a7d51472f78fa1293f05a13fa7fd16",
+        "size_in_bytes": 3039
+      },
+      {
+        "_path": "Library/include/pdal/filters/SeparateScanLineFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "0e23632489a7c9004623aec3e7151957c21cdfcbfa4b1cc7673fed72e4dc65e0",
+        "size_in_bytes": 2405
+      },
+      {
+        "_path": "Library/include/pdal/filters/ShellFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "afa79e14d8bbcfffe0040372d960058cf3011ccd5034fea25e23eedf878d6e5e",
+        "size_in_bytes": 2281
+      },
+      {
+        "_path": "Library/include/pdal/filters/SkewnessBalancingFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "24dfafffef9a3209a5900c69971b51187c7e8dc1fc0973e6d0624007654f143c",
+        "size_in_bytes": 2588
+      },
+      {
+        "_path": "Library/include/pdal/filters/SortFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "9790053f81fcabe2c10ef78b6a9c3158e42bbef24295c56f30abb6d967d55754",
+        "size_in_bytes": 2793
+      },
+      {
+        "_path": "Library/include/pdal/filters/SparseSurfaceFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "c8523c96d9df1d9a13290ccf4d6bc454521ea1aa07b0abb5578b229a0de1ec64",
+        "size_in_bytes": 2428
+      },
+      {
+        "_path": "Library/include/pdal/filters/SplitterFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "15896fe3790ee35bdf4367fc423ce3536d64e16dae62314462de78d78f6c8b10",
+        "size_in_bytes": 3463
+      },
+      {
+        "_path": "Library/include/pdal/filters/StatsFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "9be44c7ec8cd5cc490ec58fd266a4487a52bb995dcb5577edb344d2aa8e6995d",
+        "size_in_bytes": 7497
+      },
+      {
+        "_path": "Library/include/pdal/filters/StraightenFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "4e90328e4a9ebe5e9642dcd5771ddde6ed39a5001833f3e54cb1146d42bf6f18",
+        "size_in_bytes": 2559
+      },
+      {
+        "_path": "Library/include/pdal/filters/StreamCallbackFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "0bea6e064a1c31018a20b61ab19575b5dad4cd331e7dab4e7d6397034ac0c067",
+        "size_in_bytes": 2776
+      },
+      {
+        "_path": "Library/include/pdal/filters/SupervoxelFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "5baa07c5a1679febaa945be28591c3f46c78eb693a7c5acd3737fd4ebca0a941",
+        "size_in_bytes": 2568
+      },
+      {
+        "_path": "Library/include/pdal/filters/TailFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "c12ed0c4457768534332a659310a5690ed964cf4009b31e23b21559f1dae1d81",
+        "size_in_bytes": 3333
+      },
+      {
+        "_path": "Library/include/pdal/filters/TransformationFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "757ccaf495b5996bc013f1ed32644baf668cec82d9179ea921d488e45760c6dd",
+        "size_in_bytes": 3554
+      },
+      {
+        "_path": "Library/include/pdal/filters/VoxelCenterNearestNeighborFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "b6d9eec29f79b4d26e701602b5de5085ed3459c5fca6bf01e054b746f0aade3e",
+        "size_in_bytes": 2505
+      },
+      {
+        "_path": "Library/include/pdal/filters/VoxelCentroidNearestNeighborFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "c48d6638a62f41862ceb02235f8e8d05d967c1aaacc07ef9879b642503cc53fb",
+        "size_in_bytes": 2517
+      },
+      {
+        "_path": "Library/include/pdal/filters/VoxelDownsizeFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "86fb5895f86caf3e0b7172f761565aa6a55eaeaff3256bdee7166898a1179bc6",
+        "size_in_bytes": 3045
+      },
+      {
+        "_path": "Library/include/pdal/filters/ZsmoothFilter.hpp",
+        "path_type": "hardlink",
+        "sha256": "c2bd94607b97ea565e4f679c955f4a219ac3e54c0a9d1190e8a9c6be92472ee9",
+        "size_in_bytes": 1999
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/Comparison.hpp",
+        "path_type": "hardlink",
+        "sha256": "e5471929bdd218b13d4ed3ac6aefc0eb000c663782d84000b94ddddbf422fd9d",
+        "size_in_bytes": 8991
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/DimRange.hpp",
+        "path_type": "hardlink",
+        "sha256": "c051148f44b8f4961c8cd60f4111d919e27e3ba4cfcbfca7b0ea0b620ab09ce0",
+        "size_in_bytes": 5066
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/DisjointSet.hpp",
+        "path_type": "hardlink",
+        "sha256": "35934b32a7799bbf71419617c99d2a12fe297b08cc075b3feee6c69665f0cab4",
+        "size_in_bytes": 2058
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/Point.hpp",
+        "path_type": "hardlink",
+        "sha256": "0158fda654d575c32a2bb4cc36789e160e5758f6dc0e31212191aa911208bddd",
+        "size_in_bytes": 2413
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/Segmentation.hpp",
+        "path_type": "hardlink",
+        "sha256": "1d57caf6250d8905a7b89d80abb5bf5768076fadb9dc9ebd689c86da8269508d",
+        "size_in_bytes": 6410
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/delaunator.hpp",
+        "path_type": "hardlink",
+        "sha256": "4734629d03a25f8f7dd07078664c967e321aefb537623ebadd4ee062d148a49d",
+        "size_in_bytes": 3595
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/expr/AssignParser.hpp",
+        "path_type": "hardlink",
+        "sha256": "fd346256885f46f3910227728c0957bedafc54c8adf2927cb49f6885fc33cc22",
+        "size_in_bytes": 390
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/expr/AssignStatement.hpp",
+        "path_type": "hardlink",
+        "sha256": "d44cf7c4fcfabc18bc4dec6dc492f7ad7c63195dd47b8a0aeac27357d3356352",
+        "size_in_bytes": 1244
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/expr/BaseParser.hpp",
+        "path_type": "hardlink",
+        "sha256": "1f7ae77a0d38416baedcf31d897aef7b66860465d5bb1f2d10a9f628a64499c8",
+        "size_in_bytes": 914
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/expr/ConditionalExpression.hpp",
+        "path_type": "hardlink",
+        "sha256": "662b1f2d02e57f9d55b239317994efa05ab9a92a6c84db4a59c40370effd282f",
+        "size_in_bytes": 795
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/expr/ConditionalParser.hpp",
+        "path_type": "hardlink",
+        "sha256": "e3d735d783adce70d527869c230806298131613efc458b420e1a2fda874c6a16",
+        "size_in_bytes": 525
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/expr/Expression.hpp",
+        "path_type": "hardlink",
+        "sha256": "da50a75470327a988ef8b0de6928845aa365ab510e8f0eb2b1e18af1665d764f",
+        "size_in_bytes": 5631
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/expr/IdentExpression.hpp",
+        "path_type": "hardlink",
+        "sha256": "c725c5c19d51c7d141ac38b163b26ddda8fc823bec8ed8bca7167a872d80dc5e",
+        "size_in_bytes": 294
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/expr/Lexer.hpp",
+        "path_type": "hardlink",
+        "sha256": "27076af1c2b989137cb8e35666f457d872727dc6bbe61f1ba464d43806d37d00",
+        "size_in_bytes": 866
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/expr/MathExpression.hpp",
+        "path_type": "hardlink",
+        "sha256": "eed53d67d8c6fb49281253119655c6538235b67149cad825be4f36590bd58b1c",
+        "size_in_bytes": 267
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/expr/MathParser.hpp",
+        "path_type": "hardlink",
+        "sha256": "47f62b70e143e4e77cee76fbb5210c98d505213cea75e5485508c59948005744",
+        "size_in_bytes": 592
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/expr/Token.hpp",
+        "path_type": "hardlink",
+        "sha256": "fa4bc174627d110895e549bb91098fddab3916cb14e294bcb6ee599287c21de1",
+        "size_in_bytes": 2291
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/georeference/LocalCartesian.hpp",
+        "path_type": "hardlink",
+        "sha256": "3016939613ced5e326952917fc3d909a96b1a4d8642325a7624c39c3277c5969",
+        "size_in_bytes": 2427
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/georeference/Trajectory.hpp",
+        "path_type": "hardlink",
+        "sha256": "5f1be6af314751c2ebec8fef45c17c457bdd4d8881d9d0a53799d321bff42323",
+        "size_in_bytes": 2491
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/georeference/Utils.hpp",
+        "path_type": "hardlink",
+        "sha256": "5788d06c387515bfbecaa176440ab26f166f2b8c4a7d5c4651feb48dab9eb6d1",
+        "size_in_bytes": 4951
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/hexer/BaseGrid.hpp",
+        "path_type": "hardlink",
+        "sha256": "45bc99d642bc06785c85673718d2e2904df49865af67b2620f132a4b120ddb8d",
+        "size_in_bytes": 3205
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/hexer/H3grid.hpp",
+        "path_type": "hardlink",
+        "sha256": "47426ecab302a877f3ced1e95127b963df9011b78810dd73dbd30bdd0bb3c1b8",
+        "size_in_bytes": 3051
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/hexer/HexGrid.hpp",
+        "path_type": "hardlink",
+        "sha256": "d579cfee3d1eda43d25c5a6e0e15aa4153fccf770d9e7353be963b9272382706",
+        "size_in_bytes": 1709
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/hexer/HexId.hpp",
+        "path_type": "hardlink",
+        "sha256": "4e9ba501f4954c0fd0aa4af350d1414a712eb3bf65ae02ea57debbc2f769790e",
+        "size_in_bytes": 963
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/hexer/Path.hpp",
+        "path_type": "hardlink",
+        "sha256": "41167b1f7b83bf12b0cdd0531e8d29017d3b6983c789a61ec13e2100fe6ee83f",
+        "size_in_bytes": 3890
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/hexer/Point.hpp",
+        "path_type": "hardlink",
+        "sha256": "78fe561982a49730ef45c32ffb24287c88c1c8a42534b9cb904f6713bbb893ed",
+        "size_in_bytes": 748
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/hexer/Processor.hpp",
+        "path_type": "hardlink",
+        "sha256": "9f6f35b469d4470cad0d49b0ef7b72131af86b97746248d10ef56a42f2231460",
+        "size_in_bytes": 2174
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/hexer/Segment.hpp",
+        "path_type": "hardlink",
+        "sha256": "964a835f2d2be5efe6527923d2022984036c0bc9ea34b04edfee1b11968df409",
+        "size_in_bytes": 2532
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/hexer/exception.hpp",
+        "path_type": "hardlink",
+        "sha256": "09748fab5bad292046f95025e9e6cddec067ba1137dad297ce91c07f65b5113c",
+        "size_in_bytes": 2019
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/mongoexpression/Comparison.hpp",
+        "path_type": "hardlink",
+        "sha256": "3ccf77ebfed226ebedfa7009de0e23087906190e1d96e7dafc08952c265d0164",
+        "size_in_bytes": 9379
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/mongoexpression/Expression.hpp",
+        "path_type": "hardlink",
+        "sha256": "7ee28b281a1d888c5568a19c8b473d118f2a9c898deb2c04eb4d70b5a908fd4b",
+        "size_in_bytes": 2565
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/mongoexpression/LogicGate.hpp",
+        "path_type": "hardlink",
+        "sha256": "6d726294e743f5e808902a7f82f9a54accaf7621316e363400917cc84113d01e",
+        "size_in_bytes": 5199
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/mongoexpression/Support.hpp",
+        "path_type": "hardlink",
+        "sha256": "9417c551bf8d4c4d702bff0420655f0d091f2b26de59e82b03820fd4c89846ee",
+        "size_in_bytes": 2277
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/pnp/Grid.hpp",
+        "path_type": "hardlink",
+        "sha256": "0b615c0253a51f66490f1511e6e44617fa4d50629b77c9ed9c0c95fd1a3fb1e8",
+        "size_in_bytes": 2473
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/pnp/GridPnp.hpp",
+        "path_type": "hardlink",
+        "sha256": "3e7b76f5aea3915fd128a2b2da4a0be630338ed6a6c2911439a9ee3311c6dd03",
+        "size_in_bytes": 17144
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/pnp/VoxelRayTrace.hpp",
+        "path_type": "hardlink",
+        "sha256": "d00f3d509fecc38a0e0c5f0921187f3a413c3aa505295d26af812fd774925dff",
+        "size_in_bytes": 5975
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/straighten/Polyline.hpp",
+        "path_type": "hardlink",
+        "sha256": "65bcf7d8671a541bfa7c4664993af914a97c652ae72ca154a41c6f9cb0d3a055",
+        "size_in_bytes": 3250
+      },
+      {
+        "_path": "Library/include/pdal/filters/private/straighten/Utils.hpp",
+        "path_type": "hardlink",
+        "sha256": "df78bf8284be1e4ae22f9d38b22131600c0043e72d957d549be7fbe84521b291",
+        "size_in_bytes": 3901
+      },
+      {
+        "_path": "Library/include/pdal/io/BpfCompressor.hpp",
+        "path_type": "hardlink",
+        "sha256": "20e056a7186d165ed92b2f593ad0e2d528a4c9fa16c97dc56f635a63e53e5bdc",
+        "size_in_bytes": 2843
+      },
+      {
+        "_path": "Library/include/pdal/io/BpfHeader.hpp",
+        "path_type": "hardlink",
+        "sha256": "3cf2f31a6025328fc74ea80efa060828552dc525c040fc6547f0b7c5f5a701fa",
+        "size_in_bytes": 7188
+      },
+      {
+        "_path": "Library/include/pdal/io/BpfReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "22e085b57c847ee4ab53d5ba724ad3a3aa2395fcd7a2ff2e505556e5f1257429",
+        "size_in_bytes": 4396
+      },
+      {
+        "_path": "Library/include/pdal/io/BpfWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "ca6f817c61d7a8d71a298ec81bfa84cba72dd664c44cb93d370abdaced20e58c",
+        "size_in_bytes": 3509
+      },
+      {
+        "_path": "Library/include/pdal/io/BufferReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "b9f7a89cfe875c88816875d9e83476ba0f1af103605010a55e6d9c6d7a25903f",
+        "size_in_bytes": 2287
+      },
+      {
+        "_path": "Library/include/pdal/io/CopcReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "df7c6d312e5a2bcca3eb42809a05abac326f70ea807850bb24a7d12e0d6a0841",
+        "size_in_bytes": 3890
+      },
+      {
+        "_path": "Library/include/pdal/io/CopcWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "6a1a3f76ebc8fb87b399f5a9ca25243eb30083d48b85c5d23257568d5882c39d",
+        "size_in_bytes": 2857
+      },
+      {
+        "_path": "Library/include/pdal/io/EptAddonWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "417b885c71aadd67f4c02ea073bdfbd835243bf6d61f8e89bda9b792db687c19",
+        "size_in_bytes": 3242
+      },
+      {
+        "_path": "Library/include/pdal/io/EptReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "ca9b52206644b09a6f296611c2a711c4f1bd49d73ecbb27bf9953602f9b0c1b2",
+        "size_in_bytes": 3992
+      },
+      {
+        "_path": "Library/include/pdal/io/EsriReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "8152c51d8a0c9377003fd466a238104da0fe6dad81cecfdacc42c160538912dc",
+        "size_in_bytes": 3871
+      },
+      {
+        "_path": "Library/include/pdal/io/FauxReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "b58ff69263baee8076bf26eb70b3ab9a1306784cc6b89a9dda720f5082b1b62f",
+        "size_in_bytes": 5488
+      },
+      {
+        "_path": "Library/include/pdal/io/FbiHeader.hpp",
+        "path_type": "hardlink",
+        "sha256": "36f3cbed9ce3036a20fb11b7f844480c17a6a51d777742c53a38aa3fae1e6e0c",
+        "size_in_bytes": 6712
+      },
+      {
+        "_path": "Library/include/pdal/io/FbiReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "f54228508b829db65635cb5fa4aeab405d1024d93322668d220cede7a414515f",
+        "size_in_bytes": 2980
+      },
+      {
+        "_path": "Library/include/pdal/io/FbiWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "4af53375334935ce9f7f35850ff8cb26f90fba7f516a8ed8aa64bb104d69ddcd",
+        "size_in_bytes": 2243
+      },
+      {
+        "_path": "Library/include/pdal/io/GDALReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "81c653f839e7912d8a697ac3ba26d1bc80cf40f5e50606faabf66af6901fa8d2",
+        "size_in_bytes": 3719
+      },
+      {
+        "_path": "Library/include/pdal/io/GDALWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "20a5dd193fa6796fcc08d1ddf8ff705d3f4b11dca5ec2f2940edfc4607c64f62",
+        "size_in_bytes": 3637
+      },
+      {
+        "_path": "Library/include/pdal/io/GltfWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "e11aad2bbecaa6d1aab87ed517dfb629510294b7e9451bd7426193c4d8931efe",
+        "size_in_bytes": 3045
+      },
+      {
+        "_path": "Library/include/pdal/io/HeaderVal.hpp",
+        "path_type": "hardlink",
+        "sha256": "011eecef80b8ce4f0cdb10f3f9fc73cbc0cd6e3f4f80da609b76e6e085a94d4d",
+        "size_in_bytes": 5427
+      },
+      {
+        "_path": "Library/include/pdal/io/I3SReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "a031dd30c719cf1e08cd22d38552a5b86cb3484d3884350c20adde6a68a75b2a",
+        "size_in_bytes": 1976
+      },
+      {
+        "_path": "Library/include/pdal/io/Ilvis2MetadataReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "a499e0a4993a054c00bf65671f10a97b53f1ef1e7645c04559c16aef812052a3",
+        "size_in_bytes": 4606
+      },
+      {
+        "_path": "Library/include/pdal/io/Ilvis2Reader.hpp",
+        "path_type": "hardlink",
+        "sha256": "090d69b5293b1bbb587c2406afca543041fefb8885c3f2ae3268e09ee12ca90e",
+        "size_in_bytes": 3404
+      },
+      {
+        "_path": "Library/include/pdal/io/LasHeader.hpp",
+        "path_type": "hardlink",
+        "sha256": "8dd00401b2a88c2f95ec726b34fa813cf8a45f044f60884acf1fc3599ef10208",
+        "size_in_bytes": 10632
+      },
+      {
+        "_path": "Library/include/pdal/io/LasReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "22ff4b378cc2867e10d77e1a02d6725e8f56dd54e690c49147235489bf487e92",
+        "size_in_bytes": 4492
+      },
+      {
+        "_path": "Library/include/pdal/io/LasVLR.hpp",
+        "path_type": "hardlink",
+        "sha256": "b1b975f626a9e59593d5b513d7eb7be235defb050b37e5a13de148fee4827cca",
+        "size_in_bytes": 3293
+      },
+      {
+        "_path": "Library/include/pdal/io/LasWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "bf2835421e59a30c864eaf8b37235fb7afa83f9c28cff0917afe3739968c5ac8",
+        "size_in_bytes": 5523
+      },
+      {
+        "_path": "Library/include/pdal/io/MemoryViewReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "aa502afe05b3877a162205c364bf170503ddc4f19f7557faa1dc4e6465dea694",
+        "size_in_bytes": 7272
+      },
+      {
+        "_path": "Library/include/pdal/io/NullWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "32a69221947074d5c70047f1223f44fd9a702c907647cf909a613beb74f3a376",
+        "size_in_bytes": 2145
+      },
+      {
+        "_path": "Library/include/pdal/io/OGRWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "991ed4c9cd29d8a785a92bad9dcf9d330b4b365acceeb249871bdc490690a526",
+        "size_in_bytes": 3158
+      },
+      {
+        "_path": "Library/include/pdal/io/ObjReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "b968d0a6005401b055c36f0924de0bfe526fe40ab9abbb2010c0ca205d8c4f7c",
+        "size_in_bytes": 3496
+      },
+      {
+        "_path": "Library/include/pdal/io/OptechCommon.hpp",
+        "path_type": "hardlink",
+        "sha256": "ba031e5059f1ab0f1f36fc6d689e673b4f34f0b5fda6d751802fc70e16abc76e",
+        "size_in_bytes": 3933
+      },
+      {
+        "_path": "Library/include/pdal/io/OptechReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "58561cd2cf6160c9a1d0f7d710d64a8c5ab5c757eeedd4126456a2b0e32d75dc",
+        "size_in_bytes": 3068
+      },
+      {
+        "_path": "Library/include/pdal/io/OptechRotationMatrix.hpp",
+        "path_type": "hardlink",
+        "sha256": "b8aad2c1c6fcf63436ce32f33c1f3093fb0a2f49eb6baa8e9ab009f0c8caeb55",
+        "size_in_bytes": 1885
+      },
+      {
+        "_path": "Library/include/pdal/io/PcdHeader.hpp",
+        "path_type": "hardlink",
+        "sha256": "f523d80b973124b6ece30cd203da7eeab666af1578ac8c4cf950b76771a7b8a3",
+        "size_in_bytes": 3625
+      },
+      {
+        "_path": "Library/include/pdal/io/PcdReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "2d53b25e39ddadadd1fea1f81ec7e20c39f3807eaba2c9795850ec8a708e8462",
+        "size_in_bytes": 2668
+      },
+      {
+        "_path": "Library/include/pdal/io/PcdWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "ab25717bf67eb34ca44ce522dfd29f1a99785d8dd0c5273b348720db6903b2f2",
+        "size_in_bytes": 3086
+      },
+      {
+        "_path": "Library/include/pdal/io/PlyReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "88854b99bfdb0b2ca335e555c38cf04b7f2668d9180df8c9e3b23a6b1d4eac01",
+        "size_in_bytes": 4847
+      },
+      {
+        "_path": "Library/include/pdal/io/PlyWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "4d51351adb00c6553603db966002d9a3bdda4832921effa9b522988b0ea7fa99",
+        "size_in_bytes": 3988
+      },
+      {
+        "_path": "Library/include/pdal/io/PtsReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "032125585d15fd4cafad15192d00fc27513d035a29c30ffa16886ea9aa6b63b3",
+        "size_in_bytes": 3291
+      },
+      {
+        "_path": "Library/include/pdal/io/PtxReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "509a08c5dbf767845c1e71d0ec19ca643356bc48cf3b545ccfd95b1b7aad651e",
+        "size_in_bytes": 2820
+      },
+      {
+        "_path": "Library/include/pdal/io/QfitReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "db4a9b0506b3bb028c54d177ff589328e892e8cbc91fbecb08ffb257fe9f2a33",
+        "size_in_bytes": 2895
+      },
+      {
+        "_path": "Library/include/pdal/io/RasterWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "66029508283da11a1f05f09c827fde934946b65ecd9f55168796ef7a6abdea3e",
+        "size_in_bytes": 2370
+      },
+      {
+        "_path": "Library/include/pdal/io/SbetCommon.hpp",
+        "path_type": "hardlink",
+        "sha256": "0651265e5225f061b713febd5e8ab193b11dd4881bbfde4ebc98780eea794a67",
+        "size_in_bytes": 3471
+      },
+      {
+        "_path": "Library/include/pdal/io/SbetReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "8ebc2026d1fa8c7f69b7178ad15418c7ccb366b84e66ee30d2b975fc3bde9c58",
+        "size_in_bytes": 2634
+      },
+      {
+        "_path": "Library/include/pdal/io/SbetSmrmsgReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "835d69332d9d4deae364dc16be26801a22437666929dd48568bd3aaa5e6a188e",
+        "size_in_bytes": 2651
+      },
+      {
+        "_path": "Library/include/pdal/io/SbetWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "2fc2c430b33a618e636075f877665ee357c4bad75c35c770fe3afdc2cdb190aa",
+        "size_in_bytes": 2291
+      },
+      {
+        "_path": "Library/include/pdal/io/SlpkReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "dc69d8b8cd66ef89967857057ad755257394a1aa964e3a73e24d2587333237cc",
+        "size_in_bytes": 1979
+      },
+      {
+        "_path": "Library/include/pdal/io/StacReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "3ee5fe3f50e9b21deda50eeb371bc82b6eb5321e476c1fe112010700c1a275e9",
+        "size_in_bytes": 2884
+      },
+      {
+        "_path": "Library/include/pdal/io/TIndexReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "8d5c64ef6d95a95971fd83bbe1d878a38d50fb3694d6624ba06c7dbae718fde4",
+        "size_in_bytes": 3385
+      },
+      {
+        "_path": "Library/include/pdal/io/TerrasolidReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "fbd28b65cc5366cd51a864c54669cb44b527b3de6dc97a52e576f8c0c6f0ffa8",
+        "size_in_bytes": 3834
+      },
+      {
+        "_path": "Library/include/pdal/io/TextReader.hpp",
+        "path_type": "hardlink",
+        "sha256": "47afc90d8581adf0b792c48881c677fd858ac3ef06daa109615b9cd8aa185467",
+        "size_in_bytes": 4650
+      },
+      {
+        "_path": "Library/include/pdal/io/TextWriter.hpp",
+        "path_type": "hardlink",
+        "sha256": "f3eb15b6f7b2ba74527fb3f2d7c75787f3e80bdc9001eff65c7d91ba9f670e1b",
+        "size_in_bytes": 3490
+      },
+      {
+        "_path": "Library/include/pdal/io/point_types.hpp",
+        "path_type": "hardlink",
+        "sha256": "1cb94218b2380e2e86a404b4e6e09c15adf3b02f507fa81fa1536ca0f8a24725",
+        "size_in_bytes": 536
+      },
+      {
+        "_path": "Library/include/pdal/io/private/GDALGrid.hpp",
+        "path_type": "hardlink",
+        "sha256": "df68a517dbd8127d7127cc6ebfefb680177782ee588cb37e0a24619d77dff169",
+        "size_in_bytes": 5797
+      },
+      {
+        "_path": "Library/include/pdal/io/private/connector/Connector.hpp",
+        "path_type": "hardlink",
+        "sha256": "c04e03c52eba9700974006eca3db0c050e794f455348ce28980f3539b775c4d3",
+        "size_in_bytes": 3025
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copc/Entry.hpp",
+        "path_type": "hardlink",
+        "sha256": "3a502f5ee7d2ef68d06987bc04341124f2a809a1b7a7f1d50f3b36e3fdea1713",
+        "size_in_bytes": 4105
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copc/Info.hpp",
+        "path_type": "hardlink",
+        "sha256": "14b6d2872d6962c339110d3b29adaaad11ec9fe85c82a08c75785151cf3debe4",
+        "size_in_bytes": 2625
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copc/Key.hpp",
+        "path_type": "hardlink",
+        "sha256": "4022e1a309e53c67077af030d94d31bff9ca33c44294998da123d9e526e9bba4",
+        "size_in_bytes": 5579
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copc/Tile.hpp",
+        "path_type": "hardlink",
+        "sha256": "46956090f1b50f3f2f9e8ef444d1a7be5d37d0a59d62d4ace3edbc8aea5bbb96",
+        "size_in_bytes": 2720
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copcwriter/BuPyramid.hpp",
+        "path_type": "hardlink",
+        "sha256": "e277e35fbb3b5d24a4ee12db5f0fd9ce34661010b234375f63fdeda85723427e",
+        "size_in_bytes": 2263
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copcwriter/CellManager.hpp",
+        "path_type": "hardlink",
+        "sha256": "d1ce66bec267ed07b58d30e4809f9d87b53686af1da7e6e05727f2dcc8a94684",
+        "size_in_bytes": 2955
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copcwriter/Common.hpp",
+        "path_type": "hardlink",
+        "sha256": "4d8540a3e5a5382789a1ec51321f9c5081f6505580ea37e6ed40dc3236157eb7",
+        "size_in_bytes": 4469
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copcwriter/Grid.hpp",
+        "path_type": "hardlink",
+        "sha256": "655fdc19181a029daadc7e4b1d4a21090053de42a4109a0a358f98ce3302508f",
+        "size_in_bytes": 2809
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copcwriter/GridKey.hpp",
+        "path_type": "hardlink",
+        "sha256": "8529a70af913d3f0b38db356e7b2a6878344a05bf2378db8095b78f4eca353a8",
+        "size_in_bytes": 2981
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copcwriter/OctantInfo.hpp",
+        "path_type": "hardlink",
+        "sha256": "bc62ee28c7fc6ab870332cec3b11c141412f14b3af1f63ace384e4809821d033",
+        "size_in_bytes": 2885
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copcwriter/Output.hpp",
+        "path_type": "hardlink",
+        "sha256": "bce4c8ce13ffa1aa4dbd2192421e4b1c6c304014e9ef9de337e86b2d590ea927",
+        "size_in_bytes": 3191
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copcwriter/Processor.hpp",
+        "path_type": "hardlink",
+        "sha256": "14077d7d5c1878b1c4c81d7721f4aa73b815932337b52b8b7d8be783a5c8f22e",
+        "size_in_bytes": 2378
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copcwriter/PyramidManager.hpp",
+        "path_type": "hardlink",
+        "sha256": "0dbbdd18e01177626cfa2c2bba9070768dc8aef6861d441d05f68b2117446353",
+        "size_in_bytes": 2977
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copcwriter/Reprocessor.hpp",
+        "path_type": "hardlink",
+        "sha256": "281cf6ead9a7e80ac971e3e33efc908ecb97033c3186d04bf5d207995919591d",
+        "size_in_bytes": 2171
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copcwriter/VoxelInfo.hpp",
+        "path_type": "hardlink",
+        "sha256": "628aaa0ad23663695c6ba31d68d40c68b560c4ba827c3e24972dc016ba37abd0",
+        "size_in_bytes": 6708
+      },
+      {
+        "_path": "Library/include/pdal/io/private/copcwriter/VoxelKey.hpp",
+        "path_type": "hardlink",
+        "sha256": "fbd323bfe1ff0f7d7928bc1baaab3df8d0bea31f6d898b271c21064163efce4c",
+        "size_in_bytes": 4944
+      },
+      {
+        "_path": "Library/include/pdal/io/private/ept/Addon.hpp",
+        "path_type": "hardlink",
+        "sha256": "208da7ffe4d1268ec3bb71ef560527e85e7e7f052cbe46fc7397b923479dcd8d",
+        "size_in_bytes": 3716
+      },
+      {
+        "_path": "Library/include/pdal/io/private/ept/Artifact.hpp",
+        "path_type": "hardlink",
+        "sha256": "162ca157c0a0ad7b6aefb5de474b3a5d59ce806c851fbd498b3837990e20bd2b",
+        "size_in_bytes": 2636
+      },
+      {
+        "_path": "Library/include/pdal/io/private/ept/EptInfo.hpp",
+        "path_type": "hardlink",
+        "sha256": "a6cdda872228476a4ff24ef937adcd1e8cf894ef20ef28d637436852cb9f5112",
+        "size_in_bytes": 3724
+      },
+      {
+        "_path": "Library/include/pdal/io/private/ept/EptSupport.hpp",
+        "path_type": "hardlink",
+        "sha256": "bddbe44aed80b356016ff909b2636fcd66b7b9052f706e6d4b27364b42c0e705",
+        "size_in_bytes": 2256
+      },
+      {
+        "_path": "Library/include/pdal/io/private/ept/FixedPointLayout.hpp",
+        "path_type": "hardlink",
+        "sha256": "40355e137f2283649f23d941ebf918ddb1b259d253d6334a11b3e13b6cdbe41e",
+        "size_in_bytes": 2735
+      },
+      {
+        "_path": "Library/include/pdal/io/private/ept/Key.hpp",
+        "path_type": "hardlink",
+        "sha256": "378f96c813def5d4e13f056ed6bf51d3aff81b80a7ef764e5f8da3c3ebdc403f",
+        "size_in_bytes": 4729
+      },
+      {
+        "_path": "Library/include/pdal/io/private/ept/Overlap.hpp",
+        "path_type": "hardlink",
+        "sha256": "c9c7fa1df255f41886e01429bb1d27fb0395f04604261eb34685b8b9bbd3946a",
+        "size_in_bytes": 2621
+      },
+      {
+        "_path": "Library/include/pdal/io/private/ept/TileContents.hpp",
+        "path_type": "hardlink",
+        "sha256": "4f591f9bccef0ef0892b3586aad1fccddea0b65e71dededb749570185f3958bc",
+        "size_in_bytes": 3373
+      },
+      {
+        "_path": "Library/include/pdal/io/private/ept/VectorPointTable.hpp",
+        "path_type": "hardlink",
+        "sha256": "98aeae07bcb4876c7645a5124b9c815f394052dfadd8e5b2f6280ef1edc0a7ed",
+        "size_in_bytes": 2508
+      },
+      {
+        "_path": "Library/include/pdal/io/private/esri/EsriUtil.hpp",
+        "path_type": "hardlink",
+        "sha256": "1b2e0e1c64e4e7c1b45c1e10e514da4e62be192d864e60832153c961e533e3b3",
+        "size_in_bytes": 4025
+      },
+      {
+        "_path": "Library/include/pdal/io/private/esri/Interface.hpp",
+        "path_type": "hardlink",
+        "sha256": "fa4587ad925c4ceb3fabb3f2eebb98f4344aadec43c3d4baae4195e7cd33333b",
+        "size_in_bytes": 2203
+      },
+      {
+        "_path": "Library/include/pdal/io/private/esri/Obb.hpp",
+        "path_type": "hardlink",
+        "sha256": "5797863754e08d1a9c9891f680a27edf51f374aedd71051317b7c282cbe28795",
+        "size_in_bytes": 3402
+      },
+      {
+        "_path": "Library/include/pdal/io/private/esri/PageManager.hpp",
+        "path_type": "hardlink",
+        "sha256": "b2b9d848846f9bd0b5a1997afb025de9dc2e664d2983292c65ab3a49a2c99d69",
+        "size_in_bytes": 2652
+      },
+      {
+        "_path": "Library/include/pdal/io/private/las/ChunkInfo.hpp",
+        "path_type": "hardlink",
+        "sha256": "818e6305cffac5e7df096aaf0fdcd4aed593da26200af25a321afb2841fcf972",
+        "size_in_bytes": 6331
+      },
+      {
+        "_path": "Library/include/pdal/io/private/las/Geotiff.hpp",
+        "path_type": "hardlink",
+        "sha256": "fdebce328f768e9576af1864822d29a75b695df2ee472cadabdf6529b6e984f0",
+        "size_in_bytes": 3047
+      },
+      {
+        "_path": "Library/include/pdal/io/private/las/Header.hpp",
+        "path_type": "hardlink",
+        "sha256": "283b4de3677a0640dfc3931ad83d1d8e426e03141a136254e09e02771e5b2800",
+        "size_in_bytes": 5677
+      },
+      {
+        "_path": "Library/include/pdal/io/private/las/Srs.hpp",
+        "path_type": "hardlink",
+        "sha256": "7ba1c347fbf67c67252cb372cf181bf789c118cdbad4a753faa2e3e1e5feaa91",
+        "size_in_bytes": 2729
+      },
+      {
+        "_path": "Library/include/pdal/io/private/las/Summary.hpp",
+        "path_type": "hardlink",
+        "sha256": "8893809e6ff9bcf89b9dd045469d6520f534fc972aaeaf07acf7cd6ce2c3e8b7",
+        "size_in_bytes": 2554
+      },
+      {
+        "_path": "Library/include/pdal/io/private/las/Tile.hpp",
+        "path_type": "hardlink",
+        "sha256": "c238d6b3b6fc4977a659576653858647930f38f5d5453b77416f1bcca73cc549",
+        "size_in_bytes": 2487
+      },
+      {
+        "_path": "Library/include/pdal/io/private/las/Utils.hpp",
+        "path_type": "hardlink",
+        "sha256": "fee9664ef4ed3ff40ceccd165771a736bbd35b5c8e422c5ee2f21e0a5905dc35",
+        "size_in_bytes": 11024
+      },
+      {
+        "_path": "Library/include/pdal/io/private/las/Vlr.hpp",
+        "path_type": "hardlink",
+        "sha256": "38cabbbe79a0519e8e16a9ffe4386d5172d996c9efaef78706cd2bf289d0bb17",
+        "size_in_bytes": 7906
+      },
+      {
+        "_path": "Library/include/pdal/io/private/stac/Catalog.hpp",
+        "path_type": "hardlink",
+        "sha256": "d749957b4a5b5b0266456701d934d06d164e42b589e517fdd5eee0cf00695a9a",
+        "size_in_bytes": 3461
+      },
+      {
+        "_path": "Library/include/pdal/io/private/stac/Collection.hpp",
+        "path_type": "hardlink",
+        "sha256": "f1cc11086f0571a53a992110ee8cfb89a0dc1b5400b1b474364e263e9bf7bcf6",
+        "size_in_bytes": 2141
+      },
+      {
+        "_path": "Library/include/pdal/io/private/stac/Item.hpp",
+        "path_type": "hardlink",
+        "sha256": "ae65eaa538b50f423acfd547d81e95cde33c8c38f60703a27b5b52601d4d31de",
+        "size_in_bytes": 3766
+      },
+      {
+        "_path": "Library/include/pdal/io/private/stac/ItemCollection.hpp",
+        "path_type": "hardlink",
+        "sha256": "4baa306eb9828febbfe1a0cd52c09d574a6935e34f1eb826324dd5836797a17d",
+        "size_in_bytes": 2451
+      },
+      {
+        "_path": "Library/include/pdal/io/private/stac/Utils.hpp",
+        "path_type": "hardlink",
+        "sha256": "24d46f8f1748802739b53acd14cffc3552efb3d1e8174db95d6b1f91a4a53d75",
+        "size_in_bytes": 3860
+      },
+      {
+        "_path": "Library/include/pdal/kernels/ChamferKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "e37a4a5ac4f17b89699181ed479d4d86f1fbd770fd297afe8dadf6177f0a0d89",
+        "size_in_bytes": 2313
+      },
+      {
+        "_path": "Library/include/pdal/kernels/DeltaKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "cb19270cb13018ef383b372ec958c654125af8501aa0110598b1df0925d34d00",
+        "size_in_bytes": 3052
+      },
+      {
+        "_path": "Library/include/pdal/kernels/DensityKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "62a1c44494a680370ffa47ffdb74f057248e6ebf754ae7f34d8eb81858edab5a",
+        "size_in_bytes": 2431
+      },
+      {
+        "_path": "Library/include/pdal/kernels/EvalKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "45a3e5a8e2acda6ded520a33ee86212252d8a1ca323d0b894578775b7ee0d17d",
+        "size_in_bytes": 6133
+      },
+      {
+        "_path": "Library/include/pdal/kernels/GroundKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "3b6ba519f2375703ba79a2c87627f39159a1ffd151fc1019c2e3a52ce991d777",
+        "size_in_bytes": 2311
+      },
+      {
+        "_path": "Library/include/pdal/kernels/HausdorffKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "9673b00cb49b1d59a1f64111c701cbdc102c9c3f808b90df7651eab787d6fccc",
+        "size_in_bytes": 2283
+      },
+      {
+        "_path": "Library/include/pdal/kernels/InfoKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "d1f994f0d96b959e97d84ecd56c06fa7d29df7e3f6cecb78a58af666262896de",
+        "size_in_bytes": 3455
+      },
+      {
+        "_path": "Library/include/pdal/kernels/MergeKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "babb2983ecec4a00260c31ee12020265f408b8c2e3d67a95a62708a791e0265f",
+        "size_in_bytes": 2120
+      },
+      {
+        "_path": "Library/include/pdal/kernels/PipelineKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "4ba7b1f2b18a23c9c34442c089a794af93cf86d37e00f904da26de072f2925e9",
+        "size_in_bytes": 2574
+      },
+      {
+        "_path": "Library/include/pdal/kernels/RandomKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "71ba8ff0c2ace9c4a10392c13f0864e8aa4d97928661c80a9cc8f37fd2701d6c",
+        "size_in_bytes": 2268
+      },
+      {
+        "_path": "Library/include/pdal/kernels/SortKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "4e68b113f48bd3d14b60d9dd9f281992111239e476932a807da481a36e6e15df",
+        "size_in_bytes": 2167
+      },
+      {
+        "_path": "Library/include/pdal/kernels/SplitKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "5def6ae40c1203660a966505745c611a30786e53a397abdb58630abe2223c1dc",
+        "size_in_bytes": 2225
+      },
+      {
+        "_path": "Library/include/pdal/kernels/TIndexKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "94d8e17cfbaff4ab61fd84db9a59d8a7004726d06257ac0e332b88889be74c60",
+        "size_in_bytes": 4508
+      },
+      {
+        "_path": "Library/include/pdal/kernels/TileKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "027cda1baea0caad2322669cbf77ad3ba79a286311b538f8ebe7a3002a769c8c",
+        "size_in_bytes": 2786
+      },
+      {
+        "_path": "Library/include/pdal/kernels/TranslateKernel.hpp",
+        "path_type": "hardlink",
+        "sha256": "b5cd727699bf968f490a84e58488c6c66a5d1bfbcf78af919078378009496750",
+        "size_in_bytes": 2692
+      },
+      {
+        "_path": "Library/include/pdal/kernels/private/PointlessLas.hpp",
+        "path_type": "hardlink",
+        "sha256": "a3f1de9b31e655f66ac2557f11a0b25a96deab3ce044070dd282155cee5ee458",
+        "size_in_bytes": 2531
+      },
+      {
+        "_path": "Library/include/pdal/kernels/private/density/OGR.hpp",
+        "path_type": "hardlink",
+        "sha256": "6730373a128dcb2cfbbcce027ae20784c821fe9ddffda9440a61cd32a0e61af1",
+        "size_in_bytes": 2541
+      },
+      {
+        "_path": "Library/include/pdal/kernels/private/stac/StacInfo.hpp",
+        "path_type": "hardlink",
+        "sha256": "0cf497ce70793ab0a332db5de1830aa3a0963d3e6b62356925f284a8a9525b1b",
+        "size_in_bytes": 7722
+      },
+      {
+        "_path": "Library/include/pdal/pdal.hpp",
+        "path_type": "hardlink",
+        "sha256": "9c6d4b66f87be711b279a4295f867f7d534bc52f62b1a412f3e0efb92ad0a402",
+        "size_in_bytes": 1963
+      },
+      {
+        "_path": "Library/include/pdal/pdal_config.hpp",
+        "path_type": "hardlink",
+        "sha256": "675c72ca89f0eb98e537bf0cf6803caf06a64c4d61e4a60285f0f5ff2d497257",
+        "size_in_bytes": 2500
+      },
+      {
+        "_path": "Library/include/pdal/pdal_export.hpp",
+        "path_type": "hardlink",
+        "sha256": "7241d419e5e316e1d7192deb9a6efed776a361637921f1556fa85661ace4a8eb",
+        "size_in_bytes": 1983
+      },
+      {
+        "_path": "Library/include/pdal/pdal_features.hpp",
+        "path_type": "hardlink",
+        "sha256": "abaa8780ae19d20fa3a6dbf635119f6b04dcd5d7fe2e1bb59926d80400c8e231",
+        "size_in_bytes": 941
+      },
+      {
+        "_path": "Library/include/pdal/pdal_internal.hpp",
+        "path_type": "hardlink",
+        "sha256": "1db502bac63689544b1963d0d9068cf2f5234de7092ffde6de93d556f18c5966",
+        "size_in_bytes": 2274
+      },
+      {
+        "_path": "Library/include/pdal/pdal_test_main.hpp",
+        "path_type": "hardlink",
+        "sha256": "3fc5cdae5eede8fc7c0367d1c1c92e25c8d96b3e6a2e122c8a2a71c35d53c653",
+        "size_in_bytes": 3014
+      },
+      {
+        "_path": "Library/include/pdal/pdal_types.hpp",
+        "path_type": "hardlink",
+        "sha256": "0db99a4ce690cbece68e759ebb105a890aaaab3052f5f043102dab469b2dd155",
+        "size_in_bytes": 8291
+      },
+      {
+        "_path": "Library/include/pdal/private/DynamicLibrary.hpp",
+        "path_type": "hardlink",
+        "sha256": "1faf45a8b5b1cd48b38e45782fb2176c24afae6e437e325aa0e526f4c1a74f8c",
+        "size_in_bytes": 2537
+      },
+      {
+        "_path": "Library/include/pdal/private/FileSpecHelper.hpp",
+        "path_type": "hardlink",
+        "sha256": "471e1de25396a0f6651b1d5f6f21e521a9f0b7330b9cee21692953ad16ee09dc",
+        "size_in_bytes": 2002
+      },
+      {
+        "_path": "Library/include/pdal/private/KDImpl.hpp",
+        "path_type": "hardlink",
+        "sha256": "649404eb138fd8232b8e427ad99dafd2212c9c36b11123f3eca2171ad85a3916",
+        "size_in_bytes": 13645
+      },
+      {
+        "_path": "Library/include/pdal/private/MathUtils.hpp",
+        "path_type": "hardlink",
+        "sha256": "07e25f9f0b7ea988eef76c742fac5cb885d81ae38a046c99392138b9c897a196",
+        "size_in_bytes": 12006
+      },
+      {
+        "_path": "Library/include/pdal/private/OGRSpec.hpp",
+        "path_type": "hardlink",
+        "sha256": "fdd2e73170ecb5fa4c673e9a732727e7e8aaafaed9df4c67b848027ae3175366",
+        "size_in_bytes": 2138
+      },
+      {
+        "_path": "Library/include/pdal/private/PointGrid.hpp",
+        "path_type": "hardlink",
+        "sha256": "007ffdee1d8671f9aad3921664e968e2b4012b6cfc4ac09c99ef2887c719bcc9",
+        "size_in_bytes": 4005
+      },
+      {
+        "_path": "Library/include/pdal/private/Raster.hpp",
+        "path_type": "hardlink",
+        "sha256": "d30dd182ea625a9c0618ed9ca1d3e396618aa35c946d9f2b59c49a1f29f94ce6",
+        "size_in_bytes": 7386
+      },
+      {
+        "_path": "Library/include/pdal/private/SrsTransform.hpp",
+        "path_type": "hardlink",
+        "sha256": "31e1944b602f5c08bf98b10ae5653a1b34a08787cff90a0aba394e7f0a8bbf55",
+        "size_in_bytes": 3548
+      },
+      {
+        "_path": "Library/include/pdal/private/StageRunner.hpp",
+        "path_type": "hardlink",
+        "sha256": "46bcd97a71bfd25a5376beb73f06ef4b1a2300c3918acd513db2eeed6588d61f",
+        "size_in_bytes": 2168
+      },
+      {
+        "_path": "Library/include/pdal/private/gdal/ErrorHandler.hpp",
+        "path_type": "hardlink",
+        "sha256": "021e195bb5ee1138def0249d111d900d3359d07654efb17eecfeb845b0479b88",
+        "size_in_bytes": 3878
+      },
+      {
+        "_path": "Library/include/pdal/private/gdal/GDALError.hpp",
+        "path_type": "hardlink",
+        "sha256": "a27951d1f8d23744cb6a815a60c37d8f583a6e76c0e357a0dc706f5fd4c2c890",
+        "size_in_bytes": 2327
+      },
+      {
+        "_path": "Library/include/pdal/private/gdal/GDALUtils.hpp",
+        "path_type": "hardlink",
+        "sha256": "d98ab074d912c47b1578eeace1a7383d73c4287d2987dd36aaf4d6faa2856fb7",
+        "size_in_bytes": 3443
+      },
+      {
+        "_path": "Library/include/pdal/private/gdal/Raster.hpp",
+        "path_type": "hardlink",
+        "sha256": "c7e8340c7e5beb910d24dd4b267fae44bcacf5c425093d009ee127509463951d",
+        "size_in_bytes": 19157
+      },
+      {
+        "_path": "Library/include/pdal/private/gdal/SpatialRef.hpp",
+        "path_type": "hardlink",
+        "sha256": "28aa3780bab9a29995380d7df1bb4111097a9b910b819e796e01dc337518614a",
+        "size_in_bytes": 2504
+      },
+      {
+        "_path": "Library/include/pdal/util/Algorithm.hpp",
+        "path_type": "hardlink",
+        "sha256": "49fb5e8d196e26f8cc28b34a9588c43f7bbcf019a30d51f9932f260561265e5c",
+        "size_in_bytes": 3193
+      },
+      {
+        "_path": "Library/include/pdal/util/Backtrace.hpp",
+        "path_type": "hardlink",
+        "sha256": "7ff37d64697c1b6ee2046c20deae8e9442eaca0b2544380705284548c81fbd7b",
+        "size_in_bytes": 2117
+      },
+      {
+        "_path": "Library/include/pdal/util/Bounds.hpp",
+        "path_type": "hardlink",
+        "sha256": "2993ae012efaf01715cb40fba2b06f675af2f0b850dd97dc868e82f5ec98b33c",
+        "size_in_bytes": 23144
+      },
+      {
+        "_path": "Library/include/pdal/util/Charbuf.hpp",
+        "path_type": "hardlink",
+        "sha256": "f59a95a2c2159527a62d196e4f59aceb8a541c26f3685c8c6d6de2f5ef078868",
+        "size_in_bytes": 4288
+      },
+      {
+        "_path": "Library/include/pdal/util/Extractor.hpp",
+        "path_type": "hardlink",
+        "sha256": "659700dbffd01090f32f721d75c863db9992f99ab9c5755a346fa6b225c89df2",
+        "size_in_bytes": 17527
+      },
+      {
+        "_path": "Library/include/pdal/util/FileUtils.hpp",
+        "path_type": "hardlink",
+        "sha256": "6e26d9368bb138e4aedc031d54f651bf039ca5f8fab24d3aae4b618cb4c9aeb1",
+        "size_in_bytes": 10094
+      },
+      {
+        "_path": "Library/include/pdal/util/Georeference.hpp",
+        "path_type": "hardlink",
+        "sha256": "cded9f1110cd0220f1df625d3810ffb0adf60ddf726be7cef074916f9b5e8dd6",
+        "size_in_bytes": 2901
+      },
+      {
+        "_path": "Library/include/pdal/util/IStream.hpp",
+        "path_type": "hardlink",
+        "sha256": "5b3ad21749e957edac29f1de0cee103fef98af8d5def72995c123ccd7c4f8943",
+        "size_in_bytes": 18518
+      },
+      {
+        "_path": "Library/include/pdal/util/Inserter.hpp",
+        "path_type": "hardlink",
+        "sha256": "c28d316b6880d108217fedb7eb3473311c094054b273407d1bb0126418e7e8bb",
+        "size_in_bytes": 7841
+      },
+      {
+        "_path": "Library/include/pdal/util/NullOStream.hpp",
+        "path_type": "hardlink",
+        "sha256": "d3a9a87c85971fde57ea653e4a56674a8e8ed33e109b1bb2e810963d02f71aba",
+        "size_in_bytes": 2417
+      },
+      {
+        "_path": "Library/include/pdal/util/OStream.hpp",
+        "path_type": "hardlink",
+        "sha256": "09300eaaae3641845b8e86c47e4711ae64c5290b4b698be11a831d4dce8ef9a9",
+        "size_in_bytes": 9006
+      },
+      {
+        "_path": "Library/include/pdal/util/ProgramArgs.hpp",
+        "path_type": "hardlink",
+        "sha256": "19714d350c647748c973093644949a6df0a41be799f52890b25bd124403dfa63",
+        "size_in_bytes": 50825
+      },
+      {
+        "_path": "Library/include/pdal/util/Random.hpp",
+        "path_type": "hardlink",
+        "sha256": "18c51a967278d38580bd0007b20e0cbe0556c9df31e95558ad82ccceaa6cbf21",
+        "size_in_bytes": 2261
+      },
+      {
+        "_path": "Library/include/pdal/util/ThreadPool.hpp",
+        "path_type": "hardlink",
+        "sha256": "335b081626bfebd905b29d0c6275a0bf961991dc6c9543024ab0d00e8ea10883",
+        "size_in_bytes": 5488
+      },
+      {
+        "_path": "Library/include/pdal/util/Utils.hpp",
+        "path_type": "hardlink",
+        "sha256": "4676853bd6d183e513aa31e99e5c98ebf858f0551e61a44dff26614cedf0d280",
+        "size_in_bytes": 34951
+      },
+      {
+        "_path": "Library/include/pdal/util/Uuid.hpp",
+        "path_type": "hardlink",
+        "sha256": "0a5118470cb5a78a9874c371700094fa18ed304fb4d4c72265cec79cea852d8a",
+        "size_in_bytes": 8132
+      },
+      {
+        "_path": "Library/include/pdal/util/VSIIO.hpp",
+        "path_type": "hardlink",
+        "sha256": "9fc834fd1fe42f9eb85d8d23b82e8f427f880789ceab4eaad8f4de7151b5f038",
+        "size_in_bytes": 2799
+      },
+      {
+        "_path": "Library/include/pdal/util/pdal_util_export.hpp",
+        "path_type": "hardlink",
+        "sha256": "b69c4d10706b7ac886e975cf73201b0ea70f7fb8835cb6bb308cb05f18f4cd5b",
+        "size_in_bytes": 2697
+      },
+      {
+        "_path": "Library/include/pdal/util/pdal_util_internal.hpp",
+        "path_type": "hardlink",
+        "sha256": "8d7aa1f8d93c873ddf53ef373be19c189483618a6e911b02658f3c1a867da1c9",
+        "size_in_bytes": 2365
+      },
+      {
+        "_path": "Library/include/pdal/util/portable_endian.hpp",
+        "path_type": "hardlink",
+        "sha256": "ba000c0deef3977a47598af791f0575f4ef8550acef1066c2f9e6a34681344d1",
+        "size_in_bytes": 3352
+      },
+      {
+        "_path": "Library/include/pdal/util/private/BacktraceImpl.hpp",
+        "path_type": "hardlink",
+        "sha256": "2faca05a0db4fa2640cdb42b8a828d59dd49febbde86c2cd6eb486b5063325e9",
+        "size_in_bytes": 2145
+      },
+      {
+        "_path": "Library/include/pdal/util/private/JsonSupport.hpp",
+        "path_type": "hardlink",
+        "sha256": "1e5c02065f844ff46125dd6bee24b1fb3f2c672f2200c700a80d578c6bdbdaec",
+        "size_in_bytes": 6247
+      },
+      {
+        "_path": "Library/lib/cmake/PDAL/PDALConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "44a7f72b0c37b7f55348062f2050d07b33e06c05c3951794650768f75771b89e",
+        "size_in_bytes": 1535
+      },
+      {
+        "_path": "Library/lib/cmake/PDAL/PDALConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "50d11313816dd73e12686a63c915e2b84e17498b2a9bc678c95d3da089e6f07e",
+        "size_in_bytes": 1905
+      },
+      {
+        "_path": "Library/lib/cmake/PDAL/PDALTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "428494de7554566803daa8f71610e185887b801994734ae029e1593cb75b64f6",
+        "size_in_bytes": 944
+      },
+      {
+        "_path": "Library/lib/cmake/PDAL/PDALTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "1110978dbc4d76838a8898b6c71c2ca379c12fde65f046c5a93470116cd4af2a",
+        "size_in_bytes": 4335
+      },
+      {
+        "_path": "Library/lib/cmake/PDAL/pluginmacros.cmake",
+        "path_type": "hardlink",
+        "sha256": "00583940f5042429c9c95120f6ac47199e8652e0295b90c6d3ee7048ef8de351",
+        "size_in_bytes": 1174
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_kernel_fauxplugin.lib",
+        "path_type": "hardlink",
+        "sha256": "cf2b46daee60326a2a81108a76de339a27dd492b404a43e0edf1afa82adf6fd6",
+        "size_in_bytes": 182764
+      },
+      {
+        "_path": "Library/lib/pdalcpp.lib",
+        "path_type": "hardlink",
+        "sha256": "882da82d758f82f79ea383c9850e3644d522e0c5a2ff85a15340428abf298417",
+        "size_in_bytes": 1735220
+      },
+      {
+        "_path": "Library/lib/pkgconfig/pdal.pc",
+        "path_type": "hardlink",
+        "sha256": "1f337d422876524919841be85ccb13a4418015b83ad1b0febfec2ebb808e0245",
+        "sha256_in_prefix": "d5b8e98bc0b75400dcce72b57e42bddb5992853a33ce06011592b0f641621695",
+        "size_in_bytes": 441,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/libpdal-core_1777498443945/_h_env"
+      },
+      {
+        "_path": "etc/conda/activate.d/pdal-activate.bat",
+        "path_type": "hardlink",
+        "sha256": "619cfd821a43f4b780622fec9547a2e2faae5136e04b5792ca3add43153ae84b",
+        "size_in_bytes": 449
+      },
+      {
+        "_path": "etc/conda/activate.d/pdal-activate.sh",
+        "path_type": "hardlink",
+        "sha256": "df37e641bb7ae6ae4b91dee8a2d193ad51b33a73e9690d875c26396fa1c4a459",
+        "size_in_bytes": 440
+      },
+      {
+        "_path": "etc/conda/deactivate.d/pdal-deactivate.bat",
+        "path_type": "hardlink",
+        "sha256": "94d8efb76c2e1ced699df9869e1b541b209c5825d9d5e22a1b01f76372068bb1",
+        "size_in_bytes": 224
+      },
+      {
+        "_path": "etc/conda/deactivate.d/pdal-deactivate.sh",
+        "path_type": "hardlink",
+        "sha256": "beefe6a4c5baedbf7b4873b40edcb5552b398ce85527cb7fdfc086deb834f048",
+        "size_in_bytes": 228
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-core-2.10.1-h4e8f44f_2",
+    "type": 1
+  }
+}

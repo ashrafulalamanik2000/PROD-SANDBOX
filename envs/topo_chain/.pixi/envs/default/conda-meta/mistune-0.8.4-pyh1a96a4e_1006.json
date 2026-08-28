@@ -1,0 +1,97 @@
+{
+  "build": "pyh1a96a4e_1006",
+  "build_number": 1006,
+  "depends": [
+    "python >=3.5"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "ce48978fe2a49a887758ce17456601ad",
+  "name": "mistune",
+  "noarch": "python",
+  "run_exports": {},
+  "sha256": "cc2b11f228c2b0a819a4f2564cc4cd6ab74d85193ec355b3df318d6aee20fa65",
+  "size": 47805,
+  "subdir": "noarch",
+  "timestamp": 1673904245186,
+  "version": "0.8.4",
+  "fn": "mistune-0.8.4-pyh1a96a4e_1006.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/mistune-0.8.4-pyh1a96a4e_1006.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\mistune-0.8.4-pyh1a96a4e_1006",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/mistune-0.8.4.dist-info/INSTALLER",
+    "Lib/site-packages/mistune-0.8.4.dist-info/LICENSE",
+    "Lib/site-packages/mistune-0.8.4.dist-info/METADATA",
+    "Lib/site-packages/mistune-0.8.4.dist-info/RECORD",
+    "Lib/site-packages/mistune-0.8.4.dist-info/REQUESTED",
+    "Lib/site-packages/mistune-0.8.4.dist-info/WHEEL",
+    "Lib/site-packages/mistune-0.8.4.dist-info/direct_url.json",
+    "Lib/site-packages/mistune-0.8.4.dist-info/top_level.txt",
+    "Lib/site-packages/mistune.py"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/mistune-0.8.4.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/mistune-0.8.4.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "0c5259c3dd0a7c46f4835221645f62a0638c9b9faa02af08676e8069e1ff964b",
+        "size_in_bytes": 1482
+      },
+      {
+        "_path": "Lib/site-packages/mistune-0.8.4.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "5335a49a5caa54a522a092056b7cf7fd54f4f08320c0f6bbef9d4e169f4fc1bf",
+        "size_in_bytes": 8471
+      },
+      {
+        "_path": "Lib/site-packages/mistune-0.8.4.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "22d7d8dce847d8f71be5e34eab63cebe2254b45c2840c1fc2814c904a86c968d",
+        "size_in_bytes": 771
+      },
+      {
+        "_path": "Lib/site-packages/mistune-0.8.4.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/mistune-0.8.4.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "6dbd8eb7db1c7251ca30e2c310763a076b227163a0ba08c529a26c4fbbf0310a",
+        "size_in_bytes": 110
+      },
+      {
+        "_path": "Lib/site-packages/mistune-0.8.4.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "1694d035b1289a69fc82d1837786652b48157c0b22f83abc8c94d61334607bdd",
+        "size_in_bytes": 103
+      },
+      {
+        "_path": "Lib/site-packages/mistune-0.8.4.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "b6325333ae6401dc0a009da603bebdb670c661895f47ca6a46ca1b2a35447dc8",
+        "size_in_bytes": 8
+      },
+      {
+        "_path": "Lib/site-packages/mistune.py",
+        "path_type": "hardlink",
+        "sha256": "bc783737ee6f2be689d6a77dabd603bfe514fd54df9fb2273902600383da804c",
+        "size_in_bytes": 36516
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\mistune-0.8.4-pyh1a96a4e_1006",
+    "type": 1
+  }
+}

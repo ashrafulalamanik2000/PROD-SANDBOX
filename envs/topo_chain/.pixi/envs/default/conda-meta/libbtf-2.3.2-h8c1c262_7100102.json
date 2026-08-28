@@ -1,0 +1,93 @@
+{
+  "arch": "x86_64",
+  "build": "h8c1c262_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "md5": "2d0e918667b02ca4d2e323f6cdc26795",
+  "name": "libbtf",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libbtf >=2.3.2,<3.0a0"
+    ]
+  },
+  "sha256": "4dc28b9db4628c0b550c9de5fd564fac0b4468da239f1634a1dae5b465d560d1",
+  "size": 27509,
+  "subdir": "win-64",
+  "timestamp": 1742288893863,
+  "version": "2.3.2",
+  "fn": "libbtf-2.3.2-h8c1c262_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libbtf-2.3.2-h8c1c262_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libbtf-2.3.2-h8c1c262_7100102",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/btf.dll",
+    "Library/include/suitesparse/btf.h",
+    "Library/lib/btf.lib",
+    "Library/lib/cmake/BTF/BTFConfig.cmake",
+    "Library/lib/cmake/BTF/BTFConfigVersion.cmake",
+    "Library/lib/cmake/BTF/BTFTargets-release.cmake",
+    "Library/lib/cmake/BTF/BTFTargets.cmake"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/btf.dll",
+        "path_type": "hardlink",
+        "sha256": "80e71009eb2b45415c8eb90ea26dde2862e51bbbe596f46e5809aa031240f9bb",
+        "size_in_bytes": 15360
+      },
+      {
+        "_path": "Library/include/suitesparse/btf.h",
+        "path_type": "hardlink",
+        "sha256": "f5cf73928fedcebebe1021094359433060e3297be4e2edbbfc430ddb0a999a73",
+        "size_in_bytes": 12634
+      },
+      {
+        "_path": "Library/lib/btf.lib",
+        "path_type": "hardlink",
+        "sha256": "7c28d57ce4fe3a732b5ac0339561074aa5413b45ff80df9d11dd8c54a550fb8a",
+        "size_in_bytes": 2778
+      },
+      {
+        "_path": "Library/lib/cmake/BTF/BTFConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "679887d8f925ceebf9435597012e2e4ceae5fc890dbf7bd601861889b11d8de9",
+        "size_in_bytes": 6520
+      },
+      {
+        "_path": "Library/lib/cmake/BTF/BTFConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "61dbb4a7556ad58288bceeafd81569e7bd2e1757acaa332961c895babaa01a7e",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/BTF/BTFTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "874b50abd0bd404df3c7eede0dfec282c96cddd7b6ea2a7cb21c37364d248e36",
+        "size_in_bytes": 904
+      },
+      {
+        "_path": "Library/lib/cmake/BTF/BTFTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "aab2565665e880806f07a67045c067dfcffe854e94262115a50ce952a2e51e75",
+        "size_in_bytes": 4377
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libbtf-2.3.2-h8c1c262_7100102",
+    "type": 1
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "arch": "x86_64",
+  "build": "he2a975b_3",
+  "build_number": 3,
+  "depends": [
+    "libbrotlicommon 1.2.0 hf02afa3_3",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "cb5d08dc81f52e87c27914b5636cd995",
+  "name": "libbrotlienc",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libbrotlienc >=1.2.0,<1.3.0a0"
+    ]
+  },
+  "sha256": "c5e638ea9704c94b316238b425a3439ba38d4d8fba81682842e6d7d464472848",
+  "size": 253894,
+  "subdir": "win-64",
+  "timestamp": 1786622854214,
+  "version": "1.2.0",
+  "fn": "libbrotlienc-1.2.0-he2a975b_3.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libbrotlienc-1.2.0-he2a975b_3.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libbrotlienc-1.2.0-he2a975b_3",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/brotlienc.dll",
+    "Library/lib/brotlienc.lib",
+    "Library/lib/pkgconfig/libbrotlienc.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/brotlienc.dll",
+        "path_type": "hardlink",
+        "sha256": "a249530ec794e14670b8c6f5f2429083c80b5511b999a24700c169f9f8947439",
+        "size_in_bytes": 678912
+      },
+      {
+        "_path": "Library/lib/brotlienc.lib",
+        "path_type": "hardlink",
+        "sha256": "6121b22d280a08b38c952ec617fd48860629e51b56f5eb38c8395cd257d087f4",
+        "size_in_bytes": 4990
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libbrotlienc.pc",
+        "path_type": "hardlink",
+        "sha256": "6da1b86a114b20f1059cdebd963990371a12013ca759fe688443eaecce4be62a",
+        "sha256_in_prefix": "4327ab66752a9cf757f596b99d1f8c2f81c715ce72bb7080720a5e89b9077e4f",
+        "size_in_bytes": 395,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/brotli-split_1786622632121/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libbrotlienc-1.2.0-he2a975b_3",
+    "type": 1
+  }
+}

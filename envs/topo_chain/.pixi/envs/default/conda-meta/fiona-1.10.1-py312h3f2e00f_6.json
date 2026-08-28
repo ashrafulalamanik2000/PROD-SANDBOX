@@ -1,0 +1,795 @@
+{
+  "arch": "x86_64",
+  "build": "py312h3f2e00f_6",
+  "build_number": 6,
+  "depends": [
+    "attrs >=19.2.0",
+    "click >=8.0,<9.dev0",
+    "click-plugins >=1.0",
+    "cligj >=0.5",
+    "libgdal-core >=3.12.1,<3.13.0a0",
+    "pyparsing",
+    "python >=3.12,<3.13.0a0",
+    "python_abi 3.12.* *_cp312",
+    "shapely",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "cc679ec1a1dd027e5b0ae5721d9df2b2",
+  "name": "fiona",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "075511c84efaea59dddc8380a10a96d0813f14fa41878b171dd86fe514488c95",
+  "size": 985362,
+  "subdir": "win-64",
+  "timestamp": 1767051538939,
+  "version": "1.10.1",
+  "fn": "fiona-1.10.1-py312h3f2e00f_6.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/fiona-1.10.1-py312h3f2e00f_6.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\fiona-1.10.1-py312h3f2e00f_6",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/fiona/__init__.py",
+    "Lib/site-packages/fiona/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/_path.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/_show_versions.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/abc.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/collection.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/compat.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/drvsupport.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/enums.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/env.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/errors.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/features.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/inspector.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/io.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/logutils.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/meta.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/model.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/path.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/rfc3339.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/session.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/transform.cpython-312.pyc",
+    "Lib/site-packages/fiona/__pycache__/vfs.cpython-312.pyc",
+    "Lib/site-packages/fiona/_cpl.pxd",
+    "Lib/site-packages/fiona/_csl.pxd",
+    "Lib/site-packages/fiona/_env.cp312-win_amd64.pyd",
+    "Lib/site-packages/fiona/_env.pxd",
+    "Lib/site-packages/fiona/_err.cp312-win_amd64.pyd",
+    "Lib/site-packages/fiona/_err.pxd",
+    "Lib/site-packages/fiona/_geometry.cp312-win_amd64.pyd",
+    "Lib/site-packages/fiona/_geometry.pxd",
+    "Lib/site-packages/fiona/_path.py",
+    "Lib/site-packages/fiona/_show_versions.py",
+    "Lib/site-packages/fiona/_transform.cp312-win_amd64.pyd",
+    "Lib/site-packages/fiona/_vendor/__pycache__/snuggs.cpython-312.pyc",
+    "Lib/site-packages/fiona/_vendor/munch/__init__.py",
+    "Lib/site-packages/fiona/_vendor/munch/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/fiona/_vendor/snuggs.py",
+    "Lib/site-packages/fiona/_vsiopener.cp312-win_amd64.pyd",
+    "Lib/site-packages/fiona/_vsiopener.pxd",
+    "Lib/site-packages/fiona/abc.py",
+    "Lib/site-packages/fiona/collection.py",
+    "Lib/site-packages/fiona/compat.py",
+    "Lib/site-packages/fiona/crs.cp312-win_amd64.pyd",
+    "Lib/site-packages/fiona/crs.pxd",
+    "Lib/site-packages/fiona/drvsupport.py",
+    "Lib/site-packages/fiona/enums.py",
+    "Lib/site-packages/fiona/env.py",
+    "Lib/site-packages/fiona/errors.py",
+    "Lib/site-packages/fiona/features.py",
+    "Lib/site-packages/fiona/fio/__init__.py",
+    "Lib/site-packages/fiona/fio/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/bounds.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/calc.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/cat.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/collect.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/distrib.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/dump.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/env.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/features.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/helpers.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/info.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/insp.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/load.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/ls.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/main.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/options.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/__pycache__/rm.cpython-312.pyc",
+    "Lib/site-packages/fiona/fio/bounds.py",
+    "Lib/site-packages/fiona/fio/calc.py",
+    "Lib/site-packages/fiona/fio/cat.py",
+    "Lib/site-packages/fiona/fio/collect.py",
+    "Lib/site-packages/fiona/fio/distrib.py",
+    "Lib/site-packages/fiona/fio/dump.py",
+    "Lib/site-packages/fiona/fio/env.py",
+    "Lib/site-packages/fiona/fio/features.py",
+    "Lib/site-packages/fiona/fio/helpers.py",
+    "Lib/site-packages/fiona/fio/info.py",
+    "Lib/site-packages/fiona/fio/insp.py",
+    "Lib/site-packages/fiona/fio/load.py",
+    "Lib/site-packages/fiona/fio/ls.py",
+    "Lib/site-packages/fiona/fio/main.py",
+    "Lib/site-packages/fiona/fio/options.py",
+    "Lib/site-packages/fiona/fio/rm.py",
+    "Lib/site-packages/fiona/gdal.pxi",
+    "Lib/site-packages/fiona/inspector.py",
+    "Lib/site-packages/fiona/io.py",
+    "Lib/site-packages/fiona/logutils.py",
+    "Lib/site-packages/fiona/meta.py",
+    "Lib/site-packages/fiona/model.py",
+    "Lib/site-packages/fiona/ogrext.cp312-win_amd64.pyd",
+    "Lib/site-packages/fiona/ogrext1.pxd",
+    "Lib/site-packages/fiona/ogrext2.pxd",
+    "Lib/site-packages/fiona/ogrext3.pxd",
+    "Lib/site-packages/fiona/path.py",
+    "Lib/site-packages/fiona/rfc3339.py",
+    "Lib/site-packages/fiona/schema.cp312-win_amd64.pyd",
+    "Lib/site-packages/fiona/session.py",
+    "Lib/site-packages/fiona/transform.py",
+    "Lib/site-packages/fiona/vfs.py",
+    "Lib/site-packages/fiona-1.10.1-py3.12.egg-info/PKG-INFO",
+    "Lib/site-packages/fiona-1.10.1-py3.12.egg-info/SOURCES.txt",
+    "Lib/site-packages/fiona-1.10.1-py3.12.egg-info/dependency_links.txt",
+    "Lib/site-packages/fiona-1.10.1-py3.12.egg-info/entry_points.txt",
+    "Lib/site-packages/fiona-1.10.1-py3.12.egg-info/requires.txt",
+    "Lib/site-packages/fiona-1.10.1-py3.12.egg-info/top_level.txt",
+    "Scripts/fio-script.py",
+    "Scripts/fio.exe"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/fiona/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6ae963bc91baa37532766c3eadcbe4a12e86da7d271bcb0d0f10e4f80a443d39",
+        "size_in_bytes": 22584
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "3fcdd19cd7d877aec3a868cfd6fc9a8a0cb2a3dd4e7f368c38761584960d2c48",
+        "size_in_bytes": 22631
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/_path.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "0db60564f17a189fba4bd82797511438f09291e28969f99a64badf9877a3b34b",
+        "size_in_bytes": 8497
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/_show_versions.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "039048bbb1353c4f63e98b73df353aeb868ac4dbc1be1b053ffe786473c88f6a",
+        "size_in_bytes": 1179
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/abc.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "2fe2959f83be0d38998e1dab6e9ff8e22d0e3f964e61a822ade9c8e69efb95a7",
+        "size_in_bytes": 269
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/collection.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "1db4f39f3bc0d326b644707b28180d086cdca9a2f7bb9a15ee47bfb2d5dc0249",
+        "size_in_bytes": 32107
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/compat.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "98e4076268608fedd79a67c38938122a120783170f8d27cb89b7bae9275f8829",
+        "size_in_bytes": 584
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/drvsupport.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "1c1579faff9d576bdd30beb2b3dd8fbee917c4d7765c9e706e82324aae90ef70",
+        "size_in_bytes": 6527
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/enums.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "0fbd1cf2e2698e0346afa2d3f2221d52c47a6f6da25b636392f0bc41a5b58bb6",
+        "size_in_bytes": 942
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/env.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "eebe57de6329c49434a752ae3b15e83ad3ed151d14522d48c13bca6aea83950c",
+        "size_in_bytes": 24824
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/errors.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "90b07f3ae23a6a873055d92c8ceca44cb127c4421a57b7e5fed3333dafced656",
+        "size_in_bytes": 4895
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/features.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "76f133d59334ec72b4203fd05ebb2782a34a66588b60adae563ef49e6f7b6d95",
+        "size_in_bytes": 11717
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/inspector.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "2b0df452eee96cc02cac4a53893ba930ac5d613e822e0b3c6a28bef503946bb3",
+        "size_in_bytes": 1856
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/io.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "d892531b20bd81f4a560e688f601892b045eae488272e03b3b24fbd53d20c017",
+        "size_in_bytes": 7187
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/logutils.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "baa3c4b5d841e0c7a2bfa77f3f87688e2f11cee09f798aba0c3b02bd2817f0ea",
+        "size_in_bytes": 2098
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/meta.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "e3beaf7b58a41fe3ffe693e51e38e755e903368c709883b3849ce9d048bb8010",
+        "size_in_bytes": 8333
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/model.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "103f889a296e6bc7fa5ec14e5936d23f2c01ad3453d4fe62c10446eb9616d3ee",
+        "size_in_bytes": 18108
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/path.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "e2e96193382cf6b25c2bb2aec7cbda8c6fbd6f48f3ddbef3c4e856a61b4702ab",
+        "size_in_bytes": 673
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/rfc3339.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "978d30daa93f12a4e6eb1219ecd433594d0573300dd4e3ba004904bdebd98b5b",
+        "size_in_bytes": 5669
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/session.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "104ab78e6a9ea2ffee99c3ffb8614eeee72330c54fa0df69eb613097af6c307b",
+        "size_in_bytes": 19031
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/transform.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "e600d4a58b2949b230927c2f5719925c7756971d79f0109c1e2ccd9260ed3671",
+        "size_in_bytes": 4432
+      },
+      {
+        "_path": "Lib/site-packages/fiona/__pycache__/vfs.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "e38a38a8b5f74583dcd061851582e6fda94d388a6c300e97241c3715ab9c98ad",
+        "size_in_bytes": 3562
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_cpl.pxd",
+        "path_type": "hardlink",
+        "sha256": "a98a2b6817efe6b683779d87a4c573cc302502d4d647e3d95cde353ecf8fb24b",
+        "size_in_bytes": 733
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_csl.pxd",
+        "path_type": "hardlink",
+        "sha256": "ec8fde041c1e4af662b799d72596a9cef419a7ec4e951a5819e02c058d0876ca",
+        "size_in_bytes": 229
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_env.cp312-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "209aee7e671c52475b56a411c73f74261d4b975b27c9e77fab08e14ef360c14f",
+        "size_in_bytes": 166912
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_env.pxd",
+        "path_type": "hardlink",
+        "sha256": "38bd2e040f543a3b031abf1159d7df7bb720c4a9ccb9bc3fdc9d107e64706c6d",
+        "size_in_bytes": 214
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_err.cp312-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "aafe059f447494a07fb9eb11f1ee4a770dc7e5e236e10d06a1d4fd8d7f3d7d93",
+        "size_in_bytes": 134656
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_err.pxd",
+        "path_type": "hardlink",
+        "sha256": "16e5fab93efad93b24082d03ef75479c1e77de4898ba24b2e2e6f9f9b8004677",
+        "size_in_bytes": 448
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_geometry.cp312-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "d8c2ddc8fadaeeb11e1bdd3bd243425d0740e4b59fa64ede4c1bf3ab9faad253",
+        "size_in_bytes": 130048
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_geometry.pxd",
+        "path_type": "hardlink",
+        "sha256": "2e84cddeed4c5fcbec18f67bdfbfb78770502601965b5878e1d4f9bb50202b9b",
+        "size_in_bytes": 4667
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_path.py",
+        "path_type": "hardlink",
+        "sha256": "64dd7dd5383052ec06a902f66dcf9fcb7091ad9d7f56a4bd259cec95adf95ac6",
+        "size_in_bytes": 5487
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_show_versions.py",
+        "path_type": "hardlink",
+        "sha256": "6513e21a2fcf4d20c834ca5a5c6e58bd35015317fa7ae4b2238d320ac6e0c79a",
+        "size_in_bytes": 532
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_transform.cp312-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "e5efcf7ec798c209a664b0fce327950b855d6d51a4f33bdaa3dc79ecf9367a2b",
+        "size_in_bytes": 76288
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_vendor/__pycache__/snuggs.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "17ceaf620ed8a49411fc31ae77b0005cc4961fea15308c24bda85f17905a1935",
+        "size_in_bytes": 11940
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_vendor/munch/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "4e30d8cd2453c3d291c010b0771f5011d14db5a1d35fbaeee3c667d87251bb32",
+        "size_in_bytes": 17380
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_vendor/munch/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "d90fb506c3842372617dc3e2a5f18085a678f72ed89f25072113470fbf7ec60a",
+        "size_in_bytes": 22878
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_vendor/snuggs.py",
+        "path_type": "hardlink",
+        "sha256": "252b5b1c963c0b2c26ac1959be7f53dbab93f06ca692320dc4d9bb8ef4411344",
+        "size_in_bytes": 7824
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_vsiopener.cp312-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "3181af272659cafed9f895b90d6ba1e714ffbe6b382a75039e3be85b38cc89af",
+        "size_in_bytes": 315392
+      },
+      {
+        "_path": "Lib/site-packages/fiona/_vsiopener.pxd",
+        "path_type": "hardlink",
+        "sha256": "072f95eb951c022158fec63ac78cafa5fc3994032326a704bd165f46018c211a",
+        "size_in_bytes": 19
+      },
+      {
+        "_path": "Lib/site-packages/fiona/abc.py",
+        "path_type": "hardlink",
+        "sha256": "c8fdcb1c728d70dc0ee19b1e63435a2aedabd834ba90c2c1a855016319617942",
+        "size_in_bytes": 106
+      },
+      {
+        "_path": "Lib/site-packages/fiona/collection.py",
+        "path_type": "hardlink",
+        "sha256": "a6207c72eebdaf15caa8c5407293061bf02f04ede6c6e958b963410ef14bc74d",
+        "size_in_bytes": 27566
+      },
+      {
+        "_path": "Lib/site-packages/fiona/compat.py",
+        "path_type": "hardlink",
+        "sha256": "cb817e3faf7ab589eb221277771f3e7f733bdd403a5dffb576b75706eeb6e710",
+        "size_in_bytes": 278
+      },
+      {
+        "_path": "Lib/site-packages/fiona/crs.cp312-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "080a3082dc9d541a4c605d9cc4918e379aba5804fdff40a02882f28b2faba6a2",
+        "size_in_bytes": 243712
+      },
+      {
+        "_path": "Lib/site-packages/fiona/crs.pxd",
+        "path_type": "hardlink",
+        "sha256": "2274a9fd3f27e8281f215edd20e318385704f0e0f038e5e2acc9d86ec48c7ce4",
+        "size_in_bytes": 218
+      },
+      {
+        "_path": "Lib/site-packages/fiona/drvsupport.py",
+        "path_type": "hardlink",
+        "sha256": "706925b83748084e720132516ae43be78ae94ec93d395c51806397cd0398c57e",
+        "size_in_bytes": 14071
+      },
+      {
+        "_path": "Lib/site-packages/fiona/enums.py",
+        "path_type": "hardlink",
+        "sha256": "d89f786120475106e246a25263093d77dbbebe391bb38f929a2b975feec15523",
+        "size_in_bytes": 779
+      },
+      {
+        "_path": "Lib/site-packages/fiona/env.py",
+        "path_type": "hardlink",
+        "sha256": "cf8e066c9be50c989797c1c7f24d5abe2b304d56d622973431285bc8595dc0ae",
+        "size_in_bytes": 20951
+      },
+      {
+        "_path": "Lib/site-packages/fiona/errors.py",
+        "path_type": "hardlink",
+        "sha256": "5e63c65e5ba2df788f348fbccccf0f360dba4396136e1e8db576efe0563a748f",
+        "size_in_bytes": 2184
+      },
+      {
+        "_path": "Lib/site-packages/fiona/features.py",
+        "path_type": "hardlink",
+        "sha256": "f233e8d98298fa1f0cffa72001a207417e033421eb9a1a72187ff75e3096d0a0",
+        "size_in_bytes": 8539
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "7662b5ea6fb1a3ad6ec598f71234ab5c66def519462e8b4f3309838de77d5e2f",
+        "size_in_bytes": 510
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "5db8d853bb634b70ec8ebb03a7e4d725fb84c9e51ae42b0d930b0753b93d0795",
+        "size_in_bytes": 997
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/bounds.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "199757417b9449cd707d2e66ccc9f13e85b73b9089bed0245061fc5b8e0c4f1c",
+        "size_in_bytes": 3914
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/calc.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "dbce977a93c71f288641ebbe0f4abe8c24d79ed6ef8b57734d17ca749d7dbfb9",
+        "size_in_bytes": 2742
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/cat.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "9a1eec920e0f6951dfe6e8f252a31a976f2d70f59ee7fd18ea6d637030fdc1e9",
+        "size_in_bytes": 4927
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/collect.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "2a5e349e2f24c544448df3612dc7a68fa809cfd2dc180b617b7f04fe7a33c412",
+        "size_in_bytes": 8380
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/distrib.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "e149f5b8765c48a4e19de8329deafd14c1ab328ad08bdaa508ebf5408f524050",
+        "size_in_bytes": 1735
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/dump.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "1c9399b23b84212b1a87893854ef05a9f82601648f7d51e0458d51c38cf60812",
+        "size_in_bytes": 7049
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/env.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "fdb22595f06fe28f811e17101939a84f2047a8821ddc46819d2dc1bc2e100f3d",
+        "size_in_bytes": 2874
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/features.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "f61aaa7c5745da53953d3b6fc0409c8bdb53b8cb6710a18298fd5bf59333befb",
+        "size_in_bytes": 10489
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/helpers.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "4b606314c75b1904cc1f27a505a08fcd0183b5313e68bd601ec09e15e9600f06",
+        "size_in_bytes": 5515
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/info.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "ef14344e4f086852f445d1b981e53801c959b27989d149a34e095e8214e1cb74",
+        "size_in_bytes": 3760
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/insp.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "defc3f4b26ac4302a1c548fe3b13432b8477463f0619c64748a2910b4af8ab06",
+        "size_in_bytes": 2053
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/load.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "a835121acf78bc26146c31486c455f4c0b49e8f3252d5dc39870eaa3f7939185",
+        "size_in_bytes": 4125
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/ls.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "5a7ad239e5b7639ee857ce6101ce432c6f53d89ccb9e0c83a95a1e7309868ba7",
+        "size_in_bytes": 1036
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/main.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "0eef89c02c536348e6ea583d1f839203b9020d902a060de2c7054f462cf7c480",
+        "size_in_bytes": 4443
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/options.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "cd968517f1c234717ac89476755070b82edb14f3850775a1195e35fa7ea744da",
+        "size_in_bytes": 3479
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/__pycache__/rm.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "e27204d0c2ed345eaae8db8264c1f4204cf9884d525b28d7a953e57272709e0b",
+        "size_in_bytes": 1509
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/bounds.py",
+        "path_type": "hardlink",
+        "sha256": "326e1ab38c922816f0a31966dc608b246b583677c99433f9eda9a6cec3e92287",
+        "size_in_bytes": 2873
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/calc.py",
+        "path_type": "hardlink",
+        "sha256": "bf6e7a53a159c9cd1ca76a4605eca805d78b91f71993759c58bb75fb5f5f9b69",
+        "size_in_bytes": 2064
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/cat.py",
+        "path_type": "hardlink",
+        "sha256": "ca064f9ec34cc337f0ee3eaf0421d37db0454d1a19b3e12adfd59b5f47560caa",
+        "size_in_bytes": 3825
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/collect.py",
+        "path_type": "hardlink",
+        "sha256": "c84f31aef82c1180e0cab2c4ac1109e8e456105b63abaffd07ed77c69b0d9a96",
+        "size_in_bytes": 7729
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/distrib.py",
+        "path_type": "hardlink",
+        "sha256": "97cb6b52db44c7fae7b529995e86d82a80256ba008990fd9013cb576af6e3ab4",
+        "size_in_bytes": 941
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/dump.py",
+        "path_type": "hardlink",
+        "sha256": "0576c0968d36e4eeeff6bc75b0a370b52a603c16b00cf5a78d61e87e51bec4fe",
+        "size_in_bytes": 6909
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/env.py",
+        "path_type": "hardlink",
+        "sha256": "d33cb30fd9f7c731d06516049424a3b42a1c8c43e0a313dbb1ace6cdb05ad2d8",
+        "size_in_bytes": 1477
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/features.py",
+        "path_type": "hardlink",
+        "sha256": "8e91753347ece2768211ace2e3c57de0b5f734a3b7dc53882bca9dadb5fe240f",
+        "size_in_bytes": 9028
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/helpers.py",
+        "path_type": "hardlink",
+        "sha256": "07390cad3e06ab0960061c2c793ce3d00929954e10a788020af9e5c02a2be81c",
+        "size_in_bytes": 4082
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/info.py",
+        "path_type": "hardlink",
+        "sha256": "c528cebf06503a79f47227d0298e8e951d60ae21571c0d3ff9d267cb806f2c1d",
+        "size_in_bytes": 2559
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/insp.py",
+        "path_type": "hardlink",
+        "sha256": "04215c1e63ab2f2a7ed56433b29d32096e8b3381ec78b4677bbbdd5c66c2e5a2",
+        "size_in_bytes": 1253
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/load.py",
+        "path_type": "hardlink",
+        "sha256": "ae6bff6737673b8780b483eea926e49355bcbcf02f307750903dc44775d0f119",
+        "size_in_bytes": 2997
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/ls.py",
+        "path_type": "hardlink",
+        "sha256": "988f8fdc81300b270154c3cdf010d97109e259e57f2b887e2aec0570897d6ac8",
+        "size_in_bytes": 457
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/main.py",
+        "path_type": "hardlink",
+        "sha256": "bb69c130efa30a4e6178b74bf38e7d3202748d27c466c0881bfe341019c256af",
+        "size_in_bytes": 3067
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/options.py",
+        "path_type": "hardlink",
+        "sha256": "f04b236eea3ca03091c22f68e0b94993b515a0cb8f66aaa2a9f915c6ab3ae9ab",
+        "size_in_bytes": 2555
+      },
+      {
+        "_path": "Lib/site-packages/fiona/fio/rm.py",
+        "path_type": "hardlink",
+        "sha256": "1e734541feb5703299815634d2acdac320635cdb615f9d793c6c19c598d5ccc8",
+        "size_in_bytes": 769
+      },
+      {
+        "_path": "Lib/site-packages/fiona/gdal.pxi",
+        "path_type": "hardlink",
+        "sha256": "f28b3a86a54910644ddc4cac899e4bb22b01070f677972d2990776602e831639",
+        "size_in_bytes": 35961
+      },
+      {
+        "_path": "Lib/site-packages/fiona/inspector.py",
+        "path_type": "hardlink",
+        "sha256": "42044f87606dec6d1daeb3e278947309222e18255eceacb44447f5952b344d8b",
+        "size_in_bytes": 982
+      },
+      {
+        "_path": "Lib/site-packages/fiona/io.py",
+        "path_type": "hardlink",
+        "sha256": "b3cb2399847f04601048e17ec2fd1b6e13b056d51cced41c8fc07053fad80fe2",
+        "size_in_bytes": 6262
+      },
+      {
+        "_path": "Lib/site-packages/fiona/logutils.py",
+        "path_type": "hardlink",
+        "sha256": "c8d24a14cb5d9fb80d02fc88128bd6269750cf1387c7ad6132849eddb90146f9",
+        "size_in_bytes": 872
+      },
+      {
+        "_path": "Lib/site-packages/fiona/meta.py",
+        "path_type": "hardlink",
+        "sha256": "041490f5ed36a26bfb66ff0378e51b7eb1ed191bcde5d56eba0502de5acb6762",
+        "size_in_bytes": 6807
+      },
+      {
+        "_path": "Lib/site-packages/fiona/model.py",
+        "path_type": "hardlink",
+        "sha256": "8a78eac7c9f74ab384204ac187f3e08121eaf344f82409a1478ef3e9c3f6b09c",
+        "size_in_bytes": 12018
+      },
+      {
+        "_path": "Lib/site-packages/fiona/ogrext.cp312-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "bb902702eb8ea28993ba4e00f857f135300e1f8b8e380ddc44a017f12e2d4a12",
+        "size_in_bytes": 716800
+      },
+      {
+        "_path": "Lib/site-packages/fiona/ogrext1.pxd",
+        "path_type": "hardlink",
+        "sha256": "cf290d7b8f25553a516c040a09221b2560439b68c4ff4e9e8086f4f95bbed98c",
+        "size_in_bytes": 11296
+      },
+      {
+        "_path": "Lib/site-packages/fiona/ogrext2.pxd",
+        "path_type": "hardlink",
+        "sha256": "878daba57fa59a4089d80bb3191a71f1a75ff4151dd3234bb8d497a89fb4edc5",
+        "size_in_bytes": 12875
+      },
+      {
+        "_path": "Lib/site-packages/fiona/ogrext3.pxd",
+        "path_type": "hardlink",
+        "sha256": "89b04e2aedaaf4f71d8ba825916bd32bb814992243fcfbbfc080dc33eec60a3b",
+        "size_in_bytes": 12843
+      },
+      {
+        "_path": "Lib/site-packages/fiona/path.py",
+        "path_type": "hardlink",
+        "sha256": "a187270e3da3789f6a7d6ee0f78fa24cbf7d96a296aed735ad136e29dd62a4cc",
+        "size_in_bytes": 496
+      },
+      {
+        "_path": "Lib/site-packages/fiona/rfc3339.py",
+        "path_type": "hardlink",
+        "sha256": "1097809cf21707ee1cfb7c4d4519d2f37580d05f69396409f35dfa64558c8748",
+        "size_in_bytes": 3369
+      },
+      {
+        "_path": "Lib/site-packages/fiona/schema.cp312-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "da90575246bdc6ddfcc6930f1eb7bd34a5be4706eeba5fde146e440f3a77668d",
+        "size_in_bytes": 162304
+      },
+      {
+        "_path": "Lib/site-packages/fiona/session.py",
+        "path_type": "hardlink",
+        "sha256": "c6f0e1f7a8d8af2945885786373ce970feaadd5ef6ab0b10c2ae3e4f9dde2f4d",
+        "size_in_bytes": 18022
+      },
+      {
+        "_path": "Lib/site-packages/fiona/transform.py",
+        "path_type": "hardlink",
+        "sha256": "662a8c03ee0f2e8e466d984ce1d3601a8059fc55ebea1bfb0482b393f611d596",
+        "size_in_bytes": 4248
+      },
+      {
+        "_path": "Lib/site-packages/fiona/vfs.py",
+        "path_type": "hardlink",
+        "sha256": "2550761782816821c42b61f660ce8ce6a969f0cf2642504ee7c9d13c98949c27",
+        "size_in_bytes": 2503
+      },
+      {
+        "_path": "Lib/site-packages/fiona-1.10.1-py3.12.egg-info/PKG-INFO",
+        "path_type": "hardlink",
+        "sha256": "d03faff3bf47a8c877d96b56c9ce67f81eecbff1895c991e758a3373b6c63098",
+        "size_in_bytes": 58217
+      },
+      {
+        "_path": "Lib/site-packages/fiona-1.10.1-py3.12.egg-info/SOURCES.txt",
+        "path_type": "hardlink",
+        "sha256": "3bfb3172e53b398c8491759439bc2a3cdd18a8e0c05b4e732ef2b8b1bcfc000e",
+        "size_in_bytes": 4275
+      },
+      {
+        "_path": "Lib/site-packages/fiona-1.10.1-py3.12.egg-info/dependency_links.txt",
+        "path_type": "hardlink",
+        "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+        "size_in_bytes": 1
+      },
+      {
+        "_path": "Lib/site-packages/fiona-1.10.1-py3.12.egg-info/entry_points.txt",
+        "path_type": "hardlink",
+        "sha256": "e2d53c69b7ec1bbc39ec03944f3d196e9af6c9df61996d71bcb8d6f494ddfd9d",
+        "size_in_bytes": 50
+      },
+      {
+        "_path": "Lib/site-packages/fiona-1.10.1-py3.12.egg-info/requires.txt",
+        "path_type": "hardlink",
+        "sha256": "8ecc1ac10b76bdd4e1d63506527bf70f72945da9470d4025a9afe917f3395865",
+        "size_in_bytes": 233
+      },
+      {
+        "_path": "Lib/site-packages/fiona-1.10.1-py3.12.egg-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "cb856e330920657378f09c59bb058d52d217669d221870d4322a043a21dd5f50",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "Scripts/fio-script.py",
+        "path_type": "hardlink",
+        "sha256": "f9120799bd250dcf9c9d1ad8eef1fddb0ee03b00056dc094ca74f2f538cd0ea3",
+        "size_in_bytes": 220
+      },
+      {
+        "_path": "Scripts/fio.exe",
+        "path_type": "hardlink",
+        "sha256": "f24d102084620e54fe68d07f6e9169118b283f8d33d0c8f4b974c2e05a306059",
+        "size_in_bytes": 54032
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\fiona-1.10.1-py312h3f2e00f_6",
+    "type": 1
+  }
+}

@@ -1,0 +1,986 @@
+{
+  "arch": "x86_64",
+  "build": "h905dac0_0",
+  "build_number": 0,
+  "depends": [
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "libzlib >=1.3.2,<2.0a0",
+    "openssl >=3.5.7,<4.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "9b87119521f154d6be9c87e10a410f7a",
+  "name": "capnproto",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "capnproto >=1.5.0,<1.5.1.0a0"
+    ]
+  },
+  "sha256": "c0d28af3ef32973210edc8b8bb267937596f96233c7521b5197d27f664de7ff1",
+  "size": 9984556,
+  "subdir": "win-64",
+  "timestamp": 1784053125277,
+  "version": "1.5.0",
+  "fn": "capnproto-1.5.0-h905dac0_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/capnproto-1.5.0-h905dac0_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\capnproto-1.5.0-h905dac0_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/capnp.exe",
+    "Library/bin/capnpc-c++.exe",
+    "Library/bin/capnpc-capnp.exe",
+    "Library/bin/capnpc.exe",
+    "Library/include/capnp/any.h",
+    "Library/include/capnp/blob.h",
+    "Library/include/capnp/c++.capnp",
+    "Library/include/capnp/c++.capnp.h",
+    "Library/include/capnp/capability.h",
+    "Library/include/capnp/common.h",
+    "Library/include/capnp/compat/json.capnp",
+    "Library/include/capnp/compat/json.capnp.h",
+    "Library/include/capnp/compat/json.h",
+    "Library/include/capnp/compat/std-iterator.h",
+    "Library/include/capnp/compat/websocket-rpc.h",
+    "Library/include/capnp/dynamic.h",
+    "Library/include/capnp/endian.h",
+    "Library/include/capnp/ez-rpc.h",
+    "Library/include/capnp/generated-header-support.h",
+    "Library/include/capnp/layout.h",
+    "Library/include/capnp/list.h",
+    "Library/include/capnp/membrane.h",
+    "Library/include/capnp/message.h",
+    "Library/include/capnp/orphan.h",
+    "Library/include/capnp/persistent.capnp",
+    "Library/include/capnp/persistent.capnp.h",
+    "Library/include/capnp/pointer-helpers.h",
+    "Library/include/capnp/pretty-print.h",
+    "Library/include/capnp/raw-schema.h",
+    "Library/include/capnp/rpc-prelude.h",
+    "Library/include/capnp/rpc-twoparty.capnp",
+    "Library/include/capnp/rpc-twoparty.capnp.h",
+    "Library/include/capnp/rpc-twoparty.h",
+    "Library/include/capnp/rpc.capnp",
+    "Library/include/capnp/rpc.capnp.h",
+    "Library/include/capnp/rpc.h",
+    "Library/include/capnp/schema-lite.h",
+    "Library/include/capnp/schema-loader.h",
+    "Library/include/capnp/schema-parser.h",
+    "Library/include/capnp/schema.capnp",
+    "Library/include/capnp/schema.capnp.h",
+    "Library/include/capnp/schema.h",
+    "Library/include/capnp/serialize-async.h",
+    "Library/include/capnp/serialize-packed.h",
+    "Library/include/capnp/serialize-text.h",
+    "Library/include/capnp/serialize.h",
+    "Library/include/capnp/stream.capnp",
+    "Library/include/capnp/stream.capnp.h",
+    "Library/include/kj/arena.h",
+    "Library/include/kj/array.h",
+    "Library/include/kj/async-inl.h",
+    "Library/include/kj/async-io.h",
+    "Library/include/kj/async-prelude.h",
+    "Library/include/kj/async-queue.h",
+    "Library/include/kj/async-unix.h",
+    "Library/include/kj/async-win32.h",
+    "Library/include/kj/async.h",
+    "Library/include/kj/cidr.h",
+    "Library/include/kj/common.h",
+    "Library/include/kj/compat/gtest.h",
+    "Library/include/kj/compat/gzip.h",
+    "Library/include/kj/compat/http.h",
+    "Library/include/kj/compat/readiness-io.h",
+    "Library/include/kj/compat/tls.h",
+    "Library/include/kj/compat/url.h",
+    "Library/include/kj/debug.h",
+    "Library/include/kj/encoding.h",
+    "Library/include/kj/exception.h",
+    "Library/include/kj/filesystem.h",
+    "Library/include/kj/function.h",
+    "Library/include/kj/hash.h",
+    "Library/include/kj/io.h",
+    "Library/include/kj/list.h",
+    "Library/include/kj/main.h",
+    "Library/include/kj/map.h",
+    "Library/include/kj/memory.h",
+    "Library/include/kj/mutex.h",
+    "Library/include/kj/one-of.h",
+    "Library/include/kj/parse/char.h",
+    "Library/include/kj/parse/common.h",
+    "Library/include/kj/refcount.h",
+    "Library/include/kj/source-location.h",
+    "Library/include/kj/std/iostream.h",
+    "Library/include/kj/string-tree.h",
+    "Library/include/kj/string.h",
+    "Library/include/kj/table.h",
+    "Library/include/kj/test.h",
+    "Library/include/kj/thread.h",
+    "Library/include/kj/threadlocal.h",
+    "Library/include/kj/time.h",
+    "Library/include/kj/timer.h",
+    "Library/include/kj/tuple.h",
+    "Library/include/kj/units.h",
+    "Library/include/kj/vector.h",
+    "Library/include/kj/win32-api-version.h",
+    "Library/include/kj/windows-sanity.h",
+    "Library/lib/capnp-json.lib",
+    "Library/lib/capnp-rpc.lib",
+    "Library/lib/capnp-websocket.lib",
+    "Library/lib/capnp.lib",
+    "Library/lib/capnpc.lib",
+    "Library/lib/cmake/CapnProto/CapnProtoConfig.cmake",
+    "Library/lib/cmake/CapnProto/CapnProtoConfigVersion.cmake",
+    "Library/lib/cmake/CapnProto/CapnProtoMacros.cmake",
+    "Library/lib/cmake/CapnProto/CapnProtoTargets-release.cmake",
+    "Library/lib/cmake/CapnProto/CapnProtoTargets.cmake",
+    "Library/lib/kj-async.lib",
+    "Library/lib/kj-gzip.lib",
+    "Library/lib/kj-http.lib",
+    "Library/lib/kj-test.lib",
+    "Library/lib/kj-tls.lib",
+    "Library/lib/kj.lib",
+    "Library/lib/pkgconfig/capnp-json.pc",
+    "Library/lib/pkgconfig/capnp-rpc.pc",
+    "Library/lib/pkgconfig/capnp-websocket.pc",
+    "Library/lib/pkgconfig/capnp.pc",
+    "Library/lib/pkgconfig/capnpc.pc",
+    "Library/lib/pkgconfig/kj-async.pc",
+    "Library/lib/pkgconfig/kj-gzip.pc",
+    "Library/lib/pkgconfig/kj-http.pc",
+    "Library/lib/pkgconfig/kj-test.pc",
+    "Library/lib/pkgconfig/kj-tls.pc",
+    "Library/lib/pkgconfig/kj.pc",
+    "etc/conda/test-files/capnproto/0/c++/samples/CMakeLists.txt",
+    "etc/conda/test-files/capnproto/0/c++/samples/addressbook.c++",
+    "etc/conda/test-files/capnproto/0/c++/samples/addressbook.capnp",
+    "etc/conda/test-files/capnproto/0/c++/samples/calculator-client.c++",
+    "etc/conda/test-files/capnproto/0/c++/samples/calculator-server.c++",
+    "etc/conda/test-files/capnproto/0/c++/samples/calculator.capnp",
+    "etc/conda/test-files/capnproto/0/c++/samples/test.sh"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/capnp.exe",
+        "path_type": "hardlink",
+        "sha256": "c9c9c032139c0396f94bc4dba69143c99041dbab2a5f1bcab63bcbe432063f06",
+        "size_in_bytes": 1440256
+      },
+      {
+        "_path": "Library/bin/capnpc-c++.exe",
+        "path_type": "hardlink",
+        "sha256": "70dc48279cba212961056eddac2823743d5ad1881fae65cdf7891744479e2303",
+        "size_in_bytes": 1131008
+      },
+      {
+        "_path": "Library/bin/capnpc-capnp.exe",
+        "path_type": "hardlink",
+        "sha256": "aecbf1eec0e2fe39a5beb0be4c227e182afdcf58a0fda9c6f9cd5a6ffdb9827a",
+        "size_in_bytes": 495104
+      },
+      {
+        "_path": "Library/bin/capnpc.exe",
+        "path_type": "hardlink",
+        "sha256": "c9c9c032139c0396f94bc4dba69143c99041dbab2a5f1bcab63bcbe432063f06",
+        "size_in_bytes": 1440256
+      },
+      {
+        "_path": "Library/include/capnp/any.h",
+        "path_type": "hardlink",
+        "sha256": "10f1961bc01936cc2c10ca8d8e58d7ed18313bec5c36575c0e32063326d00efe",
+        "size_in_bytes": 36732
+      },
+      {
+        "_path": "Library/include/capnp/blob.h",
+        "path_type": "hardlink",
+        "sha256": "9478c0c410e6b5a16cea95a36bc9b7dc6e844e329c9c5cbc301c74646c3bbf28",
+        "size_in_bytes": 8508
+      },
+      {
+        "_path": "Library/include/capnp/c++.capnp",
+        "path_type": "hardlink",
+        "sha256": "52ead0eaa560b21e692d6f3d9966a52dfc99e19f53ae2d7c7bd2944a240d86de",
+        "size_in_bytes": 2712
+      },
+      {
+        "_path": "Library/include/capnp/c++.capnp.h",
+        "path_type": "hardlink",
+        "sha256": "22f16d12d6c6d15e02935b327febbb7a78bd247db027022584c16c2db02e4c70",
+        "size_in_bytes": 955
+      },
+      {
+        "_path": "Library/include/capnp/capability.h",
+        "path_type": "hardlink",
+        "sha256": "92d1d28d2e60e897951539d1a86785bb3114acba46a7eba4d39773798e7beb7a",
+        "size_in_bytes": 56159
+      },
+      {
+        "_path": "Library/include/capnp/common.h",
+        "path_type": "hardlink",
+        "sha256": "de1c72b100853fc4b999ffba4b8def1eea215141f4fd654c1033c97c4bc6261f",
+        "size_in_bytes": 27889
+      },
+      {
+        "_path": "Library/include/capnp/compat/json.capnp",
+        "path_type": "hardlink",
+        "sha256": "8d7f2199c46ececfb98d243318e875a5937ad7ba8b7f962d7399319d0bcddc48",
+        "size_in_bytes": 5493
+      },
+      {
+        "_path": "Library/include/capnp/compat/json.capnp.h",
+        "path_type": "hardlink",
+        "sha256": "4ffbd3a9de7f62afbecae7e85297946ccab10953e937c23ec39b62f3d5fb1d62",
+        "size_in_bytes": 49236
+      },
+      {
+        "_path": "Library/include/capnp/compat/json.h",
+        "path_type": "hardlink",
+        "sha256": "8f49b2b630a68d0dd670a1c02ca07828cbc50b286873a96162e3c98d917605cf",
+        "size_in_bytes": 24209
+      },
+      {
+        "_path": "Library/include/capnp/compat/std-iterator.h",
+        "path_type": "hardlink",
+        "sha256": "bcd355f93bba1beaee6efcdbca610bec2b5a73928a520ec760779e03c7453e3b",
+        "size_in_bytes": 1914
+      },
+      {
+        "_path": "Library/include/capnp/compat/websocket-rpc.h",
+        "path_type": "hardlink",
+        "sha256": "c78823c60374bb7f15009f2c8af3acad7e198e40c9642eabf097a5adb78b23cf",
+        "size_in_bytes": 2263
+      },
+      {
+        "_path": "Library/include/capnp/dynamic.h",
+        "path_type": "hardlink",
+        "sha256": "f85f4be68fd66314b662b417e6698b78376571531bc9a31de0428eb208437e64",
+        "size_in_bytes": 62194
+      },
+      {
+        "_path": "Library/include/capnp/endian.h",
+        "path_type": "hardlink",
+        "sha256": "a0af5284aaff0e72a07e6adb795278791c83422886625fff76da1da1d640d34a",
+        "size_in_bytes": 9278
+      },
+      {
+        "_path": "Library/include/capnp/ez-rpc.h",
+        "path_type": "hardlink",
+        "sha256": "e63f7d721141705b12a1eafc11856253ae9c6c303fa0bcd926b3c41216f11498",
+        "size_in_bytes": 11762
+      },
+      {
+        "_path": "Library/include/capnp/generated-header-support.h",
+        "path_type": "hardlink",
+        "sha256": "e83a3ab0671a7361f0881bd13d45c69c72debd8462634492734d75088d6f39b8",
+        "size_in_bytes": 14031
+      },
+      {
+        "_path": "Library/include/capnp/layout.h",
+        "path_type": "hardlink",
+        "sha256": "e6ca311f285196b4235968c7ef0894934da594ec1fb251890b3d28175fa986eb",
+        "size_in_bytes": 52190
+      },
+      {
+        "_path": "Library/include/capnp/list.h",
+        "path_type": "hardlink",
+        "sha256": "defb1b47c3719b5be6f0f8b977e1f7c7df743aa726a4006a43fc8204102f994b",
+        "size_in_bytes": 21180
+      },
+      {
+        "_path": "Library/include/capnp/membrane.h",
+        "path_type": "hardlink",
+        "sha256": "bf4dea094e6d9c68177fbbed8f4308ea1b3e2de3d623f4df868f71fbb4dfaeec",
+        "size_in_bytes": 16347
+      },
+      {
+        "_path": "Library/include/capnp/message.h",
+        "path_type": "hardlink",
+        "sha256": "e6b54cd95834400cc1e66e19a8ad3e7fece58444f4b76d627de838326a35a92a",
+        "size_in_bytes": 25718
+      },
+      {
+        "_path": "Library/include/capnp/orphan.h",
+        "path_type": "hardlink",
+        "sha256": "b612d8a30861d1e504c4969376e6e4a31485ebddeaf7294ff10dd98e0de8d683",
+        "size_in_bytes": 17759
+      },
+      {
+        "_path": "Library/include/capnp/persistent.capnp",
+        "path_type": "hardlink",
+        "sha256": "d77d4d2e2c1e9c42ded13de54ed11b535b076ac210945b53ecf76fd7648a867a",
+        "size_in_bytes": 7288
+      },
+      {
+        "_path": "Library/include/capnp/persistent.capnp.h",
+        "path_type": "hardlink",
+        "sha256": "1f459b3b2ae6989f74523f8d73fa370dfbf0a1a1c86ea0c651a7b5e700cd03e0",
+        "size_in_bytes": 25745
+      },
+      {
+        "_path": "Library/include/capnp/pointer-helpers.h",
+        "path_type": "hardlink",
+        "sha256": "65984141eed82cdb0194cf89efdcdbb0efdde6becd80fe985cf8b99d6e7bc3be",
+        "size_in_bytes": 6369
+      },
+      {
+        "_path": "Library/include/capnp/pretty-print.h",
+        "path_type": "hardlink",
+        "sha256": "bf7aff99c2cac37c8c6bfde6d3484d9669488452f918b7ccd73798cfcff874ae",
+        "size_in_bytes": 1923
+      },
+      {
+        "_path": "Library/include/capnp/raw-schema.h",
+        "path_type": "hardlink",
+        "sha256": "b961b66cbfaaba2cf9d425d919052a1bd760993912297245d49e55305bdd3a37",
+        "size_in_bytes": 8937
+      },
+      {
+        "_path": "Library/include/capnp/rpc-prelude.h",
+        "path_type": "hardlink",
+        "sha256": "67b4360a71516ba83722bbe8448ebbd5f85290d9a340c055eb236aa54e8ba582",
+        "size_in_bytes": 3711
+      },
+      {
+        "_path": "Library/include/capnp/rpc-twoparty.capnp",
+        "path_type": "hardlink",
+        "sha256": "a28328408261d476403acb1f3861a7d88075ffaefca1996c21c746b580527223",
+        "size_in_bytes": 9632
+      },
+      {
+        "_path": "Library/include/capnp/rpc-twoparty.capnp.h",
+        "path_type": "hardlink",
+        "sha256": "1cd8aaec391eb210d17da63a0c7fb5eed9136d246bde5196b4971360c8155e33",
+        "size_in_bytes": 22623
+      },
+      {
+        "_path": "Library/include/capnp/rpc-twoparty.h",
+        "path_type": "hardlink",
+        "sha256": "4180f59db413d46702d8cc3ff26f8770ec1c4dd60459d5fb93b2cc6f57c4b2f3",
+        "size_in_bytes": 12047
+      },
+      {
+        "_path": "Library/include/capnp/rpc.capnp",
+        "path_type": "hardlink",
+        "sha256": "026845b4658ac5c3ef40d0c892060241ba1caed09b8219c158ee609ccfcfadf5",
+        "size_in_bytes": 85783
+      },
+      {
+        "_path": "Library/include/capnp/rpc.capnp.h",
+        "path_type": "hardlink",
+        "sha256": "532a3907f7f1ad8783575fd0ba47722fdcfa985f6d2e5f9a82d5db4bca449df8",
+        "size_in_bytes": 191132
+      },
+      {
+        "_path": "Library/include/capnp/rpc.h",
+        "path_type": "hardlink",
+        "sha256": "74745a63e48d61af48443c28b1bbb4fb73377f02af22ccded14ac18d462a0c50",
+        "size_in_bytes": 30252
+      },
+      {
+        "_path": "Library/include/capnp/schema-lite.h",
+        "path_type": "hardlink",
+        "sha256": "5fec4460e8d4e34964584316bd8eddb18cf00ce438c5abfa597f810764d1db8d",
+        "size_in_bytes": 1907
+      },
+      {
+        "_path": "Library/include/capnp/schema-loader.h",
+        "path_type": "hardlink",
+        "sha256": "4bcfc7a135944042d92a62631614e478fe2b54fa26e96d6150214ebf3fff0582",
+        "size_in_bytes": 9298
+      },
+      {
+        "_path": "Library/include/capnp/schema-parser.h",
+        "path_type": "hardlink",
+        "sha256": "6dcca284a20e5f4089f06793c08ddc5ce896591ae52177a8f50e3d759c90913f",
+        "size_in_bytes": 13346
+      },
+      {
+        "_path": "Library/include/capnp/schema.capnp",
+        "path_type": "hardlink",
+        "sha256": "3b81c9e8d02bc3da090c901ccdc113ed125128c75f74199b3f62e2ad315f5554",
+        "size_in_bytes": 19260
+      },
+      {
+        "_path": "Library/include/capnp/schema.capnp.h",
+        "path_type": "hardlink",
+        "sha256": "dae99f79d6d8d1be014832120fc9ef972022e33cb9f8c627fde47b751f4a0710",
+        "size_in_bytes": 344757
+      },
+      {
+        "_path": "Library/include/capnp/schema.h",
+        "path_type": "hardlink",
+        "sha256": "34d8e97c9cbb4bec723d304017028b375d5196de1bfc8cccd1432977758ff8a2",
+        "size_in_bytes": 40006
+      },
+      {
+        "_path": "Library/include/capnp/serialize-async.h",
+        "path_type": "hardlink",
+        "sha256": "783ff9fbef54e3b0a4fa4a45b7e4c4f4d7b2ad4b69ec3b64dd54af9b6bdf277b",
+        "size_in_bytes": 13750
+      },
+      {
+        "_path": "Library/include/capnp/serialize-packed.h",
+        "path_type": "hardlink",
+        "sha256": "f7703ab1735202da3d14790be8eaf3e3525106b0537d712976636f686ba0c949",
+        "size_in_bytes": 5383
+      },
+      {
+        "_path": "Library/include/capnp/serialize-text.h",
+        "path_type": "hardlink",
+        "sha256": "09d6f004cc1f6b81b15db0bc49b093ee567bc2254505445661e7000df441bef4",
+        "size_in_bytes": 3613
+      },
+      {
+        "_path": "Library/include/capnp/serialize.h",
+        "path_type": "hardlink",
+        "sha256": "7298d6c77ef62a17c85639d401d784e38988da5ef180c24b2259fc699ee63f1b",
+        "size_in_bytes": 11551
+      },
+      {
+        "_path": "Library/include/capnp/stream.capnp",
+        "path_type": "hardlink",
+        "sha256": "5b0656ca3daca9ef28740c14813d5dd474fd0f9991ce99f652838f4cccf6fb30",
+        "size_in_bytes": 2545
+      },
+      {
+        "_path": "Library/include/capnp/stream.capnp.h",
+        "path_type": "hardlink",
+        "sha256": "87cca4b78eaed05180922db4802ef5322506a32d2c20ed2ce14c4ecfce0107e3",
+        "size_in_bytes": 3289
+      },
+      {
+        "_path": "Library/include/kj/arena.h",
+        "path_type": "hardlink",
+        "sha256": "f63615b0dc3811945dda5cf81a09fda949ac5b8dbf65e1b679b470928071a4ed",
+        "size_in_bytes": 8218
+      },
+      {
+        "_path": "Library/include/kj/array.h",
+        "path_type": "hardlink",
+        "sha256": "3f5c66efbb4228978abe11cd23d280de58e8eaf676e141d2ffce6511753077eb",
+        "size_in_bytes": 31760
+      },
+      {
+        "_path": "Library/include/kj/async-inl.h",
+        "path_type": "hardlink",
+        "sha256": "9e6a003758e25e1d8c9272ddd9c9b59dba4ec5ec4170676f0c727886553f2620",
+        "size_in_bytes": 85841
+      },
+      {
+        "_path": "Library/include/kj/async-io.h",
+        "path_type": "hardlink",
+        "sha256": "7c75148e5568ca92cde203d3aa244aa2ebccca840ac4e95d718074fe8fa9e867",
+        "size_in_bytes": 55475
+      },
+      {
+        "_path": "Library/include/kj/async-prelude.h",
+        "path_type": "hardlink",
+        "sha256": "2ad3b901fe1bbcb2a194afda3e972f60ecc1c177a648ed1e06f4a21e1c759401",
+        "size_in_bytes": 8164
+      },
+      {
+        "_path": "Library/include/kj/async-queue.h",
+        "path_type": "hardlink",
+        "sha256": "3c0de280492851175479a252359d0357728ab7b8a6926298bdbcd17b651a6589",
+        "size_in_bytes": 4187
+      },
+      {
+        "_path": "Library/include/kj/async-unix.h",
+        "path_type": "hardlink",
+        "sha256": "836b267f24d6f3d21b6411ff7804c99f6483f96d852781a23de88701c25ae412",
+        "size_in_bytes": 17514
+      },
+      {
+        "_path": "Library/include/kj/async-win32.h",
+        "path_type": "hardlink",
+        "sha256": "0376a418188c432e29cce292cb3cc8ab7305e77a737e764c2409978ce00f3912",
+        "size_in_bytes": 10030
+      },
+      {
+        "_path": "Library/include/kj/async.h",
+        "path_type": "hardlink",
+        "sha256": "5518f01649701874b53523d50cf092c412167ef6d9bcf8381eef46303bdcb283",
+        "size_in_bytes": 64839
+      },
+      {
+        "_path": "Library/include/kj/cidr.h",
+        "path_type": "hardlink",
+        "sha256": "f75470e47035ee38bda04fa5b21d3998adbb8ef6c7e845eee581bf01bf577724",
+        "size_in_bytes": 2053
+      },
+      {
+        "_path": "Library/include/kj/common.h",
+        "path_type": "hardlink",
+        "sha256": "0dae9de47bcccae2f539274e0846d995a56882267aa4a20c2f344f4b835d7507",
+        "size_in_bytes": 76315
+      },
+      {
+        "_path": "Library/include/kj/compat/gtest.h",
+        "path_type": "hardlink",
+        "sha256": "baba5633516e4c52269bcb819b5143c25335f0f27c1da24f4505de76faa00c70",
+        "size_in_bytes": 4617
+      },
+      {
+        "_path": "Library/include/kj/compat/gzip.h",
+        "path_type": "hardlink",
+        "sha256": "570e17a9a4b4ccd0ead03ce99f6160b0873cc6cad81fde588d7d645ebc68a04e",
+        "size_in_bytes": 4381
+      },
+      {
+        "_path": "Library/include/kj/compat/http.h",
+        "path_type": "hardlink",
+        "sha256": "876b01d1b3f5265a07718e1a8c43a2e8aae8d7c00b31a02f0e8bca0fdd9cafba",
+        "size_in_bytes": 67064
+      },
+      {
+        "_path": "Library/include/kj/compat/readiness-io.h",
+        "path_type": "hardlink",
+        "sha256": "c14bf4e7b8b87be5a7bf794282a43f8dde975872b6c9977c4e27ce6c4d9b32e0",
+        "size_in_bytes": 4708
+      },
+      {
+        "_path": "Library/include/kj/compat/tls.h",
+        "path_type": "hardlink",
+        "sha256": "7d1a3a2568d4dea58fca4af1ba6988940106d14dd74f4b667e114d1a53133ec4",
+        "size_in_bytes": 13057
+      },
+      {
+        "_path": "Library/include/kj/compat/url.h",
+        "path_type": "hardlink",
+        "sha256": "f3083a330b6568899aa00693ebf5284ddcaa01a49f57a9fd3b7702064457abd4",
+        "size_in_bytes": 6098
+      },
+      {
+        "_path": "Library/include/kj/debug.h",
+        "path_type": "hardlink",
+        "sha256": "b0ec89631bdcd4f20e7e1404bd60d921bfef8f61d479ab30ce91a3822f5ed748",
+        "size_in_bytes": 31878
+      },
+      {
+        "_path": "Library/include/kj/encoding.h",
+        "path_type": "hardlink",
+        "sha256": "4dbcf96efc4ce6bdd98d1707c4b7bba62c3a19241897b2c433bb4942b24fcc05",
+        "size_in_bytes": 19626
+      },
+      {
+        "_path": "Library/include/kj/exception.h",
+        "path_type": "hardlink",
+        "sha256": "a4fa4f0ac73c2d98199a2a373f043aedb8b7b6001636377a0cab29fd164d471f",
+        "size_in_bytes": 21394
+      },
+      {
+        "_path": "Library/include/kj/filesystem.h",
+        "path_type": "hardlink",
+        "sha256": "1cd173f0c71f0b1310d1b08e3c091ecd6a2423ed024d6ef31b9847421d623e1c",
+        "size_in_bytes": 53953
+      },
+      {
+        "_path": "Library/include/kj/function.h",
+        "path_type": "hardlink",
+        "sha256": "f07c386af48f8f0fc09006bf6834c6d37c1a9dee375db54f64026d4824a899c0",
+        "size_in_bytes": 10059
+      },
+      {
+        "_path": "Library/include/kj/hash.h",
+        "path_type": "hardlink",
+        "sha256": "5e9f42721fdeac9e5ec101533f9ce83fd4cca778e7e35f705a005ec93ad8701c",
+        "size_in_bytes": 8129
+      },
+      {
+        "_path": "Library/include/kj/io.h",
+        "path_type": "hardlink",
+        "sha256": "d6bad9d02b69664186ef7668d3c3b79b56e01ea00b6402489626d1b3226d5156",
+        "size_in_bytes": 16288
+      },
+      {
+        "_path": "Library/include/kj/list.h",
+        "path_type": "hardlink",
+        "sha256": "28161ce96dff7442ccb9219c45a126ba9e1de3d7aad603273ec527131e4f7a10",
+        "size_in_bytes": 7413
+      },
+      {
+        "_path": "Library/include/kj/main.h",
+        "path_type": "hardlink",
+        "sha256": "a3f61970b819bd8af9ed9d5bdca0ac82103a0811492875c71980e83e8a520708",
+        "size_in_bytes": 19672
+      },
+      {
+        "_path": "Library/include/kj/map.h",
+        "path_type": "hardlink",
+        "sha256": "5abee1e4fab9225b2256a2ea6b627bfcf4940a67b4574a24e5f4708651ed73d7",
+        "size_in_bytes": 19623
+      },
+      {
+        "_path": "Library/include/kj/memory.h",
+        "path_type": "hardlink",
+        "sha256": "b96a76ceff74a8e24bddb2534b6756c546681de553dd683225f3fe7023b1aa91",
+        "size_in_bytes": 28092
+      },
+      {
+        "_path": "Library/include/kj/mutex.h",
+        "path_type": "hardlink",
+        "sha256": "7af80d7359c24b8e094397aa959b6bde8fe1bc3e6481b603ce8ca3e3fac293f5",
+        "size_in_bytes": 28256
+      },
+      {
+        "_path": "Library/include/kj/one-of.h",
+        "path_type": "hardlink",
+        "sha256": "fd4237a81f04d4b51294139217cccd5f795cf6a4bba0cdc12d5e9210dddfc34e",
+        "size_in_bytes": 37336
+      },
+      {
+        "_path": "Library/include/kj/parse/char.h",
+        "path_type": "hardlink",
+        "sha256": "fe67742b082882b4dc12cb4074b0f00a548fddc84c2cb03baf68a6272b2fcf1e",
+        "size_in_bytes": 12244
+      },
+      {
+        "_path": "Library/include/kj/parse/common.h",
+        "path_type": "hardlink",
+        "sha256": "85aa59cb9b3943f7bde4a7e4215365712ceb157afd4448960a5448cf8485a70c",
+        "size_in_bytes": 26564
+      },
+      {
+        "_path": "Library/include/kj/refcount.h",
+        "path_type": "hardlink",
+        "sha256": "50b4b097dd3408dddf8f8a85eb8fae61ad4cf2f13891bff9b0a6e69ef588f954",
+        "size_in_bytes": 10017
+      },
+      {
+        "_path": "Library/include/kj/source-location.h",
+        "path_type": "hardlink",
+        "sha256": "e747733d8c1e646ea423d980c6fa1c07642511f3d5a984dec3014988e6a62141",
+        "size_in_bytes": 4861
+      },
+      {
+        "_path": "Library/include/kj/std/iostream.h",
+        "path_type": "hardlink",
+        "sha256": "3bb219dbb54944ba2e89d8eb43c18e1157db12471068c0fc879a9ea48ea69140",
+        "size_in_bytes": 2566
+      },
+      {
+        "_path": "Library/include/kj/string-tree.h",
+        "path_type": "hardlink",
+        "sha256": "2c779f8c4edd6a96bbb3149c9869896d6aa02aa931a800d5cfa97a589d315ece",
+        "size_in_bytes": 8502
+      },
+      {
+        "_path": "Library/include/kj/string.h",
+        "path_type": "hardlink",
+        "sha256": "aa08e7e52ada6e8a399e7b8bf17e991ca0ce2a68ee0109fa8201a267aab37e06",
+        "size_in_bytes": 41115
+      },
+      {
+        "_path": "Library/include/kj/table.h",
+        "path_type": "hardlink",
+        "sha256": "c33ae1ee13d39a57ea86d7e6e8ba82111fa7d8536617aa4f070a593e03fa0d73",
+        "size_in_bytes": 59026
+      },
+      {
+        "_path": "Library/include/kj/test.h",
+        "path_type": "hardlink",
+        "sha256": "6d445ae7fe22e7b5c718e13258bf1f96ff05e121e0afd52f8682942cdf5b9e53",
+        "size_in_bytes": 8299
+      },
+      {
+        "_path": "Library/include/kj/thread.h",
+        "path_type": "hardlink",
+        "sha256": "192e624d44f755c6de486c858d55a57c3ab62f42450c00e9e5e087de6f007a94",
+        "size_in_bytes": 2474
+      },
+      {
+        "_path": "Library/include/kj/threadlocal.h",
+        "path_type": "hardlink",
+        "sha256": "277a41c338a54ad92dd4a77f70fe6648628f3fb9572cbcdbbbe9bfbd5bcc8bed",
+        "size_in_bytes": 2863
+      },
+      {
+        "_path": "Library/include/kj/time.h",
+        "path_type": "hardlink",
+        "sha256": "bc48fe3fe437c525de9ec0aaf7a9021985772820f2625fb0d3b5a8a56fb8a5ab",
+        "size_in_bytes": 5217
+      },
+      {
+        "_path": "Library/include/kj/timer.h",
+        "path_type": "hardlink",
+        "sha256": "be693430183743c701489bf90dcbc6435446815b1ce4ea1ffedb6e8e173d1a1b",
+        "size_in_bytes": 6078
+      },
+      {
+        "_path": "Library/include/kj/tuple.h",
+        "path_type": "hardlink",
+        "sha256": "5221a2eeb76fd3b0b07de388b98e55391b27002fd50dd8b871bbe6a55c201350",
+        "size_in_bytes": 17818
+      },
+      {
+        "_path": "Library/include/kj/units.h",
+        "path_type": "hardlink",
+        "sha256": "8469955b20216f6c386d93872f758b1106dd5d893da3edf213fb3b7e5babcbbe",
+        "size_in_bytes": 45374
+      },
+      {
+        "_path": "Library/include/kj/vector.h",
+        "path_type": "hardlink",
+        "sha256": "617a358c3c0944857b8e76277ccd0526cdb765e82a1c4ead73423686fad2576c",
+        "size_in_bytes": 5362
+      },
+      {
+        "_path": "Library/include/kj/win32-api-version.h",
+        "path_type": "hardlink",
+        "sha256": "fcc8a0003e7793c3e2fbcccc66f6ab09466842deada0842db4c3310327d5ac68",
+        "size_in_bytes": 1631
+      },
+      {
+        "_path": "Library/include/kj/windows-sanity.h",
+        "path_type": "hardlink",
+        "sha256": "f8140402c4c39a3f5165ae23f5ca4bd54b5b2f37d619adae05402b3bbfd7f004",
+        "size_in_bytes": 3507
+      },
+      {
+        "_path": "Library/lib/capnp-json.lib",
+        "path_type": "hardlink",
+        "sha256": "b2088ae1fe903160f8f51a87a7050baeb2674db29977e892fba3fd71c1f03ffa",
+        "size_in_bytes": 2405674
+      },
+      {
+        "_path": "Library/lib/capnp-rpc.lib",
+        "path_type": "hardlink",
+        "sha256": "603376c78a5a198567656764a81e9890b4a50fbea82719bf8ac4e9417a8d605c",
+        "size_in_bytes": 20805282
+      },
+      {
+        "_path": "Library/lib/capnp-websocket.lib",
+        "path_type": "hardlink",
+        "sha256": "2e2be1b69ef8c5aad27101f06d329963bf9ef0e90b9ecff87df600a20b4132c7",
+        "size_in_bytes": 609688
+      },
+      {
+        "_path": "Library/lib/capnp.lib",
+        "path_type": "hardlink",
+        "sha256": "989f113657e25760c4c85e359d0ecb5b1f1d045b15560af04adee2723d1e3cc1",
+        "size_in_bytes": 7205414
+      },
+      {
+        "_path": "Library/lib/capnpc.lib",
+        "path_type": "hardlink",
+        "sha256": "32c42a82bd11497ed50b5394ed503301f7ad581e1cd1d4e7497e0660ff486b21",
+        "size_in_bytes": 21414390
+      },
+      {
+        "_path": "Library/lib/cmake/CapnProto/CapnProtoConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "20c3444ca754fcaa16fd948f6dbecbbb80abfb633237b27036e9672e2f639ed0",
+        "size_in_bytes": 5732
+      },
+      {
+        "_path": "Library/lib/cmake/CapnProto/CapnProtoConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "527d0d20b2d88d8398cb53263fe8212e2ecbc2b68841802e7269efd388ea0353",
+        "size_in_bytes": 1576
+      },
+      {
+        "_path": "Library/lib/cmake/CapnProto/CapnProtoMacros.cmake",
+        "path_type": "hardlink",
+        "sha256": "020705ba7638a27607b1ff8fa1ea85a81401a0cf4d2b0b0e6795e8cec5941836",
+        "size_in_bytes": 5121
+      },
+      {
+        "_path": "Library/lib/cmake/CapnProto/CapnProtoTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "b6ee117ed53a79b9b3da6ec5f8d5cb9a10a286f461492d1abca2bf9cf6ea3bdb",
+        "size_in_bytes": 7266
+      },
+      {
+        "_path": "Library/lib/cmake/CapnProto/CapnProtoTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "225ed4de4c794a129f933f894866f9b13c290af049f8b3cdfa8fbca7875b5efa",
+        "size_in_bytes": 7253
+      },
+      {
+        "_path": "Library/lib/kj-async.lib",
+        "path_type": "hardlink",
+        "sha256": "f491f20c973ffda71aba9af2c9f2c7ddfc058990cc80c38caaef29852933e38c",
+        "size_in_bytes": 13028646
+      },
+      {
+        "_path": "Library/lib/kj-gzip.lib",
+        "path_type": "hardlink",
+        "sha256": "b08bc8c3336ad6648bc938abe378c1b8c83005de8f3ef9244ecd711b16b2952c",
+        "size_in_bytes": 499310
+      },
+      {
+        "_path": "Library/lib/kj-http.lib",
+        "path_type": "hardlink",
+        "sha256": "c6a59c58fcd140ce12957fa16315dd619eab45dc03fe4a23b842e5a1eb25395b",
+        "size_in_bytes": 20075032
+      },
+      {
+        "_path": "Library/lib/kj-test.lib",
+        "path_type": "hardlink",
+        "sha256": "5d7d5c9bc4c999ce0741a153e1257cb512acaf868ee06950374db5cefa7444bb",
+        "size_in_bytes": 421420
+      },
+      {
+        "_path": "Library/lib/kj-tls.lib",
+        "path_type": "hardlink",
+        "sha256": "fa30820f686f96fb08c6ff9ec0477828e99913a52ea652050d087b580210e748",
+        "size_in_bytes": 4043570
+      },
+      {
+        "_path": "Library/lib/kj.lib",
+        "path_type": "hardlink",
+        "sha256": "7e18567e94cadec5c153294f74fe8994309065dd4da0cbb5bc92a3e3a74b6a66",
+        "size_in_bytes": 6309116
+      },
+      {
+        "_path": "Library/lib/pkgconfig/capnp-json.pc",
+        "path_type": "hardlink",
+        "sha256": "c453ff24b79e71ee34ae57b7c9818945ee2659f682ef7757e5f9786ab66ea41a",
+        "sha256_in_prefix": "d9dfc09554b20bf467ebb756bdfa89819903e79a2c5bf4816627f8f2b2034fbb",
+        "size_in_bytes": 414,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_capnproto_1784053125/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/capnp-rpc.pc",
+        "path_type": "hardlink",
+        "sha256": "012170e7214539bbc20c6ed56a724bf3750ff2103631436cfa65f6f61e4c167d",
+        "sha256_in_prefix": "87f0aa9a5d013767c7cc0fb847f9e94e07e25b40b8b46fae1f7dcfb2c17a6352",
+        "size_in_bytes": 401,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_capnproto_1784053125/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/capnp-websocket.pc",
+        "path_type": "hardlink",
+        "sha256": "eb359bd788a5c40f94aee0df30a1cbc823b754f9e8741eaa46eb96e74b525611",
+        "sha256_in_prefix": "28d461cfaf0a6ca35dd6a67a940f8fd9304ce89dea0d62a9b0ce9cc96baeb98a",
+        "size_in_bytes": 470,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_capnproto_1784053125/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/capnp.pc",
+        "path_type": "hardlink",
+        "sha256": "ee9663a33d602e5e3b2609b1101bf53cd6aa7922304a09682bad924c205808da",
+        "sha256_in_prefix": "282bba52ff48c5548d579f6e98425b24def71db79721b4e813db4422028d8714",
+        "size_in_bytes": 398,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_capnproto_1784053125/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/capnpc.pc",
+        "path_type": "hardlink",
+        "sha256": "347a62754533192785bef481a7fee364c1621180bc52c0e37f24f70bdf7b068e",
+        "sha256_in_prefix": "d7a0ddd9586b893bfb4ab9a2aa042735a8540980e1397dd45f2e467e753432f5",
+        "size_in_bytes": 416,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_capnproto_1784053125/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/kj-async.pc",
+        "path_type": "hardlink",
+        "sha256": "7bbc81ef507395d99e1dd2f611ba9cd34851fe49187834cd919227acd26826bb",
+        "sha256_in_prefix": "37b5c3f811097e27582387bf4b0b071539b4a62ba9051cd3611417c2d33eee5e",
+        "size_in_bytes": 412,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_capnproto_1784053125/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/kj-gzip.pc",
+        "path_type": "hardlink",
+        "sha256": "e547de9d82be0a4125d62dce4bfee0fffa0fdf13204d6729faab42bf02cff546",
+        "sha256_in_prefix": "3a31daca555874e72535228b91b08499d6bee9c9a1e655251c79a487de8dab06",
+        "size_in_bytes": 404,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_capnproto_1784053125/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/kj-http.pc",
+        "path_type": "hardlink",
+        "sha256": "9869b40074991bc8b56ad120d64fe3bc0e9d91820e2fbd78e349a94455c805c2",
+        "sha256_in_prefix": "108367aae4ccfadfe720f3aa0721de45388564e983c6d3653198afe0a3ffd5a5",
+        "size_in_bytes": 403,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_capnproto_1784053125/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/kj-test.pc",
+        "path_type": "hardlink",
+        "sha256": "0cbf8cabb2ebccffb6d2e9a37998f4255482b0e38947c9be06d39b75ab21a339",
+        "sha256_in_prefix": "3ce15a5d0d0c4f23c0061a489f3d32bbe22892d7bc126194b7fe7e34b349c94d",
+        "size_in_bytes": 399,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_capnproto_1784053125/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/kj-tls.pc",
+        "path_type": "hardlink",
+        "sha256": "3eaef03bcd412d0b98e1d5e11f853d345c8a87bee462fd74cf7f332c1d3ee2d5",
+        "sha256_in_prefix": "2d826a875cc7c0416eebb5ca12dda7418f174595ccc88b3ebe7f916a7feb6c89",
+        "size_in_bytes": 401,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_capnproto_1784053125/h_env"
+      },
+      {
+        "_path": "Library/lib/pkgconfig/kj.pc",
+        "path_type": "hardlink",
+        "sha256": "730998fafd91b413c3547374aec007c6c355f6e114b5701d238cde42b4150d86",
+        "sha256_in_prefix": "3f5e8f1ca7cc08ed7d6269a36a1ba4e76afb5b9fc4f8b0bc6d8f2415d07e203a",
+        "size_in_bytes": 363,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_capnproto_1784053125/h_env"
+      },
+      {
+        "_path": "etc/conda/test-files/capnproto/0/c++/samples/CMakeLists.txt",
+        "path_type": "hardlink",
+        "sha256": "23457b968b5da6f7a30dc4bce582f6114659b93f122346091e87bd142d6d3ea6",
+        "size_in_bytes": 1565
+      },
+      {
+        "_path": "etc/conda/test-files/capnproto/0/c++/samples/addressbook.c++",
+        "path_type": "hardlink",
+        "sha256": "d01f6d40b27aab93b53c7e58a81aa4eab927331e4390e5a7e778c163d30def82",
+        "size_in_bytes": 9674
+      },
+      {
+        "_path": "etc/conda/test-files/capnproto/0/c++/samples/addressbook.capnp",
+        "path_type": "hardlink",
+        "sha256": "cf309b8b277881c95aaa785f4d0154f46f82575fdb9dea49fb10ee072b7c3ae6",
+        "size_in_bytes": 1729
+      },
+      {
+        "_path": "etc/conda/test-files/capnproto/0/c++/samples/calculator-client.c++",
+        "path_type": "hardlink",
+        "sha256": "218fbb85c60de0b07be1efd603a064b7d604dd9b417cebda84ae1cc855632ff9",
+        "size_in_bytes": 13000
+      },
+      {
+        "_path": "etc/conda/test-files/capnproto/0/c++/samples/calculator-server.c++",
+        "path_type": "hardlink",
+        "sha256": "7fe5f354011dcbc20e2b46b11cad7916f05d5530ce7625a0dd4afa5b5c3a2059",
+        "size_in_bytes": 7545
+      },
+      {
+        "_path": "etc/conda/test-files/capnproto/0/c++/samples/calculator.capnp",
+        "path_type": "hardlink",
+        "sha256": "fb047c7193e4028bfc11c70ea5eb34d205707ceef68db614dc0a22ad40a8d279",
+        "size_in_bytes": 4651
+      },
+      {
+        "_path": "etc/conda/test-files/capnproto/0/c++/samples/test.sh",
+        "path_type": "hardlink",
+        "sha256": "fa4f903776364d71f5c7af43a3e6129d8f74d1e8d92169284dae897becc61298",
+        "size_in_bytes": 1023
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\capnproto-1.5.0-h905dac0_0",
+    "type": 1
+  }
+}

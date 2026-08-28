@@ -1,0 +1,567 @@
+{
+  "arch": "x86_64",
+  "build": "cpugplhf344f7c_210",
+  "build_number": 210,
+  "depends": [
+    "eigen >=3.4.0,<3.4.1.0a0",
+    "eigen-abi >=3.4.0.100,<3.4.0.101.0a0",
+    "glog >=0.7.1,<0.8.0a0",
+    "libamd >=3.3.3,<4.0a0",
+    "libbtf >=2.3.2,<3.0a0",
+    "libcamd >=3.3.3,<4.0a0",
+    "libccolamd >=3.3.4,<4.0a0",
+    "libcholmod >=5.3.1,<6.0a0",
+    "libcolamd >=3.3.4,<4.0a0",
+    "libcxsparse >=4.4.1,<5.0a0",
+    "libklu >=2.3.5,<3.0a0",
+    "liblapack >=3.9.0,<4.0a0",
+    "libldl >=3.3.2,<4.0a0",
+    "libparu >=1.0.0,<2.0a0",
+    "librbio >=4.3.4,<5.0a0",
+    "libspex >=3.2.3,<4.0a0",
+    "libspqr >=4.3.4,<5.0a0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0",
+    "libumfpack >=6.3.5,<7.0a0",
+    "metis >=5.1.0,<5.1.1.0a0",
+    "suitesparse >=7.10.1,<8.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "a8f76afd473d86c2fb50bdfdaca58d89",
+  "name": "ceres-solver",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "ceres-solver >=2.2.0,<2.3.0a0",
+      "eigen >=3.4.0,<3.4.1.0a0"
+    ]
+  },
+  "sha256": "fdbed0ea87bbd0a97222fdd2c62fd67de9e2682ec7cec8e08de461a30c0c1688",
+  "size": 967363,
+  "subdir": "win-64",
+  "timestamp": 1778569937739,
+  "version": "2.2.0",
+  "fn": "ceres-solver-2.2.0-cpugplhf344f7c_210.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/ceres-solver-2.2.0-cpugplhf344f7c_210.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\ceres-solver-2.2.0-cpugplhf344f7c_210",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/ceres.dll",
+    "Library/include/ceres/autodiff_cost_function.h",
+    "Library/include/ceres/autodiff_first_order_function.h",
+    "Library/include/ceres/autodiff_manifold.h",
+    "Library/include/ceres/c_api.h",
+    "Library/include/ceres/ceres.h",
+    "Library/include/ceres/conditioned_cost_function.h",
+    "Library/include/ceres/constants.h",
+    "Library/include/ceres/context.h",
+    "Library/include/ceres/cost_function.h",
+    "Library/include/ceres/cost_function_to_functor.h",
+    "Library/include/ceres/covariance.h",
+    "Library/include/ceres/crs_matrix.h",
+    "Library/include/ceres/cubic_interpolation.h",
+    "Library/include/ceres/dynamic_autodiff_cost_function.h",
+    "Library/include/ceres/dynamic_cost_function.h",
+    "Library/include/ceres/dynamic_cost_function_to_functor.h",
+    "Library/include/ceres/dynamic_numeric_diff_cost_function.h",
+    "Library/include/ceres/evaluation_callback.h",
+    "Library/include/ceres/first_order_function.h",
+    "Library/include/ceres/gradient_checker.h",
+    "Library/include/ceres/gradient_problem.h",
+    "Library/include/ceres/gradient_problem_solver.h",
+    "Library/include/ceres/internal/array_selector.h",
+    "Library/include/ceres/internal/autodiff.h",
+    "Library/include/ceres/internal/config.h",
+    "Library/include/ceres/internal/disable_warnings.h",
+    "Library/include/ceres/internal/eigen.h",
+    "Library/include/ceres/internal/euler_angles.h",
+    "Library/include/ceres/internal/export.h",
+    "Library/include/ceres/internal/fixed_array.h",
+    "Library/include/ceres/internal/householder_vector.h",
+    "Library/include/ceres/internal/integer_sequence_algorithm.h",
+    "Library/include/ceres/internal/jet_traits.h",
+    "Library/include/ceres/internal/line_parameterization.h",
+    "Library/include/ceres/internal/memory.h",
+    "Library/include/ceres/internal/numeric_diff.h",
+    "Library/include/ceres/internal/parameter_dims.h",
+    "Library/include/ceres/internal/port.h",
+    "Library/include/ceres/internal/reenable_warnings.h",
+    "Library/include/ceres/internal/sphere_manifold_functions.h",
+    "Library/include/ceres/internal/variadic_evaluate.h",
+    "Library/include/ceres/iteration_callback.h",
+    "Library/include/ceres/jet.h",
+    "Library/include/ceres/jet_fwd.h",
+    "Library/include/ceres/line_manifold.h",
+    "Library/include/ceres/loss_function.h",
+    "Library/include/ceres/manifold.h",
+    "Library/include/ceres/manifold_test_utils.h",
+    "Library/include/ceres/normal_prior.h",
+    "Library/include/ceres/numeric_diff_cost_function.h",
+    "Library/include/ceres/numeric_diff_first_order_function.h",
+    "Library/include/ceres/numeric_diff_options.h",
+    "Library/include/ceres/ordered_groups.h",
+    "Library/include/ceres/problem.h",
+    "Library/include/ceres/product_manifold.h",
+    "Library/include/ceres/rotation.h",
+    "Library/include/ceres/sized_cost_function.h",
+    "Library/include/ceres/solver.h",
+    "Library/include/ceres/sphere_manifold.h",
+    "Library/include/ceres/tiny_solver.h",
+    "Library/include/ceres/tiny_solver_autodiff_function.h",
+    "Library/include/ceres/tiny_solver_cost_function_adapter.h",
+    "Library/include/ceres/types.h",
+    "Library/include/ceres/version.h",
+    "Library/lib/ceres.lib",
+    "Library/lib/cmake/Ceres/CeresConfig.cmake",
+    "Library/lib/cmake/Ceres/CeresConfigVersion.cmake",
+    "Library/lib/cmake/Ceres/CeresTargets-release.cmake",
+    "Library/lib/cmake/Ceres/CeresTargets.cmake",
+    "Library/lib/cmake/Ceres/FindMETIS.cmake",
+    "Library/lib/cmake/Ceres/FindSuiteSparse.cmake"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/ceres.dll",
+        "path_type": "hardlink",
+        "sha256": "437541c13cf2b9ff02553ece470e0b38851ae39082265f89b6867c1d298263fc",
+        "size_in_bytes": 3312128
+      },
+      {
+        "_path": "Library/include/ceres/autodiff_cost_function.h",
+        "path_type": "hardlink",
+        "sha256": "b489e2d97e4d28ef3ae31dbebf5db169452b7b64015d898cbd649fab9fe11b67",
+        "size_in_bytes": 10696
+      },
+      {
+        "_path": "Library/include/ceres/autodiff_first_order_function.h",
+        "path_type": "hardlink",
+        "sha256": "e61ce3db693105424e7e9a4e33b7712a77c025eeb77aa190330bb7e8a8806c7f",
+        "size_in_bytes": 5806
+      },
+      {
+        "_path": "Library/include/ceres/autodiff_manifold.h",
+        "path_type": "hardlink",
+        "sha256": "48ebbc7c55d610500dcb6613445f43d46a37584766dd07cd721f9d8ffb44549f",
+        "size_in_bytes": 9795
+      },
+      {
+        "_path": "Library/include/ceres/c_api.h",
+        "path_type": "hardlink",
+        "sha256": "72dc8bcd147f8c522401277b9e61c4f58d78e9bf82820646e85dc54e72957eb7",
+        "size_in_bytes": 5978
+      },
+      {
+        "_path": "Library/include/ceres/ceres.h",
+        "path_type": "hardlink",
+        "sha256": "70935cea44782729f6ac3fe1f0e2e622d47a02c70ef31a66ad15ea5a41664e1f",
+        "size_in_bytes": 3274
+      },
+      {
+        "_path": "Library/include/ceres/conditioned_cost_function.h",
+        "path_type": "hardlink",
+        "sha256": "29aefd457e6adeee9910bb278f8e5cdce8a0d4062d47bd396902785e3451fa6b",
+        "size_in_bytes": 4229
+      },
+      {
+        "_path": "Library/include/ceres/constants.h",
+        "path_type": "hardlink",
+        "sha256": "2ae0f93b8f4cfc7f90d8f4d47b1103ce4d596ca9f3f1befb4b692f6f185b4794",
+        "size_in_bytes": 2112
+      },
+      {
+        "_path": "Library/include/ceres/context.h",
+        "path_type": "hardlink",
+        "sha256": "6262c7ed4e159b996a9d96c6c886776ea19484e31d232c35b197040af5aa47cf",
+        "size_in_bytes": 2527
+      },
+      {
+        "_path": "Library/include/ceres/cost_function.h",
+        "path_type": "hardlink",
+        "sha256": "32cdc2c05470ade1e6795fdfa4ef052b91f0e65e090896a7c87b8927eb1788dd",
+        "size_in_bytes": 6345
+      },
+      {
+        "_path": "Library/include/ceres/cost_function_to_functor.h",
+        "path_type": "hardlink",
+        "sha256": "2d967871d23eff0e20b93f7e3afd4a9670bfbb706e7f1f9a418dfe7a5c554321",
+        "size_in_bytes": 6853
+      },
+      {
+        "_path": "Library/include/ceres/covariance.h",
+        "path_type": "hardlink",
+        "sha256": "b8fd68df6509e5d50826841902b0165d1a3740e3fb816901138ccc541c4bcb04",
+        "size_in_bytes": 19214
+      },
+      {
+        "_path": "Library/include/ceres/crs_matrix.h",
+        "path_type": "hardlink",
+        "sha256": "77e8e6f3fa3169225d2a5cbdf2aea503f9a235045b47c84fb27fdb5f9f5262f5",
+        "size_in_bytes": 3115
+      },
+      {
+        "_path": "Library/include/ceres/cubic_interpolation.h",
+        "path_type": "hardlink",
+        "sha256": "0462d97f6a46ac3b22e5b3c845941a9fe8a673ed630b32d10cc9dc7879f83b9e",
+        "size_in_bytes": 15764
+      },
+      {
+        "_path": "Library/include/ceres/dynamic_autodiff_cost_function.h",
+        "path_type": "hardlink",
+        "sha256": "e74c0e34d2a61951597bad6cbee111aac890f6bf7bedabee24977667e087c4cd",
+        "size_in_bytes": 11869
+      },
+      {
+        "_path": "Library/include/ceres/dynamic_cost_function.h",
+        "path_type": "hardlink",
+        "sha256": "87f15f88985b083e8d99e62c105d7c920bd065260511cb9ec4311f3e8eba7146",
+        "size_in_bytes": 2468
+      },
+      {
+        "_path": "Library/include/ceres/dynamic_cost_function_to_functor.h",
+        "path_type": "hardlink",
+        "sha256": "b6c5edae0db2634ea5c4b0169bd386e218bfe7b73a36d05fabb702f27c66d37d",
+        "size_in_bytes": 7797
+      },
+      {
+        "_path": "Library/include/ceres/dynamic_numeric_diff_cost_function.h",
+        "path_type": "hardlink",
+        "sha256": "e37a711538bc42f989d87162520234132b447c0dbed8675b74376ce921e4a06c",
+        "size_in_bytes": 6831
+      },
+      {
+        "_path": "Library/include/ceres/evaluation_callback.h",
+        "path_type": "hardlink",
+        "sha256": "ce7996609ad9d7a937c2fc79d2d447c30b92d8b0785965bf2e01ef1f6f3cfac6",
+        "size_in_bytes": 4151
+      },
+      {
+        "_path": "Library/include/ceres/first_order_function.h",
+        "path_type": "hardlink",
+        "sha256": "4dea67966d17368d82e67fefaacc32dd466236b139a05d159126282dddc0bbbc",
+        "size_in_bytes": 2398
+      },
+      {
+        "_path": "Library/include/ceres/gradient_checker.h",
+        "path_type": "hardlink",
+        "sha256": "1f804fe42eb8243a8196a2e62c2577d55ded1d5abd31080a374943c2b05dd6b0",
+        "size_in_bytes": 6481
+      },
+      {
+        "_path": "Library/include/ceres/gradient_problem.h",
+        "path_type": "hardlink",
+        "sha256": "1a855b9cbf47cbba1800d6902151051abe47c80216e514dbef9ecf928bca09fe",
+        "size_in_bytes": 4842
+      },
+      {
+        "_path": "Library/include/ceres/gradient_problem_solver.h",
+        "path_type": "hardlink",
+        "sha256": "f1ddbfae6054422d084f6b83c202cf14513147e6dadb69335b9b9894451ef4fb",
+        "size_in_bytes": 14915
+      },
+      {
+        "_path": "Library/include/ceres/internal/array_selector.h",
+        "path_type": "hardlink",
+        "sha256": "368b61caa255d613254660ef656848000a2fdd02f6819a9495929512a62401ba",
+        "size_in_bytes": 3795
+      },
+      {
+        "_path": "Library/include/ceres/internal/autodiff.h",
+        "path_type": "hardlink",
+        "sha256": "51d2043387f3d352d23f9583fb8612987d4b7d905772de44b1ac805040d7d6eb",
+        "size_in_bytes": 14820
+      },
+      {
+        "_path": "Library/include/ceres/internal/config.h",
+        "path_type": "hardlink",
+        "sha256": "2fd1b06ca92027f364fd43275adf1f3683da0b72ea22561860322640bda38ea5",
+        "size_in_bytes": 4312
+      },
+      {
+        "_path": "Library/include/ceres/internal/disable_warnings.h",
+        "path_type": "hardlink",
+        "sha256": "01ae3f9a244b951930ead73be158b783da1a117226095b433d352ddb1021ad19",
+        "size_in_bytes": 2204
+      },
+      {
+        "_path": "Library/include/ceres/internal/eigen.h",
+        "path_type": "hardlink",
+        "sha256": "2602eb2b53337500e435e2f70c8368fbd7bade156acf0ddd2b42d737e11489e8",
+        "size_in_bytes": 3239
+      },
+      {
+        "_path": "Library/include/ceres/internal/euler_angles.h",
+        "path_type": "hardlink",
+        "sha256": "c7fcb64ccbf2a7d5e5c39337bbb6f653398d1110b728149dbe3daf0b0e718afe",
+        "size_in_bytes": 10324
+      },
+      {
+        "_path": "Library/include/ceres/internal/export.h",
+        "path_type": "hardlink",
+        "sha256": "2e10203c28c5df4ed56f0a485e2762665b3297ef4e04644204d19588e01546c2",
+        "size_in_bytes": 1015
+      },
+      {
+        "_path": "Library/include/ceres/internal/fixed_array.h",
+        "path_type": "hardlink",
+        "sha256": "fc32b3d5a39c39ba2d651768d56c265b70b605830e4fb9a4fc6dabb2ea1f5b25",
+        "size_in_bytes": 17222
+      },
+      {
+        "_path": "Library/include/ceres/internal/householder_vector.h",
+        "path_type": "hardlink",
+        "sha256": "36738e82e7659a5726ddd275db8427630f219cff45101de0800054ba10388407",
+        "size_in_bytes": 3641
+      },
+      {
+        "_path": "Library/include/ceres/internal/integer_sequence_algorithm.h",
+        "path_type": "hardlink",
+        "sha256": "1039bb3903ab3b4729afac8b28f2edfd8bdf5e6a46408ad66c6e265d0559ba38",
+        "size_in_bytes": 8473
+      },
+      {
+        "_path": "Library/include/ceres/internal/jet_traits.h",
+        "path_type": "hardlink",
+        "sha256": "df3658fe67bb36b4df7c21fc2b21945ca71e75cda9a36169821e09779f37b7d3",
+        "size_in_bytes": 7169
+      },
+      {
+        "_path": "Library/include/ceres/internal/line_parameterization.h",
+        "path_type": "hardlink",
+        "sha256": "a2b3b4000e33488b132b411282a5af1de10de4258117da0bafcb0d034386d756",
+        "size_in_bytes": 7044
+      },
+      {
+        "_path": "Library/include/ceres/internal/memory.h",
+        "path_type": "hardlink",
+        "sha256": "1b86e5e5748d651a62544285f1b86fd5188776102b0168f98e314c8bbf4b76f6",
+        "size_in_bytes": 2915
+      },
+      {
+        "_path": "Library/include/ceres/internal/numeric_diff.h",
+        "path_type": "hardlink",
+        "sha256": "0f3eb5f9769de28df906fb2788e1447c715f19f54d6c2e279157afb86032e6e0",
+        "size_in_bytes": 21020
+      },
+      {
+        "_path": "Library/include/ceres/internal/parameter_dims.h",
+        "path_type": "hardlink",
+        "sha256": "bd395f3fd86f93d2ebfbefa8b4daeb9d7e4db28221f5dbb8f30439919f3b476a",
+        "size_in_bytes": 4562
+      },
+      {
+        "_path": "Library/include/ceres/internal/port.h",
+        "path_type": "hardlink",
+        "sha256": "dd2e9b7f812f9b532f1c06013df58863e2d9265e4a58a5daf6977bc4ef18f4f7",
+        "size_in_bytes": 4140
+      },
+      {
+        "_path": "Library/include/ceres/internal/reenable_warnings.h",
+        "path_type": "hardlink",
+        "sha256": "9fbfb8171d3ca76794a0076988c0fa97de0033a2a95022f3b634562c9e79f92b",
+        "size_in_bytes": 1842
+      },
+      {
+        "_path": "Library/include/ceres/internal/sphere_manifold_functions.h",
+        "path_type": "hardlink",
+        "sha256": "c6d3d7738328404f7e7c743349a38c9c323312434d89eb6bd9e84d3f117c28e6",
+        "size_in_bytes": 7192
+      },
+      {
+        "_path": "Library/include/ceres/internal/variadic_evaluate.h",
+        "path_type": "hardlink",
+        "sha256": "069e2a44ced1f77a5100fc049351de1a417f47a8aaf665839af5932d0b2d6824",
+        "size_in_bytes": 5905
+      },
+      {
+        "_path": "Library/include/ceres/iteration_callback.h",
+        "path_type": "hardlink",
+        "sha256": "69bbc488a920a8db0cce22c17c320d3d00338285eac3bfa7ba17ca742be94db4",
+        "size_in_bytes": 8118
+      },
+      {
+        "_path": "Library/include/ceres/jet.h",
+        "path_type": "hardlink",
+        "sha256": "5f843c24d462664145867b209f76f0916ee2104a2e246fefc8f28d6d9a9a7a2f",
+        "size_in_bytes": 51071
+      },
+      {
+        "_path": "Library/include/ceres/jet_fwd.h",
+        "path_type": "hardlink",
+        "sha256": "f42680c54cc5536f732c3dda2dcb9e2d48adb96e4a9925e76153e67d99ac0c22",
+        "size_in_bytes": 1994
+      },
+      {
+        "_path": "Library/include/ceres/line_manifold.h",
+        "path_type": "hardlink",
+        "sha256": "f5aa9b13735e0ce53d97ac98a9fc9997d5bc123a2eebabe018ca3d50cf5fdb17",
+        "size_in_bytes": 11808
+      },
+      {
+        "_path": "Library/include/ceres/loss_function.h",
+        "path_type": "hardlink",
+        "sha256": "a08e78d751d6efc62dc28da8185d109d983e90d55d477605cf6dd0d70c38ae3d",
+        "size_in_bytes": 14866
+      },
+      {
+        "_path": "Library/include/ceres/manifold.h",
+        "path_type": "hardlink",
+        "sha256": "82fccd8ac64c15747d4f1715b64ce98c301bae76140dee046dd1601aa276f367",
+        "size_in_bytes": 16292
+      },
+      {
+        "_path": "Library/include/ceres/manifold_test_utils.h",
+        "path_type": "hardlink",
+        "sha256": "72e6c8d138986f57cf583cf697d8f42bbd81ac581776b81289279891fde1bb15",
+        "size_in_bytes": 14123
+      },
+      {
+        "_path": "Library/include/ceres/normal_prior.h",
+        "path_type": "hardlink",
+        "sha256": "81405f9c763eea285b54f69d14a1daedceaa84e49b7711420d99f8443dab6fe6",
+        "size_in_bytes": 3146
+      },
+      {
+        "_path": "Library/include/ceres/numeric_diff_cost_function.h",
+        "path_type": "hardlink",
+        "sha256": "fd7c4e1b8c2e65f2a35f8a39468c88bcb72aad08315c17456442f640e2ebb249",
+        "size_in_bytes": 11352
+      },
+      {
+        "_path": "Library/include/ceres/numeric_diff_first_order_function.h",
+        "path_type": "hardlink",
+        "sha256": "426d1741ec7f4f4c6188d90e9d8002c1f0759d2e4b814f5b3018d6603e2acbe5",
+        "size_in_bytes": 8937
+      },
+      {
+        "_path": "Library/include/ceres/numeric_diff_options.h",
+        "path_type": "hardlink",
+        "sha256": "1ab8dbb41a2ed10e479f3e61670382db3147de0203f084c51417a86c24557efd",
+        "size_in_bytes": 3482
+      },
+      {
+        "_path": "Library/include/ceres/ordered_groups.h",
+        "path_type": "hardlink",
+        "sha256": "5c3f6f743a0dbe1574f234d12e0c5cd1c8fe26251b1b008f1bfdaa32df7021d3",
+        "size_in_bytes": 6452
+      },
+      {
+        "_path": "Library/include/ceres/problem.h",
+        "path_type": "hardlink",
+        "sha256": "55b196e891ade97e6141020411d7b1e8e4b4a9629a2c78509123e1195e2e2c9b",
+        "size_in_bytes": 25550
+      },
+      {
+        "_path": "Library/include/ceres/product_manifold.h",
+        "path_type": "hardlink",
+        "sha256": "67aac0f1d16eb2d5d561bc9830e97e629c90d9a391061cb7324d0e1f2cd860b5",
+        "size_in_bytes": 12141
+      },
+      {
+        "_path": "Library/include/ceres/rotation.h",
+        "path_type": "hardlink",
+        "sha256": "117d2dec017fc6ced19f5c08fc28a6a82ebd4e08477fb558eaadae287ae4db0c",
+        "size_in_bytes": 30895
+      },
+      {
+        "_path": "Library/include/ceres/sized_cost_function.h",
+        "path_type": "hardlink",
+        "sha256": "8ad0e27725c093f463e032f0fc24097226951fbbfb038611f5ffcd43bfda83eb",
+        "size_in_bytes": 3033
+      },
+      {
+        "_path": "Library/include/ceres/solver.h",
+        "path_type": "hardlink",
+        "sha256": "310347f5433589dc1a9170dc983887edb3da8be2f5711870876c02b3e6bff29c",
+        "size_in_bytes": 49889
+      },
+      {
+        "_path": "Library/include/ceres/sphere_manifold.h",
+        "path_type": "hardlink",
+        "sha256": "61d9708d6a3193979c7b6db9261bdd3fe218db82be597761add6ec04c9b8c2af",
+        "size_in_bytes": 9326
+      },
+      {
+        "_path": "Library/include/ceres/tiny_solver.h",
+        "path_type": "hardlink",
+        "sha256": "9dc7a983b2c5e7b3c5209e259c30367d4554423c1d052d5626fd027c8f8b5e90",
+        "size_in_bytes": 14174
+      },
+      {
+        "_path": "Library/include/ceres/tiny_solver_autodiff_function.h",
+        "path_type": "hardlink",
+        "sha256": "274672e07629bc17516f49fb5c124574f644f1f74233f045b818f67545105b67",
+        "size_in_bytes": 7879
+      },
+      {
+        "_path": "Library/include/ceres/tiny_solver_cost_function_adapter.h",
+        "path_type": "hardlink",
+        "sha256": "48cac9898fe5ba7f343c4350be42c42a13d52dca7d505261f1c160e9f3d17c8d",
+        "size_in_bytes": 5549
+      },
+      {
+        "_path": "Library/include/ceres/types.h",
+        "path_type": "hardlink",
+        "sha256": "bcb0f69f33ed7e3fb7d43808e2199a4e849ecc1a86f74793c0e22cef85dd0bfe",
+        "size_in_bytes": 21734
+      },
+      {
+        "_path": "Library/include/ceres/version.h",
+        "path_type": "hardlink",
+        "sha256": "478090bb0d70a5eca885a7d97857cff836076b9c7f20ae798bc89ac2b75538d4",
+        "size_in_bytes": 2392
+      },
+      {
+        "_path": "Library/lib/ceres.lib",
+        "path_type": "hardlink",
+        "sha256": "0ef830bfabad33c416bb3e61cc7403da894630d71987a9af61a246ade0194ede",
+        "size_in_bytes": 130656
+      },
+      {
+        "_path": "Library/lib/cmake/Ceres/CeresConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "dd9ff86c162e155d2d631c3a746a8e714614fa56beefe951cf4dd0a842a0a7ee",
+        "size_in_bytes": 15635
+      },
+      {
+        "_path": "Library/lib/cmake/Ceres/CeresConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "8c0538f99b361895cd71ec701f18afcd490fdeaa20118a35bd6c873c0dad064a",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/Ceres/CeresTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "bd88eb1c2d78a42664cd2ce354aa7802e06a80484b99a92090e122a51fd2122b",
+        "size_in_bytes": 978
+      },
+      {
+        "_path": "Library/lib/cmake/Ceres/CeresTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "faeff4cb85e3ce0a30ea5f114ba6864a0d607445b3bce84e1cc8d36063862a01",
+        "size_in_bytes": 4321
+      },
+      {
+        "_path": "Library/lib/cmake/Ceres/FindMETIS.cmake",
+        "path_type": "hardlink",
+        "sha256": "ff16e9660d93886875bbdab8a143658cace368779d58a1f0f8caece79daae3d0",
+        "size_in_bytes": 4103
+      },
+      {
+        "_path": "Library/lib/cmake/Ceres/FindSuiteSparse.cmake",
+        "path_type": "hardlink",
+        "sha256": "75cb53c4bbd7665911d9ceeb0ab633e99f284803e6841713557211ad731c059f",
+        "size_in_bytes": 879
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\ceres-solver-2.2.0-cpugplhf344f7c_210",
+    "type": 1
+  }
+}

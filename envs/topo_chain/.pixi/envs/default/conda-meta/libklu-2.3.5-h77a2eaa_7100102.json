@@ -1,0 +1,152 @@
+{
+  "arch": "x86_64",
+  "build": "h77a2eaa_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "liblapack >=3.9.0,<4.0a0",
+    "metis >=5.1.0,<5.1.1.0a0",
+    "libamd >=3.3.3,<4.0a0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0",
+    "libbtf >=2.3.2,<3.0a0",
+    "libcholmod >=5.3.1,<6.0a0",
+    "libcolamd >=3.3.4,<4.0a0",
+    "libblas >=3.9.0,<4.0a0",
+    "libcblas >=3.9.0,<4.0a0",
+    "libcamd >=3.3.3,<4.0a0",
+    "libccolamd >=3.3.4,<4.0a0"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "md5": "981ca310c30ddbe864a37a159fceb3fc",
+  "name": "libklu",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libklu >=2.3.5,<3.0a0"
+    ]
+  },
+  "sha256": "2c705972afea7d4e5e94bb1e4396bb39708dd9c04d3b37839243edb2ff7f9784",
+  "size": 132681,
+  "subdir": "win-64",
+  "timestamp": 1742288893864,
+  "version": "2.3.5",
+  "fn": "libklu-2.3.5-h77a2eaa_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libklu-2.3.5-h77a2eaa_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libklu-2.3.5-h77a2eaa_7100102",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/klu.dll",
+    "Library/bin/klu_cholmod.dll",
+    "Library/include/suitesparse/klu.h",
+    "Library/include/suitesparse/klu_cholmod.h",
+    "Library/lib/cmake/KLU/KLUConfig.cmake",
+    "Library/lib/cmake/KLU/KLUConfigVersion.cmake",
+    "Library/lib/cmake/KLU/KLUTargets-release.cmake",
+    "Library/lib/cmake/KLU/KLUTargets.cmake",
+    "Library/lib/cmake/KLU_CHOLMOD/KLU_CHOLMODConfig.cmake",
+    "Library/lib/cmake/KLU_CHOLMOD/KLU_CHOLMODConfigVersion.cmake",
+    "Library/lib/cmake/KLU_CHOLMOD/KLU_CHOLMODTargets-release.cmake",
+    "Library/lib/cmake/KLU_CHOLMOD/KLU_CHOLMODTargets.cmake",
+    "Library/lib/klu.lib",
+    "Library/lib/klu_cholmod.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/klu.dll",
+        "path_type": "hardlink",
+        "sha256": "20fcefd3c9b2b7ef8017f341421ab4ecfc901c64326658e4d35e673301e60961",
+        "size_in_bytes": 262656
+      },
+      {
+        "_path": "Library/bin/klu_cholmod.dll",
+        "path_type": "hardlink",
+        "sha256": "bac913bac97dc8ca546f87c1f503efa978b2995e1539d725d070f2214aae52ae",
+        "size_in_bytes": 12800
+      },
+      {
+        "_path": "Library/include/suitesparse/klu.h",
+        "path_type": "hardlink",
+        "sha256": "fb92acc4cf9fbc48a07ceaf98de3ad468840649e5f1015d3968b6439b4369c56",
+        "size_in_bytes": 30151
+      },
+      {
+        "_path": "Library/include/suitesparse/klu_cholmod.h",
+        "path_type": "hardlink",
+        "sha256": "47a0cb2c50f795dae46c4681a7a0497b4fff14c12e56ecbe3391d6ed3b6f3f60",
+        "size_in_bytes": 720
+      },
+      {
+        "_path": "Library/lib/cmake/KLU/KLUConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "c2583c7cd329a9a04d84a3f858e3527a51ae9eba41d6c37c6c40a3e6321073c8",
+        "size_in_bytes": 7993
+      },
+      {
+        "_path": "Library/lib/cmake/KLU/KLUConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "c595bf63a27944e9ffbfcac41756ebfb7965f4e63853c0492578dbf285758d4e",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/KLU/KLUTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "ef6ef943dc5df8d9e29fda17cb2492a7e68ae61467e414a7942429c86993f3ea",
+        "size_in_bytes": 1036
+      },
+      {
+        "_path": "Library/lib/cmake/KLU/KLUTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "80101723cf2a0320ef70e21d348ae56b1fee65ada56bb0053e73df6a06460bbe",
+        "size_in_bytes": 4500
+      },
+      {
+        "_path": "Library/lib/cmake/KLU_CHOLMOD/KLU_CHOLMODConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "abbb7f4ec3ee88fbd98df5d37b27d038e0f064532d4740665ce9bae9d17f3bec",
+        "size_in_bytes": 7231
+      },
+      {
+        "_path": "Library/lib/cmake/KLU_CHOLMOD/KLU_CHOLMODConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "c595bf63a27944e9ffbfcac41756ebfb7965f4e63853c0492578dbf285758d4e",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/KLU_CHOLMOD/KLU_CHOLMODTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "81cbeb0347cb1034cc6f32fffd64def8e83c0838488d3420c2047240c86725fd",
+        "size_in_bytes": 1061
+      },
+      {
+        "_path": "Library/lib/cmake/KLU_CHOLMOD/KLU_CHOLMODTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "084bbd596df21b7cf838945db7f7d5ecf84f4a1c9533a1d2e205e6a0967d5332",
+        "size_in_bytes": 4344
+      },
+      {
+        "_path": "Library/lib/klu.lib",
+        "path_type": "hardlink",
+        "sha256": "ae26c50702947692cbbed15a1f0d1d30f6f5bced87770548cc33507f1123816d",
+        "size_in_bytes": 18966
+      },
+      {
+        "_path": "Library/lib/klu_cholmod.lib",
+        "path_type": "hardlink",
+        "sha256": "8cf8e019e57664298ab8437019094042dc40c143e124e1bee3379f995b81a82a",
+        "size_in_bytes": 1958
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libklu-2.3.5-h77a2eaa_7100102",
+    "type": 1
+  }
+}

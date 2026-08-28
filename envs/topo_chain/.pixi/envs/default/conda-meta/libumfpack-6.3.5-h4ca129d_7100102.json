@@ -1,0 +1,97 @@
+{
+  "arch": "x86_64",
+  "build": "h4ca129d_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "libblas >=3.9.0,<4.0a0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0",
+    "libamd >=3.3.3,<4.0a0",
+    "libcholmod >=5.3.1,<6.0a0"
+  ],
+  "license": "GPL-2.0-or-later",
+  "license_family": "GPL",
+  "md5": "e970ea4aee9834bf54278c4ca5744a02",
+  "name": "libumfpack",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libumfpack >=6.3.5,<7.0a0"
+    ]
+  },
+  "sha256": "f97e96bab4c8df9421fadab3124f0fe94a6d06ba1f8730d45438d8b6594c8d03",
+  "size": 361450,
+  "subdir": "win-64",
+  "timestamp": 1742288893864,
+  "version": "6.3.5",
+  "fn": "libumfpack-6.3.5-h4ca129d_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libumfpack-6.3.5-h4ca129d_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libumfpack-6.3.5-h4ca129d_7100102",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/umfpack.dll",
+    "Library/include/suitesparse/umfpack.h",
+    "Library/lib/cmake/UMFPACK/UMFPACKConfig.cmake",
+    "Library/lib/cmake/UMFPACK/UMFPACKConfigVersion.cmake",
+    "Library/lib/cmake/UMFPACK/UMFPACKTargets-release.cmake",
+    "Library/lib/cmake/UMFPACK/UMFPACKTargets.cmake",
+    "Library/lib/umfpack.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/umfpack.dll",
+        "path_type": "hardlink",
+        "sha256": "b196818fb1378b2f9ec30e86ede6abb242a89bf82e7a24ee9c0c39172d7fb181",
+        "size_in_bytes": 811008
+      },
+      {
+        "_path": "Library/include/suitesparse/umfpack.h",
+        "path_type": "hardlink",
+        "sha256": "dcf8af2881b35a59a296bad7a186aa26faca8a4194dee4bc3fb85f22251cbb7a",
+        "size_in_bytes": 222007
+      },
+      {
+        "_path": "Library/lib/cmake/UMFPACK/UMFPACKConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "0756f72d3b6163c1f484cd5a2af8bd2113e5300e8066cba94027a4228f48398b",
+        "size_in_bytes": 7845
+      },
+      {
+        "_path": "Library/lib/cmake/UMFPACK/UMFPACKConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "87ab55149d37775990587577498f98e93fa98f8aa3684e2a07c931489947cc49",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/UMFPACK/UMFPACKTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "77d41985bb3fa4d146ef95f0d4340fe8957af29b2299c70ffa4bfc14d4600787",
+        "size_in_bytes": 1056
+      },
+      {
+        "_path": "Library/lib/cmake/UMFPACK/UMFPACKTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "8c89d945ee44abf4a48d2acba5a0c3ae97f6055d627cec45beec41e379c74e98",
+        "size_in_bytes": 4468
+      },
+      {
+        "_path": "Library/lib/umfpack.lib",
+        "path_type": "hardlink",
+        "sha256": "864bd7471ec4eec2fdf293f03771a55ff6dea1199f7bc7d934c73c494919372f",
+        "size_in_bytes": 83064
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libumfpack-6.3.5-h4ca129d_7100102",
+    "type": 1
+  }
+}

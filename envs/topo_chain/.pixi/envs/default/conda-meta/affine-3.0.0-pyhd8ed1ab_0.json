@@ -1,0 +1,98 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "attrs",
+    "python >=3.10"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "71dd867a02739013ae65894ca32d67b7",
+  "name": "affine",
+  "noarch": "python",
+  "run_exports": {},
+  "sha256": "5a72f7fbb1adb86817fde49acf972148638cc613edae9c15ac575d176da2746a",
+  "size": 16762,
+  "subdir": "noarch",
+  "timestamp": 1786226684740,
+  "version": "3.0.0",
+  "fn": "affine-3.0.0-pyhd8ed1ab_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/affine-3.0.0-pyhd8ed1ab_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\affine-3.0.0-pyhd8ed1ab_0",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/affine/__init__.py",
+    "Lib/site-packages/affine/py.typed",
+    "Lib/site-packages/affine-3.0.0.dist-info/INSTALLER",
+    "Lib/site-packages/affine-3.0.0.dist-info/METADATA",
+    "Lib/site-packages/affine-3.0.0.dist-info/RECORD",
+    "Lib/site-packages/affine-3.0.0.dist-info/REQUESTED",
+    "Lib/site-packages/affine-3.0.0.dist-info/WHEEL",
+    "Lib/site-packages/affine-3.0.0.dist-info/direct_url.json",
+    "Lib/site-packages/affine-3.0.0.dist-info/licenses/LICENSE.txt"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/affine/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "acc96c354299996a7172f7782e71d0fedc875d474735e5583e5b0f59b9a3b6c8",
+        "size_in_bytes": 23374
+      },
+      {
+        "_path": "Lib/site-packages/affine/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/affine-3.0.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/affine-3.0.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "cfe5a1010e4e931fa11be7e57df1474503142b006a929df4047cc48cebbf194b",
+        "size_in_bytes": 4281
+      },
+      {
+        "_path": "Lib/site-packages/affine-3.0.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "1b5bbd374f01111a1c32e8b897ba4356d9aa213c2a1cd26e73e855d6c98530c7",
+        "size_in_bytes": 770
+      },
+      {
+        "_path": "Lib/site-packages/affine-3.0.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/affine-3.0.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "1b68144734c4b66791f27add5d425f3620775585718a03d0f9b110ba3a4d88db",
+        "size_in_bytes": 82
+      },
+      {
+        "_path": "Lib/site-packages/affine-3.0.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "7069ed3f3977a59a28469bd429dbf59f69ac90c28c62721de8dd1b269e6f5431",
+        "size_in_bytes": 102
+      },
+      {
+        "_path": "Lib/site-packages/affine-3.0.0.dist-info/licenses/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "fc3636b54ff4072cf4b013ed9893c171ed25f88dae2b32722050499c1878cd6e",
+        "size_in_bytes": 1517
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\affine-3.0.0-pyhd8ed1ab_0",
+    "type": 1
+  }
+}

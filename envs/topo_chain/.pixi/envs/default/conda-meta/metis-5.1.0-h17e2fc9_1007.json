@@ -1,0 +1,97 @@
+{
+  "arch": "x86_64",
+  "build": "h17e2fc9_1007",
+  "build_number": 1007,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139"
+  ],
+  "license": "Apache-2.0",
+  "license_family": "APACHE",
+  "md5": "b1885dc9fc4136aba77ca8ac6c3c307a",
+  "name": "metis",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "metis >=5.1.0,<5.1.1.0a0"
+    ]
+  },
+  "sha256": "4c1dff710c59bb42a7a5d3e77f1772585c56df9fd62744b53b554bbdb682e2a8",
+  "size": 4139214,
+  "subdir": "win-64",
+  "timestamp": 1728064718935,
+  "version": "5.1.0",
+  "fn": "metis-5.1.0-h17e2fc9_1007.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/metis-5.1.0-h17e2fc9_1007.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\metis-5.1.0-h17e2fc9_1007",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/cmpfillin.exe",
+    "Library/bin/gpmetis.exe",
+    "Library/bin/graphchk.exe",
+    "Library/bin/m2gmetis.exe",
+    "Library/bin/mpmetis.exe",
+    "Library/bin/ndmetis.exe",
+    "Library/include/metis.h",
+    "Library/lib/metis.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/cmpfillin.exe",
+        "path_type": "hardlink",
+        "sha256": "8190cf33599323aaee77c3fcf191d9b00a30db282cf5dd7580eb6af8f67529d1",
+        "size_in_bytes": 59904
+      },
+      {
+        "_path": "Library/bin/gpmetis.exe",
+        "path_type": "hardlink",
+        "sha256": "18b02fe50b3ec21f4ce88afe14be2d978d1ec9e812d7073fe57b3c31ab883496",
+        "size_in_bytes": 209408
+      },
+      {
+        "_path": "Library/bin/graphchk.exe",
+        "path_type": "hardlink",
+        "sha256": "bea3862540ddd806b952296c2cbc3b43ad0424136928c132c1caf46606b0fdf4",
+        "size_in_bytes": 60416
+      },
+      {
+        "_path": "Library/bin/m2gmetis.exe",
+        "path_type": "hardlink",
+        "sha256": "dbd83e6cdbf89bfef5608a09125931d196f460ff0c81a12b16b5cfeaedd227af",
+        "size_in_bytes": 72704
+      },
+      {
+        "_path": "Library/bin/mpmetis.exe",
+        "path_type": "hardlink",
+        "sha256": "28d3532478b9dffb572d15bf4f27b17bd7d3ff6c968ea9754869c7ad0963ae3f",
+        "size_in_bytes": 211456
+      },
+      {
+        "_path": "Library/bin/ndmetis.exe",
+        "path_type": "hardlink",
+        "sha256": "3777d8ba735584f7064eeef6bbbf3a66008d46a87e74883cbe64919dea23ed11",
+        "size_in_bytes": 158208
+      },
+      {
+        "_path": "Library/include/metis.h",
+        "path_type": "hardlink",
+        "sha256": "20826dae4a5ff3fce9ad5fd0cf28ed0f8899e1cbdab1e318dfb33c8123840616",
+        "size_in_bytes": 10177
+      },
+      {
+        "_path": "Library/lib/metis.lib",
+        "path_type": "hardlink",
+        "sha256": "eb915dd0311d629906ba1089fabc86b2d0cb32a09f222fef5333e02233e53c80",
+        "size_in_bytes": 1384094
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\metis-5.1.0-h17e2fc9_1007",
+    "type": 1
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "build": "pyhd8ed1ab_0",
+  "build_number": 0,
+  "depends": [
+    "jinja2 >=3",
+    "python >=3.10"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "1fcdf88e7a8c296d3df8409bf0690db4",
+  "name": "branca",
+  "noarch": "python",
+  "run_exports": {},
+  "sha256": "1acf87c77d920edd098ddc91fa785efc10de871465dee0f463815b176e019e8b",
+  "size": 30176,
+  "subdir": "noarch",
+  "timestamp": 1759755695447,
+  "version": "0.8.2",
+  "fn": "branca-0.8.2-pyhd8ed1ab_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/branca-0.8.2-pyhd8ed1ab_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\branca-0.8.2-pyhd8ed1ab_0",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/branca/__init__.py",
+    "Lib/site-packages/branca/_cnames.json",
+    "Lib/site-packages/branca/_schemes.json",
+    "Lib/site-packages/branca/_version.py",
+    "Lib/site-packages/branca/colormap.py",
+    "Lib/site-packages/branca/element.py",
+    "Lib/site-packages/branca/py.typed",
+    "Lib/site-packages/branca/scheme_base_codes.json",
+    "Lib/site-packages/branca/scheme_info.json",
+    "Lib/site-packages/branca/templates/color_scale.js",
+    "Lib/site-packages/branca/utilities.py",
+    "Lib/site-packages/branca-0.8.2.dist-info/INSTALLER",
+    "Lib/site-packages/branca-0.8.2.dist-info/METADATA",
+    "Lib/site-packages/branca-0.8.2.dist-info/RECORD",
+    "Lib/site-packages/branca-0.8.2.dist-info/REQUESTED",
+    "Lib/site-packages/branca-0.8.2.dist-info/WHEEL",
+    "Lib/site-packages/branca-0.8.2.dist-info/direct_url.json",
+    "Lib/site-packages/branca-0.8.2.dist-info/licenses/LICENSE.txt",
+    "Lib/site-packages/branca-0.8.2.dist-info/top_level.txt"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/branca/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f7af899ea995be397a035de6fa78134b9e22787baf5b92ec24c478384419e66a",
+        "size_in_bytes": 207
+      },
+      {
+        "_path": "Lib/site-packages/branca/_cnames.json",
+        "path_type": "hardlink",
+        "sha256": "81cce41ceb4238c91b5dfde89dc1a17ddaf0addafce74f8a065c1d973b99681d",
+        "size_in_bytes": 3540
+      },
+      {
+        "_path": "Lib/site-packages/branca/_schemes.json",
+        "path_type": "hardlink",
+        "sha256": "775f6db84b2f3e1c4c78d7fe13cbef43ed52ef62461b9c99bd4fe738f6693ec3",
+        "size_in_bytes": 21192
+      },
+      {
+        "_path": "Lib/site-packages/branca/_version.py",
+        "path_type": "hardlink",
+        "sha256": "c3d3d06354c1535b316ab782a7f20bd7707886fa16918e41f94d2697aa75226e",
+        "size_in_bytes": 21
+      },
+      {
+        "_path": "Lib/site-packages/branca/colormap.py",
+        "path_type": "hardlink",
+        "sha256": "7f049df0bb167f3f7a077718abdde07f8aa391c969ccc9078a6e7b2a92035b8e",
+        "size_in_bytes": 23040
+      },
+      {
+        "_path": "Lib/site-packages/branca/element.py",
+        "path_type": "hardlink",
+        "sha256": "6cae375bf5963932e9c5af17b9cc2a2386fc68bcab33de10a942fe482c4c6ea9",
+        "size_in_bytes": 23921
+      },
+      {
+        "_path": "Lib/site-packages/branca/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/branca/scheme_base_codes.json",
+        "path_type": "hardlink",
+        "sha256": "c8c0095d7ecf9cbdca1551778a71ad1e7b977b799f7a0459da49047105d1dd86",
+        "size_in_bytes": 370
+      },
+      {
+        "_path": "Lib/site-packages/branca/scheme_info.json",
+        "path_type": "hardlink",
+        "sha256": "e1e0a2222095f7490b5edc896ee4c2c690d52cf0e0101af64dc1d9c8a5087bc3",
+        "size_in_bytes": 904
+      },
+      {
+        "_path": "Lib/site-packages/branca/templates/color_scale.js",
+        "path_type": "hardlink",
+        "sha256": "ee04e75f0b783b21a28275669870aba7fdb07ff3c2ad1d94ba180791ff6cd771",
+        "size_in_bytes": 2408
+      },
+      {
+        "_path": "Lib/site-packages/branca/utilities.py",
+        "path_type": "hardlink",
+        "sha256": "60e4685a27254d1e673788c575c06526cc64a10c616cafc3adacd98586e0a427",
+        "size_in_bytes": 14901
+      },
+      {
+        "_path": "Lib/site-packages/branca-0.8.2.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/branca-0.8.2.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "c9328c751c3bbab696ce9aad84b2ba01e3ad603906bd8799df6b095548b8c8e1",
+        "size_in_bytes": 1709
+      },
+      {
+        "_path": "Lib/site-packages/branca-0.8.2.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "dbe99e6c3329db2170c9225ebc076bc7fbe817b1eff4896b8cceab16e0771e26",
+        "size_in_bytes": 1763
+      },
+      {
+        "_path": "Lib/site-packages/branca-0.8.2.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/branca-0.8.2.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "ff309ddcdd65ebd02bc724dbf2bcc4a0ff53a5b61792a44548d383e4ebb19d3b",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "Lib/site-packages/branca-0.8.2.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "8cc0df9590c31b0f70feec7eaf1d77b5a4a9abe35c8fc6603f342d08fe59c83c",
+        "size_in_bytes": 102
+      },
+      {
+        "_path": "Lib/site-packages/branca-0.8.2.dist-info/licenses/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "16fdcc16aaffc41013de6079ef5b6c265e2401089b03c507cc26a72011558bab",
+        "size_in_bytes": 1079
+      },
+      {
+        "_path": "Lib/site-packages/branca-0.8.2.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "ca95504f038da1bf91a3d61a167239252a771627bb8281b59073be38e3af8051",
+        "size_in_bytes": 7
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\branca-0.8.2-pyhd8ed1ab_0",
+    "type": 1
+  }
+}

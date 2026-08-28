@@ -1,0 +1,100 @@
+{
+  "arch": "x86_64",
+  "build": "hf02afa3_3",
+  "build_number": 3,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "8ef4beb3cb18e1a876b9af9a757cc1a5",
+  "name": "libbrotlicommon",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libbrotlicommon >=1.2.0,<1.3.0a0"
+    ]
+  },
+  "sha256": "c739589318a1f8a88cd1b66d385176fd1ec2c4609e9f90d23d748be94b547e4e",
+  "size": 82655,
+  "subdir": "win-64",
+  "timestamp": 1786622832371,
+  "version": "1.2.0",
+  "fn": "libbrotlicommon-1.2.0-hf02afa3_3.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libbrotlicommon-1.2.0-hf02afa3_3.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libbrotlicommon-1.2.0-hf02afa3_3",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/brotlicommon.dll",
+    "Library/lib/brotlicommon.lib",
+    "Library/lib/pkgconfig/libbrotlicommon.pc",
+    "Library/share/man/man1/brotli.1",
+    "Library/share/man/man3/constants.h.3",
+    "Library/share/man/man3/decode.h.3",
+    "Library/share/man/man3/encode.h.3",
+    "Library/share/man/man3/types.h.3"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/brotlicommon.dll",
+        "path_type": "hardlink",
+        "sha256": "7bb3d76ccd52626bd57760f81bfeaf61107861eff68ee81d13d2a925497d4fef",
+        "size_in_bytes": 137728
+      },
+      {
+        "_path": "Library/lib/brotlicommon.lib",
+        "path_type": "hardlink",
+        "sha256": "bad3203961350235274462a22eb99037dcae06481bb1667e6a63d7aab30f9ee1",
+        "size_in_bytes": 4410
+      },
+      {
+        "_path": "Library/lib/pkgconfig/libbrotlicommon.pc",
+        "path_type": "hardlink",
+        "sha256": "6f3fe1c68d9b087e5f02cd74d9cbe00c2264e3c8ca09fdb3bb0d04684c36acd2",
+        "sha256_in_prefix": "ce2227f3300936e6d4a537cceec3da7bdf2068887b2b2e16f7d0c5b77a8e0a6a",
+        "size_in_bytes": 368,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/brotli-split_1786622632121/_h_env"
+      },
+      {
+        "_path": "Library/share/man/man1/brotli.1",
+        "path_type": "hardlink",
+        "sha256": "5592e0207f942e1b7be075bacd948ad20b76792845626a21592f5b9742c7af93",
+        "size_in_bytes": 5130
+      },
+      {
+        "_path": "Library/share/man/man3/constants.h.3",
+        "path_type": "hardlink",
+        "sha256": "2ac99f4d97a57a170877fed3ff93251612850f43598ba4eaf234e246787c978d",
+        "size_in_bytes": 1767
+      },
+      {
+        "_path": "Library/share/man/man3/decode.h.3",
+        "path_type": "hardlink",
+        "sha256": "be0a93be98e80f00d075bf43dc6a0bb84cb4028ce0082211e958d1ef18112d8f",
+        "size_in_bytes": 17452
+      },
+      {
+        "_path": "Library/share/man/man3/encode.h.3",
+        "path_type": "hardlink",
+        "sha256": "893ebea4d0d29ff3f2b83004c6bcb4d3610ced41f7cb04f72c1710ff339f5a90",
+        "size_in_bytes": 24310
+      },
+      {
+        "_path": "Library/share/man/man3/types.h.3",
+        "path_type": "hardlink",
+        "sha256": "c9afc281d042e84df6ba5ef4ac4a39f7e1ad8cae4d98adc702055b99c38b2267",
+        "size_in_bytes": 3081
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libbrotlicommon-1.2.0-hf02afa3_3",
+    "type": 1
+  }
+}

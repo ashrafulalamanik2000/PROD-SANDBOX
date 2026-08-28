@@ -1,0 +1,57 @@
+{
+  "arch": "x86_64",
+  "build": "h2725d9f_2",
+  "build_number": 2,
+  "constrains": [
+    "pdal 2.10.1.*"
+  ],
+  "depends": [
+    "libpdal-arrow 2.10.1 h77acb9b_2",
+    "libpdal-draco 2.10.1 h645de30_2",
+    "libpdal-e57 2.10.1 h65cec10_2",
+    "libpdal-hdf 2.10.1 h6729d05_2",
+    "libpdal-icebridge 2.10.1 h6729d05_2",
+    "libpdal-nitf 2.10.1 h032b4e7_2",
+    "libpdal-pgpointcloud 2.10.1 he3e2b89_2",
+    "libpdal-tiledb 2.10.1 h71c2f81_2",
+    "libpdal-trajectory 2.10.1 hc7ed3b3_2"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "5751236cab8fb30b6641ce2dc3ad2972",
+  "name": "libpdal",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpdal-core >=2.10.1,<2.11.0a0",
+      "libpdal-trajectory >=2.10.1,<2.11.0a0",
+      "libpdal-hdf >=2.10.1,<2.11.0a0",
+      "libpdal-tiledb >=2.10.1,<2.11.0a0",
+      "libpdal-pgpointcloud >=2.10.1,<2.11.0a0",
+      "libpdal-draco >=2.10.1,<2.11.0a0",
+      "libpdal-arrow >=2.10.1,<2.11.0a0",
+      "libpdal-nitf >=2.10.1,<2.11.0a0",
+      "libpdal-e57 >=2.10.1,<2.11.0a0",
+      "libpdal-icebridge >=2.10.1,<2.11.0a0"
+    ]
+  },
+  "sha256": "a5351e2608fefa4c102060ed4c1aded4899da803ede04fe461191188a788f97e",
+  "size": 12827,
+  "subdir": "win-64",
+  "timestamp": 1777500971905,
+  "version": "2.10.1",
+  "fn": "libpdal-2.10.1-h2725d9f_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libpdal-2.10.1-h2725d9f_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-2.10.1-h2725d9f_2",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-2.10.1-h2725d9f_2",
+    "type": 1
+  }
+}

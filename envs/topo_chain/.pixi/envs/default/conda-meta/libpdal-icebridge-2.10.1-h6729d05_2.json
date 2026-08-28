@@ -1,0 +1,60 @@
+{
+  "arch": "x86_64",
+  "build": "h6729d05_2",
+  "build_number": 2,
+  "constrains": [
+    "pdal 2.10.1.*"
+  ],
+  "depends": [
+    "hdf5 >=1.14.6,<1.14.7.0a0",
+    "libpdal-core 2.10.1 h4e8f44f_2",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "0a610efa56e29d83f961eaee86d6c82a",
+  "name": "libpdal-icebridge",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpdal-icebridge >=2.10.1,<2.11.0a0"
+    ]
+  },
+  "sha256": "fa54d4aee69734bf1fccd5bc42d1baabcb9168a629059273a2b06c3f5c985df6",
+  "size": 116448,
+  "subdir": "win-64",
+  "timestamp": 1777500658398,
+  "version": "2.10.1",
+  "fn": "libpdal-icebridge-2.10.1-h6729d05_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libpdal-icebridge-2.10.1-h6729d05_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-icebridge-2.10.1-h6729d05_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libpdal_plugin_reader_icebridge.dll",
+    "Library/lib/libpdal_plugin_reader_icebridge.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libpdal_plugin_reader_icebridge.dll",
+        "path_type": "hardlink",
+        "sha256": "61dc9571e3d2a2712403741f5d32723d9f8a963a13e70248c4e9b7e11c945187",
+        "size_in_bytes": 272384
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_reader_icebridge.lib",
+        "path_type": "hardlink",
+        "sha256": "a2af2ac7774fcab007ddf372d6a2d1851905e7230ee3ffc1e780b180a3d3f5a2",
+        "size_in_bytes": 203796
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-icebridge-2.10.1-h6729d05_2",
+    "type": 1
+  }
+}

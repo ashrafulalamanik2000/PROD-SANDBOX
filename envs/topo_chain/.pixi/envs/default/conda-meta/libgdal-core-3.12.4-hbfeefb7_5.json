@@ -1,0 +1,2977 @@
+{
+  "arch": "x86_64",
+  "build": "hbfeefb7_5",
+  "build_number": 5,
+  "constrains": [
+    "libgdal 3.12.4.*"
+  ],
+  "depends": [
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "blosc >=1.21.6,<2.0a0",
+    "libzlib >=1.3.2,<2.0a0",
+    "openssl >=3.5.7,<4.0a0",
+    "libjxl >=0.12.0,<0.13.0a0",
+    "libkml >=1.3.0,<1.4.0a0",
+    "libwebp-base >=1.6.0,<2.0a0",
+    "libpng >=1.6.58,<1.7.0a0",
+    "zstd >=1.5.7,<1.6.0a0",
+    "lerc >=4.2.0,<5.0a0",
+    "libiconv >=1.18,<2.0a0",
+    "libdeflate >=1.25,<1.26.0a0",
+    "lz4-c >=1.10.0,<1.11.0a0",
+    "libcurl >=8.21.0,<9.0a0",
+    "libexpat >=2.8.1,<3.0a0",
+    "liblzma >=5.8.3,<6.0a0",
+    "libsqlite >=3.53.4,<4.0a0",
+    "pcre2 >=10.47,<10.48.0a0",
+    "libxml2",
+    "libxml2-16 >=2.14.6",
+    "xerces-c >=3.3.0,<3.4.0a0",
+    "libspatialite >=5.1.0,<5.2.0a0",
+    "muparser >=2.3.5,<2.4.0a0",
+    "libjpeg-turbo >=3.2.0,<4.0a0",
+    "geos >=3.14.1,<3.14.2.0a0",
+    "proj >=9.8.1,<9.9.0a0",
+    "libarchive >=3.8.9,<3.9.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "6f86ca570061dd7f251ab5554eb610a5",
+  "name": "libgdal-core",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libgdal-core >=3.12.4,<3.13.0a0"
+    ]
+  },
+  "sha256": "9ab0d75d60952f422e59ead3b24d59871c8718b9179b0a708b86057d37d6a7ef",
+  "size": 10741883,
+  "subdir": "win-64",
+  "timestamp": 1786825244360,
+  "version": "3.12.4",
+  "fn": "libgdal-core-3.12.4-hbfeefb7_5.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libgdal-core-3.12.4-hbfeefb7_5.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libgdal-core-3.12.4-hbfeefb7_5",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/gdal-config",
+    "Library/bin/gdal.dll",
+    "Library/bin/gdal.exe",
+    "Library/bin/gdal_contour.exe",
+    "Library/bin/gdal_create.exe",
+    "Library/bin/gdal_footprint.exe",
+    "Library/bin/gdal_grid.exe",
+    "Library/bin/gdal_rasterize.exe",
+    "Library/bin/gdal_translate.exe",
+    "Library/bin/gdal_viewshed.exe",
+    "Library/bin/gdaladdo.exe",
+    "Library/bin/gdalbuildvrt.exe",
+    "Library/bin/gdaldem.exe",
+    "Library/bin/gdalenhance.exe",
+    "Library/bin/gdalinfo.exe",
+    "Library/bin/gdallocationinfo.exe",
+    "Library/bin/gdalmanage.exe",
+    "Library/bin/gdalmdiminfo.exe",
+    "Library/bin/gdalmdimtranslate.exe",
+    "Library/bin/gdalsrsinfo.exe",
+    "Library/bin/gdaltindex.exe",
+    "Library/bin/gdaltransform.exe",
+    "Library/bin/gdalwarp.exe",
+    "Library/bin/gnmanalyse.exe",
+    "Library/bin/gnmmanage.exe",
+    "Library/bin/nearblack.exe",
+    "Library/bin/ogr2ogr.exe",
+    "Library/bin/ogrinfo.exe",
+    "Library/bin/ogrlineref.exe",
+    "Library/bin/ogrtindex.exe",
+    "Library/bin/sozip.exe",
+    "Library/include/cpl_atomic_ops.h",
+    "Library/include/cpl_auto_close.h",
+    "Library/include/cpl_compressor.h",
+    "Library/include/cpl_config.h",
+    "Library/include/cpl_config_extras.h",
+    "Library/include/cpl_conv.h",
+    "Library/include/cpl_csv.h",
+    "Library/include/cpl_error.h",
+    "Library/include/cpl_float.h",
+    "Library/include/cpl_hash_set.h",
+    "Library/include/cpl_http.h",
+    "Library/include/cpl_json.h",
+    "Library/include/cpl_list.h",
+    "Library/include/cpl_minixml.h",
+    "Library/include/cpl_multiproc.h",
+    "Library/include/cpl_odbc.h",
+    "Library/include/cpl_port.h",
+    "Library/include/cpl_progress.h",
+    "Library/include/cpl_quad_tree.h",
+    "Library/include/cpl_spawn.h",
+    "Library/include/cpl_string.h",
+    "Library/include/cpl_time.h",
+    "Library/include/cpl_virtualmem.h",
+    "Library/include/cpl_vsi.h",
+    "Library/include/cpl_vsi_error.h",
+    "Library/include/cpl_vsi_virtual.h",
+    "Library/include/cplkeywordparser.h",
+    "Library/include/gdal.h",
+    "Library/include/gdal_adbc.h",
+    "Library/include/gdal_alg.h",
+    "Library/include/gdal_alg_priv.h",
+    "Library/include/gdal_asyncreader.h",
+    "Library/include/gdal_colortable.h",
+    "Library/include/gdal_computedrasterband.h",
+    "Library/include/gdal_cpp_functions.h",
+    "Library/include/gdal_csv.h",
+    "Library/include/gdal_dataset.h",
+    "Library/include/gdal_defaultoverviews.h",
+    "Library/include/gdal_driver.h",
+    "Library/include/gdal_drivermanager.h",
+    "Library/include/gdal_frmts.h",
+    "Library/include/gdal_fwd.h",
+    "Library/include/gdal_gcp.h",
+    "Library/include/gdal_geotransform.h",
+    "Library/include/gdal_majorobject.h",
+    "Library/include/gdal_maskbands.h",
+    "Library/include/gdal_mdreader.h",
+    "Library/include/gdal_minmax_element.hpp",
+    "Library/include/gdal_multidim.h",
+    "Library/include/gdal_multidim_cpp.h",
+    "Library/include/gdal_multidomainmetadata.h",
+    "Library/include/gdal_openinfo.h",
+    "Library/include/gdal_pam.h",
+    "Library/include/gdal_pam_multidim.h",
+    "Library/include/gdal_priv.h",
+    "Library/include/gdal_priv_templates.hpp",
+    "Library/include/gdal_proxy.h",
+    "Library/include/gdal_raster_cpp.h",
+    "Library/include/gdal_rasterband.h",
+    "Library/include/gdal_rasterblock.h",
+    "Library/include/gdal_rat.h",
+    "Library/include/gdal_relationship.h",
+    "Library/include/gdal_simplesurf.h",
+    "Library/include/gdal_typetraits.h",
+    "Library/include/gdal_utils.h",
+    "Library/include/gdal_vector_cpp.h",
+    "Library/include/gdal_version.h",
+    "Library/include/gdal_vrt.h",
+    "Library/include/gdalalgorithm.h",
+    "Library/include/gdalalgorithm_c.h",
+    "Library/include/gdalalgorithm_cpp.h",
+    "Library/include/gdalcachedpixelaccessor.h",
+    "Library/include/gdalgeorefpamdataset.h",
+    "Library/include/gdalgrid.h",
+    "Library/include/gdalgrid_priv.h",
+    "Library/include/gdaljp2abstractdataset.h",
+    "Library/include/gdaljp2metadata.h",
+    "Library/include/gdalpansharpen.h",
+    "Library/include/gdalsubdatasetinfo.h",
+    "Library/include/gdalwarper.h",
+    "Library/include/geoheif.h",
+    "Library/include/gnm.h",
+    "Library/include/gnm_api.h",
+    "Library/include/gnmgraph.h",
+    "Library/include/memdataset.h",
+    "Library/include/ogr_api.h",
+    "Library/include/ogr_core.h",
+    "Library/include/ogr_feature.h",
+    "Library/include/ogr_featurestyle.h",
+    "Library/include/ogr_geocoding.h",
+    "Library/include/ogr_geomcoordinateprecision.h",
+    "Library/include/ogr_geometry.h",
+    "Library/include/ogr_p.h",
+    "Library/include/ogr_recordbatch.h",
+    "Library/include/ogr_spatialref.h",
+    "Library/include/ogr_srs_api.h",
+    "Library/include/ogr_swq.h",
+    "Library/include/ogrsf_frmts.h",
+    "Library/include/rawdataset.h",
+    "Library/include/vrtdataset.h",
+    "Library/lib/cmake/gdal/GDAL-targets-release.cmake",
+    "Library/lib/cmake/gdal/GDAL-targets.cmake",
+    "Library/lib/cmake/gdal/GDALConfig.cmake",
+    "Library/lib/cmake/gdal/GDALConfigVersion.cmake",
+    "Library/lib/gdal.lib",
+    "Library/lib/gdalplugins/drivers.ini",
+    "Library/lib/pkgconfig/gdal.pc",
+    "Library/share/bash-completion/completions/gdal",
+    "Library/share/bash-completion/completions/gdal-config",
+    "Library/share/bash-completion/completions/gdal2tiles.py",
+    "Library/share/bash-completion/completions/gdal2xyz.py",
+    "Library/share/bash-completion/completions/gdal_calc.py",
+    "Library/share/bash-completion/completions/gdal_contour",
+    "Library/share/bash-completion/completions/gdal_create",
+    "Library/share/bash-completion/completions/gdal_edit.py",
+    "Library/share/bash-completion/completions/gdal_fillnodata.py",
+    "Library/share/bash-completion/completions/gdal_footprint",
+    "Library/share/bash-completion/completions/gdal_grid",
+    "Library/share/bash-completion/completions/gdal_merge.py",
+    "Library/share/bash-completion/completions/gdal_polygonize.py",
+    "Library/share/bash-completion/completions/gdal_proximity.py",
+    "Library/share/bash-completion/completions/gdal_rasterize",
+    "Library/share/bash-completion/completions/gdal_retile.py",
+    "Library/share/bash-completion/completions/gdal_sieve.py",
+    "Library/share/bash-completion/completions/gdal_translate",
+    "Library/share/bash-completion/completions/gdal_viewshed",
+    "Library/share/bash-completion/completions/gdaladdo",
+    "Library/share/bash-completion/completions/gdalbuildvrt",
+    "Library/share/bash-completion/completions/gdalcompare.py",
+    "Library/share/bash-completion/completions/gdaldem",
+    "Library/share/bash-completion/completions/gdalenhance",
+    "Library/share/bash-completion/completions/gdalinfo",
+    "Library/share/bash-completion/completions/gdallocationinfo",
+    "Library/share/bash-completion/completions/gdalmanage",
+    "Library/share/bash-completion/completions/gdalmove.py",
+    "Library/share/bash-completion/completions/gdalsrsinfo",
+    "Library/share/bash-completion/completions/gdaltindex",
+    "Library/share/bash-completion/completions/gdaltransform",
+    "Library/share/bash-completion/completions/gdalwarp",
+    "Library/share/bash-completion/completions/ogr2ogr",
+    "Library/share/bash-completion/completions/ogr_layer_algebra.py",
+    "Library/share/bash-completion/completions/ogrinfo",
+    "Library/share/bash-completion/completions/ogrlineref",
+    "Library/share/bash-completion/completions/ogrmerge.py",
+    "Library/share/bash-completion/completions/ogrtindex",
+    "Library/share/bash-completion/completions/sozip",
+    "Library/share/gdal/GDALLogoBW.svg",
+    "Library/share/gdal/GDALLogoColor.svg",
+    "Library/share/gdal/GDALLogoGS.svg",
+    "Library/share/gdal/LICENSE.TXT",
+    "Library/share/gdal/MM_m_idofic.csv",
+    "Library/share/gdal/bag_template.xml",
+    "Library/share/gdal/cubewerx_extra.wkt",
+    "Library/share/gdal/default.rsc",
+    "Library/share/gdal/ecw_cs.wkt",
+    "Library/share/gdal/eedaconf.json",
+    "Library/share/gdal/epsg.wkt",
+    "Library/share/gdal/esri_StatePlane_extra.wkt",
+    "Library/share/gdal/gdal_algorithm.schema.json",
+    "Library/share/gdal/gdalg.schema.json",
+    "Library/share/gdal/gdalicon.png",
+    "Library/share/gdal/gdalinfo_output.schema.json",
+    "Library/share/gdal/gdalmdiminfo_output.schema.json",
+    "Library/share/gdal/gdaltileindex.xsd",
+    "Library/share/gdal/gdalvrt.xsd",
+    "Library/share/gdal/gfs.xsd",
+    "Library/share/gdal/gml_registry.xml",
+    "Library/share/gdal/gml_registry.xsd",
+    "Library/share/gdal/gmlasconf.xml",
+    "Library/share/gdal/gmlasconf.xsd",
+    "Library/share/gdal/gt_datum.csv",
+    "Library/share/gdal/gt_ellips.csv",
+    "Library/share/gdal/header.dxf",
+    "Library/share/gdal/inspire_cp_BasicPropertyUnit.gfs",
+    "Library/share/gdal/inspire_cp_CadastralBoundary.gfs",
+    "Library/share/gdal/inspire_cp_CadastralParcel.gfs",
+    "Library/share/gdal/inspire_cp_CadastralZoning.gfs",
+    "Library/share/gdal/jpfgdgml_AdmArea.gfs",
+    "Library/share/gdal/jpfgdgml_AdmBdry.gfs",
+    "Library/share/gdal/jpfgdgml_AdmPt.gfs",
+    "Library/share/gdal/jpfgdgml_BldA.gfs",
+    "Library/share/gdal/jpfgdgml_BldL.gfs",
+    "Library/share/gdal/jpfgdgml_Cntr.gfs",
+    "Library/share/gdal/jpfgdgml_CommBdry.gfs",
+    "Library/share/gdal/jpfgdgml_CommPt.gfs",
+    "Library/share/gdal/jpfgdgml_Cstline.gfs",
+    "Library/share/gdal/jpfgdgml_ElevPt.gfs",
+    "Library/share/gdal/jpfgdgml_GCP.gfs",
+    "Library/share/gdal/jpfgdgml_LeveeEdge.gfs",
+    "Library/share/gdal/jpfgdgml_RailCL.gfs",
+    "Library/share/gdal/jpfgdgml_RdASL.gfs",
+    "Library/share/gdal/jpfgdgml_RdArea.gfs",
+    "Library/share/gdal/jpfgdgml_RdCompt.gfs",
+    "Library/share/gdal/jpfgdgml_RdEdg.gfs",
+    "Library/share/gdal/jpfgdgml_RdMgtBdry.gfs",
+    "Library/share/gdal/jpfgdgml_RdSgmtA.gfs",
+    "Library/share/gdal/jpfgdgml_RvrMgtBdry.gfs",
+    "Library/share/gdal/jpfgdgml_SBAPt.gfs",
+    "Library/share/gdal/jpfgdgml_SBArea.gfs",
+    "Library/share/gdal/jpfgdgml_SBBdry.gfs",
+    "Library/share/gdal/jpfgdgml_WA.gfs",
+    "Library/share/gdal/jpfgdgml_WL.gfs",
+    "Library/share/gdal/jpfgdgml_WStrA.gfs",
+    "Library/share/gdal/jpfgdgml_WStrL.gfs",
+    "Library/share/gdal/leaflet_template.html",
+    "Library/share/gdal/netcdf_config.xsd",
+    "Library/share/gdal/nitf_spec.xml",
+    "Library/share/gdal/nitf_spec.xsd",
+    "Library/share/gdal/ogr_fields_override.schema.json",
+    "Library/share/gdal/ogrinfo_output.schema.json",
+    "Library/share/gdal/ogrvrt.xsd",
+    "Library/share/gdal/osmconf.ini",
+    "Library/share/gdal/ozi_datum.csv",
+    "Library/share/gdal/ozi_ellips.csv",
+    "Library/share/gdal/pci_datum.txt",
+    "Library/share/gdal/pci_ellips.txt",
+    "Library/share/gdal/pdfcomposition.xsd",
+    "Library/share/gdal/pds4_template.xml",
+    "Library/share/gdal/plscenesconf.json",
+    "Library/share/gdal/ruian_vf_ob_v1.gfs",
+    "Library/share/gdal/ruian_vf_st_uvoh_v1.gfs",
+    "Library/share/gdal/ruian_vf_st_v1.gfs",
+    "Library/share/gdal/ruian_vf_v1.gfs",
+    "Library/share/gdal/s57agencies.csv",
+    "Library/share/gdal/s57attributes.csv",
+    "Library/share/gdal/s57expectedinput.csv",
+    "Library/share/gdal/s57objectclasses.csv",
+    "Library/share/gdal/seed_2d.dgn",
+    "Library/share/gdal/seed_3d.dgn",
+    "Library/share/gdal/stateplane.csv",
+    "Library/share/gdal/template_tiles.mapml",
+    "Library/share/gdal/tms_LINZAntarticaMapTileGrid.json",
+    "Library/share/gdal/tms_MapML_APSTILE.json",
+    "Library/share/gdal/tms_MapML_CBMTILE.json",
+    "Library/share/gdal/tms_NZTM2000.json",
+    "Library/share/gdal/trailer.dxf",
+    "Library/share/gdal/vdv452.xml",
+    "Library/share/gdal/vdv452.xsd",
+    "Library/share/gdal/vicar.json",
+    "Library/share/man/man1/gdal-config.1",
+    "Library/share/man/man1/gdal-convert.1",
+    "Library/share/man/man1/gdal-dataset-copy.1",
+    "Library/share/man/man1/gdal-dataset-delete.1",
+    "Library/share/man/man1/gdal-dataset-identify.1",
+    "Library/share/man/man1/gdal-dataset-rename.1",
+    "Library/share/man/man1/gdal-dataset.1",
+    "Library/share/man/man1/gdal-info.1",
+    "Library/share/man/man1/gdal-mdim-convert.1",
+    "Library/share/man/man1/gdal-mdim-info.1",
+    "Library/share/man/man1/gdal-mdim-mosaic.1",
+    "Library/share/man/man1/gdal-mdim.1",
+    "Library/share/man/man1/gdal-pipeline.1",
+    "Library/share/man/man1/gdal-raster-as-features.1",
+    "Library/share/man/man1/gdal-raster-aspect.1",
+    "Library/share/man/man1/gdal-raster-calc.1",
+    "Library/share/man/man1/gdal-raster-clean-collar.1",
+    "Library/share/man/man1/gdal-raster-clip.1",
+    "Library/share/man/man1/gdal-raster-color-blend.1",
+    "Library/share/man/man1/gdal-raster-color-map.1",
+    "Library/share/man/man1/gdal-raster-compare.1",
+    "Library/share/man/man1/gdal-raster-contour.1",
+    "Library/share/man/man1/gdal-raster-convert.1",
+    "Library/share/man/man1/gdal-raster-create.1",
+    "Library/share/man/man1/gdal-raster-edit.1",
+    "Library/share/man/man1/gdal-raster-fill-nodata.1",
+    "Library/share/man/man1/gdal-raster-footprint.1",
+    "Library/share/man/man1/gdal-raster-hillshade.1",
+    "Library/share/man/man1/gdal-raster-index.1",
+    "Library/share/man/man1/gdal-raster-info.1",
+    "Library/share/man/man1/gdal-raster-mosaic.1",
+    "Library/share/man/man1/gdal-raster-neighbors.1",
+    "Library/share/man/man1/gdal-raster-nodata-to-alpha.1",
+    "Library/share/man/man1/gdal-raster-overview-add.1",
+    "Library/share/man/man1/gdal-raster-overview-delete.1",
+    "Library/share/man/man1/gdal-raster-overview-refresh.1",
+    "Library/share/man/man1/gdal-raster-pansharpen.1",
+    "Library/share/man/man1/gdal-raster-pipeline.1",
+    "Library/share/man/man1/gdal-raster-pixel-info.1",
+    "Library/share/man/man1/gdal-raster-polygonize.1",
+    "Library/share/man/man1/gdal-raster-proximity.1",
+    "Library/share/man/man1/gdal-raster-reclassify.1",
+    "Library/share/man/man1/gdal-raster-reproject.1",
+    "Library/share/man/man1/gdal-raster-resize.1",
+    "Library/share/man/man1/gdal-raster-rgb-to-palette.1",
+    "Library/share/man/man1/gdal-raster-roughness.1",
+    "Library/share/man/man1/gdal-raster-scale.1",
+    "Library/share/man/man1/gdal-raster-select.1",
+    "Library/share/man/man1/gdal-raster-set-type.1",
+    "Library/share/man/man1/gdal-raster-sieve.1",
+    "Library/share/man/man1/gdal-raster-slope.1",
+    "Library/share/man/man1/gdal-raster-stack.1",
+    "Library/share/man/man1/gdal-raster-tile.1",
+    "Library/share/man/man1/gdal-raster-tpi.1",
+    "Library/share/man/man1/gdal-raster-tri.1",
+    "Library/share/man/man1/gdal-raster-unscale.1",
+    "Library/share/man/man1/gdal-raster-update.1",
+    "Library/share/man/man1/gdal-raster-viewshed.1",
+    "Library/share/man/man1/gdal-raster-zonal-stats.1",
+    "Library/share/man/man1/gdal-raster.1",
+    "Library/share/man/man1/gdal-vector-buffer.1",
+    "Library/share/man/man1/gdal-vector-check-coverage.1",
+    "Library/share/man/man1/gdal-vector-check-geometry.1",
+    "Library/share/man/man1/gdal-vector-clean-coverage.1",
+    "Library/share/man/man1/gdal-vector-clip.1",
+    "Library/share/man/man1/gdal-vector-concat.1",
+    "Library/share/man/man1/gdal-vector-convert.1",
+    "Library/share/man/man1/gdal-vector-edit.1",
+    "Library/share/man/man1/gdal-vector-explode-collections.1",
+    "Library/share/man/man1/gdal-vector-filter.1",
+    "Library/share/man/man1/gdal-vector-grid.1",
+    "Library/share/man/man1/gdal-vector-index.1",
+    "Library/share/man/man1/gdal-vector-info.1",
+    "Library/share/man/man1/gdal-vector-layer-algebra.1",
+    "Library/share/man/man1/gdal-vector-make-point.1",
+    "Library/share/man/man1/gdal-vector-make-valid.1",
+    "Library/share/man/man1/gdal-vector-partition.1",
+    "Library/share/man/man1/gdal-vector-pipeline.1",
+    "Library/share/man/man1/gdal-vector-rasterize.1",
+    "Library/share/man/man1/gdal-vector-segmentize.1",
+    "Library/share/man/man1/gdal-vector-select.1",
+    "Library/share/man/man1/gdal-vector-set-field-type.1",
+    "Library/share/man/man1/gdal-vector-set-geom-type.1",
+    "Library/share/man/man1/gdal-vector-simplify.1",
+    "Library/share/man/man1/gdal-vector-sql.1",
+    "Library/share/man/man1/gdal-vector-swap-xy.1",
+    "Library/share/man/man1/gdal-vector.1",
+    "Library/share/man/man1/gdal-vsi-copy.1",
+    "Library/share/man/man1/gdal-vsi-delete.1",
+    "Library/share/man/man1/gdal-vsi-list.1",
+    "Library/share/man/man1/gdal-vsi-move.1",
+    "Library/share/man/man1/gdal-vsi-sozip.1",
+    "Library/share/man/man1/gdal-vsi-sync.1",
+    "Library/share/man/man1/gdal-vsi.1",
+    "Library/share/man/man1/gdal.1",
+    "Library/share/man/man1/gdal2tiles.1",
+    "Library/share/man/man1/gdal_calc.1",
+    "Library/share/man/man1/gdal_contour.1",
+    "Library/share/man/man1/gdal_create.1",
+    "Library/share/man/man1/gdal_edit.1",
+    "Library/share/man/man1/gdal_fillnodata.1",
+    "Library/share/man/man1/gdal_footprint.1",
+    "Library/share/man/man1/gdal_grid.1",
+    "Library/share/man/man1/gdal_merge.1",
+    "Library/share/man/man1/gdal_pansharpen.1",
+    "Library/share/man/man1/gdal_polygonize.1",
+    "Library/share/man/man1/gdal_proximity.1",
+    "Library/share/man/man1/gdal_rasterize.1",
+    "Library/share/man/man1/gdal_retile.1",
+    "Library/share/man/man1/gdal_sieve.1",
+    "Library/share/man/man1/gdal_translate.1",
+    "Library/share/man/man1/gdal_viewshed.1",
+    "Library/share/man/man1/gdaladdo.1",
+    "Library/share/man/man1/gdalbuildvrt.1",
+    "Library/share/man/man1/gdalcompare.1",
+    "Library/share/man/man1/gdaldem.1",
+    "Library/share/man/man1/gdalinfo.1",
+    "Library/share/man/man1/gdallocationinfo.1",
+    "Library/share/man/man1/gdalmanage.1",
+    "Library/share/man/man1/gdalmdiminfo.1",
+    "Library/share/man/man1/gdalmdimtranslate.1",
+    "Library/share/man/man1/gdalmove.1",
+    "Library/share/man/man1/gdalsrsinfo.1",
+    "Library/share/man/man1/gdaltindex.1",
+    "Library/share/man/man1/gdaltransform.1",
+    "Library/share/man/man1/gdalwarp.1",
+    "Library/share/man/man1/gnmanalyse.1",
+    "Library/share/man/man1/gnmmanage.1",
+    "Library/share/man/man1/nearblack.1",
+    "Library/share/man/man1/ogr2ogr.1",
+    "Library/share/man/man1/ogr_layer_algebra.1",
+    "Library/share/man/man1/ogrinfo.1",
+    "Library/share/man/man1/ogrlineref.1",
+    "Library/share/man/man1/ogrmerge.1",
+    "Library/share/man/man1/ogrtindex.1",
+    "Library/share/man/man1/pct2rgb.1",
+    "Library/share/man/man1/rgb2pct.1",
+    "Library/share/man/man1/sozip.1",
+    "etc/conda/activate.d/gdal-activate.bat",
+    "etc/conda/activate.d/gdal-activate.ps1",
+    "etc/conda/activate.d/gdal-activate.sh",
+    "etc/conda/deactivate.d/gdal-deactivate.bat",
+    "etc/conda/deactivate.d/gdal-deactivate.ps1",
+    "etc/conda/deactivate.d/gdal-deactivate.sh"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/gdal-config",
+        "path_type": "hardlink",
+        "sha256": "56082aff8403bb592841faeb86923bc53d0139414f46dfabb294f954c2068516",
+        "sha256_in_prefix": "a2c057de2ecec03d93069bbb57c394217b4cd4bb029e8bbc8b4828789fd9131d",
+        "size_in_bytes": 4711,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_libgdal-split_1786825244/h_env"
+      },
+      {
+        "_path": "Library/bin/gdal.dll",
+        "path_type": "hardlink",
+        "sha256": "731693f48816fc4b5b608cd7126f59b297e10842d3ab2fe604e4adca5d3ab714",
+        "size_in_bytes": 23137280
+      },
+      {
+        "_path": "Library/bin/gdal.exe",
+        "path_type": "hardlink",
+        "sha256": "70ff8985e7f512454fc8fffa460c34f506ce59455d4eefb00692437259c4de8f",
+        "size_in_bytes": 100352
+      },
+      {
+        "_path": "Library/bin/gdal_contour.exe",
+        "path_type": "hardlink",
+        "sha256": "c379d53b1ee77db1e3d9db13692e74b7a525a0935870c2dfe342854f9b9b98d6",
+        "size_in_bytes": 38912
+      },
+      {
+        "_path": "Library/bin/gdal_create.exe",
+        "path_type": "hardlink",
+        "sha256": "0b1d20eea8bef216f41352ed42266d683e924d9539bd1b268cbd15733fd44593",
+        "size_in_bytes": 344576
+      },
+      {
+        "_path": "Library/bin/gdal_footprint.exe",
+        "path_type": "hardlink",
+        "sha256": "242c8e0b9ec940364b621778b72c4f965c9a7593e78e6bb7dccd4721f69123ea",
+        "size_in_bytes": 223232
+      },
+      {
+        "_path": "Library/bin/gdal_grid.exe",
+        "path_type": "hardlink",
+        "sha256": "4d77314ecb2397e5dcc6cd33d86a5384d03093952f06e305340d29a1fec8137f",
+        "size_in_bytes": 38912
+      },
+      {
+        "_path": "Library/bin/gdal_rasterize.exe",
+        "path_type": "hardlink",
+        "sha256": "cea3d5823480de78cd62469637f26844e307c5512eeef7706bccb6ca2d03b58c",
+        "size_in_bytes": 220672
+      },
+      {
+        "_path": "Library/bin/gdal_translate.exe",
+        "path_type": "hardlink",
+        "sha256": "b083753b521098d17e9094e1c42d7fc1c8c34f306322ba483778857aa05bf42d",
+        "size_in_bytes": 226304
+      },
+      {
+        "_path": "Library/bin/gdal_viewshed.exe",
+        "path_type": "hardlink",
+        "sha256": "553c076aa58d268c8c0c0a8e738efd5e65d78fb6878876f2a373e7c457f91066",
+        "size_in_bytes": 343040
+      },
+      {
+        "_path": "Library/bin/gdaladdo.exe",
+        "path_type": "hardlink",
+        "sha256": "4008ad30ea985510e0d606b5d5a5e2644da2e8207fe00ccb7499c233b28c5467",
+        "size_in_bytes": 378880
+      },
+      {
+        "_path": "Library/bin/gdalbuildvrt.exe",
+        "path_type": "hardlink",
+        "sha256": "a8ee37b28160d129dab4d1e06e0770caeebf9ab2a457cc6b34f9f81c0691b6d7",
+        "size_in_bytes": 39424
+      },
+      {
+        "_path": "Library/bin/gdaldem.exe",
+        "path_type": "hardlink",
+        "sha256": "b4ed82f89e070ae68b5e55ab25787c2cd9cd1e7851a92dbbe65b85534b968eb5",
+        "size_in_bytes": 220672
+      },
+      {
+        "_path": "Library/bin/gdalenhance.exe",
+        "path_type": "hardlink",
+        "sha256": "ad9c365353b74478617e746a936303f51fab312b90d39c77261c6b593209e229",
+        "size_in_bytes": 236544
+      },
+      {
+        "_path": "Library/bin/gdalinfo.exe",
+        "path_type": "hardlink",
+        "sha256": "266897b4ab80d8915a4bc8b0ebfd6a3c6185b8e904be07cb4f136a8dcb64cc1f",
+        "size_in_bytes": 48128
+      },
+      {
+        "_path": "Library/bin/gdallocationinfo.exe",
+        "path_type": "hardlink",
+        "sha256": "5f1a1cf687b5c0ee7fb68c0ae9167ad0d2e5260b430917db2a09ae1b0bd7f356",
+        "size_in_bytes": 344576
+      },
+      {
+        "_path": "Library/bin/gdalmanage.exe",
+        "path_type": "hardlink",
+        "sha256": "019cc6cccecdcc8e53bbd847a05a839a98841038ec43ae83dea40a0ed7ea9255",
+        "size_in_bytes": 145408
+      },
+      {
+        "_path": "Library/bin/gdalmdiminfo.exe",
+        "path_type": "hardlink",
+        "sha256": "e604fb872e4c69426ab5346abb32cce02831a56538e6becbcfe5e3d7373a6e24",
+        "size_in_bytes": 38912
+      },
+      {
+        "_path": "Library/bin/gdalmdimtranslate.exe",
+        "path_type": "hardlink",
+        "sha256": "d8be726b733bea93df77a1c5cba745ae1f061fa5ba1f29f1ca4f15d96688a01d",
+        "size_in_bytes": 219648
+      },
+      {
+        "_path": "Library/bin/gdalsrsinfo.exe",
+        "path_type": "hardlink",
+        "sha256": "9dde2a60f7c02c7e190b8e2149f91991245dd9132b4789b8a10eb7a930f8a71a",
+        "size_in_bytes": 230400
+      },
+      {
+        "_path": "Library/bin/gdaltindex.exe",
+        "path_type": "hardlink",
+        "sha256": "bc0848fa0c90d447f273548dba074c82a522d19ed5ceb48b3ddb9265313ccd1e",
+        "size_in_bytes": 219136
+      },
+      {
+        "_path": "Library/bin/gdaltransform.exe",
+        "path_type": "hardlink",
+        "sha256": "1d609aa8a164465b7734ba8a0317c7d4a13472b0d40e613b70b16f181be6c667",
+        "size_in_bytes": 52736
+      },
+      {
+        "_path": "Library/bin/gdalwarp.exe",
+        "path_type": "hardlink",
+        "sha256": "f77e4183dcc58a3a03c9b874b94929dd541b0b17a66c76dd79960a789f24cab3",
+        "size_in_bytes": 44544
+      },
+      {
+        "_path": "Library/bin/gnmanalyse.exe",
+        "path_type": "hardlink",
+        "sha256": "611251c566af2a633b9c53fbf945ca01e456ecc3b441997efc84916a4235a89c",
+        "size_in_bytes": 236544
+      },
+      {
+        "_path": "Library/bin/gnmmanage.exe",
+        "path_type": "hardlink",
+        "sha256": "2027df16cba42e3fb4b92c8215355014c72e152e47ce40b6e4eac694c1986ce7",
+        "size_in_bytes": 243712
+      },
+      {
+        "_path": "Library/bin/nearblack.exe",
+        "path_type": "hardlink",
+        "sha256": "d478030850c496b1db7d9b20d9b00214e2e6b6cf077c46d96f68665d810a68c1",
+        "size_in_bytes": 38912
+      },
+      {
+        "_path": "Library/bin/ogr2ogr.exe",
+        "path_type": "hardlink",
+        "sha256": "5e3735c93e3d77a64d6d7b1c731dcbbafb8680c4baafec2c8506c53c0ddd08b9",
+        "size_in_bytes": 222720
+      },
+      {
+        "_path": "Library/bin/ogrinfo.exe",
+        "path_type": "hardlink",
+        "sha256": "dda7b2ecfe66b405901c18c4aded2c68ed9d9fc8471502efc8f4e9ede3055554",
+        "size_in_bytes": 221184
+      },
+      {
+        "_path": "Library/bin/ogrlineref.exe",
+        "path_type": "hardlink",
+        "sha256": "9febaf6aaa1ac7dcd659d7ec4d86db86d66bcaede26bdbf7de4958fdf14224f9",
+        "size_in_bytes": 364032
+      },
+      {
+        "_path": "Library/bin/ogrtindex.exe",
+        "path_type": "hardlink",
+        "sha256": "d467de104bd3c3baa629cecc69ac1a9b9dce8de5f392cad74c76bdc173021674",
+        "size_in_bytes": 391680
+      },
+      {
+        "_path": "Library/bin/sozip.exe",
+        "path_type": "hardlink",
+        "sha256": "bf91ab475511bfcb4f06a822cd27440da8ee6746f35d36f231f905c39d31584d",
+        "size_in_bytes": 200704
+      },
+      {
+        "_path": "Library/include/cpl_atomic_ops.h",
+        "path_type": "hardlink",
+        "sha256": "6c1af1b0b4d09738eee556713983229c32d2cc284a5424b1c95fed75290acafa",
+        "size_in_bytes": 3458
+      },
+      {
+        "_path": "Library/include/cpl_auto_close.h",
+        "path_type": "hardlink",
+        "sha256": "c1031b724640bf68814fb2d45924fecf5d26d49a988dc9de3021a0dd9078e1c6",
+        "size_in_bytes": 2193
+      },
+      {
+        "_path": "Library/include/cpl_compressor.h",
+        "path_type": "hardlink",
+        "sha256": "988bf247345a42c49ea90e7ca5ce0077a4275665a91a4a16050e41fdbfc140be",
+        "size_in_bytes": 4033
+      },
+      {
+        "_path": "Library/include/cpl_config.h",
+        "path_type": "hardlink",
+        "sha256": "a53293316feda034a9dd9473ef2a0b167aa40937673fee17a6283a81b9db264d",
+        "sha256_in_prefix": "814aed599f2c0f2c04484eaa98ad4bfc8e17ae14f84fcd29200145f47f8c5eff",
+        "size_in_bytes": 6034,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_libgdal-split_1786825244/h_env"
+      },
+      {
+        "_path": "Library/include/cpl_config_extras.h",
+        "path_type": "hardlink",
+        "sha256": "9c0e053fc6130b33784e35b26466934ccca1d2ae02d2f00a83c181f94e66032c",
+        "size_in_bytes": 495
+      },
+      {
+        "_path": "Library/include/cpl_conv.h",
+        "path_type": "hardlink",
+        "sha256": "7f015275422b44fa6ad695ffa537bb2240eca6998ab3b2de218f8009d5e6c6cf",
+        "size_in_bytes": 22127
+      },
+      {
+        "_path": "Library/include/cpl_csv.h",
+        "path_type": "hardlink",
+        "sha256": "b8ff75e576795cf5dbcf2d50872f482fc9696f3aab58dfe3c09e18ccb2b981ee",
+        "size_in_bytes": 2367
+      },
+      {
+        "_path": "Library/include/cpl_error.h",
+        "path_type": "hardlink",
+        "sha256": "c376a362625fd41fcb5ed7a16fbbca6783130db172a688145a90a236b35031a5",
+        "size_in_bytes": 17446
+      },
+      {
+        "_path": "Library/include/cpl_float.h",
+        "path_type": "hardlink",
+        "sha256": "b640fe350cea8c8af4ffd0b5bfaf806b11bf5ad7f14091765090e4c7e950c41c",
+        "size_in_bytes": 24077
+      },
+      {
+        "_path": "Library/include/cpl_hash_set.h",
+        "path_type": "hardlink",
+        "sha256": "ab7b88ae9d5d6e8a9207a56f94f6e6a2fa662b11100f891b5d516eadbfa0c469",
+        "size_in_bytes": 2505
+      },
+      {
+        "_path": "Library/include/cpl_http.h",
+        "path_type": "hardlink",
+        "sha256": "112ac2ecce10e6a0c7b84a5a95d0ad20fecf4023482bf22a7ca134b4cf0721ab",
+        "size_in_bytes": 10454
+      },
+      {
+        "_path": "Library/include/cpl_json.h",
+        "path_type": "hardlink",
+        "sha256": "0ba3b0861a6848d03754a31dc0d5b03061da6148a3042e0dd81333fedaedff4d",
+        "size_in_bytes": 9908
+      },
+      {
+        "_path": "Library/include/cpl_list.h",
+        "path_type": "hardlink",
+        "sha256": "d3c8219e2374113c701c82796080defdf77dbedad452f74bc3bcedc357a8358a",
+        "size_in_bytes": 1755
+      },
+      {
+        "_path": "Library/include/cpl_minixml.h",
+        "path_type": "hardlink",
+        "sha256": "42ce11c7dd2c1e1ade3f891a80d370f1c4f2161d61a1e22bd453df7986a9d716",
+        "size_in_bytes": 7196
+      },
+      {
+        "_path": "Library/include/cpl_multiproc.h",
+        "path_type": "hardlink",
+        "sha256": "440ab91eddf708413a4538db1142981bc8ff77f7546df04619a10c8842df6ef8",
+        "size_in_bytes": 9234
+      },
+      {
+        "_path": "Library/include/cpl_odbc.h",
+        "path_type": "hardlink",
+        "sha256": "9d80ebd09405cfa09aed17534bd170216d9fb6b130e9e8e672888e870bc82ee6",
+        "size_in_bytes": 10050
+      },
+      {
+        "_path": "Library/include/cpl_port.h",
+        "path_type": "hardlink",
+        "sha256": "e6c069bfdd147a71fd48e4e3382fe2ea1e4dff3b92d9c86b85cab33e53f7c2b1",
+        "size_in_bytes": 39593
+      },
+      {
+        "_path": "Library/include/cpl_progress.h",
+        "path_type": "hardlink",
+        "sha256": "00b321679d92d0d9b90cfa210a431ad6d455e5331d1ce2a46a89a020cab722ad",
+        "size_in_bytes": 1546
+      },
+      {
+        "_path": "Library/include/cpl_quad_tree.h",
+        "path_type": "hardlink",
+        "sha256": "8e1a54ac0fb3423331f9b11a8a62962dbe6121c6b6abaa0260c6238db5b4e342",
+        "size_in_bytes": 3999
+      },
+      {
+        "_path": "Library/include/cpl_spawn.h",
+        "path_type": "hardlink",
+        "sha256": "0b6f76d231f91fcc620ffe617134afc6e20fc241a9b3df44b3331b1791c81bf8",
+        "size_in_bytes": 2266
+      },
+      {
+        "_path": "Library/include/cpl_string.h",
+        "path_type": "hardlink",
+        "sha256": "f79e656866afa8c2c98315a423463406c3f66f603eaa5d569f33e3dfb80381fd",
+        "size_in_bytes": 33525
+      },
+      {
+        "_path": "Library/include/cpl_time.h",
+        "path_type": "hardlink",
+        "sha256": "3613ff6802680640cb43699e60fb037ea2941a95cdad75cbaaa2b277ffabfc4a",
+        "size_in_bytes": 1060
+      },
+      {
+        "_path": "Library/include/cpl_virtualmem.h",
+        "path_type": "hardlink",
+        "sha256": "e008f53378099c395fa68f040744aa410fb75ea1ffb810a69d055b938dab8331",
+        "size_in_bytes": 13927
+      },
+      {
+        "_path": "Library/include/cpl_vsi.h",
+        "path_type": "hardlink",
+        "sha256": "eafd1b3120a233b218b14e828b76aa63dcdbcf97c3293f86542d9d63b4dd88ec",
+        "size_in_bytes": 34753
+      },
+      {
+        "_path": "Library/include/cpl_vsi_error.h",
+        "path_type": "hardlink",
+        "sha256": "e45f2d73d69786d375cac46363bdf534195ae28811e0637449b080577896c58e",
+        "size_in_bytes": 2722
+      },
+      {
+        "_path": "Library/include/cpl_vsi_virtual.h",
+        "path_type": "hardlink",
+        "sha256": "b5913be1ea001343b59c3a031874a5dd8a7316398b33225ca734871f41f6e889",
+        "size_in_bytes": 22632
+      },
+      {
+        "_path": "Library/include/cplkeywordparser.h",
+        "path_type": "hardlink",
+        "sha256": "47967637ea3976bc13fa39b40affbe076abfad8657c877e382a02710fddc1404",
+        "size_in_bytes": 1883
+      },
+      {
+        "_path": "Library/include/gdal.h",
+        "path_type": "hardlink",
+        "sha256": "326bc91e23e49bfb1f2fec6a39ed926b327055e518d8a93abb3a97e47a816acd",
+        "size_in_bytes": 133120
+      },
+      {
+        "_path": "Library/include/gdal_adbc.h",
+        "path_type": "hardlink",
+        "sha256": "98f6faab549084ab08512b03ea3988df4e4ec791387a8cb174880bc1c8cd1c87",
+        "size_in_bytes": 1434
+      },
+      {
+        "_path": "Library/include/gdal_alg.h",
+        "path_type": "hardlink",
+        "sha256": "0990cdc4971d3ff923900c9da9c4ab7d19abf839779afc79aa21d2d47577de78",
+        "size_in_bytes": 30792
+      },
+      {
+        "_path": "Library/include/gdal_alg_priv.h",
+        "path_type": "hardlink",
+        "sha256": "a0b9aa1bedecd8f725cfed542cf4583de2d6aa0047da44a3b95c0ae96db83848",
+        "size_in_bytes": 14309
+      },
+      {
+        "_path": "Library/include/gdal_asyncreader.h",
+        "path_type": "hardlink",
+        "sha256": "5a442172a3a7f03a54a12c39023fb21fade2c5f57040ef33481bf51aee2cf4c9",
+        "size_in_bytes": 3515
+      },
+      {
+        "_path": "Library/include/gdal_colortable.h",
+        "path_type": "hardlink",
+        "sha256": "4c61e4ab4b6dfee14dd25b853ec2c556127565a12ad12b6ddd437500688975a0",
+        "size_in_bytes": 2550
+      },
+      {
+        "_path": "Library/include/gdal_computedrasterband.h",
+        "path_type": "hardlink",
+        "sha256": "46cb886ad5a8f0914987766d7d310449730c976753e085776f49376bd17218c0",
+        "size_in_bytes": 10674
+      },
+      {
+        "_path": "Library/include/gdal_cpp_functions.h",
+        "path_type": "hardlink",
+        "sha256": "76826826af9e17259ee460aa3df657c8d7acfc5ee2835d91ffe5cacb64684316",
+        "size_in_bytes": 16276
+      },
+      {
+        "_path": "Library/include/gdal_csv.h",
+        "path_type": "hardlink",
+        "sha256": "fc95feedcfdc02b2ccd9844090ab1a832c16f6fc7b4efa00068c6bbd7601cb34",
+        "size_in_bytes": 786
+      },
+      {
+        "_path": "Library/include/gdal_dataset.h",
+        "path_type": "hardlink",
+        "sha256": "9a206ce4282f003bdfa349750e443d172b79567f0d370abce2055fe9044b4589",
+        "size_in_bytes": 31616
+      },
+      {
+        "_path": "Library/include/gdal_defaultoverviews.h",
+        "path_type": "hardlink",
+        "sha256": "2098eb3be314efd17bf71699291c54f17f76b9bcfa7fa21ef7dc20f5c7450177",
+        "size_in_bytes": 4356
+      },
+      {
+        "_path": "Library/include/gdal_driver.h",
+        "path_type": "hardlink",
+        "sha256": "72248bc0bdcdc739b4c7953d72671551da2d93295a8bd0e59e9754f3633dbff3",
+        "size_in_bytes": 12691
+      },
+      {
+        "_path": "Library/include/gdal_drivermanager.h",
+        "path_type": "hardlink",
+        "sha256": "4dbb7a7e57be887e0b630bc2784b1e48b8bd3ddba6a7bfd752f7511957e273ae",
+        "size_in_bytes": 3633
+      },
+      {
+        "_path": "Library/include/gdal_frmts.h",
+        "path_type": "hardlink",
+        "sha256": "5d8495f7124bf728ddd17468c0222de7e5c12e82239f54c26f0f24b4a3af2f4e",
+        "size_in_bytes": 8689
+      },
+      {
+        "_path": "Library/include/gdal_fwd.h",
+        "path_type": "hardlink",
+        "sha256": "a24612e501baa4bf03aca824494e7c8ad423894c54b9402061bd291ba4ebe884",
+        "size_in_bytes": 6544
+      },
+      {
+        "_path": "Library/include/gdal_gcp.h",
+        "path_type": "hardlink",
+        "sha256": "e4fdd8b831811fcae1ceba7d0d8222b67c031f99506dafef48592e6bd9cfe9b7",
+        "size_in_bytes": 3145
+      },
+      {
+        "_path": "Library/include/gdal_geotransform.h",
+        "path_type": "hardlink",
+        "sha256": "bfe00e761a0ef818520f977fa0c9ab71ac5f282627f1621651f86adc3e56f339",
+        "size_in_bytes": 7405
+      },
+      {
+        "_path": "Library/include/gdal_majorobject.h",
+        "path_type": "hardlink",
+        "sha256": "7a48c897111b4895d530b015ee29a47593bf6eb8947d0352dae302f937209b5f",
+        "size_in_bytes": 3320
+      },
+      {
+        "_path": "Library/include/gdal_maskbands.h",
+        "path_type": "hardlink",
+        "sha256": "17e2a2507c701bea022e30b117f88eec4078b48177209791a6119f5deae399dc",
+        "size_in_bytes": 5196
+      },
+      {
+        "_path": "Library/include/gdal_mdreader.h",
+        "path_type": "hardlink",
+        "sha256": "1b02afb3d56b7b5ee92a39837021a31dc6440e70b5efefeef7314af3cf26d16f",
+        "size_in_bytes": 9222
+      },
+      {
+        "_path": "Library/include/gdal_minmax_element.hpp",
+        "path_type": "hardlink",
+        "sha256": "f35a877a89ae39599ddb15048369db095dd7b8a71b6e87119d30cb901f296161",
+        "size_in_bytes": 48908
+      },
+      {
+        "_path": "Library/include/gdal_multidim.h",
+        "path_type": "hardlink",
+        "sha256": "9c594d6743ed4c4dd4708d2cc95a2be6de495f378a41d54acf03a97a1ac9a457",
+        "size_in_bytes": 45162
+      },
+      {
+        "_path": "Library/include/gdal_multidim_cpp.h",
+        "path_type": "hardlink",
+        "sha256": "47d681c27e186c4bdd870217b32d2cda7fea22febb54a57060ffa5ffdf9365f7",
+        "size_in_bytes": 955
+      },
+      {
+        "_path": "Library/include/gdal_multidomainmetadata.h",
+        "path_type": "hardlink",
+        "sha256": "1ec027cf32991104b20cfa4fd0a2458b74e1c70da9b2299736eb6aafdb078bfc",
+        "size_in_bytes": 2535
+      },
+      {
+        "_path": "Library/include/gdal_openinfo.h",
+        "path_type": "hardlink",
+        "sha256": "7db2643a172a8546d58a57fe809c8eb6318163ea6b65a46a73c2225044eb66c0",
+        "size_in_bytes": 2514
+      },
+      {
+        "_path": "Library/include/gdal_pam.h",
+        "path_type": "hardlink",
+        "sha256": "a1fe61db3f90df2adadc3d16ab2c032c6aa618392819dc14311ee4455a2c77da",
+        "size_in_bytes": 13472
+      },
+      {
+        "_path": "Library/include/gdal_pam_multidim.h",
+        "path_type": "hardlink",
+        "sha256": "455a81015663711c6e90c5c396c44f8e9635a8f30b7e8d04c15dd55de4b0c592",
+        "size_in_bytes": 3767
+      },
+      {
+        "_path": "Library/include/gdal_priv.h",
+        "path_type": "hardlink",
+        "sha256": "2199d2b2b81973c7a205aadf1a3344389dd389e672561c92deffb16b8c1d82df",
+        "size_in_bytes": 2154
+      },
+      {
+        "_path": "Library/include/gdal_priv_templates.hpp",
+        "path_type": "hardlink",
+        "sha256": "d425b10b2ca53b84f2f9af0971d517979859969014f7db4621e3490c6da3e2f2",
+        "size_in_bytes": 41752
+      },
+      {
+        "_path": "Library/include/gdal_proxy.h",
+        "path_type": "hardlink",
+        "sha256": "ca2a4aec6719dfedcfb952c811f821e6dd923fd46825e2f97cff4d468eaf3a73",
+        "size_in_bytes": 19149
+      },
+      {
+        "_path": "Library/include/gdal_raster_cpp.h",
+        "path_type": "hardlink",
+        "sha256": "0a6384dbd2a4f75b5fd418ff008297e9b1448182cd44b067bd8fe08ac5545f8e",
+        "size_in_bytes": 1314
+      },
+      {
+        "_path": "Library/include/gdal_rasterband.h",
+        "path_type": "hardlink",
+        "sha256": "24928dcbf86b49ead630185b6e45bb8059deeefdd03b8e6c6721294f8cbf9744",
+        "size_in_bytes": 27455
+      },
+      {
+        "_path": "Library/include/gdal_rasterblock.h",
+        "path_type": "hardlink",
+        "sha256": "852d2cea14103d42deccb599a03dcb3e2e4c2b391664a70a43c06dc8fba43be1",
+        "size_in_bytes": 4240
+      },
+      {
+        "_path": "Library/include/gdal_rat.h",
+        "path_type": "hardlink",
+        "sha256": "fee4fb2c03aac811bd3b74b2b799d372aa02c770800eb8f393452b7bb1ae369d",
+        "size_in_bytes": 21998
+      },
+      {
+        "_path": "Library/include/gdal_relationship.h",
+        "path_type": "hardlink",
+        "sha256": "ad7e1e4e7d9b2edf08ac87b1a0237fe14cbefe86b9b80035114a0faa7163aa1c",
+        "size_in_bytes": 11780
+      },
+      {
+        "_path": "Library/include/gdal_simplesurf.h",
+        "path_type": "hardlink",
+        "sha256": "5a91c6461f7a609ba8988178678483ac5eee98867ab5d5073e228687e1b6e109",
+        "size_in_bytes": 17886
+      },
+      {
+        "_path": "Library/include/gdal_typetraits.h",
+        "path_type": "hardlink",
+        "sha256": "7f2c1fa834b4b2af297394fa3e892f6a1c84a6be3e4ef13fc528f98b8df19ca0",
+        "size_in_bytes": 16147
+      },
+      {
+        "_path": "Library/include/gdal_utils.h",
+        "path_type": "hardlink",
+        "sha256": "86c394ca91b07917ba7001eac016f2ca88153182b3c54e86b004c27f66f82d00",
+        "size_in_bytes": 13962
+      },
+      {
+        "_path": "Library/include/gdal_vector_cpp.h",
+        "path_type": "hardlink",
+        "sha256": "77ebcbf48a7f655b4f8438675350259fc7338ac48655f0db8be24fc1fac942ff",
+        "size_in_bytes": 829
+      },
+      {
+        "_path": "Library/include/gdal_version.h",
+        "path_type": "hardlink",
+        "sha256": "c719ef65fc89862de4d70c4028787caef027be0b412a0ed50f8b3c87e3c353b3",
+        "size_in_bytes": 1279
+      },
+      {
+        "_path": "Library/include/gdal_vrt.h",
+        "path_type": "hardlink",
+        "sha256": "978819fe93ee76162b8604e85dd716bfe7e9bd51b644f5848262370804a293fa",
+        "size_in_bytes": 3503
+      },
+      {
+        "_path": "Library/include/gdalalgorithm.h",
+        "path_type": "hardlink",
+        "sha256": "00a4901036c6d52c11b8fb405c8186a277fa2ad428b87d531f47c1a982e4d579",
+        "size_in_bytes": 627
+      },
+      {
+        "_path": "Library/include/gdalalgorithm_c.h",
+        "path_type": "hardlink",
+        "sha256": "ecda714f77dd8e45a3b762949c7332ad615c3146d0c1e006aaef8b9e44ac1ade",
+        "size_in_bytes": 10640
+      },
+      {
+        "_path": "Library/include/gdalalgorithm_cpp.h",
+        "path_type": "hardlink",
+        "sha256": "0285446326356bd3426c262cf198144c650b9b2134434ad02b80d7682b2f8870",
+        "size_in_bytes": 104343
+      },
+      {
+        "_path": "Library/include/gdalcachedpixelaccessor.h",
+        "path_type": "hardlink",
+        "sha256": "b45832411bcbf10f8de60e85870655d8298e503c4aa148f113f56049e62e9550",
+        "size_in_bytes": 15425
+      },
+      {
+        "_path": "Library/include/gdalgeorefpamdataset.h",
+        "path_type": "hardlink",
+        "sha256": "d8670e3d624c5ce54bcba7c08b34aa14ea1637766cca3c09c15b03812058d4c9",
+        "size_in_bytes": 2298
+      },
+      {
+        "_path": "Library/include/gdalgrid.h",
+        "path_type": "hardlink",
+        "sha256": "b28a3b8e8f6eb0d8f2a3a31c9c176117c5c2f2124a08236c160e2a90f071a8c0",
+        "size_in_bytes": 4849
+      },
+      {
+        "_path": "Library/include/gdalgrid_priv.h",
+        "path_type": "hardlink",
+        "sha256": "7edb68cf726ed89e4a8778a7feb2e2dcb95909a48def16c13ffaf122fa7b90b4",
+        "size_in_bytes": 1969
+      },
+      {
+        "_path": "Library/include/gdaljp2abstractdataset.h",
+        "path_type": "hardlink",
+        "sha256": "09efa7fe0988267323bd7ca1963349a06594524d001a04d6411657abb482c09b",
+        "size_in_bytes": 1846
+      },
+      {
+        "_path": "Library/include/gdaljp2metadata.h",
+        "path_type": "hardlink",
+        "sha256": "7d06882700ec4c51ed94df4d04032a823a94834f31699231df715b0d2c343923",
+        "size_in_bytes": 7142
+      },
+      {
+        "_path": "Library/include/gdalpansharpen.h",
+        "path_type": "hardlink",
+        "sha256": "04815fdad772d2fb3ac50f7635d0d7a129df1f5af7de5e2e28c640bb503d4a52",
+        "size_in_bytes": 8911
+      },
+      {
+        "_path": "Library/include/gdalsubdatasetinfo.h",
+        "path_type": "hardlink",
+        "sha256": "dc71023f0756b5e7d98fb263d605c0021995649711f43ffb80ea0935d14cddff",
+        "size_in_bytes": 3797
+      },
+      {
+        "_path": "Library/include/gdalwarper.h",
+        "path_type": "hardlink",
+        "sha256": "2e31e45f48920ea1894b118ed9c25dbcb9ed2eee8421f0dc3077793d281d22ad",
+        "size_in_bytes": 25336
+      },
+      {
+        "_path": "Library/include/geoheif.h",
+        "path_type": "hardlink",
+        "sha256": "c5be4963bc12636f183e6f74673b68ad7a6356b514118ad2fe5ddb85f75f54b5",
+        "size_in_bytes": 1592
+      },
+      {
+        "_path": "Library/include/gnm.h",
+        "path_type": "hardlink",
+        "sha256": "acaeae3feecc52508f57a3c6f2c5a4f8dcf5698cbf73cd7c61e4f97f476cc1ea",
+        "size_in_bytes": 28217
+      },
+      {
+        "_path": "Library/include/gnm_api.h",
+        "path_type": "hardlink",
+        "sha256": "bff32d6379a6022960813ea8e10e8c34df785f33c99bc76d222f7934f5b77b92",
+        "size_in_bytes": 4356
+      },
+      {
+        "_path": "Library/include/gnmgraph.h",
+        "path_type": "hardlink",
+        "sha256": "6137953a12530a2afd245f05f9005f4483b8927fdd2f677830cbb40de28dc326",
+        "size_in_bytes": 9811
+      },
+      {
+        "_path": "Library/include/memdataset.h",
+        "path_type": "hardlink",
+        "sha256": "4b724c8b45acd3784863c6ba1974dbc2d473e875ee36962fea49b82690de98b6",
+        "size_in_bytes": 11696
+      },
+      {
+        "_path": "Library/include/ogr_api.h",
+        "path_type": "hardlink",
+        "sha256": "e6a089f815948b5662acf4ad3c338deffcaa1c6bf29f16782e9c586cdf6d1aa8",
+        "size_in_bytes": 47070
+      },
+      {
+        "_path": "Library/include/ogr_core.h",
+        "path_type": "hardlink",
+        "sha256": "3f3e26ccd91e5b7803f260bf715f0f322f12c153cfd1583de6139d49a47610c6",
+        "size_in_bytes": 47922
+      },
+      {
+        "_path": "Library/include/ogr_feature.h",
+        "path_type": "hardlink",
+        "sha256": "4ac364e249d09001843d8af4b3e68349eeaf1d51fb8f9f8a4c80d84a40460a27",
+        "size_in_bytes": 60107
+      },
+      {
+        "_path": "Library/include/ogr_featurestyle.h",
+        "path_type": "hardlink",
+        "sha256": "5996c94993eaab556ee89066eb2e38d2cac8dfbf6fc3ea397421c7b113c1635e",
+        "size_in_bytes": 21192
+      },
+      {
+        "_path": "Library/include/ogr_geocoding.h",
+        "path_type": "hardlink",
+        "sha256": "9ae27196197f252cef7d23ce85633c593df91321875965c22a76219340909979",
+        "size_in_bytes": 1411
+      },
+      {
+        "_path": "Library/include/ogr_geomcoordinateprecision.h",
+        "path_type": "hardlink",
+        "sha256": "cc0b4e7807ead2d6bc3a5ee65607e4fb82bec14ea95a4d44edf54a96014cc46e",
+        "size_in_bytes": 3035
+      },
+      {
+        "_path": "Library/include/ogr_geometry.h",
+        "path_type": "hardlink",
+        "sha256": "a1febcca9097140d231ded49c0913fbe41cac504db44e78496f721cf2a3d6fba",
+        "size_in_bytes": 139248
+      },
+      {
+        "_path": "Library/include/ogr_p.h",
+        "path_type": "hardlink",
+        "sha256": "e4c7f173fcabba91d714aa578d881197bc619386be5440bbff653f7ac38060f4",
+        "size_in_bytes": 14268
+      },
+      {
+        "_path": "Library/include/ogr_recordbatch.h",
+        "path_type": "hardlink",
+        "sha256": "3f9f59a5d9f1216aabe3f6b36715cd2703e9eb57615d32480d78a2afd373e1b5",
+        "size_in_bytes": 4105
+      },
+      {
+        "_path": "Library/include/ogr_spatialref.h",
+        "path_type": "hardlink",
+        "sha256": "80148d782e26c527c59170771e2c5dc50b400ba5ef7c4bb87734fd0c3cadd2f4",
+        "size_in_bytes": 39928
+      },
+      {
+        "_path": "Library/include/ogr_srs_api.h",
+        "path_type": "hardlink",
+        "sha256": "96ca893c097277e0252885a7cddc14d973d378b1757b41d14cacb2d45f6da5e4",
+        "size_in_bytes": 49503
+      },
+      {
+        "_path": "Library/include/ogr_swq.h",
+        "path_type": "hardlink",
+        "sha256": "8c2a71793bd535f4206d9d12cbeaa74a91b8176d9c8cdb07d8c1272c07cf065f",
+        "size_in_bytes": 15471
+      },
+      {
+        "_path": "Library/include/ogrsf_frmts.h",
+        "path_type": "hardlink",
+        "sha256": "bbcf4516a3a5c4ce24c3b4c8dbb7960a780d8265d9adf2571dee7de8a1a563d6",
+        "size_in_bytes": 28929
+      },
+      {
+        "_path": "Library/include/rawdataset.h",
+        "path_type": "hardlink",
+        "sha256": "875810869a21053aa977cb37de7efdd80e37bb0a80709a2c2cd30bf2ee13a46c",
+        "size_in_bytes": 8398
+      },
+      {
+        "_path": "Library/include/vrtdataset.h",
+        "path_type": "hardlink",
+        "sha256": "c23b387d3e5f028be040b766b2fe77745c2097fba3833d13ed04deccbc7de329",
+        "size_in_bytes": 93354
+      },
+      {
+        "_path": "Library/lib/cmake/gdal/GDAL-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "c62c6a686990a1df53623136cd87932640e7becfe3f038b11a171a1af4f890c2",
+        "size_in_bytes": 983
+      },
+      {
+        "_path": "Library/lib/cmake/gdal/GDAL-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "75a611f69e486ca678f114aad4455727eb3e3486de90bfb73c5244e085212489",
+        "size_in_bytes": 4271
+      },
+      {
+        "_path": "Library/lib/cmake/gdal/GDALConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "ca7301867a338449c9dacb1d71d0ab5e3b2f0a8f0d01b05fb2285cfef16182c1",
+        "size_in_bytes": 707
+      },
+      {
+        "_path": "Library/lib/cmake/gdal/GDALConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "cf0512ab09f3c079d96e3766bc43343331244ce153b7c3e6357d7e21e4396d70",
+        "size_in_bytes": 2830
+      },
+      {
+        "_path": "Library/lib/gdal.lib",
+        "path_type": "hardlink",
+        "sha256": "6e221a78b56c6751bf192ec291afcd5ceabace84c4b4422eedb3a578784aa7ac",
+        "size_in_bytes": 3145858
+      },
+      {
+        "_path": "Library/lib/gdalplugins/drivers.ini",
+        "path_type": "hardlink",
+        "sha256": "0b2a95cb4636c9fa96390b607391a35e9e62b0ac4d857563b52fd4da55b37abf",
+        "size_in_bytes": 2746
+      },
+      {
+        "_path": "Library/lib/pkgconfig/gdal.pc",
+        "path_type": "hardlink",
+        "sha256": "8c7d64f21ed177a2936595b1a86cf0c3fb4c15191e2034a36fdcf6463aee5759",
+        "sha256_in_prefix": "2882f1b9bd65bd611a22a293b2b5ea90bec85bf1617730f96fea3df48dfa9d1d",
+        "size_in_bytes": 3112,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_libgdal-split_1786825244/h_env"
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal-config",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal2tiles.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal2xyz.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_calc.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_contour",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_create",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_edit.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_fillnodata.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_footprint",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_grid",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_merge.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_polygonize.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_proximity.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_rasterize",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_retile.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_sieve.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_translate",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdal_viewshed",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdaladdo",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdalbuildvrt",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdalcompare.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdaldem",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdalenhance",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdalinfo",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdallocationinfo",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdalmanage",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdalmove.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdalsrsinfo",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdaltindex",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdaltransform",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/gdalwarp",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/ogr2ogr",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/ogr_layer_algebra.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/ogrinfo",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/ogrlineref",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/ogrmerge.py",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/ogrtindex",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/bash-completion/completions/sozip",
+        "path_type": "hardlink",
+        "sha256": "d24a863f54ced681b92b6ca686767afec0fa984bc151948ed066d042616c3ac0",
+        "size_in_bytes": 48519
+      },
+      {
+        "_path": "Library/share/gdal/GDALLogoBW.svg",
+        "path_type": "hardlink",
+        "sha256": "aac9dab33d479e0b832b8bd7c9e5510dcbef34a7c6cc9aea96bbe2aab5161c53",
+        "size_in_bytes": 13022
+      },
+      {
+        "_path": "Library/share/gdal/GDALLogoColor.svg",
+        "path_type": "hardlink",
+        "sha256": "2c102a31c6e9116aa9b98787d8bf5cf648dbcc2b930aee653cd35df65ed118d0",
+        "size_in_bytes": 12305
+      },
+      {
+        "_path": "Library/share/gdal/GDALLogoGS.svg",
+        "path_type": "hardlink",
+        "sha256": "1ae6e2d92e6b0439f3baee0cb55dad8b97abfb4fcc58c9189b23b63c818aeeca",
+        "size_in_bytes": 12305
+      },
+      {
+        "_path": "Library/share/gdal/LICENSE.TXT",
+        "path_type": "hardlink",
+        "sha256": "1dae3468e81d00da56e2936f74d33b8b3ad09d726437f19ce209a5dabea41f77",
+        "size_in_bytes": 21841
+      },
+      {
+        "_path": "Library/share/gdal/MM_m_idofic.csv",
+        "path_type": "hardlink",
+        "sha256": "69c57dbb95e172744e3c236bbe732e97105a029678e7011df67ce31a85b29604",
+        "size_in_bytes": 32388
+      },
+      {
+        "_path": "Library/share/gdal/bag_template.xml",
+        "path_type": "hardlink",
+        "sha256": "daf7816f686c35b51ec66c90fc6aedbf12dbef97f28f9fae9731392f92afb733",
+        "size_in_bytes": 9020
+      },
+      {
+        "_path": "Library/share/gdal/cubewerx_extra.wkt",
+        "path_type": "hardlink",
+        "sha256": "1cca3fa3e249f4cc7d1bf0ffb0a71a1a2afadd10afdf7ed0aa292dbc5e4f0768",
+        "size_in_bytes": 11977
+      },
+      {
+        "_path": "Library/share/gdal/default.rsc",
+        "path_type": "hardlink",
+        "sha256": "9e1c9d7081d52775e750d4155d49255252b04ca81fef27cb2997675d3cd9626b",
+        "size_in_bytes": 463632
+      },
+      {
+        "_path": "Library/share/gdal/ecw_cs.wkt",
+        "path_type": "hardlink",
+        "sha256": "d431893eb446b265d206eea8863dcdcce3b65c7c2a707daab58e89e583af033e",
+        "size_in_bytes": 364032
+      },
+      {
+        "_path": "Library/share/gdal/eedaconf.json",
+        "path_type": "hardlink",
+        "sha256": "03116848a7bacad105289c56f5d13fb59be264f1e3d3809e82745f4163fe1285",
+        "size_in_bytes": 411
+      },
+      {
+        "_path": "Library/share/gdal/epsg.wkt",
+        "path_type": "hardlink",
+        "sha256": "e50895e9061aba6dd1588f06a088872aa562a8d98716588bc1a420189dcb254c",
+        "size_in_bytes": 27
+      },
+      {
+        "_path": "Library/share/gdal/esri_StatePlane_extra.wkt",
+        "path_type": "hardlink",
+        "sha256": "682df1b231cb6f1287685d4c64bf1b2611c0af43c30483473bbb366ce1bd8d33",
+        "size_in_bytes": 332546
+      },
+      {
+        "_path": "Library/share/gdal/gdal_algorithm.schema.json",
+        "path_type": "hardlink",
+        "sha256": "819df8556b34c823d8d87a7cdaa0cb2fcc31658aa0d3cd70fd5dd7ae290bc22a",
+        "size_in_bytes": 7571
+      },
+      {
+        "_path": "Library/share/gdal/gdalg.schema.json",
+        "path_type": "hardlink",
+        "sha256": "6e938d02986cf9d87508efd11e73cbfc50c357da6e2638f5e953c5ed13904266",
+        "size_in_bytes": 711
+      },
+      {
+        "_path": "Library/share/gdal/gdalicon.png",
+        "path_type": "hardlink",
+        "sha256": "d90f50a8f74c325086c867bf006a92266c259a270d9166b2f41f586b67755729",
+        "size_in_bytes": 2021
+      },
+      {
+        "_path": "Library/share/gdal/gdalinfo_output.schema.json",
+        "path_type": "hardlink",
+        "sha256": "c7ec3c1b0c314e74448c2eb2ded6a08cf0170f231a4b4d489be1fdcb09016d1e",
+        "size_in_bytes": 9197
+      },
+      {
+        "_path": "Library/share/gdal/gdalmdiminfo_output.schema.json",
+        "path_type": "hardlink",
+        "sha256": "21394d93c7f6201c67b0be3ecbdad78f1f47081b3ff5cb789a5da9ab73c6108b",
+        "size_in_bytes": 7449
+      },
+      {
+        "_path": "Library/share/gdal/gdaltileindex.xsd",
+        "path_type": "hardlink",
+        "sha256": "b012c77f59ec0cd2fdcfa9aa72e75eaf3dc4d996d74a045e25e74207fd817241",
+        "size_in_bytes": 11000
+      },
+      {
+        "_path": "Library/share/gdal/gdalvrt.xsd",
+        "path_type": "hardlink",
+        "sha256": "5b067b235a1daa0b4715f8b4939e78cdebe326eaa1939d7cbc93463921bcb665",
+        "size_in_bytes": 41870
+      },
+      {
+        "_path": "Library/share/gdal/gfs.xsd",
+        "path_type": "hardlink",
+        "sha256": "4c22f069538d543e8587de28e87c3e342943f3ed9eac1b33dd5f5d828ce61b92",
+        "size_in_bytes": 16469
+      },
+      {
+        "_path": "Library/share/gdal/gml_registry.xml",
+        "path_type": "hardlink",
+        "sha256": "dab571b2a74e4b6de27a0fde62d34887141ca456d11caacdd75a166b2de5a743",
+        "size_in_bytes": 6643
+      },
+      {
+        "_path": "Library/share/gdal/gml_registry.xsd",
+        "path_type": "hardlink",
+        "sha256": "ef90b625ec5812fddab313b8b1e387989ccfea09409c515f3139b6d63491297a",
+        "size_in_bytes": 6462
+      },
+      {
+        "_path": "Library/share/gdal/gmlasconf.xml",
+        "path_type": "hardlink",
+        "sha256": "200939d2ef87de4df80e6ebf30908c60e9654e0bfc6b79c7ae4ea8a9447db76e",
+        "size_in_bytes": 7432
+      },
+      {
+        "_path": "Library/share/gdal/gmlasconf.xsd",
+        "path_type": "hardlink",
+        "sha256": "b3817d574f8e3b737dca1ad9c8b020c9c8daaa2c60fcbec54e6e35b911ce6819",
+        "size_in_bytes": 47584
+      },
+      {
+        "_path": "Library/share/gdal/gt_datum.csv",
+        "path_type": "hardlink",
+        "sha256": "dd0722e59b04d5da58409bceaec4436ec726306446bd6477ecbaa819c58f056d",
+        "size_in_bytes": 15804
+      },
+      {
+        "_path": "Library/share/gdal/gt_ellips.csv",
+        "path_type": "hardlink",
+        "sha256": "c10676c298140d70248045e0c22d73e34c5cf85db359167374367d493ffa7cf4",
+        "size_in_bytes": 1719
+      },
+      {
+        "_path": "Library/share/gdal/header.dxf",
+        "path_type": "hardlink",
+        "sha256": "6b1504db053a115fe0e245b08c7ddad107f7352ef93cb065a30110ac9b10688f",
+        "size_in_bytes": 6683
+      },
+      {
+        "_path": "Library/share/gdal/inspire_cp_BasicPropertyUnit.gfs",
+        "path_type": "hardlink",
+        "sha256": "286d7b67c2fa3a5c321d439f83193bc06e0c6a0a6536838e79f151678ab5471c",
+        "size_in_bytes": 1740
+      },
+      {
+        "_path": "Library/share/gdal/inspire_cp_CadastralBoundary.gfs",
+        "path_type": "hardlink",
+        "sha256": "55963c9317f76508f5b64729e6057a230f1f5fc9473851f1031f99c50b1aeb86",
+        "size_in_bytes": 1650
+      },
+      {
+        "_path": "Library/share/gdal/inspire_cp_CadastralParcel.gfs",
+        "path_type": "hardlink",
+        "sha256": "6f14b49b1694abfe191f1d45c84c6e62678866e3941dc53f095e0ec6cfa30e24",
+        "size_in_bytes": 2450
+      },
+      {
+        "_path": "Library/share/gdal/inspire_cp_CadastralZoning.gfs",
+        "path_type": "hardlink",
+        "sha256": "7b5182fbca4b8d9ea073e398d085037792cbd9444d1dc6b3596fa2ed030b4cfa",
+        "size_in_bytes": 4812
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_AdmArea.gfs",
+        "path_type": "hardlink",
+        "sha256": "17c8bd25f28f7d6fe14d0c821dbf6baa69ea1e11f69c69557c016c985ebbf918",
+        "size_in_bytes": 1640
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_AdmBdry.gfs",
+        "path_type": "hardlink",
+        "sha256": "5d8ef39888b78160d1e71216c7fc09a27ec881609fc1cf04c7ea15ca54024804",
+        "size_in_bytes": 1382
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_AdmPt.gfs",
+        "path_type": "hardlink",
+        "sha256": "cef6ddf05a7f6735ca4980d6ada751b83ae48e9250b413f34f9148d5dc0e2899",
+        "size_in_bytes": 1633
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_BldA.gfs",
+        "path_type": "hardlink",
+        "sha256": "014ef563b35e7961d1983078b6aefef83656010aac4d5fd744da498815542edd",
+        "size_in_bytes": 1501
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_BldL.gfs",
+        "path_type": "hardlink",
+        "sha256": "f63eda54f4c92c3174235b1be98cd59682b5543e69015f9ee1a3f8929247f5b0",
+        "size_in_bytes": 1503
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_Cntr.gfs",
+        "path_type": "hardlink",
+        "sha256": "c0e037fe697e0c714955718d16023c2a994e25fc0e98cf5a96e5935daa436093",
+        "size_in_bytes": 1501
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_CommBdry.gfs",
+        "path_type": "hardlink",
+        "sha256": "74b1c1e7bf62091e9a21b34d8851da5ffc697622ecdf132a9bfceb459d64002c",
+        "size_in_bytes": 1384
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_CommPt.gfs",
+        "path_type": "hardlink",
+        "sha256": "039dc82b8ad8a75b4ad5f01845c2e2fc0529442372695e82fe2293ab22e01150",
+        "size_in_bytes": 1635
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_Cstline.gfs",
+        "path_type": "hardlink",
+        "sha256": "71bcd30fe0db762d900be9cef44a7c8bae04d82516de6f6746198a7a3eaaccb5",
+        "size_in_bytes": 1509
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_ElevPt.gfs",
+        "path_type": "hardlink",
+        "sha256": "f4c45219e538115d6a019e90d89101b083574178f1b652e0ec91609c51f76c83",
+        "size_in_bytes": 1500
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_GCP.gfs",
+        "path_type": "hardlink",
+        "sha256": "d5b4e640d79a4dc7b2bafbf6a78415042d7d28593768bc78b6006c19e650d064",
+        "size_in_bytes": 2523
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_LeveeEdge.gfs",
+        "path_type": "hardlink",
+        "sha256": "9109ea50fa3225f8ea7ef76748007656f20df4533725dfabf5d08f38fa86899e",
+        "size_in_bytes": 1386
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_RailCL.gfs",
+        "path_type": "hardlink",
+        "sha256": "59f70f7da031c91c07d2119847c716a3d2b391869e56374ca567428fcf0bd8b7",
+        "size_in_bytes": 1507
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_RdASL.gfs",
+        "path_type": "hardlink",
+        "sha256": "9a0fc53a66ee2a2bdc4e359c23155d7f7298ccabfdc749bb0d4188d541e714e9",
+        "size_in_bytes": 1251
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_RdArea.gfs",
+        "path_type": "hardlink",
+        "sha256": "95d2f09254e4b78faffbeb8839df44dd3e5ebc5c567940e0512e9c776eec80c4",
+        "size_in_bytes": 1515
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_RdCompt.gfs",
+        "path_type": "hardlink",
+        "sha256": "7b5f405828ffe8613b011f2c504f16951519b8e903b1f3e056b9115b869968af",
+        "size_in_bytes": 1646
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_RdEdg.gfs",
+        "path_type": "hardlink",
+        "sha256": "cc5ad650a75142969d9a44e8b6dae03719276c64dcfbced14ea4f3849f89b785",
+        "size_in_bytes": 1642
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_RdMgtBdry.gfs",
+        "path_type": "hardlink",
+        "sha256": "89c49de530e38deaec512b619478cf6a775ef881690950042565917824a8d2f6",
+        "size_in_bytes": 1386
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_RdSgmtA.gfs",
+        "path_type": "hardlink",
+        "sha256": "0eb42873db9b9127e413c40bd54be8abe11692562f48819e4f0f1cb89b59b995",
+        "size_in_bytes": 1644
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_RvrMgtBdry.gfs",
+        "path_type": "hardlink",
+        "sha256": "de64860f4466d8f155f7b3b32038caf0c6f7740a26fee4000c7b482ac4b03633",
+        "size_in_bytes": 1388
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_SBAPt.gfs",
+        "path_type": "hardlink",
+        "sha256": "e925e429672fe2c39fb1952d44f071de44a0d87f098122e12bf7f168784ec6e1",
+        "size_in_bytes": 1375
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_SBArea.gfs",
+        "path_type": "hardlink",
+        "sha256": "7974755e986151e269a123aaa806e12a99f070369ab4861afd86a9df1c05245a",
+        "size_in_bytes": 1507
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_SBBdry.gfs",
+        "path_type": "hardlink",
+        "sha256": "243c9248a0a15f7ab429eb5c0410bad81becaf9f6a8fc6aaeff2d69403ce332b",
+        "size_in_bytes": 1253
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_WA.gfs",
+        "path_type": "hardlink",
+        "sha256": "1810a5b959ecf47b0d19032711be155da6188be70d808a3d2c360c0883559673",
+        "size_in_bytes": 1497
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_WL.gfs",
+        "path_type": "hardlink",
+        "sha256": "27d04a20f449c98df4c068e0424f4262982e4a4dfc105e3bd3ac73608a8448a9",
+        "size_in_bytes": 1499
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_WStrA.gfs",
+        "path_type": "hardlink",
+        "sha256": "ba5fa114ff40f6355c216e31292851e82d328d702af0710f52493ca0bc87dbb0",
+        "size_in_bytes": 1503
+      },
+      {
+        "_path": "Library/share/gdal/jpfgdgml_WStrL.gfs",
+        "path_type": "hardlink",
+        "sha256": "ebfe2d9d185ec887fe737250c0a6314870388be23b39191fdc89f1ca01aac890",
+        "size_in_bytes": 1505
+      },
+      {
+        "_path": "Library/share/gdal/leaflet_template.html",
+        "path_type": "hardlink",
+        "sha256": "fb2c1c1a5dc2376f029fa577abcbcba1ddfa57bd5e45051ad4d2010dc214c7e4",
+        "size_in_bytes": 3391
+      },
+      {
+        "_path": "Library/share/gdal/netcdf_config.xsd",
+        "path_type": "hardlink",
+        "sha256": "4b76cc1221276e1ff54646d43ec477cb4027c1e68c0573f49363fe3f062f9389",
+        "size_in_bytes": 6439
+      },
+      {
+        "_path": "Library/share/gdal/nitf_spec.xml",
+        "path_type": "hardlink",
+        "sha256": "0f8db84914b802ec7b73b85aa3ed1998427c49e65fea538432e8ce43c4a895be",
+        "size_in_bytes": 198090
+      },
+      {
+        "_path": "Library/share/gdal/nitf_spec.xsd",
+        "path_type": "hardlink",
+        "sha256": "25e5d431d905316b94520d8f17432992b6b664cae1a38eef6794f405405b84e8",
+        "size_in_bytes": 7741
+      },
+      {
+        "_path": "Library/share/gdal/ogr_fields_override.schema.json",
+        "path_type": "hardlink",
+        "sha256": "a5bfb0d97b5f61d6950c093889b761f2d917aee5f6b0fe872223efaa718c4337",
+        "size_in_bytes": 2863
+      },
+      {
+        "_path": "Library/share/gdal/ogrinfo_output.schema.json",
+        "path_type": "hardlink",
+        "sha256": "b12e82f98eed6cf8a407d0c8a6a8250af1b22f04136e4d295f7eeeec4b8fc115",
+        "size_in_bytes": 12002
+      },
+      {
+        "_path": "Library/share/gdal/ogrvrt.xsd",
+        "path_type": "hardlink",
+        "sha256": "179466c7ad003a5757dd9c5381189bb095495013b86217f168ca3e3f953129ed",
+        "size_in_bytes": 24661
+      },
+      {
+        "_path": "Library/share/gdal/osmconf.ini",
+        "path_type": "hardlink",
+        "sha256": "a0e81bb3a04086b2440558774bf41ccd693191e5978d8f7f1be79a0441e5f198",
+        "size_in_bytes": 5485
+      },
+      {
+        "_path": "Library/share/gdal/ozi_datum.csv",
+        "path_type": "hardlink",
+        "sha256": "e3678e3f144084aeb3488c2e1ae2247f07a841f501a89e7225ae9dd9bfb19868",
+        "size_in_bytes": 8482
+      },
+      {
+        "_path": "Library/share/gdal/ozi_ellips.csv",
+        "path_type": "hardlink",
+        "sha256": "0c8363bfdedc1787d53463d705e2e1ce8fbdfcd49d1e3c778f5d4282980d75c6",
+        "size_in_bytes": 1349
+      },
+      {
+        "_path": "Library/share/gdal/pci_datum.txt",
+        "path_type": "hardlink",
+        "sha256": "02f76b0a5451e06801ba4c4de661ac5c760065a65f42d06c9d359c3490ff9c81",
+        "size_in_bytes": 45587
+      },
+      {
+        "_path": "Library/share/gdal/pci_ellips.txt",
+        "path_type": "hardlink",
+        "sha256": "5cf37efdea6a85406b544e6fd6286b8db5f23fa4cda38c6a1d5fbcb50432d7b6",
+        "size_in_bytes": 6351
+      },
+      {
+        "_path": "Library/share/gdal/pdfcomposition.xsd",
+        "path_type": "hardlink",
+        "sha256": "e857da7dc84481784fb31bf4b6e56c68e6c92c979263fcf59f7b0f63c206456a",
+        "size_in_bytes": 33283
+      },
+      {
+        "_path": "Library/share/gdal/pds4_template.xml",
+        "path_type": "hardlink",
+        "sha256": "bbccb2bf469dba2435eaabfd3de76107f17356a741d025a445244ecc04d27791",
+        "size_in_bytes": 3408
+      },
+      {
+        "_path": "Library/share/gdal/plscenesconf.json",
+        "path_type": "hardlink",
+        "sha256": "55dfff5972723e8bb01d80f5defb989d3603b723c3ef03e4d71578a03710f867",
+        "size_in_bytes": 41372
+      },
+      {
+        "_path": "Library/share/gdal/ruian_vf_ob_v1.gfs",
+        "path_type": "hardlink",
+        "sha256": "167bed33ecdae20aca5301d418bcc113fc315e3ff48983174a0f547f4d8ca41b",
+        "size_in_bytes": 46735
+      },
+      {
+        "_path": "Library/share/gdal/ruian_vf_st_uvoh_v1.gfs",
+        "path_type": "hardlink",
+        "sha256": "0bc7126206e1897b89184f5a7813a839f711e265a453ef2116679986fdf4d9d3",
+        "size_in_bytes": 2596
+      },
+      {
+        "_path": "Library/share/gdal/ruian_vf_st_v1.gfs",
+        "path_type": "hardlink",
+        "sha256": "d9214edc2d74694c198ad6ba232d7247eaca98d935145ede5f53ad07a908732e",
+        "size_in_bytes": 45900
+      },
+      {
+        "_path": "Library/share/gdal/ruian_vf_v1.gfs",
+        "path_type": "hardlink",
+        "sha256": "4e5e3f8fa659824e83a371c30a63cbacccaf0dc23429967b72922f4cc87a1415",
+        "size_in_bytes": 67252
+      },
+      {
+        "_path": "Library/share/gdal/s57agencies.csv",
+        "path_type": "hardlink",
+        "sha256": "212ef7211ed83c4382ba59e2ee4437a7331713b29833bee7645c0731cabc4270",
+        "size_in_bytes": 13304
+      },
+      {
+        "_path": "Library/share/gdal/s57attributes.csv",
+        "path_type": "hardlink",
+        "sha256": "f4b6dfe2e82fea5e7ee433e13683292a3fa09bb66750428e4b1578f99a46d2de",
+        "size_in_bytes": 20001
+      },
+      {
+        "_path": "Library/share/gdal/s57expectedinput.csv",
+        "path_type": "hardlink",
+        "sha256": "d5b09a5c4248f3eb0906a4e3ac68d7380c86f819d70deae3662e736f0597bc6c",
+        "size_in_bytes": 20885
+      },
+      {
+        "_path": "Library/share/gdal/s57objectclasses.csv",
+        "path_type": "hardlink",
+        "sha256": "06acd7c27d8b9cc0e02db9136aff60c9c95cfad2f5c0cbbd9cdf8aa4d07d8716",
+        "size_in_bytes": 53425
+      },
+      {
+        "_path": "Library/share/gdal/seed_2d.dgn",
+        "path_type": "hardlink",
+        "sha256": "dd8465f18569d9289809e9e0962115d365d0a56de021393952a5e7a0a20b527c",
+        "size_in_bytes": 9216
+      },
+      {
+        "_path": "Library/share/gdal/seed_3d.dgn",
+        "path_type": "hardlink",
+        "sha256": "97c2f00ee6ea96873b7d16e5e898b4850e3d35448299d7d9d37e7d1792b56896",
+        "size_in_bytes": 2048
+      },
+      {
+        "_path": "Library/share/gdal/stateplane.csv",
+        "path_type": "hardlink",
+        "sha256": "30c6210872b0a4c10d40739a8cb6beda630a7ef3eb4cb07a7128e26e8e83cbe3",
+        "size_in_bytes": 10360
+      },
+      {
+        "_path": "Library/share/gdal/template_tiles.mapml",
+        "path_type": "hardlink",
+        "sha256": "9529fbcf05731ff078f8da34acea905b0867644b79f8d53f886c602af4d38ecf",
+        "size_in_bytes": 2103
+      },
+      {
+        "_path": "Library/share/gdal/tms_LINZAntarticaMapTileGrid.json",
+        "path_type": "hardlink",
+        "sha256": "42327ca8964f95ce7e01f34fbc32780250a4a9524e4b2d7883b4f7eec512e5a0",
+        "size_in_bytes": 4115
+      },
+      {
+        "_path": "Library/share/gdal/tms_MapML_APSTILE.json",
+        "path_type": "hardlink",
+        "sha256": "0a8d75f5f4689775e5be9e93bfc3b27ce3ebf282f277e84240e5ef2bb297e4a3",
+        "size_in_bytes": 6273
+      },
+      {
+        "_path": "Library/share/gdal/tms_MapML_CBMTILE.json",
+        "path_type": "hardlink",
+        "sha256": "b5969c71b757b5c89a88ec8e9044968424f5946b625ed4f07d2be098dc26d780",
+        "size_in_bytes": 7792
+      },
+      {
+        "_path": "Library/share/gdal/tms_NZTM2000.json",
+        "path_type": "hardlink",
+        "sha256": "8ab3317be77f1fdcf36a0af7152e1bb0965271f7be5cbbc43267716a725839ea",
+        "size_in_bytes": 5265
+      },
+      {
+        "_path": "Library/share/gdal/trailer.dxf",
+        "path_type": "hardlink",
+        "sha256": "506baf0c593d7a8ff24fbcd783887292bd6d3c8d5054729e3bf38b9465d119fc",
+        "size_in_bytes": 2275
+      },
+      {
+        "_path": "Library/share/gdal/vdv452.xml",
+        "path_type": "hardlink",
+        "sha256": "133ca409195aedb32cd9c845e1f10240c00106dad3221aee0100228d0ebecb50",
+        "size_in_bytes": 24765
+      },
+      {
+        "_path": "Library/share/gdal/vdv452.xsd",
+        "path_type": "hardlink",
+        "sha256": "ffc93318746e8803251f36abcad1e1fbfb70898ca72071c333869663f1ac05af",
+        "size_in_bytes": 1803
+      },
+      {
+        "_path": "Library/share/gdal/vicar.json",
+        "path_type": "hardlink",
+        "sha256": "7924ad101da757cf41091ad4a9e734dde1d23543753f72c2eede11c9cd7d02c8",
+        "size_in_bytes": 3610
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-config.1",
+        "path_type": "hardlink",
+        "sha256": "499bf6f18c091419634813644a34f88407f9c1dcaf919d8dac8fcf8e9492ab5e",
+        "size_in_bytes": 2085
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-convert.1",
+        "path_type": "hardlink",
+        "sha256": "e52285316005094d764a5e3ea58f59d14d9709fdf8ac1a90ee1c98e819671875",
+        "size_in_bytes": 2302
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-dataset-copy.1",
+        "path_type": "hardlink",
+        "sha256": "11b342d3e496736f23ec8aa7d26e2c465b060f375428350e52962d4e0187d590",
+        "size_in_bytes": 2416
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-dataset-delete.1",
+        "path_type": "hardlink",
+        "sha256": "33d50bad4d7493662278682194797269a79da1356bc5db97364142ad9d62a320",
+        "size_in_bytes": 1925
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-dataset-identify.1",
+        "path_type": "hardlink",
+        "sha256": "e365df2f0ead85719f9a9158993b25d44e791fe034ebf730047cc0ddedd08adc",
+        "size_in_bytes": 3860
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-dataset-rename.1",
+        "path_type": "hardlink",
+        "sha256": "094940fd915354e67b874f535a78e15fdc74cf6c2abc46e36e3dc6520751b0a1",
+        "size_in_bytes": 2418
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-dataset.1",
+        "path_type": "hardlink",
+        "sha256": "e43d63f15cda5ce4e25bf2c1c75802dcf4c54a7a04f8ceddce4e53dd1ca0cb21",
+        "size_in_bytes": 2015
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-info.1",
+        "path_type": "hardlink",
+        "sha256": "23b935ccde3629a162d3cef77964de16585fbeabdb182c5f67ba9c69352f7677",
+        "size_in_bytes": 40836
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-mdim-convert.1",
+        "path_type": "hardlink",
+        "sha256": "57a1fd6dad776b295d7a142a3d82168feb9ae115aeae7f6566ad43b5d8b1de1f",
+        "size_in_bytes": 10766
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-mdim-info.1",
+        "path_type": "hardlink",
+        "sha256": "7799202408a4f383dd0b71536f1f4020f380f925475f2d0164e1b7c47d1f05e8",
+        "size_in_bytes": 7548
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-mdim-mosaic.1",
+        "path_type": "hardlink",
+        "sha256": "af9a4b96661808689b68bb4bfc7af9f30c5b382155e83d65bff5578c518417c4",
+        "size_in_bytes": 8112
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-mdim.1",
+        "path_type": "hardlink",
+        "sha256": "4e409996d8c081a89184d3191968150b0d52a6b66a44787db02c3fff2ecef0b8",
+        "size_in_bytes": 2270
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-pipeline.1",
+        "path_type": "hardlink",
+        "sha256": "888b5570f064acbda7142a9a5edff05eba076a78e2c63d48e76f8aaeca1b5772",
+        "size_in_bytes": 21217
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-as-features.1",
+        "path_type": "hardlink",
+        "sha256": "fca7ec5b2046793fe97df51dfe413ffefd73f9b3630471c59b3d372d3a73fd7c",
+        "size_in_bytes": 5950
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-aspect.1",
+        "path_type": "hardlink",
+        "sha256": "80fef98949997791ff459192d4dbe02a531e8ece9f96ae26323a7b022af2441b",
+        "size_in_bytes": 7256
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-calc.1",
+        "path_type": "hardlink",
+        "sha256": "591ff17d38b8d636a6cc56ed6ee9c7f02937e0f5f55c2622fad67f1c3c245e3d",
+        "size_in_bytes": 13137
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-clean-collar.1",
+        "path_type": "hardlink",
+        "sha256": "86d5cd7f01ec5451152a19ce4aa4f87eafee0686611267c4e2a9551051f88faf",
+        "size_in_bytes": 8307
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-clip.1",
+        "path_type": "hardlink",
+        "sha256": "e5ad90cd443e1649159f31657188de43cd3a4bcb641ba5046216efa931521441",
+        "size_in_bytes": 11973
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-color-blend.1",
+        "path_type": "hardlink",
+        "sha256": "0bb3ff98e2272765a699c4a90fd8c30fdd35dbe6635bd5791bc0549b87a74ef7",
+        "size_in_bytes": 8376
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-color-map.1",
+        "path_type": "hardlink",
+        "sha256": "f6256ab083f6c98cbe38dd18491b2ed73cfe3bcb43afc73b85f61301283ef133",
+        "size_in_bytes": 8058
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-compare.1",
+        "path_type": "hardlink",
+        "sha256": "20531ee86474c08f1797374f4bc41b1f8120e81069b7107b02d9456fee91b620",
+        "size_in_bytes": 5608
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-contour.1",
+        "path_type": "hardlink",
+        "sha256": "4e15f1e00fcffe227e4a880dafb2be98605e0fc022b40bf0eb27c3400306c606",
+        "size_in_bytes": 10215
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-convert.1",
+        "path_type": "hardlink",
+        "sha256": "f15147869a188e5c7c249f50f8bbc854c464b675a720403fa3ae4ed8266f4e66",
+        "size_in_bytes": 5118
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-create.1",
+        "path_type": "hardlink",
+        "sha256": "a42c37dfe0d1321f56fc5ac6b07e37a3f12ea71906c74e7b4988dd9a84622739",
+        "size_in_bytes": 9239
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-edit.1",
+        "path_type": "hardlink",
+        "sha256": "ec3a6478d38f11d5a059ef51dfbd584f270acd43f872e4881a0d6152d2c572a0",
+        "size_in_bytes": 7328
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-fill-nodata.1",
+        "path_type": "hardlink",
+        "sha256": "22c9e0f3e7676bbe32b6faa1135e422aa4b9df67781e258072a12f1860e9f11a",
+        "size_in_bytes": 6945
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-footprint.1",
+        "path_type": "hardlink",
+        "sha256": "4bfff1c564c8e8271cb5342638cd63da503d521a07b056e0938a0f13d294ec74",
+        "size_in_bytes": 13863
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-hillshade.1",
+        "path_type": "hardlink",
+        "sha256": "f2024fa6065bbd7f6b5c6dfcd2a37b71df573fbb28ebb824e4f34613457ac99e",
+        "size_in_bytes": 12395
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-index.1",
+        "path_type": "hardlink",
+        "sha256": "de63348d91e5055b2801dc2d6133ead3b2840137d85aece7b1124d4c91a9b5d0",
+        "size_in_bytes": 9603
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-info.1",
+        "path_type": "hardlink",
+        "sha256": "7f722b9967059cc4f59b7a03e9b8e27e04e5d7686127fe9a11130d1704c722d1",
+        "size_in_bytes": 19768
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-mosaic.1",
+        "path_type": "hardlink",
+        "sha256": "9a246adf9b112889f1d93b6c31b3e39062d0c0370e5c3df734d819de6d35cdf1",
+        "size_in_bytes": 12530
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-neighbors.1",
+        "path_type": "hardlink",
+        "sha256": "576b1aa061d0438496ae35dfb99bacac1deadabbd8ae3e942d2d2f8072d96e64",
+        "size_in_bytes": 11373
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-nodata-to-alpha.1",
+        "path_type": "hardlink",
+        "sha256": "329e032efd211a723725d72a3aa89872a7e93dec78d3d2cfe9d9b3c1d74cdf29",
+        "size_in_bytes": 5258
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-overview-add.1",
+        "path_type": "hardlink",
+        "sha256": "3ad6f6d1439082efad49eff8029339c11d78e10bfd132c8dd463d59776465f96",
+        "size_in_bytes": 8697
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-overview-delete.1",
+        "path_type": "hardlink",
+        "sha256": "ee7cbc4ec2a1a65bb73976ad404f2f4e8cb2ef02474796e627c0db7a1b14ff39",
+        "size_in_bytes": 2510
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-overview-refresh.1",
+        "path_type": "hardlink",
+        "sha256": "422066bcb1eaa4e8ca78ee70877a21e61ad3fb401ce0901bb6a02a31c6087a4e",
+        "size_in_bytes": 7195
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-pansharpen.1",
+        "path_type": "hardlink",
+        "sha256": "ef600b4b73bc8d1cb30f76c4682731534271684fa9bfc927680e8e895030217b",
+        "size_in_bytes": 8435
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-pipeline.1",
+        "path_type": "hardlink",
+        "sha256": "8e4356e707afb21332bd97e9522c186e58d7c17d8ddc63b77b74580b06be76b7",
+        "size_in_bytes": 47187
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-pixel-info.1",
+        "path_type": "hardlink",
+        "sha256": "0ca3dc37e15db4092495fa58223a5720e9e63c34cd7bb73b77022012dbc5f611",
+        "size_in_bytes": 8656
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-polygonize.1",
+        "path_type": "hardlink",
+        "sha256": "69dab366d495933c575daa11ecd05cfd5ab35ac57e5cc3c6c92e11570610d7a3",
+        "size_in_bytes": 7764
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-proximity.1",
+        "path_type": "hardlink",
+        "sha256": "68d56b563179ab6ce039b93e7b3e0a18fe279dd1dee9581610b7b335c9921777",
+        "size_in_bytes": 8461
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-reclassify.1",
+        "path_type": "hardlink",
+        "sha256": "1704c11ae133bd57eed78352c07a650e656e7939a9444b39767045ee6bbcefe0",
+        "size_in_bytes": 6994
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-reproject.1",
+        "path_type": "hardlink",
+        "sha256": "57457e63ec85c2229563de8567364a5937ce11d4d8cd44079fdd3633ec4e3f76",
+        "size_in_bytes": 22410
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-resize.1",
+        "path_type": "hardlink",
+        "sha256": "f8658c488c0e176650a62b7f2b1b09af86329979c0488eb2e59ed495d185b0d6",
+        "size_in_bytes": 6286
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-rgb-to-palette.1",
+        "path_type": "hardlink",
+        "sha256": "e87a748e45dea958744f118f49d279aae016f0114fcc6af774279b4d538040e9",
+        "size_in_bytes": 5744
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-roughness.1",
+        "path_type": "hardlink",
+        "sha256": "f2fd41a7db04ef1b084773e567c7ca748e299090b3f7695f160181956fac1c5c",
+        "size_in_bytes": 5529
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-scale.1",
+        "path_type": "hardlink",
+        "sha256": "e0c04f4d502b61462505ed4d7fe0d38beb7bf078426240c64382edf17c89aaa8",
+        "size_in_bytes": 8951
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-select.1",
+        "path_type": "hardlink",
+        "sha256": "fa8a704f7f54e63455167844bc4375aba164516fcb9b064327bcab6fb0d3e7ab",
+        "size_in_bytes": 6043
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-set-type.1",
+        "path_type": "hardlink",
+        "sha256": "9e9070a0cc51290b985d068ecbd6a28a58d9471f7d1a1de24007f5b9e410f6f6",
+        "size_in_bytes": 5149
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-sieve.1",
+        "path_type": "hardlink",
+        "sha256": "10bb5d6e4001aee8d9f421f77d1e1ad762d3bd6b0c6f092a5109e8dcf9eb77f6",
+        "size_in_bytes": 6306
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-slope.1",
+        "path_type": "hardlink",
+        "sha256": "838f82dbc01e9a471a4c6b91710bee02a7e58c043dbcd64578cf8c2977019ab6",
+        "size_in_bytes": 9653
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-stack.1",
+        "path_type": "hardlink",
+        "sha256": "130f2c0767c10257a39a34338e86a8831b46db9b311673e972b7a5fe416ebefb",
+        "size_in_bytes": 10175
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-tile.1",
+        "path_type": "hardlink",
+        "sha256": "f9cf00d589fe7a65c28417afd0f433be5f46baebf12cea2ae873f764aec76d5b",
+        "size_in_bytes": 20472
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-tpi.1",
+        "path_type": "hardlink",
+        "sha256": "76e263230bc476596679881c4b671c05ff25d695ac32e7295df4fd6b2bd57b9f",
+        "size_in_bytes": 5584
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-tri.1",
+        "path_type": "hardlink",
+        "sha256": "6b2b214756af50444829effa0e8d383dbedbed4b191773b8b3ba2456ad24fd63",
+        "size_in_bytes": 6350
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-unscale.1",
+        "path_type": "hardlink",
+        "sha256": "3802f7fbd2eef8a75f609aedad740bcdb7ba1d6a9318f95eebc18a041c5a54fe",
+        "size_in_bytes": 5858
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-update.1",
+        "path_type": "hardlink",
+        "sha256": "0979eacaaa9212a2ac936205aa9c6597434bf35e27e05848b12acb535cbba62b",
+        "size_in_bytes": 6814
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-viewshed.1",
+        "path_type": "hardlink",
+        "sha256": "0cc72b02ea45b4bbf54d349ecc9794701fb80aa3735c925ea6557371775114b3",
+        "size_in_bytes": 14443
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster-zonal-stats.1",
+        "path_type": "hardlink",
+        "sha256": "cd88769f60559f1cc502a4740d2d29cdbe28ed87c0518c2ffe171a23c5cdba6c",
+        "size_in_bytes": 12849
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-raster.1",
+        "path_type": "hardlink",
+        "sha256": "30c5a9bdfed2a488e57823e772216b55c358db3690e3cc7f87df3170120f14c6",
+        "size_in_bytes": 6322
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-buffer.1",
+        "path_type": "hardlink",
+        "sha256": "6062ab3019ac43ec18feed8b810810ef905fc59cb8d28f9f27b8c18ab27882c8",
+        "size_in_bytes": 10472
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-check-coverage.1",
+        "path_type": "hardlink",
+        "sha256": "9f640cf831f0bc904e988e0b296d22d767ef0723599b332fad7c62edba33aabd",
+        "size_in_bytes": 7650
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-check-geometry.1",
+        "path_type": "hardlink",
+        "sha256": "7b4e150b87c26f242acc78e6ae65e11b7736c86ad7fc7473d9771178ae4f740c",
+        "size_in_bytes": 8649
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-clean-coverage.1",
+        "path_type": "hardlink",
+        "sha256": "f86b99eb38c473dcf527283ceae5ee899ed39205d1861adaeda2c47d22b1d7fe",
+        "size_in_bytes": 8760
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-clip.1",
+        "path_type": "hardlink",
+        "sha256": "90b56706e0c052ba43e19bc9a90085835b775e75954d946b524496081093dd36",
+        "size_in_bytes": 10883
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-concat.1",
+        "path_type": "hardlink",
+        "sha256": "38c6ce359ebebf47c47f9ff670ed4aebce05e71db8d8b172e2441807b9ab8377",
+        "size_in_bytes": 12485
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-convert.1",
+        "path_type": "hardlink",
+        "sha256": "d2cebfd048f630deb0531a640b0efb1b74dd683ecc0565e9bacd9563ffbdf57f",
+        "size_in_bytes": 9165
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-edit.1",
+        "path_type": "hardlink",
+        "sha256": "3f43512e199d4c6c07d57a01d22be05ba56b1680c873ae35681c0be0517c05a0",
+        "size_in_bytes": 9011
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-explode-collections.1",
+        "path_type": "hardlink",
+        "sha256": "e2f5f02d75ffc3c12864dafef0dc8a9bc346c48d3b066727e0b3eed96a159fe0",
+        "size_in_bytes": 8443
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-filter.1",
+        "path_type": "hardlink",
+        "sha256": "63a583e992c2ab8883c12e8694062902b76d532eb268f881d858887ae1b72927",
+        "size_in_bytes": 7153
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-grid.1",
+        "path_type": "hardlink",
+        "sha256": "c96df9544849ee9faa3612155567087bdafe5f3cdc95932101e6f8581c139e7e",
+        "size_in_bytes": 24667
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-index.1",
+        "path_type": "hardlink",
+        "sha256": "fbd56badf28949e67e65785e3b79fd58a9db68a6ab34680e07636fd225873cff",
+        "size_in_bytes": 10897
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-info.1",
+        "path_type": "hardlink",
+        "sha256": "ad3142a64d65ab1f172723f653167e1ef53ee428f2430535f1b8533f4bd41bd0",
+        "size_in_bytes": 24193
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-layer-algebra.1",
+        "path_type": "hardlink",
+        "sha256": "afd85ab0c8fb6dfa59fd0954c34cd89a90130af35748b8fc96310df03e190995",
+        "size_in_bytes": 12176
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-make-point.1",
+        "path_type": "hardlink",
+        "sha256": "841edc36c02f87a810c446b4d7ffba5932c0b83f84418771d45eda141dfb6c73",
+        "size_in_bytes": 4779
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-make-valid.1",
+        "path_type": "hardlink",
+        "sha256": "759787429285f762b1157219acbd6a9425a0642dd83d75046d14a59d983272ce",
+        "size_in_bytes": 8692
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-partition.1",
+        "path_type": "hardlink",
+        "sha256": "8af4b76dd06949ed4f931c69bc41e22f542521deae9bbc0e47a662c567ffa5c2",
+        "size_in_bytes": 11305
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-pipeline.1",
+        "path_type": "hardlink",
+        "sha256": "a2116f43207a78b7c445917ef0f882dd0f237a565218f37ab1e986ab7ec97067",
+        "size_in_bytes": 27089
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-rasterize.1",
+        "path_type": "hardlink",
+        "sha256": "6ef1a237129b34429fd14b984080b9e928577b93486349101c99bd26f0721269",
+        "size_in_bytes": 15330
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-segmentize.1",
+        "path_type": "hardlink",
+        "sha256": "0a58610258403a29703513e71d1fb9ef146666bf2edd48b5fb00194e91f3dfdc",
+        "size_in_bytes": 7529
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-select.1",
+        "path_type": "hardlink",
+        "sha256": "f6096242e9b85f8bcb0f20f4e1d71b84f156c62bde0fb9e01b47b85ade9444fd",
+        "size_in_bytes": 8720
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-set-field-type.1",
+        "path_type": "hardlink",
+        "sha256": "f301de3ac84a4aba65b74e903a7ba918c9abf6bf0b46b70ae7020383edcbcaa4",
+        "size_in_bytes": 9448
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-set-geom-type.1",
+        "path_type": "hardlink",
+        "sha256": "0e63fdd417ef0d9a08c134ab0f88ff1db4948cad1c6c840a565666d5d927f91c",
+        "size_in_bytes": 11949
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-simplify.1",
+        "path_type": "hardlink",
+        "sha256": "daa3608a224c68fc2856e998785ae0b9014c1cf9e2cde48da90c822831a0b1e8",
+        "size_in_bytes": 8076
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-sql.1",
+        "path_type": "hardlink",
+        "sha256": "42a57f48a318cc3e485adc66b38519c3972f7cfee59560dea79e50f39c7a6a54",
+        "size_in_bytes": 9062
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector-swap-xy.1",
+        "path_type": "hardlink",
+        "sha256": "e403a7c77c2d5284d836a925e6543c78c6aa46d7696c906b7f90b81a8d75db85",
+        "size_in_bytes": 6982
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vector.1",
+        "path_type": "hardlink",
+        "sha256": "052f05f0c531721db95cdfb014b3cb14dec13348ddefeb0f61799f18bb2e5c4c",
+        "size_in_bytes": 4401
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vsi-copy.1",
+        "path_type": "hardlink",
+        "sha256": "4bd234c82869ee2dff4488b47dc2c25d7019bba7ba3176c3b04ea2e799edb0b4",
+        "size_in_bytes": 2807
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vsi-delete.1",
+        "path_type": "hardlink",
+        "sha256": "566f63fbf2fa2fa5491b0384adf2fc7d20e3e38df37a618d41eac1b1a99646e6",
+        "size_in_bytes": 2268
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vsi-list.1",
+        "path_type": "hardlink",
+        "sha256": "ac8c51ac248e36f4ca20764ff8a04ba956dd6ef7540011319de290603dbb124d",
+        "size_in_bytes": 3851
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vsi-move.1",
+        "path_type": "hardlink",
+        "sha256": "86ae52f618a6a70cb34e5d121ea8458aba7c5e197e4dfad5633ba2177a209e7d",
+        "size_in_bytes": 3029
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vsi-sozip.1",
+        "path_type": "hardlink",
+        "sha256": "5d6b62ef07878a3bf81a906db96c505c763435bd9efbcfe329f537a4e3810aab",
+        "size_in_bytes": 11870
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vsi-sync.1",
+        "path_type": "hardlink",
+        "sha256": "e0ba18abb08fd9d0348d2e7f2758bac49dc810a18efb372e5a89c6c6ad539ef9",
+        "size_in_bytes": 4859
+      },
+      {
+        "_path": "Library/share/man/man1/gdal-vsi.1",
+        "path_type": "hardlink",
+        "sha256": "833164b921282458c92e7ee11565cf86988ea5da58d31bb5ec56ab082fcf46d2",
+        "size_in_bytes": 2467
+      },
+      {
+        "_path": "Library/share/man/man1/gdal.1",
+        "path_type": "hardlink",
+        "sha256": "cd73318e49fc1d4987cfe05c3d3ae34e0f52446fc527000e018c2ea8ee3719f7",
+        "size_in_bytes": 2949
+      },
+      {
+        "_path": "Library/share/man/man1/gdal2tiles.1",
+        "path_type": "hardlink",
+        "sha256": "375881af6cb30ca7c56f805164230ead5dff2506b6f89f357f1684782b95ca4f",
+        "size_in_bytes": 11874
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_calc.1",
+        "path_type": "hardlink",
+        "sha256": "80787d8a1a5ad0f93cc5c9c80d6b97e8395a8e339ce0682283e028ef84a8ef5d",
+        "size_in_bytes": 11494
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_contour.1",
+        "path_type": "hardlink",
+        "sha256": "b0de75f81fa1dd889141fe92270266811bac2999e18709961a1bd8efea73b73b",
+        "size_in_bytes": 10598
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_create.1",
+        "path_type": "hardlink",
+        "sha256": "6c1fc5c48c82ed62a3e393e93c8cc87a38d47a89ff217b02c543624a22f5e607",
+        "size_in_bytes": 5501
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_edit.1",
+        "path_type": "hardlink",
+        "sha256": "a65ac8e9b2555f40ade75d16107e2cb3dbb43706706680db06991053d5ac915d",
+        "size_in_bytes": 7855
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_fillnodata.1",
+        "path_type": "hardlink",
+        "sha256": "0cb0a0bc2431fdae435805699893459b5a81dd64cfebaf44902b3750df0eb6df",
+        "size_in_bytes": 3569
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_footprint.1",
+        "path_type": "hardlink",
+        "sha256": "e4482138a81703f9b6487cd58aa43d3aec52329f13898de94d9dc10b4349529d",
+        "size_in_bytes": 9048
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_grid.1",
+        "path_type": "hardlink",
+        "sha256": "2214095ffe90a171f793f8ea0c47e2225012e1d1b96c78ca8d62f811e6119046",
+        "size_in_bytes": 23892
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_merge.1",
+        "path_type": "hardlink",
+        "sha256": "e394984988c1f06b172085268518ca92cf100baea6657f6fd469fbff91c1c9d3",
+        "size_in_bytes": 7473
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_pansharpen.1",
+        "path_type": "hardlink",
+        "sha256": "c34890855390d9b1cbb8e667e541b220423de121d56125cfa0b4176bd5840e3b",
+        "size_in_bytes": 6354
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_polygonize.1",
+        "path_type": "hardlink",
+        "sha256": "d28d705daf6b336042cb8a5da9080c1a60309d3490748a2e38e8e373812a6247",
+        "size_in_bytes": 4212
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_proximity.1",
+        "path_type": "hardlink",
+        "sha256": "430c28a3178fc41fd3729141509cbe59de261dd921c759ea82654c248d4ae600",
+        "size_in_bytes": 5054
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_rasterize.1",
+        "path_type": "hardlink",
+        "sha256": "90248c8d18e94b4876e6fd4ed94e69b69ac218cf8f86828d546ed4090ec2dd2b",
+        "size_in_bytes": 11451
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_retile.1",
+        "path_type": "hardlink",
+        "sha256": "443bc5f41ef2a2ca28efb26b144fb4a439a60abc01752a81c4f505814f2dcb43",
+        "size_in_bytes": 6897
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_sieve.1",
+        "path_type": "hardlink",
+        "sha256": "80f53fe0de138d3610c3d58ff056ee51273d39857d781181299df6427520431f",
+        "size_in_bytes": 2043
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_translate.1",
+        "path_type": "hardlink",
+        "sha256": "0f5275c2e89262e727fbc269c3f7868fccfa2dce848b2cb0d31f87767e05eb09",
+        "size_in_bytes": 24516
+      },
+      {
+        "_path": "Library/share/man/man1/gdal_viewshed.1",
+        "path_type": "hardlink",
+        "sha256": "c85ad0e707e4aee0fb1373d57240b81815f5ace4c86a690e20fd982cb8620399",
+        "size_in_bytes": 9287
+      },
+      {
+        "_path": "Library/share/man/man1/gdaladdo.1",
+        "path_type": "hardlink",
+        "sha256": "65e1803d319738d0ca084507645bee9666212fc8542a142ac4b7eed0c2841258",
+        "size_in_bytes": 17317
+      },
+      {
+        "_path": "Library/share/man/man1/gdalbuildvrt.1",
+        "path_type": "hardlink",
+        "sha256": "13c28c56d25f3fc49624a9870ca9d04e7c4553e26d7b832845b37ddfcf12823b",
+        "size_in_bytes": 14108
+      },
+      {
+        "_path": "Library/share/man/man1/gdalcompare.1",
+        "path_type": "hardlink",
+        "sha256": "b3fd32adc50910067e70d96e0afa501b6d2b2e1b8f006eb6465aba0a2615e92c",
+        "size_in_bytes": 4362
+      },
+      {
+        "_path": "Library/share/man/man1/gdaldem.1",
+        "path_type": "hardlink",
+        "sha256": "8f282e43c645bb5e94c363bc83e2134eb1704896b16b03eb5dabc5d9b7ad21aa",
+        "size_in_bytes": 24890
+      },
+      {
+        "_path": "Library/share/man/man1/gdalinfo.1",
+        "path_type": "hardlink",
+        "sha256": "a379b14a6938abddb70121a407a423f3f21e8809823b756676264dbc16690948",
+        "size_in_bytes": 18232
+      },
+      {
+        "_path": "Library/share/man/man1/gdallocationinfo.1",
+        "path_type": "hardlink",
+        "sha256": "3bb6892b6d06722d480db24b80b043a0772cc1fdc4eb1fa30e49aab9e079337c",
+        "size_in_bytes": 7658
+      },
+      {
+        "_path": "Library/share/man/man1/gdalmanage.1",
+        "path_type": "hardlink",
+        "sha256": "e47b4059a7c930f0fbef703b781815415b1ad01a2751c1f9f67c1185e4e3da00",
+        "size_in_bytes": 3738
+      },
+      {
+        "_path": "Library/share/man/man1/gdalmdiminfo.1",
+        "path_type": "hardlink",
+        "sha256": "7f3cefcb18815144f48bb180687d5461f7d56033e40166a2fe00861b7b5a01e8",
+        "size_in_bytes": 6735
+      },
+      {
+        "_path": "Library/share/man/man1/gdalmdimtranslate.1",
+        "path_type": "hardlink",
+        "sha256": "d8f6b54b245ad3946769e69270517fac1b4ad41f33a6aea77185844062e585d4",
+        "size_in_bytes": 9105
+      },
+      {
+        "_path": "Library/share/man/man1/gdalmove.1",
+        "path_type": "hardlink",
+        "sha256": "c8bee691df5309ab85669e464300fe2f0eb9b59f51227a9f8fa5cbfcfe37e894",
+        "size_in_bytes": 3252
+      },
+      {
+        "_path": "Library/share/man/man1/gdalsrsinfo.1",
+        "path_type": "hardlink",
+        "sha256": "5ba087af2763c3c938516a9d532de74419b834653164a18e276a4f7d0c3c7603",
+        "size_in_bytes": 9866
+      },
+      {
+        "_path": "Library/share/man/man1/gdaltindex.1",
+        "path_type": "hardlink",
+        "sha256": "3e7e8c50dbc2e8a5d85e01ad03ffdfe5dd67fc3bd42a0647d249e892537cb8f7",
+        "size_in_bytes": 12987
+      },
+      {
+        "_path": "Library/share/man/man1/gdaltransform.1",
+        "path_type": "hardlink",
+        "sha256": "b647e47d3de3929039bb2ea073a54711b01417090983ddeab394540bbbb16ad9",
+        "size_in_bytes": 9280
+      },
+      {
+        "_path": "Library/share/man/man1/gdalwarp.1",
+        "path_type": "hardlink",
+        "sha256": "b0fbcd5e659f74170d770424c06ced1bd79f219ebf503b777a2ee773ce8ceae1",
+        "size_in_bytes": 39999
+      },
+      {
+        "_path": "Library/share/man/man1/gnmanalyse.1",
+        "path_type": "hardlink",
+        "sha256": "48818d69f5fc73e009b5026eb31b944da6574d8f657389c6559aeedf1e51c647",
+        "size_in_bytes": 3327
+      },
+      {
+        "_path": "Library/share/man/man1/gnmmanage.1",
+        "path_type": "hardlink",
+        "sha256": "e4e6f019c8c873b44cf4cb07359bc029d8701f37b1d3f94b8877a986fcd05298",
+        "size_in_bytes": 4164
+      },
+      {
+        "_path": "Library/share/man/man1/nearblack.1",
+        "path_type": "hardlink",
+        "sha256": "139dec6b7cc6c73e0c9ea575ce306feddbc890e3662e76ce2edd09e3aa278249",
+        "size_in_bytes": 5677
+      },
+      {
+        "_path": "Library/share/man/man1/ogr2ogr.1",
+        "path_type": "hardlink",
+        "sha256": "7eed0787fcfc57f81404954d63fabe7acdb780be88e8103a9d58a1c832507f67",
+        "size_in_bytes": 38038
+      },
+      {
+        "_path": "Library/share/man/man1/ogr_layer_algebra.1",
+        "path_type": "hardlink",
+        "sha256": "610762545a9a33c8a79cbafca0b7c4f4af151fbd147252baef7da301bc787d16",
+        "size_in_bytes": 6946
+      },
+      {
+        "_path": "Library/share/man/man1/ogrinfo.1",
+        "path_type": "hardlink",
+        "sha256": "cdc14ba41bb565a3043496ba59860d6a52d9aa312f06baf4fe99e2c361524a14",
+        "size_in_bytes": 21026
+      },
+      {
+        "_path": "Library/share/man/man1/ogrlineref.1",
+        "path_type": "hardlink",
+        "sha256": "cc65a4360a05ce02e922651e8b069f51437adaeb5ea1b3535c31796abfaab277",
+        "size_in_bytes": 5547
+      },
+      {
+        "_path": "Library/share/man/man1/ogrmerge.1",
+        "path_type": "hardlink",
+        "sha256": "cae06b1a16abde723d7873e26755853bb60333a12e01649cc6808ab620f0d4c9",
+        "size_in_bytes": 7914
+      },
+      {
+        "_path": "Library/share/man/man1/ogrtindex.1",
+        "path_type": "hardlink",
+        "sha256": "9e78bfc41faafe048fc40bdf7494bb740c296c0282375cda23fa859fdf426a2d",
+        "size_in_bytes": 4414
+      },
+      {
+        "_path": "Library/share/man/man1/pct2rgb.1",
+        "path_type": "hardlink",
+        "sha256": "d4fb81e1a03cbcd32f58df349cf2c760e95639ca1c95daaebbc3e886c1825641",
+        "size_in_bytes": 2525
+      },
+      {
+        "_path": "Library/share/man/man1/rgb2pct.1",
+        "path_type": "hardlink",
+        "sha256": "dc78c1d5ed9709a0108d5970a340096d7fa2a40e255a450cff10c86f875eae12",
+        "size_in_bytes": 3998
+      },
+      {
+        "_path": "Library/share/man/man1/sozip.1",
+        "path_type": "hardlink",
+        "sha256": "2347314ef8812238f6ea399cba49c702ca94f162c4e085435de59c685f6e0b09",
+        "size_in_bytes": 6243
+      },
+      {
+        "_path": "etc/conda/activate.d/gdal-activate.bat",
+        "path_type": "hardlink",
+        "sha256": "6b50d564ca54e8b949b2387ad58bcbae6c7469e00e35611383c5f6e8dcbd2571",
+        "size_in_bytes": 585
+      },
+      {
+        "_path": "etc/conda/activate.d/gdal-activate.ps1",
+        "path_type": "hardlink",
+        "sha256": "8a67446dded4ccc60bc48093fc16da02bd4ab868dc8a5fe9912dfdae34afafe5",
+        "size_in_bytes": 383
+      },
+      {
+        "_path": "etc/conda/activate.d/gdal-activate.sh",
+        "path_type": "hardlink",
+        "sha256": "1ae78bb7e42035e7d589333a084d8249565e4e491453bd0187f96f31fdd62c46",
+        "size_in_bytes": 1305
+      },
+      {
+        "_path": "etc/conda/deactivate.d/gdal-deactivate.bat",
+        "path_type": "hardlink",
+        "sha256": "e65ca7342dd1f3d9e0579f5bc1f0118f72f9aca1bae36e5fc59893e29b55d00f",
+        "size_in_bytes": 355
+      },
+      {
+        "_path": "etc/conda/deactivate.d/gdal-deactivate.ps1",
+        "path_type": "hardlink",
+        "sha256": "c338f190dddb8b6b93ca0c77143a5a86bd6c6330cccbb77d4d3b01fda425469e",
+        "size_in_bytes": 372
+      },
+      {
+        "_path": "etc/conda/deactivate.d/gdal-deactivate.sh",
+        "path_type": "hardlink",
+        "sha256": "58b549c07bce3618dc72f071ac456f7b5b36f2676ecd1917f441606b5c095f10",
+        "size_in_bytes": 457
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libgdal-core-3.12.4-hbfeefb7_5",
+    "type": 1
+  }
+}

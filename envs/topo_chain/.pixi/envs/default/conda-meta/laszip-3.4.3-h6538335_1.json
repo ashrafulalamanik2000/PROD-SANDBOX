@@ -1,0 +1,70 @@
+{
+  "arch": "x86_64",
+  "build": "h6538335_1",
+  "build_number": 1,
+  "depends": [
+    "vc >=14,<15.0a0"
+  ],
+  "license": "LGPL-2.0",
+  "license_family": "LGPL",
+  "md5": "249492b81d0355d30304678db532055f",
+  "name": "laszip",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "3414a16b494b600515e8dc3ab7ae23943c880f72a6f57ca4d8f33e637b8e0f27",
+  "size": 128711,
+  "subdir": "win-64",
+  "timestamp": 1584640939261,
+  "version": "3.4.3",
+  "fn": "laszip-3.4.3-h6538335_1.tar.bz2",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/laszip-3.4.3-h6538335_1.tar.bz2",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\laszip-3.4.3-h6538335_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/laszip3.dll",
+    "Library/bin/laszip_api3.dll",
+    "Library/include/laszip/laszip_api.h",
+    "Library/include/laszip/laszip_api_version.h",
+    "Library/lib/laszip3.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/laszip3.dll",
+        "path_type": "hardlink",
+        "sha256": "5e4e0119b8dce8fd36c6129c0d299257f1b0bcc5701419fd49b06fa84acfe495",
+        "size_in_bytes": 278016
+      },
+      {
+        "_path": "Library/bin/laszip_api3.dll",
+        "path_type": "hardlink",
+        "sha256": "436255906cd97c5b4657c397d0a200bbd800f6a079b36da82bce22ee9520000f",
+        "size_in_bytes": 10240
+      },
+      {
+        "_path": "Library/include/laszip/laszip_api.h",
+        "path_type": "hardlink",
+        "sha256": "9a11732cf659f946c84f9e0b2aa74f89eafd13171f497f8e884ecd9637fd6cc3",
+        "size_in_bytes": 20899
+      },
+      {
+        "_path": "Library/include/laszip/laszip_api_version.h",
+        "path_type": "hardlink",
+        "sha256": "add3ad744890e4bcf6effbcf2f474d84cc85bc36c3fadbc6b128497a9c38b73d",
+        "size_in_bytes": 1148
+      },
+      {
+        "_path": "Library/lib/laszip3.lib",
+        "path_type": "hardlink",
+        "sha256": "35a21d49b88d8feecd32030f8b9faaaecbc8278184a9f0a30a1de33e159e9c7b",
+        "size_in_bytes": 12636
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\laszip-3.4.3-h6538335_1",
+    "type": 1
+  }
+}

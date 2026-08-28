@@ -1,0 +1,94 @@
+{
+  "arch": "x86_64",
+  "build": "h8c1c262_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0"
+  ],
+  "license": "GPL-2.0-or-later",
+  "license_family": "GPL",
+  "md5": "ddd22f5e2e251abe7c3394e010856f4d",
+  "name": "librbio",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "librbio >=4.3.4,<5.0a0"
+    ]
+  },
+  "sha256": "4d2d47b3af376a1b891c17427b2dbd48907ee916e88d6c9b2e2aa955a0eee84f",
+  "size": 45026,
+  "subdir": "win-64",
+  "timestamp": 1742288893862,
+  "version": "4.3.4",
+  "fn": "librbio-4.3.4-h8c1c262_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/librbio-4.3.4-h8c1c262_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\librbio-4.3.4-h8c1c262_7100102",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/rbio.dll",
+    "Library/include/suitesparse/RBio.h",
+    "Library/lib/cmake/RBio/RBioConfig.cmake",
+    "Library/lib/cmake/RBio/RBioConfigVersion.cmake",
+    "Library/lib/cmake/RBio/RBioTargets-release.cmake",
+    "Library/lib/cmake/RBio/RBioTargets.cmake",
+    "Library/lib/rbio.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/rbio.dll",
+        "path_type": "hardlink",
+        "sha256": "3797e0f3fedb7a82f7ee01bc1758deb6882f6c25b56d26ab4e9ec751216e55c8",
+        "size_in_bytes": 56320
+      },
+      {
+        "_path": "Library/include/suitesparse/RBio.h",
+        "path_type": "hardlink",
+        "sha256": "4be00c8e3d2ac07b2a1b3e729eacb980d51ac97a073360f714050d92d24506a7",
+        "size_in_bytes": 11697
+      },
+      {
+        "_path": "Library/lib/cmake/RBio/RBioConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "4a88bc7184d1fdba30a152cf43755e73806d30722b7a9b90c48f3d1592a37d79",
+        "size_in_bytes": 6563
+      },
+      {
+        "_path": "Library/lib/cmake/RBio/RBioConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "4c08247f4ffa2d4c6bcfd035c467f95f8c14b8e06fc739f23bd157beacaeb75b",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/RBio/RBioTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "0defd4832ecf4fd93fc195661f24c266fdca3c572d696536718f46e3d04c122b",
+        "size_in_bytes": 991
+      },
+      {
+        "_path": "Library/lib/cmake/RBio/RBioTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "e77f1a2cd29fb356c9ae1c1aea39ea20d46e478d97e32c6562502f4a3c60845a",
+        "size_in_bytes": 4383
+      },
+      {
+        "_path": "Library/lib/rbio.lib",
+        "path_type": "hardlink",
+        "sha256": "35c63fa99a72dcf5a8ce49c773032ee7f578d4ac48f75c098cec23f21fe0c73e",
+        "size_in_bytes": 5710
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\librbio-4.3.4-h8c1c262_7100102",
+    "type": 1
+  }
+}

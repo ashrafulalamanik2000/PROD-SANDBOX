@@ -1,0 +1,64 @@
+{
+  "arch": "x86_64",
+  "build": "hc7ed3b3_2",
+  "build_number": 2,
+  "constrains": [
+    "pdal 2.10.1.*"
+  ],
+  "depends": [
+    "ceres-solver >=2.2.0,<2.3.0a0",
+    "eigen >=3.4.0,<3.4.1.0a0",
+    "gflags >=2.2.2,<2.3.0a0",
+    "glog >=0.7.1,<0.8.0a0",
+    "libgdal-core >=3.12.4,<3.13.0a0",
+    "libpdal-core 2.10.1 h4e8f44f_2",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "1399497fb8b5791c5bd6b5142004bac3",
+  "name": "libpdal-trajectory",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpdal-trajectory >=2.10.1,<2.11.0a0"
+    ]
+  },
+  "sha256": "9fed36fa2825e43661e50f63c410051288227fd23d5845829419f75c6a7cf24c",
+  "size": 173491,
+  "subdir": "win-64",
+  "timestamp": 1777500886572,
+  "version": "2.10.1",
+  "fn": "libpdal-trajectory-2.10.1-hc7ed3b3_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libpdal-trajectory-2.10.1-hc7ed3b3_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-trajectory-2.10.1-hc7ed3b3_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libpdal_plugin_filter_trajectory.dll",
+    "Library/lib/libpdal_plugin_filter_trajectory.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libpdal_plugin_filter_trajectory.dll",
+        "path_type": "hardlink",
+        "sha256": "c8e34585a680cb9c96422472aef0ab0ff5761e8bbc3d678812527bb4aea0738b",
+        "size_in_bytes": 411136
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_filter_trajectory.lib",
+        "path_type": "hardlink",
+        "sha256": "eaaaecadf1d9beba50986266b5540a5082693256e5d4d38fd7464137b49ac852",
+        "size_in_bytes": 199570
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-trajectory-2.10.1-hc7ed3b3_2",
+    "type": 1
+  }
+}

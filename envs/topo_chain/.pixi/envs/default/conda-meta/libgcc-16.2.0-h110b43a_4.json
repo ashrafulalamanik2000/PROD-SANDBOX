@@ -1,0 +1,97 @@
+{
+  "arch": "x86_64",
+  "build": "h110b43a_4",
+  "build_number": 4,
+  "constrains": [
+    "libgcc-ng ==16.2.0=*_4",
+    "libgomp 16.2.0 h8ee18e1_4",
+    "msys2-conda-epoch <0.0a0"
+  ],
+  "depends": [
+    "_openmp_mutex >=4.5",
+    "libwinpthread >=12.0.0.r4.gg4f2fc60ca"
+  ],
+  "license": "GPL-3.0-only WITH GCC-exception-3.1",
+  "license_family": "GPL",
+  "md5": "02793cf48b68687fee158a48c92850a6",
+  "name": "libgcc",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "32c0d1adcc96835d5f681c7e72b7f5e2e30088149239e002b8a6f581a072e1d2",
+  "size": 826694,
+  "subdir": "win-64",
+  "timestamp": 1787625780171,
+  "version": "16.2.0",
+  "fn": "libgcc-16.2.0-h110b43a_4.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libgcc-16.2.0-h110b43a_4.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libgcc-16.2.0-h110b43a_4",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libatomic-1.dll",
+    "Library/bin/libgcc_s_seh-1.dll",
+    "Library/bin/libquadmath-0.dll",
+    "Library/lib/libatomic.dll.a",
+    "Library/lib/libquadmath.dll.a",
+    "Library/share/info/libgomp.info",
+    "Library/share/info/libquadmath.info",
+    "Library/share/licenses/gcc-libs/RUNTIME.LIBRARY.EXCEPTION"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libatomic-1.dll",
+        "path_type": "hardlink",
+        "sha256": "f489d2cd1d6e3376d2331d933ea245b6f65e792f92131bb5c3ad495302800cb7",
+        "size_in_bytes": 281890
+      },
+      {
+        "_path": "Library/bin/libgcc_s_seh-1.dll",
+        "path_type": "hardlink",
+        "sha256": "f2b6977b5cd35dcd6a386f2ff77bb9407be622aa510f57ae15fe0cb1b275a7f5",
+        "size_in_bytes": 1023033
+      },
+      {
+        "_path": "Library/bin/libquadmath-0.dll",
+        "path_type": "hardlink",
+        "sha256": "db998f6439e37783d09a8fb801c81a4c32c25007b0e80b0661cfb77fed2d72c2",
+        "size_in_bytes": 1271016
+      },
+      {
+        "_path": "Library/lib/libatomic.dll.a",
+        "path_type": "hardlink",
+        "sha256": "748725f1c5730c6e88b91f1b335791e481f8be6e7db48c9e317952aa47224d96",
+        "size_in_bytes": 66386
+      },
+      {
+        "_path": "Library/lib/libquadmath.dll.a",
+        "path_type": "hardlink",
+        "sha256": "c802f172982ec777701624d260eb821a9e5a958964860a8ff8507bc6d518da4b",
+        "size_in_bytes": 57510
+      },
+      {
+        "_path": "Library/share/info/libgomp.info",
+        "path_type": "hardlink",
+        "sha256": "ee25a92782cf91cbbe6ec44d94da188c29eb02fbb6c243408eb91e52d929d344",
+        "size_in_bytes": 384266
+      },
+      {
+        "_path": "Library/share/info/libquadmath.info",
+        "path_type": "hardlink",
+        "sha256": "f956b6e3cb6a38ace2a0bfbfbf5770ce001dc013eea5c9dd05bbcf25545d5eaa",
+        "size_in_bytes": 37235
+      },
+      {
+        "_path": "Library/share/licenses/gcc-libs/RUNTIME.LIBRARY.EXCEPTION",
+        "path_type": "hardlink",
+        "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+        "size_in_bytes": 3324
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libgcc-16.2.0-h110b43a_4",
+    "type": 1
+  }
+}

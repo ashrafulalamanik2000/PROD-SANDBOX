@@ -1,0 +1,53 @@
+{
+  "arch": "x86_64",
+  "build": "h45f70d9_2",
+  "build_number": 2,
+  "constrains": [
+    "re2 2025.11.05.*"
+  ],
+  "depends": [
+    "libabseil * cxx17*",
+    "libabseil >=20260526.0,<20260527.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "52d096d535c65d26ffb4b84a4bba2aa1",
+  "name": "libre2-11",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libre2-11 >=2025.11.5"
+    ]
+  },
+  "sha256": "255d32d01d72d7d89ab5c60c20b124216e0731428af350e40ed0e001d249bcb5",
+  "size": 266747,
+  "subdir": "win-64",
+  "timestamp": 1781312690043,
+  "version": "2025.11.05",
+  "fn": "libre2-11-2025.11.05-h45f70d9_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libre2-11-2025.11.05-h45f70d9_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libre2-11-2025.11.05-h45f70d9_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/re2.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/re2.dll",
+        "path_type": "hardlink",
+        "sha256": "c3438cc09fee9076751faa905ba37c203632468a0221112404567e744638d199",
+        "size_in_bytes": 1202176
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libre2-11-2025.11.05-h45f70d9_2",
+    "type": 1
+  }
+}

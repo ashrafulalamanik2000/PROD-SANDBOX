@@ -1,0 +1,105 @@
+{
+  "build": "pyhd8ed1ab_2",
+  "build_number": 2,
+  "depends": [
+    "click >=4.0",
+    "python >=3.9,<4.0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "55c7804f428719241a90b152016085a1",
+  "name": "cligj",
+  "noarch": "python",
+  "run_exports": {},
+  "sha256": "1a52ae1febfcfb8f56211d1483a1ac4419b0028b7c3e9e61960a298978a42396",
+  "size": 12521,
+  "subdir": "noarch",
+  "timestamp": 1733750069604,
+  "version": "0.7.2",
+  "fn": "cligj-0.7.2-pyhd8ed1ab_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/cligj-0.7.2-pyhd8ed1ab_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\cligj-0.7.2-pyhd8ed1ab_2",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/cligj/__init__.py",
+    "Lib/site-packages/cligj/features.py",
+    "Lib/site-packages/cligj-0.7.2.dist-info/INSTALLER",
+    "Lib/site-packages/cligj-0.7.2.dist-info/LICENSE",
+    "Lib/site-packages/cligj-0.7.2.dist-info/METADATA",
+    "Lib/site-packages/cligj-0.7.2.dist-info/RECORD",
+    "Lib/site-packages/cligj-0.7.2.dist-info/REQUESTED",
+    "Lib/site-packages/cligj-0.7.2.dist-info/WHEEL",
+    "Lib/site-packages/cligj-0.7.2.dist-info/direct_url.json",
+    "Lib/site-packages/cligj-0.7.2.dist-info/top_level.txt"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/cligj/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "cef0fc29ce4f718f80a291ea18863e21e923bf9dc15214420fa147885d24f2e3",
+        "size_in_bytes": 3876
+      },
+      {
+        "_path": "Lib/site-packages/cligj/features.py",
+        "path_type": "hardlink",
+        "sha256": "1705478f488076ab4e3b2d2e0859650ba1f411536ab1fdc38e3f7d544058a825",
+        "size_in_bytes": 6905
+      },
+      {
+        "_path": "Lib/site-packages/cligj-0.7.2.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/cligj-0.7.2.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "5902d716544ddf9a34849b345c391abaf7c21ca16ed22706d6ac2f5503712594",
+        "size_in_bytes": 1469
+      },
+      {
+        "_path": "Lib/site-packages/cligj-0.7.2.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "3c64cf94da5627b391752b758c62eb783891daa4abade72f77dc1eebf104857f",
+        "size_in_bytes": 4978
+      },
+      {
+        "_path": "Lib/site-packages/cligj-0.7.2.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "c8ead8fd513b76c194588efd831e3055aa5c7447133806c35d10969f092787f1",
+        "size_in_bytes": 886
+      },
+      {
+        "_path": "Lib/site-packages/cligj-0.7.2.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/cligj-0.7.2.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "3d9504c5d7fbd548bfb28ebb417a724ae1ed0a2dfe277c2f1783912ba93f4bc5",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "Lib/site-packages/cligj-0.7.2.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "865aa56798823c44d767ad1cf2ddc6cec6f3a8a7470ecdda8fc638187dfb9495",
+        "size_in_bytes": 101
+      },
+      {
+        "_path": "Lib/site-packages/cligj-0.7.2.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "1efcb5b6f8a233329b0750f70185c955ea3310957a4a00acf841c59e11a5c0c0",
+        "size_in_bytes": 6
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\cligj-0.7.2-pyhd8ed1ab_2",
+    "type": 1
+  }
+}

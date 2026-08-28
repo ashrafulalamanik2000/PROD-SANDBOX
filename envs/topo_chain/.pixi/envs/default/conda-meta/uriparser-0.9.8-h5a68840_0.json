@@ -1,0 +1,125 @@
+{
+  "arch": "x86_64",
+  "build": "h5a68840_0",
+  "build_number": 0,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "28b4cf9065681f43cc567410edf8243d",
+  "name": "uriparser",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "uriparser >=0.9.8,<1.0a0"
+    ]
+  },
+  "sha256": "ed0eed8ed0343d29cdbfaeb1bfd141f090af696547d69f91c18f46350299f00d",
+  "size": 49181,
+  "subdir": "win-64",
+  "timestamp": 1715010467661,
+  "version": "0.9.8",
+  "fn": "uriparser-0.9.8-h5a68840_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/uriparser-0.9.8-h5a68840_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\uriparser-0.9.8-h5a68840_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/uriparser.dll",
+    "Library/include/uriparser/Uri.h",
+    "Library/include/uriparser/UriBase.h",
+    "Library/include/uriparser/UriDefsAnsi.h",
+    "Library/include/uriparser/UriDefsConfig.h",
+    "Library/include/uriparser/UriDefsUnicode.h",
+    "Library/include/uriparser/UriIp4.h",
+    "Library/lib/cmake/uriparser-0.9.8/uriparser-config-version.cmake",
+    "Library/lib/cmake/uriparser-0.9.8/uriparser-config.cmake",
+    "Library/lib/cmake/uriparser-0.9.8/uriparser-release.cmake",
+    "Library/lib/cmake/uriparser-0.9.8/uriparser.cmake",
+    "Library/lib/uriparser.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/uriparser.dll",
+        "path_type": "hardlink",
+        "sha256": "5586a4d98bca3e3f6454c17d4f32a03a78cc64f0cff8dae6d1fcff865c1e805c",
+        "size_in_bytes": 60416
+      },
+      {
+        "_path": "Library/include/uriparser/Uri.h",
+        "path_type": "hardlink",
+        "sha256": "fb6ddd684c58f5f9845cb2c104eb92d57826f22f5509bc945ca3f821b9995486",
+        "size_in_bytes": 39455
+      },
+      {
+        "_path": "Library/include/uriparser/UriBase.h",
+        "path_type": "hardlink",
+        "sha256": "29939785b5a61c3a4b7a63501c437e7c49b576c2589e5a4c7e5ac0065c66a1b8",
+        "size_in_bytes": 12499
+      },
+      {
+        "_path": "Library/include/uriparser/UriDefsAnsi.h",
+        "path_type": "hardlink",
+        "sha256": "c4b0fcf5edcb068c0e0a32c52a3d4e8c4f4aecf53aa59c19b2d8317caf8a811c",
+        "size_in_bytes": 2583
+      },
+      {
+        "_path": "Library/include/uriparser/UriDefsConfig.h",
+        "path_type": "hardlink",
+        "sha256": "4971bdec1d1ce4c15b26ee31b70aea5db844a62c00b3fb5c4db957f63958d78d",
+        "size_in_bytes": 3312
+      },
+      {
+        "_path": "Library/include/uriparser/UriDefsUnicode.h",
+        "path_type": "hardlink",
+        "sha256": "4c46e9fbf1996080de79c3ce17c4f91a27e16fc6c334fefee802eea399ad7cec",
+        "size_in_bytes": 2600
+      },
+      {
+        "_path": "Library/include/uriparser/UriIp4.h",
+        "path_type": "hardlink",
+        "sha256": "d44918cbe50737c7dd8d36ae661b2a6020bf10e4b451696f24406884ebd0199c",
+        "size_in_bytes": 3460
+      },
+      {
+        "_path": "Library/lib/cmake/uriparser-0.9.8/uriparser-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "2323d0720c11b0ec7831c2e5f79c2656a5d1b3ac91735dec6926961991fbe1b4",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/uriparser-0.9.8/uriparser-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "273d6ff274e58651dd049b3b75016cd432331e168eae2b3344b5bea5e5b6bcb3",
+        "size_in_bytes": 3150
+      },
+      {
+        "_path": "Library/lib/cmake/uriparser-0.9.8/uriparser-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "a50ab15a411ac0fb9624a9bba815eda6f8a730a9fdb646b9b5c4a31c9abd808a",
+        "size_in_bytes": 948
+      },
+      {
+        "_path": "Library/lib/cmake/uriparser-0.9.8/uriparser.cmake",
+        "path_type": "hardlink",
+        "sha256": "56081a008591b183fc1dac1837afb2763627956b27c143bb36ecb4bc2f99cd80",
+        "size_in_bytes": 4292
+      },
+      {
+        "_path": "Library/lib/uriparser.lib",
+        "path_type": "hardlink",
+        "sha256": "5676ded00ffa210645ce50cdd9f3ddd3c7d6f7867c62853ca52749269b8fc02a",
+        "size_in_bytes": 12390
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\uriparser-0.9.8-h5a68840_0",
+    "type": 1
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "arch": "x86_64",
+  "build": "h4fb3251_1",
+  "build_number": 1,
+  "depends": [
+    "azure-core-cpp >=1.16.3,<1.16.4.0a0",
+    "azure-storage-common-cpp >=12.14.0,<12.14.1.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "7d38f326139cefa0a9c2ec505c0177b1",
+  "name": "azure-storage-blobs-cpp",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "azure-storage-blobs-cpp >=12.18.0,<12.18.1.0a0"
+    ]
+  },
+  "sha256": "51533ea83750b76c89dca67e2967f2ef20be5b26406f76ecb0e85537237b7a2e",
+  "size": 800072,
+  "subdir": "win-64",
+  "timestamp": 1781283965517,
+  "version": "12.18.0",
+  "fn": "azure-storage-blobs-cpp-12.18.0-h4fb3251_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/azure-storage-blobs-cpp-12.18.0-h4fb3251_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\azure-storage-blobs-cpp-12.18.0-h4fb3251_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/azure-storage-blobs.dll",
+    "Library/include/azure/storage/blobs/append_blob_client.hpp",
+    "Library/include/azure/storage/blobs/blob_batch.hpp",
+    "Library/include/azure/storage/blobs/blob_client.hpp",
+    "Library/include/azure/storage/blobs/blob_container_client.hpp",
+    "Library/include/azure/storage/blobs/blob_lease_client.hpp",
+    "Library/include/azure/storage/blobs/blob_options.hpp",
+    "Library/include/azure/storage/blobs/blob_responses.hpp",
+    "Library/include/azure/storage/blobs/blob_sas_builder.hpp",
+    "Library/include/azure/storage/blobs/blob_service_client.hpp",
+    "Library/include/azure/storage/blobs/block_blob_client.hpp",
+    "Library/include/azure/storage/blobs/deferred_response.hpp",
+    "Library/include/azure/storage/blobs/dll_import_export.hpp",
+    "Library/include/azure/storage/blobs/page_blob_client.hpp",
+    "Library/include/azure/storage/blobs/rest_client.hpp",
+    "Library/include/azure/storage/blobs/rtti.hpp",
+    "Library/include/azure/storage/blobs.hpp",
+    "Library/lib/azure-storage-blobs.lib",
+    "Library/share/azure-storage-blobs-cpp/azure-storage-blobs-cppConfig.cmake",
+    "Library/share/azure-storage-blobs-cpp/azure-storage-blobs-cppConfigVersion.cmake",
+    "Library/share/azure-storage-blobs-cpp/azure-storage-blobs-cppTargets-release.cmake",
+    "Library/share/azure-storage-blobs-cpp/azure-storage-blobs-cppTargets.cmake",
+    "Library/share/azure-storage-blobs-cpp/copyright"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/azure-storage-blobs.dll",
+        "path_type": "hardlink",
+        "sha256": "e3c6917e719db64d49cb09336f1ec415b3b6f8e4156e5e8da2be7e608e0a26b9",
+        "size_in_bytes": 2990080
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/append_blob_client.hpp",
+        "path_type": "hardlink",
+        "sha256": "f482557f66159bd3355dc78bf7179a216ba86fd8612b156f8a348d22c4677c46",
+        "size_in_bytes": 8002
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/blob_batch.hpp",
+        "path_type": "hardlink",
+        "sha256": "00e14a4e0ce19f4158f21256e47cdfe1ab65078ffaf613424b24299fc895503e",
+        "size_in_bytes": 8295
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/blob_client.hpp",
+        "path_type": "hardlink",
+        "sha256": "ec3b67b99e9c4aed4e508d8a7241e3056acd3cb01eb9fff1596ae797686ae25f",
+        "size_in_bytes": 21338
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/blob_container_client.hpp",
+        "path_type": "hardlink",
+        "sha256": "a6bb24c9bc7cf7ec8e1552016e70d7e511be42ff9a98103c59da303e4f99d9c2",
+        "size_in_bytes": 16712
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/blob_lease_client.hpp",
+        "path_type": "hardlink",
+        "sha256": "9dba47bf2e365f4c3ad0c06d7e2e899cd5c97f5ef87e76dac92c9c9c24a2d86f",
+        "size_in_bytes": 5011
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/blob_options.hpp",
+        "path_type": "hardlink",
+        "sha256": "1bc53542f7c35d7b01c29c0b12a432bc7bd3b1abdc3e08e8c36299524d3b6d3c",
+        "size_in_bytes": 55166
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/blob_responses.hpp",
+        "path_type": "hardlink",
+        "sha256": "a075a06d67d7edbc569e4d8270fe8162a9baa53c0ac17e76658683a2eff30e33",
+        "size_in_bytes": 13632
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/blob_sas_builder.hpp",
+        "path_type": "hardlink",
+        "sha256": "9c8cd9a70a559352971516e511793e78e60307e4823a23d5f0c2f3d11bb2ecfc",
+        "size_in_bytes": 11405
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/blob_service_client.hpp",
+        "path_type": "hardlink",
+        "sha256": "9acc6050aa82bc7e0e2b4a00c676fa2ccf79c07b091a56a06f832d00d7cff45f",
+        "size_in_bytes": 13694
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/block_blob_client.hpp",
+        "path_type": "hardlink",
+        "sha256": "1d30403afc0913b24cac2049fad4600c8c0957055ade105de1e2455c52d920fd",
+        "size_in_bytes": 12844
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/deferred_response.hpp",
+        "path_type": "hardlink",
+        "sha256": "1f04be14806140957909e81af5ef5db5ec3944aa0847e685855c628ebd783217",
+        "size_in_bytes": 1414
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/dll_import_export.hpp",
+        "path_type": "hardlink",
+        "sha256": "9a8dd3527eb9981ba7e858fb3e14188ae2bf5aa7f0766d0a75f5ec897de73970",
+        "size_in_bytes": 1116
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/page_blob_client.hpp",
+        "path_type": "hardlink",
+        "sha256": "21a12d5bbe58dcc41858ff22f42f1ac849b2234402709c323c13312c9e7ecf20",
+        "size_in_bytes": 14548
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/rest_client.hpp",
+        "path_type": "hardlink",
+        "sha256": "4b96021f4e71adc4e24dd67e01def373ea45c7bd059116a222165bedd9eee310",
+        "size_in_bytes": 173189
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs/rtti.hpp",
+        "path_type": "hardlink",
+        "sha256": "96bb9cf668fb018e783ee3b2da757f23c28b779d646904f4738d82962a87472c",
+        "size_in_bytes": 1341
+      },
+      {
+        "_path": "Library/include/azure/storage/blobs.hpp",
+        "path_type": "hardlink",
+        "sha256": "e154534e847e3bde0d2a5919b346d9a261e4f17f9931c382330e7b07e13eddfe",
+        "size_in_bytes": 993
+      },
+      {
+        "_path": "Library/lib/azure-storage-blobs.lib",
+        "path_type": "hardlink",
+        "sha256": "c1df940c7415b15a1deb15a7b4a66557913c79b7d484cddcabe658313f3cf8c1",
+        "size_in_bytes": 9179896
+      },
+      {
+        "_path": "Library/share/azure-storage-blobs-cpp/azure-storage-blobs-cppConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "8a57a255d8a8aaddc3d17f5e3723f6bd42e43f8e948b4be35e5016c845c702f5",
+        "size_in_bytes": 1185
+      },
+      {
+        "_path": "Library/share/azure-storage-blobs-cpp/azure-storage-blobs-cppConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "ab58618c1b38fa53940a0693bf95f80c5f9c219914aaa17f1f67d851d1ab64a1",
+        "size_in_bytes": 2833
+      },
+      {
+        "_path": "Library/share/azure-storage-blobs-cpp/azure-storage-blobs-cppTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "e2aa70a33dcb16875601be00eb3d182613a3c80cbc30c403040cede34aa96248",
+        "size_in_bytes": 1018
+      },
+      {
+        "_path": "Library/share/azure-storage-blobs-cpp/azure-storage-blobs-cppTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "5ca0b4dfd5e84fdf71a0eb3101331af20b2d91b7cd60ad3d9499af488e1b07b5",
+        "size_in_bytes": 4373
+      },
+      {
+        "_path": "Library/share/azure-storage-blobs-cpp/copyright",
+        "path_type": "hardlink",
+        "sha256": "9906940f61b1f0b533fa7d99baf55178b2808fbe113ea51dfbfad8572ccd5f2b",
+        "size_in_bytes": 1162
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\azure-storage-blobs-cpp-12.18.0-h4fb3251_1",
+    "type": 1
+  }
+}

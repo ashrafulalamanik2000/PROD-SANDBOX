@@ -1,0 +1,106 @@
+{
+  "build": "pyhd8ed1ab_2",
+  "build_number": 2,
+  "depends": [
+    "numpy",
+    "pyparsing >=2.1.6",
+    "python >=3.9"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "9aa358575bbd4be126eaa5e0039f835c",
+  "name": "snuggs",
+  "noarch": "python",
+  "run_exports": {},
+  "sha256": "61f9373709e7d9009e3a062b135dbe44b16e684a4fcfe2dd624143bc0f80d402",
+  "size": 11313,
+  "subdir": "noarch",
+  "timestamp": 1733818738919,
+  "version": "1.4.7",
+  "fn": "snuggs-1.4.7-pyhd8ed1ab_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/snuggs-1.4.7-pyhd8ed1ab_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\snuggs-1.4.7-pyhd8ed1ab_2",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/snuggs/__init__.py",
+    "Lib/site-packages/snuggs-1.4.7.dist-info/AUTHORS.txt",
+    "Lib/site-packages/snuggs-1.4.7.dist-info/INSTALLER",
+    "Lib/site-packages/snuggs-1.4.7.dist-info/LICENSE",
+    "Lib/site-packages/snuggs-1.4.7.dist-info/METADATA",
+    "Lib/site-packages/snuggs-1.4.7.dist-info/RECORD",
+    "Lib/site-packages/snuggs-1.4.7.dist-info/REQUESTED",
+    "Lib/site-packages/snuggs-1.4.7.dist-info/WHEEL",
+    "Lib/site-packages/snuggs-1.4.7.dist-info/direct_url.json",
+    "Lib/site-packages/snuggs-1.4.7.dist-info/top_level.txt"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/snuggs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "311c253a19690b795d34db2fd5ae7912c3b6e5b6812e4f68ed132a78cb0a0572",
+        "size_in_bytes": 5310
+      },
+      {
+        "_path": "Lib/site-packages/snuggs-1.4.7.dist-info/AUTHORS.txt",
+        "path_type": "hardlink",
+        "sha256": "c9088aeddc5823aa6c657026c9f2a8ef7612a2729839b98c28c7915d34e5622c",
+        "size_in_bytes": 161
+      },
+      {
+        "_path": "Lib/site-packages/snuggs-1.4.7.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5
+      },
+      {
+        "_path": "Lib/site-packages/snuggs-1.4.7.dist-info/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "29460627842ca33c406297d8b9b2805d8faeb22de7a145358509533b4eca4599",
+        "size_in_bytes": 1074
+      },
+      {
+        "_path": "Lib/site-packages/snuggs-1.4.7.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "0a0c9173b6fafbecfc1eacee05d0852dd1e39cf896b9cb944fcc34362adff6b2",
+        "size_in_bytes": 3379
+      },
+      {
+        "_path": "Lib/site-packages/snuggs-1.4.7.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "6dbb4ba8486e2f3811fa0152e3c321814169ab3e454890714debbe13640c3f87",
+        "size_in_bytes": 867
+      },
+      {
+        "_path": "Lib/site-packages/snuggs-1.4.7.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/snuggs-1.4.7.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "3d9504c5d7fbd548bfb28ebb417a724ae1ed0a2dfe277c2f1783912ba93f4bc5",
+        "size_in_bytes": 91
+      },
+      {
+        "_path": "Lib/site-packages/snuggs-1.4.7.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "c09fed3d7c633b93d3ecd298dbe6bcfaa7a5a05f39848afb9a9a6778421b1ce5",
+        "size_in_bytes": 102
+      },
+      {
+        "_path": "Lib/site-packages/snuggs-1.4.7.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "043dd47baf3eb30e2f27b915669f85b2210d13a5030cc202d2c3d53fa0a4a813",
+        "size_in_bytes": 7
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\snuggs-1.4.7-pyhd8ed1ab_2",
+    "type": 1
+  }
+}

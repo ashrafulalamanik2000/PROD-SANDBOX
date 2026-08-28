@@ -1,0 +1,116 @@
+{
+  "arch": "x86_64",
+  "build": "py312hdabe01f_0",
+  "build_number": 0,
+  "depends": [
+    "python",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "python_abi 3.12.* *_cp312"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "6b2159f8fa351662ccee33a668a32ad0",
+  "name": "lazrs-python",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "ba64e2bc536a09bbadcb49877ef267d4d48b449d249bc817941944b6addec69f",
+  "size": 395939,
+  "subdir": "win-64",
+  "timestamp": 1785175447489,
+  "version": "0.8.2",
+  "fn": "lazrs-python-0.8.2-py312hdabe01f_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/lazrs-python-0.8.2-py312hdabe01f_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\lazrs-python-0.8.2-py312hdabe01f_0",
+  "requested_specs": [],
+  "files": [
+    "Lib/site-packages/lazrs/__init__.py",
+    "Lib/site-packages/lazrs/__pycache__/__init__.cpython-312.pyc",
+    "Lib/site-packages/lazrs/lazrs.cp312-win_amd64.pyd",
+    "Lib/site-packages/lazrs-0.8.2.dist-info/INSTALLER",
+    "Lib/site-packages/lazrs-0.8.2.dist-info/METADATA",
+    "Lib/site-packages/lazrs-0.8.2.dist-info/RECORD",
+    "Lib/site-packages/lazrs-0.8.2.dist-info/REQUESTED",
+    "Lib/site-packages/lazrs-0.8.2.dist-info/WHEEL",
+    "Lib/site-packages/lazrs-0.8.2.dist-info/direct_url.json",
+    "Lib/site-packages/lazrs-0.8.2.dist-info/licenses/LICENSE.txt",
+    "Lib/site-packages/lazrs-0.8.2.dist-info/sboms/lazrs.cyclonedx.json"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Lib/site-packages/lazrs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "bcd7cc8b20109a4adf046d35b13c3a04872bd52e015e4df0e4fa4a40ca858186",
+        "size_in_bytes": 103
+      },
+      {
+        "_path": "Lib/site-packages/lazrs/__pycache__/__init__.cpython-312.pyc",
+        "path_type": "hardlink",
+        "sha256": "76ac94fef5d1db6a18486fa21ebabb4004ba669f6612df7d4a68811f8bfb5926",
+        "size_in_bytes": 347
+      },
+      {
+        "_path": "Lib/site-packages/lazrs/lazrs.cp312-win_amd64.pyd",
+        "path_type": "hardlink",
+        "sha256": "2fbde4bc5200e044a515620282ac682330d559bc0d3740b938ee9f851a844aba",
+        "size_in_bytes": 1181184
+      },
+      {
+        "_path": "Lib/site-packages/lazrs-0.8.2.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc",
+        "size_in_bytes": 6
+      },
+      {
+        "_path": "Lib/site-packages/lazrs-0.8.2.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "d395f897f198b9e1b4e4414d7e43ac02bfe17fbef60aaefbb796b379f17fe4ff",
+        "size_in_bytes": 99
+      },
+      {
+        "_path": "Lib/site-packages/lazrs-0.8.2.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "d66b667a44a96000cf7ba477b7de61fe67350de17fdff58e85b564ae457ca3ad",
+        "size_in_bytes": 885
+      },
+      {
+        "_path": "Lib/site-packages/lazrs-0.8.2.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0
+      },
+      {
+        "_path": "Lib/site-packages/lazrs-0.8.2.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "48ded6e6cd098b4d7ef6effa40bedc127b1cb17be58ce5500c532dfb6b482f02",
+        "size_in_bytes": 97
+      },
+      {
+        "_path": "Lib/site-packages/lazrs-0.8.2.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "2bc79e63fcd227c34a76790cabce31d16b1dfb68f3a81910a9743a6902736fa7",
+        "size_in_bytes": 88
+      },
+      {
+        "_path": "Lib/site-packages/lazrs-0.8.2.dist-info/licenses/LICENSE.txt",
+        "path_type": "hardlink",
+        "sha256": "52a77551f216940344e34b637e9dad2f69f364a5b8b34b811247ccdaed60a307",
+        "size_in_bytes": 1077
+      },
+      {
+        "_path": "Lib/site-packages/lazrs-0.8.2.dist-info/sboms/lazrs.cyclonedx.json",
+        "path_type": "hardlink",
+        "sha256": "8414c43999c2f6de08cef1fd41dade392c10cec6d88f37250cc14cb39cbf2c1d",
+        "size_in_bytes": 27217
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\lazrs-python-0.8.2-py312hdabe01f_0",
+    "type": 1
+  }
+}

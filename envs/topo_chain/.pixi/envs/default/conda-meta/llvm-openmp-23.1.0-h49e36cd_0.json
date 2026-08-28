@@ -1,0 +1,108 @@
+{
+  "arch": "x86_64",
+  "build": "h49e36cd_0",
+  "build_number": 0,
+  "constrains": [
+    "intel-openmp <0.0a0",
+    "openmp 23.1.0|23.1.0.*"
+  ],
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "license_family": "APACHE",
+  "md5": "79055ec79e1b43749763122cead30976",
+  "name": "llvm-openmp",
+  "platform": "win",
+  "run_exports": {
+    "strong": [
+      "llvm-openmp >=23.1.0"
+    ]
+  },
+  "sha256": "f9658ec83a6744f38e2b8188c76e1c2dea2614f5aa0e14d9d274b19f60646b8c",
+  "size": 342468,
+  "subdir": "win-64",
+  "timestamp": 1787722783678,
+  "version": "23.1.0",
+  "fn": "llvm-openmp-23.1.0-h49e36cd_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/llvm-openmp-23.1.0-h49e36cd_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\llvm-openmp-23.1.0-h49e36cd_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libiomp5md.dll",
+    "Library/bin/libomp.dll",
+    "Library/include/omp.h",
+    "Library/include/ompx.h",
+    "Library/lib/clang/18/include/omp.h",
+    "Library/lib/clang/19/include/omp.h",
+    "Library/lib/clang/20/include/omp.h",
+    "Library/lib/libiomp5md.lib",
+    "Library/lib/libomp.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libiomp5md.dll",
+        "path_type": "hardlink",
+        "sha256": "49ab65da2bfb92b2bb489eac3ecb8f2f6e7a28ba98d059faa84dc0279cebd554",
+        "size_in_bytes": 158208
+      },
+      {
+        "_path": "Library/bin/libomp.dll",
+        "path_type": "hardlink",
+        "sha256": "f019a81d81bf0924ffc3835b2a8fafb7aea744f512ade4d59cccaf225a1354cb",
+        "size_in_bytes": 675840
+      },
+      {
+        "_path": "Library/include/omp.h",
+        "path_type": "hardlink",
+        "sha256": "451324fb4272c0d22cd16d447a05326f6c977c4899ed60f6f3cbe9202bc6bcf4",
+        "size_in_bytes": 28062
+      },
+      {
+        "_path": "Library/include/ompx.h",
+        "path_type": "hardlink",
+        "sha256": "ce8b1ef7aa46e3bb2e8bdd60246e59a09600f5e63a74537f62b21363938b6425",
+        "size_in_bytes": 7982
+      },
+      {
+        "_path": "Library/lib/clang/18/include/omp.h",
+        "path_type": "hardlink",
+        "sha256": "451324fb4272c0d22cd16d447a05326f6c977c4899ed60f6f3cbe9202bc6bcf4",
+        "size_in_bytes": 28062
+      },
+      {
+        "_path": "Library/lib/clang/19/include/omp.h",
+        "path_type": "hardlink",
+        "sha256": "451324fb4272c0d22cd16d447a05326f6c977c4899ed60f6f3cbe9202bc6bcf4",
+        "size_in_bytes": 28062
+      },
+      {
+        "_path": "Library/lib/clang/20/include/omp.h",
+        "path_type": "hardlink",
+        "sha256": "451324fb4272c0d22cd16d447a05326f6c977c4899ed60f6f3cbe9202bc6bcf4",
+        "size_in_bytes": 28062
+      },
+      {
+        "_path": "Library/lib/libiomp5md.lib",
+        "path_type": "hardlink",
+        "sha256": "39711f232472efeccd58db07afe0b3060154d57be56968071d6c0e9f8b7b710f",
+        "size_in_bytes": 189964
+      },
+      {
+        "_path": "Library/lib/libomp.lib",
+        "path_type": "hardlink",
+        "sha256": "39711f232472efeccd58db07afe0b3060154d57be56968071d6c0e9f8b7b710f",
+        "size_in_bytes": 189964
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\llvm-openmp-23.1.0-h49e36cd_0",
+    "type": 1
+  }
+}

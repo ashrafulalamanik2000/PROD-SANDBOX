@@ -1,0 +1,72 @@
+{
+  "arch": "x86_64",
+  "build": "h637744c_5",
+  "build_number": 5,
+  "depends": [
+    "libgdal-core ==3.12.4 hbfeefb7_5",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "blosc >=1.21.6,<2.0a0",
+    "libzlib >=1.3.2,<2.0a0",
+    "openssl >=3.5.7,<4.0a0",
+    "libjxl >=0.12.0,<0.13.0a0",
+    "libkml >=1.3.0,<1.4.0a0",
+    "libwebp-base >=1.6.0,<2.0a0",
+    "libpng >=1.6.58,<1.7.0a0",
+    "zstd >=1.5.7,<1.6.0a0",
+    "lerc >=4.2.0,<5.0a0",
+    "libiconv >=1.18,<2.0a0",
+    "libdeflate >=1.25,<1.26.0a0",
+    "lz4-c >=1.10.0,<1.11.0a0",
+    "libcurl >=8.21.0,<9.0a0",
+    "libexpat >=2.8.1,<3.0a0",
+    "liblzma >=5.8.3,<6.0a0",
+    "libsqlite >=3.53.4,<4.0a0",
+    "pcre2 >=10.47,<10.48.0a0",
+    "libxml2",
+    "libxml2-16 >=2.14.6",
+    "xerces-c >=3.3.0,<3.4.0a0",
+    "libspatialite >=5.1.0,<5.2.0a0",
+    "muparser >=2.3.5,<2.4.0a0",
+    "libjpeg-turbo >=3.2.0,<4.0a0",
+    "geos >=3.14.1,<3.14.2.0a0",
+    "proj >=9.8.1,<9.9.0a0",
+    "libarchive >=3.8.9,<3.9.0a0",
+    "hdf5 >=1.14.6,<1.14.7.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "74ce33cc58adb5f16627e854a0d6eb04",
+  "name": "libgdal-hdf5",
+  "platform": "win",
+  "run_exports": {},
+  "sha256": "3f9f2af6c95b325257ed0b4d6c2b95327cee14815add694fc4feb2b270660a71",
+  "size": 689298,
+  "subdir": "win-64",
+  "timestamp": 1786825244360,
+  "version": "3.12.4",
+  "fn": "libgdal-hdf5-3.12.4-h637744c_5.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libgdal-hdf5-3.12.4-h637744c_5.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libgdal-hdf5-3.12.4-h637744c_5",
+  "requested_specs": [],
+  "files": [
+    "Library/lib/gdalplugins/gdal_HDF5.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/lib/gdalplugins/gdal_HDF5.dll",
+        "path_type": "hardlink",
+        "sha256": "a947119cbbe35aa8df1c1641f15a3f0fadba2a0851508c1542a1487db56108e8",
+        "size_in_bytes": 684544
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libgdal-hdf5-3.12.4-h637744c_5",
+    "type": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "build": "hc364b38_0",
+  "build_number": 0,
+  "depends": [
+    "libpdal 2.10.1.*",
+    "python-pdal"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "b70b1b8c9e018fee392509bdb83ea9f8",
+  "name": "pdal",
+  "noarch": "generic",
+  "run_exports": {
+    "weak": [
+      "pdal >=2.10.1,<2.11.0a0"
+    ]
+  },
+  "sha256": "2d06faab782dfb4a0307c31b2f40934ad46a35aa75c0c5d097a05202f090afa3",
+  "size": 3611,
+  "subdir": "noarch",
+  "timestamp": 1774880707605,
+  "version": "2.10.1",
+  "fn": "pdal-2.10.1-hc364b38_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/pdal-2.10.1-hc364b38_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\pdal-2.10.1-hc364b38_0",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\pdal-2.10.1-hc364b38_0",
+    "type": 1
+  }
+}

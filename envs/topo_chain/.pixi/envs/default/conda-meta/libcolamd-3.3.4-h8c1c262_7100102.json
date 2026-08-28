@@ -1,0 +1,94 @@
+{
+  "arch": "x86_64",
+  "build": "h8c1c262_7100102",
+  "build_number": 7100102,
+  "depends": [
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "ucrt >=10.0.20348.0",
+    "libsuitesparseconfig >=7.10.1,<8.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "d0d065d0e1813889373121b78309f609",
+  "name": "libcolamd",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libcolamd >=3.3.4,<4.0a0"
+    ]
+  },
+  "sha256": "bad361d8288db273c18d7e6a83d8ad79d5d94be2c412cf0668b3d9d7e9bd2a62",
+  "size": 34206,
+  "subdir": "win-64",
+  "timestamp": 1742288893863,
+  "version": "3.3.4",
+  "fn": "libcolamd-3.3.4-h8c1c262_7100102.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libcolamd-3.3.4-h8c1c262_7100102.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libcolamd-3.3.4-h8c1c262_7100102",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/colamd.dll",
+    "Library/include/suitesparse/colamd.h",
+    "Library/lib/cmake/COLAMD/COLAMDConfig.cmake",
+    "Library/lib/cmake/COLAMD/COLAMDConfigVersion.cmake",
+    "Library/lib/cmake/COLAMD/COLAMDTargets-release.cmake",
+    "Library/lib/cmake/COLAMD/COLAMDTargets.cmake",
+    "Library/lib/colamd.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/colamd.dll",
+        "path_type": "hardlink",
+        "sha256": "2df89bb54d28712084fdaf80780b0ad34940de7539fe212c88d445a227c85dd8",
+        "size_in_bytes": 31232
+      },
+      {
+        "_path": "Library/include/suitesparse/colamd.h",
+        "path_type": "hardlink",
+        "sha256": "708ebcae18432d41d7abfefb768ea2a1ea3ba74aaf2c90ebaeae28da2ea92e1e",
+        "size_in_bytes": 9542
+      },
+      {
+        "_path": "Library/lib/cmake/COLAMD/COLAMDConfig.cmake",
+        "path_type": "hardlink",
+        "sha256": "1681fb030f705323a1e480dcd6498517f5d3504583cf1320f19de2472317b54c",
+        "size_in_bytes": 6649
+      },
+      {
+        "_path": "Library/lib/cmake/COLAMD/COLAMDConfigVersion.cmake",
+        "path_type": "hardlink",
+        "sha256": "6c425b75bbfde09af451953696657ee2e888e3fa23208314555cada3faad9be7",
+        "size_in_bytes": 2827
+      },
+      {
+        "_path": "Library/lib/cmake/COLAMD/COLAMDTargets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "8b6ea42b0088b878ca8197fae7523a155bd68eed9c3945f7b014752594e19589",
+        "size_in_bytes": 1009
+      },
+      {
+        "_path": "Library/lib/cmake/COLAMD/COLAMDTargets.cmake",
+        "path_type": "hardlink",
+        "sha256": "5f8de3ef70dc01d9318bfd3bb2b35652c9ef078d359e4db363babaf6862a6c23",
+        "size_in_bytes": 4395
+      },
+      {
+        "_path": "Library/lib/colamd.lib",
+        "path_type": "hardlink",
+        "sha256": "c3bf5d4e9aced43993f2c16782b180560329483cd9d6567c1afb8e48c2c37b0c",
+        "size_in_bytes": 4024
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libcolamd-3.3.4-h8c1c262_7100102",
+    "type": 1
+  }
+}

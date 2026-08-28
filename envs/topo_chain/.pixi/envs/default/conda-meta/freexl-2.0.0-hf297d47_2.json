@@ -1,0 +1,72 @@
+{
+  "arch": "x86_64",
+  "build": "hf297d47_2",
+  "build_number": 2,
+  "depends": [
+    "libexpat >=2.6.4,<3.0a0",
+    "libiconv >=1.17,<2.0a0",
+    "minizip >=4.0.7,<5.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139"
+  ],
+  "license": "MPL-1.1",
+  "license_family": "MOZILLA",
+  "md5": "d6a8059de245e53478b581742b53f71d",
+  "name": "freexl",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "freexl >=2.0.0,<3.0a0"
+    ]
+  },
+  "sha256": "1e62cbc6daa74656034dc4a6e58faa2d50291719c1cba53cc0b1946f0d2b9404",
+  "size": 77528,
+  "subdir": "win-64",
+  "timestamp": 1734015193826,
+  "version": "2.0.0",
+  "fn": "freexl-2.0.0-hf297d47_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/freexl-2.0.0-hf297d47_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\freexl-2.0.0-hf297d47_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/freexl.dll",
+    "Library/include/freexl.h",
+    "Library/lib/freexl.lib",
+    "Library/lib/freexl_i.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/freexl.dll",
+        "path_type": "hardlink",
+        "sha256": "90a6ba65e4caa3d94dd454d429b5333b352d96460006a14cd90af9cd5cd281ba",
+        "size_in_bytes": 125440
+      },
+      {
+        "_path": "Library/include/freexl.h",
+        "path_type": "hardlink",
+        "sha256": "410c8bbe03a8801bcbec25f48387312efa418ac0dbafcd54c501f2c4077e2d26",
+        "size_in_bytes": 29425
+      },
+      {
+        "_path": "Library/lib/freexl.lib",
+        "path_type": "hardlink",
+        "sha256": "8f84885adc2a93cddcf24f7aee0fc0f34f3ad276499a7b1fb36e3c938e09dff0",
+        "size_in_bytes": 139636
+      },
+      {
+        "_path": "Library/lib/freexl_i.lib",
+        "path_type": "hardlink",
+        "sha256": "4fb39f33d013be8faf2bdbd10781a1c4fc879e4c6da05a8bf9992e77dca8c38e",
+        "size_in_bytes": 5742
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\freexl-2.0.0-hf297d47_2",
+    "type": 1
+  }
+}

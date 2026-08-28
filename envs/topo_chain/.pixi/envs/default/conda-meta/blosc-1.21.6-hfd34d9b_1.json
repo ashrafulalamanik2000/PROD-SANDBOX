@@ -1,0 +1,83 @@
+{
+  "arch": "x86_64",
+  "build": "hfd34d9b_1",
+  "build_number": 1,
+  "depends": [
+    "libzlib >=1.3.1,<2.0a0",
+    "lz4-c >=1.10.0,<1.11.0a0",
+    "snappy >=1.2.1,<1.3.0a0",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.2,<15",
+    "vc14_runtime >=14.29.30139",
+    "zstd >=1.5.6,<1.6.0a0"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "357d7be4146d5fec543bfaa96a8a40de",
+  "name": "blosc",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "blosc >=1.21.6,<2.0a0"
+    ]
+  },
+  "sha256": "9303a7a0e03cf118eab3691013f6d6cbd1cbac66efbc70d89b20f5d0145257c0",
+  "size": 49840,
+  "subdir": "win-64",
+  "timestamp": 1733513605730,
+  "version": "1.21.6",
+  "fn": "blosc-1.21.6-hfd34d9b_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/blosc-1.21.6-hfd34d9b_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\blosc-1.21.6-hfd34d9b_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/blosc.dll",
+    "Library/include/blosc-export.h",
+    "Library/include/blosc.h",
+    "Library/lib/blosc.lib",
+    "Library/lib/pkgconfig/blosc.pc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/blosc.dll",
+        "path_type": "hardlink",
+        "sha256": "074911bbfa04a5d7d3215d4aefaee8942a33cf73bac964c675be57f82bb69203",
+        "size_in_bytes": 69632
+      },
+      {
+        "_path": "Library/include/blosc-export.h",
+        "path_type": "hardlink",
+        "sha256": "ca20d39d276209d485b900675fabbb14c78642f0ddef93a0141c8a5802eadc68",
+        "size_in_bytes": 1632
+      },
+      {
+        "_path": "Library/include/blosc.h",
+        "path_type": "hardlink",
+        "sha256": "1b7efa0efe51294ba8eb5ff4bf6d612d1c837a8e1df977fa44f6fe61802c8e24",
+        "size_in_bytes": 19480
+      },
+      {
+        "_path": "Library/lib/blosc.lib",
+        "path_type": "hardlink",
+        "sha256": "f35accc5639070b865548310becac1f93760cf591e1b7123f4062657ab5e4107",
+        "size_in_bytes": 7022
+      },
+      {
+        "_path": "Library/lib/pkgconfig/blosc.pc",
+        "path_type": "hardlink",
+        "sha256": "b9b5d4db60bed4af2921d607ee3fa708fd4c4ebd90fbb9aca01b0ee512a1238c",
+        "sha256_in_prefix": "f59eabe296ae508a21789dafd4273e4f8439a8ae5ee0e0461f4d34ab08037df5",
+        "size_in_bytes": 375,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/blosc_1733513025116/_h_env"
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\blosc-1.21.6-hfd34d9b_1",
+    "type": 1
+  }
+}

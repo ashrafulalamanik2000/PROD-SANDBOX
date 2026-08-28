@@ -1,0 +1,77 @@
+{
+  "arch": "x86_64",
+  "build": "he3e2b89_2",
+  "build_number": 2,
+  "constrains": [
+    "pdal 2.10.1.*"
+  ],
+  "depends": [
+    "libgdal-pg",
+    "libpdal-core 2.10.1 h4e8f44f_2",
+    "libpq >=18.3,<19.0a0",
+    "libxml2",
+    "libxml2-16 >=2.14.6",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "8e49aca930ccd6a33ad1208fc032bced",
+  "name": "libpdal-pgpointcloud",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpdal-pgpointcloud >=2.10.1,<2.11.0a0"
+    ]
+  },
+  "sha256": "dc47c1a22cdda0ef4f09fc2fbe945353ae3f610b527a6cd96bb2958d67dd14ef",
+  "size": 175023,
+  "subdir": "win-64",
+  "timestamp": 1777500765291,
+  "version": "2.10.1",
+  "fn": "libpdal-pgpointcloud-2.10.1-he3e2b89_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libpdal-pgpointcloud-2.10.1-he3e2b89_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-pgpointcloud-2.10.1-he3e2b89_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libpdal_plugin_reader_pgpointcloud.dll",
+    "Library/bin/libpdal_plugin_writer_pgpointcloud.dll",
+    "Library/lib/libpdal_plugin_reader_pgpointcloud.lib",
+    "Library/lib/libpdal_plugin_writer_pgpointcloud.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libpdal_plugin_reader_pgpointcloud.dll",
+        "path_type": "hardlink",
+        "sha256": "b023f49daf98e1ad156a1cbe36173871cc8f8cf835fe4d37e36b31b43be2bb5e",
+        "size_in_bytes": 284672
+      },
+      {
+        "_path": "Library/bin/libpdal_plugin_writer_pgpointcloud.dll",
+        "path_type": "hardlink",
+        "sha256": "c5e9b051fd7c5317adc8d60f2aef649632cbb2fef3f01f95e93ce71cc83ced62",
+        "size_in_bytes": 306688
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_reader_pgpointcloud.lib",
+        "path_type": "hardlink",
+        "sha256": "6b8d32584f81510cbd86c337fdf80df31ef7ecdadb35a6fef5dd5648de18957f",
+        "size_in_bytes": 219474
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_writer_pgpointcloud.lib",
+        "path_type": "hardlink",
+        "sha256": "be6e5761ff1e8f5c3d2bde701410a748c4cc758691fd4665bc4e221938b318ad",
+        "size_in_bytes": 220372
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-pgpointcloud-2.10.1-he3e2b89_2",
+    "type": 1
+  }
+}

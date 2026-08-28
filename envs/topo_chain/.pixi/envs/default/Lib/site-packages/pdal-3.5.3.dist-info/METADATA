@@ -1,0 +1,503 @@
+Metadata-Version: 2.2
+Name: pdal
+Version: 3.5.3
+Summary: Point cloud data processing
+Keywords: point,cloud,spatial
+Author: Howard Butler
+Author-Email: Unknown <howard@hobu.co>
+Maintainer-Email: Howard Butler <howard@hobu.co>
+License: Unless otherwise indicated, all files in the PDAL distribution are
+         
+           Copyright (c) 2017, Hobu, Inc. (howard@hobu.co)
+         
+         and are released under the terms of the BSD open source license.
+         
+         This file contains the license terms of all files within PDAL.
+         
+         
+         Overall PDAL license (BSD)
+         ===========================
+         
+          Copyright (c) 2017, Hobu, Inc. (howard@hobu.co)
+         
+          All rights reserved.
+         
+          Redistribution and use in source and binary forms, with or without
+          modification, are permitted provided that the following
+          conditions are met:
+         
+              * Redistributions of source code must retain the above copyright
+                notice, this list of conditions and the following disclaimer.
+              * Redistributions in binary form must reproduce the above copyright
+                notice, this list of conditions and the following disclaimer in
+                the documentation and/or other materials provided
+                with the distribution.
+              * Neither the name of Hobu, Inc. or Flaxen Consulting LLC nor the
+                names of its contributors may be used to endorse or promote
+                products derived from this software without specific prior
+                written permission.
+         
+          THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+          "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+          LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+          FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+          COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+          INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+          BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+          OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
+          AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+          OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+          OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
+          OF SUCH DAMAGE.
+         
+         
+         
+         
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: GIS
+Project-URL: homepage, https://pdal.io
+Project-URL: documentation, https://pdal.io
+Project-URL: repository, https://github.com/PDAL/Python
+Project-URL: changelog, https://github.com/PDAL/python/blob/main/README.rst
+Requires-Python: >=3.9
+Requires-Dist: numpy>=1.22
+Provides-Extra: test
+Requires-Dist: pandas; extra == "test"
+Requires-Dist: meshio; extra == "test"
+Description-Content-Type: text/x-rst
+
+================================================================================
+PDAL
+================================================================================
+
+PDAL Python support allows you to process data with PDAL into `Numpy`_ arrays.
+It provides a PDAL extension module to control Python interaction with PDAL.
+Additionally, you can use it to fetch `schema`_ and `metadata`_ from PDAL operations.
+
+Installation
+--------------------------------------------------------------------------------
+
+**Note** The PDAL Python bindings require the PDAL base library installed. Source code can be found at https://pdal.io and `GitHub <https://github.com/PDAL/PDAL>`__.
+
+PyPI
+................................................................................
+
+PDAL Python support is installable via PyPI:
+
+.. code-block::
+
+    pip install PDAL
+
+
+Developers can control many settings including debug builds and where the libraries are installed
+using `scikit-build-core <https://scikit-build-core.readthedocs.io>`_ settings:
+
+.. code-block::
+
+    python -m pip install \
+        -Cbuild-dir=build \
+        -e \
+        . \
+        --config-settings=cmake.build-type="Debug" \
+        -vv \
+        --no-deps \
+        --no-build-isolation
+
+GitHub
+................................................................................
+
+The repository for PDAL's Python extension is available at https://github.com/PDAL/python
+
+Python support released independently from PDAL itself as of PDAL 1.7.
+
+Usage
+--------------------------------------------------------------------------------
+
+Simple
+................................................................................
+
+Given the following pipeline, which simply reads an `ASPRS LAS`_ file and
+sorts it by the ``X`` dimension:
+
+.. _`ASPRS LAS`: https://www.asprs.org/committee-general/laser-las-file-format-exchange-activities.html
+
+.. code-block:: python
+
+
+    json = """
+    {
+      "pipeline": [
+        "1.2-with-color.las",
+        {
+            "type": "filters.sort",
+            "dimension": "X"
+        }
+      ]
+    }"""
+
+    import pdal
+    pipeline = pdal.Pipeline(json)
+    count = pipeline.execute()
+    arrays = pipeline.arrays
+    metadata = pipeline.metadata
+    log = pipeline.log
+
+Programmatic Pipeline Construction
+................................................................................
+
+The previous example specified the pipeline as a JSON string. Alternatively, a
+pipeline can be constructed by creating ``Stage`` instances and piping them
+together. For example, the previous pipeline can be specified as:
+
+.. code-block:: python
+
+    pipeline = pdal.Reader("1.2-with-color.las") | pdal.Filter.sort(dimension="X")
+
+Stage Objects
+=============
+
+- A stage is an instance of ``pdal.Reader``, ``pdal.Filter`` or ``pdal.Writer``.
+- A stage can be instantiated by passing as keyword arguments the options
+  applicable to the respective PDAL stage. For more on PDAL stages and their
+  options, check the PDAL documentation on `Stage Objects <https://pdal.io/pipeline.html#stage-objects>`__.
+
+  - The ``filename`` option of ``Readers`` and ``Writers`` as well as the ``type``
+    option of ``Filters`` can be passed positionally as the first argument.
+  - The ``inputs`` option specifies a sequence of stages to be set as input to the
+    current stage. Each input can be either the string tag of another stage, or
+    the ``Stage`` instance itself.
+- The ``Reader``, ``Filter`` and ``Writer`` classes come with static methods for
+  all the respective PDAL drivers. For example, ``pdal.Filter.head()`` is a
+  shortcut for ``pdal.Filter(type="filters.head")``. These methods are
+  auto-generated by introspecting ``pdal`` and the available options are
+  included in each method's docstring:
+
+.. code-block::
+
+    >>> help(pdal.Filter.head)
+    Help on function head in module pdal.pipeline:
+
+    head(**kwargs)
+        Return N points from beginning of the point cloud.
+
+        user_data: User JSON
+        log: Debug output filename
+        option_file: File from which to read additional options
+        where: Expression describing points to be passed to this filter
+        where_merge='auto': If 'where' option is set, describes how skipped points should be merged with kept points in standard mode.
+        count='10': Number of points to return from beginning.  If 'invert' is true, number of points to drop from the beginning.
+        invert='false': If true, 'count' specifies the number of points to skip from the beginning.
+
+Pipeline Objects
+================
+
+A ``pdal.Pipeline`` instance can be created from:
+
+- a JSON string: ``Pipeline(json_string)``
+- a sequence of ``Stage`` instances: ``Pipeline([stage1, stage2])``
+- a single ``Stage`` with the ``Stage.pipeline`` method: ``stage.pipeline()``
+- nothing: ``Pipeline()`` creates a pipeline with no stages.
+- joining ``Stage`` and/or other ``Pipeline`` instances together with the pipe
+  operator (``|``):
+
+  - ``stage1 | stage2``
+  - ``stage1 | pipeline1``
+  - ``pipeline1 | stage1``
+  - ``pipeline1 | pipeline2``
+
+Every application of the pipe operator creates a new ``Pipeline`` instance. To
+update an existing ``Pipeline`` use the respective in-place pipe operator (``|=``):
+
+.. code-block:: python
+
+    # update pipeline in-place
+    pipeline = pdal.Pipeline()
+    pipeline |= stage
+    pipeline |= pipeline2
+
+Reading using Numpy Arrays
+................................................................................
+
+The following more complex scenario demonstrates the full cycling between
+PDAL and Python:
+
+* Read a small testfile from GitHub into a Numpy array
+* Filters the array with Numpy for Intensity
+* Pass the filtered array to PDAL to be filtered again
+* Write the final filtered array to a LAS file and a TileDB_ array
+  via the `TileDB-PDAL integration`_ using the `TileDB writer plugin`_
+
+.. code-block:: python
+
+    import pdal
+
+    data = "https://github.com/PDAL/PDAL/blob/master/test/data/las/1.2-with-color.las?raw=true"
+
+    pipeline = pdal.Reader.las(filename=data).pipeline()
+    print(pipeline.execute())  # 1065 points
+
+    # Get the data from the first array
+    # [array([(637012.24, 849028.31, 431.66, 143, 1,
+    # 1, 1, 0, 1,  -9., 132, 7326, 245380.78254963,  68,  77,  88),
+    # dtype=[('X', '<f8'), ('Y', '<f8'), ('Z', '<f8'), ('Intensity', '<u2'),
+    # ('ReturnNumber', 'u1'), ('NumberOfReturns', 'u1'), ('ScanDirectionFlag', 'u1'),
+    # ('EdgeOfFlightLine', 'u1'), ('Classification', 'u1'), ('ScanAngleRank', '<f4'),
+    # ('UserData', 'u1'), ('PointSourceId', '<u2'),
+    # ('GpsTime', '<f8'), ('Red', '<u2'), ('Green', '<u2'), ('Blue', '<u2')])
+    arr = pipeline.arrays[0]
+
+    # Filter out entries that have intensity < 50
+    intensity = arr[arr["Intensity"] > 30]
+    print(len(intensity))  # 704 points
+
+    # Now use pdal to clamp points that have intensity 100 <= v < 300
+    pipeline = pdal.Filter.expression(expression="Intensity >= 100 && Intensity < 300").pipeline(intensity)
+    print(pipeline.execute())  # 387 points
+    clamped = pipeline.arrays[0]
+
+    # Write our intensity data to a LAS file and a TileDB array. For TileDB it is
+    # recommended to use Hilbert ordering by default with geospatial point cloud data,
+    # which requires specifying a domain extent. This can be determined automatically
+    # from a stats filter that computes statistics about each dimension (min, max, etc.).
+    pipeline = pdal.Writer.las(
+        filename="clamped.las",
+        offset_x="auto",
+        offset_y="auto",
+        offset_z="auto",
+        scale_x=0.01,
+        scale_y=0.01,
+        scale_z=0.01,
+    ).pipeline(clamped)
+    pipeline |= pdal.Filter.stats() | pdal.Writer.tiledb(array_name="clamped")
+    print(pipeline.execute())  # 387 points
+
+    # Dump the TileDB array schema
+    import tiledb
+    with tiledb.open("clamped") as a:
+        print(a.schema)
+
+Reading using Numpy Arrays as buffers (advanced)
+................................................................................
+
+It's also possible to treat the Numpy arrays passed to PDAL as buffers that are iteratively populated through
+custom python functions during the execution of the pipeline.
+
+This may be useful in cases where you want the reading of the input data to be handled in a streamable fashion,
+like for example:
+
+* When the total Numpy array data wouldn't fit into memory.
+* To initiate execution of a streamable PDAL pipeline while the input data is still being read.
+
+To enable this mode, you just need to include the python populate function along with each corresponding Numpy array.
+
+.. code-block:: python
+
+    # Numpy array to be used as buffer
+    in_buffer = np.zeros(max_chunk_size, dtype=[("X", float), ("Y", float), ("Z", float)])
+
+    # The function to populate the buffer iteratively
+    def load_next_chunk() -> int:
+    """
+    Function called by PDAL before reading the data from the buffer.
+
+    IMPORTANT: must return the total number of items to be read from the buffer.
+    The Pipeline execution will keep calling this function in a loop until 0 is returned.
+    """
+        #
+        # Replace here with your code that populates the buffer and returns the number of elements to read
+        #
+        chunk_size = next_chunk.size
+        in_buffer[:chunk_size]["X"] = next_chunk[:]["X"]
+        in_buffer[:chunk_size]["Y"] = next_chunk[:]["Y"]
+        in_buffer[:chunk_size]["Z"] = next_chunk[:]["Z"]
+
+        return chunk_size
+
+    # Configure input array and handler during Pipeline initialization...
+    p = pdal.Pipeline(pipeline_json, arrays=[in_buffer], stream_handlers=[load_next_chunk])
+
+    # ...alternatively you can use the setter on an existing Pipeline
+    # p.inputs = [(in_buffer, load_next_chunk)]
+
+The following snippet provides a simple example of how to use a Numpy array as buffer to support writing through PDAL
+with total control over the maximum amount of memory to use.
+
+Example: Streaming the read and write of a very large LAZ file with low memory footprint
+.........................................................................................
+
+
+
+.. code-block:: python
+
+    import numpy as np
+    import pdal
+
+    in_chunk_size = 10_000_000
+    in_pipeline = pdal.Reader.las(**{
+        "filename": "in_test.laz"
+    }).pipeline()
+
+    in_pipeline_it = in_pipeline.iterator(in_chunk_size).__iter__()
+
+    out_chunk_size = 50_000_000
+    out_file = "out_test.laz"
+    out_pipeline = pdal.Writer.las(
+        filename=out_file
+    ).pipeline()
+
+    out_buffer = np.zeros(in_chunk_size, dtype=[("X", float), ("Y", float), ("Z", float)])
+
+    def load_next_chunk():
+        try:
+            next_chunk = next(in_pipeline_it)
+        except StopIteration:
+            # Stops the streaming
+            return 0
+
+        chunk_size = next_chunk.size
+        out_buffer[:chunk_size]["X"] = next_chunk[:]["X"]
+        out_buffer[:chunk_size]["Y"] = next_chunk[:]["Y"]
+        out_buffer[:chunk_size]["Z"] = next_chunk[:]["Z"]
+
+        print(f"Loaded next chunk -> {chunk_size}")
+
+        return chunk_size
+
+    out_pipeline.inputs = [(out_buffer, load_next_chunk)]
+
+    out_pipeline.loglevel = 20 # INFO
+    count = out_pipeline.execute_streaming(out_chunk_size)
+
+    print(f"\nWROTE - {count}")
+
+
+
+Executing Streamable Pipelines
+................................................................................
+Streamable pipelines (pipelines that consist exclusively of streamable PDAL
+stages) can be executed in streaming mode via ``Pipeline.iterator()``. This
+returns an iterator object that yields Numpy arrays of up to ``chunk_size`` size
+(default=10000) at a time.
+
+.. code-block:: python
+
+    import pdal
+    pipeline = pdal.Reader("test/data/autzen-utm.las") | pdal.Filter.expression(expression="Intensity > 80 && Intensity < 120)")
+    for array in pipeline.iterator(chunk_size=500):
+        print(len(array))
+    # or to concatenate all arrays into one
+    # full_array = np.concatenate(list(pipeline))
+
+``Pipeline.iterator()`` also takes an optional ``prefetch`` parameter (default=0)
+to allow prefetching up to to this number of arrays in parallel and buffering
+them until they are yielded to the caller.
+
+If you just want to execute a streamable pipeline in streaming mode and don't
+need to access the data points (typically when the pipeline has Writer stage(s)),
+you can use the ``Pipeline.execute_streaming(chunk_size)`` method instead. This
+is functionally equivalent to ``sum(map(len, pipeline.iterator(chunk_size)))``
+but more efficient as it avoids allocating and filling any arrays in memory.
+
+Accessing Mesh Data
+................................................................................
+
+Some PDAL stages (for instance ``filters.delaunay``) create TIN type mesh data.
+
+This data can be accessed in Python using the ``Pipeline.meshes`` property, which returns a ``numpy.ndarray``
+of shape (1,n) where n is the number of Triangles in the mesh.
+
+If the PointView contains no mesh data, then n = 0.
+
+Each Triangle is a tuple ``(A,B,C)`` where A, B and C are indices into the PointView identifying the point that is the vertex for the Triangle.
+
+Meshio Integration
+................................................................................
+
+The meshes property provides the face data but is not easy to use as a mesh. Therefore, we have provided optional Integration
+into the `Meshio <https://github.com/nschloe/meshio>`__ library.
+
+The ``pdal.Pipeline`` class provides the ``get_meshio(idx: int) -> meshio.Mesh`` method. This
+method creates a `Mesh` object from the `PointView` array and mesh properties.
+
+.. note:: The meshio integration requires that meshio is installed (e.g. ``pip install meshio``). If it is not, then the method fails with an informative RuntimeError.
+
+Simple use of the functionality could be as follows:
+
+.. code-block:: python
+
+    import pdal
+
+    ...
+    pl = pdal.Pipeline(pipeline)
+    pl.execute()
+
+    mesh = pl.get_meshio(0)
+    mesh.write('test.obj')
+
+Advanced Mesh Use Case
+................................................................................
+
+USE-CASE : Take a LiDAR map, create a mesh from the ground points, split into tiles and store the tiles in PostGIS.
+
+.. note:: Like ``Pipeline.arrays``, ``Pipeline.meshes`` returns a list of ``numpy.ndarray`` to provide for the case where the output from a Pipeline is multiple PointViews
+
+(example using 1.2-with-color.las and not doing the ground classification for clarity)
+
+.. code-block:: python
+
+    import pdal
+    import psycopg2
+    import io
+
+    pl = (
+        pdal.Reader(".../python/test/data/1.2-with-color.las")
+        | pdal.Filter.splitter(length=1000)
+        | pdal.Filter.delaunay()
+    )
+    pl.execute()
+
+    conn = psycopg(%CONNNECTION_STRING%)
+    buffer = io.StringIO
+
+    for idx in range(len(pl.meshes)):
+        m =  pl.get_meshio(idx)
+        if m:
+            m.write(buffer,  file_format = "wkt")
+            with conn.cursor() as curr:
+              curr.execute(
+                  "INSERT INTO %table-name% (mesh) VALUES (ST_GeomFromEWKT(%(ewkt)s)",
+                  { "ewkt": buffer.getvalue()}
+              )
+
+    conn.commit()
+    conn.close()
+    buffer.close()
+
+
+
+.. _`Numpy`: http://www.numpy.org/
+.. _`schema`: http://www.pdal.io/dimensions.html
+.. _`metadata`: http://www.pdal.io/development/metadata.html
+.. _`TileDB`: https://tiledb.com/
+.. _`TileDB-PDAL integration`: https://docs.tiledb.com/geospatial/pdal
+.. _`TileDB writer plugin`: https://pdal.io/stages/writers.tiledb.html
+
+.. image:: https://github.com/PDAL/python/workflows/Build/badge.svg
+   :target: https://github.com/PDAL/python/actions?query=workflow%3ABuild
+
+Requirements
+================================================================================
+
+* PDAL 2.7+
+* Python >=3.9
+* Pybind11 (eg :code:`pip install pybind11[global]`)
+* Numpy >= 1.22 (eg :code:`pip install numpy`)
+* scikit-build-core (eg :code:`pip install scikit-build-core`)

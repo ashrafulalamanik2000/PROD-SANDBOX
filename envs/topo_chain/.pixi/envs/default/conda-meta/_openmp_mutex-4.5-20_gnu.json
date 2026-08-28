@@ -1,0 +1,42 @@
+{
+  "arch": "x86_64",
+  "build": "20_gnu",
+  "build_number": 20,
+  "constrains": [
+    "openmp_impl <0.0a0",
+    "msys2-conda-epoch <0.0a0"
+  ],
+  "depends": [
+    "libgomp >=7.5.0",
+    "libwinpthread >=12.0.0.r4.gg4f2fc60ca"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "1626967b574d1784b578b52eaeb071e7",
+  "name": "_openmp_mutex",
+  "platform": "win",
+  "run_exports": {
+    "strong": [
+      "_openmp_mutex >=4.5"
+    ]
+  },
+  "sha256": "8a1cee28bd0ee7451ada1cd50b64720e57e17ff994fc62dd8329bef570d382e4",
+  "size": 52252,
+  "subdir": "win-64",
+  "timestamp": 1770943776666,
+  "version": "4.5",
+  "fn": "_openmp_mutex-4.5-20_gnu.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/_openmp_mutex-4.5-20_gnu.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\_openmp_mutex-4.5-20_gnu",
+  "requested_specs": [],
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\_openmp_mutex-4.5-20_gnu",
+    "type": 1
+  }
+}

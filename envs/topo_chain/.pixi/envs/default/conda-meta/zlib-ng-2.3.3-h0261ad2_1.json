@@ -1,0 +1,114 @@
+{
+  "arch": "x86_64",
+  "build": "h0261ad2_1",
+  "build_number": 1,
+  "depends": [
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "Zlib",
+  "license_family": "Other",
+  "md5": "46a21c0a4e65f1a135251fc7c8663f83",
+  "name": "zlib-ng",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "zlib-ng >=2.3.3,<2.4.0a0"
+    ]
+  },
+  "sha256": "71332532332d13b5dbe57074ddcf82ae711bdc132affa5a2982a29ffa06dc234",
+  "size": 124542,
+  "subdir": "win-64",
+  "timestamp": 1770167984883,
+  "version": "2.3.3",
+  "fn": "zlib-ng-2.3.3-h0261ad2_1.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/zlib-ng-2.3.3-h0261ad2_1.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\zlib-ng-2.3.3-h0261ad2_1",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/zlib-ng2.dll",
+    "Library/include/zconf-ng.h",
+    "Library/include/zlib-ng.h",
+    "Library/include/zlib_name_mangling-ng.h",
+    "Library/lib/cmake/zlib-ng/zlib-ng-config-version.cmake",
+    "Library/lib/cmake/zlib-ng/zlib-ng-config.cmake",
+    "Library/lib/cmake/zlib-ng/zlib-ng-targets-release.cmake",
+    "Library/lib/cmake/zlib-ng/zlib-ng-targets.cmake",
+    "Library/lib/pkgconfig/zlib-ng.pc",
+    "Library/lib/zlib-ng.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/zlib-ng2.dll",
+        "path_type": "hardlink",
+        "sha256": "f57947fffdf36cbecc829a61001247e1707bd3657aa237b79deac725b0d062fd",
+        "size_in_bytes": 333824
+      },
+      {
+        "_path": "Library/include/zconf-ng.h",
+        "path_type": "hardlink",
+        "sha256": "709d0e832f770a700c61493bcd8f7f07a32be717890f098101fe2bddb42c00d4",
+        "size_in_bytes": 5202
+      },
+      {
+        "_path": "Library/include/zlib-ng.h",
+        "path_type": "hardlink",
+        "sha256": "28304ff506c885fff2e68ddfec4913d76f2bd812751fe692a33677ed5ad8228c",
+        "size_in_bytes": 94678
+      },
+      {
+        "_path": "Library/include/zlib_name_mangling-ng.h",
+        "path_type": "hardlink",
+        "sha256": "38e51a846d6c2bd6100298c55328dba4437c08fa1dceda4eb2e06ecb1d142058",
+        "size_in_bytes": 230
+      },
+      {
+        "_path": "Library/lib/cmake/zlib-ng/zlib-ng-config-version.cmake",
+        "path_type": "hardlink",
+        "sha256": "5d43a51728a6deea879e131d49ab58cb5a1215a2a2513d760c2ab77dfcba832b",
+        "size_in_bytes": 1904
+      },
+      {
+        "_path": "Library/lib/cmake/zlib-ng/zlib-ng-config.cmake",
+        "path_type": "hardlink",
+        "sha256": "f581baa7319d35cff50ca85e22bb850bea5eec477d58f8fc78f5072c9a0b4954",
+        "size_in_bytes": 1166
+      },
+      {
+        "_path": "Library/lib/cmake/zlib-ng/zlib-ng-targets-release.cmake",
+        "path_type": "hardlink",
+        "sha256": "6b9c9690a333b17d57872c42911fe809f3b89775f7c5900cf3070817f2950fe7",
+        "size_in_bytes": 907
+      },
+      {
+        "_path": "Library/lib/cmake/zlib-ng/zlib-ng-targets.cmake",
+        "path_type": "hardlink",
+        "sha256": "9a2705c2655437b987b9d273d4a67f5e1f8658044d241b5f7221ab3ed83d3ccc",
+        "size_in_bytes": 4272
+      },
+      {
+        "_path": "Library/lib/pkgconfig/zlib-ng.pc",
+        "path_type": "hardlink",
+        "sha256": "dfd22948ac0b8eb12845b92684c0cb7d8b718d321e7d6f48a795c87e8ba1554b",
+        "sha256_in_prefix": "f336b922511524f9b0221be6d4ff7c5b24ea1621709decf3289ae153b2f64e4b",
+        "size_in_bytes": 382,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/zlib-ng_1770167782784/_h_env"
+      },
+      {
+        "_path": "Library/lib/zlib-ng.lib",
+        "path_type": "hardlink",
+        "sha256": "ece706cc4f82775abb37ad5a0b79c4c3755abaa90aee0d64d76a73057d3adbb8",
+        "size_in_bytes": 18232
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\zlib-ng-2.3.3-h0261ad2_1",
+    "type": 1
+  }
+}

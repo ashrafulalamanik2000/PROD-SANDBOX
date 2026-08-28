@@ -1,0 +1,45 @@
+{
+  "arch": "x86_64",
+  "build": "h5728263_3",
+  "build_number": 3,
+  "depends": [
+    "libiconv >=1.17,<2.0a0"
+  ],
+  "license": "LGPL-2.1-or-later",
+  "md5": "2cf0cf76cc15d360dfa2f17fd6cf9772",
+  "name": "libintl",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libintl >=0.22.5,<1.0a0"
+    ]
+  },
+  "sha256": "c7e4600f28bcada8ea81456a6530c2329312519efcf0c886030ada38976b0511",
+  "size": 95568,
+  "subdir": "win-64",
+  "timestamp": 1723629479451,
+  "version": "0.22.5",
+  "fn": "libintl-0.22.5-h5728263_3.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libintl-0.22.5-h5728263_3.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libintl-0.22.5-h5728263_3",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/intl-8.dll"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/intl-8.dll",
+        "path_type": "hardlink",
+        "sha256": "eeb01a2fa6b9744a1946f45bb55c1b45481b877472472bbce794829f96644336",
+        "size_in_bytes": 222720
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libintl-0.22.5-h5728263_3",
+    "type": 1
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "arch": "x86_64",
+  "build": "h77acb9b_2",
+  "build_number": 2,
+  "constrains": [
+    "pdal 2.10.1.*"
+  ],
+  "depends": [
+    "libarrow >=24.0.0,<24.1.0a0",
+    "libarrow-dataset >=24.0.0,<24.1.0a0",
+    "libgdal-arrow-parquet",
+    "libparquet >=24.0.0,<24.1.0a0",
+    "libpdal-core 2.10.1 h4e8f44f_2",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "fffd1584b750f8c8bf2d6b689dfa9713",
+  "name": "libpdal-arrow",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpdal-arrow >=2.10.1,<2.11.0a0"
+    ]
+  },
+  "sha256": "70087d2d1fc5ebbf38fc2c1ae8adfb3c4c86cbb8b4254f5aac3be6e740a19b57",
+  "size": 242207,
+  "subdir": "win-64",
+  "timestamp": 1777500429998,
+  "version": "2.10.1",
+  "fn": "libpdal-arrow-2.10.1-h77acb9b_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libpdal-arrow-2.10.1-h77acb9b_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-arrow-2.10.1-h77acb9b_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libpdal_plugin_reader_arrow.dll",
+    "Library/bin/libpdal_plugin_writer_arrow.dll",
+    "Library/lib/libpdal_plugin_reader_arrow.lib",
+    "Library/lib/libpdal_plugin_writer_arrow.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libpdal_plugin_reader_arrow.dll",
+        "path_type": "hardlink",
+        "sha256": "938599b2c7fb3f5afd4a67781ff5ba15f28a0fd97d1b4adb09644fe1865837ab",
+        "size_in_bytes": 379392
+      },
+      {
+        "_path": "Library/bin/libpdal_plugin_writer_arrow.dll",
+        "path_type": "hardlink",
+        "sha256": "8de97cd096ddbfbae7389b970cd435daa4e439f52d3748dd5d86cc59cf707964",
+        "size_in_bytes": 468480
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_reader_arrow.lib",
+        "path_type": "hardlink",
+        "sha256": "ab1d07674976670b41cf41368f9627d9ec5d1b1eba547f87fa5942db6d32b61e",
+        "size_in_bytes": 209368
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_writer_arrow.lib",
+        "path_type": "hardlink",
+        "sha256": "eb84e0077886a478afb11557d7055b8e124574e957c5747e5f972efad366fed5",
+        "size_in_bytes": 206032
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-arrow-2.10.1-h77acb9b_2",
+    "type": 1
+  }
+}

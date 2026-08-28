@@ -1,0 +1,74 @@
+{
+  "arch": "x86_64",
+  "build": "h645de30_2",
+  "build_number": 2,
+  "constrains": [
+    "pdal 2.10.1.*"
+  ],
+  "depends": [
+    "draco 1.5.7 h181d51b_0",
+    "libpdal-core 2.10.1 h4e8f44f_2",
+    "ucrt >=10.0.20348.0",
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208"
+  ],
+  "license": "BSD-3-Clause",
+  "license_family": "BSD",
+  "md5": "c75e4193e8325995054a0477598e4d47",
+  "name": "libpdal-draco",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libpdal-draco >=2.10.1,<2.11.0a0"
+    ]
+  },
+  "sha256": "4d33bbd80c0e214f798b6128aa9a6f171652fac54818f3dcdf20863309d9ccc1",
+  "size": 387415,
+  "subdir": "win-64",
+  "timestamp": 1777500479315,
+  "version": "2.10.1",
+  "fn": "libpdal-draco-2.10.1-h645de30_2.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libpdal-draco-2.10.1-h645de30_2.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-draco-2.10.1-h645de30_2",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/libpdal_plugin_reader_draco.dll",
+    "Library/bin/libpdal_plugin_writer_draco.dll",
+    "Library/lib/libpdal_plugin_reader_draco.lib",
+    "Library/lib/libpdal_plugin_writer_draco.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/libpdal_plugin_reader_draco.dll",
+        "path_type": "hardlink",
+        "sha256": "23bcfb6fbaee70ff707125bb0895e5dd35c303433c1ea959dc8e1eb1f7279230",
+        "size_in_bytes": 589824
+      },
+      {
+        "_path": "Library/bin/libpdal_plugin_writer_draco.dll",
+        "path_type": "hardlink",
+        "sha256": "f5a7adb0630f833c2c94aed6d83be6841ce87cef70ecb0ad097deea82916e148",
+        "size_in_bytes": 702464
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_reader_draco.lib",
+        "path_type": "hardlink",
+        "sha256": "fec5498083a279e892f9c5fa6d59fc6a660d46741ea81e5d160f90561a8d7583",
+        "size_in_bytes": 200992
+      },
+      {
+        "_path": "Library/lib/libpdal_plugin_writer_draco.lib",
+        "path_type": "hardlink",
+        "sha256": "8623eff1d8678a3c90e528054b4a42d9910923ae6f33433018ad8350663c2935",
+        "size_in_bytes": 204270
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libpdal-draco-2.10.1-h645de30_2",
+    "type": 1
+  }
+}

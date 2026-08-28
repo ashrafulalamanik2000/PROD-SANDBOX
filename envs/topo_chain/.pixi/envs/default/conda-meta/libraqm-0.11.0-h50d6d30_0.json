@@ -1,0 +1,83 @@
+{
+  "arch": "x86_64",
+  "build": "h50d6d30_0",
+  "build_number": 0,
+  "depends": [
+    "vc >=14.3,<15",
+    "vc14_runtime >=14.44.35208",
+    "ucrt >=10.0.20348.0",
+    "libharfbuzz >=14.2.1",
+    "libfreetype >=2.14.3",
+    "libfreetype6 >=2.14.3",
+    "fribidi >=1.0.16,<2.0a0"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "md5": "df92be5685f712989830bdb7ee39383a",
+  "name": "libraqm",
+  "platform": "win",
+  "run_exports": {
+    "weak": [
+      "libraqm >=0.11.0,<0.12.0a0"
+    ]
+  },
+  "sha256": "1bc52f781355e233411a7aaebbb155d9fd53efa2a1fc6c621250833d80cc5ab1",
+  "size": 33471,
+  "subdir": "win-64",
+  "timestamp": 1784850324004,
+  "version": "0.11.0",
+  "fn": "libraqm-0.11.0-h50d6d30_0.conda",
+  "url": "https://conda.anaconda.org/conda-forge/win-64/libraqm-0.11.0-h50d6d30_0.conda",
+  "channel": "https://conda.anaconda.org/conda-forge/",
+  "extracted_package_dir": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libraqm-0.11.0-h50d6d30_0",
+  "requested_specs": [],
+  "files": [
+    "Library/bin/raqm-0.dll",
+    "Library/include/raqm-version.h",
+    "Library/include/raqm.h",
+    "Library/lib/pkgconfig/raqm.pc",
+    "Library/lib/raqm.lib"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "Library/bin/raqm-0.dll",
+        "path_type": "hardlink",
+        "sha256": "6cb3276d713fcf40c10d2979b86b44430c097e719ffd177487b96324ecb8a5b9",
+        "size_in_bytes": 33792
+      },
+      {
+        "_path": "Library/include/raqm-version.h",
+        "path_type": "hardlink",
+        "sha256": "3099dd9bc1bf372914704717844737d16ffb89666f98d1ecb327c3072d360903",
+        "size_in_bytes": 1556
+      },
+      {
+        "_path": "Library/include/raqm.h",
+        "path_type": "hardlink",
+        "sha256": "4f0d3fe6c98175f350072270ef1d33c1715067a30ca28ecd410f58eee3b767d4",
+        "size_in_bytes": 6170
+      },
+      {
+        "_path": "Library/lib/pkgconfig/raqm.pc",
+        "path_type": "hardlink",
+        "sha256": "e16edb1c58885f9c0b257c1e77ec877637a306771bf39cb94ff720709c40871c",
+        "sha256_in_prefix": "18b4988aa8885662a15b12f97cdf26880812c38be5cd051d27b88b48eb0e6d09",
+        "size_in_bytes": 430,
+        "file_mode": "text",
+        "prefix_placeholder": "D:/bld/bld/rattler-build_libraqm_1784850324/h_env"
+      },
+      {
+        "_path": "Library/lib/raqm.lib",
+        "path_type": "hardlink",
+        "sha256": "0ba8b2fcc0f606e5af68baf3b5fa9396b39c9aec3e4fbfaca8d97e96a45f4dc5",
+        "size_in_bytes": 8002
+      }
+    ]
+  },
+  "link": {
+    "source": "C:\\Users\\AshrafulAnik\\.sdtools\\envs\\.pixi-cache\\pkgs\\libraqm-0.11.0-h50d6d30_0",
+    "type": 1
+  }
+}
