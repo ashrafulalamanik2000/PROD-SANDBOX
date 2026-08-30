@@ -197,6 +197,22 @@ the run, and stage-out all happen inside the lease-renewal window, so long
 copies do not lose the lease. Cancel takes effect between stages and during
 the run (not mid-robocopy).
 
+## Workers time out after the API host sleeps
+
+Symptom: every worker logs `poll failed (timed out); retrying` while
+`/v1/health` works fine ON the API host (both via 127.0.0.1 and via its own
+MagicDNS name — the latter loops back internally and proves nothing about
+real inbound traffic).
+
+Cause: after the Windows host sleeps/wakes, Docker Desktop's published-port
+proxy can keep serving loopback but drop connections from external
+interfaces, including the Tailscale interface the fleet uses.
+
+Fix: `docker compose restart api` on the API host. Workers recover on their
+next poll retry automatically. This is a standing argument for promoting the
+API to an always-on host that never sleeps (handoff step 6); until then,
+disable sleep-on-lid-close or restart the api container after each wake.
+
 ## Docker Desktop startup failure on Windows build 26200
 
 Docker Desktop 4.81 can crash before its engine starts with an inaccessible

@@ -75,9 +75,43 @@ def version() -> None:
 
 
 @app.command()
-def doctor() -> None:
+def doctor(as_json: bool = typer.Option(False, "--json",
+                                        help="Machine-readable output.")) -> None:
     """Check config, API reachability, and spool depth."""
-    ok = True
+    spool = (list(telemetry.SPOOL_DIR.glob("*.json.gz"))
+             if telemetry.SPOOL_DIR.exists() else [])
+    d: dict = {
+        "cli_version": CLI_VERSION,
+        "tools_dir": str(_cfg.tools_dir),
+        "tool_count": len(_tools),
+        "machine_id": machine_id(),
+        "user": _cfg.user,
+        "api_url": _cfg.api_url,
+        "api_key_set": bool(_cfg.api_key),
+        "telemetry": _cfg.telemetry_enabled,
+        "spool_backlog": len(spool),
+        "staging_dir": str(_cfg.staging_dir) if _cfg.staging_dir else None,
+        "manifest_errors": list(_errors),
+        "api_health": None,
+    }
+    if _cfg.telemetry_enabled:
+        import httpx
+        try:
+            r = httpx.get(f"{_cfg.api_url.rstrip('/')}/v1/health",
+                          headers={"Authorization": f"Bearer {_cfg.api_key}"}, timeout=5)
+            d["api_health"] = {"status": r.status_code, "body": r.text[:120]}
+        except Exception as exc:  # noqa: BLE001
+            d["api_health"] = {"status": None, "body": f"unreachable: {exc}"}
+    healthy = ((not _cfg.telemetry_enabled
+                or (d["api_health"] or {}).get("status") == 200)
+               and not _errors)
+    d["ok"] = healthy
+
+    if as_json:
+        from .apiclient import emit_json
+        emit_json(d)
+        raise typer.Exit(0 if healthy else 1)
+
     typer.echo(f"cli            {CLI_VERSION}")
     typer.echo(f"tools dir      {_cfg.tools_dir} ({len(_tools)} tools)")
     typer.echo(f"machine id     {machine_id()}")
@@ -85,26 +119,14 @@ def doctor() -> None:
     typer.echo(f"api url        {_cfg.api_url or '(unset)'}")
     typer.echo(f"api key        {'set' if _cfg.api_key else '(unset)'}")
     typer.echo(f"telemetry      {'on' if _cfg.telemetry_enabled else 'OFF (local only)'}")
-
-    spool = (list(telemetry.SPOOL_DIR.glob("*.json.gz"))
-             if telemetry.SPOOL_DIR.exists() else [])
     typer.echo(f"spool backlog  {len(spool)}")
-
-    if _cfg.telemetry_enabled:
-        import httpx
-        try:
-            r = httpx.get(f"{_cfg.api_url.rstrip('/')}/v1/health",
-                          headers={"Authorization": f"Bearer {_cfg.api_key}"}, timeout=5)
-            typer.secho(f"api health     {r.status_code} {r.text[:120]}",
-                        fg="green" if r.status_code == 200 else "red")
-            ok = r.status_code == 200
-        except Exception as exc:  # noqa: BLE001
-            typer.secho(f"api health     unreachable: {exc}", fg="red")
-            ok = False
+    if d["api_health"] is not None:
+        h = d["api_health"]
+        typer.secho(f"api health     {h['status'] or ''} {h['body']}".rstrip(),
+                    fg="green" if h["status"] == 200 else "red")
     for err in _errors:
         typer.secho(f"manifest error {err}", fg="red")
-        ok = False
-    raise typer.Exit(0 if ok else 1)
+    raise typer.Exit(0 if healthy else 1)
 
 
 @app.command()
@@ -141,21 +163,104 @@ def runs(limit: int = 20) -> None:
         typer.echo(f"{f.stem[:8]}  {status:<9} {dur:7.1f}s  {head['tool']:<18} {head['cmdline']}")
 
 
-@app.command()
-def logs(run_id: str, errors_only: bool = typer.Option(False, "--errors")) -> None:
-    """Print the local log for a run id (prefix match allowed)."""
-    matches = [p for p in RUNS_DIR.glob(f"{run_id}*.ndjson")]
-    if not matches:
-        typer.secho(f"no local log for {run_id}", fg="red")
+def _emit_event(e: dict, as_json: bool) -> None:
+    if as_json:
+        typer.echo(json.dumps(e, default=str))
+        return
+    ts = (str(e.get("ts") or ""))[11:19]
+    colour = {"error": "red", "warning": "yellow"}.get(e.get("level"))
+    typer.secho(f"{ts} {e.get('level', ''):<7} {e['message']}", fg=colour)
+
+
+def _resolve_remote_run(prefix: str) -> str | None:
+    """Match a run OR job id prefix to one remote run id (None = no match)."""
+    from .apiclient import fetch
+    with _api_client() as api:
+        ids = {j["run_id"] for j in fetch(api, "/v1/jobs", {"limit": 500})["jobs"]
+               if j["job_id"].startswith(prefix) and j.get("run_id")}
+        ids |= {r["run_id"] for r in fetch(api, "/v1/runs", {"limit": 500})["runs"]
+                if r["run_id"].startswith(prefix)}
+    if len(ids) > 1:
+        typer.secho(f"{prefix!r} is ambiguous ({len(ids)} runs) — "
+                    f"give more characters", fg="red")
         raise typer.Exit(1)
-    for line in matches[0].read_text(errors="replace").splitlines():
-        rec = json.loads(line)
-        if rec["kind"] != "event":
-            continue
-        d = rec["data"]
-        if errors_only and d.get("level") not in ("error", "warning"):
-            continue
-        typer.echo(f"{d['seq']:>6} {d['level']:<7} {d['message']}")
+    return ids.pop() if ids else None
+
+
+@app.command()
+def logs(run_id: str = typer.Argument(help="Run OR job id (prefix ok)"),
+         follow: bool = typer.Option(False, "--follow",
+                                     help="Keep tailing until the run finishes."),
+         errors_only: bool = typer.Option(False, "--errors",
+                                          help="Only error/warning lines."),
+         tail: int = typer.Option(0, help="Start from the last N events "
+                                          "(0 = from the beginning)."),
+         raw: bool = typer.Option(False, "--raw",
+                                  help="Include ::sdtools:: telemetry "
+                                       "sentinel lines."),
+         as_json: bool = typer.Option(False, "--json",
+                                      help="One JSON object per line.")) -> None:
+    """Print (or --follow) a run's log by run id or job id. Uses the API when
+    configured; falls back to the local NDJSON for offline runs."""
+    import time as _t
+    from .apiclient import fetch
+
+    remote = _resolve_remote_run(run_id) if _cfg.telemetry_enabled else None
+
+    if remote:
+        level = "error,warning" if errors_only else None
+        with _api_client() as api:
+            after = 0
+            if tail:
+                after = max(0, fetch(api, f"/v1/runs/{remote}")
+                            .get("event_count", 0) - tail)
+            status = None
+            while True:
+                batch = fetch(api, f"/v1/runs/{remote}/events",
+                              {"after_seq": after, "limit": 2000,
+                               "level": level})["events"]
+                for e in batch:
+                    after = max(after, e["seq"])
+                    if as_json or raw or \
+                            not e["message"].startswith("::sdtools::"):
+                        _emit_event(e, as_json)
+                if len(batch) == 2000:
+                    continue                      # keep paging this drain
+                if not follow:
+                    break
+                status = fetch(api, f"/v1/runs/{remote}").get("status")
+                if status != "running":
+                    break                          # final drain already done
+                try:
+                    _t.sleep(2)
+                except KeyboardInterrupt:
+                    raise typer.Exit(130) from None
+            if follow and status and not as_json:
+                typer.secho(f"-- run {status} --",
+                            fg="green" if status == "ok" else "red", bold=True)
+        return
+
+    # ---- local NDJSON fallback (offline runs / no API) ----
+    matches = list(RUNS_DIR.glob(f"{run_id}*.ndjson"))
+    if not matches:
+        typer.secho(f"no run or job matches {run_id!r} (API"
+                    f"{' and' if _cfg.telemetry_enabled else ' not configured,'}"
+                    f" local logs checked)", fg="red")
+        raise typer.Exit(1)
+    if follow:
+        typer.secho("--follow needs the API; printing the local snapshot",
+                    fg="yellow")
+    recs = [json.loads(line)["data"]
+            for line in matches[0].read_text(errors="replace").splitlines()
+            if line.strip().startswith("{")
+            and json.loads(line)["kind"] == "event"]
+    if errors_only:
+        recs = [d for d in recs if d.get("level") in ("error", "warning")]
+    if not (as_json or raw):
+        recs = [d for d in recs
+                if not str(d.get("message", "")).startswith("::sdtools::")]
+    for d in recs[-tail:] if tail else recs:
+        _emit_event(d, as_json)
 
 
 @app.command()
@@ -269,16 +374,110 @@ def env_prune() -> None:
 # --------------------------------------------------------------------------
 
 def _api_client():
-    import httpx
-    if not _cfg.telemetry_enabled:
-        typer.secho("api.url and api.key must be configured", fg="red")
-        raise typer.Exit(2)
-    return httpx.Client(base_url=_cfg.api_url.rstrip("/"), timeout=15,
-                        headers={"Authorization": f"Bearer {_cfg.api_key}"})
+    from .apiclient import client
+    return client(_cfg)
+
+
+def _agent_status(as_json: bool) -> None:
+    """Local worker health + this machine's config sanity + fleet view."""
+    import shutil as _shutil
+
+    from .apiclient import emit_json, fetch
+
+    mid = machine_id()
+    scope = None
+    if _cfg.api_key and _cfg.api_key.startswith("sdt_"):
+        scope = {"subm": "submit", "inge": "ingest", "read": "read",
+                 "admi": "admin"}.get(_cfg.api_key[4:8])
+    spool = (len(list(telemetry.SPOOL_DIR.glob("*.json.gz")))
+             if telemetry.SPOOL_DIR.exists() else 0)
+    staging = _cfg.staging_dir
+    staging_free_gb = None
+    if staging:
+        anchor = staging if staging.exists() else staging.anchor
+        try:
+            staging_free_gb = round(
+                _shutil.disk_usage(anchor).free / 1e9, 1)
+        except OSError:
+            pass
+
+    fleet: list[dict] | None = None
+    fleet_note = ""
+    if _cfg.telemetry_enabled:
+        try:
+            with _api_client() as api:
+                fleet = fetch(api, "/v1/agents")["agents"]
+            for a in fleet:
+                a["seen_s"] = _age_s(a["last_seen_at"])
+                a["this_machine"] = a["machine_id"] == mid
+        except typer.Exit:
+            fleet_note = ("fleet view unavailable (API unreachable, or this "
+                          "key's scope cannot read agents)")
+    else:
+        fleet_note = "fleet view unavailable (API not configured)"
+
+    local = {
+        "machine_id": mid,
+        "cli_version": CLI_VERSION,
+        "api_key_scope": scope,
+        "telemetry": _cfg.telemetry_enabled,
+        "spool_backlog": spool,
+        "staging_dir": str(staging) if staging else None,
+        "staging_dir_exists": staging.exists() if staging else None,
+        "staging_free_gb": staging_free_gb,
+        "tools": len(_tools),
+    }
+    if as_json:
+        emit_json({"local": local, "agents": fleet, "note": fleet_note or None})
+        return
+
+    typer.secho("worker config (this machine)", bold=True)
+    typer.echo(f"  machine id     {mid}")
+    typer.echo(f"  cli            {CLI_VERSION}   tools {len(_tools)}")
+    typer.secho(f"  api key scope  {scope or '(unset)'}"
+                + ("" if scope in ("ingest", "submit", "admin") else
+                   "   <- a worker needs an ingest key"),
+                fg=None if scope in ("ingest", "submit", "admin") else "red")
+    typer.secho(f"  spool backlog  {spool}", fg="yellow" if spool else None)
+    if staging:
+        bad = not staging.exists()
+        typer.secho(f"  staging dir    {staging}"
+                    + ("  MISSING" if bad else
+                       f"  ({staging_free_gb} GB free)"),
+                    fg="red" if bad else
+                    "yellow" if (staging_free_gb or 99) < 50 else None)
+    else:
+        typer.secho("  staging dir    (unset — staged jobs will fail here)",
+                    fg="yellow")
+
+    typer.secho("\nregistered agents", bold=True)
+    if fleet is None:
+        typer.secho(f"  {fleet_note}", fg="yellow")
+        return
+    from rich import box
+    from rich.console import Console
+    from rich.table import Table
+    t = Table(box=box.SIMPLE_HEAD, pad_edge=False, header_style="bold dim")
+    t.add_column("here", justify="center")
+    t.add_column("agent", overflow="fold", min_width=18)
+    for col in ("state", "host", "queues", "labels", "job", "seen"):
+        t.add_column(col)
+    for a in sorted(fleet, key=lambda x: (not x["this_machine"],
+                                          x["seen_s"] or 0)):
+        style = ({"idle": "green", "busy": "cyan"}.get(a["state"], "dim"))
+        t.add_row("●" if a["this_machine"] else "",
+                  a["agent_id"], a["state"], a["hostname"],
+                  ",".join(a["queues"]) or "-", ",".join(a["labels"]) or "-",
+                  a["current_job_id"][:8] if a["current_job_id"] else "-",
+                  f"{_fmt_age(a['seen_s'])} ago",
+                  style=style)
+    Console().print(t)
 
 
 @app.command()
 def agent(
+    action: str = typer.Argument(None, help="'status' shows worker health "
+                                            "and config; omit to run the worker."),
     name: str = typer.Option("agent", help="Slot name; run two agents with "
                                             "different names for two slots."),
     queue: list[str] = typer.Option(["default"], "--queue", help="Repeatable."),
@@ -287,8 +486,17 @@ def agent(
     poll_s: float = typer.Option(2.0, help="Poll interval when idle."),
     max_jobs: int = typer.Option(0, help="Exit after N jobs (0 = forever)."),
     idle_exit_s: float = typer.Option(0, help="Exit after this long idle (0 = never)."),
+    as_json: bool = typer.Option(False, "--json",
+                                 help="Machine-readable output (status only)."),
 ) -> None:
-    """Run as a worker: claim dispatched jobs and execute them here."""
+    """Run as a worker: claim dispatched jobs and execute them here.
+    `sdtools agent status` shows worker health instead of running."""
+    if action == "status":
+        _agent_status(as_json)
+        return
+    if action is not None:
+        raise typer.BadParameter(f"unknown action {action!r} — did you mean "
+                                 f"'sdtools agent status'?")
     from .agent import run_agent
     run_agent(_cfg, name, list(queue),
               [x.strip() for x in labels.split(",") if x.strip()],
@@ -319,8 +527,14 @@ def submit(
         False, "--stage-keep",
         help="Keep the worker-local staged copy (default: deleted after a "
              "successful stage-out; always kept on failure)."),
+    as_json: bool = typer.Option(False, "--json",
+                                 help="Machine-readable output."),
+    watch: bool = typer.Option(False, "--watch",
+                               help="Follow the job live until it finishes."),
 ) -> None:
     """Queue one job for the worker fleet instead of running it here."""
+    if watch and as_json:
+        raise typer.BadParameter("--watch and --json are mutually exclusive")
     params: dict = {}
     for kv in param:
         if "=" not in kv:
@@ -354,7 +568,13 @@ def submit(
             "project": project or _cfg.project, "max_attempts": max_attempts})
         r.raise_for_status()
         d = r.json()
+    if as_json:
+        from .apiclient import emit_json
+        emit_json({"job_id": d["job_id"], "queue": d["queue"]})
+        return
     typer.secho(f"queued {d['job_id'][:8]} on '{d['queue']}'", fg="green")
+    if watch:
+        raise typer.Exit(_follow_job(d["job_id"]))
 
 
 @app.command()
@@ -427,16 +647,89 @@ def workflow(
             _t.sleep(2)
 
 
+_STATE_STYLE = {"queued": "yellow", "blocked": "yellow", "leased": "cyan",
+                "running": "cyan", "ok": "green", "failed": "red",
+                "cancelled": "dim"}
+
+
+def _jobs_table(job_rows: list[dict]):
+    from rich import box
+    from rich.table import Table
+    t = Table(box=box.SIMPLE_HEAD, pad_edge=False, header_style="bold dim")
+    t.add_column("job")
+    t.add_column("tool", overflow="fold", min_width=10)
+    t.add_column("state")
+    t.add_column("queue")
+    t.add_column("att")
+    t.add_column("agent", overflow="fold", min_width=14)
+    t.add_column("lease")
+    t.add_column("age")
+    t.add_column("error", overflow="fold")
+    for j in job_rows:
+        live = j["state"] in ("leased", "running")
+        state = j["state"] + (" (cancel requested)"
+                              if j.get("cancel_requested") and live else "")
+        lease = (_fmt_age(-(_age_s(j["lease_expires_at"]) or 0))
+                 if live and j.get("lease_expires_at") else "-")
+        age = _fmt_age(_age_s(j.get("finished_at") or j["created_at"]))
+        t.add_row(j["job_id"][:8], j["tool"], state, j["queue"],
+                  f"{j['attempts']}/{j['max_attempts']}",
+                  j["leased_by"] or "-", lease, age,
+                  j.get("error_kind") or "",
+                  style=("yellow" if j.get("cancel_requested") and live
+                         else _STATE_STYLE.get(j["state"])))
+    if not job_rows:
+        t.add_row("(no jobs match)", *[""] * 8, style="dim")
+    return t
+
+
 @app.command()
 def jobs(state: str = typer.Option(None), queue: str = typer.Option(None),
-         limit: int = 25) -> None:
+         limit: int = 25,
+         watch: bool = typer.Option(False, "--watch",
+                                    help="Live-updating view (Ctrl+C exits)."),
+         as_json: bool = typer.Option(False, "--json",
+                                      help="Machine-readable output.")) -> None:
     """List dispatched jobs (server-side)."""
+    from .apiclient import emit_json, fetch
+    params = {"state": state, "queue": queue, "limit": limit}
+
+    if watch:
+        if as_json:
+            raise typer.BadParameter("--watch and --json are mutually exclusive")
+        import time as _t
+        from datetime import datetime
+        from rich.console import Console, Group
+        from rich.live import Live
+        from rich.text import Text
+        con = Console()
+        rows: list[dict] = []
+        with _api_client() as api, Live(console=con, screen=False,
+                                        refresh_per_second=4) as live:
+            try:
+                while True:
+                    try:
+                        rows = fetch(api, "/v1/jobs", params)["jobs"]
+                        head = Text(f"jobs  {datetime.now():%H:%M:%S}  "
+                                    + "  ".join(f"{k}={v}" for k, v in
+                                                params.items() if v),
+                                    style="bold")
+                    except typer.Exit:
+                        # transient API blip: keep the last table on screen
+                        head = Text(f"jobs  {datetime.now():%H:%M:%S}  "
+                                    "api unreachable — retrying", style="bold red")
+                    live.update(Group(head, _jobs_table(rows)))
+                    _t.sleep(2)
+            except KeyboardInterrupt:
+                pass
+        return
+
     with _api_client() as api:
-        r = api.get("/v1/jobs", params={k: v for k, v in
-                                        [("state", state), ("queue", queue),
-                                         ("limit", limit)] if v})
-        r.raise_for_status()
-    for j in r.json()["jobs"]:
+        d = fetch(api, "/v1/jobs", params)
+    if as_json:
+        emit_json(d["jobs"])
+        return
+    for j in d["jobs"]:
         who = j["leased_by"] or "-"
         err = f"  {j['error_kind']}" if j.get("error_kind") else ""
         flag = "  (cancel requested)" if j.get("cancel_requested") \
@@ -445,10 +738,117 @@ def jobs(state: str = typer.Option(None), queue: str = typer.Option(None),
                    f"{j['tool']:<16} {who:<28}{err}{flag}")
 
 
+_TERMINAL_STATES = ("ok", "failed", "cancelled")
+
+
+def _follow_job(job_id: str, tail: int = 8, interval: float = 2.0) -> int:
+    """Live-follow one job to its terminal state. Returns an exit code."""
+    import time as _t
+    from collections import deque
+
+    from rich.console import Console, Group
+    from rich.live import Live
+    from rich.progress_bar import ProgressBar
+    from rich.text import Text
+
+    from .apiclient import fetch
+
+    con = Console()
+    events: deque = deque(maxlen=tail)
+    cursor_run: str | None = None
+    after_seq = 0
+    job: dict = {}
+
+    def frame(job: dict, run: dict | None, note: str = "") -> Group:
+        style = _STATE_STYLE.get(job.get("state", ""), "")
+        parts = [Text.assemble(
+            (f"{job['job_id'][:8]}  {job['tool']}  ", "bold"),
+            (job["state"], f"bold {style}" if style else "bold"),
+            (" (cancel requested)" if job.get("cancel_requested")
+             and job["state"] in ("leased", "running") else "", "yellow"),
+            (f"   attempt {job['attempts']}/{job['max_attempts']}"
+             f"   queue {job['queue']}"
+             f"   on {job.get('leased_by') or '-'}", "dim"))]
+        if job["state"] in ("leased", "running"):
+            lease = (-(_age_s(job["lease_expires_at"]) or 0)
+                     if job.get("lease_expires_at") else None)
+            hb = _age_s(run.get("last_heartbeat_at")) if run else None
+            line = Text(f"lease {_fmt_age(lease)}   hb "
+                        f"{_fmt_age(hb) + ' ago' if hb is not None else '-'}",
+                        style="red" if hb is not None and hb > 60 else "dim")
+            parts.append(line)
+            if run and run.get("progress") is not None:
+                bar = ProgressBar(total=100, completed=run["progress"] * 100,
+                                  width=40)
+                parts.append(Group(bar, Text(
+                    f"{run['progress']*100:.0f}%  "
+                    f"{run.get('progress_note') or ''}", style="cyan")))
+        if events:
+            parts.append(Text("─" * 60, style="dim"))
+            for e in events:
+                ts = (e.get("ts") or "")[11:19]
+                sty = {"error": "red", "warning": "yellow"}.get(e["level"], "dim")
+                parts.append(Text(f"{ts} {e['message'][:200]}", style=sty))
+        if note:
+            parts.append(Text(note, style="bold red"))
+        return Group(*parts)
+
+    with _api_client() as api, Live(console=con, refresh_per_second=4) as live:
+        try:
+            while True:
+                note = ""
+                try:
+                    job = fetch(api, f"/v1/jobs/{job_id}")
+                    run = None
+                    if job.get("run_id"):
+                        if job["run_id"] != cursor_run:   # new attempt
+                            cursor_run, after_seq = job["run_id"], 0
+                            events.clear()
+                        try:
+                            run = fetch(api, f"/v1/runs/{cursor_run}")
+                            for e in fetch(api, f"/v1/runs/{cursor_run}/events",
+                                           {"after_seq": after_seq,
+                                            "limit": 200})["events"]:
+                                after_seq = max(after_seq, e["seq"])
+                                # sentinel lines are machine telemetry (the
+                                # progress bar already shows them decoded)
+                                if not e["message"].startswith("::sdtools::"):
+                                    events.append(e)
+                        except typer.Exit:
+                            pass          # run telemetry not landed yet
+                except typer.Exit:
+                    note = "api unreachable — retrying"
+                    run = None
+                live.update(frame(job, run, note) if job else Text("resolving…"))
+                if job.get("state") in _TERMINAL_STATES:
+                    break
+                _t.sleep(interval)
+        except KeyboardInterrupt:
+            con.print("[dim]detached — the job keeps running "
+                      "(sdtools cancel to stop it)[/]")
+            return 130
+    ok = job.get("state") == "ok"
+    err = f"  ({job.get('error_kind')})" if job.get("error_kind") else ""
+    con.print(f"\n[bold {'green' if ok else 'red'}]"
+              f"{job['job_id'][:8]} -> {job['state']}{err}[/]")
+    return 0 if ok else 1
+
+
+@app.command()
+def watch(job_id: str = typer.Argument(help="Job id (prefix ok)"),
+          tail: int = typer.Option(8, help="Event lines kept on screen."),
+          interval: float = typer.Option(2.0, help="Refresh seconds.")) -> None:
+    """Follow one job live to its terminal state: attempt transitions,
+    lease/heartbeat, progress, and a rolling event tail."""
+    with _api_client() as api:
+        job = _resolve_job(api, job_id)
+    raise typer.Exit(_follow_job(job["job_id"], tail=tail, interval=interval))
+
+
 def _resolve_job(api, prefix: str) -> dict:
-    r = api.get("/v1/jobs", params={"limit": 500})
-    r.raise_for_status()
-    hits = [j for j in r.json()["jobs"] if j["job_id"].startswith(prefix)]
+    from .apiclient import fetch
+    hits = [j for j in fetch(api, "/v1/jobs", {"limit": 500})["jobs"]
+            if j["job_id"].startswith(prefix)]
     if not hits:
         typer.secho(f"no job matches {prefix!r}", fg="red")
         raise typer.Exit(1)
@@ -460,7 +860,9 @@ def _resolve_job(api, prefix: str) -> dict:
 
 
 @app.command()
-def cancel(job_id: str = typer.Argument(help="Job id (prefix ok)")) -> None:
+def cancel(job_id: str = typer.Argument(help="Job id (prefix ok)"),
+           as_json: bool = typer.Option(False, "--json",
+                                        help="Machine-readable output.")) -> None:
     """Cancel a job: queued jobs settle immediately; running jobs are stopped
     by their agent at its next lease renewal (within ~a minute)."""
     with _api_client() as api:
@@ -470,6 +872,11 @@ def cancel(job_id: str = typer.Argument(help="Job id (prefix ok)")) -> None:
             typer.secho(f"rejected: {r.text}", fg="red")
             raise typer.Exit(1)
         d = r.json()
+    if as_json:
+        from .apiclient import emit_json
+        emit_json({"job_id": job["job_id"], "state": d.get("state"),
+                   "cancel_requested": bool(d.get("cancel_requested"))})
+        return
     if d.get("cancel_requested"):
         typer.secho(f"cancel requested — agent {job['leased_by'] or '?'} will stop "
                     f"the tool at its next lease renewal", fg="yellow")
@@ -478,7 +885,9 @@ def cancel(job_id: str = typer.Argument(help="Job id (prefix ok)")) -> None:
 
 
 @app.command()
-def retry(job_id: str = typer.Argument(help="Job id (prefix ok)")) -> None:
+def retry(job_id: str = typer.Argument(help="Job id (prefix ok)"),
+          as_json: bool = typer.Option(False, "--json",
+                                       help="Machine-readable output.")) -> None:
     """Re-queue a failed or cancelled job (same id, fresh attempt count)."""
     with _api_client() as api:
         job = _resolve_job(api, job_id)
@@ -486,20 +895,168 @@ def retry(job_id: str = typer.Argument(help="Job id (prefix ok)")) -> None:
         if r.status_code >= 400:
             typer.secho(f"rejected: {r.text}", fg="red")
             raise typer.Exit(1)
+    if as_json:
+        from .apiclient import emit_json
+        emit_json({"job_id": job["job_id"], "state": "queued",
+                   "queue": job["queue"]})
+        return
     typer.secho(f"{job['job_id'][:8]} re-queued on '{job['queue']}'", fg="green")
 
 
 @app.command()
-def agents() -> None:
+def agents(as_json: bool = typer.Option(False, "--json",
+                                        help="Machine-readable output.")) -> None:
     """List worker machines and what they're doing."""
+    from .apiclient import emit_json, fetch
     with _api_client() as api:
-        r = api.get("/v1/agents")
-        r.raise_for_status()
-    for a in r.json()["agents"]:
+        d = fetch(api, "/v1/agents")
+    if as_json:
+        emit_json(d["agents"])
+        return
+    for a in d["agents"]:
         cur = a["current_job_id"][:8] if a["current_job_id"] else "-"
         typer.echo(f"{a['agent_id']:<28} {a['state']:<8} {a['hostname']:<16} "
                    f"queues={','.join(a['queues'])} labels={','.join(a['labels']) or '-'} "
                    f"job={cur}")
+
+
+def _age_s(ts: str | None) -> float | None:
+    """Seconds since an ISO timestamp (API timestamps are tz-aware UTC)."""
+    if not ts:
+        return None
+    from datetime import datetime, timezone
+    t = datetime.fromisoformat(ts)
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=timezone.utc)
+    return (datetime.now(timezone.utc) - t).total_seconds()
+
+
+def _fmt_age(seconds: float | None) -> str:
+    if seconds is None:
+        return "-"
+    s = abs(seconds)
+    txt = (f"{s:.0f}s" if s < 120 else
+           f"{s/60:.0f}m" if s < 7200 else
+           f"{s/3600:.1f}h" if s < 172800 else f"{s/86400:.1f}d")
+    return f"-{txt}" if seconds < 0 else txt
+
+
+@app.command()
+def status(
+    all_agents: bool = typer.Option(False, "--all",
+                                    help="Include agents not seen for over a day."),
+    as_json: bool = typer.Option(False, "--json",
+                                 help="Machine-readable output."),
+) -> None:
+    """One-screen fleet overview: API, agents, queues, running work, spool."""
+    from .apiclient import emit_json, fetch
+
+    with _api_client() as api:
+        health = fetch(api, "/v1/health")
+        agent_rows = fetch(api, "/v1/agents")["agents"]
+        job_rows = fetch(api, "/v1/jobs", {"limit": 500})["jobs"]
+        run_rows = fetch(api, "/v1/runs",
+                         {"status": "running", "limit": 100})["runs"]
+
+    spool = (len(list(telemetry.SPOOL_DIR.glob("*.json.gz")))
+             if telemetry.SPOOL_DIR.exists() else 0)
+    runs_by_id = {r["run_id"]: r for r in run_rows}
+
+    queued = [j for j in job_rows if j["state"] == "queued"]
+    active = [j for j in job_rows if j["state"] in ("leased", "running")]
+    queues: dict[str, dict] = {}
+    for j in queued:
+        q = queues.setdefault(j["queue"], {"depth": 0, "oldest_s": 0.0})
+        q["depth"] += 1
+        q["oldest_s"] = max(q["oldest_s"], _age_s(j["created_at"]) or 0.0)
+
+    for a in agent_rows:
+        a["seen_s"] = _age_s(a["last_seen_at"])
+    shown_agents = [a for a in agent_rows
+                    if all_agents or (a["seen_s"] or 0) < 86400]
+
+    for j in active:
+        run = runs_by_id.get(j.get("run_id") or "")
+        j["heartbeat_s"] = _age_s(run.get("last_heartbeat_at")) if run else None
+        j["progress"] = run.get("progress") if run else None
+        j["lease_remaining_s"] = (-(_age_s(j["lease_expires_at"]) or 0)
+                                  if j.get("lease_expires_at") else None)
+
+    if as_json:
+        emit_json({"health": health, "agents": agent_rows, "queues": queues,
+                   "active_jobs": active, "spool_backlog": spool})
+        return
+
+    from rich import box
+    from rich.console import Console
+    from rich.table import Table
+
+    con = Console()
+    ok = health.get("ok")
+    con.print(f"[bold]sdtools fleet[/]  {_cfg.api_url}   "
+              + (f"[bold green]● ok[/]" if ok else "[bold red]● NOT OK[/]")
+              + f"   running: {health.get('running')}"
+              + (f"   [yellow]local spool backlog: {spool}[/]" if spool else ""))
+
+    t = Table(title=None, box=box.SIMPLE_HEAD, pad_edge=False,
+              header_style="bold dim", title_justify="left")
+    t.add_column("agent", overflow="fold", min_width=18)
+    for col in ("state", "host", "queues", "labels", "job", "seen"):
+        t.add_column(col)
+    for a in sorted(shown_agents, key=lambda x: x["seen_s"] or 0):
+        stale = (a["seen_s"] or 0) > 120 and a["state"] != "offline"
+        style = ("yellow" if stale else
+                 {"idle": "green", "busy": "cyan"}.get(a["state"], "dim"))
+        t.add_row(a["agent_id"],
+                  a["state"] + (" (stale)" if stale else ""),
+                  a["hostname"],
+                  ",".join(a["queues"]) or "-",
+                  ",".join(a["labels"]) or "-",
+                  a["current_job_id"][:8] if a["current_job_id"] else "-",
+                  f"{_fmt_age(a['seen_s'])} ago",
+                  style=style)
+    if not shown_agents:
+        t.add_row("(none seen in the last day — use --all)",
+                  *[""] * 6, style="dim")
+    con.print("\n[bold]agents[/]")
+    con.print(t)
+
+    t = Table(box=box.SIMPLE_HEAD, pad_edge=False, header_style="bold dim")
+    for col in ("queue", "queued", "oldest wait"):
+        t.add_column(col)
+    for name, q in sorted(queues.items()):
+        t.add_row(name, str(q["depth"]), _fmt_age(q["oldest_s"]),
+                  style="yellow" if q["oldest_s"] > 600 else None)
+    if not queues:
+        t.add_row("(nothing queued)", "", "", style="dim")
+    con.print("\n[bold]queues[/]")
+    con.print(t)
+
+    t = Table(box=box.SIMPLE_HEAD, pad_edge=False, header_style="bold dim")
+    t.add_column("job")
+    t.add_column("tool", overflow="fold", min_width=10)
+    t.add_column("state")
+    t.add_column("att")
+    t.add_column("agent", overflow="fold", min_width=14)
+    for col in ("lease", "hb", "prog"):
+        t.add_column(col)
+    for j in active:
+        hb = j["heartbeat_s"]
+        hb_bad = hb is not None and hb > 60
+        state = j["state"] + (" (cancel requested)"
+                              if j.get("cancel_requested") else "")
+        t.add_row(j["job_id"][:8], j["tool"], state,
+                  f"{j['attempts']}/{j['max_attempts']}",
+                  j["leased_by"] or "-",
+                  _fmt_age(j["lease_remaining_s"]),
+                  f"{_fmt_age(hb)} ago" if hb is not None else "-",
+                  f"{j['progress']*100:.0f}%" if j.get("progress") else "-",
+                  style=("red" if hb_bad else
+                         "yellow" if j.get("cancel_requested") else None))
+    if not active:
+        t.add_row("(nothing running)", *[""] * 7, style="dim")
+    con.print("\n[bold]running[/]")
+    con.print(t)
 
 
 # --------------------------------------------------------------------------

@@ -238,6 +238,14 @@ async def job_lease(job_id: str, request: Request, db: Session = Depends(get_db)
     d = await request.json()
     job = _leased_job(db, job_id, d.get("agent_id"))
     job.lease_expires_at = utcnow() + timedelta(seconds=LEASE_TTL_S)
+    # A single-slot agent does not poll while executing, so renewal is its
+    # only liveness signal — without this, busy workers get marked offline.
+    if job.leased_by:
+        agent = db.get(AgentWorker, job.leased_by)
+        if agent:
+            agent.last_seen_at = utcnow()
+            agent.state = "busy"
+            agent.current_job_id = job.job_id
     db.commit()
     return {"lease_ttl_s": LEASE_TTL_S, "cancel_requested": job.cancel_requested}
 
@@ -387,6 +395,15 @@ async def list_jobs(request: Request, db: Session = Depends(get_db),
     return {"jobs": [_job_dict(j) for j in db.scalars(stmt)]}
 
 
+@router.get("/v1/jobs/{job_id}")
+async def get_job(job_id: str, request: Request, db: Session = Depends(get_db)):
+    await deps["read_check"](request, db)
+    job = db.get(Job, job_id)
+    if not job:
+        raise HTTPException(404, "unknown job")
+    return _job_dict(job)
+
+
 @router.get("/v1/workflows")
 async def list_workflows(request: Request, db: Session = Depends(get_db),
                          status: str | None = None, limit: int = Query(50, le=500)):
@@ -477,7 +494,8 @@ def _job_dict(j: Job) -> dict:
         "depends_on": j.depends_on, "state": j.state,
         "attempts": j.attempts, "max_attempts": j.max_attempts,
         "cancel_requested": j.cancel_requested,
-        "leased_by": j.leased_by, "run_id": j.run_id, "exit_code": j.exit_code,
+        "leased_by": j.leased_by, "lease_expires_at": j.lease_expires_at,
+        "run_id": j.run_id, "exit_code": j.exit_code,
         "error_kind": j.error_kind, "error_message": j.error_message,
         "submitted_by": j.submitted_by, "created_at": j.created_at,
         "started_at": j.started_at, "finished_at": j.finished_at,

@@ -481,6 +481,7 @@ def _run_dict(r: Run) -> dict:
         "project": r.project, "tags": r.tags, "status": r.status, "exit_code": r.exit_code,
         "actor_user": r.actor_user, "hostname": r.hostname, "machine_id": r.machine_id,
         "started_at": r.started_at, "finished_at": r.finished_at,
+        "last_heartbeat_at": r.last_heartbeat_at,
         "duration_ms": r.duration_ms, "progress": r.progress, "progress_note": r.progress_note,
         "input_summary": r.input_summary, "output_summary": r.output_summary,
         "metrics": r.metrics, "counts": r.counts,

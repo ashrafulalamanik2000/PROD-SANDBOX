@@ -205,6 +205,12 @@ def flush_spool(cfg: Config, limit: int = _MAX_REPLAY_PER_RUN) -> tuple[int, int
                 if r.status_code < 300:
                     f.unlink(missing_ok=True)
                     sent += 1
+                elif r.status_code in (408, 429):
+                    break                        # throttled/timed out: try later
+                elif r.status_code == 404:
+                    # dependency order: an event for a run whose start hasn't
+                    # landed yet — keep the file, move on to later items
+                    continue
                 elif 400 <= r.status_code < 500:
                     f.unlink(missing_ok=True)   # permanently rejected (bad key/scope/payload)
                     dropped += 1

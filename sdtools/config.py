@@ -19,7 +19,23 @@ HOME = Path(os.environ.get("SDTOOLS_HOME", Path.home() / ".sdtools"))
 CONFIG_PATH = HOME / "config.toml"
 SPOOL_DIR = HOME / "spool"        # failed uploads park here
 RUNS_DIR = HOME / "runs"          # local NDJSON log, always written first
-CLI_VERSION = "0.4.1"   # bump per handover so `sdtools version` proves which code is live
+def _cli_version() -> str:
+    """One version source: the installed package metadata (from pyproject).
+    Falls back to reading pyproject directly for source-tree execution."""
+    try:
+        from importlib.metadata import version
+        return version("sdtools")
+    except Exception:
+        pass
+    try:
+        import tomllib as _toml
+        pp = Path(__file__).resolve().parent.parent / "pyproject.toml"
+        return _toml.loads(pp.read_text(encoding="utf-8-sig"))["project"]["version"]
+    except Exception:
+        return "0+unknown"
+
+
+CLI_VERSION = _cli_version()
 
 
 @dataclass
